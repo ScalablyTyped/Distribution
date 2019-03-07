@@ -21,39 +21,39 @@ class MaintenanceWindow protected ()
   /**
     * Whether targets must be registered with the Maintenance Window before tasks can be defined for those targets.
     */
-  val allowUnassociatedTargets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val allowUnassociatedTargets: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The number of hours before the end of the Maintenance Window that Systems Manager stops scheduling new tasks for execution.
     */
-  val cutoff: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val cutoff: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The duration of the Maintenance Window in hours.
     */
-  val duration: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val duration: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Whether the maintenance window is enabled. Default: `true`.
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to no longer run the maintenance window.
     */
-  val endDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val endDate: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the maintenance window.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The schedule of the Maintenance Window in the form of a [cron](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-cron.html) or rate expression.
     */
-  val schedule: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val schedule: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Timezone for schedule in [Internet Assigned Numbers Authority (IANA) Time Zone Database format](https://www.iana.org/time-zones). For example: `America/Los_Angeles`, `etc/UTC`, or `Asia/Seoul`.
     */
-  val scheduleTimezone: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val scheduleTimezone: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to begin the maintenance window.
     */
-  val startDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val startDate: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

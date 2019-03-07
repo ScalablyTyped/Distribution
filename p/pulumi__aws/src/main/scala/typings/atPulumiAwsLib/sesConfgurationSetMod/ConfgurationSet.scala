@@ -22,7 +22,7 @@ class ConfgurationSet protected ()
   /**
     * The name of the configuration set
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

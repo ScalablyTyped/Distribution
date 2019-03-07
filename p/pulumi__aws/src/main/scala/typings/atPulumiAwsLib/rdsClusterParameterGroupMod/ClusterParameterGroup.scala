@@ -21,31 +21,31 @@ class ClusterParameterGroup protected ()
   /**
     * The ARN of the db cluster parameter group.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The description of the DB cluster parameter group. Defaults to "Managed by Terraform".
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The family of the DB cluster parameter group.
     */
-  val family: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val family: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the DB parameter.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val namePrefix: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of DB parameters to apply. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via [`aws rds describe-db-cluster-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html) after initial creation of the group.
     */
-  val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ApplyMethod]]] = js.native
+  val parameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ApplyMethod]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

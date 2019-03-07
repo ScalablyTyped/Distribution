@@ -21,15 +21,15 @@ class RoleAlias protected ()
   /**
     * The name of the role alias.
     */
-  val alias: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val alias: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The duration of the credential, in seconds. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 900 seconds (15 minutes) to 3600 seconds (60 minutes).
     */
-  val credentialDuration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val credentialDuration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The identity of the role to which the alias refers.
     */
-  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val roleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

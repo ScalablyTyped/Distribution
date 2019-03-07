@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/graticule", JSImport.Default)
+@JSImport("ol/Graticule", JSImport.Default)
 @js.native
 /**
   * Render a grid for a coordinate system on a map.

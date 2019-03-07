@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait MutationOpts[TData, TGraphQLVariables] extends js.Object {
   var awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined
   var client: js.UndefOr[apolloDashClientLib.apolloDashClientMod.default[_]] = js.undefined
-  var context: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
+  var context: js.UndefOr[Context] = js.undefined
   var errorPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy] = js.undefined
   var fetchPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy] = js.undefined
   var notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,7 +29,7 @@ object MutationOpts {
   def apply[TData, TGraphQLVariables](
     awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined,
     client: apolloDashClientLib.apolloDashClientMod.default[_] = null,
-    context: stdLib.Record[java.lang.String, _] = null,
+    context: Context = null,
     errorPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy = null,
     fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy = null,
     notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined,

@@ -79,7 +79,7 @@ trait VictoryScatterProps
   /**
     * The size prop determines how to scale each data point
     */
-  var size: js.UndefOr[scala.Double | victoryLib.Anon_Data] = js.undefined
+  var size: js.UndefOr[scala.Double | victoryLib.Anon_Data | victoryLib.Anon_Active] = js.undefined
   /**
     * The style prop specifies styles for your VictoryScatter. Any valid inline style properties
     * will be applied. Height, width, and padding should be specified via the height,
@@ -122,7 +122,7 @@ object VictoryScatterProps {
     padding: scala.Double | victoryLib.Anon_BottomLeft = null,
     samples: scala.Int | scala.Double = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
-    size: scala.Double | victoryLib.Anon_Data = null,
+    size: scala.Double | victoryLib.Anon_Data | victoryLib.Anon_Active = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
     symbol: ScatterSymbolType | victoryLib.Anon_DataAny = null,

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/geolocation", JSImport.Default)
+@JSImport("ol/Geolocation", JSImport.Default)
 @js.native
 /**
   * @classdesc

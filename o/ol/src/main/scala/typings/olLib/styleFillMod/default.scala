@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api
   */
-@JSImport("ol/style/fill", JSImport.Default)
+@JSImport("ol/style/Fill", JSImport.Default)
 @js.native
 /**
   * @classdesc

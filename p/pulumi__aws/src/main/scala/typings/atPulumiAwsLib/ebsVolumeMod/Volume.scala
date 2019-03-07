@@ -21,39 +21,39 @@ class Volume protected ()
   /**
     * The volume ARN (e.g. arn:aws:ec2:us-east-1:0123456789012:volume/vol-59fcb34e).
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AZ where the EBS volume will exist.
     */
-  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val availabilityZone: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * If true, the disk will be encrypted.
     */
-  val encrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val encrypted: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The amount of IOPS to provision for the disk.
     */
-  val iops: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val iops: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The ARN for the KMS encryption key. When specifying `kms_key_id`, `encrypted` needs to be set to true.
     */
-  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The size of the drive in GiBs.
     */
-  val size: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val size: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * A snapshot to base the EBS volume off of.
     */
-  val snapshotId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val snapshotId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The type of EBS volume. Can be "standard", "gp2", "io1", "sc1" or "st1" (Default: "standard").
     */
-  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val `type`: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

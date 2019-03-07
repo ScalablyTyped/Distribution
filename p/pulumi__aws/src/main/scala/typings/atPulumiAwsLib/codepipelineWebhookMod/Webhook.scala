@@ -21,31 +21,31 @@ class Webhook protected ()
   /**
     * The type of authentication  to use. One of `IP`, `GITHUB_HMAC`, or `UNAUTHENTICATED`.
     */
-  val authentication: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val authentication: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth blocks are documented below.
     */
-  val authenticationConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllowedIpRange]] = js.native
+  val authenticationConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllowedIpRange]] = js.native
   /**
     * One or more `filter` blocks. Filter blocks are documented below.
     */
-  val filters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_JsonPath]] = js.native
+  val filters: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_JsonPath]] = js.native
   /**
     * The name of the webhook.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
     */
-  val targetAction: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val targetAction: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the pipeline.
     */
-  val targetPipeline: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val targetPipeline: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The CodePipeline webhook's URL. POST events to this endpoint to trigger the target.
     */
-  val url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val url: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

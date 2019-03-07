@@ -21,15 +21,15 @@ class Rule protected ()
   /**
     * The name or description for the Amazon CloudWatch metric of this rule.
     */
-  val metricName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val metricName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name or description of the rule.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The objects to include in a rule.
     */
-  val predicates: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DataId]]] = js.native
+  val predicates: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DataId]]] = js.native
 }
 
 /* static members */

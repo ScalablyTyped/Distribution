@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Autocomplete extends js.Object {
-  var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Autocomplete
+  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Autocomplete]
   var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete
-  def validator(value: js.Any, callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit
+  var validator: handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Autocomplete
 }
 
 object Autocomplete {
   @scala.inline
   def apply(
-    editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Autocomplete,
+    editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Autocomplete],
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete,
-    validator: js.Function2[js.Any, js.Function1[/* valid */ scala.Boolean, scala.Unit], scala.Unit]
+    validator: handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Autocomplete
   ): Autocomplete = {
     val __obj = js.Dynamic.literal(editor = editor, renderer = renderer, validator = validator)
   

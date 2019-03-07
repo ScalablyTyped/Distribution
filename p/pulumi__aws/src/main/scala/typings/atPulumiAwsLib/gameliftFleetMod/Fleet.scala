@@ -21,48 +21,48 @@ class Fleet protected ()
   /**
     * Fleet ARN.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * ID of the Gamelift Build to be deployed on the fleet.
     */
-  val buildId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val buildId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Human-readable description of the fleet.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. See below.
     */
-  val ec2InboundPermissions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FromPort]]] = js.native
+  val ec2InboundPermissions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FromPort]]] = js.native
   /**
     * Name of an EC2 instance type. e.g. `t2.micro`
     */
-  val ec2InstanceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val logPaths: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val ec2InstanceType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val logPaths: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * List of names of metric groups to add this fleet to. A metric group tracks metrics across all fleets in the group. Defaults to `default`.
     */
-  val metricGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val metricGroups: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The name of the fleet.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Game session protection policy to apply to all instances in this fleet. e.g. `FullProtection`. Defaults to `NoProtection`.
     */
-  val newGameSessionProtectionPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val newGameSessionProtectionPolicy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Operating system of the fleet's computing resources.
     */
-  val operatingSystem: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val operatingSystem: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Policy that limits the number of game sessions an individual player can create over a span of time for this fleet. See below.
     */
-  val resourceCreationLimitPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_NewGameSessionsPerCreator]] = js.native
+  val resourceCreationLimitPolicy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_NewGameSessionsPerCreator]] = js.native
   /**
     * Instructions for launching server processes on each instance in the fleet. See below.
     */
-  val runtimeConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_GameSessionActivationTimeoutSeconds]] = js.native
+  val runtimeConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_GameSessionActivationTimeoutSeconds]] = js.native
 }
 
 /* static members */

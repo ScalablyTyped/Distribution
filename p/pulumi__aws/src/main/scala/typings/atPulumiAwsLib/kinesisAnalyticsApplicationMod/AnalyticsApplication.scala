@@ -22,53 +22,53 @@ class AnalyticsApplication protected ()
   /**
     * The ARN of the Kinesis Analytics Appliation.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * The CloudWatch log stream options to monitor application errors.
     * See CloudWatch Logging Options below for more details.
     */
-  val cloudwatchLoggingOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdLogStreamArn]] = js.native
+  val cloudwatchLoggingOptions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdLogStreamArn]] = js.native
   /**
     * SQL Code to transform input data, and generate output.
     */
-  val code: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val code: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Timestamp when the application version was created.
     */
-  val createTimestamp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createTimestamp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Description of the application.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Input configuration of the application. See Inputs below for more details.
     */
-  val inputs: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdKinesisFirehose]] = js.native
+  val inputs: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdKinesisFirehose]] = js.native
   /**
     * The Timestamp when the application was last updated.
     */
-  val lastUpdateTimestamp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val lastUpdateTimestamp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the Kinesis Analytics Application.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Output destination configuration of the application. See Outputs below for more details.
     */
-  val outputs: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_IdKinesisFirehoseKinesisStream]]] = js.native
+  val outputs: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_IdKinesisFirehoseKinesisStream]]] = js.native
   /**
     * An S3 Reference Data Source for the application.
     * See Reference Data Sources below for more details.
     */
-  val referenceDataSources: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdS3]] = js.native
+  val referenceDataSources: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdS3]] = js.native
   /**
     * The Status of the application.
     */
-  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Version of the application.
     */
-  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val version: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

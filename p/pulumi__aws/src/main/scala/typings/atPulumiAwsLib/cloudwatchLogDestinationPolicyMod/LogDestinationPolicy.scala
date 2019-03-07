@@ -21,11 +21,11 @@ class LogDestinationPolicy protected ()
   /**
     * The policy document. This is a JSON formatted string.
     */
-  val accessPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val accessPolicy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A name for the subscription filter
     */
-  val destinationName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val destinationName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

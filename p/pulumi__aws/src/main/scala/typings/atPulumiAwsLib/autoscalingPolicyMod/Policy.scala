@@ -21,51 +21,51 @@ class Policy protected ()
   /**
     * Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
     */
-  val adjustmentType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val adjustmentType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN assigned by AWS to the scaling policy.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the autoscaling group.
     */
-  val autoscalingGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val autoscalingGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
     */
-  val cooldown: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val cooldown: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
     */
-  val estimatedInstanceWarmup: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val estimatedInstanceWarmup: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
     */
-  val metricAggregationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val minAdjustmentMagnitude: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val metricAggregationType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val minAdjustmentMagnitude: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * Use `min_adjustment_magnitude` instead.
     */
-  val minAdjustmentStep: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val minAdjustmentStep: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The name of the dimension.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
     */
-  val policyType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val policyType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The number of members by which to
     * scale, when the adjustment bounds are breached. A positive value scales
     * up. A negative value scales down.
     */
-  val scalingAdjustment: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
-  val stepAdjustments: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_MetricIntervalLowerBound]]] = js.native
+  val scalingAdjustment: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
+  val stepAdjustments: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_MetricIntervalLowerBound]]] = js.native
   /**
     * A target tracking policy. These have the following structure:
     */
-  val targetTrackingConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+  val targetTrackingConfiguration: atPulumiPulumiLib.outputMod.Output[
     js.UndefOr[
       atPulumiAwsLib.Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecification
     ]

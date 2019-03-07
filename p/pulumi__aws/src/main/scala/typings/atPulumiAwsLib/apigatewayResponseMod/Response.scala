@@ -21,23 +21,23 @@ class Response protected ()
   /**
     * A map specifying the templates used to transform the response body.
     */
-  val responseParameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val responseParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
     */
-  val responseTemplates: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val responseTemplates: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * The response type of the associated GatewayResponse.
     */
-  val responseType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val responseType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The string identifier of the associated REST API.
     */
-  val restApiId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val restApiId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The HTTP status code of the Gateway Response.
     */
-  val statusCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val statusCode: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

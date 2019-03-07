@@ -22,6 +22,7 @@ trait MultiInstanceLoopCharacteristics extends BaseElement {
 object MultiInstanceLoopCharacteristics {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     behavior: MultiInstanceBehaviour,
     completionCondition: Expression,
@@ -40,7 +41,7 @@ object MultiInstanceLoopCharacteristics {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): MultiInstanceLoopCharacteristics = {
-    val __obj = js.Dynamic.literal($type = $type, behavior = behavior, completionCondition = completionCondition, complexBehaviorDefinition = complexBehaviorDefinition, id = id, inputDataItem = inputDataItem, isSequential = isSequential, loopCardinality = loopCardinality, loopDataInputRef = loopDataInputRef, loopDataOutputRef = loopDataOutputRef, noneBehaviorEventRef = noneBehaviorEventRef, oneBehaviorEventRef = oneBehaviorEventRef, outputDataItem = outputDataItem)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, behavior = behavior, completionCondition = completionCondition, complexBehaviorDefinition = complexBehaviorDefinition, id = id, inputDataItem = inputDataItem, isSequential = isSequential, loopCardinality = loopCardinality, loopDataInputRef = loopDataInputRef, loopDataOutputRef = loopDataOutputRef, noneBehaviorEventRef = noneBehaviorEventRef, oneBehaviorEventRef = oneBehaviorEventRef, outputDataItem = outputDataItem)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

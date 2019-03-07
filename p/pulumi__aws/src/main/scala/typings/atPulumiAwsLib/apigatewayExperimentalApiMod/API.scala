@@ -14,6 +14,6 @@ class API protected ()
   var deployment: atPulumiAwsLib.atPulumiAwsMod.apigatewayNs.Deployment = js.native
   var restAPI: atPulumiAwsLib.atPulumiAwsMod.apigatewayNs.RestApi = js.native
   var stage: atPulumiAwsLib.atPulumiAwsMod.apigatewayNs.Stage = js.native
-  var url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  var url: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 

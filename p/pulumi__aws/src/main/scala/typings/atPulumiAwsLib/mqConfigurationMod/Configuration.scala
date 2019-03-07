@@ -21,37 +21,37 @@ class Configuration protected ()
   /**
     * The ARN of the configuration.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The broker configuration in XML format.
     * See [official docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html)
     * for supported parameters and format of the XML.
     */
-  val data: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val data: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The description of the configuration.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of broker engine.
     */
-  val engineType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The version of the broker engine.
     */
-  val engineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The latest revision of the configuration.
     */
-  val latestRevision: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val latestRevision: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The name of the configuration
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

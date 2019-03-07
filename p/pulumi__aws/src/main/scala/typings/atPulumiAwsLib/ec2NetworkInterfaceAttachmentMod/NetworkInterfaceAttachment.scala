@@ -21,23 +21,23 @@ class NetworkInterfaceAttachment protected ()
   /**
     * The ENI Attachment ID.
     */
-  val attachmentId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val attachmentId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Network interface index (int).
     */
-  val deviceIndex: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val deviceIndex: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Instance ID to attach.
     */
-  val instanceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instanceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * ENI ID to attach.
     */
-  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The status of the Network Interface Attachment.
     */
-  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

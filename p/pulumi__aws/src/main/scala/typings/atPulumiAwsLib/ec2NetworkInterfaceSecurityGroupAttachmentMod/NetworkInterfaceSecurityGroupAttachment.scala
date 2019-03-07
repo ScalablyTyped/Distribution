@@ -21,11 +21,11 @@ class NetworkInterfaceSecurityGroupAttachment protected ()
   /**
     * The ID of the network interface to attach to.
     */
-  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the security group.
     */
-  val securityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val securityGroupId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

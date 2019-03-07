@@ -21,31 +21,31 @@ class Repository protected ()
   /**
     * The ARN of the repository
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The URL to use for cloning the repository over HTTPS.
     */
-  val cloneUrlHttp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cloneUrlHttp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The URL to use for cloning the repository over SSH.
     */
-  val cloneUrlSsh: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cloneUrlSsh: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The default branch of the repository. The branch specified here needs to exist.
     */
-  val defaultBranch: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultBranch: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The description of the repository. This needs to be less than 1000 characters
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the repository
     */
-  val repositoryId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val repositoryId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name for the repository. This needs to be less than 100 characters.
     */
-  val repositoryName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val repositoryName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

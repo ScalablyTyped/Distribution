@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FindOneAndReplaceOption extends CommonOptions {
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   var projection: js.UndefOr[js.Object] = js.undefined
   var returnOriginal: js.UndefOr[scala.Boolean] = js.undefined
@@ -16,6 +17,7 @@ trait FindOneAndReplaceOption extends CommonOptions {
 object FindOneAndReplaceOption {
   @scala.inline
   def apply(
+    collation: CollationDocument = null,
     j: js.UndefOr[scala.Boolean] = js.undefined,
     maxTimeMS: scala.Int | scala.Double = null,
     projection: js.Object = null,
@@ -27,6 +29,7 @@ object FindOneAndReplaceOption {
     wtimeout: scala.Int | scala.Double = null
   ): FindOneAndReplaceOption = {
     val __obj = js.Dynamic.literal()
+    if (collation != null) __obj.updateDynamic("collation")(collation)
     if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection)

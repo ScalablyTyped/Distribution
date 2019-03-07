@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "amqp-connection-manager"
-version := "2.0-dt-20181206Z-162be0"
+version := "2.0-dt-20181206Z-f1d5ff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "amqplib" % "0.5-dt-20190212Z-a89138",
+  "org.scalablytyped" %%% "amqplib" % "0.5-dt-20190226Z-9c4f0f",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-865309",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
   "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

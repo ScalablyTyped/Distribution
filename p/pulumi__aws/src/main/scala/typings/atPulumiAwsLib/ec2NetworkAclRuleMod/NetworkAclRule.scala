@@ -21,47 +21,47 @@ class NetworkAclRule protected ()
   /**
     * The network range to allow or deny, in CIDR notation (for example 172.16.0.0/24 ).
     */
-  val cidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val cidrBlock: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Indicates whether this is an egress rule (rule is applied to traffic leaving the subnet). Default `false`.
     */
-  val egress: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val egress: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The from port to match.
     */
-  val fromPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val fromPort: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * ICMP protocol: The ICMP code. Required if specifying ICMP for the protocol. e.g. -1
     */
-  val icmpCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val icmpCode: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * ICMP protocol: The ICMP type. Required if specifying ICMP for the protocol. e.g. -1
     */
-  val icmpType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val icmpType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The IPv6 CIDR block to allow or deny.
     */
-  val ipv6CidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val ipv6CidrBlock: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the network ACL.
     */
-  val networkAclId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkAclId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The protocol. A value of -1 means all protocols.
     */
-  val protocol: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val protocol: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Indicates whether to allow or deny the traffic that matches the rule. Accepted values: `allow` | `deny`
     */
-  val ruleAction: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ruleAction: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The rule number for the entry (for example, 100). ACL entries are processed in ascending order by rule number.
     */
-  val ruleNumber: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val ruleNumber: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The to port to match.
     */
-  val toPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val toPort: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
 /* static members */

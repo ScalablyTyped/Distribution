@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   * @param options Layer options.
   * @api stable
   */
-@JSImport("ol/layer/layer", JSImport.Default)
+@JSImport("ol/layer/Layer", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.layerNs.Layer {

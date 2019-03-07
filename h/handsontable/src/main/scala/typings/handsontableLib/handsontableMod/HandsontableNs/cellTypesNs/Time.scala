@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Time extends js.Object {
-  var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text
+  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text]
   var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text
-  def validator(value: js.Any, callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit
+  var validator: handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Time
 }
 
 object Time {
   @scala.inline
   def apply(
-    editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text,
+    editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text],
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text,
-    validator: js.Function2[js.Any, js.Function1[/* valid */ scala.Boolean, scala.Unit], scala.Unit]
+    validator: handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Time
   ): Time = {
     val __obj = js.Dynamic.literal(editor = editor, renderer = renderer, validator = validator)
   

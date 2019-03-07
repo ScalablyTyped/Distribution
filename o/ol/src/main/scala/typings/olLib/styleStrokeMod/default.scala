@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api
   */
-@JSImport("ol/style/stroke", JSImport.Default)
+@JSImport("ol/style/Stroke", JSImport.Default)
 @js.native
 /**
   * @classdesc

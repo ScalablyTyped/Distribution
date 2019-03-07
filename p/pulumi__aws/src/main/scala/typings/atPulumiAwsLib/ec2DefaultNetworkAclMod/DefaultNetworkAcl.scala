@@ -22,32 +22,32 @@ class DefaultNetworkAcl protected ()
     * The Network ACL ID to manage. This
     * attribute is exported from `aws_vpc`, or manually found via the AWS Console.
     */
-  val defaultNetworkAclId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val defaultNetworkAclId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies an egress rule. Parameters defined below.
     */
-  val egress: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]]] = js.native
+  val egress: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
     */
-  val ingress: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]]] = js.native
+  val ingress: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]]] = js.native
   /**
     * The ID of the AWS account that owns the Default Network ACL
     */
-  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of Subnet IDs to apply the ACL to. See the
     * notes below on managing Subnets in the Default Network ACL
     */
-  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val subnetIds: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The ID of the associated VPC
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

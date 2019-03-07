@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/interaction/translate", JSImport.Default)
+@JSImport("ol/interaction/Translate", JSImport.Default)
 @js.native
 object defaultNs extends js.Object {
   /**

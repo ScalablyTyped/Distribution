@@ -21,55 +21,55 @@ class CachesIscsiVolume protected ()
   /**
     * Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether mutual CHAP is enabled for the iSCSI target.
     */
-  val chapEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val chapEnabled: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The Amazon Resource Name (ARN) of the gateway.
     */
-  val gatewayArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val gatewayArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Logical disk number.
     */
-  val lunNumber: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val lunNumber: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
     */
-  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The port used to communicate with iSCSI targets.
     */
-  val networkInterfacePort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val networkInterfacePort: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The snapshot ID of the snapshot to restore as the new cached volume. e.g. `snap-1122aabb`.
     */
-  val snapshotId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val snapshotId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN for an existing volume. Specifying this ARN makes the new volume into an exact copy of the specified existing volume's latest recovery point. The `volume_size_in_bytes` value for this new volume must be equal to or larger than the size of the existing volume, in bytes.
     */
-  val sourceVolumeArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val sourceVolumeArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
     */
-  val targetArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val targetArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
     */
-  val targetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val targetName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
     */
-  val volumeArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val volumeArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Volume ID, e.g. `vol-12345678`.
     */
-  val volumeId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val volumeId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The size of the volume in bytes.
     */
-  val volumeSizeInBytes: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val volumeSizeInBytes: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

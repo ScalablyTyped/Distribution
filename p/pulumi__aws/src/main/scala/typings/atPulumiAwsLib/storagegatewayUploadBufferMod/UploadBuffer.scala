@@ -21,11 +21,11 @@ class UploadBuffer protected ()
   /**
     * Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
     */
-  val diskId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val diskId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the gateway.
     */
-  val gatewayArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val gatewayArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

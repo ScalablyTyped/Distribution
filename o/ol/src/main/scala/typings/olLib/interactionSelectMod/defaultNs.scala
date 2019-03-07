@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/interaction/select", JSImport.Default)
+@JSImport("ol/interaction/Select", JSImport.Default)
 @js.native
 object defaultNs extends js.Object {
   /**

@@ -13,6 +13,7 @@ trait Message extends BaseElement {
 object Message {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     itemRef: ItemDefinition,
@@ -22,7 +23,7 @@ object Message {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Message = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, itemRef = itemRef, name = name)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, itemRef = itemRef, name = name)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

@@ -13,6 +13,7 @@ trait GlobalUserTask extends GlobalTask {
 object GlobalUserTask {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     implementation: java.lang.String,
@@ -27,7 +28,7 @@ object GlobalUserTask {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): GlobalUserTask = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, implementation = implementation, ioBinding = ioBinding, ioSpecification = ioSpecification, name = name, renderings = renderings, resources = resources, supportedInterfaceRef = supportedInterfaceRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, implementation = implementation, ioBinding = ioBinding, ioSpecification = ioSpecification, name = name, renderings = renderings, resources = resources, supportedInterfaceRef = supportedInterfaceRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

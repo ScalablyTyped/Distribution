@@ -58,59 +58,18 @@ object vueMod extends js.Object {
     value: T,
     groupId: java.lang.String
   ): java.lang.String = js.native
-  def select[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](name: java.lang.String, options: js.Array[T], value: T): T = js.native
-  def select[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](name: java.lang.String, options: js.Array[T], value: T, groupId: java.lang.String): T = js.native
-  def select[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](
+  def select(name: java.lang.String, options: js.Array[java.lang.String], value: java.lang.String): java.lang.String = js.native
+  def select(
     name: java.lang.String,
-    options: org.scalablytyped.runtime.StringDictionary[T | js.Array[T]],
-    value: T
-  ): T | js.Array[T] = js.native
-  def select[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](
-    name: java.lang.String,
-    options: org.scalablytyped.runtime.StringDictionary[T | js.Array[T]],
-    value: T,
+    options: js.Array[java.lang.String],
+    value: java.lang.String,
     groupId: java.lang.String
-  ): T | js.Array[T] = js.native
-  def select[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](
-    name: java.lang.String,
-    options: org.scalablytyped.runtime.StringDictionary[T | js.Array[T]],
-    value: js.Array[T]
-  ): T | js.Array[T] = js.native
-  def select[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](
-    name: java.lang.String,
-    options: org.scalablytyped.runtime.StringDictionary[T | js.Array[T]],
-    value: js.Array[T],
-    groupId: java.lang.String
-  ): T | js.Array[T] = js.native
-  @JSName("select")
-  def select_TSelectValueArray[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](
-    name: java.lang.String,
-    options: org.scalablytyped.runtime.StringDictionary[js.Array[T]],
-    value: js.Array[T]
-  ): js.Array[T] = js.native
-  @JSName("select")
-  def select_TSelectValueArray[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](
-    name: java.lang.String,
-    options: org.scalablytyped.runtime.StringDictionary[js.Array[T]],
-    value: js.Array[T],
-    groupId: java.lang.String
-  ): js.Array[T] = js.native
-  @JSName("select")
-  def select_TSelectValueT[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T], value: T): T = js.native
-  @JSName("select")
-  def select_TSelectValueT[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](
+  ): java.lang.String = js.native
+  def select[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T], value: T): T = js.native
+  def select[T](
     name: java.lang.String,
     options: org.scalablytyped.runtime.StringDictionary[T],
     value: T,
-    groupId: java.lang.String
-  ): T = js.native
-  @JSName("select")
-  def select_TSelectValueT[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T], value: js.Array[T]): T = js.native
-  @JSName("select")
-  def select_TSelectValueT[T /* <: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.SelectValue */](
-    name: java.lang.String,
-    options: org.scalablytyped.runtime.StringDictionary[T],
-    value: js.Array[T],
     groupId: java.lang.String
   ): T = js.native
   def text(name: java.lang.String): java.lang.String = js.native

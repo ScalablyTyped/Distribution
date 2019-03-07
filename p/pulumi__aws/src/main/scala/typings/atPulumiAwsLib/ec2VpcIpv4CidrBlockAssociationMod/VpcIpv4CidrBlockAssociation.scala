@@ -21,11 +21,11 @@ class VpcIpv4CidrBlockAssociation protected ()
   /**
     * The additional IPv4 CIDR block to associate with the VPC.
     */
-  val cidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC to make the association with.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

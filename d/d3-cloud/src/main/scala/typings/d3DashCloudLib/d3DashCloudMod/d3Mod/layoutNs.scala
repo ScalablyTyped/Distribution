@@ -10,6 +10,14 @@ import scala.scalajs.js.annotation._
 object layoutNs extends js.Object {
   @js.native
   trait Cloud[T /* <: d3DashCloudLib.d3DashCloudMod.d3Mod.layoutNs.cloudNs.Word */] extends js.Object {
+    /**
+      * If specified, sets the canvas generator function, which is used internally to draw text.
+      * When using Node.js, you will almost definitely override the default, e.g. using the canvas module.
+      * @param canvasGenerator should return a HTMLCanvasElement.The default is:  ()=>{document.createElement("canvas");}
+      * 
+      */
+    def canvas(): Cloud[T] = js.native
+    def canvas(canvasGenerator: js.Function0[stdLib.HTMLCanvasElement]): Cloud[T] = js.native
     def font(): js.Function2[/* datum */ T, /* index */ scala.Double, java.lang.String] = js.native
     def font(font: java.lang.String): Cloud[T] = js.native
     def font(font: js.Function2[/* datum */ T, /* index */ scala.Double, java.lang.String]): Cloud[T] = js.native
@@ -42,6 +50,14 @@ object layoutNs extends js.Object {
     def padding(): js.Function2[/* datum */ T, /* index */ scala.Double, scala.Double] = js.native
     def padding(padding: js.Function2[/* datum */ T, /* index */ scala.Double, scala.Double]): Cloud[T] = js.native
     def padding(padding: scala.Double): Cloud[T] = js.native
+    /**
+      * If specified, sets the internal random number generator,used for selecting the initial position of each word,
+      * and the clockwise/counterclockwise direction of the spiral for each word.
+      * 
+      * @param randomFunction should return a number in the range [0, 1).The default is Math.random.
+      */
+    def random(): Cloud[T] = js.native
+    def random(randomFunction: js.Function0[scala.Double]): Cloud[T] = js.native
     def rotate(): js.Function2[/* datum */ T, /* index */ scala.Double, scala.Double] = js.native
     def rotate(rotate: js.Function2[/* datum */ T, /* index */ scala.Double, scala.Double]): Cloud[T] = js.native
     def rotate(rotate: scala.Double): Cloud[T] = js.native

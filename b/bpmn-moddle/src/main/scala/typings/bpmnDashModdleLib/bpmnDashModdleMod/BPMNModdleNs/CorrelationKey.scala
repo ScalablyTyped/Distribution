@@ -13,6 +13,7 @@ trait CorrelationKey extends BaseElement {
 object CorrelationKey {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     correlationPropertyRef: CorrelationProperty,
     id: java.lang.String,
@@ -22,7 +23,7 @@ object CorrelationKey {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CorrelationKey = {
-    val __obj = js.Dynamic.literal($type = $type, correlationPropertyRef = correlationPropertyRef, id = id, name = name)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, correlationPropertyRef = correlationPropertyRef, id = id, name = name)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

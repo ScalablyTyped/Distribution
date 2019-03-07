@@ -21,39 +21,39 @@ class Endpoint protected ()
   /**
     * Information about the authentication method to be used to authenticate clients.
     */
-  val authenticationOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_ActiveDirectoryId] = js.native
+  val authenticationOptions: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_ActiveDirectoryId] = js.native
   /**
     * The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
     */
-  val clientCidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clientCidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Information about the client connection logging options.
     */
-  val connectionLogOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_CloudwatchLogGroup] = js.native
+  val connectionLogOptions: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_CloudwatchLogGroup] = js.native
   /**
     * Name of the repository.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The DNS name to be used by clients when establishing their VPN session.
     */
-  val dnsName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dnsName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Information about the DNS servers to be used for DNS resolution. A Client VPN endpoint can have up to two DNS servers. If no DNS server is specified, the DNS address of the VPC that is to be associated with Client VPN endpoint is used as the DNS server.
     */
-  val dnsServers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val dnsServers: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The ARN of the ACM server certificate.
     */
-  val serverCertificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val serverCertificateArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The current state of the Client VPN endpoint.
     */
-  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The transport protocol to be used by the VPN session. Default value is `udp`.
     */
-  val transportProtocol: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val transportProtocol: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

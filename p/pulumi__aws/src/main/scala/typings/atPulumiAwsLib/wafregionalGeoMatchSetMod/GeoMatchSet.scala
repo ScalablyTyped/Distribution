@@ -22,11 +22,11 @@ class GeoMatchSet protected ()
   /**
     * The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.
     */
-  val geoMatchConstraints: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TypeValueString]]] = js.native
+  val geoMatchConstraints: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TypeValueString]]] = js.native
   /**
     * The name or description of the Geo Match Set.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

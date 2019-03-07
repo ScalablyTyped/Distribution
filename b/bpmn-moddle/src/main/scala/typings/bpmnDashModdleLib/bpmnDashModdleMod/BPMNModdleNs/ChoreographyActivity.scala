@@ -15,6 +15,7 @@ trait ChoreographyActivity extends FlowNode {
 object ChoreographyActivity {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
     categoryValueRef: js.Array[CategoryValue],
@@ -33,7 +34,7 @@ object ChoreographyActivity {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): ChoreographyActivity = {
-    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, correlationKeys = correlationKeys, id = id, incoming = incoming, initiatingParticipantRef = initiatingParticipantRef, lanes = lanes, loopType = loopType, monitoring = monitoring, outgoing = outgoing, participantRef = participantRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, categoryValueRef = categoryValueRef, correlationKeys = correlationKeys, id = id, incoming = incoming, initiatingParticipantRef = initiatingParticipantRef, lanes = lanes, loopType = loopType, monitoring = monitoring, outgoing = outgoing, participantRef = participantRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait Numeric extends js.Object {
   var dataType: java.lang.String
-  var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Numeric
+  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Numeric]
   var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Numeric
-  def validator(value: js.Any, callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit
+  var validator: handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Numeric
 }
 
 object Numeric {
   @scala.inline
   def apply(
     dataType: java.lang.String,
-    editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Numeric,
+    editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Numeric],
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Numeric,
-    validator: js.Function2[js.Any, js.Function1[/* valid */ scala.Boolean, scala.Unit], scala.Unit]
+    validator: handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Numeric
   ): Numeric = {
     val __obj = js.Dynamic.literal(dataType = dataType, editor = editor, renderer = renderer, validator = validator)
   

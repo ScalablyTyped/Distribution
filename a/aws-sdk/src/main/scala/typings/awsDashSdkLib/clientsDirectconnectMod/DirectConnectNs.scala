@@ -18,7 +18,7 @@ object DirectConnectNs extends js.Object {
       */
     var connectionName: ConnectionName
     /**
-      * The ID of the interconnect on which the connection will be provisioned. For example, dxcon-456abc78.
+      * The ID of the interconnect on which the connection will be provisioned.
       */
     var interconnectId: InterconnectId
     /**
@@ -86,11 +86,11 @@ object DirectConnectNs extends js.Object {
   
   trait AssociateConnectionWithLagRequest extends js.Object {
     /**
-      * The ID of the connection. For example, dxcon-abc123.
+      * The ID of the connection.
       */
     var connectionId: ConnectionId
     /**
-      * The ID of the LAG with which to associate the connection. For example, dxlag-abc123.
+      * The ID of the LAG with which to associate the connection.
       */
     var lagId: LagId
   }
@@ -808,11 +808,11 @@ object DirectConnectNs extends js.Object {
   
   trait DisassociateConnectionFromLagRequest extends js.Object {
     /**
-      * The ID of the connection. For example, dxcon-abc123.
+      * The ID of the connection.
       */
     var connectionId: ConnectionId
     /**
-      * The ID of the LAG. For example, dxlag-abc123.
+      * The ID of the LAG.
       */
     var lagId: LagId
   }
@@ -957,6 +957,10 @@ object DirectConnectNs extends js.Object {
   }
   
   trait Location extends js.Object {
+    /**
+      * The available port speeds for the location.
+      */
+    var availablePortSpeeds: js.UndefOr[AvailablePortSpeeds] = js.undefined
     /**
       * The code for the location.
       */
@@ -2242,6 +2246,7 @@ object DirectConnectNs extends js.Object {
   type ASN = scala.Double
   type AddressFamily = _AddressFamily | java.lang.String
   type AmazonAddress = java.lang.String
+  type AvailablePortSpeeds = js.Array[PortSpeed]
   type AwsDevice = java.lang.String
   type AwsDeviceV2 = java.lang.String
   type BGPAuthKey = java.lang.String
@@ -2289,6 +2294,7 @@ object DirectConnectNs extends js.Object {
   type OwnerAccount = java.lang.String
   type PaginationToken = java.lang.String
   type PartnerName = java.lang.String
+  type PortSpeed = java.lang.String
   type ProviderName = java.lang.String
   type Region = java.lang.String
   type ResourceArn = java.lang.String

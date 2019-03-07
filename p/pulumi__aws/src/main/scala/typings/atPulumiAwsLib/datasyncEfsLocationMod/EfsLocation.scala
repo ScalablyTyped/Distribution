@@ -21,24 +21,24 @@ class EfsLocation protected ()
   /**
     * Amazon Resource Name (ARN) of the DataSync Location.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Configuration block containing EC2 configurations for connecting to the EFS File System.
     */
-  val ec2Config: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_SecurityGroupArns] = js.native
+  val ec2Config: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_SecurityGroupArns] = js.native
   /**
     * Amazon Resource Name (ARN) of EFS File System.
     */
-  val efsFileSystemArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val efsFileSystemArn: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * Subdirectory to perform actions as source or destination. Default `/`.
     */
-  val subdirectory: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val subdirectory: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
-  val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val uri: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

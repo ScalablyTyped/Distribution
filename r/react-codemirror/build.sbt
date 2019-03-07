@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-codemirror"
-version := "v1.0.0-dt-20180803Z-b421fd"
+version := "v1.0.0-dt-20180803Z-2336a7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-60f3ea",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20180417Z-756eb7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-f7f3c1",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-d5c6e1",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
   "org.scalablytyped" %%% "tern" % "0.23-dt-20190301Z-8200db")
 publishArtifact in packageDoc := false

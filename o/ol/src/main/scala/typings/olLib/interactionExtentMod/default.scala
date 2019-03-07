@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @param options Options.
   * @api stable
   */
-@JSImport("ol/interaction/extent", JSImport.Default)
+@JSImport("ol/interaction/Extent", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.interactionNs.Extent {

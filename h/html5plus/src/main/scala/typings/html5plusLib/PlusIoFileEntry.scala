@@ -1,0 +1,172 @@
+package typings
+package html5plusLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * 文件系统中的文件对象，用于管理特定的本地文件
+  * 
+  * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+  */
+@js.native
+trait PlusIoFileEntry extends js.Object {
+  /**
+    * 文件操作对象所属的文件系统对象，参考FileSystem
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var fileSystem: js.UndefOr[PlusIoFileSystem] = js.native
+  /**
+    * 文件操作对象的完整路径，文件系统的绝对路径
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var fullPath: js.UndefOr[java.lang.String] = js.native
+  /**
+    * 文件操作对象是否为目录，FileEntry对象固定其值为false
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var isDirectory: js.UndefOr[scala.Boolean] = js.native
+  /**
+    * 文件操作对象的是否为文件，FileEntry对象固定其值为true
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var isFile: js.UndefOr[scala.Boolean] = js.native
+  /**
+    * 文件操作对象的名称，不包括路径
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  var name: js.UndefOr[java.lang.String] = js.native
+  /**
+    * 拷贝文件
+    * 以下情况拷贝文件将会导致失败：
+    * 	要拷贝到的目标目录无效；
+    * 	要拷贝到的目标路径被其它文件占用；
+    * 	拷贝文件成功通过succesCB回调返回，失败则通过errorCB返回。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def copyTo(): scala.Unit = js.native
+  def copyTo(parent: PlusIoDirectoryEntry): scala.Unit = js.native
+  def copyTo(parent: PlusIoDirectoryEntry, newName: java.lang.String): scala.Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: java.lang.String,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, scala.Unit]
+  ): scala.Unit = js.native
+  def copyTo(
+    parent: PlusIoDirectoryEntry,
+    newName: java.lang.String,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, scala.Unit],
+    errorCB: js.Function1[/* result */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * 获取文件关联的写文件操作对象FileWriter
+    * 获取写文件操作对象成功通过succesCB回调返回，失败则通过errorCB返回。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def createWriter(): scala.Unit = js.native
+  def createWriter(succesCB: js.Function1[/* result */ PlusIoFileWriter, scala.Unit]): scala.Unit = js.native
+  def createWriter(
+    succesCB: js.Function1[/* result */ PlusIoFileWriter, scala.Unit],
+    errorCB: js.Function1[/* result */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * 获取文件数据对象
+    * 获取文件数据对象成功通过succesCB回调返回，失败则通过errorCB返回。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def file(): scala.Unit = js.native
+  def file(succesCB: js.Function1[/* result */ PlusIoFile, scala.Unit]): scala.Unit = js.native
+  def file(
+    succesCB: js.Function1[/* result */ PlusIoFile, scala.Unit],
+    errorCB: js.Function1[/* result */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * 获取文件的属性信息
+    * 用于获取文件的属性信息。
+    * 	获取属性信息成功通过succesCB回调返回，失败则通过errorCB返回。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def getMetadata(): scala.Unit = js.native
+  def getMetadata(succesCB: js.Function1[/* result */ PlusIoMetadata, scala.Unit]): scala.Unit = js.native
+  def getMetadata(
+    succesCB: js.Function1[/* result */ PlusIoMetadata, scala.Unit],
+    errorCB: js.Function1[/* result */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * 获取文件所属的父目录
+    * 获取父目录成功通过succesCB回调返回，失败则通过errorCB返回。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def getParent(): scala.Unit = js.native
+  def getParent(succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, scala.Unit]): scala.Unit = js.native
+  def getParent(
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, scala.Unit],
+    errorCB: js.Function1[/* result */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * 移动文件
+    * 以下情况移动目录将会导致失败：
+    * 	要移动到的目标目录无效；
+    * 	要移动到的目标路径被其它文件占用；
+    * 	移动文件成功通过succesCB回调返回，失败则通过errorCB返回。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def moveTo(): scala.Unit = js.native
+  def moveTo(parent: PlusIoDirectoryEntry): scala.Unit = js.native
+  def moveTo(parent: PlusIoDirectoryEntry, newName: java.lang.String): scala.Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: java.lang.String,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, scala.Unit]
+  ): scala.Unit = js.native
+  def moveTo(
+    parent: PlusIoDirectoryEntry,
+    newName: java.lang.String,
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, scala.Unit],
+    errorCB: js.Function1[/* result */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * 删除文件
+    * 删除文件成功通过succesCB回调返回，失败则通过errorCB返回。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def remove(): scala.Unit = js.native
+  def remove(succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, scala.Unit]): scala.Unit = js.native
+  def remove(
+    succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, scala.Unit],
+    errorCB: js.Function1[/* result */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * 获取文件路径转换为本地路径URL地址
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def toLocalURL(): java.lang.String = js.native
+  /**
+    * 获取文件路径转换为网络路径URL地址
+    * URL地址格式为以“http://localhost:13131/”开头的网络路径。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def toRemoteURL(): java.lang.String = js.native
+  /**
+    * 获取文件路径转换为URL地址
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
+    */
+  def toURL(): java.lang.String = js.native
+}
+

@@ -13,6 +13,7 @@ trait Signal extends BaseElement {
 object Signal {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     name: java.lang.String,
@@ -22,7 +23,7 @@ object Signal {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Signal = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, name = name, structureRef = structureRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, name = name, structureRef = structureRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

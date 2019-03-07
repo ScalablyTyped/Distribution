@@ -21,23 +21,23 @@ class DeliveryChannel protected ()
   /**
     * The name of the delivery channel. Defaults to `default`. Changing it recreates the resource.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the S3 bucket used to store the configuration history.
     */
-  val s3BucketName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val s3BucketName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The prefix for the specified S3 bucket.
     */
-  val s3KeyPrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val s3KeyPrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Options for how AWS Config delivers configuration snapshots. See below
     */
-  val snapshotDeliveryProperties: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryFrequency]] = js.native
+  val snapshotDeliveryProperties: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryFrequency]] = js.native
   /**
     * The ARN of the SNS topic that AWS Config delivers notifications to.
     */
-  val snsTopicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val snsTopicArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

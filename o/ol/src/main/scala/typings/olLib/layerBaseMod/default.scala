@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * @param options Layer options.
   * @api stable
   */
-@JSImport("ol/layer/base", JSImport.Default)
+@JSImport("ol/layer/Base", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.layerNs.Base {

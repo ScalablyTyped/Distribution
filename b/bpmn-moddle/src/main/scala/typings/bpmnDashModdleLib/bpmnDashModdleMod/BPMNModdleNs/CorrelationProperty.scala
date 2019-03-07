@@ -14,6 +14,7 @@ trait CorrelationProperty extends BaseElement {
 object CorrelationProperty {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     correlationPropertyRetrievalExpression: CorrelationPropertyRetrievalExpression,
     id: java.lang.String,
@@ -24,7 +25,7 @@ object CorrelationProperty {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CorrelationProperty = {
-    val __obj = js.Dynamic.literal($type = $type, correlationPropertyRetrievalExpression = correlationPropertyRetrievalExpression, id = id, name = name)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, correlationPropertyRetrievalExpression = correlationPropertyRetrievalExpression, id = id, name = name)
     __obj.updateDynamic("type")(`type`)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)

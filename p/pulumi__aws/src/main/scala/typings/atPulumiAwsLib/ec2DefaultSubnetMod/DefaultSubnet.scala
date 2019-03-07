@@ -18,37 +18,37 @@ class DefaultSubnet protected ()
     */
   def this(name: java.lang.String, args: DefaultSubnetArgs) = this()
   def this(name: java.lang.String, args: DefaultSubnetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val assignIpv6AddressOnCreation: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
-  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val availabilityZoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val assignIpv6AddressOnCreation: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
+  val availabilityZone: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val availabilityZoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The CIDR block for the subnet.
     */
-  val cidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IPv6 CIDR block.
     */
-  val ipv6CidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val ipv6CidrBlockAssociationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipv6CidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val ipv6CidrBlockAssociationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specify true to indicate
     * that instances launched into the subnet should be assigned
     * a public IP address.
     */
-  val mapPublicIpOnLaunch: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val mapPublicIpOnLaunch: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The ID of the AWS account that owns the subnet.
     */
-  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The VPC ID.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

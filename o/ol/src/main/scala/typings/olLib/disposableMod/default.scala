@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/disposable", JSImport.Default)
+@JSImport("ol/Disposable", JSImport.Default)
 @js.native
 /**
   * Objects that need to clean up after themselves.

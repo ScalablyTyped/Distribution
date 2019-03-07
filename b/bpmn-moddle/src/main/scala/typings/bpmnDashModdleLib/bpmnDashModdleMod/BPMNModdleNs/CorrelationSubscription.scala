@@ -13,6 +13,7 @@ trait CorrelationSubscription extends BaseElement {
 object CorrelationSubscription {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     correlationKeyRef: CorrelationKey,
     correlationPropertyBinding: js.Array[CorrelationKey],
@@ -22,7 +23,7 @@ object CorrelationSubscription {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CorrelationSubscription = {
-    val __obj = js.Dynamic.literal($type = $type, correlationKeyRef = correlationKeyRef, correlationPropertyBinding = correlationPropertyBinding, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, correlationKeyRef = correlationKeyRef, correlationPropertyBinding = correlationPropertyBinding, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

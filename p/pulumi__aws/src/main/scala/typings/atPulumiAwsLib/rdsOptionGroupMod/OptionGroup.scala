@@ -21,35 +21,35 @@ class OptionGroup protected ()
   /**
     * The ARN of the db option group.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the name of the engine that this option group should be associated with.
     */
-  val engineName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the major version of the engine that this option group should be associated with.
     */
-  val majorEngineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val majorEngineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Name of the setting.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.
     */
-  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val namePrefix: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The description of the option group. Defaults to "Managed by Terraform".
     */
-  val optionGroupDescription: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val optionGroupDescription: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of Options to apply.
     */
-  val options: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DbSecurityGroupMemberships]]] = js.native
+  val options: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DbSecurityGroupMemberships]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

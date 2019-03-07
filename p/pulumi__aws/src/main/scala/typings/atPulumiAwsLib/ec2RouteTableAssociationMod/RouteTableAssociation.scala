@@ -21,11 +21,11 @@ class RouteTableAssociation protected ()
   /**
     * The ID of the routing table to associate with.
     */
-  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The subnet ID to create an association.
     */
-  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

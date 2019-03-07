@@ -12,6 +12,7 @@ trait SignalEventDefinition extends BaseElement {
 object SignalEventDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     singalRef: Signal,
@@ -20,7 +21,7 @@ object SignalEventDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): SignalEventDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, singalRef = singalRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, singalRef = singalRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

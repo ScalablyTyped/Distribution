@@ -15,6 +15,7 @@ trait Relationship extends BaseElement {
 object Relationship {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     direction: RelationshipDirection,
     id: java.lang.String,
@@ -26,7 +27,7 @@ object Relationship {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Relationship = {
-    val __obj = js.Dynamic.literal($type = $type, direction = direction, id = id, source = source, target = target)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, direction = direction, id = id, source = source, target = target)
     __obj.updateDynamic("type")(`type`)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)

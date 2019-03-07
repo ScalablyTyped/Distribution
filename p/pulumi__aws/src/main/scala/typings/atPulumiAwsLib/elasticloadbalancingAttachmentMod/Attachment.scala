@@ -21,11 +21,11 @@ class Attachment protected ()
   /**
     * The name of the ELB.
     */
-  val elb: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val elb: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Instance ID to place in the ELB pool.
     */
-  val instance: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instance: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

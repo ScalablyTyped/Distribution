@@ -21,70 +21,70 @@ class DomainName protected ()
   /**
     * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificate_name`, `certificate_body`, `certificate_chain`, `certificate_private_key`, `regional_certificate_arn`, and `regional_certificate_name`.
     */
-  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The certificate issued for the domain name
     * being registered, in PEM format. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
     * `regional_certificate_name`.
     */
-  val certificateBody: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateBody: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The certificate for the CA that issued the
     * certificate, along with any intermediate CA certificates required to
     * create an unbroken chain to a certificate trusted by the intended API clients. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`,
     * `regional_certificate_arn`, and `regional_certificate_name`.
     */
-  val certificateChain: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateChain: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The unique name to use when registering this
     * certificate as an IAM server certificate. Conflicts with `certificate_arn`, `regional_certificate_arn`, and
     * `regional_certificate_name`. Required if `certificate_arn` is not set.
     */
-  val certificateName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The private key associated with the
     * domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint configuration type. Conflicts with `certificate_arn`, `regional_certificate_arn`, and `regional_certificate_name`.
     */
-  val certificatePrivateKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificatePrivateKey: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The upload date associated with the domain certificate.
     */
-  val certificateUploadDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val certificateUploadDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The hostname created by Cloudfront to represent
     * the distribution that implements this domain name mapping.
     */
-  val cloudfrontDomainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cloudfrontDomainName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * For convenience, the hosted zone ID (`Z2FDTNDATAQYW2`)
     * that can be used to create a Route53 alias record for the distribution.
     */
-  val cloudfrontZoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cloudfrontZoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The fully-qualified domain name to register
     */
-  val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domainName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Configuration block defining API endpoint information including type. Defined below.
     */
-  val endpointConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Types] = js.native
+  val endpointConfiguration: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Types] = js.native
   /**
     * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when a regional domain name is desired. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and `certificate_private_key`.
     */
-  val regionalCertificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val regionalCertificateArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The user-friendly name of the certificate that will be used by regional endpoint for this domain name. Conflicts with `certificate_arn`, `certificate_name`, `certificate_body`, `certificate_chain`, and
     * `certificate_private_key`.
     */
-  val regionalCertificateName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val regionalCertificateName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The hostname for the custom domain's regional endpoint.
     */
-  val regionalDomainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val regionalDomainName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The hosted zone ID that can be used to create a Route53 alias record for the regional endpoint.
     */
-  val regionalZoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val regionalZoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

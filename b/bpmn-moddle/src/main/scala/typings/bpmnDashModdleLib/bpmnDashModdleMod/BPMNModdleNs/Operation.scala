@@ -16,6 +16,7 @@ trait Operation extends BaseElement {
 object Operation {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     errorRef: ErrorElement,
     id: java.lang.String,
@@ -28,7 +29,7 @@ object Operation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Operation = {
-    val __obj = js.Dynamic.literal($type = $type, errorRef = errorRef, id = id, implementationRef = implementationRef, inMessageRef = inMessageRef, name = name, outMessageRef = outMessageRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, errorRef = errorRef, id = id, implementationRef = implementationRef, inMessageRef = inMessageRef, name = name, outMessageRef = outMessageRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

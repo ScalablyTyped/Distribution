@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/mapbrowserevent", JSImport.Default)
+@JSImport("ol/MapBrowserEvent", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.MapBrowserEvent {

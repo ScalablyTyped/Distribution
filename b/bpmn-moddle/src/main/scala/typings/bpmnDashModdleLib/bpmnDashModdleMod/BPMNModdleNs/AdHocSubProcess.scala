@@ -14,6 +14,7 @@ trait AdHocSubProcess extends SubProcess {
 object AdHocSubProcess {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     artifacts: js.Array[Artifact],
     auditing: Auditing,
@@ -48,7 +49,7 @@ object AdHocSubProcess {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): AdHocSubProcess = {
-    val __obj = js.Dynamic.literal($type = $type, artifacts = artifacts, auditing = auditing, boundaryEventRefs = boundaryEventRefs, cancelRemainingInstances = cancelRemainingInstances, categoryValueRef = categoryValueRef, completionCondition = completionCondition, completionQuantity = completionQuantity, dataInputAssociations = dataInputAssociations, dataOutputAssociations = dataOutputAssociations, default = default, flowElements = flowElements, id = id, incoming = incoming, incomingConversationLinks = incomingConversationLinks, ioSpecification = ioSpecification, isForCompensation = isForCompensation, laneSets = laneSets, lanes = lanes, loopCharacteristics = loopCharacteristics, monitoring = monitoring, ordering = ordering, outgoing = outgoing, outgoingConversationLinks = outgoingConversationLinks, properties = properties, resources = resources, startQuantity = startQuantity, triggeredByEvent = triggeredByEvent)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, artifacts = artifacts, auditing = auditing, boundaryEventRefs = boundaryEventRefs, cancelRemainingInstances = cancelRemainingInstances, categoryValueRef = categoryValueRef, completionCondition = completionCondition, completionQuantity = completionQuantity, dataInputAssociations = dataInputAssociations, dataOutputAssociations = dataOutputAssociations, default = default, flowElements = flowElements, id = id, incoming = incoming, incomingConversationLinks = incomingConversationLinks, ioSpecification = ioSpecification, isForCompensation = isForCompensation, laneSets = laneSets, lanes = lanes, loopCharacteristics = loopCharacteristics, monitoring = monitoring, ordering = ordering, outgoing = outgoing, outgoingConversationLinks = outgoingConversationLinks, properties = properties, resources = resources, startQuantity = startQuantity, triggeredByEvent = triggeredByEvent)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

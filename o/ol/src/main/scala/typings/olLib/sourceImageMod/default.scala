@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param options Single image source options.
   * @api
   */
-@JSImport("ol/source/image", JSImport.Default)
+@JSImport("ol/source/Image", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.sourceNs.Image {

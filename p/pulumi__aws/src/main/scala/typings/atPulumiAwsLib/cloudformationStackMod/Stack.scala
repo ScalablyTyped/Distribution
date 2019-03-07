@@ -23,63 +23,63 @@ class Stack protected ()
     * A list of capabilities.
     * Valid values: `CAPABILITY_IAM` or `CAPABILITY_NAMED_IAM`
     */
-  val capabilities: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val capabilities: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Set to true to disable rollback of the stack if stack creation failed.
     * Conflicts with `on_failure`.
     */
-  val disableRollback: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val disableRollback: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The ARN of an IAM role that AWS CloudFormation assumes to create the stack. If you don't specify a value, AWS CloudFormation uses the role that was previously associated with the stack. If no role is available, AWS CloudFormation uses a temporary session that is generated from your user credentials.
     */
-  val iamRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val iamRoleArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Stack name.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of SNS topic ARNs to publish stack related events.
     */
-  val notificationArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val notificationArns: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Action to be taken if stack creation fails. This must be
     * one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `disable_rollback`.
     */
-  val onFailure: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val onFailure: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A map of outputs from the stack.
     */
-  val outputs: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val outputs: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * A map of Parameter structures that specify input parameters for the stack.
     */
-  val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val parameters: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * Structure containing the stack policy body.
     * Conflicts w/ `policy_url`.
     */
-  val policyBody: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policyBody: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Location of a file containing the stack policy.
     * Conflicts w/ `policy_body`.
     */
-  val policyUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val policyUrl: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of tags to associate with this stack.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Structure containing the template body (max size: 51,200 bytes).
     */
-  val templateBody: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val templateBody: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Location of a file containing the template body (max size: 460,800 bytes).
     */
-  val templateUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val templateUrl: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The amount of time that can pass before the stack status becomes `CREATE_FAILED`.
     */
-  val timeoutInMinutes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val timeoutInMinutes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
 /* static members */

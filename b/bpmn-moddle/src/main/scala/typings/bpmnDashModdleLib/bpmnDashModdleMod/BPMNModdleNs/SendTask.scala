@@ -14,6 +14,7 @@ trait SendTask extends Task {
 object SendTask {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
     boundaryEventRefs: js.Array[BoundaryEvent],
@@ -44,7 +45,7 @@ object SendTask {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): SendTask = {
-    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, boundaryEventRefs = boundaryEventRefs, categoryValueRef = categoryValueRef, completionQuantity = completionQuantity, dataInputAssociations = dataInputAssociations, dataOutputAssociations = dataOutputAssociations, default = default, id = id, implementation = implementation, incoming = incoming, incomingConversationLinks = incomingConversationLinks, ioSpecification = ioSpecification, isForCompensation = isForCompensation, lanes = lanes, loopCharacteristics = loopCharacteristics, messageRef = messageRef, monitoring = monitoring, operationRef = operationRef, outgoing = outgoing, outgoingConversationLinks = outgoingConversationLinks, properties = properties, resources = resources, startQuantity = startQuantity)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, boundaryEventRefs = boundaryEventRefs, categoryValueRef = categoryValueRef, completionQuantity = completionQuantity, dataInputAssociations = dataInputAssociations, dataOutputAssociations = dataOutputAssociations, default = default, id = id, implementation = implementation, incoming = incoming, incomingConversationLinks = incomingConversationLinks, ioSpecification = ioSpecification, isForCompensation = isForCompensation, lanes = lanes, loopCharacteristics = loopCharacteristics, messageRef = messageRef, monitoring = monitoring, operationRef = operationRef, outgoing = outgoing, outgoingConversationLinks = outgoingConversationLinks, properties = properties, resources = resources, startQuantity = startQuantity)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

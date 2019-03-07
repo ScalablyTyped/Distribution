@@ -21,11 +21,11 @@ class VpnConnectionRoute protected ()
   /**
     * The CIDR block associated with the local subnet of the customer network.
     */
-  val destinationCidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val destinationCidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPN connection.
     */
-  val vpnConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpnConnectionId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

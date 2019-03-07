@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.BaseElement because var conflicts: $type. Inlined id, documentation, extensionDefinitions, extensionElements, $attrs */ trait ConversationNode extends InteractionNode {
+- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.BaseElement because var conflicts: $parent, $type. Inlined id, documentation, extensionDefinitions, extensionElements, $attrs */ trait ConversationNode extends InteractionNode {
   /**
     * Attributes that aren't defined by the BPMN Spec such
     * as Camunda properties
@@ -38,6 +38,7 @@ import scala.scalajs.js.annotation._
 object ConversationNode {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     correlationKeys: js.Array[CorrelationKey],
     id: java.lang.String,
@@ -51,7 +52,7 @@ object ConversationNode {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ConversationNode = {
-    val __obj = js.Dynamic.literal($type = $type, correlationKeys = correlationKeys, id = id, incomingConversationLinks = incomingConversationLinks, messageFlowRefs = messageFlowRefs, name = name, outgoingConversationLinks = outgoingConversationLinks, participantRefs = participantRefs)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, correlationKeys = correlationKeys, id = id, incomingConversationLinks = incomingConversationLinks, messageFlowRefs = messageFlowRefs, name = name, outgoingConversationLinks = outgoingConversationLinks, participantRefs = participantRefs)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

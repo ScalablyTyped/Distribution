@@ -21,37 +21,37 @@ class NetworkInterface protected ()
   /**
     * Block to define the attachment of the ENI. Documented below.
     */
-  val attachments: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AttachmentIdDeviceIndex]] = js.native
+  val attachments: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_AttachmentIdDeviceIndex]] = js.native
   /**
     * A description for the network interface.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val privateDnsName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val privateIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val privateDnsName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val privateIp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of private IPs to assign to the ENI.
     */
-  val privateIps: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val privateIps: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Number of private IPs to assign to the ENI.
     */
-  val privateIpsCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val privateIpsCount: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * List of security group IDs to assign to the ENI.
     */
-  val securityGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val securityGroups: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Whether to enable source destination checking for the ENI. Default true.
     */
-  val sourceDestCheck: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val sourceDestCheck: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Subnet ID to create the ENI in.
     */
-  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

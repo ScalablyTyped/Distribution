@@ -21,47 +21,47 @@ class HostedPublicVirtualInterface protected ()
   /**
     * The address family for the BGP peer. `ipv4 ` or `ipv6`.
     */
-  val addressFamily: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val addressFamily: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
     */
-  val amazonAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val amazonAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the virtual interface.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
-  val bgpAsn: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val bgpAsn: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The authentication key for BGP configuration.
     */
-  val bgpAuthKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bgpAuthKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the Direct Connect connection (or LAG) on which to create the virtual interface.
     */
-  val connectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val connectionId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IPv4 CIDR destination address to which Amazon should send traffic. Required for IPv4 BGP peers.
     */
-  val customerAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val customerAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name for the virtual interface.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AWS account that will own the new virtual interface.
     */
-  val ownerAccountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ownerAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of routes to be advertised to the AWS network in this region.
     */
-  val routeFilterPrefixes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val routeFilterPrefixes: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The VLAN ID.
     */
-  val vlan: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val vlan: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

@@ -22,6 +22,11 @@ trait CarouselProps extends js.Object {
     */
   var autoplayInterval: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Autoplay cycles through slide indexes in reverse
+    * @default false
+    */
+  var autoplayReverse: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Hook to be called before a slide is changed
     * @param currentSlide Index of the current slide
     * @param endSlide Index of the last slide
@@ -155,9 +160,17 @@ trait CarouselProps extends js.Object {
     */
   var speed: js.UndefOr[scala.Double] = js.undefined
   /**
+    * style object
+    */
+  var style: js.UndefOr[CSSProperties] = js.undefined
+  /**
     * Enable touch swipe/dragging
     */
   var swiping: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Set the way slides transition from one to the next
+    */
+  var transitionMode: js.UndefOr[CarouselTransitionModeProp] = js.undefined
   /**
     * Enable the slides to transition vertically
     */
@@ -186,6 +199,7 @@ object CarouselProps {
     afterSlide: js.Function1[/* prevSlide */ scala.Double, scala.Unit] = null,
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
     autoplayInterval: scala.Int | scala.Double = null,
+    autoplayReverse: js.UndefOr[scala.Boolean] = js.undefined,
     beforeSlide: js.Function2[/* currentSlide */ scala.Double, /* endSlide */ scala.Double, scala.Unit] = null,
     cellAlign: CarouselCellAlignProp = null,
     cellSpacing: scala.Int | scala.Double = null,
@@ -215,7 +229,9 @@ object CarouselProps {
     slidesToScroll: CarouselSlidesToScrollProp = null,
     slidesToShow: scala.Int | scala.Double = null,
     speed: scala.Int | scala.Double = null,
+    style: CSSProperties = null,
     swiping: js.UndefOr[scala.Boolean] = js.undefined,
+    transitionMode: CarouselTransitionModeProp = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined,
     width: java.lang.String = null,
     withoutControls: js.UndefOr[scala.Boolean] = js.undefined,
@@ -225,6 +241,7 @@ object CarouselProps {
     if (afterSlide != null) __obj.updateDynamic("afterSlide")(afterSlide)
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
     if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplayReverse)) __obj.updateDynamic("autoplayReverse")(autoplayReverse)
     if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(beforeSlide)
     if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign)
     if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
@@ -254,7 +271,9 @@ object CarouselProps {
     if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])
     if (slidesToShow != null) __obj.updateDynamic("slidesToShow")(slidesToShow.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(swiping)) __obj.updateDynamic("swiping")(swiping)
+    if (transitionMode != null) __obj.updateDynamic("transitionMode")(transitionMode)
     if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
     if (width != null) __obj.updateDynamic("width")(width)
     if (!js.isUndefined(withoutControls)) __obj.updateDynamic("withoutControls")(withoutControls)

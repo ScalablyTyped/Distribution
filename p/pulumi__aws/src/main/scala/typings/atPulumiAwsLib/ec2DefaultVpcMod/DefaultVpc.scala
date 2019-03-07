@@ -22,70 +22,70 @@ class DefaultVpc protected ()
   /**
     * Amazon Resource Name (ARN) of VPC
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether or not an Amazon-provided IPv6 CIDR
     * block with a /56 prefix length for the VPC was assigned
     */
-  val assignGeneratedIpv6CidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val assignGeneratedIpv6CidrBlock: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The CIDR block of the VPC
     */
-  val cidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the network ACL created by default on VPC creation
     */
-  val defaultNetworkAclId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val defaultNetworkAclId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the route table created by default on VPC creation
     */
-  val defaultRouteTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val defaultRouteTableId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the security group created by default on VPC creation
     */
-  val defaultSecurityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val dhcpOptionsId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val defaultSecurityGroupId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val dhcpOptionsId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A boolean flag to enable/disable ClassicLink
     * for the VPC. Only valid in regions and accounts that support EC2 Classic.
     * See the [ClassicLink documentation][1] for more information. Defaults false.
     */
-  val enableClassiclink: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
-  val enableClassiclinkDnsSupport: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val enableClassiclink: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
+  val enableClassiclinkDnsSupport: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
     */
-  val enableDnsHostnames: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val enableDnsHostnames: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * A boolean flag to enable/disable DNS support in the VPC. Defaults true.
     */
-  val enableDnsSupport: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableDnsSupport: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Tenancy of instances spin up within VPC.
     */
-  val instanceTenancy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instanceTenancy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The association ID for the IPv6 CIDR block of the VPC
     */
-  val ipv6AssociationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipv6AssociationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IPv6 CIDR block of the VPC
     */
-  val ipv6CidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipv6CidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the main route table associated with
     * this VPC. Note that you can change a VPC's main route table by using an
     * [`aws_main_route_table_association`](https://www.terraform.io/docs/providers/aws/r/main_route_table_assoc.html)
     */
-  val mainRouteTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val mainRouteTableId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the AWS account that owns the VPC.
     */
-  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

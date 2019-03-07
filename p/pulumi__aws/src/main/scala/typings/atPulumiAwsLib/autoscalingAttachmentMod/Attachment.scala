@@ -21,15 +21,15 @@ class Attachment protected ()
   /**
     * The ARN of an ALB Target Group.
     */
-  val albTargetGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val albTargetGroupArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Name of ASG to associate with the ELB.
     */
-  val autoscalingGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val autoscalingGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the ELB.
     */
-  val elb: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val elb: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

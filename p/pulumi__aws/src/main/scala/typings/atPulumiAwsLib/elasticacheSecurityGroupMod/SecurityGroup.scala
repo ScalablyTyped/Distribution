@@ -21,16 +21,16 @@ class SecurityGroup protected ()
   /**
     * description for the cache security group. Defaults to "Managed by Terraform".
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name for the cache security group. This value is stored as a lowercase string.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of EC2 security group names to be
     * authorized for ingress to the cache security group
     */
-  val securityGroupNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val securityGroupNames: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
 }
 
 /* static members */

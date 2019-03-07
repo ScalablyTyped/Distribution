@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.FlowElementsContainer because var conflicts: $attrs, $type, documentation, extensionDefinitions, extensionElements, id. Inlined laneSets, flowElements */ trait SubChoreography extends ChoreographyActivity {
+- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.FlowElementsContainer because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined laneSets, flowElements */ trait SubChoreography extends ChoreographyActivity {
   var artifacts: js.Array[Artifact]
   var flowElements: js.Array[FlowElement]
   var laneSets: js.Array[LaneSet]
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 object SubChoreography {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     artifacts: js.Array[Artifact],
     auditing: Auditing,
@@ -36,7 +37,7 @@ object SubChoreography {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): SubChoreography = {
-    val __obj = js.Dynamic.literal($type = $type, artifacts = artifacts, auditing = auditing, categoryValueRef = categoryValueRef, correlationKeys = correlationKeys, flowElements = flowElements, id = id, incoming = incoming, initiatingParticipantRef = initiatingParticipantRef, laneSets = laneSets, lanes = lanes, loopType = loopType, monitoring = monitoring, outgoing = outgoing, participantRef = participantRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, artifacts = artifacts, auditing = auditing, categoryValueRef = categoryValueRef, correlationKeys = correlationKeys, flowElements = flowElements, id = id, incoming = incoming, initiatingParticipantRef = initiatingParticipantRef, laneSets = laneSets, lanes = lanes, loopType = loopType, monitoring = monitoring, outgoing = outgoing, participantRef = participantRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

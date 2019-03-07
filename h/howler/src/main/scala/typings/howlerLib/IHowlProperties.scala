@@ -22,6 +22,7 @@ trait IHowlProperties extends js.Object {
   var onrate: js.UndefOr[js.Function1[/* soundId */ scala.Double, scala.Unit]] = js.undefined
   var onseek: js.UndefOr[js.Function1[/* soundId */ scala.Double, scala.Unit]] = js.undefined
   var onstop: js.UndefOr[js.Function1[/* soundId */ scala.Double, scala.Unit]] = js.undefined
+  var onunlock: js.UndefOr[js.Function1[/* soundId */ scala.Double, scala.Unit]] = js.undefined
   var onvolume: js.UndefOr[js.Function1[/* soundId */ scala.Double, scala.Unit]] = js.undefined
   var pool: js.UndefOr[scala.Double] = js.undefined
   var preload: js.UndefOr[scala.Boolean] = js.undefined
@@ -52,6 +53,7 @@ object IHowlProperties {
     onrate: js.Function1[/* soundId */ scala.Double, scala.Unit] = null,
     onseek: js.Function1[/* soundId */ scala.Double, scala.Unit] = null,
     onstop: js.Function1[/* soundId */ scala.Double, scala.Unit] = null,
+    onunlock: js.Function1[/* soundId */ scala.Double, scala.Unit] = null,
     onvolume: js.Function1[/* soundId */ scala.Double, scala.Unit] = null,
     pool: scala.Int | scala.Double = null,
     preload: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,6 +79,7 @@ object IHowlProperties {
     if (onrate != null) __obj.updateDynamic("onrate")(onrate)
     if (onseek != null) __obj.updateDynamic("onseek")(onseek)
     if (onstop != null) __obj.updateDynamic("onstop")(onstop)
+    if (onunlock != null) __obj.updateDynamic("onunlock")(onunlock)
     if (onvolume != null) __obj.updateDynamic("onvolume")(onvolume)
     if (pool != null) __obj.updateDynamic("pool")(pool.asInstanceOf[js.Any])
     if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)

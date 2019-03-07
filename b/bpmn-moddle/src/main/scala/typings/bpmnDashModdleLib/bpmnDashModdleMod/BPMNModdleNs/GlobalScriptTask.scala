@@ -13,6 +13,7 @@ trait GlobalScriptTask extends GlobalTask {
 object GlobalScriptTask {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     ioBinding: InputOutputBinding,
@@ -27,7 +28,7 @@ object GlobalScriptTask {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): GlobalScriptTask = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, ioBinding = ioBinding, ioSpecification = ioSpecification, name = name, resources = resources, script = script, scriptLanguage = scriptLanguage, supportedInterfaceRef = supportedInterfaceRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, ioBinding = ioBinding, ioSpecification = ioSpecification, name = name, resources = resources, script = script, scriptLanguage = scriptLanguage, supportedInterfaceRef = supportedInterfaceRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

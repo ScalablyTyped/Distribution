@@ -21,44 +21,44 @@ class Gateway protected ()
   /**
     * Gateway activation key during resource creation. Conflicts with `gateway_ip_address`. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
     */
-  val activationKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val activationKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Amazon Resource Name (ARN) of the gateway.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of the gateway.
     */
-  val gatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val gatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activation_key`. Gateway must be accessible on port 80 from where Terraform is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
     */
-  val gatewayIpAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val gatewayIpAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the gateway.
     */
-  val gatewayName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val gatewayName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Time zone for the gateway. The time zone is of the format "GMT", "GMT-hr:mm", or "GMT+hr:mm". For example, `GMT-4:00` indicates the time is 4 hours behind GMT. The time zone is used, for example, for scheduling snapshots and your gateway's maintenance schedule.
     */
-  val gatewayTimezone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val gatewayTimezone: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Type of the gateway. The default value is `STORED`. Valid values: `CACHED`, `FILE_S3`, `STORED`, `VTL`.
     */
-  val gatewayType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val mediumChangerType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val gatewayType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val mediumChangerType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Nested argument with Active Directory domain join information for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `ActiveDirectory` authentication SMB file shares. More details below.
     */
-  val smbActiveDirectorySettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DomainNamePassword]] = js.native
+  val smbActiveDirectorySettings: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DomainNamePassword]] = js.native
   /**
     * Guest password for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `GuestAccess` authentication SMB file shares. Terraform can only detect drift of the existence of a guest password, not its actual value from the gateway. Terraform can however update the password with changing the argument.
     */
-  val smbGuestPassword: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val smbGuestPassword: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Type of tape drive to use for tape gateway. Terraform cannot detect drift of this argument. Valid values: `IBM-ULT3580-TD5`.
     */
-  val tapeDriveType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val tapeDriveType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

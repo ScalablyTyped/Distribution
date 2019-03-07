@@ -21,27 +21,27 @@ class NatGateway protected ()
   /**
     * The Allocation ID of the Elastic IP address for the gateway.
     */
-  val allocationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val allocationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ENI ID of the network interface created by the NAT gateway.
     */
-  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The private IP address of the NAT Gateway.
     */
-  val privateIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val privateIp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The public IP address of the NAT Gateway.
     */
-  val publicIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val publicIp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Subnet ID of the subnet in which to place the gateway.
     */
-  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -61,6 +61,9 @@ object howlerLibStrings {
   sealed trait unloaded extends js.Object
   
   @js.native
+  sealed trait unlock extends js.Object
+  
+  @js.native
   sealed trait volume extends js.Object
   
   @scala.inline
@@ -99,6 +102,8 @@ object howlerLibStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
   def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
+  @scala.inline
+  def unlock: unlock = "unlock".asInstanceOf[unlock]
   @scala.inline
   def volume: volume = "volume".asInstanceOf[volume]
 }

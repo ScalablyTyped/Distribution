@@ -21,71 +21,71 @@ class Endpoint protected ()
   /**
     * The Amazon Resource Name (ARN) for the certificate.
     */
-  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val certificateArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the endpoint database.
     */
-  val databaseName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val databaseName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Amazon Resource Name (ARN) for the endpoint.
     */
-  val endpointArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val endpointArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The database endpoint identifier.
     */
-  val endpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val endpointId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The type of endpoint. Can be one of `source | target`.
     */
-  val endpointType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val endpointType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The type of engine for the endpoint. Can be one of `aurora | azuredb | docdb | dynamodb | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.
     */
-  val engineName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Additional attributes associated with the connection. For available attributes see [Using Extra Connection Attributes with AWS Database Migration Service](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.ConnectionAttributes.html).
     */
-  val extraConnectionAttributes: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val extraConnectionAttributes: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kms_key_arn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
     */
-  val kmsKeyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Settings for the source MongoDB endpoint. Available settings are `auth_type` (default: `PASSWORD`), `auth_mechanism` (default: `DEFAULT`), `nesting_level` (default: `NONE`), `extract_doc_id` (default: `false`), `docs_to_investigate` (default: `1000`) and `auth_source` (default: `admin`). For more details, see [Using MongoDB as a Source for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MongoDB.html).
     */
-  val mongodbSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AuthMechanism]] = js.native
+  val mongodbSettings: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AuthMechanism]] = js.native
   /**
     * The password to be used to login to the endpoint database.
     */
-  val password: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val password: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The port used by the endpoint database.
     */
-  val port: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val port: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * Settings for the target S3 endpoint. Available settings are `service_access_role_arn`, `external_table_definition`, `csv_row_delimiter` (default: `\\n`), `csv_delimiter` (default: `,`), `bucket_folder`, `bucket_name` and `compression_type` (default: `NONE`). For more details, see [Using Amazon S3 as a Target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.S3.html).
     */
-  val s3Settings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketFolder]] = js.native
+  val s3Settings: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketFolder]] = js.native
   /**
     * The host name of the server.
     */
-  val serverName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val serverName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Amazon Resource Name (ARN) used by the service access IAM role for dynamodb endpoints.
     */
-  val serviceAccessRole: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val serviceAccessRole: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The SSL mode to use for the connection. Can be one of `none | require | verify-ca | verify-full`
     */
-  val sslMode: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sslMode: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The user name to be used to login to the endpoint database.
     */
-  val username: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val username: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

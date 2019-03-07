@@ -154,10 +154,10 @@ trait Collection[TSchema] extends js.Object {
   def findOneAndDelete(filter: FilterQuery[TSchema]): js.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#findOneAndDelete */
   def findOneAndDelete(filter: FilterQuery[TSchema], callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]): scala.Unit = js.native
-  def findOneAndDelete(filter: FilterQuery[TSchema], options: mongodbLib.Anon_MaxTimeMSProjection): js.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
+  def findOneAndDelete(filter: FilterQuery[TSchema], options: FindOneAndDeleteOption): js.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
   def findOneAndDelete(
     filter: FilterQuery[TSchema],
-    options: mongodbLib.Anon_MaxTimeMSProjection,
+    options: FindOneAndDeleteOption,
     callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]
   ): scala.Unit = js.native
   def findOneAndReplace(filter: FilterQuery[TSchema], replacement: js.Object): js.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native

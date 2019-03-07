@@ -14,6 +14,7 @@ trait Escalation extends BaseElement {
 object Escalation {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     escalationCode: java.lang.String,
     id: java.lang.String,
@@ -24,7 +25,7 @@ object Escalation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Escalation = {
-    val __obj = js.Dynamic.literal($type = $type, escalationCode = escalationCode, id = id, name = name, structureRef = structureRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, escalationCode = escalationCode, id = id, name = name, structureRef = structureRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

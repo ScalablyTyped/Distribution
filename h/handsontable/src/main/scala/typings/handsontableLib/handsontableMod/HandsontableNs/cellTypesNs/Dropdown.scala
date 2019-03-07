@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Dropdown extends js.Object {
-  var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Dropdown
+  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Dropdown]
   var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete
-  def validator(value: js.Any, callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit
+  var validator: handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Autocomplete
 }
 
 object Dropdown {
   @scala.inline
   def apply(
-    editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Dropdown,
+    editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Dropdown],
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete,
-    validator: js.Function2[js.Any, js.Function1[/* valid */ scala.Boolean, scala.Unit], scala.Unit]
+    validator: handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Autocomplete
   ): Dropdown = {
     val __obj = js.Dynamic.literal(editor = editor, renderer = renderer, validator = validator)
   

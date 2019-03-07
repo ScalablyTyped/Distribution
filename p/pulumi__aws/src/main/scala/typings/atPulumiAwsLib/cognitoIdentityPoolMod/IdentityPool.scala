@@ -21,36 +21,36 @@ class IdentityPool protected ()
   /**
     * Whether the identity pool supports unauthenticated logins or not.
     */
-  val allowUnauthenticatedIdentities: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val allowUnauthenticatedIdentities: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The ARN of the identity pool.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * An array of Amazon Cognito Identity user pools and their client IDs.
     */
-  val cognitoIdentityProviders: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ClientId]]] = js.native
+  val cognitoIdentityProviders: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ClientId]]] = js.native
   /**
     * The "domain" by which Cognito will refer to your users. This name acts as a placeholder that allows your
     * backend and the Cognito service to communicate about the developer provider.
     */
-  val developerProviderName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val developerProviderName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Cognito Identity Pool name.
     */
-  val identityPoolName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val identityPoolName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of OpendID Connect provider ARNs.
     */
-  val openidConnectProviderArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val openidConnectProviderArns: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.
     */
-  val samlProviderArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val samlProviderArns: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Key-Value pairs mapping provider names to provider app IDs.
     */
-  val supportedLoginProviders: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val supportedLoginProviders: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
 }
 
 /* static members */

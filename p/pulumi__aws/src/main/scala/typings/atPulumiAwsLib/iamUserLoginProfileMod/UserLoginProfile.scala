@@ -21,31 +21,31 @@ class UserLoginProfile protected ()
   /**
     * The encrypted password, base64 encoded.
     */
-  val encryptedPassword: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val encryptedPassword: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The fingerprint of the PGP key used to encrypt
     * the password
     */
-  val keyFingerprint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val keyFingerprint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The length of the generated
     * password.
     */
-  val passwordLength: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val passwordLength: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * Whether the
     * user should be forced to reset the generated password on first login.
     */
-  val passwordResetRequired: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val passwordResetRequired: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Either a base-64 encoded PGP public key, or a
     * keybase username in the form `keybase:username`.
     */
-  val pgpKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val pgpKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IAM user's name.
     */
-  val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val user: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

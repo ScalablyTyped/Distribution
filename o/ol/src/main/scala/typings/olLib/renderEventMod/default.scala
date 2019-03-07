@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @param opt_context Context.
   * @param opt_glContext WebGL Context.
   */
-@JSImport("ol/render/event", JSImport.Default)
+@JSImport("ol/render/Event", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.renderNs.Event {

@@ -22,46 +22,46 @@ class AccountPasswordPolicy protected ()
   /**
     * Whether to allow users to change their own password
     */
-  val allowUsersToChangePassword: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val allowUsersToChangePassword: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Indicates whether passwords in the account expire.
     * Returns `true` if `max_password_age` contains a value greater than `0`.
     * Returns `false` if it is `0` or _not present_.
     */
-  val expirePasswords: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val expirePasswords: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Whether users are prevented from setting a new password after their password has expired
     * (i.e. require administrator reset)
     */
-  val hardExpiry: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val hardExpiry: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The number of days that an user password is valid.
     */
-  val maxPasswordAge: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val maxPasswordAge: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Minimum length to require for user passwords.
     */
-  val minimumPasswordLength: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val minimumPasswordLength: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The number of previous passwords that users are prevented from reusing.
     */
-  val passwordReusePrevention: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val passwordReusePrevention: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Whether to require lowercase characters for user passwords.
     */
-  val requireLowercaseCharacters: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val requireLowercaseCharacters: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Whether to require numbers for user passwords.
     */
-  val requireNumbers: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val requireNumbers: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Whether to require symbols for user passwords.
     */
-  val requireSymbols: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val requireSymbols: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Whether to require uppercase characters for user passwords.
     */
-  val requireUppercaseCharacters: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val requireUppercaseCharacters: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
 }
 
 /* static members */

@@ -16,6 +16,7 @@ trait BoundaryEvent extends CatchEvent {
 object BoundaryEvent {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     attachedToRef: Activity,
     auditing: Auditing,
@@ -40,7 +41,7 @@ object BoundaryEvent {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): BoundaryEvent = {
-    val __obj = js.Dynamic.literal($type = $type, attachedToRef = attachedToRef, auditing = auditing, cancelActivity = cancelActivity, categoryValueRef = categoryValueRef, dataOutputAssociations = dataOutputAssociations, dataOutputs = dataOutputs, eventDefinitions = eventDefinitions, id = id, incoming = incoming, incomingConversationLinks = incomingConversationLinks, lanes = lanes, monitoring = monitoring, outgoing = outgoing, outgoingConversationLinks = outgoingConversationLinks, outputSet = outputSet, parallelMultiple = parallelMultiple, properties = properties)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, attachedToRef = attachedToRef, auditing = auditing, cancelActivity = cancelActivity, categoryValueRef = categoryValueRef, dataOutputAssociations = dataOutputAssociations, dataOutputs = dataOutputs, eventDefinitions = eventDefinitions, id = id, incoming = incoming, incomingConversationLinks = incomingConversationLinks, lanes = lanes, monitoring = monitoring, outgoing = outgoing, outgoingConversationLinks = outgoingConversationLinks, outputSet = outputSet, parallelMultiple = parallelMultiple, properties = properties)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

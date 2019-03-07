@@ -21,15 +21,15 @@ class AggregateAuthorization protected ()
   /**
     * Account ID
     */
-  val accountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val accountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the authorization
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Region
     */
-  val region: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val region: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

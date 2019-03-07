@@ -21,31 +21,31 @@ class GraphQLApi protected ()
   /**
     * The ARN
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The authentication type. Valid values: `API_KEY`, `AWS_IAM`, `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`
     */
-  val authenticationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val authenticationType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Nested argument containing logging configuration. Defined below.
     */
-  val logConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CloudwatchLogsRoleArn]] = js.native
+  val logConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CloudwatchLogsRoleArn]] = js.native
   /**
     * A user-supplied name for the GraphqlApi.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
-  val openidConnectConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AuthTtl]] = js.native
+  val openidConnectConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AuthTtl]] = js.native
   /**
     * Map of URIs associated with the API. e.g. `uris["GRAPHQL"] = https://ID.appsync-api.REGION.amazonaws.com/graphql`
     */
-  val uris: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+  val uris: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   /**
     * The Amazon Cognito User Pool configuration. Defined below.
     */
-  val userPoolConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AppIdClientRegex]] = js.native
+  val userPoolConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AppIdClientRegex]] = js.native
 }
 
 /* static members */

@@ -22,11 +22,11 @@ class XssMatchSet protected ()
   /**
     * The name of the set
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The parts of web requests that you want to inspect for cross-site scripting attacks.
     */
-  val xssMatchTuples: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchTextTransformation]]] = js.native
+  val xssMatchTuples: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchTextTransformation]]] = js.native
 }
 
 /* static members */

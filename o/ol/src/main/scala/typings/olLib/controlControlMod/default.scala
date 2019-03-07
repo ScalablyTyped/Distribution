@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   * @param options Control options.
   * @api stable
   */
-@JSImport("ol/control/control", JSImport.Default)
+@JSImport("ol/control/Control", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.controlNs.Control {

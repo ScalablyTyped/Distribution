@@ -11,7 +11,7 @@ trait Howl extends js.Object {
   def duration(id: scala.Double): scala.Double = js.native
   def fade(from: scala.Double, to: scala.Double, duration: scala.Double): this.type = js.native
   def fade(from: scala.Double, to: scala.Double, duration: scala.Double, id: scala.Double): this.type = js.native
-  def load(): scala.Unit = js.native
+  def load(): this.type = js.native
   def loop(): this.type = js.native
   def loop(loop: scala.Boolean): this.type = js.native
   def loop(loop: scala.Boolean, id: scala.Double): this.type = js.native
@@ -134,6 +134,17 @@ trait Howl extends js.Object {
   @JSName("on")
   def on_stop(
     event: howlerLib.howlerLibStrings.stop,
+    callback: js.Function1[/* soundId */ scala.Double, scala.Unit],
+    id: scala.Double
+  ): this.type = js.native
+  @JSName("on")
+  def on_unlock(
+    event: howlerLib.howlerLibStrings.unlock,
+    callback: js.Function1[/* soundId */ scala.Double, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_unlock(
+    event: howlerLib.howlerLibStrings.unlock,
     callback: js.Function1[/* soundId */ scala.Double, scala.Unit],
     id: scala.Double
   ): this.type = js.native
@@ -261,6 +272,17 @@ trait Howl extends js.Object {
   @JSName("once")
   def once_stop(
     event: howlerLib.howlerLibStrings.stop,
+    callback: js.Function1[/* soundId */ scala.Double, scala.Unit],
+    id: scala.Double
+  ): this.type = js.native
+  @JSName("once")
+  def once_unlock(
+    event: howlerLib.howlerLibStrings.unlock,
+    callback: js.Function1[/* soundId */ scala.Double, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_unlock(
+    event: howlerLib.howlerLibStrings.unlock,
     callback: js.Function1[/* soundId */ scala.Double, scala.Unit],
     id: scala.Double
   ): this.type = js.native

@@ -21,24 +21,24 @@ class S3Location protected ()
   /**
     * Amazon Resource Name (ARN) of the DataSync Location.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Amazon Resource Name (ARN) of the S3 Bucket.
     */
-  val s3BucketArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val s3BucketArn: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketAccessRoleArn] = js.native
+  val s3Config: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_BucketAccessRoleArn] = js.native
   /**
     * Prefix to perform actions as source or destination.
     */
-  val subdirectory: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val subdirectory: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
-  val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val uri: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

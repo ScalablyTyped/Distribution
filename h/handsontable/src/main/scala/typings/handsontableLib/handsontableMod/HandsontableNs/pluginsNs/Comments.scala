@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Comments extends Base {
   var contextMenuEvent: scala.Boolean = js.native
   var displayDelay: scala.Double = js.native
-  var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.CommentEditor = js.native
+  var editor: CommentEditor = js.native
   var eventManager: EventManager = js.native
   var mouseDown: scala.Boolean = js.native
   var range: CommentsRangeObject = js.native

@@ -21,6 +21,10 @@ trait TwitchExt extends js.Object {
   	 */
   var bits: TwitchExtBits = js.native
   /**
+  	 * @see https://dev.twitch.tv/docs/extensions/reference/#helper-configuration
+  	 */
+  var configuration: TwitchExtConfiguration = js.native
+  /**
   	 * This encodes the environment. For external users, this is always production.
   	 */
   var environment: twitchDashExtLib.twitchDashExtLibStrings.production = js.native

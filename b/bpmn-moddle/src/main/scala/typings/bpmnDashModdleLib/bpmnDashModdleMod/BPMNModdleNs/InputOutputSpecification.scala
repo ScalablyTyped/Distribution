@@ -15,6 +15,7 @@ trait InputOutputSpecification extends BaseElement {
 object InputOutputSpecification {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     dataInputs: js.Array[DataInput],
     dataOutputs: js.Array[DataOutput],
@@ -26,7 +27,7 @@ object InputOutputSpecification {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): InputOutputSpecification = {
-    val __obj = js.Dynamic.literal($type = $type, dataInputs = dataInputs, dataOutputs = dataOutputs, id = id, inputSets = inputSets, outputSets = outputSets)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, dataInputs = dataInputs, dataOutputs = dataOutputs, id = id, inputSets = inputSets, outputSets = outputSets)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

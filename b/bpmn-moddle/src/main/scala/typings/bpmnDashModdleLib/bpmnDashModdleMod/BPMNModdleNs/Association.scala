@@ -14,6 +14,7 @@ trait Association extends BaseElement {
 object Association {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     associationDirection: AssociationDirection,
     id: java.lang.String,
@@ -24,7 +25,7 @@ object Association {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Association = {
-    val __obj = js.Dynamic.literal($type = $type, associationDirection = associationDirection, id = id, sourceRef = sourceRef, targetRef = targetRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, associationDirection = associationDirection, id = id, sourceRef = sourceRef, targetRef = targetRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

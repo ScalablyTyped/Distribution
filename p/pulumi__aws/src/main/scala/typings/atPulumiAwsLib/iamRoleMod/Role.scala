@@ -21,52 +21,52 @@ class Role protected ()
   /**
     * The Amazon Resource Name (ARN) specifying the role.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The policy that grants an entity permission to assume the role.
     */
-  val assumeRolePolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val assumeRolePolicy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The creation date of the IAM role.
     */
-  val createDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The description of the role.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Specifies to force detaching any policies the role has before destroying it. Defaults to `false`.
     */
-  val forceDetachPolicies: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val forceDetachPolicies: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 1 hour to 12 hours.
     */
-  val maxSessionDuration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val maxSessionDuration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The name of the role. If omitted, Terraform will assign a random, unique name.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val namePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The path to the role.
     * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
     */
-  val path: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val path: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN of the policy that is used to set the permissions boundary for the role.
     */
-  val permissionsBoundary: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val permissionsBoundary: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Key-value mapping of tags for the IAM role
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The stable and unique string identifying the role.
     */
-  val uniqueId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val uniqueId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

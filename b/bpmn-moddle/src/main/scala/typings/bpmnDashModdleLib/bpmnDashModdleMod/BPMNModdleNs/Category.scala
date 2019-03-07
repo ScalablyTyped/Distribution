@@ -13,6 +13,7 @@ trait Category extends BaseElement {
 object Category {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     categoryValue: CategoryValue,
     id: java.lang.String,
@@ -22,7 +23,7 @@ object Category {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Category = {
-    val __obj = js.Dynamic.literal($type = $type, categoryValue = categoryValue, id = id, name = name)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, categoryValue = categoryValue, id = id, name = name)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

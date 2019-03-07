@@ -21,37 +21,37 @@ class Rule protected ()
   /**
     * The ARN of the config rule
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Description of the rule
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A string in JSON format that is passed to the AWS Config rule Lambda function.
     */
-  val inputParameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val inputParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The frequency that you want AWS Config to run evaluations for a rule that
     * is triggered periodically. If specified, requires `message_type` to be `ScheduledNotification`.
     */
-  val maximumExecutionFrequency: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val maximumExecutionFrequency: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the rule
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the config rule
     */
-  val ruleId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ruleId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Scope defines which resources can trigger an evaluation for the rule as documented below.
     */
-  val scope: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ComplianceResourceId]] = js.native
+  val scope: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ComplianceResourceId]] = js.native
   /**
     * Source specifies the rule owner, the rule identifier, and the notifications that cause
     * the function to evaluate your AWS resources as documented below.
     */
-  val source: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Owner] = js.native
+  val source: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Owner] = js.native
 }
 
 /* static members */

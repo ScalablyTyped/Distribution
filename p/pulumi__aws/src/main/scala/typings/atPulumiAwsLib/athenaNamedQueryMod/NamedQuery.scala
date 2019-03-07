@@ -21,19 +21,19 @@ class NamedQuery protected ()
   /**
     * The database to which the query belongs.
     */
-  val database: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val database: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A brief explanation of the query. Maximum length of 1024.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The plain language name for the query. Maximum length of 128.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The text of the query itself. In other words, all query statements. Maximum length of 262144.
     */
-  val query: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val query: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

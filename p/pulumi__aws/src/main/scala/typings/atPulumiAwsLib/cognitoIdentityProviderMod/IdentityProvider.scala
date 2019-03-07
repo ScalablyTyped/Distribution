@@ -21,27 +21,27 @@ class IdentityProvider protected ()
   /**
     * The map of attribute mapping of user pool attributes. [AttributeMapping in AWS API documentation](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-AttributeMapping)
     */
-  val attributeMapping: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val attributeMapping: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The list of identity providers.
     */
-  val idpIdentifiers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val idpIdentifiers: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The map of identity details, such as access token
     */
-  val providerDetails: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val providerDetails: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * The provider name
     */
-  val providerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val providerName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The provider type.  [See AWS API for valid values](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-ProviderType)
     */
-  val providerType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val providerType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The user pool id
     */
-  val userPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val userPoolId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

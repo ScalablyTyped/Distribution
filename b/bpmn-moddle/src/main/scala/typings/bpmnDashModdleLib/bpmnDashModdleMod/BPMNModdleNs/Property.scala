@@ -12,6 +12,7 @@ trait Property extends ItemAwareElement {
 object Property {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     dataState: DataState,
     id: java.lang.String,
@@ -22,7 +23,7 @@ object Property {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Property = {
-    val __obj = js.Dynamic.literal($type = $type, dataState = dataState, id = id, itemSubjectRef = itemSubjectRef, name = name)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, dataState = dataState, id = id, itemSubjectRef = itemSubjectRef, name = name)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

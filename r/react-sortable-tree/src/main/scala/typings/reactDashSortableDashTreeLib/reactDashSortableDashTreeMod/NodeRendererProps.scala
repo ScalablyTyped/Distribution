@@ -12,9 +12,9 @@ trait NodeRendererProps extends js.Object {
   var canDrop: js.UndefOr[scala.Boolean] = js.native
   var className: js.UndefOr[java.lang.String] = js.native
   @JSName("connectDragPreview")
-  var connectDragPreview_Original: reactDashDndLib.libInterfacesMod.ConnectDragPreview = js.native
+  var connectDragPreview_Original: reactDashDndLib.libCjsInterfacesMod.ConnectDragPreview = js.native
   @JSName("connectDragSource")
-  var connectDragSource_Original: reactDashDndLib.libInterfacesMod.ConnectDragSource = js.native
+  var connectDragSource_Original: reactDashDndLib.libCjsInterfacesMod.ConnectDragSource = js.native
   var didDrop: scala.Boolean = js.native
   var draggedNode: js.UndefOr[TreeItem] = js.native
   var endDrag: js.Any = js.native
@@ -40,18 +40,18 @@ trait NodeRendererProps extends js.Object {
   var treeId: java.lang.String = js.native
   var treeIndex: scala.Double = js.native
   def connectDragPreview[Props](elementOrNode: reactLib.Element): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
-  def connectDragPreview[Props](elementOrNode: reactLib.Element, options: reactDashDndLib.libInterfacesMod.DragPreviewOptions): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
+  def connectDragPreview[Props](elementOrNode: reactLib.Element, options: reactDashDndLib.libCjsInterfacesMod.DragPreviewOptions): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
   def connectDragPreview[Props](elementOrNode: reactLib.reactMod.ReactNs.ReactElement[Props]): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
   def connectDragPreview[Props](
     elementOrNode: reactLib.reactMod.ReactNs.ReactElement[Props],
-    options: reactDashDndLib.libInterfacesMod.DragPreviewOptions
+    options: reactDashDndLib.libCjsInterfacesMod.DragPreviewOptions
   ): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
   def connectDragSource[Props](elementOrNode: reactLib.Element): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
-  def connectDragSource[Props](elementOrNode: reactLib.Element, options: reactDashDndLib.libInterfacesMod.DragSourceOptions): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
+  def connectDragSource[Props](elementOrNode: reactLib.Element, options: reactDashDndLib.libCjsInterfacesMod.DragSourceOptions): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
   def connectDragSource[Props](elementOrNode: reactLib.reactMod.ReactNs.ReactElement[Props]): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
   def connectDragSource[Props](
     elementOrNode: reactLib.reactMod.ReactNs.ReactElement[Props],
-    options: reactDashDndLib.libInterfacesMod.DragSourceOptions
+    options: reactDashDndLib.libCjsInterfacesMod.DragSourceOptions
   ): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native
 }
 

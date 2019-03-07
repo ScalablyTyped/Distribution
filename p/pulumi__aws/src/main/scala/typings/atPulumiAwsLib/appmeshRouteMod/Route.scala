@@ -21,28 +21,28 @@ class Route protected ()
   /**
     * The ARN of the route.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The creation date of the route.
     */
-  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The last update date of the route.
     */
-  val lastUpdatedDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val lastUpdatedDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the service mesh in which to create the route.
     */
-  val meshName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val meshName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name to use for the route.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The route specification to apply.
     */
-  val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_HttpRoute] = js.native
-  val virtualRouterName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val spec: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_HttpRoute] = js.native
+  val virtualRouterName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

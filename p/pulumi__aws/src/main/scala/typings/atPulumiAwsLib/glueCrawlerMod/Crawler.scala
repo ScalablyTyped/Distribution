@@ -21,55 +21,55 @@ class Crawler protected ()
   /**
     * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
-  val classifiers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val classifiers: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * JSON string of configuration information.
     */
-  val configuration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val configuration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Glue database where results are written.
     */
-  val databaseName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val databaseName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Description of the crawler.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * List of nested DynamoDB target arguments. See below.
     */
-  val dynamodbTargets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Path]]] = js.native
+  val dynamodbTargets: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Path]]] = js.native
   /**
     * List of nested JBDC target arguments. See below.
     */
-  val jdbcTargets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ConnectionName]]] = js.native
+  val jdbcTargets: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ConnectionName]]] = js.native
   /**
     * Name of the crawler.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
     */
-  val role: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val role: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List nested Amazon S3 target arguments. See below.
     */
-  val s3Targets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Exclusions]]] = js.native
+  val s3Targets: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Exclusions]]] = js.native
   /**
     * A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
     */
-  val schedule: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val schedule: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Policy for the crawler's update and deletion behavior.
     */
-  val schemaChangePolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeleteBehavior]] = js.native
+  val schemaChangePolicy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeleteBehavior]] = js.native
   /**
     * The name of Security Configuration to be used by the crawler
     */
-  val securityConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val securityConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The table prefix used for catalog tables that are created.
     */
-  val tablePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val tablePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

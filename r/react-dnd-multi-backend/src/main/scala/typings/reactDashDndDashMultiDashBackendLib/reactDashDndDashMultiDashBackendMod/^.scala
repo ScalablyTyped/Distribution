@@ -14,6 +14,6 @@ object ^ extends js.Object {
     eventType: java.lang.String,
     check: reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.CheckFunction[_]
   ): reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.Transition = js.native
-  def default(backends: reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.Backends): dndDashCoreLib.libInterfacesMod.BackendFactory = js.native
+  def default(backends: reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.Backends): dndDashCoreLib.libCjsInterfacesMod.BackendFactory = js.native
 }
 

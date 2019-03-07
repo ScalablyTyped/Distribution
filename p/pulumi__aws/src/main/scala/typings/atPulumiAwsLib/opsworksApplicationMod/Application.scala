@@ -21,71 +21,71 @@ class Application protected ()
   /**
     * SCM configuration of the app as described below.
     */
-  val appSources: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_PasswordRevision]] = js.native
+  val appSources: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_PasswordRevision]] = js.native
   /**
     * Run bundle install when deploying for application of type `rails`.
     */
-  val autoBundleOnDeploy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val autoBundleOnDeploy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Specify activity and workflow workers for your app using the aws-flow gem.
     */
-  val awsFlowRubySettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val awsFlowRubySettings: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The data source's ARN.
     */
-  val dataSourceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val dataSourceArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The database name.
     */
-  val dataSourceDatabaseName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val dataSourceDatabaseName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The data source's type one of `AutoSelectOpsworksMysqlInstance`, `OpsworksMysqlInstance`, or `RdsDbInstance`.
     */
-  val dataSourceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val dataSourceType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A description of the app.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Subfolder for the document root for application of type `rails`.
     */
-  val documentRoot: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val documentRoot: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of virtual host alias.
     */
-  val domains: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val domains: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Whether to enable SSL for the app. This must be set in order to let `ssl_configuration.private_key`, `ssl_configuration.certificate` and `ssl_configuration.chain` take effect.
     */
-  val enableSsl: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableSsl: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Object to define environment variables.  Object is described below.
     */
-  val environments: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeySecure]]] = js.native
+  val environments: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeySecure]]] = js.native
   /**
     * A human-readable name for the application.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the Rails environment for application of type `rails`.
     */
-  val railsEnv: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val railsEnv: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A short, machine-readable name for the application. This can only be defined on resource creation and ignored on resource update.
     */
-  val shortName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val shortName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The SSL configuration of the app. Object is described below.
     */
-  val sslConfigurations: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CertificateChain]]] = js.native
+  val sslConfigurations: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CertificateChain]]] = js.native
   /**
     * The id of the stack the application will belong to.
     */
-  val stackId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val stackId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The type of source to use. For example, "archive".
     */
-  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val `type`: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

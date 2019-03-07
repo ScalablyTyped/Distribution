@@ -21,19 +21,19 @@ class RouteTable protected ()
   /**
     * Boolean whether this is the default association route table for the EC2 Transit Gateway.
     */
-  val defaultAssociationRouteTable: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val defaultAssociationRouteTable: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Boolean whether this is the default propagation route table for the EC2 Transit Gateway.
     */
-  val defaultPropagationRouteTable: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val defaultPropagationRouteTable: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Key-value tags for the EC2 Transit Gateway Route Table.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * Identifier of EC2 Transit Gateway.
     */
-  val transitGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

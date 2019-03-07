@@ -21,32 +21,32 @@ class GlobalCluster protected ()
   /**
     * RDS Global Cluster Amazon Resource Name (ARN)
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name for an automatically created database on cluster creation.
     */
-  val databaseName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val databaseName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * If the Global Cluster should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
     */
-  val deletionProtection: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val deletionProtection: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Name of the database engine to be used for this DB cluster. Valid values: `aurora`. Defaults to `aurora`.
     */
-  val engine: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val engine: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Engine version of the Aurora global database.
     */
-  val engineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val globalClusterIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val globalClusterIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * AWS Region-unique, immutable identifier for the global database cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed
     */
-  val globalClusterResourceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val globalClusterResourceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether the DB cluster is encrypted. The default is `false`.
     */
-  val storageEncrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val storageEncrypted: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
 /* static members */

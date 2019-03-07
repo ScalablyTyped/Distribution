@@ -16,6 +16,7 @@ trait ItemDefinition extends BaseElement {
 object ItemDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     `import`: Import,
@@ -27,7 +28,7 @@ object ItemDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ItemDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, isCollection = isCollection, itemKind = itemKind, structureRef = structureRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, isCollection = isCollection, itemKind = itemKind, structureRef = structureRef)
     __obj.updateDynamic("import")(`import`)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)

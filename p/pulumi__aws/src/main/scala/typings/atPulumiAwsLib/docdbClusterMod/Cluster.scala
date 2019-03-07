@@ -24,116 +24,116 @@ class Cluster protected ()
     * are applied immediately, or during the next maintenance window. Default is
     * `false`.
     */
-  val applyImmediately: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val applyImmediately: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Amazon Resource Name (ARN) of cluster
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of EC2 Availability Zones that
     * instances in the DB cluster can be created in.
     */
-  val availabilityZones: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val availabilityZones: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The days to retain backups for. Default `1`
     */
-  val backupRetentionPeriod: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val backupRetentionPeriod: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The cluster identifier. If omitted, Terraform will assign a random, unique identifier.
     */
-  val clusterIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clusterIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifer`.
     */
-  val clusterIdentifierPrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clusterIdentifierPrefix: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of DocDB Instances that are a part of this cluster
     */
-  val clusterMembers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val clusterMembers: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The DocDB Cluster Resource ID
     */
-  val clusterResourceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val dbClusterParameterGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clusterResourceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val dbClusterParameterGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A DB subnet group to associate with this DB instance.* `db_cluster_parameter_group_name` - (Optional) A cluster parameter group to associate with the cluster.
     */
-  val dbSubnetGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbSubnetGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of log types to export to cloudwatch. If omitted, no logs will be exported.
     * The following log types are supported: `audit`.
     */
-  val enabledCloudwatchLogsExports: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val enabledCloudwatchLogsExports: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The DNS address of the DocDB instance
     */
-  val endpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val endpoint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the database engine to be used for this DB cluster. Defaults to `docdb`. Valid Values: `docdb`
     */
-  val engine: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val engine: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The database engine version. Updating this argument results in an outage.
     */
-  val engineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of your final DB snapshot
     * when this DB cluster is deleted. If omitted, no final snapshot will be
     * made.
     */
-  val finalSnapshotIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val finalSnapshotIdentifier: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Route53 Hosted Zone ID of the endpoint
     */
-  val hostedZoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val hostedZoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN for the KMS encryption key. When specifying `kms_key_id`, `storage_encrypted` needs to be set to true.
     */
-  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Password for the master DB user. Note that this may
     * show up in logs, and it will be stored in the state file. Please refer to the DocDB Naming Constraints.
     */
-  val masterPassword: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val masterPassword: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Username for the master DB user.
     */
-  val masterUsername: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val masterUsername: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The port on which the DB accepts connections
     */
-  val port: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val port: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.Time in UTC
     * Default: A 30-minute window selected at random from an 8-hour block of time per region. e.g. 04:00-09:00
     */
-  val preferredBackupWindow: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val preferredMaintenanceWindow: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val preferredBackupWindow: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val preferredMaintenanceWindow: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A read-only endpoint for the DocDB cluster, automatically load-balanced across replicas
     */
-  val readerEndpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val readerEndpoint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `final_snapshot_identifier`. Default is `false`.
     */
-  val skipFinalSnapshot: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val skipFinalSnapshot: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Specifies whether or not to create this cluster from a snapshot. You can use either the name or ARN when specifying a DB cluster snapshot, or the ARN when specifying a DB snapshot.
     */
-  val snapshotIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val snapshotIdentifier: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Specifies whether the DB cluster is encrypted. The default is `false`.
     */
-  val storageEncrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val storageEncrypted: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * A mapping of tags to assign to the DB cluster.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * List of VPC security groups to associate
     * with the Cluster
     */
-  val vpcSecurityGroupIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
 }
 
 /* static members */

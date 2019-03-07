@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Vector source options.
   * @api stable
   */
-@JSImport("ol/source/vector", JSImport.Default)
+@JSImport("ol/source/Vector", JSImport.Default)
 @js.native
 /**
   * @classdesc

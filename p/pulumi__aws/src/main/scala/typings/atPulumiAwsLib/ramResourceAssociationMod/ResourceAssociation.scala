@@ -21,11 +21,11 @@ class ResourceAssociation protected ()
   /**
     * Amazon Resource Name (ARN) of the resource to associate with the RAM Resource Share.
     */
-  val resourceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Amazon Resource Name (ARN) of the RAM Resource Share.
     */
-  val resourceShareArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceShareArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

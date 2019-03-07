@@ -21,22 +21,22 @@ class SslNegotiationPolicy protected ()
   /**
     * An SSL Negotiation policy attribute. Each has two properties:
     */
-  val attributes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
+  val attributes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
     * balancer.
     */
-  val lbPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val lbPort: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val loadBalancer: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the attribute
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -13,6 +13,7 @@ trait ComplexGateway extends Gateway {
 object ComplexGateway {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     activationCondition: Expression,
     auditing: Auditing,
@@ -30,7 +31,7 @@ object ComplexGateway {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): ComplexGateway = {
-    val __obj = js.Dynamic.literal($type = $type, activationCondition = activationCondition, auditing = auditing, categoryValueRef = categoryValueRef, default = default, gatewayDirection = gatewayDirection, id = id, incoming = incoming, lanes = lanes, monitoring = monitoring, outgoing = outgoing)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, activationCondition = activationCondition, auditing = auditing, categoryValueRef = categoryValueRef, default = default, gatewayDirection = gatewayDirection, id = id, incoming = incoming, lanes = lanes, monitoring = monitoring, outgoing = outgoing)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

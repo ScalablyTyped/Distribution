@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Layer options.
   * @api stable
   */
-@JSImport("ol/layer/group", JSImport.Default)
+@JSImport("ol/layer/Group", JSImport.Default)
 @js.native
 /**
   * @classdesc

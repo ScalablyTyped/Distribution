@@ -21,11 +21,11 @@ class ResourceDataSync protected ()
   /**
     * Name for the configuration.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Amazon S3 configuration details for the sync.
     */
-  val s3Destination: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefix] = js.native
+  val s3Destination: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefix] = js.native
 }
 
 /* static members */

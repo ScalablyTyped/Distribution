@@ -69,11 +69,13 @@ trait Helper extends js.Object {
   def hasCaptionProblem(): scala.Boolean | scala.Unit = js.native
   def inherit(Child: js.Object, Parent: js.Object): js.Object = js.native
   def isChrome(): scala.Boolean = js.native
+  def isClassListSupported(): scala.Boolean = js.native
   def isCtrlKey(keyCode: scala.Double): scala.Boolean = js.native
   def isDefined(variable: js.Any): scala.Boolean = js.native
   def isEdge(): scala.Boolean = js.native
   def isEmpty(variable: js.Any): scala.Boolean = js.native
   def isFunction(func: js.Any): scala.Boolean = js.native
+  def isGetComputedStyleSupported(): scala.Boolean = js.native
   def isIE(): scala.Boolean = js.native
   def isIE8(): scala.Boolean = js.native
   def isIE9(): scala.Boolean = js.native
@@ -90,6 +92,7 @@ trait Helper extends js.Object {
   def isPercentValue(value: java.lang.String): scala.Boolean = js.native
   def isPrintableChar(keyCode: scala.Double): scala.Boolean = js.native
   def isSafari(): scala.Boolean = js.native
+  def isTextContentSupported(): scala.Boolean = js.native
   def isTouchSupported(): scala.Boolean = js.native
   def isUndefined(variable: js.Any): scala.Boolean = js.native
   def isWebComponentSupportedNatively(): scala.Boolean = js.native

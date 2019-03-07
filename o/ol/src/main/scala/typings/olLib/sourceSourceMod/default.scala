@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * @param options Source options.
   * @api stable
   */
-@JSImport("ol/source/source", JSImport.Default)
+@JSImport("ol/source/Source", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.sourceNs.Source {

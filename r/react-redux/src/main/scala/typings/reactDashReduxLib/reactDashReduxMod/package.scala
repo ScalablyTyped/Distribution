@@ -10,10 +10,10 @@ package object reactDashReduxMod {
     /* component */ reactLib.reactMod.ReactNs.ComponentType[TProps], 
     reactLib.reactMod.ReactNs.ComponentClass[TOwnProps, reactLib.reactMod.ReactNs.ComponentState]
   ]
-  type ConnectedComponentClass[C, P] = (reactLib.reactMod.ReactNs.ComponentClass[
+  type ConnectedComponentClass[C /* <: reactLib.reactMod.ReactNs.ComponentType[_] */, P] = (reactLib.reactMod.ReactNs.ComponentClass[
     reactLib.reactMod.Global.JSXNs.LibraryManagedAttributes[C, P], 
     reactLib.reactMod.ReactNs.ComponentState
-  ]) with reactDashReduxLib.Anon_WrappedComponent[C]
+  ]) with (hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsMod.hoistNonReactStaticsNs.NonReactStatics[C, js.Object]) with reactDashReduxLib.Anon_WrappedComponent[C]
   type GetProps[C] = js.Any
   type HandleThunkActionCreator[TActionCreator] = TActionCreator | InferThunkActionCreatorType[TActionCreator]
   type InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */ js.Any, _] */] = TActionCreator | (js.Function1[/* args */ js.Any, js.Any])

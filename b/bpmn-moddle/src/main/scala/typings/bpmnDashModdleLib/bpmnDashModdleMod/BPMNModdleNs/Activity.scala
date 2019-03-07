@@ -22,6 +22,7 @@ trait Activity extends FlowNode {
 object Activity {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
     boundaryEventRefs: js.Array[BoundaryEvent],
@@ -47,7 +48,7 @@ object Activity {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): Activity = {
-    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, boundaryEventRefs = boundaryEventRefs, categoryValueRef = categoryValueRef, completionQuantity = completionQuantity, dataInputAssociations = dataInputAssociations, dataOutputAssociations = dataOutputAssociations, default = default, id = id, incoming = incoming, ioSpecification = ioSpecification, isForCompensation = isForCompensation, lanes = lanes, loopCharacteristics = loopCharacteristics, monitoring = monitoring, outgoing = outgoing, properties = properties, resources = resources, startQuantity = startQuantity)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, boundaryEventRefs = boundaryEventRefs, categoryValueRef = categoryValueRef, completionQuantity = completionQuantity, dataInputAssociations = dataInputAssociations, dataOutputAssociations = dataOutputAssociations, default = default, id = id, incoming = incoming, ioSpecification = ioSpecification, isForCompensation = isForCompensation, lanes = lanes, loopCharacteristics = loopCharacteristics, monitoring = monitoring, outgoing = outgoing, properties = properties, resources = resources, startQuantity = startQuantity)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

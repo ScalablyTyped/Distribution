@@ -21,7 +21,7 @@ class MemberAccountAssociation protected ()
   /**
     * The ID of the AWS account that you want to associate with Amazon Macie as a member account.
     */
-  val memberAccountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val memberAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -13,6 +13,7 @@ trait ParticipantAssociation extends BaseElement {
 object ParticipantAssociation {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     innerParticipantRef: Participant,
@@ -22,7 +23,7 @@ object ParticipantAssociation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ParticipantAssociation = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, innerParticipantRef = innerParticipantRef, outerParticipantRef = outerParticipantRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, innerParticipantRef = innerParticipantRef, outerParticipantRef = outerParticipantRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

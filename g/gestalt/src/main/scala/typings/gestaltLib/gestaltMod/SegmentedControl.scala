@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gestalt", "SegmentedControl")
 @js.native
 class SegmentedControl ()
-  extends reactLib.reactMod.Component[SearchFieldProps, js.Any, js.Any]
+  extends reactLib.reactMod.Component[SegmentedControlProps, js.Any, js.Any]
 

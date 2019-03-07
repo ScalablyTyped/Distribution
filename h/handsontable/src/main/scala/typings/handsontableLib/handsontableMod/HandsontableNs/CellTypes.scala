@@ -15,6 +15,8 @@ trait CellTypes extends js.Object {
   var password: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Password
   var text: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Text
   var time: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Time
+  def getCellType(name: java.lang.String): CellTypeObject
+  def registerCellType(name: java.lang.String, `type`: CellTypeObject): scala.Unit
 }
 
 object CellTypes {
@@ -24,13 +26,15 @@ object CellTypes {
     checkbox: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Checkbox,
     date: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Date,
     dropdown: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Dropdown,
+    getCellType: js.Function1[java.lang.String, CellTypeObject],
     handsontable: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Handsontable,
     numeric: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Numeric,
     password: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Password,
+    registerCellType: js.Function2[java.lang.String, CellTypeObject, scala.Unit],
     text: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Text,
     time: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Time
   ): CellTypes = {
-    val __obj = js.Dynamic.literal(autocomplete = autocomplete, checkbox = checkbox, date = date, dropdown = dropdown, handsontable = handsontable, numeric = numeric, password = password, text = text, time = time)
+    val __obj = js.Dynamic.literal(autocomplete = autocomplete, checkbox = checkbox, date = date, dropdown = dropdown, getCellType = getCellType, handsontable = handsontable, numeric = numeric, password = password, registerCellType = registerCellType, text = text, time = time)
   
     __obj.asInstanceOf[CellTypes]
   }

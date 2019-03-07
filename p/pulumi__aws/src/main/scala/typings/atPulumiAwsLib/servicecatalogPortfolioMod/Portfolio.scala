@@ -19,24 +19,24 @@ class Portfolio protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: PortfolioArgs) = this()
   def this(name: java.lang.String, args: PortfolioArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val createdTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val createdTime: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Description of the portfolio
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the portfolio.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the person or organization who owns the portfolio.
     */
-  val providerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val providerName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Tags to apply to the connection.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

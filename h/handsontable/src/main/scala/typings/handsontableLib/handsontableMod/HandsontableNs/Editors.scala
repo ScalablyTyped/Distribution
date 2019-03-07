@@ -12,8 +12,8 @@ trait Editors extends js.Object {
     /* row */ scala.Double, 
     /* col */ scala.Double, 
     /* prop */ java.lang.String | scala.Double, 
-    /* TD */ stdLib.HTMLElement, 
-    /* cellProperties */ GridSettings, 
+    /* TD */ stdLib.HTMLTableCellElement, 
+    /* cellProperties */ CellProperties, 
     handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base
   ]
   var CheckboxEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Checkbox]
@@ -25,8 +25,28 @@ trait Editors extends js.Object {
   var PasswordEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password]
   var SelectEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Select]
   var TextEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text]
-  def getEditor(editorName: java.lang.String, hotInstance: handsontableLib.handsontableMod.Handsontable): js.Any
-  def registerEditor(editorName: java.lang.String, editorClass: js.Any): scala.Unit
+  var TimeEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text]
+  def getEditor(editorName: java.lang.String): org.scalablytyped.runtime.Instantiable6[
+    /* hotInstance */ handsontableLib.handsontableMod.underscoreHandsontableNs.Core, 
+    /* row */ scala.Double, 
+    /* col */ scala.Double, 
+    /* prop */ java.lang.String | scala.Double, 
+    /* TD */ stdLib.HTMLTableCellElement, 
+    /* cellProperties */ CellProperties, 
+    handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base
+  ]
+  def registerEditor(
+    editorName: java.lang.String,
+    editorClass: org.scalablytyped.runtime.Instantiable6[
+      /* hotInstance */ handsontableLib.handsontableMod.underscoreHandsontableNs.Core, 
+      /* row */ scala.Double, 
+      /* col */ scala.Double, 
+      /* prop */ java.lang.String | scala.Double, 
+      /* TD */ stdLib.HTMLTableCellElement, 
+      /* cellProperties */ CellProperties, 
+      handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base
+    ]
+  ): scala.Unit
 }
 
 object Editors {
@@ -38,8 +58,8 @@ object Editors {
       /* row */ scala.Double, 
       /* col */ scala.Double, 
       /* prop */ java.lang.String | scala.Double, 
-      /* TD */ stdLib.HTMLElement, 
-      /* cellProperties */ GridSettings, 
+      /* TD */ stdLib.HTMLTableCellElement, 
+      /* cellProperties */ CellProperties, 
       handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base
     ],
     CheckboxEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Checkbox],
@@ -51,10 +71,34 @@ object Editors {
     PasswordEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password],
     SelectEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Select],
     TextEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text],
-    getEditor: js.Function2[java.lang.String, handsontableLib.handsontableMod.Handsontable, js.Any],
-    registerEditor: js.Function2[java.lang.String, js.Any, scala.Unit]
+    TimeEditor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text],
+    getEditor: js.Function1[
+      java.lang.String, 
+      org.scalablytyped.runtime.Instantiable6[
+        /* hotInstance */ handsontableLib.handsontableMod.underscoreHandsontableNs.Core, 
+        /* row */ scala.Double, 
+        /* col */ scala.Double, 
+        /* prop */ java.lang.String | scala.Double, 
+        /* TD */ stdLib.HTMLTableCellElement, 
+        /* cellProperties */ CellProperties, 
+        handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base
+      ]
+    ],
+    registerEditor: js.Function2[
+      java.lang.String, 
+      org.scalablytyped.runtime.Instantiable6[
+        /* hotInstance */ handsontableLib.handsontableMod.underscoreHandsontableNs.Core, 
+        /* row */ scala.Double, 
+        /* col */ scala.Double, 
+        /* prop */ java.lang.String | scala.Double, 
+        /* TD */ stdLib.HTMLTableCellElement, 
+        /* cellProperties */ CellProperties, 
+        handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base
+      ], 
+      scala.Unit
+    ]
   ): Editors = {
-    val __obj = js.Dynamic.literal(AutocompleteEditor = AutocompleteEditor, BaseEditor = BaseEditor, CheckboxEditor = CheckboxEditor, DateEditor = DateEditor, DropdownEditor = DropdownEditor, HandsontableEditor = HandsontableEditor, MobileEditor = MobileEditor, NumericEditor = NumericEditor, PasswordEditor = PasswordEditor, SelectEditor = SelectEditor, TextEditor = TextEditor, getEditor = getEditor, registerEditor = registerEditor)
+    val __obj = js.Dynamic.literal(AutocompleteEditor = AutocompleteEditor, BaseEditor = BaseEditor, CheckboxEditor = CheckboxEditor, DateEditor = DateEditor, DropdownEditor = DropdownEditor, HandsontableEditor = HandsontableEditor, MobileEditor = MobileEditor, NumericEditor = NumericEditor, PasswordEditor = PasswordEditor, SelectEditor = SelectEditor, TextEditor = TextEditor, TimeEditor = TimeEditor, getEditor = getEditor, registerEditor = registerEditor)
   
     __obj.asInstanceOf[Editors]
   }

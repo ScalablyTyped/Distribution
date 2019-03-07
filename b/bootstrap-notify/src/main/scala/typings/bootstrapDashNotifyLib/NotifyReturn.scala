@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NotifyReturn extends js.Object {
   @JSName("$ele")
-  var $ele: JQueryStatic
+  var $ele: jqueryLib.JQuery[stdLib.HTMLElement]
   def close(): scala.Unit
   def update(command: java.lang.String, update: js.Any): scala.Unit
 }
@@ -15,7 +15,7 @@ trait NotifyReturn extends js.Object {
 object NotifyReturn {
   @scala.inline
   def apply(
-    $ele: JQueryStatic,
+    $ele: jqueryLib.JQuery[stdLib.HTMLElement],
     close: js.Function0[scala.Unit],
     update: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): NotifyReturn = {

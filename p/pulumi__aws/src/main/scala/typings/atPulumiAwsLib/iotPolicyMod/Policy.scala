@@ -21,19 +21,19 @@ class Policy protected ()
   /**
     * The ARN assigned by AWS to this policy.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The default version of this policy.
     */
-  val defaultVersionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val defaultVersionId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the policy.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The policy document. This is a JSON formatted string. Use the [IoT Developer Guide](http://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) for more information on IoT Policies. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
-  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

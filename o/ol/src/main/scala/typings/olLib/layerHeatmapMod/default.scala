@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api
   */
-@JSImport("ol/layer/heatmap", JSImport.Default)
+@JSImport("ol/layer/Heatmap", JSImport.Default)
 @js.native
 /**
   * @classdesc

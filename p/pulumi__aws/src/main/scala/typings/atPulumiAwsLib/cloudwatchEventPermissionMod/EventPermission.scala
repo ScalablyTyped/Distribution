@@ -21,19 +21,19 @@ class EventPermission protected ()
   /**
     * The action that you are enabling the other account to perform. Defaults to `events:PutEvents`.
     */
-  val action: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val action: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Configuration block to limit the event bus permissions you are granting to only accounts that fulfill the condition. Specified below.
     */
-  val condition: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_KeyType]] = js.native
+  val condition: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_KeyType]] = js.native
   /**
     * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify `*` to permit any account to put events to your default event bus, optionally limited by `condition`.
     */
-  val principal: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val principal: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * An identifier string for the external account that you are granting permissions to.
     */
-  val statementId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val statementId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

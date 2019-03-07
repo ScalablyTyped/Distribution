@@ -17,5 +17,12 @@ trait DocumentArray extends Array {
     * @param schema discriminator model schema
     */
   def discriminator[U /* <: mongooseLib.mongooseMod.Document */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_]): mongooseLib.mongooseMod.Model[U, js.Object] = js.native
+  /**
+    * Adds a discriminator type.
+    * @param name discriminator model name
+    * @param schema discriminator model schema
+    */
+  @JSName("discriminator")
+  def discriminator_UDocumentMModelM[U /* <: mongooseLib.mongooseMod.Document */, M /* <: mongooseLib.mongooseMod.Model[U, js.Object] */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_]): M = js.native
 }
 

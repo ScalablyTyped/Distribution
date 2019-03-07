@@ -19,43 +19,43 @@ class Eip protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: EipArgs) = this()
   def this(name: java.lang.String, args: EipArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val allocationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val allocationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A user specified primary or secondary private IP address to
     * associate with the Elastic IP address. If no private IP address is specified,
     * the Elastic IP address is associated with the primary private IP address.
     */
-  val associateWithPrivateIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val associationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val associateWithPrivateIp: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val associationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * EC2 instance ID.
     */
-  val instance: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instance: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Network interface ID to associate with.
     */
-  val networkInterface: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkInterface: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Contains the private IP address (if in VPC).
     */
-  val privateIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val privateIp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Contains the public IP address.
     */
-  val publicIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val publicIp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * EC2 IPv4 address pool identifier or `amazon`. This option is only available for VPC EIPs.
     */
-  val publicIpv4Pool: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val publicIpv4Pool: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Boolean if the EIP is in a VPC or not.
     */
-  val vpc: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val vpc: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
 }
 
 /* static members */

@@ -21,27 +21,27 @@ class VpcEndpointConnectionNotification protected ()
   /**
     * One or more endpoint [events](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointConnectionNotification.html#API_CreateVpcEndpointConnectionNotification_RequestParameters) for which to receive notifications.
     */
-  val connectionEvents: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val connectionEvents: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The ARN of the SNS topic for the notifications.
     */
-  val connectionNotificationArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val connectionNotificationArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The type of notification.
     */
-  val notificationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val notificationType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The state of the notification.
     */
-  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val state: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC Endpoint to receive notifications for.
     */
-  val vpcEndpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcEndpointId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the VPC Endpoint Service to receive notifications for.
     */
-  val vpcEndpointServiceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcEndpointServiceId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

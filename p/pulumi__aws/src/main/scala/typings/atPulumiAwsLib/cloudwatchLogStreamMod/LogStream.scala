@@ -21,15 +21,15 @@ class LogStream protected ()
   /**
     * The Amazon Resource Name (ARN) specifying the log stream.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the log group under which the log stream is to be created.
     */
-  val logGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val logGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the log stream. Must not be longer than 512 characters and must not contain `:`
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

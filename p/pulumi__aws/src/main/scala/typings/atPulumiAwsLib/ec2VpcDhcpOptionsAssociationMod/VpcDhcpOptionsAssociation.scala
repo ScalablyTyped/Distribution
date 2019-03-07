@@ -21,11 +21,11 @@ class VpcDhcpOptionsAssociation protected ()
   /**
     * The ID of the DHCP Options Set to associate to the VPC.
     */
-  val dhcpOptionsId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dhcpOptionsId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC to which we would like to associate a DHCP Options Set.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

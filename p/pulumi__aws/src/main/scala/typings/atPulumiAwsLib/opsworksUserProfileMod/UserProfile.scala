@@ -21,19 +21,19 @@ class UserProfile protected ()
   /**
     * Whether users can specify their own SSH public key through the My Settings page
     */
-  val allowSelfManagement: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val allowSelfManagement: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The users public key
     */
-  val sshPublicKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val sshPublicKey: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ssh username, with witch this user wants to log in
     */
-  val sshUsername: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sshUsername: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The user's IAM ARN
     */
-  val userArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val userArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

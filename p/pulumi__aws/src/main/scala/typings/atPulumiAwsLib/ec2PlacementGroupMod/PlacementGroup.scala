@@ -21,11 +21,11 @@ class PlacementGroup protected ()
   /**
     * The name of the placement group.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The placement strategy.
     */
-  val strategy: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy] = js.native
+  val strategy: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy] = js.native
 }
 
 /* static members */

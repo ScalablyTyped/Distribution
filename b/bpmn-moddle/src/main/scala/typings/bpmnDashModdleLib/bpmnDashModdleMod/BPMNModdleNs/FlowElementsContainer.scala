@@ -13,6 +13,7 @@ trait FlowElementsContainer extends BaseElement {
 object FlowElementsContainer {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     flowElements: js.Array[FlowElement],
     id: java.lang.String,
@@ -22,7 +23,7 @@ object FlowElementsContainer {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): FlowElementsContainer = {
-    val __obj = js.Dynamic.literal($type = $type, flowElements = flowElements, id = id, laneSets = laneSets)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, flowElements = flowElements, id = id, laneSets = laneSets)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

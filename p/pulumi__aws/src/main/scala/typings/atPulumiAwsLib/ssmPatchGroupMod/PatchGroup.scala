@@ -21,11 +21,11 @@ class PatchGroup protected ()
   /**
     * The ID of the patch baseline to register the patch group with.
     */
-  val baselineId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val baselineId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the patch group that should be registered with the patch baseline.
     */
-  val patchGroup: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val patchGroup: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

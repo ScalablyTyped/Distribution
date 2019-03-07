@@ -21,44 +21,44 @@ class Policy protected ()
   /**
     * The scaling policy's adjustment type.
     */
-  val adjustmentType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val alarms: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val adjustmentType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val alarms: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The ARN assigned by AWS to the scaling policy.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val cooldown: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
-  val metricAggregationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val minAdjustmentMagnitude: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val cooldown: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
+  val metricAggregationType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val minAdjustmentMagnitude: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The name of the policy.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * For DynamoDB, only `TargetTrackingScaling` is supported. For Amazon ECS, Spot Fleet, and Amazon RDS, both `StepScaling` and `TargetTrackingScaling` are supported. For any other service, only `StepScaling` is supported. Defaults to `StepScaling`.
     */
-  val policyType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val policyType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The resource type and unique identifier string for the resource associated with the scaling policy. Documentation can be found in the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
     */
-  val resourceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The scalable dimension of the scalable target. Documentation can be found in the `ScalableDimension` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
     */
-  val scalableDimension: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val scalableDimension: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AWS service namespace of the scalable target. Documentation can be found in the `ServiceNamespace` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
     */
-  val serviceNamespace: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val stepAdjustments: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_MetricIntervalLowerBound]]] = js.native
+  val serviceNamespace: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val stepAdjustments: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_MetricIntervalLowerBound]]] = js.native
   /**
     * Step scaling policy configuration, requires `policy_type = "StepScaling"` (default). See supported fields below.
     */
-  val stepScalingPolicyConfigurations: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AdjustmentType]]] = js.native
+  val stepScalingPolicyConfigurations: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AdjustmentType]]] = js.native
   /**
     * A target tracking policy, requires `policy_type = "TargetTrackingScaling"`. See supported fields below.
     */
-  val targetTrackingScalingPolicyConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CustomizedMetricSpecification]] = js.native
+  val targetTrackingScalingPolicyConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CustomizedMetricSpecification]] = js.native
 }
 
 /* static members */

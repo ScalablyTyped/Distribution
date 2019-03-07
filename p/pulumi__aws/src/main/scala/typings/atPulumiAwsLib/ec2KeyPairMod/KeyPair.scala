@@ -21,19 +21,19 @@ class KeyPair protected ()
   /**
     * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
     */
-  val fingerprint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val fingerprint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name for the key pair.
     */
-  val keyName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val keyName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `key_name`.
     */
-  val keyNamePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val keyNamePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The public key material.
     */
-  val publicKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val publicKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

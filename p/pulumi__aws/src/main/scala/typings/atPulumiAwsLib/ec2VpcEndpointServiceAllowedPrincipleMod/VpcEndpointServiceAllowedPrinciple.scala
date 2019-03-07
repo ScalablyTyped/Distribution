@@ -21,11 +21,11 @@ class VpcEndpointServiceAllowedPrinciple protected ()
   /**
     * The ARN of the principal to allow permissions.
     */
-  val principalArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val principalArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC endpoint service to allow permission.
     */
-  val vpcEndpointServiceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcEndpointServiceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

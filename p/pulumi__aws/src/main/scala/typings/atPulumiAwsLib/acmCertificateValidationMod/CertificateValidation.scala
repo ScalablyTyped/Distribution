@@ -21,11 +21,11 @@ class CertificateValidation protected ()
   /**
     * The ARN of the certificate that is being validated.
     */
-  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val certificateArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of FQDNs that implement the validation. Only valid for DNS validation method ACM certificates. If this is set, the resource can implement additional sanity checks and has an explicit dependency on the resource that is implementing the validation
     */
-  val validationRecordFqdns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val validationRecordFqdns: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
 /* static members */

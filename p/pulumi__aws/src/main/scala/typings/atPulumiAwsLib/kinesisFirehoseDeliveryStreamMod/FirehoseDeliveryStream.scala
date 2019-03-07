@@ -21,46 +21,46 @@ class FirehoseDeliveryStream protected ()
   /**
     * The Amazon Resource Name (ARN) specifying the Stream
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extended_s3` instead), `extended_s3`, `redshift`, `elasticsearch`, and `splunk`.
     */
-  val destination: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val destinationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val elasticsearchConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BufferingInterval]] = js.native
+  val destination: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val destinationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val elasticsearchConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BufferingInterval]] = js.native
   /**
     * Enhanced configuration options for the s3 destination. More details are given below.
     */
-  val extendedS3Configuration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketArnBufferIntervalBufferSize]] = js.native
+  val extendedS3Configuration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketArnBufferIntervalBufferSize]] = js.native
   /**
     * Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.
     */
-  val kinesisSourceConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_KinesisStreamArn]] = js.native
+  val kinesisSourceConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_KinesisStreamArn]] = js.native
   /**
     * A name to identify the stream. This is unique to the
     * AWS account and region the Stream is created in.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Configuration options if redshift is the destination.
     * Using `redshift_configuration` requires the user to also specify a
     * `s3_configuration` block. More details are given below.
     */
-  val redshiftConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CloudwatchLoggingOptions]] = js.native
+  val redshiftConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CloudwatchLoggingOptions]] = js.native
   /**
     * Configuration options for the s3 destination (or the intermediate bucket if the destination
     * is redshift). More details are given below.
     */
-  val s3Configuration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketArnBufferInterval]] = js.native
-  val splunkConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeout]] = js.native
+  val s3Configuration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketArnBufferInterval]] = js.native
+  val splunkConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeout]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Specifies the table version for the output data schema. Defaults to `LATEST`.
     */
-  val versionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val versionId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

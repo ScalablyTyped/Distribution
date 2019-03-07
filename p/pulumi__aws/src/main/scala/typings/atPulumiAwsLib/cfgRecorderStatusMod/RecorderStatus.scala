@@ -21,11 +21,11 @@ class RecorderStatus protected ()
   /**
     * Whether the configuration recorder should be enabled or disabled.
     */
-  val isEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val isEnabled: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The name of the recorder
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

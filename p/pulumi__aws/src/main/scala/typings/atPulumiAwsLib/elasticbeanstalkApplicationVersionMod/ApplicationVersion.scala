@@ -21,28 +21,28 @@ class ApplicationVersion protected ()
   /**
     * Name of the Beanstalk Application the version is associated with.
     */
-  val application: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = js.native
+  val application: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = js.native
   /**
     * S3 bucket that contains the Application Version source bundle.
     */
-  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Short description of the Application Version.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * On delete, force an Application Version to be deleted when it may be in use
     * by multiple Elastic Beanstalk Environments.
     */
-  val forceDelete: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val forceDelete: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * S3 object that is the Application Version source bundle.
     */
-  val key: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val key: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A unique name for the this Application Version.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

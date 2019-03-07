@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @param options Options.
   * @api
   */
-@JSImport("ol/source/raster", JSImport.Default)
+@JSImport("ol/source/Raster", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.sourceNs.Raster {

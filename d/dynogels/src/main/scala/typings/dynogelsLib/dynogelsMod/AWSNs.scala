@@ -1685,6 +1685,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class Textract ()
+    extends awsDashSdkLib.awsDashSdkMod.Textract {
+    def this(options: awsDashSdkLib.clientsTextractMod.TextractNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class TranscribeService ()
     extends awsDashSdkLib.awsDashSdkMod.TranscribeService {
     def this(options: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.ClientConfiguration) = this()
@@ -5408,6 +5417,27 @@ object AWSNs extends js.Object {
   @JSName("TemporaryCredentials")
   @js.native
   object TemporaryCredentialsNs extends js.Object
+  
+  @JSName("Textract")
+  @js.native
+  object TextractNs extends js.Object {
+    @js.native
+    /**
+      * Constructs a service object. This object has one method for each API operation.
+      */
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.TextractNs.Types {
+      def this(options: awsDashSdkLib.clientsTextractMod.TextractNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("Textract")
+    @js.native
+    object TextractNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
   
   @JSName("TranscribeService")
   @js.native

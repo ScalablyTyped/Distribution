@@ -21,19 +21,19 @@ class BucketNotification protected ()
   /**
     * The name of the bucket to put notification configuration.
     */
-  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Used to configure notifications to a Lambda Function (documented below).
     */
-  val lambdaFunctions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefix]]] = js.native
+  val lambdaFunctions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefix]]] = js.native
   /**
     * The notification configuration to SQS Queue (documented below).
     */
-  val queues: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffix]]] = js.native
+  val queues: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffix]]] = js.native
   /**
     * The notification configuration to SNS Topic (documented below).
     */
-  val topics: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixId]]] = js.native
+  val topics: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixId]]] = js.native
 }
 
 /* static members */

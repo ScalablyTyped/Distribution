@@ -13,6 +13,7 @@ trait CompensateEventDefinition extends BaseElement {
 object CompensateEventDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     activityRef: Activity,
     id: java.lang.String,
@@ -22,7 +23,7 @@ object CompensateEventDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CompensateEventDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, activityRef = activityRef, id = id, waitForCompletion = waitForCompletion)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, activityRef = activityRef, id = id, waitForCompletion = waitForCompletion)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

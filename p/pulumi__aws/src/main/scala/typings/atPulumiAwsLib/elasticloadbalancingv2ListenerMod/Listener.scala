@@ -21,31 +21,31 @@ class Listener protected ()
   /**
     * The ARN of the listener (matches `id`)
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the [`aws_lb_listener_certificate` resource](https://www.terraform.io/docs/providers/aws/r/lb_listener_certificate.html).
     */
-  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultAction: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AuthenticateCognito] = js.native
+  val defaultAction: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AuthenticateCognito] = js.native
   /**
     * The ARN of the load balancer.
     */
-  val loadBalancerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val loadBalancerArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
     */
-  val port: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val port: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
     */
-  val protocol: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val protocol: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the SSL Policy for the listener. Required if `protocol` is `HTTPS` or `TLS`.
     */
-  val sslPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sslPolicy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "split-array-stream"
-version := "2.0.0-598f89"
+version := "2.0.0-9e4e11"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "is-stream-ended" % "0.1.4-785030",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "is-stream-ended" % "0.1.4-0b82ec",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
   "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

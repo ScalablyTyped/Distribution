@@ -21,75 +21,75 @@ class Trail protected ()
   /**
     * The Amazon Resource Name of the trail.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies a log group name using an Amazon Resource Name (ARN),
     * that represents the log group to which CloudTrail logs will be delivered.
     */
-  val cloudWatchLogsGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val cloudWatchLogsGroupArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Specifies the role for the CloudWatch Logs
     * endpoint to assume to write to a user’s log group.
     */
-  val cloudWatchLogsRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val cloudWatchLogsRoleArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Specifies whether log file integrity validation is enabled.
     * Defaults to `false`.
     */
-  val enableLogFileValidation: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableLogFileValidation: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Enables logging for the trail. Defaults to `true`.
     * Setting this to `false` will pause logging.
     */
-  val enableLogging: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableLogging: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
     */
-  val eventSelectors: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DataResources]]] = js.native
+  val eventSelectors: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DataResources]]] = js.native
   /**
     * The region in which the trail was created.
     */
-  val homeRegion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val homeRegion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether the trail is publishing events
     * from global services such as IAM to the log files. Defaults to `true`.
     */
-  val includeGlobalServiceEvents: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val includeGlobalServiceEvents: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Specifies whether the trail is created in the current
     * region or in all regions. Defaults to `false`.
     */
-  val isMultiRegionTrail: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val isMultiRegionTrail: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
     */
-  val isOrganizationTrail: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val isOrganizationTrail: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
     */
-  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val kmsKeyId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Specifies the name of the trail.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the name of the S3 bucket designated for publishing log files.
     */
-  val s3BucketName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val s3BucketName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the S3 key prefix that precedes
     * the name of the bucket you have designated for log file delivery.
     */
-  val s3KeyPrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val s3KeyPrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Specifies the name of the Amazon SNS topic
     * defined for notification of log file delivery.
     */
-  val snsTopicName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val snsTopicName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the trail
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

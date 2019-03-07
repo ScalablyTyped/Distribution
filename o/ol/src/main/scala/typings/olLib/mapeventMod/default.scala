@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/mapevent", JSImport.Default)
+@JSImport("ol/MapEvent", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.MapEvent {

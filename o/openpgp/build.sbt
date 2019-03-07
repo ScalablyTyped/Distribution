@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "openpgp"
-version := "4.0.1-dt-20181231Z-9c7f69"
+version := "4.4.8-dt-20190226Z-2db712"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

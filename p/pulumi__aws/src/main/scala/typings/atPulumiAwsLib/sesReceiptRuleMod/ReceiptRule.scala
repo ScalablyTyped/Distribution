@@ -21,59 +21,59 @@ class ReceiptRule protected ()
   /**
     * A list of Add Header Action blocks. Documented below.
     */
-  val addHeaderActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HeaderName]]] = js.native
+  val addHeaderActions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HeaderName]]] = js.native
   /**
     * The name of the rule to place this rule after
     */
-  val after: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val after: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of Bounce Action blocks. Documented below.
     */
-  val bounceActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Message]]] = js.native
+  val bounceActions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Message]]] = js.native
   /**
     * If true, the rule will be enabled
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * A list of Lambda Action blocks. Documented below.
     */
-  val lambdaActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FunctionArnInvocationType]]] = js.native
+  val lambdaActions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FunctionArnInvocationType]]] = js.native
   /**
     * The name of the rule
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of email addresses
     */
-  val recipients: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val recipients: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The name of the rule set
     */
-  val ruleSetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ruleSetName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of S3 Action blocks. Documented below.
     */
-  val s3Actions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_BucketNameKmsKeyArn]]] = js.native
+  val s3Actions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_BucketNameKmsKeyArn]]] = js.native
   /**
     * If true, incoming emails will be scanned for spam and viruses
     */
-  val scanEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val scanEnabled: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * A list of SNS Action blocks. Documented below.
     */
-  val snsActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Position]]] = js.native
+  val snsActions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Position]]] = js.native
   /**
     * A list of Stop Action blocks. Documented below.
     */
-  val stopActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PositionScope]]] = js.native
+  val stopActions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PositionScope]]] = js.native
   /**
     * Require or Optional
     */
-  val tlsPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val tlsPolicy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of WorkMail Action blocks. Documented below.
     */
-  val workmailActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_OrganizationArn]]] = js.native
+  val workmailActions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_OrganizationArn]]] = js.native
 }
 
 /* static members */

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param options Options.
   * @api
   */
-@JSImport("ol/interaction/translate", JSImport.Default)
+@JSImport("ol/interaction/Translate", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.interactionNs.Translate {

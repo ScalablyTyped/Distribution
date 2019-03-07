@@ -5,5 +5,6 @@
 //                 BendingBender <https://github.com/BendingBender>
 //                 CrossR <https://github.com/CrossR>
 //                 Mike Wickett <https://github.com/mwickett>
+//                 Hitomi Hatsukaze <https://github.com/htkzhtm>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

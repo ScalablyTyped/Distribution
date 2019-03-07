@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/kinetic", JSImport.Default)
+@JSImport("ol/Kinetic", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.Kinetic {

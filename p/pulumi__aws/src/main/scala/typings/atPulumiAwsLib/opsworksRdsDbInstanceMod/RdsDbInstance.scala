@@ -21,19 +21,19 @@ class RdsDbInstance protected ()
   /**
     * A db password
     */
-  val dbPassword: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbPassword: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A db username
     */
-  val dbUser: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbUser: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The db instance to register for this stack. Changing this will force a new resource.
     */
-  val rdsDbInstanceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val rdsDbInstanceArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The stack to register a db instance for. Changing this will force a new resource.
     */
-  val stackId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val stackId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -44,11 +44,11 @@ trait ElectronStore[T]
   def onDidChange(
     key: java.lang.String,
     callback: js.Function2[
-      /* newValue */ electronDashStoreLib.JSONValue, 
-      /* oldValue */ electronDashStoreLib.JSONValue, 
+      /* newValue */ js.UndefOr[electronDashStoreLib.JSONValue], 
+      /* oldValue */ js.UndefOr[electronDashStoreLib.JSONValue], 
       scala.Unit
     ]
-  ): scala.Unit = js.native
+  ): js.Function0[nodeLib.eventsMod.namespaced] = js.native
   /**
     * Watches the given key, calling callback on any changes. When a key is first set oldValue
     * will be undefined, and when a key is deleted newValue will be undefined.
@@ -56,11 +56,11 @@ trait ElectronStore[T]
   def onDidChange[K /* <: java.lang.String */](
     key: K,
     callback: js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* newValue */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* oldValue */ js.Any, 
+      /* newValue */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
+      /* oldValue */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
       scala.Unit
     ]
-  ): scala.Unit = js.native
+  ): js.Function0[nodeLib.eventsMod.namespaced] = js.native
   /**
     * Open the storage file in the user's editor.
     */

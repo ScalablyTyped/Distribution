@@ -383,6 +383,8 @@ trait Anon_ACMACMPCA extends js.Object {
   ] = js.native
   // Needed to expose interfaces on the class
   val TemporaryCredentialsNs: js.Any = js.native
+  var Textract: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Textract] = js.native
+  val TextractNs: Anon_Textract = js.native
   var TranscribeService: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.TranscribeService] = js.native
   val TranscribeServiceNs: Anon_TranscribeService = js.native
   var Transfer: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Transfer] = js.native

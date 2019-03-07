@@ -21,11 +21,11 @@ class AmiLaunchPermission protected ()
   /**
     * An AWS Account ID to add launch permissions.
     */
-  val accountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val accountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A region-unique name for the AMI.
     */
-  val imageId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val imageId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

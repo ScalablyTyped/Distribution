@@ -21,39 +21,39 @@ class VpcEndpointService protected ()
   /**
     * Whether or not VPC endpoint connection requests to the service must be accepted by the service owner - `true` or `false`.
     */
-  val acceptanceRequired: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val acceptanceRequired: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The ARNs of one or more principals allowed to discover the endpoint service.
     */
-  val allowedPrincipals: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val allowedPrincipals: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The Availability Zones in which the service is available.
     */
-  val availabilityZones: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val availabilityZones: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The DNS names for the service.
     */
-  val baseEndpointDnsNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val baseEndpointDnsNames: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The ARNs of one or more Network Load Balancers for the endpoint service.
     */
-  val networkLoadBalancerArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val networkLoadBalancerArns: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The private DNS name for the service.
     */
-  val privateDnsName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val privateDnsName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The service name.
     */
-  val serviceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val serviceName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The service type, `Gateway` or `Interface`.
     */
-  val serviceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val serviceType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The state of the VPC endpoint service.
     */
-  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val state: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

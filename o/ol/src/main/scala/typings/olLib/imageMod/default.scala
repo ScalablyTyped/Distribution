@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/image", JSImport.Default)
+@JSImport("ol/Image", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.Image {

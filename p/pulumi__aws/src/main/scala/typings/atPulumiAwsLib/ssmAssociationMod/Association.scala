@@ -19,39 +19,39 @@ class Association protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: AssociationArgs) = this()
   def this(name: java.lang.String, args: AssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val associationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val associationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The descriptive name for the association.
     */
-  val associationName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val associationName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The document version you want to associate with the target(s). Can be a specific version or the default version.
     */
-  val documentVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val documentVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The instance ID to apply an SSM document to. Use `targets` with key `InstanceIds` for document schema versions 2.0 and above.
     */
-  val instanceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val instanceId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the SSM document to apply.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * An output location block. Output Location is documented below.
     */
-  val outputLocation: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3BucketName]] = js.native
+  val outputLocation: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3BucketName]] = js.native
   /**
     * A block of arbitrary string parameters to pass to the SSM document.
     */
-  val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val parameters: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * A cron expression when the association will be applied to the target(s).
     */
-  val scheduleExpression: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val scheduleExpression: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.
     */
-  val targets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
+  val targets: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
 }
 
 /* static members */

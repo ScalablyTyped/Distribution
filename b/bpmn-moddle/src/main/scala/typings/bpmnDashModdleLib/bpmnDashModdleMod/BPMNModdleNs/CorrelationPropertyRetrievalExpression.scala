@@ -13,6 +13,7 @@ trait CorrelationPropertyRetrievalExpression extends BaseElement {
 object CorrelationPropertyRetrievalExpression {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     messagePath: FormalExpression,
@@ -22,7 +23,7 @@ object CorrelationPropertyRetrievalExpression {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CorrelationPropertyRetrievalExpression = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, messagePath = messagePath, messageRef = messageRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, messagePath = messagePath, messageRef = messageRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

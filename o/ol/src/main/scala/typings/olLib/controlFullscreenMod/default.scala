@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api stable
   */
-@JSImport("ol/control/fullscreen", JSImport.Default)
+@JSImport("ol/control/Fullscreen", JSImport.Default)
 @js.native
 /**
   * @classdesc

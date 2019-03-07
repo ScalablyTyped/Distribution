@@ -22,19 +22,19 @@ class ClientCertificate protected ()
   /**
     * The date when the client certificate was created.
     */
-  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The description of the client certificate.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The date when the client certificate will expire.
     */
-  val expirationDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val expirationDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The PEM-encoded public key of the client certificate.
     */
-  val pemEncodedCertificate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val pemEncodedCertificate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

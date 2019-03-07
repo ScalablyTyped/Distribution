@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__core"
-version := "3.9.2-236552"
+version := "3.9.2-84caa2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,20 +11,20 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "debounce" % "1.2-dt-20181201Z-d12ddb",
   "org.scalablytyped" %%% "deepmerge" % "3.2.0-065978",
   "org.scalablytyped" %%% "dom-helpers" % "3.4-dt-20190212Z-a2eef9",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-80b212",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-421c03",
   "org.scalablytyped" %%% "indefinite-observable" % "2.0.1-bbc683",
   "org.scalablytyped" %%% "is-plain-object" % "2.0.4-6255e6",
   "org.scalablytyped" %%% "isobject" % "3.0.1-9d54b1",
   "org.scalablytyped" %%% "jss" % "9.5-dt-20190227Z-325206",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
   "org.scalablytyped" %%% "normalize-scroll-left" % "0.1.2-66ab86",
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-5852bc",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-f7f3c1",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-502e31",
-  "org.scalablytyped" %%% "react-event-listener" % "0.4-dt-20190206Z-bfed77",
-  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-f7b141",
-  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190225Z-3d6e86",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-d5c6e1",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-580844",
+  "org.scalablytyped" %%% "react-event-listener" % "0.4-dt-20190206Z-1fe99e",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-66a389",
+  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190225Z-87982b",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bfac6c",
   "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-d21fb1")

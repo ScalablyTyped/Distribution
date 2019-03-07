@@ -36,26 +36,26 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.  spec.namespace must be equal to
         * the namespace you made the request against.  If empty, it is defaulted.
         */
-      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val spec: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1Ns.SubjectAccessReviewSpec
           ] = js.native
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val status: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1Ns.SubjectAccessReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authorizationNs.v1Ns.LocalSubjectAccessReview = js.native
@@ -86,25 +86,25 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.  user and groups must be empty
         */
-      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val spec: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1Ns.SelfSubjectAccessReviewSpec
           ] = js.native
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val status: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1Ns.SubjectAccessReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authorizationNs.v1Ns.SelfSubjectAccessReview = js.native
@@ -140,25 +140,25 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.
         */
-      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val spec: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1Ns.SelfSubjectRulesReviewSpec
           ] = js.native
       /**
         * Status is filled in by the server and indicates the set of actions a user can perform.
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val status: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1Ns.SubjectRulesReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authorizationNs.v1Ns.SelfSubjectRulesReview = js.native
@@ -187,25 +187,25 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated
         */
-      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val spec: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1Ns.SubjectAccessReviewSpec
           ] = js.native
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val status: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1Ns.SubjectAccessReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authorizationNs.v1Ns.SubjectAccessReview = js.native
@@ -333,7 +333,7 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
           ] = js.native
       /**
@@ -342,19 +342,19 @@ object authorizationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.  spec.namespace must be equal to
         * the namespace you made the request against.  If empty, it is defaulted.
         */
-      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val spec: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewSpec
           ] = js.native
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val status: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview = js.native
@@ -385,7 +385,7 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
           ] = js.native
       /**
@@ -394,18 +394,18 @@ object authorizationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.  user and groups must be empty
         */
-      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val spec: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReviewSpec
           ] = js.native
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val status: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview = js.native
@@ -441,7 +441,7 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
           ] = js.native
       /**
@@ -450,18 +450,18 @@ object authorizationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.
         */
-      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val spec: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReviewSpec
           ] = js.native
       /**
         * Status is filled in by the server and indicates the set of actions a user can perform.
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val status: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SubjectRulesReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview = js.native
@@ -490,7 +490,7 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
           ] = js.native
       /**
@@ -499,18 +499,18 @@ object authorizationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated
         */
-      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val spec: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewSpec
           ] = js.native
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+      val status: atPulumiPulumiLib.outputMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authorizationNs.v1beta1Ns.SubjectAccessReview = js.native

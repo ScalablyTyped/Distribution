@@ -16,6 +16,7 @@ trait InputSet extends BaseElement {
 object InputSet {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     dataInputRefs: js.Array[DataInput],
     id: java.lang.String,
@@ -28,7 +29,7 @@ object InputSet {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): InputSet = {
-    val __obj = js.Dynamic.literal($type = $type, dataInputRefs = dataInputRefs, id = id, name = name, optionalInputRefs = optionalInputRefs, outputSetRefs = outputSetRefs, whileExecutingInputsRefs = whileExecutingInputsRefs)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, dataInputRefs = dataInputRefs, id = id, name = name, optionalInputRefs = optionalInputRefs, outputSetRefs = outputSetRefs, whileExecutingInputsRefs = whileExecutingInputsRefs)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

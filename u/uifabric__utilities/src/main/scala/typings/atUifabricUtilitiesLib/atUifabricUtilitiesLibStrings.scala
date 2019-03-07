@@ -26,6 +26,9 @@ object atUifabricUtilitiesLibStrings {
   @js.native
   sealed trait `data-no-vertical-wrap` extends js.Object
   
+  @js.native
+  sealed trait extendComponent extends js.Object
+  
   @scala.inline
   def IClassNames: IClassNames = "IClassNames".asInstanceOf[IClassNames]
   @scala.inline
@@ -38,5 +41,7 @@ object atUifabricUtilitiesLibStrings {
   def `data-no-horizontal-wrap`: `data-no-horizontal-wrap` = "data-no-horizontal-wrap".asInstanceOf[`data-no-horizontal-wrap`]
   @scala.inline
   def `data-no-vertical-wrap`: `data-no-vertical-wrap` = "data-no-vertical-wrap".asInstanceOf[`data-no-vertical-wrap`]
+  @scala.inline
+  def extendComponent: extendComponent = "extendComponent".asInstanceOf[extendComponent]
 }
 

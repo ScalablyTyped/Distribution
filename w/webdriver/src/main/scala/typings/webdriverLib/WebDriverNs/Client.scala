@@ -137,7 +137,7 @@ trait Client extends js.Object {
   def getWindowRect(): js.Object = js.native
   def getWindowSize(): js.Object = js.native
   def gsmCall(phoneNumber: java.lang.String, action: java.lang.String): scala.Unit = js.native
-  def gsmSignal(signalStrengh: java.lang.String): scala.Unit = js.native
+  def gsmSignal(signalStrength: java.lang.String, signalStrengh: java.lang.String): scala.Unit = js.native
   def gsmVoice(state: java.lang.String): scala.Unit = js.native
   def hideKeyboard(
     strategy: java.lang.String,

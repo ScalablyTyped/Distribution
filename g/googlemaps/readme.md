@@ -12,6 +12,7 @@
 //                  Sven Kreiss <https://github.com/svenkreiss>
 //                  Umar Bolatov <https://github.com/bolatovumar>
 //                  Michael Gauthier <https://github.com/gauthierm>
+//                  Colin Doig <https://github.com/captain-igloo>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /*
 The MIT License

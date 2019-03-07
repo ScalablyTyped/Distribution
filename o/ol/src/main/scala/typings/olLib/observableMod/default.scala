@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/observable", JSImport.Default)
+@JSImport("ol/Observable", JSImport.Default)
 @js.native
 /**
   * @classdesc
@@ -23,7 +23,7 @@ class default ()
   extends openlayersLib.openlayersMod.Observable
 
 /* static members */
-@JSImport("ol/observable", JSImport.Default)
+@JSImport("ol/Observable", JSImport.Default)
 @js.native
 object default extends js.Object {
   def unByKey(key: js.Array[openlayersLib.openlayersMod.EventsKey]): scala.Unit = js.native

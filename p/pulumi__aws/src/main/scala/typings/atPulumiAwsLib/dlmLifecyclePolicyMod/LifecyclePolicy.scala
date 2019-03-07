@@ -21,19 +21,19 @@ class LifecyclePolicy protected ()
   /**
     * A description for the DLM lifecycle policy.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of an IAM role that is able to be assumed by the DLM service.
     */
-  val executionRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val executionRoleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * See the `policy_details` configuration block. Max of 1.
     */
-  val policyDetails: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_KeyResourceTypes] = js.native
+  val policyDetails: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_KeyResourceTypes] = js.native
   /**
     * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
     */
-  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val state: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

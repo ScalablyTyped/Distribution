@@ -18,7 +18,7 @@ trait ResizeOptions extends js.Object {
   var height: js.UndefOr[scala.Double] = js.undefined
   /** The kernel to use for image reduction. (optional, default 'lanczos3') */
   var kernel: js.UndefOr[
-    sharpLib.sharpLibStrings.nearest | sharpLib.sharpLibStrings.cubic | sharpLib.sharpLibStrings.lanczos2 | sharpLib.sharpLibStrings.lanczos3
+    sharpLib.sharpLibStrings.nearest | sharpLib.sharpLibStrings.cubic | sharpLib.sharpLibStrings.mitchell | sharpLib.sharpLibStrings.lanczos2 | sharpLib.sharpLibStrings.lanczos3
   ] = js.undefined
   /** Position, gravity or strategy to use when fit is cover or contain. (optional, default 'centre') */
   var position: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -35,7 +35,7 @@ object ResizeOptions {
     fastShrinkOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
     fit: sharpLib.sharpLibStrings.contain | sharpLib.sharpLibStrings.cover | sharpLib.sharpLibStrings.fill | sharpLib.sharpLibStrings.inside | sharpLib.sharpLibStrings.outside = null,
     height: scala.Int | scala.Double = null,
-    kernel: sharpLib.sharpLibStrings.nearest | sharpLib.sharpLibStrings.cubic | sharpLib.sharpLibStrings.lanczos2 | sharpLib.sharpLibStrings.lanczos3 = null,
+    kernel: sharpLib.sharpLibStrings.nearest | sharpLib.sharpLibStrings.cubic | sharpLib.sharpLibStrings.mitchell | sharpLib.sharpLibStrings.lanczos2 | sharpLib.sharpLibStrings.lanczos3 = null,
     position: scala.Double | java.lang.String = null,
     width: scala.Int | scala.Double = null,
     withoutEnlargement: js.UndefOr[scala.Boolean] = js.undefined

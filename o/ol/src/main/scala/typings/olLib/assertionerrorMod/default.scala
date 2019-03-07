@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/assertionerror", JSImport.Default)
+@JSImport("ol/AssertionError", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.AssertionError {

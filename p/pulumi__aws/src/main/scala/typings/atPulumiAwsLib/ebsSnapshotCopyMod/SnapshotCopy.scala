@@ -23,40 +23,40 @@ class SnapshotCopy protected ()
     * * `source_snapshot_id` The ARN of the copied snapshot.
     * * `source_region` The region of the source snapshot.
     */
-  val dataEncryptionKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dataEncryptionKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A description of what the snapshot is.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Whether the snapshot is encrypted.
     */
-  val encrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val encrypted: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The ARN for the KMS encryption key.
     * * `source_snapshot_id` The ARN for the snapshot to be copied.
     * * `source_region` The region of the source snapshot.
     */
-  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val kmsKeyId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Value from an Amazon-maintained list (`amazon`, `aws-marketplace`, `microsoft`) of snapshot owners.
     */
-  val ownerAlias: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ownerAlias: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AWS account ID of the snapshot owner.
     */
-  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val sourceRegion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val sourceSnapshotId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val sourceRegion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val sourceSnapshotId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags for the snapshot.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
-  val volumeId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val volumeId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The size of the drive in GiBs.
     */
-  val volumeSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val volumeSize: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

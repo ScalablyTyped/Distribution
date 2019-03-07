@@ -21,19 +21,19 @@ class Certificate protected ()
   /**
     * The Amazon Resource Name (ARN) for the certificate.
     */
-  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val certificateArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The certificate identifier.
     */
-  val certificateId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val certificateId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The contents of the .pem X.509 certificate file for the certificate. Either `certificate_pem` or `certificate_wallet` must be set.
     */
-  val certificatePem: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificatePem: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The contents of the Oracle Wallet certificate for use with SSL. Either `certificate_pem` or `certificate_wallet` must be set.
     */
-  val certificateWallet: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateWallet: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

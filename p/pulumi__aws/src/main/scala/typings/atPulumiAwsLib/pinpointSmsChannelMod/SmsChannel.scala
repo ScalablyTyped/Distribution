@@ -21,27 +21,27 @@ class SmsChannel protected ()
   /**
     * The application ID.
     */
-  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val applicationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether the channel is enabled or disabled. Defaults to `true`.
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Promotional messages per second that can be sent.
     */
-  val promotionalMessagesPerSecond: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val promotionalMessagesPerSecond: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Sender identifier of your messages.
     */
-  val senderId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val senderId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Short Code registered with the phone provider.
     */
-  val shortCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val shortCode: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Transactional messages per second that can be sent.
     */
-  val transactionalMessagesPerSecond: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val transactionalMessagesPerSecond: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

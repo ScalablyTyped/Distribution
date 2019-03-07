@@ -36,7 +36,7 @@ object ^ extends js.Object {
     reactLib.reactMod.ReactNs.ComponentType[
       reactDashI18nextLib.Omit[
         reactDashI18nextLib.reactDashI18nextMod.WithTranslation, 
-        reactDashI18nextLib.reactDashI18nextLibStrings.i18n
+        reactDashI18nextLib.reactDashI18nextLibStrings.i18n | reactDashI18nextLib.reactDashI18nextLibStrings.tReady
       ]
     ]
   ] = js.native
@@ -45,7 +45,7 @@ object ^ extends js.Object {
     reactLib.reactMod.ReactNs.ComponentType[
       reactDashI18nextLib.Omit[
         reactDashI18nextLib.reactDashI18nextMod.WithTranslation, 
-        reactDashI18nextLib.reactDashI18nextLibStrings.i18n
+        reactDashI18nextLib.reactDashI18nextLibStrings.i18n | reactDashI18nextLib.reactDashI18nextLibStrings.tReady
       ]
     ]
   ] = js.native

@@ -21,20 +21,20 @@ class TableItem protected ()
   /**
     * Hash key to use for lookups and identification of the item
     */
-  val hashKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val hashKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * JSON representation of a map of attribute name/value pairs, one for each attribute.
     * Only the primary key attributes are required; you can optionally provide other attribute name-value pairs for the item.
     */
-  val item: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val item: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Range key to use for lookups and identification of the item. Required if there is range key defined in the table.
     */
-  val rangeKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val rangeKey: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the table to contain the item.
     */
-  val tableName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val tableName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

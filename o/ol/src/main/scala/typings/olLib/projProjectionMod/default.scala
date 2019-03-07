@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
   * @struct
   * @api stable
   */
-@JSImport("ol/proj/projection", JSImport.Default)
+@JSImport("ol/proj/Projection", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.projNs.Projection {

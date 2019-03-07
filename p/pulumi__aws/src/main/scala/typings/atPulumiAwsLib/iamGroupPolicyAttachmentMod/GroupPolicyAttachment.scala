@@ -21,11 +21,11 @@ class GroupPolicyAttachment protected ()
   /**
     * The group the policy should be applied to
     */
-  val group: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamGroupMod.Group] = js.native
+  val group: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.iamGroupMod.Group] = js.native
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val policyArn: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
 }
 
 /* static members */

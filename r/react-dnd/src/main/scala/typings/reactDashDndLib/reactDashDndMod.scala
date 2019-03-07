@@ -8,101 +8,101 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dnd", JSImport.Namespace)
 @js.native
 object reactDashDndMod extends js.Object {
-  val DragDropContextProvider: reactLib.reactMod.ReactNs.SFC[reactDashDndLib.libDragDropContextMod.DragDropContextProviderProps[js.Any]] = js.native
-  def DragDropContext(backendFactory: dndDashCoreLib.libInterfacesMod.BackendFactory): js.Function1[
-    /* DecoratedComponent */ (reactLib.reactMod.ReactNs.ComponentClass[_, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_], 
-    ((reactLib.reactMod.ReactNs.ComponentClass[_, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_]) with reactDashDndLib.libInterfacesMod.ContextComponent[_]
+  val DragDropContextProvider: reactLib.reactMod.ReactNs.SFC[reactDashDndLib.libCjsDragDropContextMod.DragDropContextProviderProps[js.Any]] = js.native
+  def DragDropContext(backendFactory: dndDashCoreLib.libCjsInterfacesMod.BackendFactory): js.Function1[
+    /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
+    reactLib.reactMod.ReactNs.ComponentType[_] with reactDashDndLib.libCjsInterfacesMod.ContextComponent[_]
   ] = js.native
-  def DragDropContext(backendFactory: dndDashCoreLib.libInterfacesMod.BackendFactory, backendContext: js.Any): js.Function1[
-    /* DecoratedComponent */ (reactLib.reactMod.ReactNs.ComponentClass[_, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_], 
-    ((reactLib.reactMod.ReactNs.ComponentClass[_, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_]) with reactDashDndLib.libInterfacesMod.ContextComponent[_]
+  def DragDropContext(backendFactory: dndDashCoreLib.libCjsInterfacesMod.BackendFactory, backendContext: js.Any): js.Function1[
+    /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
+    reactLib.reactMod.ReactNs.ComponentType[_] with reactDashDndLib.libCjsInterfacesMod.ContextComponent[_]
   ] = js.native
   def DragDropContext(
-    backendFactory: dndDashCoreLib.libInterfacesMod.BackendFactory,
+    backendFactory: dndDashCoreLib.libCjsInterfacesMod.BackendFactory,
     backendContext: js.Any,
     debugMode: scala.Boolean
   ): js.Function1[
-    /* DecoratedComponent */ (reactLib.reactMod.ReactNs.ComponentClass[_, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_], 
-    ((reactLib.reactMod.ReactNs.ComponentClass[_, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_]) with reactDashDndLib.libInterfacesMod.ContextComponent[_]
-  ] = js.native
-  def DragLayer[Props, CollectedProps](collect: reactDashDndLib.libInterfacesMod.DragLayerCollector[Props, CollectedProps]): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactLib.reactMod.ReactNs.ComponentType[_] with reactDashDndLib.libCjsInterfacesMod.ContextComponent[_]
+  ] = js.native
+  def DragLayer[Props, CollectedProps](collect: reactDashDndLib.libCjsInterfacesMod.DragLayerCollector[Props, CollectedProps]): js.Function1[
+    /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DragLayer[Props, CollectedProps](
-    collect: reactDashDndLib.libInterfacesMod.DragLayerCollector[Props, CollectedProps],
-    options: reactDashDndLib.libInterfacesMod.DndOptions[Props]
+    collect: reactDashDndLib.libCjsInterfacesMod.DragLayerCollector[Props, CollectedProps],
+    options: reactDashDndLib.libCjsInterfacesMod.DndOptions[Props]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DragSource[Props, CollectedProps, DragObject](
-    `type`: dndDashCoreLib.libInterfacesMod.SourceType,
-    spec: reactDashDndLib.libInterfacesMod.DragSourceSpec[Props, DragObject],
-    collect: reactDashDndLib.libInterfacesMod.DragSourceCollector[CollectedProps]
+    `type`: dndDashCoreLib.libCjsInterfacesMod.SourceType,
+    spec: reactDashDndLib.libCjsInterfacesMod.DragSourceSpec[Props, DragObject],
+    collect: reactDashDndLib.libCjsInterfacesMod.DragSourceCollector[CollectedProps]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DragSource[Props, CollectedProps, DragObject](
-    `type`: dndDashCoreLib.libInterfacesMod.SourceType,
-    spec: reactDashDndLib.libInterfacesMod.DragSourceSpec[Props, DragObject],
-    collect: reactDashDndLib.libInterfacesMod.DragSourceCollector[CollectedProps],
-    options: reactDashDndLib.libInterfacesMod.DndOptions[Props]
+    `type`: dndDashCoreLib.libCjsInterfacesMod.SourceType,
+    spec: reactDashDndLib.libCjsInterfacesMod.DragSourceSpec[Props, DragObject],
+    collect: reactDashDndLib.libCjsInterfacesMod.DragSourceCollector[CollectedProps],
+    options: reactDashDndLib.libCjsInterfacesMod.DndOptions[Props]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DragSource[Props, CollectedProps, DragObject](
-    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libInterfacesMod.SourceType],
-    spec: reactDashDndLib.libInterfacesMod.DragSourceSpec[Props, DragObject],
-    collect: reactDashDndLib.libInterfacesMod.DragSourceCollector[CollectedProps]
+    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libCjsInterfacesMod.SourceType],
+    spec: reactDashDndLib.libCjsInterfacesMod.DragSourceSpec[Props, DragObject],
+    collect: reactDashDndLib.libCjsInterfacesMod.DragSourceCollector[CollectedProps]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DragSource[Props, CollectedProps, DragObject](
-    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libInterfacesMod.SourceType],
-    spec: reactDashDndLib.libInterfacesMod.DragSourceSpec[Props, DragObject],
-    collect: reactDashDndLib.libInterfacesMod.DragSourceCollector[CollectedProps],
-    options: reactDashDndLib.libInterfacesMod.DndOptions[Props]
+    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libCjsInterfacesMod.SourceType],
+    spec: reactDashDndLib.libCjsInterfacesMod.DragSourceSpec[Props, DragObject],
+    collect: reactDashDndLib.libCjsInterfacesMod.DragSourceCollector[CollectedProps],
+    options: reactDashDndLib.libCjsInterfacesMod.DndOptions[Props]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DropTarget[Props, CollectedProps](
-    `type`: dndDashCoreLib.libInterfacesMod.TargetType,
-    spec: reactDashDndLib.libInterfacesMod.DropTargetSpec[Props],
-    collect: reactDashDndLib.libInterfacesMod.DropTargetCollector[CollectedProps]
+    `type`: dndDashCoreLib.libCjsInterfacesMod.TargetType,
+    spec: reactDashDndLib.libCjsInterfacesMod.DropTargetSpec[Props],
+    collect: reactDashDndLib.libCjsInterfacesMod.DropTargetCollector[CollectedProps]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DropTarget[Props, CollectedProps](
-    `type`: dndDashCoreLib.libInterfacesMod.TargetType,
-    spec: reactDashDndLib.libInterfacesMod.DropTargetSpec[Props],
-    collect: reactDashDndLib.libInterfacesMod.DropTargetCollector[CollectedProps],
-    options: reactDashDndLib.libInterfacesMod.DndOptions[Props]
+    `type`: dndDashCoreLib.libCjsInterfacesMod.TargetType,
+    spec: reactDashDndLib.libCjsInterfacesMod.DropTargetSpec[Props],
+    collect: reactDashDndLib.libCjsInterfacesMod.DropTargetCollector[CollectedProps],
+    options: reactDashDndLib.libCjsInterfacesMod.DndOptions[Props]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DropTarget[Props, CollectedProps](
-    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libInterfacesMod.TargetType],
-    spec: reactDashDndLib.libInterfacesMod.DropTargetSpec[Props],
-    collect: reactDashDndLib.libInterfacesMod.DropTargetCollector[CollectedProps]
+    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libCjsInterfacesMod.TargetType],
+    spec: reactDashDndLib.libCjsInterfacesMod.DropTargetSpec[Props],
+    collect: reactDashDndLib.libCjsInterfacesMod.DropTargetCollector[CollectedProps]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
   def DropTarget[Props, CollectedProps](
-    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libInterfacesMod.TargetType],
-    spec: reactDashDndLib.libInterfacesMod.DropTargetSpec[Props],
-    collect: reactDashDndLib.libInterfacesMod.DropTargetCollector[CollectedProps],
-    options: reactDashDndLib.libInterfacesMod.DndOptions[Props]
+    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libCjsInterfacesMod.TargetType],
+    spec: reactDashDndLib.libCjsInterfacesMod.DropTargetSpec[Props],
+    collect: reactDashDndLib.libCjsInterfacesMod.DropTargetCollector[CollectedProps],
+    options: reactDashDndLib.libCjsInterfacesMod.DndOptions[Props]
   ): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libInterfacesMod.DndComponentClass[Props]
+    reactDashDndLib.libCjsInterfacesMod.DndComponentClass[Props]
   ] = js.native
 }
 

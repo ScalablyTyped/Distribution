@@ -22,82 +22,82 @@ class LoadBalancer protected ()
   /**
     * An Access Logs block. Access Logs documented below. Only valid for Load Balancers of type `application`.
     */
-  val accessLogs: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketEnabled] = js.native
+  val accessLogs: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_BucketEnabled] = js.native
   /**
     * The ARN of the load balancer (matches `id`).
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN suffix for use with CloudWatch Metrics.
     */
-  val arnSuffix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arnSuffix: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The DNS name of the load balancer.
     */
-  val dnsName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dnsName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * If true, cross-zone load balancing of the load balancer will be enabled.
     * This is a `network` load balancer feature. Defaults to `false`.
     */
-  val enableCrossZoneLoadBalancing: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableCrossZoneLoadBalancing: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * If true, deletion of the load balancer will be disabled via
     * the AWS API. This will prevent Terraform from deleting the load balancer. Defaults to `false`.
     */
-  val enableDeletionProtection: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableDeletionProtection: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Indicates whether HTTP/2 is enabled in `application` load balancers. Defaults to `true`.
     */
-  val enableHttp2: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableHttp2: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The time in seconds that the connection is allowed to be idle. Only valid for Load Balancers of type `application`. Default: 60.
     */
-  val idleTimeout: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val idleTimeout: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * If true, the LB will be internal.
     */
-  val internal: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val internal: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The type of IP addresses used by the subnets for your load balancer. The possible values are `ipv4` and `dualstack`
     */
-  val ipAddressType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipAddressType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The type of load balancer to create. Possible values are `application` or `network`. The default value is `application`.
     */
-  val loadBalancerType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val loadBalancerType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the LB. This name must be unique within your AWS account, can have a maximum of 32 characters,
     * must contain only alphanumeric characters or hyphens, and must not begin or end with a hyphen. If not specified,
     * Terraform will autogenerate a name beginning with `tf-lb`.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val namePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of security group IDs to assign to the LB. Only valid for Load Balancers of type `application`.
     */
-  val securityGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val securityGroups: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A subnet mapping block as documented below.
     */
-  val subnetMappings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AllocationId]] = js.native
+  val subnetMappings: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_AllocationId]] = js.native
   /**
     * A list of subnet IDs to attach to the LB. Subnets
     * cannot be updated for Load Balancers of type `network`. Changing this value
     * for load balancers of type `network` will force a recreation of the resource.
     */
-  val subnets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnets: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The canonical hosted zone ID of the load balancer (to be used in a Route 53 Alias record).
     */
-  val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val zoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

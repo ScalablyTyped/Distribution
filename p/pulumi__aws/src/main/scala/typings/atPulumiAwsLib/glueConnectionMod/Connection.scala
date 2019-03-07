@@ -21,31 +21,31 @@ class Connection protected ()
   /**
     * The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
     */
-  val catalogId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val catalogId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A map of key-value pairs used as parameters for this connection.
     */
-  val connectionProperties: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val connectionProperties: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * The type of the connection. Defaults to `JBDC`.
     */
-  val connectionType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val connectionType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Description of the connection.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of criteria that can be used in selecting this connection.
     */
-  val matchCriterias: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val matchCriterias: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The name of the connection.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
     */
-  val physicalConnectionRequirements: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdLists]] = js.native
+  val physicalConnectionRequirements: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdLists]] = js.native
 }
 
 /* static members */

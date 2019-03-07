@@ -21,15 +21,15 @@ class DocumentationVersion protected ()
   /**
     * The description of the API documentation version.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the associated Rest API
     */
-  val restApiId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val restApiId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The version identifier of the API documentation snapshot.
     */
-  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val version: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -730,6 +730,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs._apiVersion
   
   @js.native
+  sealed trait `2018-06-27`
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._apiVersion
+  
+  @js.native
   sealed trait `2018-06-29`
     extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._apiVersion
   
@@ -3885,6 +3889,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
   
   @js.native
+  sealed trait CELL
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._BlockType
+  
+  @js.native
   sealed trait CELSIUS
     extends awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs._TemperatureUnit
        with awsDashSdkLib.clientsAllMod.AlexaForBusinessNs.AlexaForBusinessNs._TemperatureUnit
@@ -3992,6 +4000,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CHECK_CRYPTOGRAPHY_ONLY
     extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._NetworkInputServerValidation
+  
+  @js.native
+  sealed trait CHILD
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._RelationshipType
   
   @js.native
   sealed trait CHILD_CREATION_RATE_EXCEEDED
@@ -8018,6 +8030,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
        with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
        with awsDashSdkLib.clientsPinpointMod.PinpointNs._JobStatus
+       with awsDashSdkLib.clientsTextractMod.TextractNs._JobStatus
        with awsDashSdkLib.clientsGlueMod.GlueNs._LastCrawlStatus
        with awsDashSdkLib.clientsEcrMod.ECRNs._LifecyclePolicyPreviewStatus
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateDomainStatus
@@ -8551,6 +8564,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FORM
     extends awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs._EntitySubType
+  
+  @js.native
+  sealed trait FORMS
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._FeatureType
   
   @js.native
   sealed trait FORM_FACTOR
@@ -10591,6 +10608,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._JobExecutionStatus
        with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
        with awsDashSdkLib.clientsIotMod.IotNs._JobStatus
+       with awsDashSdkLib.clientsTextractMod.TextractNs._JobStatus
        with awsDashSdkLib.clientsEcrMod.ECRNs._LifecyclePolicyPreviewStatus
        with awsDashSdkLib.clientsSsmMod.SSMNs._MaintenanceWindowExecutionStatus
        with awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs._NodeAssociationStatus
@@ -11317,6 +11335,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCodedeployMod.CodeDeployNs._InstanceAction
   
   @js.native
+  sealed trait KEY
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._EntityType
+  
+  @js.native
   sealed trait KEYLOGGER
     extends awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs._MalwareType
        with awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs._ThreatIntelIndicatorCategory
@@ -11370,6 +11392,10 @@ object awsDashSdkLibStrings {
   sealed trait KEY_ONLY
     extends awsDashSdkLib.clientsCodedeployMod.CodeDeployNs._EC2TagFilterType
        with awsDashSdkLib.clientsCodedeployMod.CodeDeployNs._TagFilterType
+  
+  @js.native
+  sealed trait KEY_VALUE_SET
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._BlockType
   
   @js.native
   sealed trait KG
@@ -11819,7 +11845,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait LINE
-    extends awsDashSdkLib.clientsRekognitionMod.RekognitionNs._TextTypes
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._BlockType
+       with awsDashSdkLib.clientsRekognitionMod.RekognitionNs._TextTypes
   
   @js.native
   sealed trait LINES
@@ -14559,6 +14586,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._H264FieldEncoding
   
   @js.native
+  sealed trait PAGE
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._BlockType
+  
+  @js.native
   sealed trait PAN
     extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._LanguageCode
   
@@ -14593,6 +14624,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PARTIAL
     extends awsDashSdkLib.clientsBackupMod.BackupNs._RecoveryPointStatus
+  
+  @js.native
+  sealed trait PARTIAL_SUCCESS
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._JobStatus
   
   @js.native
   sealed trait PARTIAL_UPFRONT
@@ -14948,6 +14983,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PIPELINE
     extends awsDashSdkLib.clientsAppsyncMod.AppSyncNs._ResolverKind
+  
+  @js.native
+  sealed trait PIPELINE_0
+    extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._PipelineId
+  
+  @js.native
+  sealed trait PIPELINE_1
+    extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._PipelineId
   
   @js.native
   sealed trait PK
@@ -18360,6 +18403,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._JobExecutionStatus
        with awsDashSdkLib.clientsGlueMod.GlueNs._JobRunState
        with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
+       with awsDashSdkLib.clientsTextractMod.TextractNs._JobStatus
        with awsDashSdkLib.clientsGlueMod.GlueNs._LastCrawlStatus
        with awsDashSdkLib.clientsAthenaMod.AthenaNs._QueryExecutionState
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._RecordStatus
@@ -19151,6 +19195,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait T80
     extends awsDashSdkLib.clientsSnowballMod.SnowballNs._SnowballCapacity
+  
+  @js.native
+  sealed trait TABLE
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._BlockType
+  
+  @js.native
+  sealed trait TABLES
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._FeatureType
   
   @js.native
   sealed trait TABLET
@@ -20879,6 +20931,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VALUE
     extends awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._Compute
+       with awsDashSdkLib.clientsTextractMod.TextractNs._EntityType
+       with awsDashSdkLib.clientsTextractMod.TextractNs._RelationshipType
   
   @js.native
   sealed trait VALUE_ONLY
@@ -21349,7 +21403,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait WORD
-    extends awsDashSdkLib.clientsRekognitionMod.RekognitionNs._TextTypes
+    extends awsDashSdkLib.clientsTextractMod.TextractNs._BlockType
+       with awsDashSdkLib.clientsRekognitionMod.RekognitionNs._TextTypes
   
   @js.native
   sealed trait WORKFLOW_ALREADY_RUNNING
@@ -24647,6 +24702,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsStsMod.STSNs._apiVersion
        with awsDashSdkLib.clientsSupportMod.SupportNs._apiVersion
        with awsDashSdkLib.clientsSwfMod.SWFNs._apiVersion
+       with awsDashSdkLib.clientsTextractMod.TextractNs._apiVersion
        with awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs._apiVersion
        with awsDashSdkLib.clientsTransferMod.TransferNs._apiVersion
        with awsDashSdkLib.clientsTranslateMod.TranslateNs._apiVersion
@@ -27904,6 +27960,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `2018-06-18`: `2018-06-18` = "2018-06-18".asInstanceOf[`2018-06-18`]
   @scala.inline
+  def `2018-06-27`: `2018-06-27` = "2018-06-27".asInstanceOf[`2018-06-27`]
+  @scala.inline
   def `2018-06-29`: `2018-06-29` = "2018-06-29".asInstanceOf[`2018-06-29`]
   @scala.inline
   def `2018-07-26`: `2018-07-26` = "2018-07-26".asInstanceOf[`2018-07-26`]
@@ -29222,6 +29280,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CD: CD = "CD".asInstanceOf[CD]
   @scala.inline
+  def CELL: CELL = "CELL".asInstanceOf[CELL]
+  @scala.inline
   def CELSIUS: CELSIUS = "CELSIUS".asInstanceOf[CELSIUS]
   @scala.inline
   def CENTERED: CENTERED = "CENTERED".asInstanceOf[CENTERED]
@@ -29263,6 +29323,8 @@ object awsDashSdkLibStrings {
   def CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME: CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME = "CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME".asInstanceOf[CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME]
   @scala.inline
   def CHECK_CRYPTOGRAPHY_ONLY: CHECK_CRYPTOGRAPHY_ONLY = "CHECK_CRYPTOGRAPHY_ONLY".asInstanceOf[CHECK_CRYPTOGRAPHY_ONLY]
+  @scala.inline
+  def CHILD: CHILD = "CHILD".asInstanceOf[CHILD]
   @scala.inline
   def CHILD_CREATION_RATE_EXCEEDED: CHILD_CREATION_RATE_EXCEEDED = "CHILD_CREATION_RATE_EXCEEDED".asInstanceOf[CHILD_CREATION_RATE_EXCEEDED]
   @scala.inline
@@ -30962,6 +31024,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def FORM: FORM = "FORM".asInstanceOf[FORM]
   @scala.inline
+  def FORMS: FORMS = "FORMS".asInstanceOf[FORMS]
+  @scala.inline
   def FORM_FACTOR: FORM_FACTOR = "FORM_FACTOR".asInstanceOf[FORM_FACTOR]
   @scala.inline
   def FORWARD: FORWARD = "FORWARD".asInstanceOf[FORWARD]
@@ -32082,6 +32146,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def KEEP_ALIVE: KEEP_ALIVE = "KEEP_ALIVE".asInstanceOf[KEEP_ALIVE]
   @scala.inline
+  def KEY: KEY = "KEY".asInstanceOf[KEY]
+  @scala.inline
   def KEYLOGGER: KEYLOGGER = "KEYLOGGER".asInstanceOf[KEYLOGGER]
   @scala.inline
   def KEYS_ONLY: KEYS_ONLY = "KEYS_ONLY".asInstanceOf[KEYS_ONLY]
@@ -32099,6 +32165,8 @@ object awsDashSdkLibStrings {
   def KEY_MATERIAL_EXPIRES: KEY_MATERIAL_EXPIRES = "KEY_MATERIAL_EXPIRES".asInstanceOf[KEY_MATERIAL_EXPIRES]
   @scala.inline
   def KEY_ONLY: KEY_ONLY = "KEY_ONLY".asInstanceOf[KEY_ONLY]
+  @scala.inline
+  def KEY_VALUE_SET: KEY_VALUE_SET = "KEY_VALUE_SET".asInstanceOf[KEY_VALUE_SET]
   @scala.inline
   def KG: KG = "KG".asInstanceOf[KG]
   @scala.inline
@@ -33404,6 +33472,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PAFF: PAFF = "PAFF".asInstanceOf[PAFF]
   @scala.inline
+  def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
+  @scala.inline
   def PAN: PAN = "PAN".asInstanceOf[PAN]
   @scala.inline
   def PAP: PAP = "PAP".asInstanceOf[PAP]
@@ -33421,6 +33491,8 @@ object awsDashSdkLibStrings {
   def PART: PART = "PART".asInstanceOf[PART]
   @scala.inline
   def PARTIAL: PARTIAL = "PARTIAL".asInstanceOf[PARTIAL]
+  @scala.inline
+  def PARTIAL_SUCCESS: PARTIAL_SUCCESS = "PARTIAL_SUCCESS".asInstanceOf[PARTIAL_SUCCESS]
   @scala.inline
   def PARTIAL_UPFRONT: PARTIAL_UPFRONT = "PARTIAL_UPFRONT".asInstanceOf[PARTIAL_UPFRONT]
   @scala.inline
@@ -33539,6 +33611,10 @@ object awsDashSdkLibStrings {
   def PID: PID = "PID".asInstanceOf[PID]
   @scala.inline
   def PIPELINE: PIPELINE = "PIPELINE".asInstanceOf[PIPELINE]
+  @scala.inline
+  def PIPELINE_0: PIPELINE_0 = "PIPELINE_0".asInstanceOf[PIPELINE_0]
+  @scala.inline
+  def PIPELINE_1: PIPELINE_1 = "PIPELINE_1".asInstanceOf[PIPELINE_1]
   @scala.inline
   def PK: PK = "PK".asInstanceOf[PK]
   @scala.inline
@@ -35309,6 +35385,10 @@ object awsDashSdkLibStrings {
   def T50: T50 = "T50".asInstanceOf[T50]
   @scala.inline
   def T80: T80 = "T80".asInstanceOf[T80]
+  @scala.inline
+  def TABLE: TABLE = "TABLE".asInstanceOf[TABLE]
+  @scala.inline
+  def TABLES: TABLES = "TABLES".asInstanceOf[TABLES]
   @scala.inline
   def TABLET: TABLET = "TABLET".asInstanceOf[TABLET]
   @scala.inline

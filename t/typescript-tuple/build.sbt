@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typescript-tuple"
-version := "2.2.0-4b07ca"
+version := "2.2.1-4b07ca"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

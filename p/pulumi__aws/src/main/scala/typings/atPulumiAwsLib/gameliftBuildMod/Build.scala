@@ -21,19 +21,19 @@ class Build protected ()
   /**
     * Name of the build
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Operating system that the game server binaries are built to run on. e.g. `WINDOWS_2012` or `AMAZON_LINUX`.
     */
-  val operatingSystem: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val operatingSystem: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Information indicating where your game build files are stored. See below.
     */
-  val storageLocation: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketKey] = js.native
+  val storageLocation: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_BucketKey] = js.native
   /**
     * Version that is associated with this build.
     */
-  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val version: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

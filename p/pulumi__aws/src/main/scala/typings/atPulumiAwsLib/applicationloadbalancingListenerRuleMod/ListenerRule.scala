@@ -21,23 +21,23 @@ class ListenerRule protected ()
   /**
     * An Action block. Action blocks are documented below.
     */
-  val actions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AuthenticateCognito]] = js.native
+  val actions: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_AuthenticateCognito]] = js.native
   /**
     * The ARN of the rule (matches `id`)
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A Condition block. Condition blocks are documented below.
     */
-  val conditions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Field]] = js.native
+  val conditions: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_Field]] = js.native
   /**
     * The ARN of the listener to which to attach the rule.
     */
-  val listenerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val listenerArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
     */
-  val priority: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val priority: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

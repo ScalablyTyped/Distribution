@@ -22,12 +22,12 @@ class RegexMatchSet protected ()
   /**
     * The name or description of the Regex Match Set.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The regular expression pattern that you want AWS WAF to search for in web requests,
     * the location in requests that you want AWS WAF to search, and other settings. See below.
     */
-  val regexMatchTuples: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetId]]] = js.native
+  val regexMatchTuples: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetId]]] = js.native
 }
 
 /* static members */

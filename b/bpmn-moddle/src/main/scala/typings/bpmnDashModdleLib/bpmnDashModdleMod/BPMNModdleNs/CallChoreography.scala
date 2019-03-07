@@ -13,6 +13,7 @@ trait CallChoreography extends ChoreographyActivity {
 object CallChoreography {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
     calledChoreographyRef: Choreography,
@@ -33,7 +34,7 @@ object CallChoreography {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): CallChoreography = {
-    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, calledChoreographyRef = calledChoreographyRef, categoryValueRef = categoryValueRef, correlationKeys = correlationKeys, id = id, incoming = incoming, initiatingParticipantRef = initiatingParticipantRef, lanes = lanes, loopType = loopType, monitoring = monitoring, outgoing = outgoing, participantAssociations = participantAssociations, participantRef = participantRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, calledChoreographyRef = calledChoreographyRef, categoryValueRef = categoryValueRef, correlationKeys = correlationKeys, id = id, incoming = incoming, initiatingParticipantRef = initiatingParticipantRef, lanes = lanes, loopType = loopType, monitoring = monitoring, outgoing = outgoing, participantAssociations = participantAssociations, participantRef = participantRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

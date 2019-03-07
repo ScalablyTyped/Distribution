@@ -40,7 +40,7 @@ trait Plugins extends js.Object {
   var Search: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Search
   var TouchScroll: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TouchScroll
   var TrimRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TrimRows
-  def registerPlugin(): scala.Unit
+  def registerPlugin(pluginName: java.lang.String, pluginClass: handsontableLib.Anon_HotInstance): scala.Unit
 }
 
 object Plugins {
@@ -80,7 +80,7 @@ object Plugins {
     Search: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Search,
     TouchScroll: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TouchScroll,
     TrimRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TrimRows,
-    registerPlugin: js.Function0[scala.Unit]
+    registerPlugin: js.Function2[java.lang.String, handsontableLib.Anon_HotInstance, scala.Unit]
   ): Plugins = {
     val __obj = js.Dynamic.literal(AutoColumnSize = AutoColumnSize, AutoRowSize = AutoRowSize, Autofill = Autofill, BasePlugin = BasePlugin, BindRowsWithHeaders = BindRowsWithHeaders, CollapsibleColumns = CollapsibleColumns, ColumnSorting = ColumnSorting, ColumnSummary = ColumnSummary, Comments = Comments, ContextMenu = ContextMenu, CopyPaste = CopyPaste, DragToScroll = DragToScroll, DropdownMenu = DropdownMenu, ExportFile = ExportFile, Filters = Filters, Formulas = Formulas, GanttChart = GanttChart, HeaderTooltips = HeaderTooltips, HiddenColumns = HiddenColumns, HiddenRows = HiddenRows, ManualColumnFreeze = ManualColumnFreeze, ManualColumnMove = ManualColumnMove, ManualColumnResize = ManualColumnResize, ManualRowMove = ManualRowMove, ManualRowResize = ManualRowResize, MergeCells = MergeCells, MultiColumnSorting = MultiColumnSorting, MultipleSelectionHandles = MultipleSelectionHandles, NestedHeaders = NestedHeaders, NestedRows = NestedRows, ObserveChanges = ObserveChanges, Search = Search, TouchScroll = TouchScroll, TrimRows = TrimRows, registerPlugin = registerPlugin)
   

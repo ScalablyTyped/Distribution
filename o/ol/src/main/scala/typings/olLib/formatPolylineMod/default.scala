@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   *     Optional configuration object.
   * @api stable
   */
-@JSImport("ol/format/polyline", JSImport.Default)
+@JSImport("ol/format/Polyline", JSImport.Default)
 @js.native
 /**
   * @classdesc
@@ -31,7 +31,7 @@ class default ()
 }
 
 /* static members */
-@JSImport("ol/format/polyline", JSImport.Default)
+@JSImport("ol/format/Polyline", JSImport.Default)
 @js.native
 object default extends js.Object {
   /**

@@ -22,22 +22,22 @@ class LoadBalancerCookieStickinessPolicy protected ()
     * The time period after which
     * the session cookie should be considered stale, expressed in seconds.
     */
-  val cookieExpirationPeriod: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val cookieExpirationPeriod: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
     * balancer.
     */
-  val lbPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val lbPort: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val loadBalancer: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the stickiness policy.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

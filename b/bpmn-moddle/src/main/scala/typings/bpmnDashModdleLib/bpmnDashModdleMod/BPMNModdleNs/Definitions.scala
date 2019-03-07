@@ -22,6 +22,7 @@ trait Definitions extends BaseElement {
 object Definitions {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     diagrams: BPMNDiagram,
     er: java.lang.String,
@@ -40,7 +41,7 @@ object Definitions {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Definitions = {
-    val __obj = js.Dynamic.literal($type = $type, diagrams = diagrams, er = er, erVersion = erVersion, expressionLanguage = expressionLanguage, extensions = extensions, id = id, imports = imports, name = name, relationship = relationship, rootElements = rootElements, targetNamespace = targetNamespace, typeLanguage = typeLanguage)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, diagrams = diagrams, er = er, erVersion = erVersion, expressionLanguage = expressionLanguage, extensions = extensions, id = id, imports = imports, name = name, relationship = relationship, rootElements = rootElements, targetNamespace = targetNamespace, typeLanguage = typeLanguage)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-dogstatsd"
-version := "0.0-unknown-dt-20180214Z-9bc5e9"
+version := "0.0-unknown-dt-20190306Z-8f3150"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

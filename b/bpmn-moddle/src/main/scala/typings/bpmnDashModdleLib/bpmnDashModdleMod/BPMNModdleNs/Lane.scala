@@ -16,6 +16,7 @@ trait Lane extends BaseElement {
 object Lane {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     childLaneSet: LaneSet,
     flowNodeRef: js.Array[FlowNode],
@@ -28,7 +29,7 @@ object Lane {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Lane = {
-    val __obj = js.Dynamic.literal($type = $type, childLaneSet = childLaneSet, flowNodeRef = flowNodeRef, id = id, name = name, partitionElement = partitionElement, partitionElementRef = partitionElementRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, childLaneSet = childLaneSet, flowNodeRef = flowNodeRef, id = id, name = name, partitionElement = partitionElement, partitionElementRef = partitionElementRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

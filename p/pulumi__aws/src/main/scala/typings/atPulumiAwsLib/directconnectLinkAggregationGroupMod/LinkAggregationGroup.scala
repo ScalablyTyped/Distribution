@@ -21,31 +21,31 @@ class LinkAggregationGroup protected ()
   /**
     * The ARN of the LAG.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The bandwidth of the individual physical connections bundled by the LAG. Available values: 1Gbps, 10Gbps. Case sensitive.
     */
-  val connectionsBandwidth: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val connectionsBandwidth: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A boolean that indicates all connections associated with the LAG should be deleted so that the LAG can be destroyed without error. These objects are *not* recoverable.
     */
-  val forceDestroy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val forceDestroy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The AWS Direct Connect location in which the LAG should be allocated. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
     */
-  val location: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val location: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the LAG.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The number of physical connections initially provisioned and bundled by the LAG. Use `aws_dx_connection` and `aws_dx_connection_association` resources instead. Default connections will be removed as part of LAG creation automatically in future versions.
     */
-  val numberOfConnections: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val numberOfConnections: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

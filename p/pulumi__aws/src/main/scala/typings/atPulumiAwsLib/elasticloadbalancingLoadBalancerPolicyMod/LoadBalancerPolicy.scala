@@ -21,19 +21,19 @@ class LoadBalancerPolicy protected ()
   /**
     * The load balancer on which the policy is defined.
     */
-  val loadBalancerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val loadBalancerName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Policy attribute to apply to the policy.
     */
-  val policyAttributes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValueString]]] = js.native
+  val policyAttributes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValueString]]] = js.native
   /**
     * The name of the load balancer policy.
     */
-  val policyName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policyName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The policy type.
     */
-  val policyTypeName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policyTypeName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

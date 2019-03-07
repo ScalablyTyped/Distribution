@@ -11,6 +11,7 @@ trait Cursor extends js.Object {
   var cellWidth: scala.Double = js.native
   var left: scala.Double = js.native
   var leftRelative: scala.Double = js.native
+  var rootWindow: stdLib.Window = js.native
   var scrollLeft: scala.Double = js.native
   var scrollTop: scala.Double = js.native
   var top: scala.Double = js.native

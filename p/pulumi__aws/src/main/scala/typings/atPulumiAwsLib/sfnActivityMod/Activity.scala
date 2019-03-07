@@ -22,15 +22,15 @@ class Activity protected ()
   /**
     * The date the activity was created.
     */
-  val creationDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val creationDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the activity to create.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -21,27 +21,27 @@ class Connection protected ()
   /**
     * The ARN of the connection.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The bandwidth of the connection. Available values: 1Gbps, 10Gbps. Case sensitive.
     */
-  val bandwidth: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bandwidth: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Boolean value representing if jumbo frames have been enabled for this connection.
     */
-  val jumboFrameCapable: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val jumboFrameCapable: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The AWS Direct Connect location where the connection is located. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
     */
-  val location: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val location: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the connection.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -12,12 +12,12 @@ package object webdriverioLib {
   type BrowserObject = webdriverLib.WebDriverNs.ClientOptions with webdriverLib.WebDriverNs.ClientAsync with webdriverioLib.WebdriverIOAsyncNs.Browser
   // Browser commands that should be wrapper with Promise
   type BrowserPromise = webdriverLib.Omit[
-    webdriverioLib.WebdriverIONs.Browser, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
     webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.options
   ]
   // Browser commands that should not be wrapper with promise
   type BrowserStatic = stdLib.Pick[
-    webdriverioLib.WebdriverIONs.Browser, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
     webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.options
   ]
   // Element commands wrapper with Promise
@@ -26,12 +26,12 @@ package object webdriverioLib {
     */ webdriverioLib.webdriverioLibStrings.ElementAsync with js.Any
   // Element commands that should be wrapper with Promise
   type ElementPromise = webdriverLib.Omit[
-    webdriverioLib.WebdriverIONs.Element, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
     webdriverioLib.webdriverioLibStrings.addCommand
   ]
   // Element commands that should not be wrapper with promise
   type ElementStatic = stdLib.Pick[
-    webdriverioLib.WebdriverIONs.Element, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
     webdriverioLib.webdriverioLibStrings.addCommand
   ]
 }

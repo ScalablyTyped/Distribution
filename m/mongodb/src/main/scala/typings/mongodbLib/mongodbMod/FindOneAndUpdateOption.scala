@@ -13,6 +13,7 @@ object FindOneAndUpdateOption {
   @scala.inline
   def apply(
     arrayFilters: js.Array[js.Object] = null,
+    collation: CollationDocument = null,
     j: js.UndefOr[scala.Boolean] = js.undefined,
     maxTimeMS: scala.Int | scala.Double = null,
     projection: js.Object = null,
@@ -25,6 +26,7 @@ object FindOneAndUpdateOption {
   ): FindOneAndUpdateOption = {
     val __obj = js.Dynamic.literal()
     if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters)
+    if (collation != null) __obj.updateDynamic("collation")(collation)
     if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
     if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection)

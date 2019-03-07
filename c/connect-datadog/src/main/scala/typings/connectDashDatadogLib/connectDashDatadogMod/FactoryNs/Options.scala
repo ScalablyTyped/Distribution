@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var dogstatsd: js.UndefOr[nodeDashDogstatsdLib.nodeDashDogstatsdMod.StatsD] = js.undefined
+  var dogstatsd: js.UndefOr[nodeDashDogstatsdLib.nodeDashDogstatsdMod.StatsDClient] = js.undefined
   var method: js.UndefOr[scala.Boolean] = js.undefined
   var path: js.UndefOr[scala.Boolean] = js.undefined
   var protocol: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,7 +18,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    dogstatsd: nodeDashDogstatsdLib.nodeDashDogstatsdMod.StatsD = null,
+    dogstatsd: nodeDashDogstatsdLib.nodeDashDogstatsdMod.StatsDClient = null,
     method: js.UndefOr[scala.Boolean] = js.undefined,
     path: js.UndefOr[scala.Boolean] = js.undefined,
     protocol: js.UndefOr[scala.Boolean] = js.undefined,

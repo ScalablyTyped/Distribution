@@ -21,11 +21,11 @@ class SecurityConfiguration protected ()
   /**
     * Configuration block containing encryption configuration. Detailed below.
     */
-  val encryptionConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_CloudwatchEncryption] = js.native
+  val encryptionConfiguration: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_CloudwatchEncryption] = js.native
   /**
     * Name of the security configuration.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

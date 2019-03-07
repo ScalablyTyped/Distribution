@@ -21,7 +21,7 @@ class EgressOnlyInternetGateway protected ()
   /**
     * The VPC ID to create in.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

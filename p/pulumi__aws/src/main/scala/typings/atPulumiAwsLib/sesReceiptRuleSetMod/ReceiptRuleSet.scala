@@ -21,7 +21,7 @@ class ReceiptRuleSet protected ()
   /**
     * The name of the rule set
     */
-  val ruleSetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ruleSetName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

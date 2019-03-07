@@ -22,51 +22,51 @@ class ClusterInstance protected ()
     * Specifies whether any database modifications
     * are applied immediately, or during the next maintenance window. Default is`false`.
     */
-  val applyImmediately: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val applyImmediately: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Amazon Resource Name (ARN) of cluster instance
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
     */
-  val autoMinorVersionUpgrade: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val autoMinorVersionUpgrade: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonDocDB/latest/APIReference/API_CreateDBInstance.html) about the details.
     */
-  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val availabilityZone: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The identifier of the [`aws_docdb_cluster`](https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html) in which to launch this instance.
     */
-  val clusterIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clusterIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The DB subnet group to associate with this DB instance.
     */
-  val dbSubnetGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbSubnetGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The region-unique, immutable identifier for the DB instance.
     */
-  val dbiResourceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbiResourceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The DNS address for this instance. May not be writable
     */
-  val endpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val endpoint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the database engine to be used for the DocDB instance. Defaults to `docdb`. Valid Values: `docdb`.
     */
-  val engine: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val engine: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The database engine version
     */
-  val engineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The indentifier for the DocDB instance, if omitted, Terraform will assign a random, unique identifier.
     */
-  val identifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val identifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifer`.
     */
-  val identifierPrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val identifierPrefix: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The instance class to use. For details on CPU and memory, see [Scaling for DocDB Instances][2]. DocDB currently
     * supports the below instance classes. Please see [AWS Documentation][4] for complete details.
@@ -77,41 +77,41 @@ class ClusterInstance protected ()
     * - db.r4.8xlarge
     * - db.r4.16xlarge
     */
-  val instanceClass: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instanceClass: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN for the KMS encryption key if one is set to the cluster.
     */
-  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The database port
     */
-  val port: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val port: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The daily time range during which automated backups are created if automated backups are enabled.
     */
-  val preferredBackupWindow: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val preferredBackupWindow: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The window to perform maintenance in.
     * Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
     */
-  val preferredMaintenanceWindow: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val preferredMaintenanceWindow: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
     */
-  val promotionTier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
-  val publiclyAccessible: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val promotionTier: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
+  val publiclyAccessible: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Specifies whether the DB cluster is encrypted.
     */
-  val storageEncrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val storageEncrypted: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * A mapping of tags to assign to the instance.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
     */
-  val writer: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val writer: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
 }
 
 /* static members */

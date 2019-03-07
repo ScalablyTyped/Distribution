@@ -18,75 +18,75 @@ class Document protected ()
     */
   def this(name: java.lang.String, args: DocumentArgs) = this()
   def this(name: java.lang.String, args: DocumentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The JSON or YAML content of the document.
     */
-  val content: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val content: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The date the document was created.
     */
-  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The default version of the document.
     */
-  val defaultVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val defaultVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The description of the document.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The format of the document. Valid document types include: `JSON` and `YAML`
     */
-  val documentFormat: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val documentFormat: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of the document. Valid document types include: `Command`, `Policy`, `Automation` and `Session`
     */
-  val documentType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val documentType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The sha1 or sha256 of the document content
     */
-  val hash: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val hash: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * "Sha1" "Sha256". The hashing algorithm used when hashing the content.
     */
-  val hashType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val hashType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The latest version of the document.
     */
-  val latestVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val latestVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the document.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AWS user account of the person who created the document.
     */
-  val owner: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val owner: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The parameters that are available to this document.
     */
-  val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DefaultValueDescription]] = js.native
+  val parameters: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_DefaultValueDescription]] = js.native
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AccountIdsType]] = js.native
+  val permissions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AccountIdsType]] = js.native
   /**
     * A list of OS platforms compatible with this SSM document, either "Windows" or "Linux".
     */
-  val platformTypes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val platformTypes: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The schema version of the document.
     */
-  val schemaVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val schemaVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * "Creating", "Active" or "Deleting". The current status of the document.
     */
-  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the object.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

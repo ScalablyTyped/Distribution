@@ -21,23 +21,23 @@ class DeploymentConfig protected ()
   /**
     * The compute platform can be `Server`, `Lambda`, or `ECS`. Default is `Server`.
     */
-  val computePlatform: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val computePlatform: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The AWS Assigned deployment config id
     */
-  val deploymentConfigId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val deploymentConfigId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the deployment config.
     */
-  val deploymentConfigName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val deploymentConfigName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A minimum_healthy_hosts block. Minimum Healthy Hosts are documented below.
     */
-  val minimumHealthyHosts: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TypeValue]] = js.native
+  val minimumHealthyHosts: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TypeValue]] = js.native
   /**
     * A traffic_routing_config block. Traffic Routing Config is documented below.
     */
-  val trafficRoutingConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TimeBasedCanary]] = js.native
+  val trafficRoutingConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TimeBasedCanary]] = js.native
 }
 
 /* static members */

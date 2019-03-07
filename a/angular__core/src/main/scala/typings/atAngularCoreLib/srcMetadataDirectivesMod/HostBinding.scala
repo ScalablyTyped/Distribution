@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HostBinding extends js.Object {
+  /**
+    * The DOM property that is bound to a data property.
+    */
   var hostPropertyName: js.UndefOr[java.lang.String] = js.undefined
 }
 

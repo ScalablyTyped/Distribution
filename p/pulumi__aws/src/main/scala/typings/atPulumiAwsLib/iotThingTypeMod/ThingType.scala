@@ -22,16 +22,16 @@ class ThingType protected ()
   /**
     * The ARN of the created AWS IoT Thing Type.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether the thing type is deprecated. If true, no new things could be associated with this type.
     */
-  val deprecated: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val deprecated: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The name of the thing type.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val properties: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Description]] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val properties: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Description]] = js.native
 }
 
 /* static members */

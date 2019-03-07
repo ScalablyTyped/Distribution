@@ -74,6 +74,10 @@
  * @public
  */
 /**
+ * Returns a single function which will call each of the given functions in the context of the
+ * parent.
+ */
+/**
  * ARIA helper to concatenate attributes, returning undefined if all attributes
  * are undefined. (Empty strings are not a valid ARIA attribute value.)
  *
@@ -179,11 +183,15 @@
  * @param target - Element to query portal containment status of.
  * @param parent - Optional parent perspective. Search for containing portal stops at parent (or root if parent is undefined or invalid.)
  */
+/** Raises a click event. */
 /**
  * Sets the virtual parent of an element.
  * Pass `undefined` as the `parent` to clear the virtual parent.
  *
  * @public
+ */
+/**
+ * Extends a component's lifetime methods by appending new functions to the existing lifetime functions.
  */
 /**
  * Gets the first focusable element.

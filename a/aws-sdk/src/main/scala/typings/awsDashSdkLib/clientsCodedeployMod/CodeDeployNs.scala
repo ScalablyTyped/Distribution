@@ -419,7 +419,7 @@ object CodeDeployNs extends js.Object {
       */
     var fileExistsBehavior: js.UndefOr[FileExistsBehavior] = js.undefined
     /**
-      *  If set to true, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance is considered to have failed at that point and continues on to the BeforeInstall deployment lifecycle event.   If set to false or not specified, then if the deployment causes the ApplicationStop deployment lifecycle event to fail to an instance, the deployment to that instance stops, and the deployment to that instance is considered to have failed. 
+      *  If true, then if an ApplicationStop, BeforeBlockTraffic, or AfterBlockTraffic deployment lifecycle event to an instance fails, then the deployment continues to the next deployment lifecycle event. For example, if ApplicationStop fails, the deployment continues with DownloadBundle. If BeforeBlockTraffic fails, the deployment continues with BlockTraffic. If AfterBlockTraffic fails, the deployment continues with ApplicationStop.   If false or not specified, then if a lifecycle event fails during a deployment to an instance, that deployment fails. If deployment to that instance is part of an overall deployment and the number of healthy hosts is not less than the minimum number of healthy hosts, then a deployment to the next instance is attempted.   During a deployment, the AWS CodeDeploy agent runs the scripts specified for ApplicationStop, BeforeBlockTraffic, and AfterBlockTraffic in the AppSpec file from the previous successful deployment. (All other scripts are run from the AppSpec file in the current deployment.) If one of these scripts contains an error and does not run successfully, the deployment can fail.   If the cause of the failure is a script from the last successful deployment that will never run successfully, create a new deployment and use ignoreApplicationStopFailures to specify that the ApplicationStop, BeforeBlockTraffic, and AfterBlockTraffic failures should be ignored. 
       */
     var ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined
     /**
@@ -673,7 +673,7 @@ object CodeDeployNs extends js.Object {
       */
     var fileExistsBehavior: js.UndefOr[FileExistsBehavior] = js.undefined
     /**
-      * If true, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance is not considered to have failed at that point and continues on to the BeforeInstall deployment lifecycle event. If false or not specified, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance stops, and the deployment to that instance is considered to have failed.
+      *  If true, then if an ApplicationStop, BeforeBlockTraffic, or AfterBlockTraffic deployment lifecycle event to an instance fails, then the deployment continues to the next deployment lifecycle event. For example, if ApplicationStop fails, the deployment continues with DownloadBundle. If BeforeBlockTraffic fails, the deployment continues with BlockTraffic. If AfterBlockTraffic fails, the deployment continues with ApplicationStop.   If false or not specified, then if a lifecycle event fails during a deployment to an instance, that deployment fails. If deployment to that instance is part of an overall deployment and the number of healthy hosts is not less than the minimum number of healthy hosts, then a deployment to the next instance is attempted.   During a deployment, the AWS CodeDeploy agent runs the scripts specified for ApplicationStop, BeforeBlockTraffic, and AfterBlockTraffic in the AppSpec file from the previous successful deployment. (All other scripts are run from the AppSpec file in the current deployment.) If one of these scripts contains an error and does not run successfully, the deployment can fail.   If the cause of the failure is a script from the last successful deployment that will never run successfully, create a new deployment and use ignoreApplicationStopFailures to specify that the ApplicationStop, BeforeBlockTraffic, and AfterBlockTraffic failures should be ignored. 
       */
     var ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined
     /**
@@ -2268,7 +2268,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetApplicationRevisionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets information about a deployment.
+      * Gets information about a deployment.   The content property of the appSpecContent object in the returned revision is always null. Use GetApplicationRevision and the sha256 property of the returned appSpecContent object to get the content of the deployment’s AppSpec file.  
       */
     def getDeployment(): awsDashSdkLib.libRequestMod.Request[GetDeploymentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getDeployment(
@@ -2279,7 +2279,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetDeploymentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets information about a deployment.
+      * Gets information about a deployment.   The content property of the appSpecContent object in the returned revision is always null. Use GetApplicationRevision and the sha256 property of the returned appSpecContent object to get the content of the deployment’s AppSpec file.  
       */
     def getDeployment(params: GetDeploymentInput): awsDashSdkLib.libRequestMod.Request[GetDeploymentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getDeployment(

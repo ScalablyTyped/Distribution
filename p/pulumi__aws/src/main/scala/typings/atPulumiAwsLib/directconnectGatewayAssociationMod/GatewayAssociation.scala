@@ -21,11 +21,11 @@ class GatewayAssociation protected ()
   /**
     * The ID of the Direct Connect Gateway.
     */
-  val dxGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dxGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VGW with which to associate the gateway.
     */
-  val vpnGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpnGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

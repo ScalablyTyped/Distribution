@@ -40,8 +40,31 @@ object libDomMod extends js.Object {
   def getWindow(rootElement: reactLib.Element): js.UndefOr[stdLib.Window] = js.native
   def isVirtualElement(element: atUifabricUtilitiesLib.libDomIVirtualElementMod.IVirtualElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
   def isVirtualElement(element: reactLib.HTMLElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
+  def on(
+    element: reactLib.Element,
+    eventName: java.lang.String,
+    callback: js.Function1[/* ev */ reactLib.Event, scala.Unit]
+  ): js.Function0[scala.Unit] = js.native
+  def on(
+    element: reactLib.Element,
+    eventName: java.lang.String,
+    callback: js.Function1[/* ev */ reactLib.Event, scala.Unit],
+    options: scala.Boolean
+  ): js.Function0[scala.Unit] = js.native
+  def on(
+    element: stdLib.Window,
+    eventName: java.lang.String,
+    callback: js.Function1[/* ev */ reactLib.Event, scala.Unit]
+  ): js.Function0[scala.Unit] = js.native
+  def on(
+    element: stdLib.Window,
+    eventName: java.lang.String,
+    callback: js.Function1[/* ev */ reactLib.Event, scala.Unit],
+    options: scala.Boolean
+  ): js.Function0[scala.Unit] = js.native
   def portalContainsElement(target: reactLib.HTMLElement): scala.Boolean = js.native
   def portalContainsElement(target: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Boolean = js.native
+  def raiseClick(target: reactLib.Element): scala.Unit = js.native
   def setPortalAttribute(element: reactLib.HTMLElement): scala.Unit = js.native
   def setVirtualParent(child: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Unit = js.native
 }

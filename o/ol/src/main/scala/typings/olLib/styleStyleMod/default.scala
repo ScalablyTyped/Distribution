@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Style options.
   * @api
   */
-@JSImport("ol/style/style", JSImport.Default)
+@JSImport("ol/style/Style", JSImport.Default)
 @js.native
 /**
   * @classdesc

@@ -21,11 +21,11 @@ class Gateway protected ()
   /**
     * The ASN to be configured on the Amazon side of the connection. The ASN must be in the private range of 64,512 to 65,534 or 4,200,000,000 to 4,294,967,294.
     */
-  val amazonSideAsn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val amazonSideAsn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the connection.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

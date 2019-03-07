@@ -21,22 +21,22 @@ class AppCookieStickinessPolicy protected ()
   /**
     * The application cookie whose lifetime the ELB's cookie should follow.
     */
-  val cookieName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cookieName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
     * balancer.
     */
-  val lbPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val lbPort: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The name of load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val loadBalancer: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the stickiness policy.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

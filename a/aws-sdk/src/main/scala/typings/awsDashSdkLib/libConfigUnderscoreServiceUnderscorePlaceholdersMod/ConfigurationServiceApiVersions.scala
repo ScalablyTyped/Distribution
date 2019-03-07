@@ -190,6 +190,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var sts: js.UndefOr[awsDashSdkLib.clientsStsMod.STSNs.apiVersion] = js.undefined
   var support: js.UndefOr[awsDashSdkLib.clientsSupportMod.SupportNs.apiVersion] = js.undefined
   var swf: js.UndefOr[awsDashSdkLib.clientsSwfMod.SWFNs.apiVersion] = js.undefined
+  var textract: js.UndefOr[awsDashSdkLib.clientsTextractMod.TextractNs.apiVersion] = js.undefined
   var transcribeservice: js.UndefOr[awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.apiVersion] = js.undefined
   var transfer: js.UndefOr[awsDashSdkLib.clientsTransferMod.TransferNs.apiVersion] = js.undefined
   var translate: js.UndefOr[awsDashSdkLib.clientsTranslateMod.TranslateNs.apiVersion] = js.undefined

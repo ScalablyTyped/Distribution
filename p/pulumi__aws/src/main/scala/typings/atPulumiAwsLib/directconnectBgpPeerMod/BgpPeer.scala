@@ -21,33 +21,33 @@ class BgpPeer protected ()
   /**
     * The address family for the BGP peer. `ipv4 ` or `ipv6`.
     */
-  val addressFamily: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val addressFamily: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IPv4 CIDR address to use to send traffic to Amazon.
     * Required for IPv4 BGP peers on public virtual interfaces.
     */
-  val amazonAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val amazonAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
-  val bgpAsn: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val bgpAsn: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The authentication key for BGP configuration.
     */
-  val bgpAuthKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bgpAuthKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Up/Down state of the BGP peer.
     */
-  val bgpStatus: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bgpStatus: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IPv4 CIDR destination address to which Amazon should send traffic.
     * Required for IPv4 BGP peers on public virtual interfaces.
     */
-  val customerAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val customerAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the Direct Connect virtual interface on which to create the BGP peer.
     */
-  val virtualInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val virtualInterfaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

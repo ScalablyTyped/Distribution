@@ -21,15 +21,15 @@ class SshKey protected ()
   /**
     * The public key portion of an SSH key pair.
     */
-  val body: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val body: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Server ID of the Transfer Server (e.g. `s-12345678`)
     */
-  val serverId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val serverId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the user account that is assigned to one or more servers.
     */
-  val userName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val userName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

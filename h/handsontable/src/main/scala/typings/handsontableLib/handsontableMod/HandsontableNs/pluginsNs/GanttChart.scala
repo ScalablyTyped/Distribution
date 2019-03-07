@@ -56,7 +56,7 @@ trait GanttChart extends Base {
     col: scala.Double,
     prop: java.lang.String,
     value: java.lang.String,
-    cellProperties: handsontableLib.handsontableMod.HandsontableNs.GridSettings
+    cellProperties: handsontableLib.handsontableMod.HandsontableNs.CellProperties
   ): scala.Unit = js.native
   def uniformBackgroundRenderer(
     instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
@@ -65,7 +65,7 @@ trait GanttChart extends Base {
     col: scala.Double,
     prop: java.lang.String,
     value: scala.Double,
-    cellProperties: handsontableLib.handsontableMod.HandsontableNs.GridSettings
+    cellProperties: handsontableLib.handsontableMod.HandsontableNs.CellProperties
   ): scala.Unit = js.native
   def uniformBackgroundRenderer(
     instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
@@ -74,7 +74,7 @@ trait GanttChart extends Base {
     col: scala.Double,
     prop: scala.Double,
     value: java.lang.String,
-    cellProperties: handsontableLib.handsontableMod.HandsontableNs.GridSettings
+    cellProperties: handsontableLib.handsontableMod.HandsontableNs.CellProperties
   ): scala.Unit = js.native
   def uniformBackgroundRenderer(
     instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core,
@@ -83,7 +83,7 @@ trait GanttChart extends Base {
     col: scala.Double,
     prop: scala.Double,
     value: scala.Double,
-    cellProperties: handsontableLib.handsontableMod.HandsontableNs.GridSettings
+    cellProperties: handsontableLib.handsontableMod.HandsontableNs.CellProperties
   ): scala.Unit = js.native
   def unrenderRangeBar(row: scala.Double, startDateColumn: scala.Double, endDateColumn: scala.Double): scala.Unit = js.native
   def updateRangeBarData(row: scala.Double, column: scala.Double, data: js.Object): scala.Unit = js.native

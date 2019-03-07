@@ -21,19 +21,19 @@ class Alias protected ()
   /**
     * Alias ARN.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Description of the alias.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Name of the alias.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the fleet and/or routing type to use for the alias.
     */
-  val routingStrategy: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_FleetId] = js.native
+  val routingStrategy: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_FleetId] = js.native
 }
 
 /* static members */

@@ -21,15 +21,15 @@ class ConditionalForwader protected ()
   /**
     * The id of directory.
     */
-  val directoryId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val directoryId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of forwarder IP addresses.
     */
-  val dnsIps: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val dnsIps: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The fully qualified domain name of the remote domain for which forwarders will be used.
     */
-  val remoteDomainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val remoteDomainName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

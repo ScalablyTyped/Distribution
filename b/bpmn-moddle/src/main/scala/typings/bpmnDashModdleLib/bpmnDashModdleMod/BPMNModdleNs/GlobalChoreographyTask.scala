@@ -12,6 +12,7 @@ trait GlobalChoreographyTask extends Choreography {
 object GlobalChoreographyTask {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     artifacts: js.Array[Artifact],
     choreographyRef: js.Array[Choreography],
@@ -34,7 +35,7 @@ object GlobalChoreographyTask {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): GlobalChoreographyTask = {
-    val __obj = js.Dynamic.literal($type = $type, artifacts = artifacts, choreographyRef = choreographyRef, conversationAssociations = conversationAssociations, conversationLinks = conversationLinks, conversations = conversations, correlationKeys = correlationKeys, flowElements = flowElements, id = id, initiatingParticipantRef = initiatingParticipantRef, isClosed = isClosed, laneSets = laneSets, messageFlowAssociations = messageFlowAssociations, messageFlows = messageFlows, name = name, participantAssociations = participantAssociations, participants = participants)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, artifacts = artifacts, choreographyRef = choreographyRef, conversationAssociations = conversationAssociations, conversationLinks = conversationLinks, conversations = conversations, correlationKeys = correlationKeys, flowElements = flowElements, id = id, initiatingParticipantRef = initiatingParticipantRef, isClosed = isClosed, laneSets = laneSets, messageFlowAssociations = messageFlowAssociations, messageFlows = messageFlows, name = name, participantAssociations = participantAssociations, participants = participants)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

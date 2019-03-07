@@ -26,13 +26,17 @@ trait AnsiEscapes extends js.Object {
   var iTerm: Term = js.native
   var scrollDown: java.lang.String = js.native
   var scrollUp: java.lang.String = js.native
+  def cursorBackward(): java.lang.String = js.native
   def cursorBackward(count: scala.Double): java.lang.String = js.native
+  def cursorDown(): java.lang.String = js.native
   def cursorDown(count: scala.Double): java.lang.String = js.native
+  def cursorForward(): java.lang.String = js.native
   def cursorForward(count: scala.Double): java.lang.String = js.native
   def cursorMove(x: scala.Double): java.lang.String = js.native
   def cursorMove(x: scala.Double, y: scala.Double): java.lang.String = js.native
   def cursorTo(x: scala.Double): java.lang.String = js.native
   def cursorTo(x: scala.Double, y: scala.Double): java.lang.String = js.native
+  def cursorUp(): java.lang.String = js.native
   def cursorUp(count: scala.Double): java.lang.String = js.native
   def eraseLines(count: scala.Double): java.lang.String = js.native
   def image(buf: nodeLib.Buffer): java.lang.String = js.native

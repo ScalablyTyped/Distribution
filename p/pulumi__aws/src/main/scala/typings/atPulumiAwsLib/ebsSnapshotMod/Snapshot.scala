@@ -21,39 +21,39 @@ class Snapshot protected ()
   /**
     * The data encryption key identifier for the snapshot.
     */
-  val dataEncryptionKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dataEncryptionKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A description of what the snapshot is.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Whether the snapshot is encrypted.
     */
-  val encrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val encrypted: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The ARN for the KMS encryption key.
     */
-  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Value from an Amazon-maintained list (`amazon`, `aws-marketplace`, `microsoft`) of snapshot owners.
     */
-  val ownerAlias: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ownerAlias: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AWS account ID of the EBS snapshot owner.
     */
-  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the snapshot
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The Volume ID of which to make a snapshot.
     */
-  val volumeId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val volumeId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The size of the drive in GiBs.
     */
-  val volumeSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val volumeSize: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

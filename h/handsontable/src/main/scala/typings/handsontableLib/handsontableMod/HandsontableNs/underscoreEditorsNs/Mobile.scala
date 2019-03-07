@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Mobile extends Base {
   def hideCellPointer(): scala.Unit = js.native
   def onBeforeKeyDown(): scala.Unit = js.native
-  def onBeforeKeyDown(event: stdLib.Event): scala.Unit = js.native
+  def onBeforeKeyDown(event: stdLib.KeyboardEvent): scala.Unit = js.native
   def prepareAndSave(): scala.Unit = js.native
   def scrollToView(): scala.Unit = js.native
   def updateEditorData(): scala.Unit = js.native

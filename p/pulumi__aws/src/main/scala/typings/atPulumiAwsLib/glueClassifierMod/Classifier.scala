@@ -22,19 +22,19 @@ class Classifier protected ()
   /**
     * A classifier that uses grok patterns. Defined below.
     */
-  val grokClassifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Classification]] = js.native
+  val grokClassifier: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Classification]] = js.native
   /**
     * A classifier for JSON content. Defined below.
     */
-  val jsonClassifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_JsonPathString]] = js.native
+  val jsonClassifier: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_JsonPathString]] = js.native
   /**
     * The name of the classifier.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A classifier for XML content. Defined below.
     */
-  val xmlClassifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ClassificationRowTag]] = js.native
+  val xmlClassifier: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ClassificationRowTag]] = js.native
 }
 
 /* static members */

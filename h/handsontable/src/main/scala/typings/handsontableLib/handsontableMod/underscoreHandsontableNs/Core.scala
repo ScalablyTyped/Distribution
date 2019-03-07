@@ -8,10 +8,26 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Core extends js.Object {
   var isDestroyed: scala.Boolean = js.native
-  def addHook(key: java.lang.String, callback: js.Array[js.Function0[scala.Unit]]): scala.Unit = js.native
-  def addHook(key: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def addHookOnce(key: java.lang.String, callback: js.Array[js.Function0[scala.Unit]]): scala.Unit = js.native
-  def addHookOnce(key: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def addHook[K /* <: java.lang.String */](
+    key: K,
+    callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+  ): scala.Unit = js.native
+  def addHook[K /* <: java.lang.String */](
+    key: K,
+    callback: js.Array[
+      /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+    ]
+  ): scala.Unit = js.native
+  def addHookOnce[K /* <: java.lang.String */](
+    key: K,
+    callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+  ): scala.Unit = js.native
+  def addHookOnce[K /* <: java.lang.String */](
+    key: K,
+    callback: js.Array[
+      /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+    ]
+  ): scala.Unit = js.native
   @JSName("alter")
   def alter_insert_col(action: handsontableLib.handsontableLibStrings.insert_col): scala.Unit = js.native
   @JSName("alter")
@@ -237,37 +253,36 @@ trait Core extends js.Object {
   def destroyEditor(revertOriginal: scala.Boolean): scala.Unit = js.native
   def destroyEditor(revertOriginal: scala.Boolean, prepareEditorIfNeeded: scala.Boolean): scala.Unit = js.native
   def emptySelectedCells(): scala.Unit = js.native
-  def getActiveEditor(): js.Object = js.native
-  def getCell(row: scala.Double, col: scala.Double): stdLib.Element = js.native
-  def getCell(row: scala.Double, col: scala.Double, topmost: scala.Boolean): stdLib.Element = js.native
+  def getActiveEditor[T /* <: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base */](): js.UndefOr[T] = js.native
+  def getCell(row: scala.Double, col: scala.Double): stdLib.HTMLTableCellElement | scala.Null = js.native
+  def getCell(row: scala.Double, col: scala.Double, topmost: scala.Boolean): stdLib.HTMLTableCellElement | scala.Null = js.native
+  def getCellEditor[T /* <: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base */](cellMeta: handsontableLib.handsontableMod.HandsontableNs.CellMeta): T = js.native
   def getCellEditor[T /* <: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Base */](row: scala.Double, col: scala.Double): T = js.native
-  def getCellMeta(row: scala.Double, col: scala.Double): handsontableLib.handsontableMod.HandsontableNs.GridSettings = js.native
-  def getCellMetaAtRow(row: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.GridSettings] = js.native
+  def getCellMeta(row: scala.Double, col: scala.Double): handsontableLib.handsontableMod.HandsontableNs.CellProperties = js.native
+  def getCellMetaAtRow(row: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellProperties] = js.native
+  def getCellRenderer(cellMeta: handsontableLib.handsontableMod.HandsontableNs.CellMeta): handsontableLib.handsontableMod.HandsontableNs.renderersNs.Base = js.native
   def getCellRenderer(row: scala.Double, col: scala.Double): handsontableLib.handsontableMod.HandsontableNs.renderersNs.Base = js.native
-  def getCellValidator(row: scala.Double, col: scala.Double): js.Function2[
-    /* value */ js.Any, 
-    /* callback */ js.Function1[/* valid */ scala.Boolean, scala.Unit], 
-    js.UndefOr[scala.Unit | stdLib.RegExp]
-  ] = js.native
-  def getColHeader(): js.Array[_] | java.lang.String = js.native
-  def getColHeader(col: scala.Double): js.Array[_] | java.lang.String = js.native
+  def getCellValidator(cellMeta: handsontableLib.handsontableMod.HandsontableNs.CellMeta): js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Base | stdLib.RegExp] = js.native
+  def getCellValidator(row: scala.Double, col: scala.Double): js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.validatorsNs.Base | stdLib.RegExp] = js.native
+  def getColHeader(): js.Array[scala.Double | java.lang.String] = js.native
+  def getColHeader(col: scala.Double): scala.Double | java.lang.String = js.native
   def getColWidth(col: scala.Double): scala.Double = js.native
-  def getCoords(): js.Object = js.native
-  def getCoords(elem: stdLib.Element): js.Object = js.native
+  def getCoords(): handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords = js.native
+  def getCoords(elem: stdLib.Element): handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords = js.native
   def getCopyableData(row: scala.Double, column: scala.Double): java.lang.String = js.native
   def getCopyableText(startRow: scala.Double, startCol: scala.Double, endRow: scala.Double, endCol: scala.Double): java.lang.String = js.native
-  def getData(): js.Array[_] = js.native
-  def getData(r: scala.Double): js.Array[_] = js.native
-  def getData(r: scala.Double, c: scala.Double): js.Array[_] = js.native
-  def getData(r: scala.Double, c: scala.Double, r2: scala.Double): js.Array[_] = js.native
-  def getData(r: scala.Double, c: scala.Double, r2: scala.Double, c2: scala.Double): js.Array[_] = js.native
-  def getDataAtCell(row: scala.Double, col: scala.Double): js.Any = js.native
-  def getDataAtCol(col: scala.Double): js.Array[_] = js.native
-  def getDataAtProp(prop: java.lang.String): js.Array[_] = js.native
-  def getDataAtProp(prop: scala.Double): js.Array[_] = js.native
-  def getDataAtRow(row: scala.Double): js.Array[_] = js.native
-  def getDataAtRowProp(row: scala.Double, prop: java.lang.String): js.Any = js.native
-  def getDataType(rowFrom: scala.Double, columnFrom: scala.Double, rowTo: scala.Double, columnTo: scala.Double): java.lang.String = js.native
+  def getData(): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getData(row: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getData(row: scala.Double, column: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getData(row: scala.Double, column: scala.Double, row2: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getData(row: scala.Double, column: scala.Double, row2: scala.Double, column2: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getDataAtCell(row: scala.Double, column: scala.Double): handsontableLib.handsontableMod.HandsontableNs.CellValue = js.native
+  def getDataAtCol(column: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getDataAtProp(prop: java.lang.String): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getDataAtProp(prop: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getDataAtRow(row: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getDataAtRowProp(row: scala.Double, prop: java.lang.String): handsontableLib.handsontableMod.HandsontableNs.CellValue = js.native
+  def getDataType(rowFrom: scala.Double, columnFrom: scala.Double, rowTo: scala.Double, columnTo: scala.Double): handsontableLib.handsontableMod.HandsontableNs.CellType | handsontableLib.handsontableLibStrings.mixed = js.native
   def getInstance(): handsontableLib.handsontableMod.Handsontable = js.native
   @JSName("getPlugin")
   def getPlugin_autoColumnSize(pluginName: handsontableLib.handsontableLibStrings.autoColumnSize): handsontableLib.handsontableMod.HandsontableNs.pluginsNs.AutoColumnSize = js.native
@@ -330,35 +345,37 @@ trait Core extends js.Object {
   @JSName("getPlugin")
   def getPlugin_observeChanges(pluginName: handsontableLib.handsontableLibStrings.observeChanges): handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ObserveChanges = js.native
   @JSName("getPlugin")
+  def getPlugin_persistentState(pluginName: handsontableLib.handsontableLibStrings.persistentState): handsontableLib.handsontableMod.HandsontableNs.pluginsNs.PersistenState = js.native
+  @JSName("getPlugin")
   def getPlugin_search(pluginName: handsontableLib.handsontableLibStrings.search): handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Search = js.native
   @JSName("getPlugin")
   def getPlugin_touchScroll(pluginName: handsontableLib.handsontableLibStrings.touchScroll): handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TouchScroll = js.native
   @JSName("getPlugin")
   def getPlugin_trimRows(pluginName: handsontableLib.handsontableLibStrings.trimRows): handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TrimRows = js.native
-  def getRowHeader(): js.Array[_] | java.lang.String = js.native
-  def getRowHeader(row: scala.Double): js.Array[_] | java.lang.String = js.native
+  def getRowHeader(): js.Array[java.lang.String | scala.Double] = js.native
+  def getRowHeader(row: scala.Double): java.lang.String | scala.Double = js.native
   def getRowHeight(row: scala.Double): scala.Double = js.native
-  def getSchema(): js.Object = js.native
+  def getSchema(): handsontableLib.handsontableMod.HandsontableNs.RowObject = js.native
   def getSelected(): js.UndefOr[js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]]] = js.native
   def getSelectedLast(): js.UndefOr[js.Array[scala.Double]] = js.native
   def getSelectedRange(): js.UndefOr[js.Array[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange]] = js.native
   def getSelectedRangeLast(): js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange] = js.native
-  def getSettings(): handsontableLib.handsontableMod.HandsontableNs.DefaultSettings = js.native
-  def getSourceData(): js.Array[_] = js.native
-  def getSourceData(r: scala.Double): js.Array[_] = js.native
-  def getSourceData(r: scala.Double, c: scala.Double): js.Array[_] = js.native
-  def getSourceData(r: scala.Double, c: scala.Double, r2: scala.Double): js.Array[_] = js.native
-  def getSourceData(r: scala.Double, c: scala.Double, r2: scala.Double, c2: scala.Double): js.Array[_] = js.native
-  def getSourceDataArray(): js.Array[_] = js.native
-  def getSourceDataArray(r: scala.Double): js.Array[_] = js.native
-  def getSourceDataArray(r: scala.Double, c: scala.Double): js.Array[_] = js.native
-  def getSourceDataArray(r: scala.Double, c: scala.Double, r2: scala.Double): js.Array[_] = js.native
-  def getSourceDataArray(r: scala.Double, c: scala.Double, r2: scala.Double, c2: scala.Double): js.Array[_] = js.native
-  def getSourceDataAtCell(row: scala.Double, column: scala.Double): js.Any = js.native
-  def getSourceDataAtCol(column: scala.Double): js.Array[_] = js.native
-  def getSourceDataAtRow(row: scala.Double): js.Array[_] | js.Object = js.native
+  def getSettings(): handsontableLib.handsontableMod.HandsontableNs.GridSettings = js.native
+  def getSourceData(): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
+  def getSourceData(row: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
+  def getSourceData(row: scala.Double, column: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
+  def getSourceData(row: scala.Double, column: scala.Double, row2: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
+  def getSourceData(row: scala.Double, column: scala.Double, row2: scala.Double, column2: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
+  def getSourceDataArray(): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] = js.native
+  def getSourceDataArray(row: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] = js.native
+  def getSourceDataArray(row: scala.Double, column: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] = js.native
+  def getSourceDataArray(row: scala.Double, column: scala.Double, row2: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] = js.native
+  def getSourceDataArray(row: scala.Double, column: scala.Double, row2: scala.Double, ccolumn2: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] = js.native
+  def getSourceDataAtCell(row: scala.Double, column: scala.Double): handsontableLib.handsontableMod.HandsontableNs.CellValue = js.native
+  def getSourceDataAtCol(column: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] = js.native
+  def getSourceDataAtRow(row: scala.Double): js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] | handsontableLib.handsontableMod.HandsontableNs.RowObject = js.native
   def getTranslatedPhrase(dictionaryKey: java.lang.String, extraArguments: js.Any): java.lang.String | scala.Null = js.native
-  def getValue(): js.Any = js.native
+  def getValue(): handsontableLib.handsontableMod.HandsontableNs.CellValue = js.native
   def hasColHeaders(): scala.Boolean = js.native
   def hasHook(key: java.lang.String): scala.Boolean = js.native
   def hasRowHeaders(): scala.Boolean = js.native
@@ -367,23 +384,44 @@ trait Core extends js.Object {
   def isEmptyRow(row: scala.Double): scala.Boolean = js.native
   def isListening(): scala.Boolean = js.native
   def listen(): scala.Unit = js.native
-  def loadData(data: js.Array[_]): scala.Unit = js.native
+  def loadData(
+    data: js.Array[
+      js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] | handsontableLib.handsontableMod.HandsontableNs.RowObject
+    ]
+  ): scala.Unit = js.native
   def populateFromArray(
     row: scala.Double,
     col: scala.Double,
-    input: js.Array[_],
+    input: js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]],
     endRow: js.UndefOr[scala.Double],
     endCol: js.UndefOr[scala.Double],
     source: js.UndefOr[java.lang.String],
-    method: js.UndefOr[java.lang.String],
-    direction: js.UndefOr[java.lang.String],
+    method: js.UndefOr[
+      handsontableLib.handsontableLibStrings.overwrite | handsontableLib.handsontableLibStrings.shift_down | handsontableLib.handsontableLibStrings.shift_right
+    ],
+    direction: js.UndefOr[
+      handsontableLib.handsontableLibStrings.down | handsontableLib.handsontableLibStrings.left | handsontableLib.handsontableLibStrings.right | handsontableLib.handsontableLibStrings.up
+    ],
     deltas: js.UndefOr[js.Array[_]]
-  ): js.Any = js.native
+  ): scala.Unit = js.native
   def propToCol(prop: java.lang.String): scala.Double = js.native
   def propToCol(prop: scala.Double): scala.Double = js.native
+  def refreshDimensions(): scala.Unit = js.native
   def removeCellMeta(row: scala.Double, col: scala.Double, key: java.lang.String): scala.Unit = js.native
-  def removeHook(key: java.lang.String, callback: js.Array[js.Function0[scala.Unit]]): scala.Unit = js.native
-  def removeHook(key: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  @JSName("removeCellMeta")
+  def removeCellMeta_comment(row: scala.Double, col: scala.Double, key: handsontableLib.handsontableLibStrings.comment): scala.Unit = js.native
+  @JSName("removeCellMeta")
+  def removeCellMeta_hidden(row: scala.Double, col: scala.Double, key: handsontableLib.handsontableLibStrings.hidden): scala.Unit = js.native
+  @JSName("removeCellMeta")
+  def removeCellMeta_isSearchResult(row: scala.Double, col: scala.Double, key: handsontableLib.handsontableLibStrings.isSearchResult): scala.Unit = js.native
+  @JSName("removeCellMeta")
+  def removeCellMeta_skipRowOnPaste(row: scala.Double, col: scala.Double, key: handsontableLib.handsontableLibStrings.skipRowOnPaste): scala.Unit = js.native
+  @JSName("removeCellMeta")
+  def removeCellMeta_valid(row: scala.Double, col: scala.Double, key: handsontableLib.handsontableLibStrings.valid): scala.Unit = js.native
+  def removeHook[K /* <: java.lang.String */](
+    key: K,
+    callback: /* import warning: ImportType.apply Failed type conversion: handsontable.handsontable.Handsontable.Hooks.Events[K] */ js.Any
+  ): scala.Unit = js.native
   def render(): scala.Unit = js.native
   def rowOffset(): scala.Double = js.native
   def runHooks(
@@ -395,6 +433,8 @@ trait Core extends js.Object {
     p5: js.UndefOr[js.Any],
     p6: js.UndefOr[js.Any]
   ): js.Any = js.native
+  // Requires TS 3.0:
+  // runHooks<K extends keyof Handsontable.Events>(key: K, ...params: Parameters<Handsontable.Events[K]>): ReturnType<Handsontable.Events[K]>;
   def scrollViewportTo(): scala.Boolean = js.native
   def scrollViewportTo(row: scala.Double): scala.Boolean = js.native
   def scrollViewportTo(row: scala.Double, column: scala.Double): scala.Boolean = js.native
@@ -470,36 +510,159 @@ trait Core extends js.Object {
   def selectColumns(startColumn: scala.Double, endColumn: scala.Double): scala.Boolean = js.native
   def selectRows(startRow: scala.Double): scala.Boolean = js.native
   def selectRows(startRow: scala.Double, endRow: scala.Double): scala.Boolean = js.native
-  def setCellMeta(row: scala.Double, col: scala.Double, key: java.lang.String, `val`: java.lang.String): scala.Unit = js.native
-  def setCellMetaObject(row: scala.Double, col: scala.Double, prop: js.Object): scala.Unit = js.native
-  def setDataAtCell(changes: js.Array[js.Tuple3[scala.Double, java.lang.String | scala.Double, _]]): scala.Unit = js.native
+  def setCellMeta(row: scala.Double, col: scala.Double, key: java.lang.String, `val`: js.Any): scala.Unit = js.native
+  def setCellMetaObject[T /* <: handsontableLib.handsontableMod.HandsontableNs.CellMeta */](row: scala.Double, col: scala.Double, prop: T): scala.Unit = js.native
+  @JSName("setCellMeta")
+  def setCellMeta_comment(
+    row: scala.Double,
+    col: scala.Double,
+    key: handsontableLib.handsontableLibStrings.comment,
+    `val`: handsontableLib.handsontableMod.HandsontableNs.commentsNs.CommentObject
+  ): scala.Unit = js.native
+  @JSName("setCellMeta")
+  def setCellMeta_data(
+    row: scala.Double,
+    col: scala.Double,
+    key: handsontableLib.handsontableLibStrings.data,
+    `val`: handsontableLib.handsontableMod.HandsontableNs.ColumnDataGetterSetterFunction
+  ): scala.Unit = js.native
+  @JSName("setCellMeta")
+  def setCellMeta_data(
+    row: scala.Double,
+    col: scala.Double,
+    key: handsontableLib.handsontableLibStrings.data,
+    `val`: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("setCellMeta")
+  def setCellMeta_data(
+    row: scala.Double,
+    col: scala.Double,
+    key: handsontableLib.handsontableLibStrings.data,
+    `val`: scala.Double
+  ): scala.Unit = js.native
+  @JSName("setCellMeta")
+  def setCellMeta_hidden(
+    row: scala.Double,
+    col: scala.Double,
+    key: handsontableLib.handsontableLibStrings.hidden,
+    `val`: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("setCellMeta")
+  def setCellMeta_isSearchResult(
+    row: scala.Double,
+    col: scala.Double,
+    key: handsontableLib.handsontableLibStrings.isSearchResult,
+    `val`: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("setCellMeta")
+  def setCellMeta_skipRowOnPaste(
+    row: scala.Double,
+    col: scala.Double,
+    key: handsontableLib.handsontableLibStrings.skipRowOnPaste,
+    `val`: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("setCellMeta")
+  def setCellMeta_valid(
+    row: scala.Double,
+    col: scala.Double,
+    key: handsontableLib.handsontableLibStrings.valid,
+    `val`: scala.Boolean
+  ): scala.Unit = js.native
   def setDataAtCell(
-    changes: js.Array[js.Tuple3[scala.Double, java.lang.String | scala.Double, _]],
+    changes: js.Array[
+      js.Tuple3[
+        scala.Double, 
+        java.lang.String | scala.Double, 
+        handsontableLib.handsontableMod.HandsontableNs.CellValue
+      ]
+    ]
+  ): scala.Unit = js.native
+  def setDataAtCell(
+    changes: js.Array[
+      js.Tuple3[
+        scala.Double, 
+        java.lang.String | scala.Double, 
+        handsontableLib.handsontableMod.HandsontableNs.CellValue
+      ]
+    ],
     source: java.lang.String
   ): scala.Unit = js.native
-  def setDataAtCell(row: scala.Double, col: java.lang.String, value: js.Any): scala.Unit = js.native
-  def setDataAtCell(row: scala.Double, col: java.lang.String, value: js.Any, source: java.lang.String): scala.Unit = js.native
-  def setDataAtCell(row: scala.Double, col: scala.Double, value: js.Any): scala.Unit = js.native
-  def setDataAtCell(row: scala.Double, col: scala.Double, value: js.Any, source: java.lang.String): scala.Unit = js.native
-  def setDataAtRowProp(changes: js.Array[js.Tuple3[scala.Double, java.lang.String | scala.Double, _]]): scala.Unit = js.native
+  def setDataAtCell(
+    row: scala.Double,
+    col: java.lang.String,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue
+  ): scala.Unit = js.native
+  def setDataAtCell(
+    row: scala.Double,
+    col: java.lang.String,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    source: java.lang.String
+  ): scala.Unit = js.native
+  def setDataAtCell(
+    row: scala.Double,
+    col: scala.Double,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue
+  ): scala.Unit = js.native
+  def setDataAtCell(
+    row: scala.Double,
+    col: scala.Double,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    source: java.lang.String
+  ): scala.Unit = js.native
   def setDataAtRowProp(
-    changes: js.Array[js.Tuple3[scala.Double, java.lang.String | scala.Double, _]],
+    changes: js.Array[
+      js.Tuple3[
+        scala.Double, 
+        java.lang.String | scala.Double, 
+        handsontableLib.handsontableMod.HandsontableNs.CellValue
+      ]
+    ]
+  ): scala.Unit = js.native
+  def setDataAtRowProp(
+    changes: js.Array[
+      js.Tuple3[
+        scala.Double, 
+        java.lang.String | scala.Double, 
+        handsontableLib.handsontableMod.HandsontableNs.CellValue
+      ]
+    ],
     source: java.lang.String
   ): scala.Unit = js.native
-  def setDataAtRowProp(row: scala.Double, prop: java.lang.String, value: js.Any): scala.Unit = js.native
-  def setDataAtRowProp(row: scala.Double, prop: java.lang.String, value: js.Any, source: java.lang.String): scala.Unit = js.native
-  def spliceCol(col: scala.Double, index: scala.Double, amount: scala.Double): scala.Unit = js.native
-  def spliceCol(col: scala.Double, index: scala.Double, amount: scala.Double, elements: js.Any): scala.Unit = js.native
-  def spliceRow(row: scala.Double, index: scala.Double, amount: scala.Double): scala.Unit = js.native
-  def spliceRow(row: scala.Double, index: scala.Double, amount: scala.Double, elements: js.Any): scala.Unit = js.native
+  def setDataAtRowProp(
+    row: scala.Double,
+    prop: java.lang.String,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue
+  ): scala.Unit = js.native
+  def setDataAtRowProp(
+    row: scala.Double,
+    prop: java.lang.String,
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    source: java.lang.String
+  ): scala.Unit = js.native
+  def spliceCol(
+    col: scala.Double,
+    index: scala.Double,
+    amount: scala.Double,
+    elements: handsontableLib.handsontableMod.HandsontableNs.CellValue*
+  ): scala.Unit = js.native
+  def spliceRow(
+    row: scala.Double,
+    index: scala.Double,
+    amount: scala.Double,
+    elements: handsontableLib.handsontableMod.HandsontableNs.CellValue*
+  ): scala.Unit = js.native
   def toPhysicalColumn(column: scala.Double): scala.Double = js.native
   def toPhysicalRow(row: scala.Double): scala.Double = js.native
   def toVisualColumn(column: scala.Double): scala.Double = js.native
   def toVisualRow(row: scala.Double): scala.Double = js.native
   def unlisten(): scala.Unit = js.native
-  def updateSettings(settings: handsontableLib.handsontableMod.HandsontableNs.DefaultSettings, init: scala.Boolean): scala.Unit = js.native
+  def updateSettings(settings: handsontableLib.handsontableMod.HandsontableNs.GridSettings): scala.Unit = js.native
+  def updateSettings(settings: handsontableLib.handsontableMod.HandsontableNs.GridSettings, init: scala.Boolean): scala.Unit = js.native
+  def validateCells(): scala.Unit = js.native
   def validateCells(callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def validateColumns(columns: js.Array[scala.Double]): scala.Unit = js.native
   def validateColumns(columns: js.Array[scala.Double], callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def validateRows(rows: js.Array[scala.Double]): scala.Unit = js.native
   def validateRows(rows: js.Array[scala.Double], callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
 }
 

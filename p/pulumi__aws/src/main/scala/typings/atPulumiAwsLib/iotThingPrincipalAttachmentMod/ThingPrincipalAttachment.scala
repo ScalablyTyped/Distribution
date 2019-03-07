@@ -21,11 +21,11 @@ class ThingPrincipalAttachment protected ()
   /**
     * The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
     */
-  val principal: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val principal: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * The name of the thing.
     */
-  val thing: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val thing: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-cloud"
-version := "v1.2.2-dt-20181231Z-826c25"
+version := "v1.2.5-dt-20190305Z-63fbf0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Endpoints extends js.Object {
   var currentEndpoint: js.Object | scala.Unit = js.native
-  var endpoints: js.Array[_] = js.native
+  var endpoints: js.Array[Endpoint] = js.native
   var hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core = js.native
   var plugin: ColumnSummary = js.native
   var settings: js.Object | js.Function0[scala.Unit] = js.native

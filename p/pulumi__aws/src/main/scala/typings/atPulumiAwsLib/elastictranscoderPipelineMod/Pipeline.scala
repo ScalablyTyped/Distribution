@@ -18,47 +18,47 @@ class Pipeline protected ()
     */
   def this(name: java.lang.String, args: PipelineArgs) = this()
   def this(name: java.lang.String, args: PipelineArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline.
     */
-  val awsKmsKeyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val awsKmsKeyArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ContentConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save transcoded files and playlists. (documented below)
     */
-  val contentConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketStorageClass] = js.native
+  val contentConfig: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_BucketStorageClass] = js.native
   /**
     * The permissions for the `content_config` object. (documented below)
     */
-  val contentConfigPermissions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Accesses]]] = js.native
+  val contentConfigPermissions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Accesses]]] = js.native
   /**
     * The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphics that you want to use as watermarks.
     */
-  val inputBucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val inputBucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the pipeline. Maximum 40 characters
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify to report job status. (documented below)
     */
-  val notifications: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Completed]] = js.native
+  val notifications: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Completed]] = js.native
   /**
     * The Amazon S3 bucket in which you want Elastic Transcoder to save the transcoded files.
     */
-  val outputBucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val outputBucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IAM Amazon Resource Name (ARN) for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.
     */
-  val role: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val role: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ThumbnailConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files. (documented below)
     */
-  val thumbnailConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketStorageClass] = js.native
+  val thumbnailConfig: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_BucketStorageClass] = js.native
   /**
     * The permissions for the `thumbnail_config` object. (documented below)
     */
-  val thumbnailConfigPermissions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Accesses]]] = js.native
+  val thumbnailConfigPermissions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Accesses]]] = js.native
 }
 
 /* static members */

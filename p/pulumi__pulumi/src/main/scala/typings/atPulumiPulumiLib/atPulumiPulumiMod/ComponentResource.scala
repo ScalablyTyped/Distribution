@@ -27,3 +27,14 @@ class ComponentResource protected ()
   def this(`type`: java.lang.String, name: java.lang.String, unused: atPulumiPulumiLib.outputMod.Inputs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
 }
 
+/* static members */
+@JSImport("@pulumi/pulumi", "ComponentResource")
+@js.native
+object ComponentResource extends js.Object {
+  /**
+    * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
+    * multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource */ scala.Boolean = js.native
+}
+

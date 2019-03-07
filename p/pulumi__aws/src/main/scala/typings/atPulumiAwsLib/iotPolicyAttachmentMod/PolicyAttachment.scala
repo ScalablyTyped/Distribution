@@ -21,11 +21,11 @@ class PolicyAttachment protected ()
   /**
     * The name of the policy to attach.
     */
-  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The identity to which the policy is attached.
     */
-  val target: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val target: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
 }
 
 /* static members */

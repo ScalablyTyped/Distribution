@@ -13,6 +13,7 @@ trait CallConversation extends ConversationNode {
 object CallConversation {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     calledCollaborationRef: Collaboration,
     correlationKeys: js.Array[CorrelationKey],
@@ -28,7 +29,7 @@ object CallConversation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CallConversation = {
-    val __obj = js.Dynamic.literal($type = $type, calledCollaborationRef = calledCollaborationRef, correlationKeys = correlationKeys, id = id, incomingConversationLinks = incomingConversationLinks, messageFlowRefs = messageFlowRefs, name = name, outgoingConversationLinks = outgoingConversationLinks, participantAssociations = participantAssociations, participantRefs = participantRefs)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, calledCollaborationRef = calledCollaborationRef, correlationKeys = correlationKeys, id = id, incomingConversationLinks = incomingConversationLinks, messageFlowRefs = messageFlowRefs, name = name, outgoingConversationLinks = outgoingConversationLinks, participantAssociations = participantAssociations, participantRefs = participantRefs)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

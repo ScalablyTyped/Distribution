@@ -21,31 +21,31 @@ class EventDestination protected ()
   /**
     * CloudWatch destination for the events
     */
-  val cloudwatchDestinations: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DefaultValueDimensionName]]] = js.native
+  val cloudwatchDestinations: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DefaultValueDimensionName]]] = js.native
   /**
     * The name of the configuration set
     */
-  val configurationSetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val configurationSetName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * If true, the event destination will be enabled
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Send the events to a kinesis firehose destination
     */
-  val kinesisDestination: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnStreamArn]] = js.native
+  val kinesisDestination: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnStreamArn]] = js.native
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */
-  val matchingTypes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val matchingTypes: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The name of the event destination
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Send the events to an SNS Topic destination
     */
-  val snsDestination: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TopicArn]] = js.native
+  val snsDestination: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TopicArn]] = js.native
 }
 
 /* static members */

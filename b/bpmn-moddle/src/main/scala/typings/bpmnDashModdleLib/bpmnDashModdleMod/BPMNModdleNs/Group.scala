@@ -12,6 +12,7 @@ trait Group extends BaseElement {
 object Group {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     categoryValueRef: CategoryValue,
     id: java.lang.String,
@@ -20,7 +21,7 @@ object Group {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Group = {
-    val __obj = js.Dynamic.literal($type = $type, categoryValueRef = categoryValueRef, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, categoryValueRef = categoryValueRef, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

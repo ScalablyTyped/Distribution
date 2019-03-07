@@ -21,49 +21,49 @@ class ClusterSnapshot protected ()
   /**
     * List of EC2 Availability Zones that instances in the DocDB cluster snapshot can be restored in.
     */
-  val availabilityZones: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val availabilityZones: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The DocDB Cluster Identifier from which to take the snapshot.
     */
-  val dbClusterIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbClusterIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) for the DocDB Cluster Snapshot.
     */
-  val dbClusterSnapshotArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbClusterSnapshotArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Identifier for the snapshot.
     */
-  val dbClusterSnapshotIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbClusterSnapshotIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the name of the database engine.
     */
-  val engine: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engine: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Version of the database engine for this DocDB cluster snapshot.
     */
-  val engineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * If storage_encrypted is true, the AWS KMS key identifier for the encrypted DocDB cluster snapshot.
     */
-  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Port that the DocDB cluster was listening on at the time of the snapshot.
     */
-  val port: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
-  val snapshotType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val sourceDbClusterSnapshotArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val port: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
+  val snapshotType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val sourceDbClusterSnapshotArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The status of this DocDB Cluster Snapshot.
     */
-  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether the DocDB cluster snapshot is encrypted.
     */
-  val storageEncrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val storageEncrypted: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The VPC ID associated with the DocDB cluster snapshot.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

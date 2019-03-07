@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Rotate options.
   * @api stable
   */
-@JSImport("ol/control/rotate", JSImport.Default)
+@JSImport("ol/control/Rotate", JSImport.Default)
 @js.native
 /**
   * @classdesc
@@ -31,7 +31,7 @@ class default ()
 }
 
 /* static members */
-@JSImport("ol/control/rotate", JSImport.Default)
+@JSImport("ol/control/Rotate", JSImport.Default)
 @js.native
 object default extends js.Object {
   /**

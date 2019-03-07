@@ -26,39 +26,39 @@ class Cluster protected ()
     * * `cluster_certificates.0.hsm_certificate` - The HSM certificate issued (signed) by the HSM hardware.
     * * `cluster_certificates.0.manufacturer_hardware_certificate` - The HSM hardware certificate issued (signed) by the hardware manufacturer.
     */
-  val clusterCertificates: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AwsHardwareCertificate] = js.native
+  val clusterCertificates: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AwsHardwareCertificate] = js.native
   /**
     * The id of the CloudHSM cluster.
     */
-  val clusterId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clusterId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The state of the cluster.
     */
-  val clusterState: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clusterState: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The type of HSM module in the cluster. Currently, only hsm1.medium is supported.
     */
-  val hsmType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val hsmType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the security group associated with the CloudHSM cluster.
     */
-  val securityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val securityGroupId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The id of Cloud HSM v2 cluster backup to be restored.
     */
-  val sourceBackupIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val sourceBackupIdentifier: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The IDs of subnets in which cluster will operate.
     */
-  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The id of the VPC that the CloudHSM cluster resides in.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

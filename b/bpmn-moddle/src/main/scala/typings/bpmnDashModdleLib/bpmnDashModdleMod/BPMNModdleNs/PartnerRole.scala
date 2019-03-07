@@ -13,6 +13,7 @@ trait PartnerRole extends BaseElement {
 object PartnerRole {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     name: java.lang.String,
@@ -22,7 +23,7 @@ object PartnerRole {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): PartnerRole = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, name = name, participantRef = participantRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, name = name, participantRef = participantRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

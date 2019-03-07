@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api
   */
-@JSImport("ol/interaction/snap", JSImport.Default)
+@JSImport("ol/interaction/Snap", JSImport.Default)
 @js.native
 /**
   * @classdesc

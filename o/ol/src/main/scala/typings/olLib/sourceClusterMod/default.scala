@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param options Constructor options.
   * @api
   */
-@JSImport("ol/source/cluster", JSImport.Default)
+@JSImport("ol/source/Cluster", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.sourceNs.Cluster {

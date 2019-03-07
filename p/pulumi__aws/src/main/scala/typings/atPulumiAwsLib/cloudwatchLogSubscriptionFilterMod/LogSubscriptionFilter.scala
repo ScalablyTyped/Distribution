@@ -21,27 +21,27 @@ class LogSubscriptionFilter protected ()
   /**
     * The ARN of the destination to deliver matching log events to. Kinesis stream or Lambda function ARN.
     */
-  val destinationArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val destinationArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The method used to distribute log data to the destination. By default log data is grouped by log stream, but the grouping can be set to random for a more even distribution. This property is only applicable when the destination is an Amazon Kinesis stream. Valid values are "Random" and "ByLogStream".
     */
-  val distribution: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val distribution: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A valid CloudWatch Logs filter pattern for subscribing to a filtered stream of log events.
     */
-  val filterPattern: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val filterPattern: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the log group to associate the subscription filter with
     */
-  val logGroup: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.cloudwatchLogGroupMod.LogGroup] = js.native
+  val logGroup: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.cloudwatchLogGroupMod.LogGroup] = js.native
   /**
     * A name for the subscription filter
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of an IAM role that grants Amazon CloudWatch Logs permissions to deliver ingested log events to the destination. If you use Lambda as a destination, you should skip this argument and use `aws_lambda_permission` resource for granting access from CloudWatch logs to the destination Lambda function.
     */
-  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val roleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

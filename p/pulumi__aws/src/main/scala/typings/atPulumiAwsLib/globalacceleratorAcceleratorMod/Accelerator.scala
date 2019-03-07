@@ -22,23 +22,23 @@ class Accelerator protected ()
   /**
     * The attributes of the accelerator. Fields documented below.
     */
-  val attributes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FlowLogsEnabled]] = js.native
+  val attributes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FlowLogsEnabled]] = js.native
   /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The value for the address type must be `IPV4`.
     */
-  val ipAddressType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val ipAddressType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * IP address set associated with the accelerator.
     */
-  val ipSets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_IpAddresses]] = js.native
+  val ipSets: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_IpAddresses]] = js.native
   /**
     * The name of the accelerator.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

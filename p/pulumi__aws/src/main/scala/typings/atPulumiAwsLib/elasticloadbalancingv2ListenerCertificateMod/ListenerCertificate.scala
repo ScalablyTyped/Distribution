@@ -21,11 +21,11 @@ class ListenerCertificate protected ()
   /**
     * The ARN of the certificate to attach to the listener.
     */
-  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val certificateArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the listener to which to attach the certificate.
     */
-  val listenerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val listenerArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

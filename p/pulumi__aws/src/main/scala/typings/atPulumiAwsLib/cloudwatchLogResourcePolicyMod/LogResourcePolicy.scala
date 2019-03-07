@@ -21,11 +21,11 @@ class LogResourcePolicy protected ()
   /**
     * Details of the resource policy, including the identity of the principal that is enabled to put logs to this account. This is formatted as a JSON string. Maximum length of 5120 characters.
     */
-  val policyDocument: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policyDocument: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the resource policy.
     */
-  val policyName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policyName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

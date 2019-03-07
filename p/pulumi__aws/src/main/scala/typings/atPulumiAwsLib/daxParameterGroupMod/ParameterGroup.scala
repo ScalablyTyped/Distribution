@@ -22,15 +22,15 @@ class ParameterGroup protected ()
   /**
     * A description of the parameter group.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the parameter group.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The parameters of the parameter group.
     */
-  val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Name]] = js.native
+  val parameters: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_Name]] = js.native
 }
 
 /* static members */

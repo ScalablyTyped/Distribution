@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Layer options.
   * @api stable
   */
-@JSImport("ol/layer/image", JSImport.Default)
+@JSImport("ol/layer/Image", JSImport.Default)
 @js.native
 /**
   * @classdesc

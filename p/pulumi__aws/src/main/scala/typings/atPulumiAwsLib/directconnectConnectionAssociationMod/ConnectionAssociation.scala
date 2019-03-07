@@ -21,11 +21,11 @@ class ConnectionAssociation protected ()
   /**
     * The ID of the connection.
     */
-  val connectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val connectionId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the LAG with which to associate the connection.
     */
-  val lagId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val lagId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

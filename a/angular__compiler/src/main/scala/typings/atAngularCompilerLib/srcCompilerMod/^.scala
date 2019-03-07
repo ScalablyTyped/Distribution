@@ -113,7 +113,7 @@ object ^ extends js.Object {
   def parseTemplate(
     template: java.lang.String,
     templateUrl: java.lang.String,
-    options: atAngularCompilerLib.Anon_InterpolationConfig
+    options: atAngularCompilerLib.srcRender3ViewTemplateMod.ParseTemplateOptions
   ): atAngularCompilerLib.Anon_Errors = js.native
   def preserveWhitespacesDefault(): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Boolean): scala.Boolean = js.native

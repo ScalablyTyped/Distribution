@@ -21,17 +21,17 @@ class Certificate protected ()
   /**
     * Boolean flag to indicate if the certificate should be active
     */
-  val active: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val active: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The ARN of the created AWS IoT certificate
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The certificate signing request. Review the
     * [IoT API Reference Guide] (http://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html)
     * for more information on creating a certificate from a certificate signing request (CSR).
     */
-  val csr: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val csr: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

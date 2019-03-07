@@ -21,19 +21,19 @@ class RequestValidator protected ()
   /**
     * The name of the request validator
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the associated Rest API
     */
-  val restApi: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
+  val restApi: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
   /**
     * Boolean whether to validate request body. Defaults to `false`.
     */
-  val validateRequestBody: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val validateRequestBody: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Boolean whether to validate request parameters. Defaults to `false`.
     */
-  val validateRequestParameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val validateRequestParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
 /* static members */

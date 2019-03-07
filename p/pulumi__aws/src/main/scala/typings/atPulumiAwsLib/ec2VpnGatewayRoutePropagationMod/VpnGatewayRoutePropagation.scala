@@ -21,11 +21,11 @@ class VpnGatewayRoutePropagation protected ()
   /**
     * The id of the `aws_route_table` to propagate routes into.
     */
-  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The id of the `aws_vpn_gateway` to propagate routes from.
     */
-  val vpnGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpnGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

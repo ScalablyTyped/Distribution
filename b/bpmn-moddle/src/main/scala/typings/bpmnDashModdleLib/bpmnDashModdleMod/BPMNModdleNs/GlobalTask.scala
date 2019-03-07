@@ -12,6 +12,7 @@ trait GlobalTask extends CallableElement {
 object GlobalTask {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     ioBinding: InputOutputBinding,
@@ -24,7 +25,7 @@ object GlobalTask {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): GlobalTask = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, ioBinding = ioBinding, ioSpecification = ioSpecification, name = name, resources = resources, supportedInterfaceRef = supportedInterfaceRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, ioBinding = ioBinding, ioSpecification = ioSpecification, name = name, resources = resources, supportedInterfaceRef = supportedInterfaceRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

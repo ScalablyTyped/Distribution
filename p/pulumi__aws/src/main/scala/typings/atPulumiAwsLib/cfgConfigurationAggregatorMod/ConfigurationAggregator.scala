@@ -22,19 +22,19 @@ class ConfigurationAggregator protected ()
   /**
     * The account(s) to aggregate config data from as documented below.
     */
-  val accountAggregationSource: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AccountIds]] = js.native
+  val accountAggregationSource: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AccountIds]] = js.native
   /**
     * The ARN of the aggregator
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the configuration aggregator.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The organization to aggregate config data from as documented below.
     */
-  val organizationAggregationSource: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllRegions]] = js.native
+  val organizationAggregationSource: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllRegions]] = js.native
 }
 
 /* static members */

@@ -21,31 +21,31 @@ class UserPoolDomain protected ()
   /**
     * The AWS account ID for the user pool owner.
     */
-  val awsAccountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val awsAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of an ISSUED ACM certificate in us-east-1 for a custom domain.
     */
-  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN of the CloudFront distribution.
     */
-  val cloudfrontDistributionArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cloudfrontDistributionArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The domain string.
     */
-  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The S3 bucket where the static files for this domain are stored.
     */
-  val s3Bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val s3Bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The user pool ID.
     */
-  val userPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val userPoolId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The app version.
     */
-  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val version: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

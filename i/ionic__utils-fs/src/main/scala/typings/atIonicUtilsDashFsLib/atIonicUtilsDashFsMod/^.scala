@@ -583,6 +583,7 @@ object ^ extends js.Object {
   ): js.Promise[
     atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.RegularFileNode with (RE | atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.DirectoryNode) with DE
   ] = js.native
+  def isExecutableFile(filePath: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
     * Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1079,12 +1080,15 @@ object ^ extends js.Object {
   def outputJsonSync(file: java.lang.String, data: js.Any): scala.Unit = js.native
   def outputJsonSync(file: java.lang.String, data: js.Any, options: fsDashExtraLib.fsDashExtraMod.WriteOptions): scala.Unit = js.native
   def pathAccessible(filePath: java.lang.String, mode: scala.Double): js.Promise[scala.Boolean] = js.native
+  def pathExecutable(filePath: java.lang.String): js.Promise[scala.Boolean] = js.native
   def pathExists(path: java.lang.String): js.Promise[scala.Boolean] = js.native
   def pathExists(
     path: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* exists */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   def pathExistsSync(path: java.lang.String): scala.Boolean = js.native
+  def pathReadable(filePath: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def pathWritable(filePath: java.lang.String): js.Promise[scala.Boolean] = js.native
   def read(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[fsDashExtraLib.fsDashExtraMod.ReadResult] = js.native
   def read(
     fd: scala.Double,

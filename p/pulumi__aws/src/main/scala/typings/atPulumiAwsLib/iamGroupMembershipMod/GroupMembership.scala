@@ -21,15 +21,15 @@ class GroupMembership protected ()
   /**
     * The IAM Group name to attach the list of `users` to
     */
-  val group: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val group: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name to identify the Group Membership
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of IAM User names to associate with the Group
     */
-  val users: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val users: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
 }
 
 /* static members */

@@ -22,73 +22,73 @@ class Domain protected ()
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val accessPolicies: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Key-value string pairs to specify advanced configuration options.
     * Note that the values for these configuration options must be strings (wrapped in quotes) or they
     * may be wrong and cause a perpetual diff, causing Terraform to want to recreate your Elasticsearch
     * domain on every apply.
     */
-  val advancedOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val advancedOptions: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * Amazon Resource Name (ARN) of the domain.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Cluster configuration of the domain, see below.
     */
-  val clusterConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_DedicatedMasterCount] = js.native
-  val cognitoOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EnabledIdentityPoolId]] = js.native
+  val clusterConfig: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_DedicatedMasterCount] = js.native
+  val cognitoOptions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EnabledIdentityPoolId]] = js.native
   /**
     * Unique identifier for the domain.
     */
-  val domainId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domainId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the domain.
     */
-  val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domainName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
     */
-  val ebsOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_EbsEnabled] = js.native
+  val ebsOptions: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EbsEnabled] = js.native
   /**
     * The version of Elasticsearch to deploy. Defaults to `1.5`
     */
-  val elasticsearchVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val elasticsearchVersion: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
     */
-  val encryptAtRest: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_EnabledKmsKeyId] = js.native
+  val encryptAtRest: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledKmsKeyId] = js.native
   /**
     * Domain-specific endpoint used to submit index, search, and data upload requests.
     */
-  val endpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val endpoint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Domain-specific endpoint for kibana without https scheme.
     * * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnet_ids` were created inside.
     * * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
     */
-  val kibanaEndpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kibanaEndpoint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Options for publishing slow logs to CloudWatch Logs.
     */
-  val logPublishingOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CloudwatchLogGroupArn]]] = js.native
+  val logPublishingOptions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CloudwatchLogGroupArn]]] = js.native
   /**
     * Node-to-node encryption options. See below.
     */
-  val nodeToNodeEncryption: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
+  val nodeToNodeEncryption: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
   /**
     * Snapshot related options, see below.
     */
-  val snapshotOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AutomatedSnapshotStartHour]] = js.native
+  val snapshotOptions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AutomatedSnapshotStartHour]] = js.native
   /**
     * A mapping of tags to assign to the resource
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
     */
-  val vpcOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZones]] = js.native
+  val vpcOptions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZones]] = js.native
 }
 
 /* static members */

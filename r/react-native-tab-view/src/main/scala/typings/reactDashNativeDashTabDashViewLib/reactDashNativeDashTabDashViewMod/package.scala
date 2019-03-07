@@ -13,7 +13,7 @@ package object reactDashNativeDashTabDashViewMod {
   type PagerScrollProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_AnimationEnabledChildren
   type Route[T /* <: RouteBase */] = T
   type RouteBase = Key with reactDashNativeDashTabDashViewLib.Anon_TestID
-  type TabBarProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_Bounces[T]
+  type TabBarProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_ActiveColor[T]
   type TabViewProps[T /* <: RouteBase */] = PagerProps with reactDashNativeDashTabDashViewLib.Anon_Bottom[T]
   type TransitionConfigurator = js.Function2[
     /* currentTransitionProps */ TransitionProps, 

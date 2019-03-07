@@ -26,42 +26,42 @@ class Instance protected ()
     * * `key_pair_name`
     * * `user_data`
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Availability Zone in which to create your
     * instance (see list below)
     */
-  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val availabilityZone: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID for a virtual private server image
     * (see list below)
     */
-  val blueprintId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val blueprintId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The bundle of specification information (see list below)
     */
-  val bundleId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val cpuCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
-  val createdAt: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val ipv6Address: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val isStaticIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val bundleId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val cpuCount: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
+  val createdAt: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val ipv6Address: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val isStaticIp: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The name of your key pair. Created in the
     * Lightsail console (cannot use `aws_key_pair` at this time)
     */
-  val keyPairName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val keyPairName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the Lightsail Instance
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val privateIpAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val publicIpAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val ramSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val privateIpAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val publicIpAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val ramSize: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * launch script to configure server with additional user data
     */
-  val userData: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val username: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val userData: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val username: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

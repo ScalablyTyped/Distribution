@@ -21,19 +21,19 @@ class Channel protected ()
   /**
     * The ARN of the channel
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A unique identifier describing the channel
     */
-  val channelId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val channelId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A description of the channel
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A single item list of HLS ingest information
     */
-  val hlsIngests: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_IngestEndpoints]] = js.native
+  val hlsIngests: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_IngestEndpoints]] = js.native
 }
 
 /* static members */

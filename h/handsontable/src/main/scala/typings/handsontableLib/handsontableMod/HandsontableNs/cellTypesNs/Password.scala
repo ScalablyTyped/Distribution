@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Password extends js.Object {
   var copyable: scala.Boolean
-  var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password
+  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password]
   var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password
 }
 
@@ -15,7 +15,7 @@ object Password {
   @scala.inline
   def apply(
     copyable: scala.Boolean,
-    editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password,
+    editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password],
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password
   ): Password = {
     val __obj = js.Dynamic.literal(copyable = copyable, editor = editor, renderer = renderer)

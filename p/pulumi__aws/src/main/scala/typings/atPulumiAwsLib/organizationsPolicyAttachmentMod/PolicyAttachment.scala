@@ -21,11 +21,11 @@ class PolicyAttachment protected ()
   /**
     * The unique identifier (ID) of the policy that you want to attach to the target.
     */
-  val policyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The unique identifier (ID) of the root, organizational unit, or account number that you want to attach the policy to.
     */
-  val targetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val targetId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

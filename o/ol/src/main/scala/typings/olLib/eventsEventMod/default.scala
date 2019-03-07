@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   *
   * @param type Type.
   */
-@JSImport("ol/events/event", JSImport.Default)
+@JSImport("ol/events/Event", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.eventsNs.Event {

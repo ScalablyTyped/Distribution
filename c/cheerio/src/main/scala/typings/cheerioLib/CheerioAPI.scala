@@ -11,5 +11,7 @@ trait CheerioAPI extends CheerioStatic {
   def load(element: CheerioElement, options: CheerioOptionsInterface): CheerioStatic = js.native
   def load(html: java.lang.String): CheerioStatic = js.native
   def load(html: java.lang.String, options: CheerioOptionsInterface): CheerioStatic = js.native
+  def load(html: nodeLib.Buffer): CheerioStatic = js.native
+  def load(html: nodeLib.Buffer, options: CheerioOptionsInterface): CheerioStatic = js.native
 }
 

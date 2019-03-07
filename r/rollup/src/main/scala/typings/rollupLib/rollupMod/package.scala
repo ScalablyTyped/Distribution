@@ -40,8 +40,9 @@ package object rollupMod {
     /* this */ PluginContext, 
     /* id */ java.lang.String, 
     /* parent */ java.lang.String, 
-    (js.Promise[java.lang.String | rollupLib.rollupLibNumbers.`false` | scala.Null]) | java.lang.String | rollupLib.rollupLibNumbers.`false` | scala.Unit | scala.Null
+    js.Promise[ResolveIdResult] | ResolveIdResult
   ]
+  type ResolveIdResult = _ResolveIdResult | java.lang.String | scala.Unit
   type TransformChunkHook = js.ThisFunction2[
     /* this */ PluginContext, 
     /* code */ java.lang.String, 

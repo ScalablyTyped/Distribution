@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait DraftBlockRenderConfig extends js.Object {
   var element: java.lang.String
-  var wrapper: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var wrapper: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
 object DraftBlockRenderConfig {
   @scala.inline
-  def apply(element: java.lang.String, wrapper: reactLib.reactMod.ReactNs.ReactElement[_] = null): DraftBlockRenderConfig = {
+  def apply(element: java.lang.String, wrapper: reactLib.reactMod.ReactNs.ReactNode = null): DraftBlockRenderConfig = {
     val __obj = js.Dynamic.literal(element = element)
-    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraftBlockRenderConfig]
   }
 }

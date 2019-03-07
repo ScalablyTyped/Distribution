@@ -21,21 +21,21 @@ class Pipeline protected ()
   /**
     * The codepipeline ARN.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * An artifact_store block. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
-  val artifactStore: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_EncryptionKey] = js.native
+  val artifactStore: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EncryptionKey] = js.native
   /**
     * The name of the pipeline.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
     */
-  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val stages: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Actions]] = js.native
+  val roleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val stages: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_Actions]] = js.native
 }
 
 /* static members */

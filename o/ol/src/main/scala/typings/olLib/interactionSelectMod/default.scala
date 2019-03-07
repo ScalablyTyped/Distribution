@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   * @fires ol.interaction.SelectEvent
   * @api stable
   */
-@JSImport("ol/interaction/select", JSImport.Default)
+@JSImport("ol/interaction/Select", JSImport.Default)
 @js.native
 /**
   * @classdesc
@@ -45,7 +45,7 @@ class default ()
 }
 
 /* static members */
-@JSImport("ol/interaction/select", JSImport.Default)
+@JSImport("ol/interaction/Select", JSImport.Default)
 @js.native
 object default extends js.Object {
   /**

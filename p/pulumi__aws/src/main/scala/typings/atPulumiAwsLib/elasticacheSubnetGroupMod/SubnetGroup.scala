@@ -21,15 +21,15 @@ class SubnetGroup protected ()
   /**
     * Description for the cache subnet group. Defaults to "Managed by Terraform".
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name for the cache subnet group. Elasticache converts this name to lowercase.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of VPC Subnet IDs for the cache subnet group
     */
-  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
 }
 
 /* static members */

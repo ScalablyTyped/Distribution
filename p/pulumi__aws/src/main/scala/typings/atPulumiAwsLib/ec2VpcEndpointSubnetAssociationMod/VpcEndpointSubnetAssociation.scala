@@ -21,11 +21,11 @@ class VpcEndpointSubnetAssociation protected ()
   /**
     * The ID of the subnet to be associated with the VPC endpoint.
     */
-  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC endpoint with which the subnet will be associated.
     */
-  val vpcEndpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcEndpointId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

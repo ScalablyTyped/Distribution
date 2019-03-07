@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   *
   * @api stable
   */
-@JSImport("ol/geom/geometry", JSImport.Default)
+@JSImport("ol/geom/Geometry", JSImport.Default)
 @js.native
 /**
   * @classdesc

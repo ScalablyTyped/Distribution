@@ -50,13 +50,13 @@ object yamlNs extends js.Object {
     def this(name: java.lang.String, config: atPulumiKubernetesLib.providerMod.yamlNs.ConfigGroupOpts, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   }
   
-  def parse(config: atPulumiKubernetesLib.providerMod.yamlNs.ConfigGroupOpts): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+  def parse(config: atPulumiKubernetesLib.providerMod.yamlNs.ConfigGroupOpts): atPulumiPulumiLib.outputMod.Output[
     org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
   ] = js.native
   def parse(
     config: atPulumiKubernetesLib.providerMod.yamlNs.ConfigGroupOpts,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-  ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+  ): atPulumiPulumiLib.outputMod.Output[
     org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
   ] = js.native
 }

@@ -21,15 +21,15 @@ class RuleGroup protected ()
   /**
     * A list of activated rules, see below
     */
-  val activatedRules: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionPriority]]] = js.native
+  val activatedRules: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionPriority]]] = js.native
   /**
     * A friendly name for the metrics from the rule group
     */
-  val metricName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val metricName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A friendly name of the rule group
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

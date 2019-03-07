@@ -22,6 +22,9 @@ object twitchDashExtLibStrings {
   sealed trait bits extends js.Object
   
   @js.native
+  sealed trait broadcaster extends js.Object
+  
+  @js.native
   sealed trait `chat-only` extends js.Object
   
   @js.native
@@ -103,6 +106,8 @@ object twitchDashExtLibStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
   def bits: bits = "bits".asInstanceOf[bits]
+  @scala.inline
+  def broadcaster: broadcaster = "broadcaster".asInstanceOf[broadcaster]
   @scala.inline
   def `chat-only`: `chat-only` = "chat-only".asInstanceOf[`chat-only`]
   @scala.inline

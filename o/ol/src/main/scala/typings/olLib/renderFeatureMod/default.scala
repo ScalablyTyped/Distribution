@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   * @param ends Ends or Endss.
   * @param properties Properties.
   */
-@JSImport("ol/render/feature", JSImport.Default)
+@JSImport("ol/render/Feature", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.renderNs.Feature {

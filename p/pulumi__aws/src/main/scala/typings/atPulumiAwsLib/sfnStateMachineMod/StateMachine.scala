@@ -21,27 +21,27 @@ class StateMachine protected ()
   /**
     * The date the state machine was created.
     */
-  val creationDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val creationDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon States Language definition of the state machine.
     */
-  val definition: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val definition: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the state machine.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
     */
-  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val roleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The current status of the state machine. Either "ACTIVE" or "DELETING".
     */
-  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

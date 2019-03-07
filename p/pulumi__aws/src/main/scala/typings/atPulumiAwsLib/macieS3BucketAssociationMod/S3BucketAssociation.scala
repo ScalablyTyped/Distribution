@@ -21,19 +21,19 @@ class S3BucketAssociation protected ()
   /**
     * The name of the S3 bucket that you want to associate with Amazon Macie.
     */
-  val bucketName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bucketName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The configuration of how Amazon Macie classifies the S3 objects.
     */
-  val classificationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Continuous] = js.native
+  val classificationType: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Continuous] = js.native
   /**
     * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `member_account_id` isn't specified, the action associates specified S3 resources with Macie for the current master account.
     */
-  val memberAccountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val memberAccountId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Object key prefix identifying one or more S3 objects to which the association applies.
     */
-  val prefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val prefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

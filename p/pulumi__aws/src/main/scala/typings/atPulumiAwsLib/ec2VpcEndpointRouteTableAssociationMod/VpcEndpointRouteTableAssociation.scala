@@ -21,11 +21,11 @@ class VpcEndpointRouteTableAssociation protected ()
   /**
     * Identifier of the EC2 Route Table to be associated with the VPC Endpoint.
     */
-  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of the VPC Endpoint with which the EC2 Route Table will be associated.
     */
-  val vpcEndpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcEndpointId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

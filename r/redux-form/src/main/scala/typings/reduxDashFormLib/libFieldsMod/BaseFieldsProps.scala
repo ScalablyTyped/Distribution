@@ -8,10 +8,12 @@ import scala.scalajs.js.annotation._
 trait BaseFieldsProps[P] extends js.Object {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
   var format: js.UndefOr[reduxDashFormLib.libFieldMod.Formatter | scala.Null] = js.undefined
+  var forwardRef: js.UndefOr[scala.Boolean] = js.undefined
   var names: js.Array[java.lang.String]
   var parse: js.UndefOr[reduxDashFormLib.libFieldMod.Parser] = js.undefined
   var props: js.UndefOr[P] = js.undefined
-  var withRef: js.UndefOr[scala.Boolean] = js.undefined
+  var validate: js.UndefOr[FieldsWarnerOrValidator] = js.undefined
+  var warn: js.UndefOr[FieldsWarnerOrValidator] = js.undefined
 }
 
 object BaseFieldsProps {
@@ -20,16 +22,20 @@ object BaseFieldsProps {
     names: js.Array[java.lang.String],
     component: reactLib.reactMod.ReactNs.ComponentType[_] = null,
     format: reduxDashFormLib.libFieldMod.Formatter = null,
+    forwardRef: js.UndefOr[scala.Boolean] = js.undefined,
     parse: reduxDashFormLib.libFieldMod.Parser = null,
     props: P = null,
-    withRef: js.UndefOr[scala.Boolean] = js.undefined
+    validate: FieldsWarnerOrValidator = null,
+    warn: FieldsWarnerOrValidator = null
   ): BaseFieldsProps[P] = {
     val __obj = js.Dynamic.literal(names = names)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(forwardRef)) __obj.updateDynamic("forwardRef")(forwardRef)
     if (parse != null) __obj.updateDynamic("parse")(parse)
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    if (warn != null) __obj.updateDynamic("warn")(warn.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseFieldsProps[P]]
   }
 }

@@ -19,6 +19,7 @@ trait DataOutput extends ItemAwareElement {
 object DataOutput {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     dataState: DataState,
     id: java.lang.String,
@@ -33,7 +34,7 @@ object DataOutput {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): DataOutput = {
-    val __obj = js.Dynamic.literal($type = $type, dataState = dataState, id = id, isCollection = isCollection, itemSubjectRef = itemSubjectRef, name = name, outputSetRef = outputSetRef, outputSetWithOptional = outputSetWithOptional, outputSetWithWhileExecuting = outputSetWithWhileExecuting)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, dataState = dataState, id = id, isCollection = isCollection, itemSubjectRef = itemSubjectRef, name = name, outputSetRef = outputSetRef, outputSetWithOptional = outputSetWithOptional, outputSetWithWhileExecuting = outputSetWithWhileExecuting)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

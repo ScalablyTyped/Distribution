@@ -21,33 +21,33 @@ class MountTarget protected ()
   /**
     * The DNS name for the given subnet/AZ per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html).
     */
-  val dnsName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dnsName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Amazon Resource Name of the file system.
     */
-  val fileSystemArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val fileSystemArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the file system for which the mount target is intended.
     */
-  val fileSystemId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val fileSystemId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The address (within the address range of the specified subnet) at
     * which the file system may be mounted via the mount target.
     */
-  val ipAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the network interface that Amazon EFS created when it created the mount target.
     */
-  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of up to 5 VPC security group IDs (that must
     * be for the same VPC as subnet specified) in effect for the mount target.
     */
-  val securityGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val securityGroups: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The ID of the subnet to add the mount target in.
     */
-  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

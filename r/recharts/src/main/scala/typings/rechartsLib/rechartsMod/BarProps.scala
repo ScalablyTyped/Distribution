@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   var hide: js.UndefOr[scala.Boolean] = js.undefined
   // see label section at http://recharts.org/#/en-US/api/Bar
   var label: js.UndefOr[
-    scala.Boolean | Label | reactLib.reactMod.ReactNs.SFC[LabelProps] | reactLib.reactMod.ReactNs.ReactElement[LabelProps] | ContentRenderer[_]
+    scala.Boolean | Label | LabelProps | reactLib.reactMod.ReactNs.SFC[LabelProps] | reactLib.reactMod.ReactNs.ReactElement[LabelProps] | ContentRenderer[_]
   ] = js.undefined
   var layout: js.UndefOr[LayoutType] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
@@ -54,7 +54,7 @@ object BarProps {
     hide: js.UndefOr[scala.Boolean] = js.undefined,
     isAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
     isUpdateAnimationActive: js.UndefOr[scala.Boolean] = js.undefined,
-    label: scala.Boolean | Label | reactLib.reactMod.ReactNs.SFC[LabelProps] | reactLib.reactMod.ReactNs.ReactElement[LabelProps] | ContentRenderer[_] = null,
+    label: scala.Boolean | Label | LabelProps | reactLib.reactMod.ReactNs.SFC[LabelProps] | reactLib.reactMod.ReactNs.ReactElement[LabelProps] | ContentRenderer[_] = null,
     layout: LayoutType = null,
     legendType: LegendType = null,
     maxBarSize: scala.Int | scala.Double = null,

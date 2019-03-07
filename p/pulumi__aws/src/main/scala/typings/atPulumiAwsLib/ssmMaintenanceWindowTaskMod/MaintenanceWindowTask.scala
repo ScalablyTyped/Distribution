@@ -21,48 +21,48 @@ class MaintenanceWindowTask protected ()
   /**
     * The description of the maintenance window task.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Documented below.
     */
-  val loggingInfo: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefix]] = js.native
+  val loggingInfo: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefix]] = js.native
   /**
     * The maximum number of targets this task can be run for in parallel.
     */
-  val maxConcurrency: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val maxConcurrency: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The maximum number of errors allowed before this task stops being scheduled.
     */
-  val maxErrors: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val maxErrors: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
     */
-  val priority: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val priority: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The role that should be assumed when executing the task.
     */
-  val serviceRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val serviceRoleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
     */
-  val targets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
+  val targets: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
   /**
     * The ARN of the task to execute.
     */
-  val taskArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val taskArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A structure containing information about parameters required by the particular `task_arn`. Documented below.
     */
-  val taskParameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]]] = js.native
+  val taskParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]]] = js.native
   /**
     * The type of task being registered. The only allowed value is `RUN_COMMAND`.
     */
-  val taskType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val taskType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Id of the maintenance window to register the task with.
     */
-  val windowId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val windowId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

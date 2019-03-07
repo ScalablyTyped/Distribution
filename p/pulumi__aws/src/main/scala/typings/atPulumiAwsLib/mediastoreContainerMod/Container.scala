@@ -22,15 +22,15 @@ class Container protected ()
   /**
     * The ARN of the container.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The DNS endpoint of the container.
     */
-  val endpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val endpoint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the container. Must contain alphanumeric characters or underscores.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

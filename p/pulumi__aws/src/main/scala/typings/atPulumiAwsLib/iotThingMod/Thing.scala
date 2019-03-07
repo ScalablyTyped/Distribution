@@ -22,27 +22,27 @@ class Thing protected ()
   /**
     * The ARN of the thing.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Map of attributes of the thing.
     */
-  val attributes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val attributes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The default client ID.
     */
-  val defaultClientId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val defaultClientId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the thing.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The thing type name.
     */
-  val thingTypeName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val thingTypeName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The current version of the thing record in the registry.
     */
-  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val version: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
 }
 
 /* static members */

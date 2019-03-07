@@ -21,11 +21,11 @@ class DomainIdentity protected ()
   /**
     * The ARN of the domain identity.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The domain name to assign to SES
     */
-  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A code which when added to the domain as a TXT record
     * will signal to SES that the owner of the domain has authorised SES to act on
@@ -35,7 +35,7 @@ class DomainIdentity protected ()
     * more about verifying domains in Amazon SES in the [AWS SES
     * docs](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-domains.html).
     */
-  val verificationToken: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val verificationToken: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

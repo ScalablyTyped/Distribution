@@ -21,35 +21,35 @@ class ServiceLinkedRole protected ()
   /**
     * The Amazon Resource Name (ARN) specifying the role.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AWS service to which this role is attached. You use a string similar to a URL but without the `http://` in front. For example: `elasticbeanstalk.amazonaws.com`. To find the full list of services that support service-linked roles, check [the docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html).
     */
-  val awsServiceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val awsServiceName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The creation date of the IAM role.
     */
-  val createDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Additional string appended to the role name. Not all AWS services support custom suffixes.
     */
-  val customSuffix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val customSuffix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The description of the role.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the role.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The path of the role.
     */
-  val path: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val path: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The stable and unique string identifying the role.
     */
-  val uniqueId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val uniqueId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

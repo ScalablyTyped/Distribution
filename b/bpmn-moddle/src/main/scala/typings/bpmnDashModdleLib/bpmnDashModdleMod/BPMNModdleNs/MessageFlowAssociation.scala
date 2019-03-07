@@ -13,6 +13,7 @@ trait MessageFlowAssociation extends BaseElement {
 object MessageFlowAssociation {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     innerMessageFlowRef: MessageFlow,
@@ -22,7 +23,7 @@ object MessageFlowAssociation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): MessageFlowAssociation = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, innerMessageFlowRef = innerMessageFlowRef, outerMessageFlowRef = outerMessageFlowRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, innerMessageFlowRef = innerMessageFlowRef, outerMessageFlowRef = outerMessageFlowRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

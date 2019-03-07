@@ -18,6 +18,10 @@ object nukaDashCarouselLibStrings {
     extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselHeightModeProp
   
   @js.native
+  sealed trait fade
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselTransitionModeProp
+  
+  @js.native
   sealed trait first
     extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselHeightModeProp
   
@@ -33,12 +37,18 @@ object nukaDashCarouselLibStrings {
   sealed trait right
     extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselCellAlignProp
   
+  @js.native
+  sealed trait scroll
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselTransitionModeProp
+  
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def current: current = "current".asInstanceOf[current]
+  @scala.inline
+  def fade: fade = "fade".asInstanceOf[fade]
   @scala.inline
   def first: first = "first".asInstanceOf[first]
   @scala.inline
@@ -47,5 +57,7 @@ object nukaDashCarouselLibStrings {
   def max: max = "max".asInstanceOf[max]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
 }
 

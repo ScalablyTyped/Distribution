@@ -16,6 +16,7 @@ trait EventBasedGateway extends Gateway {
 object EventBasedGateway {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
     categoryValueRef: js.Array[CategoryValue],
@@ -33,7 +34,7 @@ object EventBasedGateway {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): EventBasedGateway = {
-    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, eventGatewayType = eventGatewayType, gatewayDirection = gatewayDirection, id = id, incoming = incoming, instantiate = instantiate, lanes = lanes, monitoring = monitoring, outgoing = outgoing)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, categoryValueRef = categoryValueRef, eventGatewayType = eventGatewayType, gatewayDirection = gatewayDirection, id = id, incoming = incoming, instantiate = instantiate, lanes = lanes, monitoring = monitoring, outgoing = outgoing)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

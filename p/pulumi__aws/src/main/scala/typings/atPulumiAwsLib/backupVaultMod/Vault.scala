@@ -22,23 +22,23 @@ class Vault protected ()
   /**
     * The ARN of the vault.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The server-side encryption key that is used to protect your backups.
     */
-  val kmsKeyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the backup vault to create.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The number of recovery points that are stored in a backup vault.
     */
-  val recoveryPoints: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val recoveryPoints: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Metadata that you can assign to help organize the resources that you create.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
 }
 
 /* static members */

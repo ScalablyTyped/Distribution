@@ -21,20 +21,20 @@ class ResourceServer protected ()
   /**
     * An identifier for the resource server.
     */
-  val identifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val identifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A name for the resource server.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of all scopes configured for this resource server in the format identifier/scope_name.
     */
-  val scopeIdentifiers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val scopeIdentifiers: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A list of Authorization Scope.
     */
-  val scopes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ScopeDescription]]] = js.native
-  val userPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val scopes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ScopeDescription]]] = js.native
+  val userPoolId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

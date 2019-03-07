@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api stable
   */
-@JSImport("ol/source/zoomify", JSImport.Default)
+@JSImport("ol/source/Zoomify", JSImport.Default)
 @js.native
 /**
   * @classdesc

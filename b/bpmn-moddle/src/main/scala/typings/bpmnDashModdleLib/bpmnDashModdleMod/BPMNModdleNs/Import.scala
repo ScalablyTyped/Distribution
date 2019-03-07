@@ -14,12 +14,13 @@ trait Import extends TypeDerived {
 object Import {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     importType: java.lang.String,
     location: java.lang.String,
     namespace: java.lang.String
   ): Import = {
-    val __obj = js.Dynamic.literal($type = $type, importType = importType, location = location, namespace = namespace)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, importType = importType, location = location, namespace = namespace)
   
     __obj.asInstanceOf[Import]
   }

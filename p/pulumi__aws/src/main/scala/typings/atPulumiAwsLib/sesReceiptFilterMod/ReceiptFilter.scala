@@ -21,15 +21,15 @@ class ReceiptFilter protected ()
   /**
     * The IP address or address range to filter, in CIDR notation
     */
-  val cidr: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cidr: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the filter
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Block or Allow
     */
-  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -18,12 +18,12 @@ class Trigger protected ()
     */
   def this(name: java.lang.String, args: TriggerArgs) = this()
   def this(name: java.lang.String, args: TriggerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val configurationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val configurationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name for the repository. This needs to be less than 100 characters.
     */
-  val repositoryName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val triggers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Branches]] = js.native
+  val repositoryName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val triggers: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_Branches]] = js.native
 }
 
 /* static members */

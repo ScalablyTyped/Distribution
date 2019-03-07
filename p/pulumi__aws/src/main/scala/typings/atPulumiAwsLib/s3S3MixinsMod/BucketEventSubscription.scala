@@ -11,6 +11,6 @@ class BucketEventSubscription protected ()
   extends atPulumiAwsLib.lambdaMod.EventSubscription {
   def this(name: java.lang.String, bucket: atPulumiAwsLib.s3S3MixinsMod.s3BucketMod.Bucket, handler: BucketEventHandler, args: BucketEventSubscriptionArgs) = this()
   def this(name: java.lang.String, bucket: atPulumiAwsLib.s3S3MixinsMod.s3BucketMod.Bucket, handler: BucketEventHandler, args: BucketEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
-  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.s3S3MixinsMod.s3BucketMod.Bucket] = js.native
+  val bucket: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.s3S3MixinsMod.s3BucketMod.Bucket] = js.native
 }
 

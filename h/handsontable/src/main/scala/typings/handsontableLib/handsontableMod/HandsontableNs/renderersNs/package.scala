@@ -9,13 +9,13 @@ package object renderersNs {
   type Autocomplete = Base
   type Base = js.Function7[
     /* instance */ handsontableLib.handsontableMod.underscoreHandsontableNs.Core, 
-    /* TD */ stdLib.HTMLElement, 
+    /* TD */ stdLib.HTMLTableCellElement, 
     /* row */ scala.Double, 
     /* col */ scala.Double, 
     /* prop */ java.lang.String | scala.Double, 
-    /* value */ js.Any, 
-    /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.GridSettings, 
-    stdLib.HTMLElement
+    /* value */ handsontableLib.handsontableMod.HandsontableNs.CellValue, 
+    /* cellProperties */ handsontableLib.handsontableMod.HandsontableNs.CellProperties, 
+    stdLib.HTMLTableCellElement | scala.Unit
   ]
   type Checkbox = Base
   type Html = Base

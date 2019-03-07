@@ -13,6 +13,7 @@ trait CategoryValue extends BaseElement {
 object CategoryValue {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     categorizedFlowElements: js.Array[FlowElement],
     id: java.lang.String,
@@ -22,7 +23,7 @@ object CategoryValue {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CategoryValue = {
-    val __obj = js.Dynamic.literal($type = $type, categorizedFlowElements = categorizedFlowElements, id = id, value = value)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, categorizedFlowElements = categorizedFlowElements, id = id, value = value)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

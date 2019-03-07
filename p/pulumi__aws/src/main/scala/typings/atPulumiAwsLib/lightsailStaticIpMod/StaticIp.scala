@@ -22,19 +22,19 @@ class StaticIp protected ()
   /**
     * The ARN of the Lightsail static IP
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The allocated static IP address
     */
-  val ipAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name for the allocated static IP
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The support code.
     */
-  val supportCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val supportCode: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

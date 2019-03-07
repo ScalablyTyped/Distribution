@@ -33,6 +33,7 @@ trait BaseElement extends TypeDerived {
 object BaseElement {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     $attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
@@ -40,7 +41,7 @@ object BaseElement {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): BaseElement = {
-    val __obj = js.Dynamic.literal($type = $type, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

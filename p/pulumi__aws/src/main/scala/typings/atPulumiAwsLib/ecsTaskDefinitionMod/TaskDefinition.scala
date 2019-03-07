@@ -21,7 +21,7 @@ class TaskDefinition protected ()
   /**
     * Full ARN of the Task Definition (including both `family` and `revision`).
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of valid [container definitions]
     * (http://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html) provided as a
@@ -30,59 +30,59 @@ class TaskDefinition protected ()
     * (https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) section from the
     * official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide).
     */
-  val containerDefinitions: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val containerDefinitions: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The number of cpu units used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
     */
-  val cpu: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val cpu: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
     */
-  val executionRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val executionRoleArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A unique name for your task definition.
     */
-  val family: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val family: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The IPC resource namespace to be used for the containers in the task The valid values are `host`, `task`, and `none`.
     */
-  val ipcMode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val ipcMode: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The amount (in MiB) of memory used by the task. If the `requires_compatibilities` is `FARGATE` this field is required.
     */
-  val memory: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val memory: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Docker networking mode to use for the containers in the task. The valid values are `none`, `bridge`, `awsvpc`, and `host`.
     */
-  val networkMode: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkMode: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The process namespace to use for the containers in the task. The valid values are `host` and `task`.
     */
-  val pidMode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val pidMode: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
     */
-  val placementConstraints: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ExpressionType]]] = js.native
+  val placementConstraints: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ExpressionType]]] = js.native
   /**
     * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
     */
-  val requiresCompatibilities: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val requiresCompatibilities: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The revision of the task in a particular family.
     */
-  val revision: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val revision: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
     */
-  val taskRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val taskRoleArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A set of volume blocks that containers in your task may use.
     */
-  val volumes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DockerVolumeConfiguration]]] = js.native
+  val volumes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DockerVolumeConfiguration]]] = js.native
 }
 
 /* static members */

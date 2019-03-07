@@ -21,15 +21,15 @@ class LoadBalancerBackendServerPolicy protected ()
   /**
     * The instance port to apply the policy to.
     */
-  val instancePort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val instancePort: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The load balancer to attach the policy to.
     */
-  val loadBalancerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val loadBalancerName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of Policy Names to apply to the backend server.
     */
-  val policyNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val policyNames: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
 /* static members */

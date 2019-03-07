@@ -85,6 +85,10 @@ object resourcesNs extends js.Object {
     extends stripeLib.stripeMod.StripeNs.resourcesNs.Orders
   
   @js.native
+  class PaymentIntents ()
+    extends stripeLib.stripeMod.StripeNs.resourcesNs.PaymentIntents
+  
+  @js.native
   class Payouts ()
     extends stripeLib.stripeMod.StripeNs.resourcesNs.Payouts
   

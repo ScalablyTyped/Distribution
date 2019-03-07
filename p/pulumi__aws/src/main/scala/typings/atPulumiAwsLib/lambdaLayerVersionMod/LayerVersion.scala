@@ -21,59 +21,59 @@ class LayerVersion protected ()
   /**
     * The Amazon Resource Name (ARN) identifying your Lambda Layer.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of [Runtimes][2] this layer is compatible with. Up to 5 runtimes can be specified.
     */
-  val compatibleRuntimes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val compatibleRuntimes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The date this resource was created.
     */
-  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Description of what your Lambda Layer does.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
     */
-  val filename: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val filename: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Amazon Resource Name (ARN) identifying your specific Lambda Layer version.
     */
-  val layerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val layerArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A unique name for your Lambda Layer
     */
-  val layerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val layerName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * License info for your Lambda Layer. See [License Info][3].
     */
-  val licenseInfo: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val licenseInfo: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
     */
-  val s3Bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val s3Bucket: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
     */
-  val s3Key: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val s3Key: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The object version containing the function's deployment package. Conflicts with `filename`.
     */
-  val s3ObjectVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val s3ObjectVersion: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3_key`. The usual way to set this is `${base64sha256(file("file.zip"))}`, where "file.zip" is the local filename of the lambda layer source archive.
     */
-  val sourceCodeHash: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sourceCodeHash: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The size in bytes of the function .zip file.
     */
-  val sourceCodeSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val sourceCodeSize: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * This Lamba Layer version.
     */
-  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val version: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

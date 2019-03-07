@@ -19,16 +19,23 @@ trait Autocomplete extends Handsontable {
   def limitDropdownIfNeeded(spaceAvailable: scala.Double): scala.Unit = js.native
   def limitDropdownIfNeeded(spaceAvailable: scala.Double, dropdownHeight: scala.Double): scala.Unit = js.native
   def queryChoices(): scala.Unit = js.native
-  def queryChoices(query: js.Any): scala.Unit = js.native
+  def queryChoices(query: java.lang.String): scala.Unit = js.native
   def setDropdownHeight(): scala.Unit = js.native
   def setDropdownHeight(height: scala.Double): scala.Unit = js.native
   def sortByRelevance(): js.Array[_] = js.native
-  def sortByRelevance(value: js.Any): js.Array[_] = js.native
-  def sortByRelevance(value: js.Any, choices: js.Array[_]): js.Array[_] = js.native
-  def sortByRelevance(value: js.Any, choices: js.Array[_], caseSensitive: scala.Boolean): js.Array[_] = js.native
+  def sortByRelevance(value: handsontableLib.handsontableMod.HandsontableNs.CellValue): js.Array[_] = js.native
+  def sortByRelevance(
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    choices: js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]
+  ): js.Array[_] = js.native
+  def sortByRelevance(
+    value: handsontableLib.handsontableMod.HandsontableNs.CellValue,
+    choices: js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue],
+    caseSensitive: scala.Boolean
+  ): js.Array[_] = js.native
   def unflipDropdown(): scala.Unit = js.native
   def updateChoicesList(): scala.Unit = js.native
-  def updateChoicesList(choices: js.Array[_]): scala.Unit = js.native
+  def updateChoicesList(choices: js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]): scala.Unit = js.native
   def updateDropdownHeight(): scala.Unit = js.native
 }
 

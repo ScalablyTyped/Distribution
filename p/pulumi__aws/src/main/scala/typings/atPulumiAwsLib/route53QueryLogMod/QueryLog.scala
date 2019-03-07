@@ -21,11 +21,11 @@ class QueryLog protected ()
   /**
     * CloudWatch log group ARN to send query logs.
     */
-  val cloudwatchLogGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cloudwatchLogGroupArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Route53 hosted zone ID to enable query logs.
     */
-  val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val zoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

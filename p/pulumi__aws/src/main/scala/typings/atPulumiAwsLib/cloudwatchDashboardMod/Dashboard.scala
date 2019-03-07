@@ -21,15 +21,15 @@ class Dashboard protected ()
   /**
     * The Amazon Resource Name (ARN) of the dashboard.
     */
-  val dashboardArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dashboardArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. You can read more about the body structure in the [documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
     */
-  val dashboardBody: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dashboardBody: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the dashboard.
     */
-  val dashboardName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dashboardName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

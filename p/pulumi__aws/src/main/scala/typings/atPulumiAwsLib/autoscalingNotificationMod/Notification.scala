@@ -21,16 +21,16 @@ class Notification protected ()
   /**
     * A list of AutoScaling Group Names
     */
-  val groupNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val groupNames: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A list of Notification Types that trigger
     * notifications. Acceptable values are documented [in the AWS documentation here][1]
     */
-  val notifications: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType]] = js.native
+  val notifications: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType]] = js.native
   /**
     * The Topic ARN for notifications to be sent through
     */
-  val topicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val topicArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

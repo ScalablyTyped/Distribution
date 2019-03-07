@@ -1,5 +1,5 @@
 ```
-// Type definitions for SuperAgent 3.8
+// Type definitions for SuperAgent 4.1
 // Project: https://github.com/visionmedia/superagent
 // Definitions by: Nico Zelaya <https://github.com/NicoZelaya>
 //                 Michael Ledin <https://github.com/mxl>

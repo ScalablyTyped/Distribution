@@ -12,6 +12,7 @@ trait ResourceAssignmentExpression extends BaseElement {
 object ResourceAssignmentExpression {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     expression: Expression,
     id: java.lang.String,
@@ -20,7 +21,7 @@ object ResourceAssignmentExpression {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ResourceAssignmentExpression = {
-    val __obj = js.Dynamic.literal($type = $type, expression = expression, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, expression = expression, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

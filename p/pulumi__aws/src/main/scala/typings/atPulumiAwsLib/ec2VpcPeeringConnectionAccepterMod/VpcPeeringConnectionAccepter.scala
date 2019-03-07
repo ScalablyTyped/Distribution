@@ -21,45 +21,45 @@ class VpcPeeringConnectionAccepter protected ()
   /**
     * The status of the VPC Peering Connection request.
     */
-  val acceptStatus: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val acceptStatus: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
     */
-  val accepter: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
+  val accepter: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
   /**
     * Whether or not to accept the peering request. Defaults to `false`.
     */
-  val autoAccept: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val autoAccept: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The AWS account ID of the owner of the requester VPC.
     */
-  val peerOwnerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val peerOwnerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The region of the accepter VPC.
     */
-  val peerRegion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val peerRegion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the requester VPC.
     */
-  val peerVpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val peerVpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
     */
-  val requester: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
+  val requester: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The ID of the accepter VPC.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The VPC Peering Connection ID to manage.
     */
-  val vpcPeeringConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcPeeringConnectionId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

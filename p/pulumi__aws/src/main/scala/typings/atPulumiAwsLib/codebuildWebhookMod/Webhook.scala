@@ -21,23 +21,23 @@ class Webhook protected ()
   /**
     * A regular expression used to determine which branches get built. Default is all branches are built.
     */
-  val branchFilter: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val branchFilter: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The CodeBuild endpoint where webhook events are sent.
     */
-  val payloadUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val payloadUrl: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the build project.
     */
-  val projectName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val projectName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The secret token of the associated repository. Not returned by the CodeBuild API for all source types.
     */
-  val secret: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val secret: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The URL to the webhook.
     */
-  val url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val url: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

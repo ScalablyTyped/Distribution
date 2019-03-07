@@ -13,11 +13,12 @@ trait ExtensionDefinition extends TypeDerived {
 object ExtensionDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     extensionAttributeDefinitions: js.Array[ExtensionAttributeDefinition],
     name: java.lang.String
   ): ExtensionDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, extensionAttributeDefinitions = extensionAttributeDefinitions, name = name)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, extensionAttributeDefinitions = extensionAttributeDefinitions, name = name)
   
     __obj.asInstanceOf[ExtensionDefinition]
   }

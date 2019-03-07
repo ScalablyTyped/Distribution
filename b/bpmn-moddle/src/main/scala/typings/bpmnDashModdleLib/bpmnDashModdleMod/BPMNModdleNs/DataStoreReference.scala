@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ItemAwareElement because var conflicts: $attrs, $type, documentation, extensionDefinitions, extensionElements, id. Inlined itemSubjectRef, dataState */ trait DataStoreReference extends FlowElement {
+- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ItemAwareElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined itemSubjectRef, dataState */ trait DataStoreReference extends FlowElement {
   var dataState: DataState
   var dataStoreRef: DataStore
   var itemSubjectRef: ItemDefinition
@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 object DataStoreReference {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
     categoryValueRef: js.Array[CategoryValue],
@@ -29,7 +30,7 @@ object DataStoreReference {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): DataStoreReference = {
-    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, dataState = dataState, dataStoreRef = dataStoreRef, id = id, itemSubjectRef = itemSubjectRef, monitoring = monitoring)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, categoryValueRef = categoryValueRef, dataState = dataState, dataStoreRef = dataStoreRef, id = id, itemSubjectRef = itemSubjectRef, monitoring = monitoring)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

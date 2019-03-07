@@ -15,6 +15,7 @@ trait DataAssociation extends BaseElement {
 object DataAssociation {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     assignment: Assignment,
     id: java.lang.String,
@@ -26,7 +27,7 @@ object DataAssociation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): DataAssociation = {
-    val __obj = js.Dynamic.literal($type = $type, assignment = assignment, id = id, sourceRef = sourceRef, targetRef = targetRef, transformation = transformation)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, assignment = assignment, id = id, sourceRef = sourceRef, targetRef = targetRef, transformation = transformation)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

@@ -21,20 +21,20 @@ class CustomerGateway protected ()
   /**
     * The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
     */
-  val bgpAsn: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val bgpAsn: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The IP address of the gateway's Internet-routable external interface.
     */
-  val ipAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Tags to apply to the gateway.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The type of customer gateway. The only type AWS
     * supports at this time is "ipsec.1".
     */
-  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val `type`: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

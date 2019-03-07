@@ -12,12 +12,12 @@ trait Service extends js.Object {
     * can also be retrieved by using the 'Service.endpoints' property.  Note: this value
     * may not be present if the service does not actually expose any endpoints.
     */
-  var defaultEndpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[Endpoint] = js.native
+  var defaultEndpoint: atPulumiPulumiLib.outputMod.Output[Endpoint] = js.native
   /**
     * The exposed hostname and port for connecting to the given containerName
     * on the given containerPort.
     */
-  var endpoints: atPulumiPulumiLib.atPulumiPulumiMod.Output[Endpoints] = js.native
+  var endpoints: atPulumiPulumiLib.outputMod.Output[Endpoints] = js.native
   var name: java.lang.String = js.native
   /**
     * The exposed hostname and port for connecting to the given containerName

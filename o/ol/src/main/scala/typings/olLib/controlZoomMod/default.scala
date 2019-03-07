@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Zoom options.
   * @api stable
   */
-@JSImport("ol/control/zoom", JSImport.Default)
+@JSImport("ol/control/Zoom", JSImport.Default)
 @js.native
 /**
   * @classdesc

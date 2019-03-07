@@ -611,7 +611,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets information about a deployment.
+    * Gets information about a deployment.   The content property of the appSpecContent object in the returned revision is always null. Use GetApplicationRevision and the sha256 property of the returned appSpecContent object to get the content of the deployment’s AppSpec file.  
     */
   def getDeployment(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentOutput, 
@@ -628,7 +628,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets information about a deployment.
+    * Gets information about a deployment.   The content property of the appSpecContent object in the returned revision is always null. Use GetApplicationRevision and the sha256 property of the returned appSpecContent object to get the content of the deployment’s AppSpec file.  
     */
   def getDeployment(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentOutput, 

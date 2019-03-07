@@ -18,42 +18,42 @@ class Preset protected ()
     */
   def this(name: java.lang.String, args: PresetArgs) = this()
   def this(name: java.lang.String, args: PresetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Audio parameters object (documented below).
     */
-  val audio: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AudioPackingMode]] = js.native
+  val audio: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AudioPackingMode]] = js.native
   /**
     * Codec options for the audio parameters (documented below)
     */
-  val audioCodecOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BitDepth]] = js.native
+  val audioCodecOptions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BitDepth]] = js.native
   /**
     * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
     */
-  val container: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val container: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A description of the preset (maximum 255 characters)
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the preset. (maximum 40 characters)
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Thumbnail parameters object (documented below)
     */
-  val thumbnails: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatio]] = js.native
-  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val thumbnails: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatio]] = js.native
+  val `type`: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Video parameters object (documented below)
     */
-  val video: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatioBitRate]] = js.native
-  val videoCodecOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val video: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatioBitRate]] = js.native
+  val videoCodecOptions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Watermark parameters for the video parameters (documented below)
     * * `video_codec_options` (Optional, Forces new resource) Codec options for the video parameters
     */
-  val videoWatermarks: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HorizontalAlign]]] = js.native
+  val videoWatermarks: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HorizontalAlign]]] = js.native
 }
 
 /* static members */

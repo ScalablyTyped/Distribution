@@ -21,77 +21,77 @@ class Snapshot protected ()
   /**
     * Specifies the allocated storage size in gigabytes (GB).
     */
-  val allocatedStorage: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val allocatedStorage: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
     */
-  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val availabilityZone: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The DB Instance Identifier from which to take the snapshot.
     */
-  val dbInstanceIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbInstanceIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) for the DB snapshot.
     */
-  val dbSnapshotArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbSnapshotArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Identifier for the snapshot.
     */
-  val dbSnapshotIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val dbSnapshotIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether the DB snapshot is encrypted.
     */
-  val encrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val encrypted: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * Specifies the name of the database engine.
     */
-  val engine: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engine: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the version of the database engine.
     */
-  val engineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val engineVersion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
     */
-  val iops: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val iops: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The ARN for the KMS encryption key.
     */
-  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * License model information for the restored DB instance.
     */
-  val licenseModel: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val licenseModel: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Provides the option group name for the DB snapshot.
     */
-  val optionGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val port: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
-  val snapshotType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val optionGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val port: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
+  val snapshotType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
     */
-  val sourceDbSnapshotIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sourceDbSnapshotIdentifier: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The region that the DB snapshot was created in or copied from.
     */
-  val sourceRegion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sourceRegion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the status of this DB snapshot.
     */
-  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the storage type associated with DB snapshot.
     */
-  val storageType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val storageType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Specifies the storage type associated with DB snapshot.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

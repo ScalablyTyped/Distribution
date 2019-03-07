@@ -594,6 +594,10 @@ object MediaLiveNs extends js.Object {
       */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait ClientApiVersions extends js.Object {
@@ -1791,7 +1795,7 @@ object MediaLiveNs extends js.Object {
       */
     var IvSource: js.UndefOr[HlsIvSource] = js.undefined
     /**
-      * If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod", this parameter has no effect.
+      * Applies only if Mode field is LIVE. Specifies the number of media segments (.ts files) to retain in the destination directory.
       */
     var KeepSegments: js.UndefOr[__integerMin1] = js.undefined
     /**
@@ -1824,7 +1828,8 @@ object MediaLiveNs extends js.Object {
       */
     var Mode: js.UndefOr[HlsMode] = js.undefined
     /**
-      * Generates the .m3u8 playlist file for this HLS output group. The segmentsOnly option will output segments without the .m3u8 file.
+      * MANIFESTSANDSEGMENTS: Generates manifests (master manifest, if applicable, and media manifests) for this output group.
+    SEGMENTSONLY: Does not generate any manifests for this output group.
       */
     var OutputSelection: js.UndefOr[HlsOutputSelection] = js.undefined
     /**
@@ -1868,7 +1873,8 @@ object MediaLiveNs extends js.Object {
       */
     var TimestampDeltaMilliseconds: js.UndefOr[__integerMin0] = js.undefined
     /**
-      * When set to "singleFile", emits the program as a single media resource (.ts) file, and uses #EXT-X-BYTERANGE tags to index segment for playback. Playback of VOD mode content during event is not guaranteed due to HTTP server caching.
+      * SEGMENTEDFILES: Emit the program as segments - multiple .ts media files.
+    SINGLEFILE: Applies only if Mode field is VOD. Emit the program as a single .ts media file. The media manifest includes #EXT-X-BYTERANGE tags to index segments for playback. A typical use for this value is when sending the output to AWS Elemental MediaConvert, which can accept only a single media file. Playback while the channel is running is not guaranteed due to HTTP server caching.
       */
     var TsFileMode: js.UndefOr[HlsTsFileMode] = js.undefined
   }
@@ -2923,6 +2929,17 @@ object MediaLiveNs extends js.Object {
   
   trait PassThroughSettings extends js.Object
   
+  trait PauseStateScheduleActionSettings extends js.Object {
+    var Pipelines: js.UndefOr[__listOfPipelinePauseStateSettings] = js.undefined
+  }
+  
+  trait PipelinePauseStateSettings extends js.Object {
+    /**
+      * Pipeline ID to pause ("PIPELINE_0" or "PIPELINE_1").
+      */
+    var PipelineId: PipelineId
+  }
+  
   trait PurchaseOfferingRequest extends js.Object {
     /**
       * Number of resources
@@ -3135,31 +3152,35 @@ object MediaLiveNs extends js.Object {
   
   trait ScheduleActionSettings extends js.Object {
     /**
-      * Settings to emit HLS metadata
+      * Action to insert HLS metadata
       */
     var HlsTimedMetadataSettings: js.UndefOr[HlsTimedMetadataScheduleActionSettings] = js.undefined
     /**
-      * Settings to switch an input
+      * Action to switch the input
       */
     var InputSwitchSettings: js.UndefOr[InputSwitchScheduleActionSettings] = js.undefined
     /**
-      * Settings for SCTE-35 return_to_network message
+      * Action to pause or unpause one or both channel pipelines
+      */
+    var PauseStateSettings: js.UndefOr[PauseStateScheduleActionSettings] = js.undefined
+    /**
+      * Action to insert SCTE-35 return_to_network message
       */
     var Scte35ReturnToNetworkSettings: js.UndefOr[Scte35ReturnToNetworkScheduleActionSettings] = js.undefined
     /**
-      * Settings for SCTE-35 splice_insert message
+      * Action to insert SCTE-35 splice_insert message
       */
     var Scte35SpliceInsertSettings: js.UndefOr[Scte35SpliceInsertScheduleActionSettings] = js.undefined
     /**
-      * Settings for SCTE-35 time_signal message
+      * Action to insert SCTE-35 time_signal message
       */
     var Scte35TimeSignalSettings: js.UndefOr[Scte35TimeSignalScheduleActionSettings] = js.undefined
     /**
-      * Settings to activate a static image overlay
+      * Action to activate a static image overlay
       */
     var StaticImageActivateSettings: js.UndefOr[StaticImageActivateScheduleActionSettings] = js.undefined
     /**
-      * Settings to deactivate a static image overlay
+      * Action to deactivate a static image overlay
       */
     var StaticImageDeactivateSettings: js.UndefOr[StaticImageDeactivateScheduleActionSettings] = js.undefined
   }
@@ -4666,6 +4687,8 @@ object MediaLiveNs extends js.Object {
   
   trait _NetworkInputServerValidation extends js.Object
   
+  trait _PipelineId extends js.Object
+  
   trait _ReservationCodec extends js.Object
   
   trait _ReservationMaximumBitrate extends js.Object
@@ -4885,6 +4908,7 @@ object MediaLiveNs extends js.Object {
   type NetworkInputServerValidation = _NetworkInputServerValidation | java.lang.String
   type OfferingDurationUnits = awsDashSdkLib.awsDashSdkLibStrings.MONTHS | java.lang.String
   type OfferingType = awsDashSdkLib.awsDashSdkLibStrings.NO_UPFRONT | java.lang.String
+  type PipelineId = _PipelineId | java.lang.String
   type ReservationCodec = _ReservationCodec | java.lang.String
   type ReservationMaximumBitrate = _ReservationMaximumBitrate | java.lang.String
   type ReservationMaximumFramerate = _ReservationMaximumFramerate | java.lang.String
@@ -4995,6 +5019,7 @@ object MediaLiveNs extends js.Object {
   type __listOfOutputDestination = js.Array[OutputDestination]
   type __listOfOutputDestinationSettings = js.Array[OutputDestinationSettings]
   type __listOfOutputGroup = js.Array[OutputGroup]
+  type __listOfPipelinePauseStateSettings = js.Array[PipelinePauseStateSettings]
   type __listOfReservation = js.Array[Reservation]
   type __listOfScheduleAction = js.Array[ScheduleAction]
   type __listOfScte35Descriptor = js.Array[Scte35Descriptor]

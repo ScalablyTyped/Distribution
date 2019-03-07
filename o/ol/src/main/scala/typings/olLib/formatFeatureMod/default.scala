@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   * @api stable
   */
 /* tslint:disable-next-line:no-unnecessary-class */
-@JSImport("ol/format/feature", JSImport.Default)
+@JSImport("ol/format/Feature", JSImport.Default)
 @js.native
 /**
   * @classdesc

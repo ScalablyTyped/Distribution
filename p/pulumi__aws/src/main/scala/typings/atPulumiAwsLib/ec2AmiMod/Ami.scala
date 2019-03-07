@@ -22,68 +22,68 @@ class Ami protected ()
   /**
     * Machine architecture for created instances. Defaults to "x86_64".
     */
-  val architecture: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val architecture: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A longer, human-readable description for the AMI.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeleteOnTermination]] = js.native
+  val ebsBlockDevices: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_DeleteOnTermination]] = js.native
   /**
     * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
     */
-  val enaSupport: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enaSupport: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceName]] = js.native
+  val ephemeralBlockDevices: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceName]] = js.native
   /**
     * Path to an S3 object containing an image manifest, e.g. created
     * by the `ec2-upload-bundle` command in the EC2 command line tools.
     */
-  val imageLocation: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val imageLocation: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The id of the kernel image (AKI) that will be used as the paravirtual
     * kernel in created instances.
     */
-  val kernelId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val manageEbsSnapshots: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val kernelId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val manageEbsSnapshots: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * A region-unique name for the AMI.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The id of an initrd image (ARI) that will be used when booting the
     * created instances.
     */
-  val ramdiskId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val ramdiskId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
     */
-  val rootDeviceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val rootDeviceName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Snapshot ID for the root volume (for EBS-backed AMIs)
     */
-  val rootSnapshotId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val rootSnapshotId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * When set to "simple" (the default), enables enhanced networking
     * for created instances. No other value is supported at this time.
     */
-  val sriovNetSupport: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val sriovNetSupport: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Keyword to choose what virtualization mode created instances
     * will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
     * changes the set of further arguments that are required, as described below.
     */
-  val virtualizationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val virtualizationType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

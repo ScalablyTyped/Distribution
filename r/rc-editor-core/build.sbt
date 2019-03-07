@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-editor-core"
-version := "0.8.9-fbe6e7"
+version := "0.8.9-b787aa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,13 +8,13 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-3f1c68",
   "org.scalablytyped" %%% "csstype" % "2.6.3-60f3ea",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190212Z-84fb9c",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190226Z-b22213",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-8a518d",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-f7f3c1",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-502e31",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-d5c6e1",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-580844",
   "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

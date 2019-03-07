@@ -11,18 +11,18 @@ trait HttpDeployment extends js.Object {
     * previous call to attachCustomDomain on the API.  Each name
     * should be mapped using a DNS A record.
     */
-  var customDomainNames: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]]
+  var customDomainNames: js.Array[atPulumiPulumiLib.outputMod.Output[java.lang.String]]
   /**
     * The URL at which the HttpDeployment is available to the Internet.
     */
-  var url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]
+  var url: atPulumiPulumiLib.outputMod.Output[java.lang.String]
 }
 
 object HttpDeployment {
   @scala.inline
   def apply(
-    customDomainNames: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]],
-    url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]
+    customDomainNames: js.Array[atPulumiPulumiLib.outputMod.Output[java.lang.String]],
+    url: atPulumiPulumiLib.outputMod.Output[java.lang.String]
   ): HttpDeployment = {
     val __obj = js.Dynamic.literal(customDomainNames = customDomainNames, url = url)
   

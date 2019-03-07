@@ -21,11 +21,11 @@ class PrincipalAssociation protected ()
   /**
     * The principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ID, or an AWS Organizations Organization Unit ID.
     */
-  val principal: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val principal: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
-  val resourceShareArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceShareArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gulp-changed"
-version := "0.0-unknown-dt-20180214Z-7872e1"
+version := "0.0-unknown-dt-20180214Z-fa8acd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-7c3560")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-36072c")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

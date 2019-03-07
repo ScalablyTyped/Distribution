@@ -21,11 +21,11 @@ class SpotDatafeedSubscription protected ()
   /**
     * The Amazon S3 bucket in which to store the Spot instance data feed.
     */
-  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Path of folder inside bucket to place spot pricing data.
     */
-  val prefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val prefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

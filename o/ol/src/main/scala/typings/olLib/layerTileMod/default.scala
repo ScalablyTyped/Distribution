@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Tile layer options.
   * @api stable
   */
-@JSImport("ol/layer/tile", JSImport.Default)
+@JSImport("ol/layer/Tile", JSImport.Default)
 @js.native
 /**
   * @classdesc

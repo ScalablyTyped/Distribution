@@ -21,11 +21,11 @@ class UserGroupMembership protected ()
   /**
     * A list of [IAM Groups][1] to add the user to
     */
-  val groups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val groups: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The name of the [IAM User][2] to add to groups
     */
-  val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val user: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

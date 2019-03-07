@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @param options Stamen options.
   * @api stable
   */
-@JSImport("ol/source/stamen", JSImport.Default)
+@JSImport("ol/source/Stamen", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.sourceNs.Stamen {

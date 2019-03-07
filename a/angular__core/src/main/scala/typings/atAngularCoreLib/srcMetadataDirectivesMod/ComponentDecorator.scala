@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ComponentDecorator
   extends /**
-  * See the `@Component` decorator.
+  * See the `Component` decorator.
   */
 org.scalablytyped.runtime.Instantiable1[/* obj */ Component, Component] {
   /**
@@ -24,7 +24,7 @@ org.scalablytyped.runtime.Instantiable1[/* obj */ Component, Component] {
     *
     * A component must belong to an NgModule in order for it to be available
     * to another component or application. To make it a member of an NgModule,
-    * list it in the `declarations` field of the `@NgModule` metadata.
+    * list it in the `declarations` field of the `NgModule` metadata.
     *
     * Note that, in addition to these options for configuring a directive,
     * you can control a component's runtime behavior by implementing

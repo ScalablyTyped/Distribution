@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-dnd-test-backend"
-version := "7.0.2-cb6e7d"
+version := "7.1.0-a587d9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "asap" % "2.0-dt-20180629Z-0242d7",
-  "org.scalablytyped" %%% "dnd-core" % "7.0.2-a5e634",
+  "org.scalablytyped" %%% "dnd-core" % "7.1.0-e5baf9",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-ecc25b",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
   "org.scalablytyped" %%% "redux" % "4.0.1-03a2e6",

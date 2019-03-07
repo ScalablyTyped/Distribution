@@ -21,67 +21,67 @@ class Project protected ()
   /**
     * The ARN of the CodeBuild project.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Information about the project's build output artifacts. Artifact blocks are documented below.
     */
-  val artifacts: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_EncryptionDisabled] = js.native
+  val artifacts: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EncryptionDisabled] = js.native
   /**
     * Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
     */
-  val badgeEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val badgeEnabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The URL of the build badge when `badge_enabled` is enabled.
     */
-  val badgeUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val badgeUrl: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * How long in minutes, from 5 to 480 (8 hours), for AWS CodeBuild to wait until timing out any related build that does not get marked as completed. The default is 60 minutes.
     */
-  val buildTimeout: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val buildTimeout: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * Information about the cache storage for the project. Cache blocks are documented below.
     */
-  val cache: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Location]] = js.native
+  val cache: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Location]] = js.native
   /**
     * A short description of the project.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build project's build output artifacts.
     */
-  val encryptionKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val encryptionKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Information about the project's build environment. Environment blocks are documented below.
     */
-  val environment: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Certificate] = js.native
+  val environment: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Certificate] = js.native
   /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A set of secondary artifacts to be used inside the build. Secondary artifacts blocks are documented below.
     */
-  val secondaryArtifacts: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ArtifactIdentifier]]] = js.native
+  val secondaryArtifacts: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ArtifactIdentifier]]] = js.native
   /**
     * A set of secondary sources to be used inside the build. Secondary sources blocks are documented below.
     */
-  val secondarySources: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Auths]]] = js.native
+  val secondarySources: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Auths]]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
     */
-  val serviceRole: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val serviceRole: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Information about the project's input source code. Source blocks are documented below.
     */
-  val source: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AuthsBuildspec] = js.native
+  val source: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AuthsBuildspec] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Configuration for the builds to run inside a VPC. VPC config blocks are documented below.
     */
-  val vpcConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIds]] = js.native
+  val vpcConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIds]] = js.native
 }
 
 /* static members */

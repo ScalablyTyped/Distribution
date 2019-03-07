@@ -53,6 +53,8 @@ class namespaced () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var ignoreDiagnostics: js.Any = js.native
   /* CompleteClass */
+  override var ignoreLintWarnings: js.Any = js.native
+  /* CompleteClass */
   override var ignoreLints: js.Any = js.native
   /* CompleteClass */
   override var isWatching: js.Any = js.native
@@ -63,9 +65,13 @@ class namespaced () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var logger: js.Any = js.native
   /* CompleteClass */
+  override var measureTime: js.Any = js.native
+  /* CompleteClass */
   override var memoryLimit: js.Any = js.native
   /* CompleteClass */
   override val options: stdLib.Partial[Options] = js.native
+  /* CompleteClass */
+  override var performance: js.Any = js.native
   /* CompleteClass */
   override var pluginCompile: js.Any = js.native
   /* CompleteClass */
@@ -77,7 +83,7 @@ class namespaced () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var pluginStop: js.Any = js.native
   /* CompleteClass */
-  override var registerCustomHooks: js.Any = js.native
+  override var printLoggerMessage: js.Any = js.native
   /* CompleteClass */
   override var reportFiles: js.Any = js.native
   /* CompleteClass */
@@ -85,15 +91,25 @@ class namespaced () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var spawnService: js.Any = js.native
   /* CompleteClass */
+  override var startAt: js.Any = js.native
+  /* CompleteClass */
   override var tsconfig: js.Any = js.native
   /* CompleteClass */
   override var tslintAutoFix: js.Any = js.native
   /* CompleteClass */
   override var tslintVersion: js.Any = js.native
   /* CompleteClass */
+  override var typescript: js.Any = js.native
+  /* CompleteClass */
+  override var typescriptPath: js.Any = js.native
+  /* CompleteClass */
   override var typescriptVersion: js.Any = js.native
   /* CompleteClass */
   override var useColors: js.Any = js.native
+  /* CompleteClass */
+  override var useTypescriptIncrementalApi: js.Any = js.native
+  /* CompleteClass */
+  override var validateVersions: js.Any = js.native
   /* CompleteClass */
   override var vue: js.Any = js.native
   /* CompleteClass */
@@ -117,5 +133,9 @@ object namespaced extends js.Object {
   val ONE_CPU_FREE: scala.Double = js.native
   val TWO_CPUS_FREE: scala.Double = js.native
   var createFormatter: js.Any = js.native
+  def getCompilerHooks(compiler: webpackLib.webpackMod.Compiler): stdLib.Record[
+    forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.serviceBeforeStart | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.cancel | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.serviceStartError | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.waiting | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.serviceStart | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.receive | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.serviceOutOfMemory | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.emit | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.done, 
+    (tapableLib.tapableMod.SyncHook[_, _, _]) | (tapableLib.tapableMod.AsyncSeriesHook[_, _, _])
+  ] = js.native
 }
 

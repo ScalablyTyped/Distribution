@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "objection"
-version := "1.6.3-92f2c5"
+version := "1.6.3-969379"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,9 +10,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-865309",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-cad354",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-0e5462",
-  "org.scalablytyped" %%% "knex" % "0.15-dt-20190228Z-b66e43",
+  "org.scalablytyped" %%% "knex" % "0.15-dt-20190228Z-a15a55",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-0a8f8e",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
   "org.scalablytyped" %%% "uri-js" % "4.2.2-e6a6c5")

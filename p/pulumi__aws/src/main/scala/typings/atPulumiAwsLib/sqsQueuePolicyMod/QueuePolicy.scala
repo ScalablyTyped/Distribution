@@ -21,11 +21,11 @@ class QueuePolicy protected ()
   /**
     * The JSON policy for the SQS queue. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
-  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The URL of the SQS Queue to which to attach the policy
     */
-  val queueUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val queueUrl: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

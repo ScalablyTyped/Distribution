@@ -21,19 +21,19 @@ class BaiduChannel protected ()
   /**
     * Platform credential API key from Baidu.
     */
-  val apiKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val apiKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The application ID.
     */
-  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val applicationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether to enable the channel. Defaults to `true`.
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Platform credential Secret key from Baidu.
     */
-  val secretKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val secretKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

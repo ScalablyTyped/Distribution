@@ -21,35 +21,35 @@ class Inventory protected ()
   /**
     * The S3 bucket configuration where inventory results are published (documented below).
     */
-  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Destination bucket where inventory list files are written (documented below).
     */
-  val destination: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketAnonAccountId] = js.native
+  val destination: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_BucketAnonAccountId] = js.native
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Object filtering that accepts a prefix (documented below).
     */
-  val filter: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PrefixString]] = js.native
+  val filter: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PrefixString]] = js.native
   /**
     * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
     */
-  val includedObjectVersions: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val includedObjectVersions: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Unique identifier of the inventory configuration for the bucket.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Contains the optional fields that are included in the inventory results.
     */
-  val optionalFields: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val optionalFields: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Contains the frequency for generating inventory results (documented below).
     */
-  val schedule: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Frequency] = js.native
+  val schedule: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Frequency] = js.native
 }
 
 /* static members */

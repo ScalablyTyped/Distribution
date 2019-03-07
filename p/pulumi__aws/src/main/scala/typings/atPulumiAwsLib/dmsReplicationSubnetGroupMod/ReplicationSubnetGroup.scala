@@ -18,27 +18,27 @@ class ReplicationSubnetGroup protected ()
     */
   def this(name: java.lang.String, args: ReplicationSubnetGroupArgs) = this()
   def this(name: java.lang.String, args: ReplicationSubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val replicationSubnetGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val replicationSubnetGroupArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The description for the subnet group.
     */
-  val replicationSubnetGroupDescription: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val replicationSubnetGroupDescription: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name for the replication subnet group. This value is stored as a lowercase string.
     */
-  val replicationSubnetGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val replicationSubnetGroupId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of the EC2 subnet IDs for the subnet group.
     */
-  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The ID of the VPC the subnet group is in.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

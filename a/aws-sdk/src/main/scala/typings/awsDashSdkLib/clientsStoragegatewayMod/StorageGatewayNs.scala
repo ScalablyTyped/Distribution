@@ -18,7 +18,7 @@ object StorageGatewayNs extends js.Object {
       */
     var GatewayName: GatewayName
     /**
-      * A value that indicates the region where you want to store your data. The gateway region specified must be the same region as the region in your Host header in the request. For more information about available regions and endpoints for AWS Storage Gateway, see Regions and Endpoints in the Amazon Web Services Glossary.  Valid Values: "us-east-1", "us-east-2", "us-west-1", "us-west-2", "ca-central-1", "eu-west-1", "eu-central-1", "eu-west-2", "eu-west-3", "ap-northeast-1", "ap-northeast-2", "ap-southeast-1", "ap-southeast-2", "ap-south-1", "sa-east-1"
+      * A value that indicates the region where you want to store your data. The gateway region specified must be the same region as the region in your Host header in the request. For more information about available regions and endpoints for AWS Storage Gateway, see Regions and Endpoints in the Amazon Web Services Glossary.  Valid Values: See AWS Storage Gateway Regions and Endpoints in the AWS General Reference. 
       */
     var GatewayRegion: RegionId
     /**
@@ -34,6 +34,10 @@ object StorageGatewayNs extends js.Object {
       */
     var MediumChangerType: js.UndefOr[MediumChangerType] = js.undefined
     /**
+      * A list of up to ten (10) tags assigned to the gateway may be specified. Every tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * The value that indicates the type of tape drive to use for tape gateway. This field is optional.  Valid Values: "IBM-ULT3580-TD5" 
       */
     var TapeDriveType: js.UndefOr[TapeDriveType] = js.undefined
@@ -44,6 +48,9 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait AddCacheInput extends js.Object {
+    /**
+      * An array of strings that identify disks that are to be configured as working storage. Each string have a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
+      */
     var DiskIds: DiskIds
     var GatewayARN: GatewayARN
   }
@@ -58,7 +65,7 @@ object StorageGatewayNs extends js.Object {
       */
     var ResourceARN: ResourceARN
     /**
-      * The key-value pair that represents the tag you want to add to the resource. The value can be an empty string.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. 
+      * The key-value pair that represents the tag you want to add to the resource. The value can be an empty string.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
       */
     var Tags: Tags
   }
@@ -71,6 +78,9 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait AddUploadBufferInput extends js.Object {
+    /**
+      * An array of strings that identify disks that are to be configured as working storage. Each string have a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
+      */
     var DiskIds: DiskIds
     var GatewayARN: GatewayARN
   }
@@ -136,7 +146,7 @@ object StorageGatewayNs extends js.Object {
       */
     var SourceSnapshotId: js.UndefOr[SnapshotId] = js.undefined
     /**
-      * The name of the iSCSI target that is used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume.
+      * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
       */
     var TargetName: js.UndefOr[TargetName] = js.undefined
     /**
@@ -144,7 +154,7 @@ object StorageGatewayNs extends js.Object {
       */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
     /**
-      * A value that indicates whether a storage volume is attached to or detached from a gateway.
+      * A value that indicates whether a storage volume is attached to or detached from a gateway. For more information, see Moving Your Volumes to a Different Gateway.
       */
     var VolumeAttachmentStatus: js.UndefOr[VolumeAttachmentStatus] = js.undefined
     /**
@@ -260,7 +270,7 @@ object StorageGatewayNs extends js.Object {
       */
     var SourceVolumeARN: js.UndefOr[VolumeARN] = js.undefined
     /**
-      * The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes of a gateway.
+      * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
       */
     var TargetName: TargetName
     /**
@@ -337,6 +347,10 @@ object StorageGatewayNs extends js.Object {
       * Maps a user to anonymous user. Valid options are the following:     RootSquash - Only root is mapped to anonymous user.    NoSquash - No one is mapped to anonymous user    AllSquash - Everyone is mapped to anonymous user.  
       */
     var Squash: js.UndefOr[Squash] = js.undefined
+    /**
+      * A list of up to ten (10) tags can be assigned to the NFS file share. Every tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateNFSFileShareOutput extends js.Object {
@@ -400,6 +414,10 @@ object StorageGatewayNs extends js.Object {
       */
     var Role: Role
     /**
+      * A list of up to ten (10) tags can be assigned to the NFS file share. Every tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
       */
     var ValidUserList: js.UndefOr[FileShareUserList] = js.undefined
@@ -413,13 +431,28 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait CreateSnapshotFromVolumeRecoveryPointInput extends js.Object {
+    /**
+      * Textual description of the snapshot that appears in the Amazon EC2 console, Elastic Block Store snapshots panel in the Description field, and in the AWS Storage Gateway snapshot Details pane, Description field
+      */
     var SnapshotDescription: SnapshotDescription
+    /**
+      * The Amazon Resource Name (ARN) of the iSCSI volume target. Use the DescribeStorediSCSIVolumes operation to return to retrieve the TargetARN for specified VolumeARN.
+      */
     var VolumeARN: VolumeARN
   }
   
   trait CreateSnapshotFromVolumeRecoveryPointOutput extends js.Object {
+    /**
+      * The ID of the snapshot.
+      */
     var SnapshotId: js.UndefOr[SnapshotId] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the iSCSI volume target. Use the DescribeStorediSCSIVolumes operation to return to retrieve the TargetARN for specified VolumeARN.
+      */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
+    /**
+      * The time the volume was created from the recovery point.
+      */
     var VolumeRecoveryPointTime: js.UndefOr[java.lang.String] = js.undefined
   }
   
@@ -472,7 +505,7 @@ object StorageGatewayNs extends js.Object {
       */
     var SnapshotId: js.UndefOr[SnapshotId] = js.undefined
     /**
-      * The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes of a gateway.
+      * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
       */
     var TargetName: TargetName
   }
@@ -621,10 +654,16 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DeleteSnapshotScheduleInput extends js.Object {
+    /**
+      * The volume which snapshot schedule to delete.
+      */
     var VolumeARN: VolumeARN
   }
   
   trait DeleteSnapshotScheduleOutput extends js.Object {
+    /**
+      * The volume which snapshot schedule was deleted.
+      */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
   }
   
@@ -695,16 +734,37 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeCacheOutput extends js.Object {
+    /**
+      * The amount of cache in bytes allocated to the a gateway.
+      */
     var CacheAllocatedInBytes: js.UndefOr[long] = js.undefined
+    /**
+      * The file share's contribution to the overall percentage of the gateway's cache that has not been persisted to AWS. The sample is taken at the end of the reporting period.
+      */
     var CacheDirtyPercentage: js.UndefOr[double] = js.undefined
+    /**
+      * Percent of application read operations from the file shares that are served from cache. The sample is taken at the end of the reporting period.
+      */
     var CacheHitPercentage: js.UndefOr[double] = js.undefined
+    /**
+      * 
+      */
     var CacheMissPercentage: js.UndefOr[double] = js.undefined
+    /**
+      * Percent use of the gateway's cache storage. This metric applies only to the gateway-cached volume setup. The sample is taken at the end of the reporting period.
+      */
     var CacheUsedPercentage: js.UndefOr[double] = js.undefined
+    /**
+      * An array of strings that identify disks that are to be configured as working storage. Each string have a minimum length of 1 and maximum length of 300. You can get the disk IDs from the ListLocalDisks API.
+      */
     var DiskIds: js.UndefOr[DiskIds] = js.undefined
     var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
   }
   
   trait DescribeCachediSCSIVolumesInput extends js.Object {
+    /**
+      * An array of strings where each string represents the Amazon Resource Name (ARN) of a cached volume. All of the specified cached volumes must from the same gateway. Use ListVolumes to get volume ARNs for a gateway.
+      */
     var VolumeARNs: VolumeARNs
   }
   
@@ -767,6 +827,10 @@ object StorageGatewayNs extends js.Object {
       * The date on which an update to the gateway is available. This date is in the time zone of the gateway. If the gateway is not available for an update this field is not returned in the response.
       */
     var NextUpdateAvailabilityDate: js.UndefOr[NextUpdateAvailabilityDate] = js.undefined
+    /**
+      * A list of up to ten (10) tags assigned to the gateway are returned, sorted alphabetically by key name. Every tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait DescribeMaintenanceStartTimeInput extends js.Object {
@@ -787,6 +851,9 @@ object StorageGatewayNs extends js.Object {
       * The minute component of the maintenance start time represented as mm, where mm is the minute (0 to 59). The minute of the hour is in the time zone of the gateway.
       */
     var MinuteOfHour: js.UndefOr[MinuteOfHour] = js.undefined
+    /**
+      * A value that indicates the time zone that is set for the gateway. The start time and day of week specified should be in the time zone of the gateway.
+      */
     var Timezone: js.UndefOr[GatewayTimezone] = js.undefined
   }
   
@@ -842,10 +909,25 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeSnapshotScheduleOutput extends js.Object {
+    /**
+      * The snapshot description.
+      */
     var Description: js.UndefOr[Description] = js.undefined
+    /**
+      * The number of hours between snapshots.
+      */
     var RecurrenceInHours: js.UndefOr[RecurrenceInHours] = js.undefined
+    /**
+      * The hour of the day at which the snapshot schedule begins represented as hh, where hh is the hour (0 to 23). The hour of the day is in the time zone of the gateway.
+      */
     var StartAt: js.UndefOr[HourOfDay] = js.undefined
+    /**
+      * A value that indicates the time zone of the gateway.
+      */
     var Timezone: js.UndefOr[GatewayTimezone] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the volume that was specified in the request.
+      */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
   }
   
@@ -857,6 +939,9 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeStorediSCSIVolumesOutput extends js.Object {
+    /**
+      * Describes a single unit of output from DescribeStorediSCSIVolumes. The following fields are returned:    ChapEnabled: Indicates whether mutual CHAP is enabled for the iSCSI target.    LunNumber: The logical disk number.    NetworkInterfaceId: The network interface ID of the stored volume that initiator use to map the stored volume as an iSCSI target.    NetworkInterfacePort: The port used to communicate with iSCSI targets.    PreservedExistingData: Indicates if when the stored volume was created, existing data on the underlying local disk was preserved.    SourceSnapshotId: If the stored volume was created from a snapshot, this field contains the snapshot ID used, e.g. snap-1122aabb. Otherwise, this field is not included.    StorediSCSIVolumes: An array of StorediSCSIVolume objects where each object contains metadata about one stored volume.    TargetARN: The Amazon Resource Name (ARN) of the volume target.    VolumeARN: The Amazon Resource Name (ARN) of the stored volume.    VolumeDiskId: The disk ID of the local disk that was specified in the CreateStorediSCSIVolume operation.    VolumeId: The unique identifier of the storage volume, e.g. vol-1122AABB.    VolumeiSCSIAttributes: An VolumeiSCSIAttributes object that represents a collection of iSCSI attributes for one stored volume.    VolumeProgress: Represents the percentage complete if the volume is restoring or bootstrapping that represents the percent of data transferred. This field does not appear in the response if the stored volume is not restoring or bootstrapping.    VolumeSizeInBytes: The size of the volume in bytes.    VolumeStatus: One of the VolumeStatus values that indicates the state of the volume.    VolumeType: One of the enumeration values describing the type of the volume. Currently, on STORED volumes are supported.  
+      */
     var StorediSCSIVolumes: js.UndefOr[StorediSCSIVolumes] = js.undefined
   }
   
@@ -942,9 +1027,18 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait DescribeUploadBufferOutput extends js.Object {
+    /**
+      * An array of the gateway's local disk IDs that are configured as working storage. Each local disk ID is specified as a string (minimum length of 1 and maximum length of 300). If no local disks are configured as working storage, then the DiskIds array is empty.
+      */
     var DiskIds: js.UndefOr[DiskIds] = js.undefined
     var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
+    /**
+      * The total number of bytes allocated in the gateway's as upload buffer.
+      */
     var UploadBufferAllocatedInBytes: js.UndefOr[long] = js.undefined
+    /**
+      * The total number of bytes being used in the gateway's upload buffer.
+      */
     var UploadBufferUsedInBytes: js.UndefOr[long] = js.undefined
   }
   
@@ -1180,7 +1274,13 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait ListGatewaysOutput extends js.Object {
+    /**
+      * An array of GatewayInfo objects.
+      */
     var Gateways: js.UndefOr[Gateways] = js.undefined
+    /**
+      * Use the marker in your next request to fetch the next set of gateways in the list. If there are no more gateways to list, this field does not appear in the response.
+      */
     var Marker: js.UndefOr[Marker] = js.undefined
   }
   
@@ -1189,6 +1289,9 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait ListLocalDisksOutput extends js.Object {
+    /**
+      * A JSON object containing the following fields:    ListLocalDisksOutput$Disks   
+      */
     var Disks: js.UndefOr[Disks] = js.undefined
     var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
   }
@@ -1263,6 +1366,9 @@ object StorageGatewayNs extends js.Object {
   
   trait ListVolumeRecoveryPointsOutput extends js.Object {
     var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
+    /**
+      * An array of VolumeRecoveryPointInfo objects.
+      */
     var VolumeRecoveryPointInfos: js.UndefOr[VolumeRecoveryPointInfos] = js.undefined
   }
   
@@ -1280,7 +1386,13 @@ object StorageGatewayNs extends js.Object {
   
   trait ListVolumesOutput extends js.Object {
     var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
+    /**
+      * Use the marker in your next request to continue pagination of iSCSI volumes. If there are no more volumes to list, this field does not appear in the response body.
+      */
     var Marker: js.UndefOr[Marker] = js.undefined
+    /**
+      * An array of VolumeInfo objects, where each object describes an iSCSI volume. If no volumes are defined for the gateway, then VolumeInfos is an empty array "[]".
+      */
     var VolumeInfos: js.UndefOr[VolumeInfos] = js.undefined
   }
   
@@ -1336,6 +1448,10 @@ object StorageGatewayNs extends js.Object {
     var RequesterPays: js.UndefOr[Boolean] = js.undefined
     var Role: js.UndefOr[Role] = js.undefined
     var Squash: js.UndefOr[Squash] = js.undefined
+    /**
+      * A list of up to ten (10) tags assigned to the NFS file share are returned, sorted alphabetically by key name. Every tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait NetworkInterface extends js.Object {
@@ -1480,6 +1596,10 @@ object StorageGatewayNs extends js.Object {
     var RequesterPays: js.UndefOr[Boolean] = js.undefined
     var Role: js.UndefOr[Role] = js.undefined
     /**
+      * A list of up to ten (10) tags assigned to the SMB file share are returned, sorted alphabetically by key name. Every tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
       */
     var ValidUserList: js.UndefOr[FileShareUserList] = js.undefined
@@ -1543,7 +1663,7 @@ object StorageGatewayNs extends js.Object {
       */
     var SourceSnapshotId: js.UndefOr[SnapshotId] = js.undefined
     /**
-      * The name of the iSCSI target that is used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume.
+      * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
       */
     var TargetName: js.UndefOr[TargetName] = js.undefined
     /**
@@ -1551,7 +1671,7 @@ object StorageGatewayNs extends js.Object {
       */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
     /**
-      * A value that indicates whether a storage volume is attached to, detached from, or is in the process of detaching from a gateway.
+      * A value that indicates whether a storage volume is attached to, detached from, or is in the process of detaching from a gateway. For more information, see Moving Your Volumes to a Different Gateway.
       */
     var VolumeAttachmentStatus: js.UndefOr[VolumeAttachmentStatus] = js.undefined
     /**
@@ -1589,7 +1709,13 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait Tag extends js.Object {
+    /**
+      * Tag key (String). The key can't start with aws:. 
+      */
     var Key: TagKey
+    /**
+      * Value of the tag key.
+      */
     var Value: TagValue
   }
   
@@ -1701,6 +1827,9 @@ object StorageGatewayNs extends js.Object {
       * The size, in bytes, of the virtual tapes to recover.
       */
     var TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined
+    /**
+      * The status of the virtual tapes.
+      */
     var TapeStatus: js.UndefOr[TapeRecoveryPointStatus] = js.undefined
   }
   
@@ -1748,7 +1877,7 @@ object StorageGatewayNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ AddCacheOutput, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[AddCacheOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types     Storage Volumes     Virtual Tapes   You can create a maximum of 10 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
+      * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types   Storage Volumes   Virtual Tapes   NFS and SMB File Shares   You can create a maximum of 10 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
       */
     def addTagsToResource(): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def addTagsToResource(
@@ -1759,7 +1888,7 @@ object StorageGatewayNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types     Storage Volumes     Virtual Tapes   You can create a maximum of 10 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
+      * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types   Storage Volumes   Virtual Tapes   NFS and SMB File Shares   You can create a maximum of 10 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
       */
     def addTagsToResource(params: AddTagsToResourceInput): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def addTagsToResource(
@@ -3377,11 +3506,17 @@ object StorageGatewayNs extends js.Object {
   trait UpdateGatewayInformationInput extends js.Object {
     var GatewayARN: GatewayARN
     var GatewayName: js.UndefOr[GatewayName] = js.undefined
+    /**
+      * A value that indicates the time zone of the gateway.
+      */
     var GatewayTimezone: js.UndefOr[GatewayTimezone] = js.undefined
   }
   
   trait UpdateGatewayInformationOutput extends js.Object {
     var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
+    /**
+      * The name you configured for your gateway.
+      */
     var GatewayName: js.UndefOr[java.lang.String] = js.undefined
   }
   
@@ -3538,7 +3673,7 @@ object StorageGatewayNs extends js.Object {
   
   trait UpdateSnapshotScheduleOutput extends js.Object {
     /**
-      * 
+      * The Amazon Resource Name (ARN) of the volume. Use the ListVolumes operation to return a list of gateway volumes.
       */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
   }
@@ -3570,8 +3705,17 @@ object StorageGatewayNs extends js.Object {
       * Specifies the unique Amazon Resource Name (ARN) of the device (tape drive or media changer).
       */
     var VTLDeviceARN: js.UndefOr[VTLDeviceARN] = js.undefined
+    /**
+      * Specifies the model number of device that the VTL device emulates.
+      */
     var VTLDeviceProductIdentifier: js.UndefOr[VTLDeviceProductIdentifier] = js.undefined
+    /**
+      * Specifies the type of device that the VTL device emulates.
+      */
     var VTLDeviceType: js.UndefOr[VTLDeviceType] = js.undefined
+    /**
+      * Specifies the vendor of the device that the VTL device object emulates.
+      */
     var VTLDeviceVendor: js.UndefOr[VTLDeviceVendor] = js.undefined
   }
   
@@ -3585,6 +3729,9 @@ object StorageGatewayNs extends js.Object {
       * The Amazon Resource Name (ARN) for the storage volume. For example, the following is a valid ARN:  arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/volume/vol-1122AABB   Valid Values: 50 to 500 lowercase letters, numbers, periods (.), and hyphens (-).
       */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
+    /**
+      * One of the VolumeStatus values that indicates the state of the storage volume. 
+      */
     var VolumeAttachmentStatus: js.UndefOr[VolumeAttachmentStatus] = js.undefined
     /**
       * The unique identifier assigned to the volume. This ID becomes part of the volume Amazon Resource Name (ARN), which you use as input for other operations.  Valid Values: 50 to 500 lowercase letters, numbers, periods (.), and hyphens (-).
@@ -3594,13 +3741,28 @@ object StorageGatewayNs extends js.Object {
       * The size of the volume in bytes. Valid Values: 50 to 500 lowercase letters, numbers, periods (.), and hyphens (-).
       */
     var VolumeSizeInBytes: js.UndefOr[long] = js.undefined
+    /**
+      * One of the VolumeType enumeration values describing the type of the volume.
+      */
     var VolumeType: js.UndefOr[VolumeType] = js.undefined
   }
   
   trait VolumeRecoveryPointInfo extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the volume target.
+      */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
+    /**
+      * The time the recovery point was taken.
+      */
     var VolumeRecoveryPointTime: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The size of the volume in bytes.
+      */
     var VolumeSizeInBytes: js.UndefOr[long] = js.undefined
+    /**
+      * The size of the data stored on the volume in bytes.  This value is not available for volumes created prior to May 13, 2015, until you store data on the volume. 
+      */
     var VolumeUsageInBytes: js.UndefOr[long] = js.undefined
   }
   

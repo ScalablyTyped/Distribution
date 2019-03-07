@@ -14,6 +14,7 @@ trait Interface extends BaseElement {
 object Interface {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     implementationRef: java.lang.String,
@@ -24,7 +25,7 @@ object Interface {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Interface = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, implementationRef = implementationRef, name = name, operations = operations)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, implementationRef = implementationRef, name = name, operations = operations)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.CallableElement because var conflicts: $attrs, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, ioSpecification, supportedInterfaceRef, ioBinding */ trait Process extends FlowElementsContainer {
+- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.CallableElement because var conflicts: $attrs, $parent, $type, documentation, extensionDefinitions, extensionElements, id. Inlined name, ioSpecification, supportedInterfaceRef, ioBinding */ trait Process extends FlowElementsContainer {
   var artifacts: js.Array[Artifact]
   var auditing: Auditing
   var correlationSubscriptions: js.Array[CorrelationSubscription]
@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
 object Process {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     artifacts: js.Array[Artifact],
     auditing: Auditing,
@@ -51,7 +52,7 @@ object Process {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Process = {
-    val __obj = js.Dynamic.literal($type = $type, artifacts = artifacts, auditing = auditing, correlationSubscriptions = correlationSubscriptions, definitionalCollaborationRef = definitionalCollaborationRef, flowElements = flowElements, id = id, ioBinding = ioBinding, ioSpecification = ioSpecification, isClosed = isClosed, isExecutable = isExecutable, laneSets = laneSets, monitoring = monitoring, name = name, processType = processType, properties = properties, resources = resources, supportedInterfaceRef = supportedInterfaceRef, supports = supports)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, artifacts = artifacts, auditing = auditing, correlationSubscriptions = correlationSubscriptions, definitionalCollaborationRef = definitionalCollaborationRef, flowElements = flowElements, id = id, ioBinding = ioBinding, ioSpecification = ioSpecification, isClosed = isClosed, isExecutable = isExecutable, laneSets = laneSets, monitoring = monitoring, name = name, processType = processType, properties = properties, resources = resources, supportedInterfaceRef = supportedInterfaceRef, supports = supports)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

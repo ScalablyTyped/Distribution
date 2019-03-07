@@ -12,6 +12,7 @@ trait ErrorEventDefinition extends BaseElement {
 object ErrorEventDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     errorRef: ErrorElement,
     id: java.lang.String,
@@ -20,7 +21,7 @@ object ErrorEventDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ErrorEventDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, errorRef = errorRef, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, errorRef = errorRef, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

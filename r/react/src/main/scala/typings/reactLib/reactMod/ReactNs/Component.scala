@@ -28,7 +28,7 @@ trait Component[P, S, SS] extends ComponentLifecycle[P, S, SS] {
   // always pass children as variadic arguments to `createElement`.
   // In the future, if we can define its call signature conditionally
   // on the existence of `children` in `P`, then we should remove this.
-  val props: stdLib.Readonly[PropsWithChildren[P]] = js.native
+  val props: stdLib.Readonly[P] with stdLib.Readonly[reactLib.Anon_Children] = js.native
   /**
     * @deprecated
     * https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs

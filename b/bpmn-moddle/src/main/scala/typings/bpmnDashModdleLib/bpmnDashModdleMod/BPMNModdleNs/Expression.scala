@@ -12,6 +12,7 @@ trait Expression extends BaseElement {
 object Expression {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     body: java.lang.String,
     id: java.lang.String,
@@ -20,7 +21,7 @@ object Expression {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Expression = {
-    val __obj = js.Dynamic.literal($type = $type, body = body, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, body = body, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

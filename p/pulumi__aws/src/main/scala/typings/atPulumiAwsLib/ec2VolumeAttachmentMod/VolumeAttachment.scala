@@ -22,18 +22,18 @@ class VolumeAttachment protected ()
     * The device name to expose to the instance (for
     * example, `/dev/sdh` or `xvdh`)
     */
-  val deviceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val deviceName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Set to `true` if you want to force the
     * volume to detach. Useful if previous attempts failed, but use this option only
     * as a last resort, as this can result in **data loss**. See
     * [Detaching an Amazon EBS Volume from an Instance][1] for more information.
     */
-  val forceDetach: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val forceDetach: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * ID of the Instance to attach to
     */
-  val instanceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instanceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Set this to true if you do not wish
     * to detach the volume from the instance to which it is attached at destroy
@@ -41,11 +41,11 @@ class VolumeAttachment protected ()
     * useful when destroying an instance which has volumes created by some other
     * means attached.
     */
-  val skipDestroy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val skipDestroy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * ID of the Volume to be attached
     */
-  val volumeId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val volumeId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

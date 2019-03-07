@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mumath"
-version := "3.3-dt-20190218Z-86fc8b"
+version := "3.3-dt-20190305Z-11cd01"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

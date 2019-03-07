@@ -13,6 +13,7 @@ trait ComplexBehaviorDefinition extends BaseElement {
 object ComplexBehaviorDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     condition: FormalExpression,
     event: ImplicitThrowEvent,
@@ -22,7 +23,7 @@ object ComplexBehaviorDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ComplexBehaviorDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, condition = condition, event = event, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, condition = condition, event = event, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

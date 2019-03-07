@@ -21,15 +21,15 @@ class GlobalTable protected ()
   /**
     * The ARN of the DynamoDB Global Table
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the global table. Must match underlying DynamoDB Table names in all regions.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Underlying DynamoDB Table. At least 1 replica must be defined. See below.
     */
-  val replicas: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_RegionName]] = js.native
+  val replicas: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_RegionName]] = js.native
 }
 
 /* static members */

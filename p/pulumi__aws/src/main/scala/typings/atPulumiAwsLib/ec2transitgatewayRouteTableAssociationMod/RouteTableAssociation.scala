@@ -21,19 +21,19 @@ class RouteTableAssociation protected ()
   /**
     * Identifier of the resource
     */
-  val resourceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Type of the resource
     */
-  val resourceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of EC2 Transit Gateway Attachment.
     */
-  val transitGatewayAttachmentId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
-  val transitGatewayRouteTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

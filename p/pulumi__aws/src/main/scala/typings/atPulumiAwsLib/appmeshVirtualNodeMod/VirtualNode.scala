@@ -21,27 +21,27 @@ class VirtualNode protected ()
   /**
     * The ARN of the virtual node.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The creation date of the virtual node.
     */
-  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The last update date of the virtual node.
     */
-  val lastUpdatedDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val lastUpdatedDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the service mesh in which to create the virtual node.
     */
-  val meshName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val meshName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name to use for the virtual node.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The virtual node specification to apply.
     */
-  val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Backends] = js.native
+  val spec: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Backends] = js.native
 }
 
 /* static members */

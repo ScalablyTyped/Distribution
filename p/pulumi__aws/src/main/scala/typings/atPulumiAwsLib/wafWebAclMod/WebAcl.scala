@@ -18,27 +18,27 @@ class WebAcl protected ()
     */
   def this(name: java.lang.String, args: WebAclArgs) = this()
   def this(name: java.lang.String, args: WebAclArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Configuration block with action that you want AWS WAF to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL. Detailed below.
     */
-  val defaultAction: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_TypeString] = js.native
+  val defaultAction: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_TypeString] = js.native
   /**
     * Configuration block to enable WAF logging. Detailed below.
     */
-  val loggingConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_LogDestination]] = js.native
+  val loggingConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_LogDestination]] = js.native
   /**
     * The name or description for the Amazon CloudWatch metric of this web ACL.
     */
-  val metricName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val metricName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name or description of the web ACL.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Configuration blocks containing rules to associate with the web ACL and the settings for each rule. Detailed below.
     */
-  val rules: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionOverrideAction]]] = js.native
+  val rules: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionOverrideAction]]] = js.native
 }
 
 /* static members */

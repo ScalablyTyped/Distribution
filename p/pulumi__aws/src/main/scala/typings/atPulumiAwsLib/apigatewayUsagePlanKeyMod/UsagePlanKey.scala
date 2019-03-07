@@ -21,23 +21,23 @@ class UsagePlanKey protected ()
   /**
     * The identifier of the API key resource.
     */
-  val keyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val keyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The type of the API key resource. Currently, the valid key type is API_KEY.
     */
-  val keyType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val keyType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of a usage plan key.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Id of the usage plan resource representing to associate the key to.
     */
-  val usagePlanId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val usagePlanId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The value of a usage plan key.
     */
-  val value: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val value: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

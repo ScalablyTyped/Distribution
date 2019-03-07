@@ -21,11 +21,11 @@ class RolePolicyAttachment protected ()
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val policyArn: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * The role the policy should be applied to
     */
-  val role: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamRoleMod.Role] = js.native
+  val role: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.iamRoleMod.Role] = js.native
 }
 
 /* static members */

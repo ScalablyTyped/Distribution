@@ -26,11 +26,11 @@ class DomainDkim protected ()
     * Find out more about verifying domains in Amazon SES
     * in the [AWS SES docs](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/easy-dkim-dns-records.html).
     */
-  val dkimTokens: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val dkimTokens: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Verified domain name to generate DKIM tokens for.
     */
-  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

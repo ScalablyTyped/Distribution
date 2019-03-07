@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Channel protected () extends js.Object {
   def this(topic: java.lang.String) = this()
+  def this(topic: java.lang.String, params: js.Function) = this()
   def this(topic: java.lang.String, params: js.Object) = this()
+  def this(topic: java.lang.String, params: js.Function, socket: Socket) = this()
   def this(topic: java.lang.String, params: js.Object, socket: Socket) = this()
-  def canPush(): scala.Boolean = js.native
   def join(): Push = js.native
   def join(timeout: scala.Double): Push = js.native
   def leave(): Push = js.native
@@ -23,6 +24,5 @@ class Channel protected () extends js.Object {
   def onMessage(event: java.lang.String, payload: js.Any, ref: js.Any): js.Any = js.native
   def push(event: java.lang.String, payload: js.Object): Push = js.native
   def push(event: java.lang.String, payload: js.Object, timeout: scala.Double): Push = js.native
-  def rejoinUntilConnected(): scala.Unit = js.native
 }
 

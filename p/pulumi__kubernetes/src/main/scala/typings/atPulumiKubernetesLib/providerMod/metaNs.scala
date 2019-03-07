@@ -34,44 +34,44 @@ object metaNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
+      val apiVersion: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
       /**
         * Suggested HTTP return code for this status, 0 if not set.
         */
-      val code: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+      val code: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
       /**
         * Extended data associated with the reason.  Each reason may define its own extended details.
         * This field is optional and the data returned is not guaranteed to conform to any schema
         * except that defined by the reason type.
         */
-      val details: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.StatusDetails] = js.native
+      val details: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.StatusDetails] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Status] = js.native
+      val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Status] = js.native
       /**
         * A human-readable description of the status of this operation.
         */
-      val message: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val message: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       /**
         * A machine-readable description of why this operation is in the "Failure" status. If this
         * value is empty there is no information available. A Reason clarifies an HTTP status code
         * but does not override it.
         */
-      val reason: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val reason: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
       /**
         * Status of the operation. One of: "Success" or "Failure". More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.Status = js.native
     }
     

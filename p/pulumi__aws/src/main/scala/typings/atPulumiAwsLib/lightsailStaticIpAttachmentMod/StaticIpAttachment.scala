@@ -21,11 +21,11 @@ class StaticIpAttachment protected ()
   /**
     * The name of the Lightsail instance to attach the IP to
     */
-  val instanceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instanceName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the allocated static IP
     */
-  val staticIpName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val staticIpName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

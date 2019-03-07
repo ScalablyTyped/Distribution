@@ -21,63 +21,63 @@ class Directory protected ()
   /**
     * The access URL for the directory, such as `http://alias.awsapps.com`.
     */
-  val accessUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val accessUrl: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The alias for the directory (must be unique amongst all aliases in AWS). Required for `enable_sso`.
     */
-  val alias: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val alias: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Connector related information about the directory. Fields documented below.
     */
-  val connectSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CustomerDnsIps]] = js.native
+  val connectSettings: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CustomerDnsIps]] = js.native
   /**
     * A textual description for the directory.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of IP addresses of the DNS servers for the directory or connector.
     */
-  val dnsIpAddresses: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val dnsIpAddresses: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The MicrosoftAD edition (`Standard` or `Enterprise`). Defaults to `Enterprise` (applies to MicrosoftAD type only).
     */
-  val edition: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val edition: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether to enable single-sign on for the directory. Requires `alias`. Defaults to `false`.
     */
-  val enableSso: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableSso: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The fully qualified name for the directory, such as `corp.example.com`
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The password for the directory administrator or connector user.
     */
-  val password: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val password: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the security group created by the directory.
     */
-  val securityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val securityGroupId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The short name of the directory, such as `CORP`.
     */
-  val shortName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val shortName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The size of the directory (`Small` or `Large` are accepted values).
     */
-  val size: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val size: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD` are accepted values). Defaults to `SimpleAD`.
     */
-  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val `type`: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * VPC related information about the directory. Fields documented below.
     */
-  val vpcSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SubnetIds]] = js.native
+  val vpcSettings: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SubnetIds]] = js.native
 }
 
 /* static members */

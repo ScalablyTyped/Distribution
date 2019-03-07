@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param opt_layout Layout.
   * @api stable
   */
-@JSImport("ol/geom/polygon", JSImport.Default)
+@JSImport("ol/geom/Polygon", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.geomNs.Polygon {
@@ -30,7 +30,7 @@ class default protected ()
 }
 
 /* static members */
-@JSImport("ol/geom/polygon", JSImport.Default)
+@JSImport("ol/geom/Polygon", JSImport.Default)
 @js.native
 object default extends js.Object {
   /**

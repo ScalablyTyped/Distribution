@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param options Options.
   * @api stable
   */
-@JSImport("ol/interaction/draw", JSImport.Default)
+@JSImport("ol/interaction/Draw", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.interactionNs.Draw {
@@ -29,7 +29,7 @@ class default protected ()
 }
 
 /* static members */
-@JSImport("ol/interaction/draw", JSImport.Default)
+@JSImport("ol/interaction/Draw", JSImport.Default)
 @js.native
 object default extends js.Object {
   /**

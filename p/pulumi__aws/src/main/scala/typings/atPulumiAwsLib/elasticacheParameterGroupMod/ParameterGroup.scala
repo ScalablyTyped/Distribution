@@ -21,19 +21,19 @@ class ParameterGroup protected ()
   /**
     * The description of the ElastiCache parameter group. Defaults to "Managed by Terraform".
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The family of the ElastiCache parameter group.
     */
-  val family: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val family: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the ElastiCache parameter.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of ElastiCache parameters to apply.
     */
-  val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
+  val parameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
 }
 
 /* static members */

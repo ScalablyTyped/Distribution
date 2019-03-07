@@ -21,15 +21,15 @@ class Route protected ()
   /**
     * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
     */
-  val destinationCidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val destinationCidrBlock: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of EC2 Transit Gateway Attachment.
     */
-  val transitGatewayAttachmentId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
-  val transitGatewayRouteTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

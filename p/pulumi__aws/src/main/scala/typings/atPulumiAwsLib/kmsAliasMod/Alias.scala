@@ -21,24 +21,24 @@ class Alias protected ()
   /**
     * The Amazon Resource Name (ARN) of the key alias.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The display name of the alias. The name must start with the word "alias" followed by a forward slash (alias/)
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates an unique alias beginning with the specified prefix.
     * The name must start with the word "alias" followed by a forward slash (alias/).  Conflicts with `name`.
     */
-  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val namePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the target key identifier.
     */
-  val targetKeyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val targetKeyArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier for the key for which the alias is for, can be either an ARN or key_id.
     */
-  val targetKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val targetKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

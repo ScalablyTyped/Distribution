@@ -15,6 +15,7 @@ trait SequenceFlow extends FlowElement {
 object SequenceFlow {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
     categoryValueRef: js.Array[CategoryValue],
@@ -30,7 +31,7 @@ object SequenceFlow {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): SequenceFlow = {
-    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, conditionExpression = conditionExpression, id = id, isImmediate = isImmediate, monitoring = monitoring, sourceRef = sourceRef, targetRef = targetRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, categoryValueRef = categoryValueRef, conditionExpression = conditionExpression, id = id, isImmediate = isImmediate, monitoring = monitoring, sourceRef = sourceRef, targetRef = targetRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

@@ -12,6 +12,7 @@ trait CallActivity extends Activity {
 object CallActivity {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
     boundaryEventRefs: js.Array[BoundaryEvent],
@@ -38,7 +39,7 @@ object CallActivity {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): CallActivity = {
-    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, boundaryEventRefs = boundaryEventRefs, calledElement = calledElement, categoryValueRef = categoryValueRef, completionQuantity = completionQuantity, dataInputAssociations = dataInputAssociations, dataOutputAssociations = dataOutputAssociations, default = default, id = id, incoming = incoming, ioSpecification = ioSpecification, isForCompensation = isForCompensation, lanes = lanes, loopCharacteristics = loopCharacteristics, monitoring = monitoring, outgoing = outgoing, properties = properties, resources = resources, startQuantity = startQuantity)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, auditing = auditing, boundaryEventRefs = boundaryEventRefs, calledElement = calledElement, categoryValueRef = categoryValueRef, completionQuantity = completionQuantity, dataInputAssociations = dataInputAssociations, dataOutputAssociations = dataOutputAssociations, default = default, id = id, incoming = incoming, ioSpecification = ioSpecification, isForCompensation = isForCompensation, lanes = lanes, loopCharacteristics = loopCharacteristics, monitoring = monitoring, outgoing = outgoing, properties = properties, resources = resources, startQuantity = startQuantity)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

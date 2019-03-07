@@ -22,23 +22,23 @@ class Repository protected ()
   /**
     * Full ARN of the repository.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the repository.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The registry ID where the repository was created.
     */
-  val registryId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val registryId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The URL of the repository (in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryName`
     */
-  val repositoryUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val repositoryUrl: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

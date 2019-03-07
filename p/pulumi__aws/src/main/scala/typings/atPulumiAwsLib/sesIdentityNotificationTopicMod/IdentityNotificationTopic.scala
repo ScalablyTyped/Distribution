@@ -21,15 +21,15 @@ class IdentityNotificationTopic protected ()
   /**
     * The identity for which the Amazon SNS topic will be set. You can specify an identity by using its name or by using its Amazon Resource Name (ARN).
     */
-  val identity: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val identity: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The type of notifications that will be published to the specified Amazon SNS topic. Valid Values: *Bounce*, *Complaint* or *Delivery*.
     */
-  val notificationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val notificationType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the Amazon SNS topic. Can be set to "" (an empty string) to disable publishing.
     */
-  val topicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val topicArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

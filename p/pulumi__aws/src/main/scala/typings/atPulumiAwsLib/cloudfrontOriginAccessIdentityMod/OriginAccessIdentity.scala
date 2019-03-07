@@ -23,33 +23,33 @@ class OriginAccessIdentity protected ()
     * Internal value used by CloudFront to allow future
     * updates to the origin access identity.
     */
-  val callerReference: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val callerReference: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A shortcut to the full path for the
     * origin access identity to use in CloudFront, see below.
     */
-  val cloudfrontAccessIdentityPath: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cloudfrontAccessIdentityPath: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * An optional comment for the origin access identity.
     */
-  val comment: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val comment: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The current version of the origin access identity's information.
     * For example: `E2QWRUHAPOMQZL`.
     */
-  val etag: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val etag: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A pre-generated ARN for use in S3 bucket policies (see below).
     * Example: `arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity
     * E2QWRUHAPOMQZL`.
     */
-  val iamArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val iamArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon S3 canonical user ID for the origin
     * access identity, which you use when giving the origin access identity read
     * permission to an object in Amazon S3.
     */
-  val s3CanonicalUserId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val s3CanonicalUserId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

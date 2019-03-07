@@ -14,12 +14,10 @@ class Parser protected () extends js.Object {
     ]) = this()
   def getTagDefinition(tagName: java.lang.String): atAngularCompilerLib.srcMlUnderscoreParserTagsMod.TagDefinition = js.native
   def parse(source: java.lang.String, url: java.lang.String): ParseTreeResult = js.native
-  def parse(source: java.lang.String, url: java.lang.String, parseExpansionForms: scala.Boolean): ParseTreeResult = js.native
   def parse(
     source: java.lang.String,
     url: java.lang.String,
-    parseExpansionForms: scala.Boolean,
-    interpolationConfig: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig
+    options: atAngularCompilerLib.srcMlUnderscoreParserLexerMod.TokenizeOptions
   ): ParseTreeResult = js.native
 }
 

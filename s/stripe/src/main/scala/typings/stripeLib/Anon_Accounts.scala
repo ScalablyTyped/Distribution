@@ -25,6 +25,7 @@ trait Anon_Accounts extends js.Object {
   var InvoiceItems: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.InvoiceItems]
   var Invoices: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Invoices]
   var Orders: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Orders]
+  var PaymentIntents: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.PaymentIntents]
   var Payouts: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Payouts]
   var Plans: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Plans]
   var Products: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Products]
@@ -71,6 +72,7 @@ object Anon_Accounts {
     InvoiceItems: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.InvoiceItems],
     Invoices: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Invoices],
     Orders: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Orders],
+    PaymentIntents: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.PaymentIntents],
     Payouts: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Payouts],
     Plans: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Plans],
     Products: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Products],
@@ -88,7 +90,7 @@ object Anon_Accounts {
     UsageRecords: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecords],
     WebHooks: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.WebHooks]
   ): Anon_Accounts = {
-    val __obj = js.Dynamic.literal(Accounts = Accounts, ApplicationFeeRefunds = ApplicationFeeRefunds, ApplicationFees = ApplicationFees, Balance = Balance, BitcoinReceivers = BitcoinReceivers, ChargeRefunds = ChargeRefunds, Charges = Charges, CountrySpecs = CountrySpecs, Coupons = Coupons, CustomerCards = CustomerCards, CustomerSubscriptions = CustomerSubscriptions, Customers = Customers, Disputes = Disputes, EphemeralKeys = EphemeralKeys, Events = Events, FileUploads = FileUploads, InvoiceItems = InvoiceItems, Invoices = Invoices, Orders = Orders, Payouts = Payouts, Plans = Plans, Products = Products, RecipientCards = RecipientCards, Recipients = Recipients, Refunds = Refunds, SKUs = SKUs, SubscriptionItems = SubscriptionItems, Subscriptions = Subscriptions, SubscriptionsBase = SubscriptionsBase, Tokens = Tokens, TransferReversals = TransferReversals, Transfers = Transfers, UsageRecordSummaries = UsageRecordSummaries, UsageRecords = UsageRecords, WebHooks = WebHooks)
+    val __obj = js.Dynamic.literal(Accounts = Accounts, ApplicationFeeRefunds = ApplicationFeeRefunds, ApplicationFees = ApplicationFees, Balance = Balance, BitcoinReceivers = BitcoinReceivers, ChargeRefunds = ChargeRefunds, Charges = Charges, CountrySpecs = CountrySpecs, Coupons = Coupons, CustomerCards = CustomerCards, CustomerSubscriptions = CustomerSubscriptions, Customers = Customers, Disputes = Disputes, EphemeralKeys = EphemeralKeys, Events = Events, FileUploads = FileUploads, InvoiceItems = InvoiceItems, Invoices = Invoices, Orders = Orders, PaymentIntents = PaymentIntents, Payouts = Payouts, Plans = Plans, Products = Products, RecipientCards = RecipientCards, Recipients = Recipients, Refunds = Refunds, SKUs = SKUs, SubscriptionItems = SubscriptionItems, Subscriptions = Subscriptions, SubscriptionsBase = SubscriptionsBase, Tokens = Tokens, TransferReversals = TransferReversals, Transfers = Transfers, UsageRecordSummaries = UsageRecordSummaries, UsageRecords = UsageRecords, WebHooks = WebHooks)
   
     __obj.asInstanceOf[Anon_Accounts]
   }

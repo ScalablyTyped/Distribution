@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @param opt_options Attribution options.
   * @api stable
   */
-@JSImport("ol/control/attribution", JSImport.Default)
+@JSImport("ol/control/Attribution", JSImport.Default)
 @js.native
 /**
   * @classdesc
@@ -33,7 +33,7 @@ class default ()
 }
 
 /* static members */
-@JSImport("ol/control/attribution", JSImport.Default)
+@JSImport("ol/control/Attribution", JSImport.Default)
 @js.native
 object default extends js.Object {
   /**

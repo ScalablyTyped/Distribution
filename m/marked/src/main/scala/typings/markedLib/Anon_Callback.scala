@@ -16,6 +16,7 @@ trait Anon_Callback extends js.Object {
     markedLib.markedMod.markedNs.Renderer
   ] = js.native
   var Slugger: org.scalablytyped.runtime.Instantiable0[markedLib.markedMod.markedNs.Slugger] = js.native
+  var TextRenderer: org.scalablytyped.runtime.Instantiable0[markedLib.markedMod.markedNs.TextRenderer] = js.native
   val TokensNs: js.Any = js.native
   def apply(src: java.lang.String): java.lang.String = js.native
   def apply(

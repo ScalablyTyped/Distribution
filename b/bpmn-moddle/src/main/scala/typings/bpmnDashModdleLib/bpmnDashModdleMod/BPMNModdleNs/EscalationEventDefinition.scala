@@ -12,6 +12,7 @@ trait EscalationEventDefinition extends BaseElement {
 object EscalationEventDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     escalationRef: Escalation,
     id: java.lang.String,
@@ -20,7 +21,7 @@ object EscalationEventDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): EscalationEventDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, escalationRef = escalationRef, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, escalationRef = escalationRef, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

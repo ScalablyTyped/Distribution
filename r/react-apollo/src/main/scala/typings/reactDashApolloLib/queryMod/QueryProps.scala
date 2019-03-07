@@ -23,7 +23,7 @@ object QueryProps {
     children: js.Function1[QueryResult[TData, TVariables], reactLib.reactMod.ReactNs.ReactNode],
     query: graphqlLib.languageAstMod.DocumentNode,
     client: apolloDashClientLib.apolloDashClientMod.default[_] = null,
-    context: stdLib.Record[java.lang.String, _] = null,
+    context: reactDashApolloLib.typesMod.Context = null,
     displayName: java.lang.String = null,
     errorPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy = null,
     fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy = null,

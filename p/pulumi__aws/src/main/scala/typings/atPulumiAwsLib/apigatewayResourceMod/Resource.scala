@@ -21,19 +21,19 @@ class Resource protected ()
   /**
     * The ID of the parent API resource
     */
-  val parentId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val parentId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The complete path for this API resource, including all parent paths.
     */
-  val path: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val path: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The last path segment of this API resource.
     */
-  val pathPart: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val pathPart: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
+  val restApi: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
 }
 
 /* static members */

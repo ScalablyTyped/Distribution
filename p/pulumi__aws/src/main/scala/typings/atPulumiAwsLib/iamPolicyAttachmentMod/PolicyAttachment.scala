@@ -21,23 +21,23 @@ class PolicyAttachment protected ()
   /**
     * The group(s) the policy should be applied to
     */
-  val groups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamGroupMod.Group]]] = js.native
+  val groups: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamGroupMod.Group]]] = js.native
   /**
     * The name of the attachment. This cannot be an empty string.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val policyArn: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * The role(s) the policy should be applied to
     */
-  val roles: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamRoleMod.Role]]] = js.native
+  val roles: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamRoleMod.Role]]] = js.native
   /**
     * The user(s) the policy should be applied to
     */
-  val users: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamUserMod.User]]] = js.native
+  val users: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamUserMod.User]]] = js.native
 }
 
 /* static members */

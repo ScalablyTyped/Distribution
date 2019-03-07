@@ -22,47 +22,47 @@ class Fleet protected ()
   /**
     * The ARN of the created WorkLink Fleet.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the Amazon Kinesis data stream that receives the audit events.
     */
-  val auditStreamArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val auditStreamArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The identifier used by users to sign in to the Amazon WorkLink app.
     */
-  val companyCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val companyCode: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The time that the fleet was created.
     */
-  val createdTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createdTime: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The certificate chain, including intermediate certificates and the root certificate authority certificate used to issue device certificates.
     */
-  val deviceCaCertificate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val deviceCaCertificate: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the fleet.
     */
-  val displayName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val displayName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Provide this to allow manage the identity provider configuration for the fleet. Fields documented below.
     */
-  val identityProvider: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SamlMetadata]] = js.native
+  val identityProvider: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SamlMetadata]] = js.native
   /**
     * The time that the fleet was last updated.
     */
-  val lastUpdatedTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val lastUpdatedTime: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A region-unique name for the AMI.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Provide this to allow manage the company network configuration for the fleet. Fields documented below.
     */
-  val network: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray]] = js.native
+  val network: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray]] = js.native
   /**
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region. Defaults to `true`.
     */
-  val optimizeForEndUserLocation: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val optimizeForEndUserLocation: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
 /* static members */

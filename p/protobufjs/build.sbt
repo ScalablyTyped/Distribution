@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "protobufjs"
-version := "6.8.8-c3e68e"
+version := "6.8.8-3e33b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-d4ffb6",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-a03f5d",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-86ab76",
   "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-86ed03",

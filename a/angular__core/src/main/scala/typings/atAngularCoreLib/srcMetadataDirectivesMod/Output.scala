@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Output extends js.Object {
+  /**
+    * The name of the DOM property to which the output property is bound.
+    */
   var bindingPropertyName: js.UndefOr[java.lang.String] = js.undefined
 }
 

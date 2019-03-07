@@ -12,6 +12,7 @@ trait ConditionalEventDefinition extends BaseElement {
 object ConditionalEventDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     condition: Expression,
     id: java.lang.String,
@@ -20,7 +21,7 @@ object ConditionalEventDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ConditionalEventDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, condition = condition, id = id)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, condition = condition, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

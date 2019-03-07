@@ -22,25 +22,25 @@ class GameSessionQueue protected ()
   /**
     * Game Session Queue ARN.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of fleet/alias ARNs used by session queue for placing game sessions.
     */
-  val destinations: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val destinations: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Name of the session queue.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * One or more policies used to choose fleet based on player latency. See below.
     */
-  val playerLatencyPolicies: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+  val playerLatencyPolicies: atPulumiPulumiLib.outputMod.Output[
     js.UndefOr[js.Array[atPulumiAwsLib.Anon_MaximumIndividualPlayerLatencyMilliseconds]]
   ] = js.native
   /**
     * Maximum time a game session request can remain in the queue.
     */
-  val timeoutInSeconds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val timeoutInSeconds: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
 /* static members */

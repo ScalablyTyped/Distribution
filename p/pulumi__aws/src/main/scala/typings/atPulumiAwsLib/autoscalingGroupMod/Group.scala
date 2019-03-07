@@ -21,21 +21,21 @@ class Group protected ()
   /**
     * The ARN for this AutoScaling Group
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of one or more availability zones for the group. This parameter should not be specified when using `vpc_zone_identifier`.
     */
-  val availabilityZones: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val availabilityZones: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
     */
-  val defaultCooldown: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val defaultCooldown: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The number of Amazon EC2 instances that
     * should be running in the group. (See also Waiting for
     * Capacity below.)
     */
-  val desiredCapacity: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val desiredCapacity: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * A list of metrics to collect. The allowed values are `GroupMinSize`, `GroupMaxSize`, `GroupDesiredCapacity`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupTerminatingInstances`, `GroupTotalInstances`.
     * * `wait_for_capacity_timeout` (Default: "10m") A maximum
@@ -44,7 +44,7 @@ class Group protected ()
     * for Capacity below.) Setting this to "0" causes
     * Terraform to skip all Capacity Waiting behavior.
     */
-  val enabledMetrics: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.autoscalingMetricsMod.Metric]]] = js.native
+  val enabledMetrics: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.autoscalingMetricsMod.Metric]]] = js.native
   /**
     * Allows deleting the autoscaling group without waiting
     * for all instances in the pool to terminate.  You can force an autoscaling group to delete
@@ -52,15 +52,15 @@ class Group protected ()
     * drains all the instances before deleting the group.  This bypasses that
     * behavior and potentially leaves resources dangling.
     */
-  val forceDelete: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val forceDelete: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Time (in seconds) after instance comes into service before checking health.
     */
-  val healthCheckGracePeriod: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val healthCheckGracePeriod: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * "EC2" or "ELB". Controls how health checking is done.
     */
-  val healthCheckType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val healthCheckType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * One or more
     * [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
@@ -70,93 +70,93 @@ class Group protected ()
     * resource, without the `autoscaling_group_name` attribute. Please note that this will only work when creating
     * a new autoscaling group. For all other use-cases, please use `aws_autoscaling_lifecycle_hook` resource.
     */
-  val initialLifecycleHooks: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DefaultResult]]] = js.native
+  val initialLifecycleHooks: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DefaultResult]]] = js.native
   /**
     * The name of the launch configuration to use.
     */
-  val launchConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val launchConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Nested argument containing launch template settings along with the overrides to specify multiple instance types. Defined below.
     */
-  val launchTemplate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Id]] = js.native
+  val launchTemplate: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Id]] = js.native
   /**
     * A list of elastic load balancer names to add to the autoscaling
     * group names. Only valid for classic load balancers. For ALBs, use `target_group_arns` instead.
     */
-  val loadBalancers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val loadBalancers: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The maximum size of the auto scale group.
     */
-  val maxSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val maxSize: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
     */
-  val metricsGranularity: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val metricsGranularity: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Setting this causes Terraform to wait for
     * this number of instances to show up healthy in the ELB only on creation.
     * Updates will not wait on ELB instance number changes.
     * (See also Waiting for Capacity below.)
     */
-  val minElbCapacity: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val minElbCapacity: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The minimum size of the auto scale group.
     * (See also Waiting for Capacity below.)
     */
-  val minSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val minSize: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
     */
-  val mixedInstancesPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_InstancesDistribution]] = js.native
+  val mixedInstancesPolicy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_InstancesDistribution]] = js.native
   /**
     * The name of the auto scaling group. By default generated by Terraform.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
-  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val namePrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the placement group into which you'll launch your instances, if any.
     */
-  val placementGroup: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val placementGroup: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Allows setting instance protection. The
     * autoscaling group will not select instances with this setting for terminination
     * during scale in events.
     */
-  val protectFromScaleIn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val protectFromScaleIn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The ARN of the service-linked role that the ASG will use to call other AWS services
     */
-  val serviceLinkedRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val serviceLinkedRoleArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
     * Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
     */
-  val suspendedProcesses: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val suspendedProcesses: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * A list of tag blocks. Tags documented below.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Key]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Key]]] = js.native
   /**
     * A list of tag blocks (maps). Tags documented below.
     */
-  val tagsCollection: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[org.scalablytyped.runtime.StringDictionary[_]]]] = js.native
+  val tagsCollection: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[org.scalablytyped.runtime.StringDictionary[_]]]] = js.native
   /**
     * A list of `aws_alb_target_group` ARNs, for use with Application Load Balancing.
     */
-  val targetGroupArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val targetGroupArns: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `Default`.
     */
-  val terminationPolicies: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val terminationPolicies: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * A list of subnet IDs to launch resources in.
     */
-  val vpcZoneIdentifiers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
-  val waitForCapacityTimeout: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcZoneIdentifiers: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
+  val waitForCapacityTimeout: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Setting this will cause Terraform to wait
     * for exactly this number of healthy instances in all attached load balancers
@@ -164,7 +164,7 @@ class Group protected ()
     * `min_elb_capacity` behavior.)
     * (See also Waiting for Capacity below.)
     */
-  val waitForElbCapacity: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val waitForElbCapacity: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
 /* static members */

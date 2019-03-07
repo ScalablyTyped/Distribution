@@ -21,19 +21,19 @@ class AdmChannel protected ()
   /**
     * The application ID.
     */
-  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val applicationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Client ID (part of OAuth Credentials) obtained via Amazon Developer Account.
     */
-  val clientId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clientId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Client Secret (part of OAuth Credentials) obtained via Amazon Developer Account.
     */
-  val clientSecret: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val clientSecret: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether to enable the channel. Defaults to `true`.
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
 /* static members */

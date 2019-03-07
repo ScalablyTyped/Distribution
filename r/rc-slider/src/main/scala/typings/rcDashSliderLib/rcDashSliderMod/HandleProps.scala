@@ -16,6 +16,11 @@ trait HandleProps extends CommonApiProps {
     */
   var offset: scala.Double
   /**
+    * Set the tabIndex of the slider handle.
+    * @default 0
+    */
+  var tabIndex: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Styling if true, then bottom: {offset} else left: {offset}
     * @default False
     */
@@ -42,6 +47,7 @@ object HandleProps {
     railStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     step: scala.Int | scala.Double = null,
     style: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null,
+    tabIndex: scala.Int | scala.Double = null,
     tipFormatter: js.Function1[/* value */ js.Any, js.UndefOr[_]] = null,
     tipTransitionName: java.lang.String = null,
     trackStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null
@@ -60,6 +66,7 @@ object HandleProps {
     if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(tipFormatter)
     if (tipTransitionName != null) __obj.updateDynamic("tipTransitionName")(tipTransitionName)
     if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle.asInstanceOf[js.Any])

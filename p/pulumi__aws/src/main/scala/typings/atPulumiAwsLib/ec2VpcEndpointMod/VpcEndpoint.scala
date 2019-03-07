@@ -21,60 +21,60 @@ class VpcEndpoint protected ()
   /**
     * Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).
     */
-  val autoAccept: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val autoAccept: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
     */
-  val cidrBlocks: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val cidrBlocks: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
     */
-  val dnsEntries: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DnsName]] = js.native
+  val dnsEntries: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_DnsName]] = js.native
   /**
     * One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
     */
-  val networkInterfaceIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val networkInterfaceIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A policy to attach to the endpoint that controls access to the service. Applicable for endpoints of type `Gateway`. Defaults to full access. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
-  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
     */
-  val prefixListId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val prefixListId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.
     * Defaults to `false`.
     */
-  val privateDnsEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val privateDnsEnabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * One or more route table IDs. Applicable for endpoints of type `Gateway`.
     */
-  val routeTableIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val routeTableIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The ID of one or more security groups to associate with the network interface. Required for endpoints of type `Interface`.
     */
-  val securityGroupIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val securityGroupIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The service name, in the form `com.amazonaws.region.service` for AWS services.
     */
-  val serviceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val serviceName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The state of the VPC endpoint.
     */
-  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val state: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type `Interface`.
     */
-  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The VPC endpoint type, `Gateway` or `Interface`. Defaults to `Gateway`.
     */
-  val vpcEndpointType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcEndpointType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the VPC in which the endpoint will be used.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param opt_layout Layout.
   * @api
   */
-@JSImport("ol/geom/circle", JSImport.Default)
+@JSImport("ol/geom/Circle", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.geomNs.Circle {

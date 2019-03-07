@@ -23,17 +23,17 @@ class PeeringConnectionOptions protected ()
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that accepts
     * the peering connection (a maximum of one).
     */
-  val accepter: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
+  val accepter: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
   /**
     * A optional configuration block that allows for [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that requests
     * the peering connection (a maximum of one).
     */
-  val requester: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
+  val requester: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
   /**
     * The ID of the requester VPC peering connection.
     */
-  val vpcPeeringConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcPeeringConnectionId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -14,7 +14,7 @@ trait ModuleJSON extends js.Object {
   var id: java.lang.String
   var originalCode: java.lang.String
   var originalSourcemap: RawSourceMap | scala.Unit
-  var resolvedIds: IdMap
+  var resolvedIds: ResolvedIdMap
   var sourcemapChain: js.Array[RawSourceMap]
   var transformAssets: js.Array[Asset] | scala.Unit
   var transformDependencies: js.Array[java.lang.String] | scala.Null
@@ -30,7 +30,7 @@ object ModuleJSON {
     id: java.lang.String,
     originalCode: java.lang.String,
     originalSourcemap: RawSourceMap | scala.Unit,
-    resolvedIds: IdMap,
+    resolvedIds: ResolvedIdMap,
     sourcemapChain: js.Array[RawSourceMap],
     transformAssets: js.Array[Asset] | scala.Unit,
     transformDependencies: js.Array[java.lang.String] = null

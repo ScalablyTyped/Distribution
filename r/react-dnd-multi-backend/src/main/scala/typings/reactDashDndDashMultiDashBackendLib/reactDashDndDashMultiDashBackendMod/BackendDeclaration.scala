@@ -11,7 +11,7 @@ trait BackendDeclaration extends js.Object {
     * Backend - e.g. the one provided by react-dnd-html5-backend.
     */
   @JSName("backend")
-  var backend_Original: dndDashCoreLib.libInterfacesMod.BackendFactory = js.native
+  var backend_Original: dndDashCoreLib.libCjsInterfacesMod.BackendFactory = js.native
   /**
     * Flag to indicate that this backend needs to have a custom preview generated. This is mainly
     * used for backends such as the react-dnd-touch-backend, where there is no default preview
@@ -25,6 +25,6 @@ trait BackendDeclaration extends js.Object {
   /**
     * Backend - e.g. the one provided by react-dnd-html5-backend.
     */
-  def backend(dragDropManager: dndDashCoreLib.libInterfacesMod.DragDropManager[_]): dndDashCoreLib.libInterfacesMod.Backend = js.native
+  def backend(dragDropManager: dndDashCoreLib.libCjsInterfacesMod.DragDropManager[_]): dndDashCoreLib.libCjsInterfacesMod.Backend = js.native
 }
 

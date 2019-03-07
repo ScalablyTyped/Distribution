@@ -34,6 +34,9 @@ object sharpLibStrings {
   sealed trait lanczos3 extends js.Object
   
   @js.native
+  sealed trait mitchell extends js.Object
+  
+  @js.native
   sealed trait nearest extends js.Object
   
   @js.native
@@ -60,6 +63,8 @@ object sharpLibStrings {
   def lanczos2: lanczos2 = "lanczos2".asInstanceOf[lanczos2]
   @scala.inline
   def lanczos3: lanczos3 = "lanczos3".asInstanceOf[lanczos3]
+  @scala.inline
+  def mitchell: mitchell = "mitchell".asInstanceOf[mitchell]
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline

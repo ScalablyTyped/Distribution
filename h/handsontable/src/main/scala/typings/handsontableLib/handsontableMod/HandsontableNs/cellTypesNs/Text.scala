@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Text extends js.Object {
-  var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text
+  var editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text]
   var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text
 }
 
 object Text {
   @scala.inline
   def apply(
-    editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text,
+    editor: org.scalablytyped.runtime.Instantiable0[handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text],
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text
   ): Text = {
     val __obj = js.Dynamic.literal(editor = editor, renderer = renderer)

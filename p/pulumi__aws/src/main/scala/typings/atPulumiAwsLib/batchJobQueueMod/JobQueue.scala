@@ -21,27 +21,27 @@ class JobQueue protected ()
   /**
     * The Amazon Resource Name of the job queue.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Specifies the set of compute environments
     * mapped to a job queue and their order.  The position of the compute environments
     * in the list will dictate the order. You can associate up to 3 compute environments
     * with a job queue.
     */
-  val computeEnvironments: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val computeEnvironments: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Specifies the name of the job queue.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The priority of the job queue. Job queues with a higher priority
     * are evaluated first when associated with the same compute environment.
     */
-  val priority: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val priority: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The state of the job queue. Must be one of: `ENABLED` or `DISABLED`
     */
-  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val state: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

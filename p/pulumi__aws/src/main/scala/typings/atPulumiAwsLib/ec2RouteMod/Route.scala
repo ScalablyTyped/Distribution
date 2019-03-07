@@ -21,47 +21,47 @@ class Route protected ()
   /**
     * The destination CIDR block.
     */
-  val destinationCidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val destinationCidrBlock: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The destination IPv6 CIDR block.
     */
-  val destinationIpv6CidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val destinationPrefixListId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val destinationIpv6CidrBlock: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val destinationPrefixListId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of a VPC Egress Only Internet Gateway.
     */
-  val egressOnlyGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val egressOnlyGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of a VPC internet gateway or a virtual private gateway.
     */
-  val gatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val gatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of an EC2 instance.
     */
-  val instanceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val instanceOwnerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instanceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val instanceOwnerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of a VPC NAT gateway.
     */
-  val natGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val natGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of an EC2 network interface.
     */
-  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val origin: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val origin: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the routing table.
     */
-  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val state: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Identifier of an EC2 Transit Gateway.
     */
-  val transitGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val transitGatewayId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Identifier of a VPC peering connection.
     */
-  val vpcPeeringConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcPeeringConnectionId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

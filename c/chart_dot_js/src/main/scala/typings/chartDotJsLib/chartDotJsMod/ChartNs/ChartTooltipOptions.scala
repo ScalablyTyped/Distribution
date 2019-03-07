@@ -21,7 +21,7 @@ trait ChartTooltipOptions extends js.Object {
   var custom: js.UndefOr[js.Function1[/* a */ js.Any, scala.Unit]] = js.undefined
   var displayColors: js.UndefOr[scala.Boolean] = js.undefined
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
-  var filter: js.UndefOr[js.Function1[/* item */ ChartTooltipItem, scala.Boolean]] = js.undefined
+  var filter: js.UndefOr[js.Function2[/* item */ ChartTooltipItem, /* data */ ChartData, scala.Boolean]] = js.undefined
   var footerFontColor: js.UndefOr[ChartColor] = js.undefined
   var footerFontFamily: js.UndefOr[java.lang.String] = js.undefined
   var footerFontSize: js.UndefOr[scala.Double] = js.undefined
@@ -63,7 +63,7 @@ object ChartTooltipOptions {
     custom: js.Function1[/* a */ js.Any, scala.Unit] = null,
     displayColors: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    filter: js.Function1[/* item */ ChartTooltipItem, scala.Boolean] = null,
+    filter: js.Function2[/* item */ ChartTooltipItem, /* data */ ChartData, scala.Boolean] = null,
     footerFontColor: ChartColor = null,
     footerFontFamily: java.lang.String = null,
     footerFontSize: scala.Int | scala.Double = null,

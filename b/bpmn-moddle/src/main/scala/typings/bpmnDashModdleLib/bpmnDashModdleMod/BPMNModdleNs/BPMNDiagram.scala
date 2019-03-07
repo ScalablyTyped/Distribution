@@ -12,8 +12,8 @@ trait BPMNDiagram extends TypeDerived {
 
 object BPMNDiagram {
   @scala.inline
-  def apply($type: ElementType, labelStyle: BPMNLabelStyle, plane: BPMNPlane): BPMNDiagram = {
-    val __obj = js.Dynamic.literal($type = $type, labelStyle = labelStyle, plane = plane)
+  def apply($parent: TypeDerived, $type: ElementType, labelStyle: BPMNLabelStyle, plane: BPMNPlane): BPMNDiagram = {
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, labelStyle = labelStyle, plane = plane)
   
     __obj.asInstanceOf[BPMNDiagram]
   }

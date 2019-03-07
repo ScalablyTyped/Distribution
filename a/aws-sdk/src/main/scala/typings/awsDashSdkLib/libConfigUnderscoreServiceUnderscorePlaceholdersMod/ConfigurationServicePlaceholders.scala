@@ -208,6 +208,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var sts: js.UndefOr[awsDashSdkLib.clientsStsMod.STSNs.ClientConfiguration] = js.native
   var support: js.UndefOr[awsDashSdkLib.clientsSupportMod.SupportNs.ClientConfiguration] = js.native
   var swf: js.UndefOr[awsDashSdkLib.clientsSwfMod.SWFNs.ClientConfiguration] = js.native
+  var textract: js.UndefOr[awsDashSdkLib.clientsTextractMod.TextractNs.ClientConfiguration] = js.native
   var transcribeservice: js.UndefOr[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.ClientConfiguration
   ] = js.native

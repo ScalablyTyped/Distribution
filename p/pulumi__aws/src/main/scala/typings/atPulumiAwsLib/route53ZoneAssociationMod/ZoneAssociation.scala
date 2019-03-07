@@ -21,15 +21,15 @@ class ZoneAssociation protected ()
   /**
     * The VPC to associate with the private hosted zone.
     */
-  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The VPC's region. Defaults to the region of the AWS provider.
     */
-  val vpcRegion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val vpcRegion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The private hosted zone to associate.
     */
-  val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val zoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

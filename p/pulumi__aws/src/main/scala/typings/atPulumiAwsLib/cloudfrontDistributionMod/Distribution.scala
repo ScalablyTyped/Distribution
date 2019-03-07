@@ -23,139 +23,139 @@ class Distribution protected ()
     * each trusted signer, if the distribution is set up to serve private content
     * with signed URLs.
     */
-  val activeTrustedSigners: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val activeTrustedSigners: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * Extra CNAMEs (alternate domain names), if any, for
     * this distribution.
     */
-  val aliases: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val aliases: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The ARN (Amazon Resource Name) for the distribution. For example: arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5, where 123456789012 is your AWS account ID.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * **Deprecated**, use `ordered_cache_behavior` instead.
     */
-  val cacheBehaviors: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethods]]] = js.native
+  val cacheBehaviors: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethods]]] = js.native
   /**
     * Internal value used by CloudFront to allow future
     * updates to the distribution configuration.
     */
-  val callerReference: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val callerReference: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Any comments you want to include about the
     * distribution.
     */
-  val comment: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val comment: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * One or more custom error response elements (multiples allowed).
     */
-  val customErrorResponses: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ErrorCachingMinTtl]]] = js.native
+  val customErrorResponses: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ErrorCachingMinTtl]]] = js.native
   /**
     * The default cache behavior for this distribution (maximum
     * one).
     */
-  val defaultCacheBehavior: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AllowedMethodsCachedMethods] = js.native
+  val defaultCacheBehavior: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AllowedMethodsCachedMethods] = js.native
   /**
     * The object that you want CloudFront to
     * return (for example, index.html) when an end user requests the root URL.
     */
-  val defaultRootObject: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultRootObject: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The DNS domain name of either the S3 bucket, or
     * web site of your custom origin.
     */
-  val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domainName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether the distribution is enabled to accept end
     * user requests for content.
     */
-  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val enabled: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * The current version of the distribution's information. For example:
     * `E2QWRUHAPOMQZL`.
     */
-  val etag: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val etag: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The CloudFront Route 53 zone ID that can be used to
     * route an [Alias Resource Record Set][7] to. This attribute is simply an
     * alias for the zone ID `Z2FDTNDATAQYW2`.
     */
-  val hostedZoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val hostedZoneId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The maximum HTTP version to support on the
     * distribution. Allowed values are `http1.1` and `http2`. The default is
     * `http2`.
     */
-  val httpVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val httpVersion: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The number of invalidation batches
     * currently in progress.
     */
-  val inProgressValidationBatches: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val inProgressValidationBatches: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * Whether the IPv6 is enabled for the distribution.
     */
-  val isIpv6Enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val isIpv6Enabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The date and time the distribution was last modified.
     */
-  val lastModifiedTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val lastModifiedTime: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The logging
     * configuration that controls how logs are written
     * to your distribution (maximum one).
     */
-  val loggingConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketIncludeCookies]] = js.native
+  val loggingConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketIncludeCookies]] = js.native
   /**
     * An ordered list of cache behaviors
     * resource for this distribution. List from top to bottom
     * +    in order of precedence. The topmost cache behavior will have precedence 0.
     */
-  val orderedCacheBehaviors: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethods]]] = js.native
+  val orderedCacheBehaviors: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethods]]] = js.native
   /**
     * One or more origins for this
     * distribution (multiples allowed).
     */
-  val origins: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CustomHeaders]] = js.native
+  val origins: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_CustomHeaders]] = js.native
   /**
     * The price class for this distribution. One of
     * `PriceClass_All`, `PriceClass_200`, `PriceClass_100`
     */
-  val priceClass: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val priceClass: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The restriction
     * configuration for this distribution (maximum one).
     */
-  val restrictions: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_GeoRestriction] = js.native
+  val restrictions: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_GeoRestriction] = js.native
   /**
     * Disables the distribution instead of
     * deleting it when destroying the resource through Terraform. If this is set,
     * the distribution needs to be deleted manually afterwards. Default: `false`.
     */
-  val retainOnDelete: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val retainOnDelete: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The current status of the distribution. `Deployed` if the
     * distribution's information is fully propagated throughout the Amazon
     * CloudFront system.
     */
-  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The SSL
     * configuration for this distribution (maximum
     * one).
     */
-  val viewerCertificate: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AcmCertificateArn] = js.native
+  val viewerCertificate: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AcmCertificateArn] = js.native
   /**
     * If you're using AWS WAF to filter CloudFront
     * requests, the Id of the AWS WAF web ACL that is associated with the
     * distribution.
     */
-  val webAclId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val webAclId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

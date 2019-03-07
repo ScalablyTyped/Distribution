@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/attribution", JSImport.Default)
+@JSImport("ol/Attribution", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.Attribution {

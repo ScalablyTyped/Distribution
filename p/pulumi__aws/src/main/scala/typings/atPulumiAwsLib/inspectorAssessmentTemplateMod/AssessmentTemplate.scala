@@ -21,23 +21,23 @@ class AssessmentTemplate protected ()
   /**
     * The template assessment ARN.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The duration of the inspector run.
     */
-  val duration: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val duration: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The name of the assessment template.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The rules to be used during the run.
     */
-  val rulesPackageArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val rulesPackageArns: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The assessment target ARN to attach the template to.
     */
-  val targetArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val targetArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

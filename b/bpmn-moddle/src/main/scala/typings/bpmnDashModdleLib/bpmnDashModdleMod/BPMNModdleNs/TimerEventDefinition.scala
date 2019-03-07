@@ -14,6 +14,7 @@ trait TimerEventDefinition extends BaseElement {
 object TimerEventDefinition {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     timeCycle: Expression,
@@ -24,7 +25,7 @@ object TimerEventDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): TimerEventDefinition = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, timeCycle = timeCycle, timeDate = timeDate, timeDuration = timeDuration)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, timeCycle = timeCycle, timeDate = timeDate, timeDuration = timeDuration)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

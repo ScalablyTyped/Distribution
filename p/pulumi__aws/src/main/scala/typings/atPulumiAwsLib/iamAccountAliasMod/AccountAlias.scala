@@ -21,7 +21,7 @@ class AccountAlias protected ()
   /**
     * The account alias
     */
-  val accountAlias: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val accountAlias: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

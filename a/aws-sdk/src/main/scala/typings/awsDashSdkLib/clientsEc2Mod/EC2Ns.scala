@@ -4225,11 +4225,11 @@ object EC2Ns extends js.Object {
       */
     var InstanceIds: js.UndefOr[InstanceIdStringList] = js.undefined
     /**
-      * The maximum number of results to return for the request in a single page. The remaining results of the initial request can be seen by sending another request with the returned NextToken value. This value can be between 5 and 1000. If MaxResults is given a value larger than 1000, only 1000 results are returned. You cannot specify this parameter and the instance IDs parameter in the same request. Constraint: If the value is greater than 1000, we return only 1000 items.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. Constraint: If the value is greater than 1000, we return only 1000 items.
       */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
-      * The token to retrieve the next page of results.
+      * The token for the next page of results.
       */
     var NextToken: js.UndefOr[String] = js.undefined
   }
@@ -4491,11 +4491,11 @@ object EC2Ns extends js.Object {
       */
     var EgressOnlyInternetGatewayIds: js.UndefOr[EgressOnlyInternetGatewayIdList] = js.undefined
     /**
-      * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the returned NextToken value. This value can be between 5 and 1000. If MaxResults is given a value larger than 1000, only 1000 results are returned.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
       */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
-      * The token to retrieve the next page of results.
+      * The token for the next page of results.
       */
     var NextToken: js.UndefOr[String] = js.undefined
   }
@@ -4506,7 +4506,7 @@ object EC2Ns extends js.Object {
       */
     var EgressOnlyInternetGateways: js.UndefOr[EgressOnlyInternetGatewayList] = js.undefined
     /**
-      * The token to use to retrieve the next page of results.
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
       */
     var NextToken: js.UndefOr[String] = js.undefined
   }
@@ -4741,11 +4741,11 @@ object EC2Ns extends js.Object {
       */
     var FlowLogIds: js.UndefOr[ValueStringList] = js.undefined
     /**
-      * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the returned NextToken value. This value can be between 5 and 1000. If MaxResults is given a value larger than 1000, only 1000 results are returned. You cannot specify this parameter and the flow log IDs parameter in the same request.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
       */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
-      * The token to retrieve the next page of results.
+      * The token for the next page of results.
       */
     var NextToken: js.UndefOr[String] = js.undefined
   }
@@ -5228,6 +5228,14 @@ object EC2Ns extends js.Object {
       * One or more internet gateway IDs. Default: Describes all your internet gateways.
       */
     var InternetGatewayIds: js.UndefOr[ValueStringList] = js.undefined
+    /**
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
+    var MaxResults: js.UndefOr[DescribeInternetGatewaysMaxResults] = js.undefined
+    /**
+      * The token for the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   trait DescribeInternetGatewaysResult extends js.Object {
@@ -5235,6 +5243,10 @@ object EC2Ns extends js.Object {
       * Information about one or more internet gateways.
       */
     var InternetGateways: js.UndefOr[InternetGatewayList] = js.undefined
+    /**
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   trait DescribeKeyPairsRequest extends js.Object {
@@ -5387,7 +5399,7 @@ object EC2Ns extends js.Object {
       */
     var Filter: js.UndefOr[FilterList] = js.undefined
     /**
-      * The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results. Constraint: If the value specified is greater than 1000, we return only 1000 items.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
       */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
@@ -5395,7 +5407,7 @@ object EC2Ns extends js.Object {
       */
     var NatGatewayIds: js.UndefOr[ValueStringList] = js.undefined
     /**
-      * The token to retrieve the next page of results.
+      * The token for the next page of results.
       */
     var NextToken: js.UndefOr[String] = js.undefined
   }
@@ -5421,9 +5433,17 @@ object EC2Ns extends js.Object {
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
+    var MaxResults: js.UndefOr[DescribeNetworkAclsMaxResults] = js.undefined
+    /**
       * One or more network ACL IDs. Default: Describes all your network ACLs.
       */
     var NetworkAclIds: js.UndefOr[ValueStringList] = js.undefined
+    /**
+      * The token for the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   trait DescribeNetworkAclsResult extends js.Object {
@@ -5431,6 +5451,10 @@ object EC2Ns extends js.Object {
       * Information about one or more network ACLs.
       */
     var NetworkAcls: js.UndefOr[NetworkAclList] = js.undefined
+    /**
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   trait DescribeNetworkInterfaceAttributeRequest extends js.Object {
@@ -5567,11 +5591,11 @@ object EC2Ns extends js.Object {
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
-      * The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results. Constraint: If the value specified is greater than 1000, we return only 1000 items.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
       */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
-      * The token for the next set of items to return. (You received this token from a prior call.)
+      * The token for the next page of results.
       */
     var NextToken: js.UndefOr[String] = js.undefined
     /**
@@ -5582,7 +5606,7 @@ object EC2Ns extends js.Object {
   
   trait DescribePrefixListsResult extends js.Object {
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
       */
     var NextToken: js.UndefOr[String] = js.undefined
     /**
@@ -5831,11 +5855,11 @@ object EC2Ns extends js.Object {
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
-      * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 5 and 100.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
       */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
-      * The token to retrieve the next page of results.
+      * The token for the next page of results.
       */
     var NextToken: js.UndefOr[String] = js.undefined
     /**
@@ -6661,11 +6685,11 @@ object EC2Ns extends js.Object {
   
   trait DescribeVpcClassicLinkDnsSupportRequest extends js.Object {
     /**
-      * The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
       */
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-      * The token for the next set of items to return. (You received this token from a prior call.)
+      * The token for the next page of results.
       */
     var NextToken: js.UndefOr[NextToken] = js.undefined
     /**
@@ -6676,7 +6700,7 @@ object EC2Ns extends js.Object {
   
   trait DescribeVpcClassicLinkDnsSupportResult extends js.Object {
     /**
-      * The token to use when requesting the next set of items.
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
       */
     var NextToken: js.UndefOr[NextToken] = js.undefined
     /**
@@ -6921,11 +6945,11 @@ object EC2Ns extends js.Object {
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
-      * The maximum number of results to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
       */
     var MaxResults: js.UndefOr[DescribeVpcPeeringConnectionsMaxResults] = js.undefined
     /**
-      * The token to request the next page of results. (You received this token from a prior call.)
+      * The token for the next page of results.
       */
     var NextToken: js.UndefOr[String] = js.undefined
     /**
@@ -6955,12 +6979,24 @@ object EC2Ns extends js.Object {
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+      */
+    var MaxResults: js.UndefOr[DescribeVpcsMaxResults] = js.undefined
+    /**
+      * The token for the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+    /**
       * One or more VPC IDs. Default: Describes all your VPCs.
       */
     var VpcIds: js.UndefOr[VpcIdStringList] = js.undefined
   }
   
   trait DescribeVpcsResult extends js.Object {
+    /**
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
       * Information about one or more VPCs.
       */
@@ -25585,7 +25621,10 @@ object EC2Ns extends js.Object {
   type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
   type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
   type DescribeInstanceCreditSpecificationsMaxResults = scala.Double
+  type DescribeInternetGatewaysMaxResults = scala.Double
+  type DescribeNetworkAclsMaxResults = scala.Double
   type DescribeVpcPeeringConnectionsMaxResults = scala.Double
+  type DescribeVpcsMaxResults = scala.Double
   type DeviceType = _DeviceType | java.lang.String
   type DhcpConfigurationList = js.Array[DhcpConfiguration]
   type DhcpConfigurationValueList = js.Array[AttributeValue]

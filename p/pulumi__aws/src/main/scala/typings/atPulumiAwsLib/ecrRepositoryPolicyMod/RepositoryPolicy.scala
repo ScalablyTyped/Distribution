@@ -21,15 +21,15 @@ class RepositoryPolicy protected ()
   /**
     * The policy document. This is a JSON formatted string. For more information about building IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html)
     */
-  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The registry ID where the repository was created.
     */
-  val registryId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val registryId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the repository to apply the policy.
     */
-  val repository: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val repository: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

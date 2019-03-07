@@ -21,19 +21,19 @@ class Group protected ()
   /**
     * The ARN assigned by AWS for this resource group.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A description of the resource group.
     */
-  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The resource group's name. A resource group name can have a maximum of 127 characters, including letters, numbers, hyphens, dots, and underscores. The name cannot start with `AWS` or `aws`.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A `resource_query` block. Resource queries are documented below.
     */
-  val resourceQuery: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Query] = js.native
+  val resourceQuery: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Query] = js.native
 }
 
 /* static members */

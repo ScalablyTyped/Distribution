@@ -21,7 +21,7 @@ class StandardsSubscription protected ()
   /**
     * The ARN of a standard - see below.
     */
-  val standardsArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val standardsArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

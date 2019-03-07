@@ -21,27 +21,27 @@ class VirtualRouter protected ()
   /**
     * The ARN of the virtual router.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The creation date of the virtual router.
     */
-  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The last update date of the virtual router.
     */
-  val lastUpdatedDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val lastUpdatedDate: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name of the service mesh in which to create the virtual router.
     */
-  val meshName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val meshName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The name to use for the virtual router.
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The virtual router specification to apply.
     */
-  val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_ServiceNames] = js.native
+  val spec: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_ServiceNames] = js.native
 }
 
 /* static members */

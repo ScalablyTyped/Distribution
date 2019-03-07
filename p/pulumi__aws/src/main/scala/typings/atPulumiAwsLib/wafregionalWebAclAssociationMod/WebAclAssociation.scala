@@ -21,11 +21,11 @@ class WebAclAssociation protected ()
   /**
     * Application Load Balancer ARN to associate with.
     */
-  val resourceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the WAF Regional WebACL to create an association.
     */
-  val webAclId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val webAclId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

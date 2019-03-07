@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param opt_layout Layout.
   * @api stable
   */
-@JSImport("ol/geom/point", JSImport.Default)
+@JSImport("ol/geom/Point", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.geomNs.Point {

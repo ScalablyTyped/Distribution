@@ -100,6 +100,9 @@ object stripeLibStrings {
   sealed trait authorized extends js.Object
   
   @js.native
+  sealed trait automatic extends js.Object
+  
+  @js.native
   sealed trait bank_account
     extends stripeLib.stripeMod.StripeNs.payoutsNs.PayoutTypes
        with stripeLib.stripeMod.StripeNs.transfersNs.SourceTypes
@@ -204,7 +207,8 @@ object stripeLibStrings {
   sealed trait down extends js.Object
   
   @js.native
-  sealed trait duplicate extends js.Object
+  sealed trait duplicate
+    extends stripeLib.stripeMod.StripeNs.paymentIntentsNs.PaymentIntentCancelationReason
   
   @js.native
   sealed trait ephemeral_key extends js.Object
@@ -229,6 +233,10 @@ object stripeLibStrings {
     extends stripeLib.stripeMod.StripeNs.transfersNs.Statuses
   
   @js.native
+  sealed trait failed_invoice
+    extends stripeLib.stripeMod.StripeNs.paymentIntentsNs.PaymentIntentCancelationReason
+  
+  @js.native
   sealed trait file_upload extends js.Object
   
   @js.native
@@ -241,7 +249,8 @@ object stripeLibStrings {
   sealed trait fraud extends js.Object
   
   @js.native
-  sealed trait fraudulent extends js.Object
+  sealed trait fraudulent
+    extends stripeLib.stripeMod.StripeNs.paymentIntentsNs.PaymentIntentCancelationReason
   
   @js.native
   sealed trait friday extends js.Object
@@ -417,6 +426,9 @@ object stripeLibStrings {
   sealed trait payment extends js.Object
   
   @js.native
+  sealed trait payment_intent extends js.Object
+  
+  @js.native
   sealed trait payout extends js.Object
   
   @js.native
@@ -442,6 +454,9 @@ object stripeLibStrings {
   sealed trait prepaid extends js.Object
   
   @js.native
+  sealed trait processing extends js.Object
+  
+  @js.native
   sealed trait product extends js.Object
   
   @js.native
@@ -451,7 +466,13 @@ object stripeLibStrings {
   sealed trait product_unacceptable extends js.Object
   
   @js.native
+  sealed trait publishable extends js.Object
+  
+  @js.native
   sealed trait range extends js.Object
+  
+  @js.native
+  sealed trait redirect_to_url extends js.Object
   
   @js.native
   sealed trait refund extends js.Object
@@ -464,6 +485,22 @@ object stripeLibStrings {
   
   @js.native
   sealed trait repeating extends js.Object
+  
+  @js.native
+  sealed trait requested_by_customer
+    extends stripeLib.stripeMod.StripeNs.paymentIntentsNs.PaymentIntentCancelationReason
+  
+  @js.native
+  sealed trait requires_action extends js.Object
+  
+  @js.native
+  sealed trait requires_authorization extends js.Object
+  
+  @js.native
+  sealed trait requires_capture extends js.Object
+  
+  @js.native
+  sealed trait requires_payment_method extends js.Object
   
   @js.native
   sealed trait response_disabled extends js.Object
@@ -486,6 +523,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait saturday extends js.Object
+  
+  @js.native
+  sealed trait secret extends js.Object
   
   @js.native
   sealed trait send_invoice
@@ -599,6 +639,9 @@ object stripeLibStrings {
   sealed trait usage_record extends js.Object
   
   @js.native
+  sealed trait use_stripe_sdk extends js.Object
+  
+  @js.native
   sealed trait validated extends js.Object
   
   @js.native
@@ -697,6 +740,8 @@ object stripeLibStrings {
   @scala.inline
   def authorized: authorized = "authorized".asInstanceOf[authorized]
   @scala.inline
+  def automatic: automatic = "automatic".asInstanceOf[automatic]
+  @scala.inline
   def bank_account: bank_account = "bank_account".asInstanceOf[bank_account]
   @scala.inline
   def bank_cannot_process: bank_cannot_process = "bank_cannot_process".asInstanceOf[bank_cannot_process]
@@ -772,6 +817,8 @@ object stripeLibStrings {
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
+  def failed_invoice: failed_invoice = "failed_invoice".asInstanceOf[failed_invoice]
   @scala.inline
   def file_upload: file_upload = "file_upload".asInstanceOf[file_upload]
   @scala.inline
@@ -889,6 +936,8 @@ object stripeLibStrings {
   @scala.inline
   def payment: payment = "payment".asInstanceOf[payment]
   @scala.inline
+  def payment_intent: payment_intent = "payment_intent".asInstanceOf[payment_intent]
+  @scala.inline
   def payout: payout = "payout".asInstanceOf[payout]
   @scala.inline
   def payout_failure: payout_failure = "payout_failure".asInstanceOf[payout_failure]
@@ -905,13 +954,19 @@ object stripeLibStrings {
   @scala.inline
   def prepaid: prepaid = "prepaid".asInstanceOf[prepaid]
   @scala.inline
+  def processing: processing = "processing".asInstanceOf[processing]
+  @scala.inline
   def product: product = "product".asInstanceOf[product]
   @scala.inline
   def product_not_received: product_not_received = "product_not_received".asInstanceOf[product_not_received]
   @scala.inline
   def product_unacceptable: product_unacceptable = "product_unacceptable".asInstanceOf[product_unacceptable]
   @scala.inline
+  def publishable: publishable = "publishable".asInstanceOf[publishable]
+  @scala.inline
   def range: range = "range".asInstanceOf[range]
+  @scala.inline
+  def redirect_to_url: redirect_to_url = "redirect_to_url".asInstanceOf[redirect_to_url]
   @scala.inline
   def refund: refund = "refund".asInstanceOf[refund]
   @scala.inline
@@ -920,6 +975,16 @@ object stripeLibStrings {
   def refunded_as_fraud: refunded_as_fraud = "refunded_as_fraud".asInstanceOf[refunded_as_fraud]
   @scala.inline
   def repeating: repeating = "repeating".asInstanceOf[repeating]
+  @scala.inline
+  def requested_by_customer: requested_by_customer = "requested_by_customer".asInstanceOf[requested_by_customer]
+  @scala.inline
+  def requires_action: requires_action = "requires_action".asInstanceOf[requires_action]
+  @scala.inline
+  def requires_authorization: requires_authorization = "requires_authorization".asInstanceOf[requires_authorization]
+  @scala.inline
+  def requires_capture: requires_capture = "requires_capture".asInstanceOf[requires_capture]
+  @scala.inline
+  def requires_payment_method: requires_payment_method = "requires_payment_method".asInstanceOf[requires_payment_method]
   @scala.inline
   def response_disabled: response_disabled = "response_disabled".asInstanceOf[response_disabled]
   @scala.inline
@@ -934,6 +999,8 @@ object stripeLibStrings {
   def safe: safe = "safe".asInstanceOf[safe]
   @scala.inline
   def saturday: saturday = "saturday".asInstanceOf[saturday]
+  @scala.inline
+  def secret: secret = "secret".asInstanceOf[secret]
   @scala.inline
   def send_invoice: send_invoice = "send_invoice".asInstanceOf[send_invoice]
   @scala.inline
@@ -1004,6 +1071,8 @@ object stripeLibStrings {
   def upcoming: upcoming = "upcoming".asInstanceOf[upcoming]
   @scala.inline
   def usage_record: usage_record = "usage_record".asInstanceOf[usage_record]
+  @scala.inline
+  def use_stripe_sdk: use_stripe_sdk = "use_stripe_sdk".asInstanceOf[use_stripe_sdk]
   @scala.inline
   def validated: validated = "validated".asInstanceOf[validated]
   @scala.inline

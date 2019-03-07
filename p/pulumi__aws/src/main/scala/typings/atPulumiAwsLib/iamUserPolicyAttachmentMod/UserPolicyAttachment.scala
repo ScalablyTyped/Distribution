@@ -21,11 +21,11 @@ class UserPolicyAttachment protected ()
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val policyArn: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * The user the policy should be applied to
     */
-  val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamUserMod.User] = js.native
+  val user: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.iamUserMod.User] = js.native
 }
 
 /* static members */

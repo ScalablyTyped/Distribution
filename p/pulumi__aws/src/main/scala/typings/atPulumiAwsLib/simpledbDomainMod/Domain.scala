@@ -22,7 +22,7 @@ class Domain protected ()
   /**
     * The name of the SimpleDB domain
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

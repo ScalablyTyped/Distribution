@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait CMRequestInit extends js.Object {
   var body: js.UndefOr[js.Any] = js.undefined
   var cache: js.UndefOr[java.lang.String] = js.undefined
-  var credentials: js.UndefOr[PasswordCredential | java.lang.String] = js.undefined
+  var credentials: js.UndefOr[PasswordCredential | FederatedCredential | java.lang.String] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var integrity: js.UndefOr[java.lang.String] = js.undefined
   var keepalive: js.UndefOr[scala.Boolean] = js.undefined
@@ -30,7 +30,7 @@ object CMRequestInit {
   def apply(
     body: js.Any = null,
     cache: java.lang.String = null,
-    credentials: PasswordCredential | java.lang.String = null,
+    credentials: PasswordCredential | FederatedCredential | java.lang.String = null,
     headers: js.Any = null,
     integrity: java.lang.String = null,
     keepalive: js.UndefOr[scala.Boolean] = js.undefined,

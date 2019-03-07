@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/feature", JSImport.Default)
+@JSImport("ol/Feature", JSImport.Default)
 @js.native
 /**
   * @classdesc

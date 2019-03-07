@@ -21,11 +21,11 @@ class DomainPolicy protected ()
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val accessPolicies: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the domain.
     */
-  val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domainName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

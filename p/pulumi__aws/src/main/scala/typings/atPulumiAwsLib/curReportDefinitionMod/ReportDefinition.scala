@@ -21,39 +21,39 @@ class ReportDefinition protected ()
   /**
     * A list of additional artifacts. Valid values are: REDSHIFT, QUICKSIGHT.
     */
-  val additionalArtifacts: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val additionalArtifacts: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * A list of schema elements. Valid values are: RESOURCES.
     */
-  val additionalSchemaElements: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val additionalSchemaElements: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Compression format for report. Valid values are: GZIP, ZIP.
     */
-  val compression: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val compression: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Format for report. Valid values are: textORcsv.
     */
-  val format: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val format: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Unique name for the report. Must start with a number/letter and is case sensitive. Limited to 256 characters.
     */
-  val reportName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val reportName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Name of the existing S3 bucket to hold generated reports.
     */
-  val s3Bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val s3Bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Report path prefix. Limited to 256 characters.
     */
-  val s3Prefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val s3Prefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Region of the existing S3 bucket to hold generated reports.
     */
-  val s3Region: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val s3Region: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The frequency on which report data are measured and displayed.  Valid values are: HOURLY, DAILY.
     */
-  val timeUnit: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val timeUnit: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

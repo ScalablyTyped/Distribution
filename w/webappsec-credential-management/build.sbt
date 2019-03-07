@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webappsec-credential-management"
-version := "0.3-dt-20190213Z-782a75"
+version := "0.3-dt-20190226Z-ba44dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

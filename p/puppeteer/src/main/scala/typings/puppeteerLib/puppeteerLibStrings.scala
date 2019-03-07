@@ -285,6 +285,10 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.MouseButtons
   
   @js.native
+  sealed trait linux
+    extends puppeteerLib.puppeteerMod.Platform
+  
+  @js.native
   sealed trait load
     extends puppeteerLib.puppeteerMod.LoadEvent
        with puppeteerLib.puppeteerMod.PageEvents
@@ -292,6 +296,10 @@ object puppeteerLibStrings {
   @js.native
   sealed trait log
     extends puppeteerLib.puppeteerMod.ConsoleMessageType
+  
+  @js.native
+  sealed trait mac
+    extends puppeteerLib.puppeteerMod.Platform
   
   @js.native
   sealed trait magnetometer
@@ -477,6 +485,14 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.ResourceType
   
   @js.native
+  sealed trait win32
+    extends puppeteerLib.puppeteerMod.Platform
+  
+  @js.native
+  sealed trait win64
+    extends puppeteerLib.puppeteerMod.Platform
+  
+  @js.native
   sealed trait workercreated
     extends puppeteerLib.puppeteerMod.PageEvents
   
@@ -629,9 +645,13 @@ object puppeteerLibStrings {
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
+  def linux: linux = "linux".asInstanceOf[linux]
+  @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
+  def mac: mac = "mac".asInstanceOf[mac]
   @scala.inline
   def magnetometer: magnetometer = "magnetometer".asInstanceOf[magnetometer]
   @scala.inline
@@ -726,6 +746,10 @@ object puppeteerLibStrings {
   def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline
   def websocket: websocket = "websocket".asInstanceOf[websocket]
+  @scala.inline
+  def win32: win32 = "win32".asInstanceOf[win32]
+  @scala.inline
+  def win64: win64 = "win64".asInstanceOf[win64]
   @scala.inline
   def workercreated: workercreated = "workercreated".asInstanceOf[workercreated]
   @scala.inline

@@ -21,11 +21,11 @@ class SnapshotCreateVolumePermission protected ()
   /**
     * An AWS Account ID to add create volume permissions
     */
-  val accountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val accountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A snapshot ID
     */
-  val snapshotId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val snapshotId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

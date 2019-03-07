@@ -12,6 +12,7 @@ trait SubConversation extends ConversationNode {
 object SubConversation {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     conversationNodes: js.Array[ConversationNode],
     correlationKeys: js.Array[CorrelationKey],
@@ -26,7 +27,7 @@ object SubConversation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): SubConversation = {
-    val __obj = js.Dynamic.literal($type = $type, conversationNodes = conversationNodes, correlationKeys = correlationKeys, id = id, incomingConversationLinks = incomingConversationLinks, messageFlowRefs = messageFlowRefs, name = name, outgoingConversationLinks = outgoingConversationLinks, participantRefs = participantRefs)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, conversationNodes = conversationNodes, correlationKeys = correlationKeys, id = id, incomingConversationLinks = incomingConversationLinks, messageFlowRefs = messageFlowRefs, name = name, outgoingConversationLinks = outgoingConversationLinks, participantRefs = participantRefs)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

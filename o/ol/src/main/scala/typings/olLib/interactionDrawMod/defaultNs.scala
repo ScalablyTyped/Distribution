@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ol/interaction/draw", JSImport.Default)
+@JSImport("ol/interaction/Draw", JSImport.Default)
 @js.native
 object defaultNs extends js.Object {
   /**

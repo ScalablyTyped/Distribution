@@ -21,19 +21,19 @@ class MethodSettings protected ()
   /**
     * Method path defined as `{resource_path}/{http_method}` for an individual method override, or `*&#47;*` for overriding all methods in the stage.
     */
-  val methodPath: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val methodPath: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The ID of the REST API
     */
-  val restApi: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
+  val restApi: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
   /**
     * The settings block, see below.
     */
-  val settings: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_CacheDataEncrypted] = js.native
+  val settings: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_CacheDataEncrypted] = js.native
   /**
     * The name of the stage
     */
-  val stageName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val stageName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

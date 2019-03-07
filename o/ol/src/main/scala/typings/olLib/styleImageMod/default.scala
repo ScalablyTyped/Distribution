@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param options Options.
   * @api
   */
-@JSImport("ol/style/image", JSImport.Default)
+@JSImport("ol/style/Image", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.styleNs.Image {

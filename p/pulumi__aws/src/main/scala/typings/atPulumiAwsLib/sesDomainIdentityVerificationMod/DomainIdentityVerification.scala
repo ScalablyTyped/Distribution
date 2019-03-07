@@ -21,11 +21,11 @@ class DomainIdentityVerification protected ()
   /**
     * The ARN of the domain identity.
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The domain name of the SES domain identity to verify.
     */
-  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

@@ -9,6 +9,7 @@ trait KernelEnum extends js.Object {
   var cubic: sharpLib.sharpLibStrings.cubic
   var lanczos2: sharpLib.sharpLibStrings.lanczos2
   var lanczos3: sharpLib.sharpLibStrings.lanczos3
+  var mitchell: sharpLib.sharpLibStrings.mitchell
   var nearest: sharpLib.sharpLibStrings.nearest
 }
 
@@ -18,9 +19,10 @@ object KernelEnum {
     cubic: sharpLib.sharpLibStrings.cubic,
     lanczos2: sharpLib.sharpLibStrings.lanczos2,
     lanczos3: sharpLib.sharpLibStrings.lanczos3,
+    mitchell: sharpLib.sharpLibStrings.mitchell,
     nearest: sharpLib.sharpLibStrings.nearest
   ): KernelEnum = {
-    val __obj = js.Dynamic.literal(cubic = cubic, lanczos2 = lanczos2, lanczos3 = lanczos3, nearest = nearest)
+    val __obj = js.Dynamic.literal(cubic = cubic, lanczos2 = lanczos2, lanczos3 = lanczos3, mitchell = mitchell, nearest = nearest)
   
     __obj.asInstanceOf[KernelEnum]
   }

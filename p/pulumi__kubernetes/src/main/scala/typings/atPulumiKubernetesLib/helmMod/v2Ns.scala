@@ -61,14 +61,14 @@ object v2Ns extends js.Object {
       yamlStream: java.lang.String,
       transformations: js.Array[js.Function1[/* o */ _, scala.Unit]],
       dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+    ): atPulumiPulumiLib.outputMod.Output[
         org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
       ] = js.native
     def parseTemplate(
       yamlStream: java.lang.String,
       transformations: js.UndefOr[scala.Nothing],
       dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+    ): atPulumiPulumiLib.outputMod.Output[
         org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
       ] = js.native
   }

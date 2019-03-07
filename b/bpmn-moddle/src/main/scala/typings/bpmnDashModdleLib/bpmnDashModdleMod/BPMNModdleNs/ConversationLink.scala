@@ -14,6 +14,7 @@ trait ConversationLink extends BaseElement {
 object ConversationLink {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     name: java.lang.String,
@@ -24,7 +25,7 @@ object ConversationLink {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ConversationLink = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, name = name, sourceRef = sourceRef, targetRef = targetRef)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, name = name, sourceRef = sourceRef, targetRef = targetRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

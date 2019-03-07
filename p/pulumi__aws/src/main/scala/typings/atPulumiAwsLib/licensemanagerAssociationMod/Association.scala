@@ -21,11 +21,11 @@ class Association protected ()
   /**
     * ARN of the license configuration.
     */
-  val licenseConfigurationArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val licenseConfigurationArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * ARN of the resource associated with the license configuration.
     */
-  val resourceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

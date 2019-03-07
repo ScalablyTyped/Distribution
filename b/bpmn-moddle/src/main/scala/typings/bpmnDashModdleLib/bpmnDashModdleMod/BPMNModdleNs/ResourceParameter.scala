@@ -14,6 +14,7 @@ trait ResourceParameter extends BaseElement {
 object ResourceParameter {
   @scala.inline
   def apply(
+    $parent: TypeDerived,
     $type: ElementType,
     id: java.lang.String,
     isRequired: scala.Boolean,
@@ -24,7 +25,7 @@ object ResourceParameter {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ResourceParameter = {
-    val __obj = js.Dynamic.literal($type = $type, id = id, isRequired = isRequired, name = name)
+    val __obj = js.Dynamic.literal($parent = $parent, $type = $type, id = id, isRequired = isRequired, name = name)
     __obj.updateDynamic("type")(`type`)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)

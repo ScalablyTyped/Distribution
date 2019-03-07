@@ -21,51 +21,51 @@ class PlatformApplication protected ()
   /**
     * The ARN of the SNS platform application
     */
-  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * SNS Topic triggered when a delivery to any of the platform endpoints associated with your platform application encounters a permanent failure.
     */
-  val eventDeliveryFailureTopicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val eventDeliveryFailureTopicArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * SNS Topic triggered when a new platform endpoint is added to your platform application.
     */
-  val eventEndpointCreatedTopicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val eventEndpointCreatedTopicArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * SNS Topic triggered when an existing platform endpoint is deleted from your platform application.
     */
-  val eventEndpointDeletedTopicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val eventEndpointDeletedTopicArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * SNS Topic triggered when an existing platform endpoint is changed from your platform application.
     */
-  val eventEndpointUpdatedTopicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val eventEndpointUpdatedTopicArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The IAM role permitted to receive failure feedback for this application.
     */
-  val failureFeedbackRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val failureFeedbackRoleArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The friendly name for the SNS platform application
     */
-  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The platform that the app is registered with. See [Platform][1] for supported platforms.
     */
-  val platform: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val platform: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Application Platform credential. See [Credential][1] for type of credential required for platform. The value of this attribute when stored into the Terraform state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
     */
-  val platformCredential: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val platformCredential: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Application Platform principal. See [Principal][2] for type of principal required for platform. The value of this attribute when stored into the Terraform state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
     */
-  val platformPrincipal: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val platformPrincipal: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The IAM role permitted to receive success feedback for this application.
     */
-  val successFeedbackRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val successFeedbackRoleArn: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The percentage of success to sample (0-100)
     */
-  val successFeedbackSampleRate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val successFeedbackSampleRate: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */
