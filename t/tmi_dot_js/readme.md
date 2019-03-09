@@ -1,11 +1,11 @@
 ```
-// Type definitions for tmi.js 1.3
+// Type definitions for tmi.js 1.4
 // Project: https://github.com/tmijs/tmi.js
 // Definitions by: William Papsco <https://github.com/wpapsco>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.3
 // Twitch IRC docs: https://dev.twitch.tv/docs/irc/
-// Last updated: 2019/2/27
+// Last updated: 2019/3/06
 /**
  * Copyright 2018 bterlson <https://github.com/bterlson/strict-event-emitter-types>
  *

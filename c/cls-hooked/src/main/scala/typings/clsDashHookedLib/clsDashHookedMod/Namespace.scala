@@ -13,6 +13,8 @@ trait Namespace extends js.Object {
    // tslint:disable-line: ban-types
   def bindEmitter(emitter: nodeLib.eventsMod.EventEmitter): scala.Unit = js.native
   def createContext(): js.Any = js.native
+  def enter(context: js.Any): scala.Unit = js.native
+  def exit(context: js.Any): scala.Unit = js.native
   def get(key: java.lang.String): js.Any = js.native
   def run(fn: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def runAndReturn[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native

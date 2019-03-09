@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tmi_dot_js"
-version := "1.3-dt-20190228Z-d73110"
+version := "1.4-dt-20190307Z-c52d6a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   var state: js.UndefOr[java.lang.String] = js.undefined
   var tokenURL: js.UndefOr[java.lang.String] = js.undefined
   var userAgent: js.UndefOr[java.lang.String] = js.undefined
+  var userEmailURL: js.UndefOr[java.lang.String] = js.undefined
   var userProfileURL: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -33,6 +34,7 @@ object _StrategyOptionsBase {
     state: java.lang.String = null,
     tokenURL: java.lang.String = null,
     userAgent: java.lang.String = null,
+    userEmailURL: java.lang.String = null,
     userProfileURL: java.lang.String = null
   ): _StrategyOptionsBase = {
     val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
@@ -43,6 +45,7 @@ object _StrategyOptionsBase {
     if (state != null) __obj.updateDynamic("state")(state)
     if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL)
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (userEmailURL != null) __obj.updateDynamic("userEmailURL")(userEmailURL)
     if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL)
     __obj.asInstanceOf[_StrategyOptionsBase]
   }

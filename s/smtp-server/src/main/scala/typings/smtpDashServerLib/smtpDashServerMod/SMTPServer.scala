@@ -13,7 +13,7 @@ class SMTPServer ()
   var connections: nodeLib.Set[_] = js.native
   var logger: nodemailerLib.libSharedMod.Logger = js.native
   var options: SMTPServerOptions = js.native
-  var secureContext: stdLib.Map[java.lang.String, nodeLib.tlsMod.SecureContext] = js.native
+  var secureContext: nodeLib.Map[java.lang.String, nodeLib.tlsMod.SecureContext] = js.native
   var server: nodeLib.netMod.Server = js.native
   @JSName("addListener")
   def addListener_close(event: smtpDashServerLib.smtpDashServerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native

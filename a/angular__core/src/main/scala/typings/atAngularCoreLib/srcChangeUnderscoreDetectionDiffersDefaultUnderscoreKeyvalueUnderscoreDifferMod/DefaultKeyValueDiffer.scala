@@ -34,12 +34,12 @@ class DefaultKeyValueDiffer[K, V] ()
   var _removalsHead: js.Any = js.native
   var _removalsTail: js.Any = js.native
   val isDirty: scala.Boolean = js.native
-  def check(map: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
   /**
     * Check the current state of the map vs the previous.
     * The algorithm is optimised for when the keys do no change.
     */
-  def check(map: stdLib.Map[_, _]): scala.Boolean = js.native
+  def check(map: nodeLib.Map[_, _]): scala.Boolean = js.native
+  def check(map: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
   def diff(): js.Any = js.native
   /**
     * Iterate over all added items.

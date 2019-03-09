@@ -17,9 +17,9 @@ class CommandCursor ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#each */
   def each(callback: MongoCallback[CommandCursorResult]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#hasNext */
-  def hasNext(): js.Promise[CommandCursorResult] = js.native
+  def hasNext(): js.Promise[scala.Boolean] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#hasNext */
-  def hasNext(callback: MongoCallback[CommandCursorResult]): scala.Unit = js.native
+  def hasNext(callback: MongoCallback[scala.Boolean]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#isClosed */
   def isClosed(): scala.Boolean = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#maxTimeMS */

@@ -27,6 +27,10 @@ trait Options extends js.Object {
     */
   var fullforms: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
+    * BCP 47 language tag to specify a locale, or true to use default locale, default is ""
+    */
+  var locale: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+  /**
     * Output of function (array, exponent, object, or string), default is string
     */
   var output: js.UndefOr[
@@ -66,6 +70,7 @@ object Options {
     exponent: scala.Int | scala.Double = null,
     fullform: js.UndefOr[scala.Boolean] = js.undefined,
     fullforms: js.Array[java.lang.String] = null,
+    locale: java.lang.String | scala.Boolean = null,
     output: filesizeLib.filesizeLibStrings.array | filesizeLib.filesizeLibStrings.exponent | filesizeLib.filesizeLibStrings.`object` | filesizeLib.filesizeLibStrings.string = null,
     round: scala.Int | scala.Double = null,
     separator: java.lang.String = null,
@@ -80,6 +85,7 @@ object Options {
     if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
     if (!js.isUndefined(fullform)) __obj.updateDynamic("fullform")(fullform)
     if (fullforms != null) __obj.updateDynamic("fullforms")(fullforms)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator)

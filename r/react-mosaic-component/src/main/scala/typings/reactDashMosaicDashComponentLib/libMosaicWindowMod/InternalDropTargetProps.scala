@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InternalDropTargetProps extends js.Object {
   @JSName("connectDropTarget")
-  var connectDropTarget_Original: reactDashDndLib.libCjsInterfacesMod.ConnectDropTarget = js.native
+  var connectDropTarget_Original: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget = js.native
   var draggedMosaicId: js.UndefOr[java.lang.String] = js.native
   var isOver: scala.Boolean = js.native
   def connectDropTarget[Props](elementOrNode: reactLib.reactMod.ReactNs.ReactElement[Props]): reactLib.reactMod.ReactNs.ReactElement[Props] = js.native

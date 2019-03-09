@@ -21,6 +21,7 @@
 //                 Duong Tran <https://github.com/t49tran>
 //                 Ben Smith <https://github.com/8enSmith>
 //                 Wesley Tsai <https://github.com/wezleytsai>
+//                 Sebastian Silbermann <https://github.com/eps1lon>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

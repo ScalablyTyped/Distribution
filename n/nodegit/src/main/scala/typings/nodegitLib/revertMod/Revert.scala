@@ -29,6 +29,7 @@ object Revert extends js.Object {
     mainline: scala.Double,
     mergeOptions: nodegitLib.mergeDashOptionsMod.MergeOptions
   ): js.Promise[nodegitLib.nodegitMod.Index] = js.native
+  def revert(repo: nodegitLib.repositoryMod.Repository, commit: nodegitLib.commitMod.Commit): js.Promise[scala.Double] = js.native
   def revert(
     repo: nodegitLib.repositoryMod.Repository,
     commit: nodegitLib.commitMod.Commit,

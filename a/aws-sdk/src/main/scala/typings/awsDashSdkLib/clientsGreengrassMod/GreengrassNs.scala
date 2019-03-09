@@ -84,7 +84,7 @@ object GreengrassNs extends js.Object {
       */
     var DeploymentId: js.UndefOr[__string] = js.undefined
     /**
-      * The current status of the group deployment: ''Pending'', ''InProgress'', ''Success'', or ''Failure''.
+      * The current status of the group deployment: ''InProgress'', ''Building'', ''Success'', or ''Failure''.
       */
     var DeploymentStatus: js.UndefOr[__string] = js.undefined
     /**
@@ -349,7 +349,7 @@ object GreengrassNs extends js.Object {
       */
     var DeploymentId: js.UndefOr[__string] = js.undefined
     /**
-      * The type of deployment. When used in ''CreateDeployment'', only ''NewDeployment'' and ''Redeployment'' are valid.
+      * The type of deployment. When used for ''CreateDeployment'', only ''NewDeployment'' and ''Redeployment'' are valid.
       */
     var DeploymentType: js.UndefOr[DeploymentType] = js.undefined
     /**
@@ -505,7 +505,7 @@ object GreengrassNs extends js.Object {
       */
     var AmznClientToken: js.UndefOr[__string] = js.undefined
     /**
-      * Default configuration that will apply to all Lambda functions in this function definition version
+      * The default configuration that applies to all Lambda functions in this function definition version. Individual Lambda functions can override these settings.
       */
     var DefaultConfig: js.UndefOr[FunctionDefaultConfig] = js.undefined
     /**
@@ -1181,11 +1181,12 @@ object GreengrassNs extends js.Object {
   
   trait FunctionDefaultExecutionConfig extends js.Object {
     var IsolationMode: js.UndefOr[FunctionIsolationMode] = js.undefined
+    var RunAs: js.UndefOr[FunctionRunAsConfig] = js.undefined
   }
   
   trait FunctionDefinitionVersion extends js.Object {
     /**
-      * Default configuration that will apply to all Lambda functions in this function definition version
+      * The default configuration that applies to all Lambda functions in this function definition version. Individual Lambda functions can override these settings.
       */
     var DefaultConfig: js.UndefOr[FunctionDefaultConfig] = js.undefined
     /**
@@ -1201,11 +1202,11 @@ object GreengrassNs extends js.Object {
   
   trait FunctionRunAsConfig extends js.Object {
     /**
-      * The Group ID whose permissions are used to run a Lambda function.
+      * The group ID whose permissions are used to run a Lambda function.
       */
     var Gid: js.UndefOr[__integer] = js.undefined
     /**
-      * The User ID whose permissions are used to run a Lambda function.
+      * The user ID whose permissions are used to run a Lambda function.
       */
     var Uid: js.UndefOr[__integer] = js.undefined
   }
@@ -1445,7 +1446,7 @@ object GreengrassNs extends js.Object {
   
   trait GetDeploymentStatusResponse extends js.Object {
     /**
-      * The status of the deployment: ''Pending'', ''InProgress'', ''Success'', or ''Failure''.
+      * The status of the deployment: ''InProgress'', ''Building'', ''Success'', or ''Failure''.
       */
     var DeploymentStatus: js.UndefOr[__string] = js.undefined
     /**
@@ -2759,7 +2760,7 @@ object GreengrassNs extends js.Object {
       */
     var Source: js.UndefOr[__string] = js.undefined
     /**
-      * The subject of the message.
+      * The MQTT topic used to route the message.
       */
     var Subject: js.UndefOr[__string] = js.undefined
     /**

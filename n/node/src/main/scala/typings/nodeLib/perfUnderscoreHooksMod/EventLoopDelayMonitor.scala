@@ -25,7 +25,7 @@ trait EventLoopDelayMonitor extends js.Object {
   /**
     * A `Map` object detailing the accumulated percentile distribution.
     */
-  val percentiles: stdLib.Map[scala.Double, scala.Double]
+  val percentiles: nodeLib.Map[scala.Double, scala.Double]
   /**
     * The standard deviation of the recorded event loop delays.
     */
@@ -59,7 +59,7 @@ object EventLoopDelayMonitor {
     mean: scala.Double,
     min: scala.Double,
     percentile: js.Function1[scala.Double, scala.Double],
-    percentiles: stdLib.Map[scala.Double, scala.Double],
+    percentiles: nodeLib.Map[scala.Double, scala.Double],
     reset: js.Function0[scala.Unit],
     stddev: scala.Double
   ): EventLoopDelayMonitor = {

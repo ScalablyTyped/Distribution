@@ -32,7 +32,7 @@ object SubUserstate {
     `msg-param-cumulative-months`: java.lang.String | scala.Boolean = null,
     `msg-param-should-share-streak`: js.UndefOr[scala.Boolean] = js.undefined,
     `msg-param-streak-months`: java.lang.String | scala.Boolean = null,
-    `msg-param-sub-plan`: ResubMethod = null,
+    `msg-param-sub-plan`: SubMethod = null,
     `msg-param-sub-plan-name`: java.lang.String = null,
     `room-id`: java.lang.String = null,
     subscriber: js.UndefOr[scala.Boolean] = js.undefined,

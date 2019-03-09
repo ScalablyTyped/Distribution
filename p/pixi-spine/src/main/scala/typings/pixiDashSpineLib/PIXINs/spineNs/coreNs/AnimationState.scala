@@ -13,14 +13,12 @@ class AnimationState protected () extends js.Object {
   var data: AnimationStateData = js.native
   var events: js.Array[Event] = js.native
   var listeners: js.Array[AnimationStateListener2] = js.native
-  var mixingTo: js.Array[TrackEntry] = js.native
   var propertyIDs: IntSet = js.native
   var queue: EventQueue = js.native
   var timeScale: scala.Double = js.native
   var trackEntryPool: Pool[TrackEntry] = js.native
   var tracks: js.Array[TrackEntry] = js.native
   def _animationsChanged(): scala.Unit = js.native
-  def addAnimation(trackIndex: scala.Double, animationName: java.lang.String, loop: scala.Boolean): TrackEntry = js.native
   def addAnimation(
     trackIndex: scala.Double,
     animationName: java.lang.String,
@@ -33,19 +31,18 @@ class AnimationState protected () extends js.Object {
     loop: scala.Boolean,
     delay: scala.Double
   ): scala.Unit = js.native
-  def addAnimationWith(trackIndex: scala.Double, animation: Animation, loop: scala.Boolean): TrackEntry = js.native
   def addAnimationWith(trackIndex: scala.Double, animation: Animation, loop: scala.Boolean, delay: scala.Double): TrackEntry = js.native
   def addEmptyAnimation(trackIndex: scala.Double, mixDuration: scala.Double, delay: scala.Double): TrackEntry = js.native
   def addListener(listener: AnimationStateListener2): scala.Unit = js.native
   @JSName("apply")
   def apply(skeleton: Skeleton): scala.Boolean = js.native
-  def applyMixingFrom(to: TrackEntry, skeleton: Skeleton, currentPose: MixPose): scala.Double = js.native
+  def applyMixingFrom(to: TrackEntry, skeleton: Skeleton, blend: MixBlend): scala.Double = js.native
   def applyRotateTimeline(
     timeline: Timeline,
     skeleton: Skeleton,
     time: scala.Double,
     alpha: scala.Double,
-    pose: MixPose,
+    blend: MixBlend,
     timelinesRotation: js.Array[scala.Double],
     i: scala.Double,
     firstFrame: scala.Boolean
@@ -59,6 +56,7 @@ class AnimationState protected () extends js.Object {
   def getCurrent(trackIndex: scala.Double): TrackEntry = js.native
   def hasAnimation(animationName: java.lang.String): scala.Boolean = js.native
   def hasAnimationByName(animationName: java.lang.String): scala.Boolean = js.native
+  def hasTimeline(entry: TrackEntry, id: scala.Double): scala.Boolean = js.native
   def onComplete(trackIndex: scala.Double, loopCount: scala.Double): js.Any = js.native
   def onEnd(trackIndex: scala.Double): js.Any = js.native
   def onEvent(trackIndex: scala.Double, event: Event): js.Any = js.native
@@ -71,6 +69,7 @@ class AnimationState protected () extends js.Object {
   def setCurrent(index: scala.Double, current: TrackEntry, interrupt: scala.Boolean): scala.Unit = js.native
   def setEmptyAnimation(trackIndex: scala.Double, mixDuration: scala.Double): TrackEntry = js.native
   def setEmptyAnimations(mixDuration: scala.Double): scala.Unit = js.native
+  def setTimelineModes(entry: TrackEntry): scala.Unit = js.native
   def trackEntry(trackIndex: scala.Double, animation: Animation, loop: scala.Boolean, last: TrackEntry): TrackEntry = js.native
   def update(delta: scala.Double): scala.Unit = js.native
   def updateMixingFrom(to: TrackEntry, delta: scala.Double): scala.Boolean = js.native
@@ -80,9 +79,9 @@ class AnimationState protected () extends js.Object {
 @JSGlobal("PIXI.spine.core.AnimationState")
 @js.native
 object AnimationState extends js.Object {
-  var DIP: scala.Double = js.native
-  var DIP_MIX: scala.Double = js.native
   var FIRST: scala.Double = js.native
+  var HOLD: scala.Double = js.native
+  var HOLD_MIX: scala.Double = js.native
   var SUBSEQUENT: scala.Double = js.native
   var deprecatedWarning1: js.Any = js.native
   var deprecatedWarning2: js.Any = js.native

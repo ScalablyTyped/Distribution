@@ -6,14 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SubGiftUserstate
-  extends CommonSubUserstate
+  extends CommonGiftSubUserstate
      with Userstate {
-  var `message-type`: js.UndefOr[
-    tmiDotJsLib.tmiDotJsLibStrings.subgift | tmiDotJsLib.tmiDotJsLibStrings.anonsubgift
-  ] = js.undefined
-  var `msg-param-recipient-display-name`: js.UndefOr[java.lang.String] = js.undefined
-  var `msg-param-recipient-id`: js.UndefOr[java.lang.String] = js.undefined
-  var `msg-param-recipient-user-name`: js.UndefOr[java.lang.String] = js.undefined
+  var `message-type`: js.UndefOr[tmiDotJsLib.tmiDotJsLibStrings.subgift] = js.undefined
+  var `msg-param-sender-count`: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
 }
 
 object SubGiftUserstate {
@@ -29,12 +25,14 @@ object SubGiftUserstate {
     id: java.lang.String = null,
     login: java.lang.String = null,
     message: java.lang.String = null,
-    `message-type`: tmiDotJsLib.tmiDotJsLibStrings.subgift | tmiDotJsLib.tmiDotJsLibStrings.anonsubgift = null,
+    `message-type`: tmiDotJsLib.tmiDotJsLibStrings.subgift = null,
     mod: js.UndefOr[scala.Boolean] = js.undefined,
+    `msg-param-months`: scala.Boolean | java.lang.String = null,
     `msg-param-recipient-display-name`: java.lang.String = null,
     `msg-param-recipient-id`: java.lang.String = null,
     `msg-param-recipient-user-name`: java.lang.String = null,
-    `msg-param-sub-plan`: ResubMethod = null,
+    `msg-param-sender-count`: java.lang.String | scala.Boolean = null,
+    `msg-param-sub-plan`: SubMethod = null,
     `msg-param-sub-plan-name`: java.lang.String = null,
     `room-id`: java.lang.String = null,
     subscriber: js.UndefOr[scala.Boolean] = js.undefined,
@@ -55,11 +53,13 @@ object SubGiftUserstate {
     if (id != null) __obj.updateDynamic("id")(id)
     if (login != null) __obj.updateDynamic("login")(login)
     if (message != null) __obj.updateDynamic("message")(message)
-    if (`message-type` != null) __obj.updateDynamic("message-type")(`message-type`.asInstanceOf[js.Any])
+    if (`message-type` != null) __obj.updateDynamic("message-type")(`message-type`)
     if (!js.isUndefined(mod)) __obj.updateDynamic("mod")(mod)
+    if (`msg-param-months` != null) __obj.updateDynamic("msg-param-months")(`msg-param-months`.asInstanceOf[js.Any])
     if (`msg-param-recipient-display-name` != null) __obj.updateDynamic("msg-param-recipient-display-name")(`msg-param-recipient-display-name`)
     if (`msg-param-recipient-id` != null) __obj.updateDynamic("msg-param-recipient-id")(`msg-param-recipient-id`)
     if (`msg-param-recipient-user-name` != null) __obj.updateDynamic("msg-param-recipient-user-name")(`msg-param-recipient-user-name`)
+    if (`msg-param-sender-count` != null) __obj.updateDynamic("msg-param-sender-count")(`msg-param-sender-count`.asInstanceOf[js.Any])
     if (`msg-param-sub-plan` != null) __obj.updateDynamic("msg-param-sub-plan")(`msg-param-sub-plan`)
     if (`msg-param-sub-plan-name` != null) __obj.updateDynamic("msg-param-sub-plan-name")(`msg-param-sub-plan-name`)
     if (`room-id` != null) __obj.updateDynamic("room-id")(`room-id`)

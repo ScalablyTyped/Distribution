@@ -13,7 +13,7 @@ class default () extends FormItem
 @JSImport("antd/lib/form/FormItem", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_Colon = js.native
+  var defaultProps: antdLib.Anon_HasFeedback = js.native
   var propTypes: antdLib.Anon_ = js.native
 }
 

@@ -8,7 +8,17 @@ import scala.scalajs.js.annotation._
 trait InspectOptions extends js.Object {
   var breakLength: js.UndefOr[scala.Double] = js.undefined
   var colors: js.UndefOr[scala.Boolean] = js.undefined
-  var compact: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Setting this to `false` causes each object key
+    * to be displayed on a new line. It will also add new lines to text that is
+    * longer than `breakLength`. If set to a number, the most `n` inner elements
+    * are united on a single line as long as all properties fit into
+    * `breakLength`. Short array elements are also grouped together. Note that no
+    * text will be reduced below 16 characters, no matter the `breakLength` size.
+    * For more information, see the example below.
+    * @default `true`
+    */
+  var compact: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
   var customInspect: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * @default 2
@@ -36,7 +46,7 @@ object InspectOptions {
   def apply(
     breakLength: scala.Int | scala.Double = null,
     colors: js.UndefOr[scala.Boolean] = js.undefined,
-    compact: js.UndefOr[scala.Boolean] = js.undefined,
+    compact: scala.Boolean | scala.Double = null,
     customInspect: js.UndefOr[scala.Boolean] = js.undefined,
     depth: scala.Int | scala.Double = null,
     getters: nodeLib.nodeLibStrings.get | nodeLib.nodeLibStrings.set | scala.Boolean = null,
@@ -48,7 +58,7 @@ object InspectOptions {
     val __obj = js.Dynamic.literal()
     if (breakLength != null) __obj.updateDynamic("breakLength")(breakLength.asInstanceOf[js.Any])
     if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
+    if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     if (!js.isUndefined(customInspect)) __obj.updateDynamic("customInspect")(customInspect)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (getters != null) __obj.updateDynamic("getters")(getters.asInstanceOf[js.Any])

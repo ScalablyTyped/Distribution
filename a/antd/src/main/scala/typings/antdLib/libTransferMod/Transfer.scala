@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 trait Transfer
   extends reactLib.reactMod.Component[TransferProps, js.Any, js.Any] {
   var separatedDataSource: antdLib.Anon_LeftDataSource | scala.Null = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MTransfer(nextProps: TransferProps): scala.Unit = js.native
   def getLocale(
     transferLocale: TransferLocale,
     renderEmpty: js.Function1[

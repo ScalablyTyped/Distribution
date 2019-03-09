@@ -18,7 +18,7 @@ abstract class CurveTimeline protected () extends Timeline {
     time: scala.Double,
     events: js.Array[Event],
     alpha: scala.Double,
-    pose: MixPose,
+    blend: MixBlend,
     direction: MixDirection
   ): scala.Unit = js.native
   def getCurvePercent(frameIndex: scala.Double, percent: scala.Double): scala.Double = js.native

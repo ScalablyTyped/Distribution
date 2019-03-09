@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A structure containing additional user information from a federated identity
+  * provider.
+  */
 trait AdditionalUserInfo extends js.Object {
   var isNewUser: scala.Boolean
   var profile: coreDashJsLib.Object | scala.Null

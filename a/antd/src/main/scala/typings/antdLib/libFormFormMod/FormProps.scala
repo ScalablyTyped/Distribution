@@ -7,13 +7,21 @@ import scala.scalajs.js.annotation._
 
 trait FormProps
   extends reactLib.reactMod.ReactNs.FormHTMLAttributes[reactLib.HTMLFormElement] {
+  /**
+    * @since 3.15.0
+    */
+  var colon: js.UndefOr[scala.Boolean] = js.undefined
   var form: js.UndefOr[WrappedFormUtils] = js.undefined
   var hideRequiredMark: js.UndefOr[scala.Boolean] = js.undefined
+  var labelAlign: js.UndefOr[antdLib.antdLibStrings.left | antdLib.antdLibStrings.right] = js.undefined
   var labelCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
   var layout: js.UndefOr[FormLayout] = js.undefined
   @JSName("onSubmit")
   var onSubmit_FormProps: js.UndefOr[reactLib.reactMod.ReactNs.FormEventHandler[_]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * @since 3.14.0
+    */
   var wrapperCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
 }
 
@@ -22,8 +30,10 @@ object FormProps {
   def apply(
     FormHTMLAttributes: reactLib.reactMod.ReactNs.FormHTMLAttributes[reactLib.HTMLFormElement] = null,
     className: java.lang.String = null,
+    colon: js.UndefOr[scala.Boolean] = js.undefined,
     form: WrappedFormUtils = null,
     hideRequiredMark: js.UndefOr[scala.Boolean] = js.undefined,
+    labelAlign: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     labelCol: antdLib.libGridColMod.ColProps = null,
     layout: FormLayout = null,
     onSubmit: reactLib.reactMod.ReactNs.FormEventHandler[_] = null,
@@ -34,8 +44,10 @@ object FormProps {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, FormHTMLAttributes)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(colon)) __obj.updateDynamic("colon")(colon)
     if (form != null) __obj.updateDynamic("form")(form)
     if (!js.isUndefined(hideRequiredMark)) __obj.updateDynamic("hideRequiredMark")(hideRequiredMark)
+    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
     if (labelCol != null) __obj.updateDynamic("labelCol")(labelCol)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)

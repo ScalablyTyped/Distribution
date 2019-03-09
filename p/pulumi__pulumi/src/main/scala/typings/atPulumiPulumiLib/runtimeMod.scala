@@ -17,19 +17,19 @@ object runtimeMod extends js.Object {
   val unknownValue: /* 04da6b54-80e4-46f7-96ec-b56ff0331ba9 */ java.lang.String = js.native
   def allConfig(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def computeCodePaths(): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    nodeLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
   ] = js.native
   def computeCodePaths(extraIncludePaths: js.Array[java.lang.String]): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    nodeLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
   ] = js.native
   def computeCodePaths(extraIncludePaths: js.Array[java.lang.String], extraIncludePackages: js.Array[java.lang.String]): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    nodeLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
@@ -39,13 +39,13 @@ object runtimeMod extends js.Object {
     extraIncludePackages: js.Array[java.lang.String],
     extraExcludePackages: js.Array[java.lang.String]
   ): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    nodeLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
   ] = js.native
   def computeCodePaths(options: atPulumiPulumiLib.runtimeClosureCodePathsMod.CodePathOptions): js.Promise[
-    lodashLib.lodashMod.Global.Map[
+    nodeLib.Map[
       java.lang.String, 
       atPulumiPulumiLib.assetMod.Asset | atPulumiPulumiLib.assetMod.Archive
     ]
@@ -115,7 +115,7 @@ object runtimeMod extends js.Object {
   def serializeResourceProperties(label: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs): js.Promise[
     js.Tuple2[
       stdLib.Record[java.lang.String, _], 
-      lodashLib.lodashMod.Global.Map[java.lang.String, nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]]
+      nodeLib.Map[java.lang.String, nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]]
     ]
   ] = js.native
   def setConfig(k: java.lang.String, v: java.lang.String): scala.Unit = js.native

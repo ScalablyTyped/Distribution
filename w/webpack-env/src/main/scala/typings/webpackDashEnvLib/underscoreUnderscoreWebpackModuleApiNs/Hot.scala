@@ -21,6 +21,7 @@ trait Hot extends js.Object {
     * @param dependencies
     * @param callback
     */
+  def accept(dependencies: js.Array[java.lang.String]): scala.Unit = js.native
   def accept(
     dependencies: js.Array[java.lang.String],
     callback: js.Function1[/* updatedDependencies */ js.Array[ModuleId], scala.Unit]
@@ -30,6 +31,7 @@ trait Hot extends js.Object {
     * @param dependency
     * @param callback
     */
+  def accept(dependency: java.lang.String): scala.Unit = js.native
   def accept(dependency: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def accept(errHandler: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
   /**

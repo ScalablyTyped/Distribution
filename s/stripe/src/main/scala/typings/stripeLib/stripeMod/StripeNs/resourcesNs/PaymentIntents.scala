@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PaymentIntents
   extends stripeLib.stripeMod.StripeNs.StripeResource {
+  def cancel(paymentIntentId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
   def cancel(paymentIntentId: java.lang.String, data: stripeLib.Anon_Cancellationreason): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
   /**
     * A PaymentIntent object can be canceled when it is in one of these statuses: `requires_payment_method`, `requires_capture`, `requires_confirmation`, `requires_action`.
@@ -31,6 +32,17 @@ trait PaymentIntents
     data: stripeLib.Anon_Cancellationreason,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
   ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def cancel(paymentIntentId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def cancel(
+    paymentIntentId: java.lang.String,
+    options: stripeLib.stripeMod.StripeNs.HeaderOptions,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def cancel(
+    paymentIntentId: java.lang.String,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def capture(paymentIntentId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
   def capture(
     paymentIntentId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentCaptureOptions
@@ -57,6 +69,17 @@ trait PaymentIntents
     data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentCaptureOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
   ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def capture(paymentIntentId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def capture(
+    paymentIntentId: java.lang.String,
+    options: stripeLib.stripeMod.StripeNs.HeaderOptions,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def capture(
+    paymentIntentId: java.lang.String,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def confirm(paymentIntentId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
   def confirm(
     paymentIntentId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentConfirmOptions
@@ -82,6 +105,16 @@ trait PaymentIntents
   def confirm(
     paymentIntentId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentConfirmOptions,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def confirm(paymentIntentId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def confirm(
+    paymentIntentId: java.lang.String,
+    options: stripeLib.stripeMod.StripeNs.HeaderOptions,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def confirm(
+    paymentIntentId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
   ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
   def create(data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
@@ -154,11 +187,31 @@ trait PaymentIntents
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
   ] = js.native
   def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def retrieve(
+    id: java.lang.String,
+    data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentRetrieveOptions
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
   /**
     * Retrieves the details of a PaymentIntent that has previously been created.
     * Client-side retrieval using a publishable key is allowed when the client_secret is provided in the query string.
     * When retrieved with a publishable key, only a subset of properties will be returned. Please refer to the payment intent object reference for more details.
     */
+  def retrieve(
+    id: java.lang.String,
+    data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentRetrieveOptions,
+    options: stripeLib.stripeMod.StripeNs.HeaderOptions
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def retrieve(
+    id: java.lang.String,
+    data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentRetrieveOptions,
+    options: stripeLib.stripeMod.StripeNs.HeaderOptions,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
+  def retrieve(
+    id: java.lang.String,
+    data: stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntentRetrieveOptions,
+    response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent]
+  ): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
   def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.paymentIntentsNs.IPaymentIntent] = js.native
   def retrieve(
     id: java.lang.String,

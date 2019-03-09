@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait VueI18n extends js.Object {
+  val availableLocales: js.Array[vueDashI18nLib.vueDashI18nMod.VueI18nNs.Locale] = js.native
   val dateTimeFormats: vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormats = js.native
   var fallbackLocale: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Locale = js.native
   var formatter: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Formatter = js.native

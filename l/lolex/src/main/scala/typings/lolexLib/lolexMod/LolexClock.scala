@@ -22,6 +22,12 @@ trait LolexClock[TTimerId /* <: TimerId */] extends GlobalTimers[TTimerId] {
     */
   def cancelAnimationFrame(id: TTimerId): scala.Unit = js.native
   /**
+    * Clears a timer, as long as it was created using requestIdleCallback.
+    *
+    * @param id   Timer ID or object.
+    */
+  def cancelIdleCallback(id: TTimerId): scala.Unit = js.native
+  /**
   	 * Get the number of waiting timers.
   	 *
   	 * @returns number of waiting timers.
@@ -38,6 +44,15 @@ trait LolexClock[TTimerId /* <: TimerId */] extends GlobalTimers[TTimerId] {
     * @returns Request id.
     */
   def requestAnimationFrame(callback: js.Function1[/* time */ scala.Double, scala.Unit]): TTimerId = js.native
+  /**
+    * Queues the callback to be fired during idle periods to perform background and low priority work on the main event loop.
+    * 
+    * @param callback   Callback to be fired.
+    * @param timeout   The maximum number of ticks before the callback must be fired.
+    * @remarks Callbacks which have a timeout option will be fired no later than time in milliseconds.
+    */
+  def requestIdleCallback(callback: js.Function0[scala.Unit]): TTimerId = js.native
+  def requestIdleCallback(callback: js.Function0[scala.Unit], timeout: scala.Double): TTimerId = js.native
   /**
     * Removes all timers and tick without firing them and restore now to its original value.
     */

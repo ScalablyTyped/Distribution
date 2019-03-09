@@ -43,7 +43,7 @@ object policiesNs extends js.Object {
     @js.native
     class LoadBalancingPolicy () extends js.Object {
       def getDistance(host: cassandraDashDriverLib.cassandraDashDriverMod.Host): cassandraDashDriverLib.cassandraDashDriverMod.typesNs.distance = js.native
-      def getOptions(): stdLib.Map[java.lang.String, _] = js.native
+      def getOptions(): nodeLib.Map[java.lang.String, _] = js.native
       def init(
         client: cassandraDashDriverLib.cassandraDashDriverMod.Client,
         hosts: cassandraDashDriverLib.cassandraDashDriverMod.HostMap,

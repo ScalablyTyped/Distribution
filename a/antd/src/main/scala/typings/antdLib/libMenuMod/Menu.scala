@@ -10,8 +10,8 @@ trait Menu
   extends reactLib.reactMod.Component[MenuProps, MenuState, js.Any] {
   var inlineOpenKeys: js.Array[java.lang.String] = js.native
   var switchingModeFromInline: scala.Boolean = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MMenu(nextProps: MenuProps, nextContext: antdLib.libLayoutSiderMod.SiderContext): scala.Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MMenu(prevProps: MenuProps): scala.Unit = js.native
   def getChildContext(): antdLib.Anon_AntdMenuThemeDark = js.native
   def getInlineCollapsed(): js.Any = js.native
   def getMenuOpenAnimation(menuMode: MenuMode): js.UndefOr[js.Object] = js.native

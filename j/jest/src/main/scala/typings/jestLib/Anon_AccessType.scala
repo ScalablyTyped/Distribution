@@ -79,6 +79,11 @@ trait Anon_AccessType extends js.Object {
     */
   def isMockFunction(fn: js.Any): /* is jest.jest.jest.Mock<any, any> */ scala.Boolean = js.native
   /**
+    * Creates a sandbox registry for the modules that are loaded inside the callback function..
+    * This is useful to isolate specific modules for every test so that local module state doesn't conflict between tests.
+    */
+  def isolateModules(fn: js.Function0[scala.Unit]): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
+  /**
     * Mocks a module with an auto-mocked version when it is being required.
     */
   def mock(moduleName: java.lang.String): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native

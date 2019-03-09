@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "unist-util-is"
-version := "2.1-dt-20181211Z-1b22d3"
+version := "2.1-dt-20181211Z-0530b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
   "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-e8c8c9")
 publishArtifact in packageDoc := false

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Props[OptionType] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ key in string ]: any} */ trait Props[OptionType] extends js.Object {
   /* Aria label (for assistive tech) */
   var `aria-label`: js.UndefOr[java.lang.String] = js.undefined
   /* HTML ID of an element that should be used as the label (for assistive tech) */

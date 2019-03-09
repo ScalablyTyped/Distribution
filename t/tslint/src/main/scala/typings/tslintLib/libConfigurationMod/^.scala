@@ -14,7 +14,7 @@ object ^ extends js.Object {
   val EMPTY_CONFIG: tslintLib.libConfigurationMod.IConfigurationFile = js.native
   val JSON_CONFIG_FILENAME: /* tslint.json */ java.lang.String = js.native
   def convertRuleOptions(
-    ruleConfiguration: stdLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]]
+    ruleConfiguration: nodeLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]]
   ): js.Array[tslintLib.libLanguageRuleRuleMod.IOptions] = js.native
   def extendConfigurationFile(
     targetConfig: tslintLib.libConfigurationMod.IConfigurationFile,

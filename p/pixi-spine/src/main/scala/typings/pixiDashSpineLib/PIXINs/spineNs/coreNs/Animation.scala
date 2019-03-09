@@ -20,7 +20,7 @@ class Animation protected () extends js.Object {
     loop: scala.Boolean,
     events: js.Array[Event],
     alpha: scala.Double,
-    pose: MixPose,
+    blend: MixBlend,
     direction: MixDirection
   ): scala.Unit = js.native
 }

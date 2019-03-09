@@ -1,0 +1,21 @@
+package typings
+package pdfjsDashDistLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait RTCDataChannelEvent extends Event {
+  val channel: RTCDataChannel = js.native
+}
+
+@JSGlobal("RTCDataChannelEvent")
+@js.native
+object RTCDataChannelEvent
+  extends org.scalablytyped.runtime.Instantiable2[
+      /* type */ java.lang.String, 
+      /* eventInitDict */ RTCDataChannelEventInit, 
+      RTCDataChannelEvent
+    ]
+

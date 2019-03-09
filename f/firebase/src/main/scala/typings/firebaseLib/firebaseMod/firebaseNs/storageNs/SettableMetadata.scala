@@ -5,12 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Object metadata that can be set at any time.
+  */
 trait SettableMetadata extends js.Object {
+  /**
+    * Served as the 'Cache-Control' header on object download.
+    */
   var cacheControl: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var contentDisposition: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /**
+    * Served as the 'Content-Encoding' header on object download.
+    */
   var contentEncoding: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /**
+    * Served as the 'Content-Language' header on object download.
+    */
   var contentLanguage: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /**
+    * Served as the 'Content-Type' header on object download.
+    */
   var contentType: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /**
+    * Additional user-defined custom metadata.
+    */
   var customMetadata: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null] = js.undefined
 }
 

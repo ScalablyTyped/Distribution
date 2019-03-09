@@ -21,7 +21,7 @@ trait ParcelBundle extends js.Object {
   /**
     * A Map<Asset, number(line number inside the bundle)> of all the locations of the assets inside the bundle, used to generate accurate source maps
     */
-  var offsets: stdLib.Map[ParcelAsset, scala.Double]
+  var offsets: nodeLib.Map[ParcelAsset, scala.Double]
   /**
     * The parent bundle, is null in case of the entry bundleany
     */
@@ -33,7 +33,7 @@ trait ParcelBundle extends js.Object {
   /**
     * A Map<String(Type: js, css, map, ...), Bundle> of all sibling bundles
     */
-  var siblingBundlesMap: stdLib.Map[java.lang.String, ParcelBundle]
+  var siblingBundlesMap: nodeLib.Map[java.lang.String, ParcelBundle]
   /**
     * The type of assets it contains (e.g. js, css, map, ...)
     */
@@ -46,9 +46,9 @@ object ParcelBundle {
     assets: nodeLib.Set[_],
     entryAsset: js.Any,
     name: java.lang.String,
-    offsets: stdLib.Map[ParcelAsset, scala.Double],
+    offsets: nodeLib.Map[ParcelAsset, scala.Double],
     siblingBundles: nodeLib.Set[_],
-    siblingBundlesMap: stdLib.Map[java.lang.String, ParcelBundle],
+    siblingBundlesMap: nodeLib.Map[java.lang.String, ParcelBundle],
     `type`: java.lang.String,
     parentBundle: js.Any = null
   ): ParcelBundle = {

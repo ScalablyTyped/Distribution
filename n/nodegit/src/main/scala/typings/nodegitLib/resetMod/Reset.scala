@@ -15,12 +15,12 @@ class Reset () extends js.Object
 object Reset extends js.Object {
   def default(
     repo: nodegitLib.repositoryMod.Repository,
-    target: nodegitLib.objectMod.Object,
+    target: nodegitLib.commitMod.Commit,
     pathspecs: java.lang.String
   ): js.Promise[scala.Double] = js.native
   def default(
     repo: nodegitLib.repositoryMod.Repository,
-    target: nodegitLib.objectMod.Object,
+    target: nodegitLib.commitMod.Commit,
     pathspecs: js.Array[java.lang.String]
   ): js.Promise[scala.Double] = js.native
   /**
@@ -28,7 +28,22 @@ object Reset extends js.Object {
     */
   def default(
     repo: nodegitLib.repositoryMod.Repository,
-    target: nodegitLib.objectMod.Object,
+    target: nodegitLib.commitMod.Commit,
+    pathspecs: nodegitLib.strDashArrayMod.Strarray
+  ): js.Promise[scala.Double] = js.native
+  def default(
+    repo: nodegitLib.repositoryMod.Repository,
+    target: nodegitLib.tagMod.Tag,
+    pathspecs: java.lang.String
+  ): js.Promise[scala.Double] = js.native
+  def default(
+    repo: nodegitLib.repositoryMod.Repository,
+    target: nodegitLib.tagMod.Tag,
+    pathspecs: js.Array[java.lang.String]
+  ): js.Promise[scala.Double] = js.native
+  def default(
+    repo: nodegitLib.repositoryMod.Repository,
+    target: nodegitLib.tagMod.Tag,
     pathspecs: nodegitLib.strDashArrayMod.Strarray
   ): js.Promise[scala.Double] = js.native
   /**
@@ -47,7 +62,13 @@ object Reset extends js.Object {
     */
   def reset(
     repo: nodegitLib.repositoryMod.Repository,
-    target: nodegitLib.objectMod.Object,
+    target: nodegitLib.commitMod.Commit,
+    resetType: scala.Double,
+    checkoutOpts: nodegitLib.checkoutDashOptionsMod.CheckoutOptions
+  ): js.Promise[scala.Double] = js.native
+  def reset(
+    repo: nodegitLib.repositoryMod.Repository,
+    target: nodegitLib.tagMod.Tag,
     resetType: scala.Double,
     checkoutOpts: nodegitLib.checkoutDashOptionsMod.CheckoutOptions
   ): js.Promise[scala.Double] = js.native

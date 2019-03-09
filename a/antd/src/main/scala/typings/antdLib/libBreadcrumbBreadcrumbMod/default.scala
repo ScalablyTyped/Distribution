@@ -15,6 +15,6 @@ class default () extends Breadcrumb
 object default extends js.Object {
   var Item: antdLib.Anon_ANTBREADCRUMBITEM = js.native
   var defaultProps: antdLib.Anon_Separator = js.native
-  var propTypes: antdLib.Anon_ArgsLinkRender = js.native
+  var propTypes: antdLib.Anon_Args = js.native
 }
 

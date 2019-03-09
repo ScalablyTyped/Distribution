@@ -16,6 +16,6 @@ class default ()
 object default extends js.Object {
   var DirectoryTree: antdLib.Anon_DefaultPropsGetDerivedStateFromProps = js.native
   var TreeNode: reactLib.reactMod.ReactNs.ComponentClass[antdLib.libTreeTreeMod.AntTreeNodeProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  var defaultProps: antdLib.Anon_Checkable = js.native
+  var defaultProps: antdLib.Anon_BlockNode = js.native
 }
 

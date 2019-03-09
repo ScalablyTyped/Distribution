@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Item
   extends reactLib.reactMod.Component[ListItemProps, js.Any, js.Any] {
+  def isItemContainsTextNode(): js.UndefOr[scala.Nothing] = js.native
   def renderItem(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

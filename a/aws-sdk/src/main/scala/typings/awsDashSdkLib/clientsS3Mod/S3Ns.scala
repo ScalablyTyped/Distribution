@@ -20,9 +20,18 @@ object S3Ns extends js.Object {
   }
   
   trait AbortMultipartUploadRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var Key: ObjectKey
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+    /**
+      * 
+      */
     var UploadId: MultipartUploadId
   }
   
@@ -38,6 +47,9 @@ object S3Ns extends js.Object {
       * A list of grants.
       */
     var Grants: js.UndefOr[Grants] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
   }
   
@@ -127,6 +139,9 @@ object S3Ns extends js.Object {
   }
   
   trait BucketLifecycleConfiguration extends js.Object {
+    /**
+      * 
+      */
     var Rules: LifecycleRules
   }
   
@@ -135,6 +150,9 @@ object S3Ns extends js.Object {
   }
   
   trait CORSConfiguration extends js.Object {
+    /**
+      * 
+      */
     var CORSRules: CORSRules
   }
   
@@ -223,18 +241,33 @@ object S3Ns extends js.Object {
   }
   
   trait CloudFunctionConfiguration extends js.Object {
+    /**
+      * 
+      */
     var CloudFunction: js.UndefOr[CloudFunction] = js.undefined
     var Event: js.UndefOr[Event] = js.undefined
+    /**
+      * 
+      */
     var Events: js.UndefOr[EventList] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
+    /**
+      * 
+      */
     var InvocationRole: js.UndefOr[CloudFunctionInvocationRole] = js.undefined
   }
   
   trait CommonPrefix extends js.Object {
+    /**
+      * 
+      */
     var Prefix: js.UndefOr[Prefix] = js.undefined
   }
   
   trait CompleteMultipartUploadOutput extends js.Object {
+    /**
+      * 
+      */
     var Bucket: js.UndefOr[BucketName] = js.undefined
     /**
       * Entity tag of the object.
@@ -244,7 +277,13 @@ object S3Ns extends js.Object {
       * If the object expiration is configured, this will contain the expiration date (expiry-date) and rule ID (rule-id). The value of rule-id is URL encoded.
       */
     var Expiration: js.UndefOr[Expiration] = js.undefined
+    /**
+      * 
+      */
     var Key: js.UndefOr[ObjectKey] = js.undefined
+    /**
+      * 
+      */
     var Location: js.UndefOr[Location] = js.undefined
     var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
     /**
@@ -262,14 +301,29 @@ object S3Ns extends js.Object {
   }
   
   trait CompleteMultipartUploadRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var Key: ObjectKey
+    /**
+      * 
+      */
     var MultipartUpload: js.UndefOr[CompletedMultipartUpload] = js.undefined
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+    /**
+      * 
+      */
     var UploadId: MultipartUploadId
   }
   
   trait CompletedMultipartUpload extends js.Object {
+    /**
+      * 
+      */
     var Parts: js.UndefOr[CompletedPartList] = js.undefined
   }
   
@@ -298,7 +352,13 @@ object S3Ns extends js.Object {
   trait ContinuationEvent extends js.Object
   
   trait CopyObjectOutput extends js.Object {
+    /**
+      * 
+      */
     var CopyObjectResult: js.UndefOr[CopyObjectResult] = js.undefined
+    /**
+      * 
+      */
     var CopySourceVersionId: js.UndefOr[CopySourceVersionId] = js.undefined
     /**
       * If the object expiration is configured, the response includes this header.
@@ -332,6 +392,9 @@ object S3Ns extends js.Object {
       * The canned ACL to apply to the object.
       */
     var ACL: js.UndefOr[ObjectCannedACL] = js.undefined
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * Specifies caching behavior along the request/reply chain.
@@ -405,6 +468,9 @@ object S3Ns extends js.Object {
       * Allows grantee to write the ACL for the applicable object.
       */
     var GrantWriteACP: js.UndefOr[GrantWriteACP] = js.undefined
+    /**
+      * 
+      */
     var Key: ObjectKey
     /**
       * A map of metadata to store with the object in S3.
@@ -466,7 +532,13 @@ object S3Ns extends js.Object {
   }
   
   trait CopyObjectResult extends js.Object {
+    /**
+      * 
+      */
     var ETag: js.UndefOr[ETag] = js.undefined
+    /**
+      * 
+      */
     var LastModified: js.UndefOr[LastModified] = js.undefined
   }
   
@@ -483,12 +555,15 @@ object S3Ns extends js.Object {
   
   trait CreateBucketConfiguration extends js.Object {
     /**
-      * Specifies the region where the bucket will be created. If you don't specify a region, the bucket will be created in US Standard.
+      * Specifies the region where the bucket will be created. If you don't specify a region, the bucket is created in US East (N. Virginia) Region (us-east-1).
       */
     var LocationConstraint: js.UndefOr[BucketLocationConstraint] = js.undefined
   }
   
   trait CreateBucketOutput extends js.Object {
+    /**
+      * 
+      */
     var Location: js.UndefOr[Location] = js.undefined
   }
   
@@ -497,7 +572,13 @@ object S3Ns extends js.Object {
       * The canned ACL to apply to the bucket.
       */
     var ACL: js.UndefOr[BucketCannedACL] = js.undefined
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var CreateBucketConfiguration: js.UndefOr[CreateBucketConfiguration] = js.undefined
     /**
       * Allows grantee the read, write, read ACP, and write ACP permissions on the bucket.
@@ -570,6 +651,9 @@ object S3Ns extends js.Object {
       * The canned ACL to apply to the object.
       */
     var ACL: js.UndefOr[ObjectCannedACL] = js.undefined
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * Specifies caching behavior along the request/reply chain.
@@ -611,6 +695,9 @@ object S3Ns extends js.Object {
       * Allows grantee to write the ACL for the applicable object.
       */
     var GrantWriteACP: js.UndefOr[GrantWriteACP] = js.undefined
+    /**
+      * 
+      */
     var Key: ObjectKey
     /**
       * A map of metadata to store with the object in S3.
@@ -679,6 +766,9 @@ object S3Ns extends js.Object {
   }
   
   trait Delete extends js.Object {
+    /**
+      * 
+      */
     var Objects: ObjectIdentifierList
     /**
       * Element to enable quiet mode for the request. When you add this element, you must set its value to true.
@@ -698,6 +788,9 @@ object S3Ns extends js.Object {
   }
   
   trait DeleteBucketCorsRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -720,6 +813,9 @@ object S3Ns extends js.Object {
   }
   
   trait DeleteBucketLifecycleRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -735,6 +831,9 @@ object S3Ns extends js.Object {
   }
   
   trait DeleteBucketPolicyRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -746,14 +845,23 @@ object S3Ns extends js.Object {
   }
   
   trait DeleteBucketRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
   trait DeleteBucketTaggingRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
   trait DeleteBucketWebsiteRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -770,6 +878,9 @@ object S3Ns extends js.Object {
       * Date and time the object was last modified.
       */
     var LastModified: js.UndefOr[LastModified] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
     /**
       * Version ID of an object.
@@ -797,11 +908,17 @@ object S3Ns extends js.Object {
   }
   
   trait DeleteObjectRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * Indicates whether S3 Object Lock should bypass Governance-mode restrictions to process this operation.
       */
     var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
+    /**
+      * 
+      */
     var Key: ObjectKey
     /**
       * The concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.
@@ -822,7 +939,13 @@ object S3Ns extends js.Object {
   }
   
   trait DeleteObjectTaggingRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var Key: ObjectKey
     /**
       * The versionId of the object that the tag-set will be removed from.
@@ -831,17 +954,29 @@ object S3Ns extends js.Object {
   }
   
   trait DeleteObjectsOutput extends js.Object {
+    /**
+      * 
+      */
     var Deleted: js.UndefOr[DeletedObjects] = js.undefined
+    /**
+      * 
+      */
     var Errors: js.UndefOr[Errors] = js.undefined
     var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
   }
   
   trait DeleteObjectsRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * Specifies whether you want to delete this object even if it has a Governance-type Object Lock in place. You must have sufficient permissions to perform this operation.
       */
     var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
+    /**
+      * 
+      */
     var Delete: Delete
     /**
       * The concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.
@@ -858,9 +993,21 @@ object S3Ns extends js.Object {
   }
   
   trait DeletedObject extends js.Object {
+    /**
+      * 
+      */
     var DeleteMarker: js.UndefOr[DeleteMarker] = js.undefined
+    /**
+      * 
+      */
     var DeleteMarkerVersionId: js.UndefOr[DeleteMarkerVersionId] = js.undefined
+    /**
+      * 
+      */
     var Key: js.UndefOr[ObjectKey] = js.undefined
+    /**
+      * 
+      */
     var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   }
   
@@ -912,9 +1059,21 @@ object S3Ns extends js.Object {
   trait EndEvent extends js.Object
   
   trait Error extends js.Object {
+    /**
+      * 
+      */
     var Code: js.UndefOr[Code] = js.undefined
+    /**
+      * 
+      */
     var Key: js.UndefOr[ObjectKey] = js.undefined
+    /**
+      * 
+      */
     var Message: js.UndefOr[Message] = js.undefined
+    /**
+      * 
+      */
     var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   }
   
@@ -930,6 +1089,9 @@ object S3Ns extends js.Object {
       * The object key name prefix or suffix identifying one or more objects to which the filtering rule applies. The maximum prefix length is 1,024 characters. Overlapping prefixes and suffixes are not supported. For more information, see Configuring Event Notifications in the Amazon Simple Storage Service Developer Guide.
       */
     var Name: js.UndefOr[FilterRuleName] = js.undefined
+    /**
+      * 
+      */
     var Value: js.UndefOr[FilterRuleValue] = js.undefined
   }
   
@@ -952,10 +1114,16 @@ object S3Ns extends js.Object {
       * A list of grants.
       */
     var Grants: js.UndefOr[Grants] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
   }
   
   trait GetBucketAclRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -978,10 +1146,16 @@ object S3Ns extends js.Object {
   }
   
   trait GetBucketCorsOutput extends js.Object {
+    /**
+      * 
+      */
     var CORSRules: js.UndefOr[CORSRules] = js.undefined
   }
   
   trait GetBucketCorsRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -1015,26 +1189,44 @@ object S3Ns extends js.Object {
   }
   
   trait GetBucketLifecycleConfigurationOutput extends js.Object {
+    /**
+      * 
+      */
     var Rules: js.UndefOr[LifecycleRules] = js.undefined
   }
   
   trait GetBucketLifecycleConfigurationRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
   trait GetBucketLifecycleOutput extends js.Object {
+    /**
+      * 
+      */
     var Rules: js.UndefOr[Rules] = js.undefined
   }
   
   trait GetBucketLifecycleRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
   trait GetBucketLocationOutput extends js.Object {
+    /**
+      * 
+      */
     var LocationConstraint: js.UndefOr[BucketLocationConstraint] = js.undefined
   }
   
   trait GetBucketLocationRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -1043,6 +1235,9 @@ object S3Ns extends js.Object {
   }
   
   trait GetBucketLoggingRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -1079,6 +1274,9 @@ object S3Ns extends js.Object {
   }
   
   trait GetBucketPolicyRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -1101,6 +1299,9 @@ object S3Ns extends js.Object {
   }
   
   trait GetBucketReplicationRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -1112,14 +1313,23 @@ object S3Ns extends js.Object {
   }
   
   trait GetBucketRequestPaymentRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
   trait GetBucketTaggingOutput extends js.Object {
+    /**
+      * 
+      */
     var TagSet: TagSet
   }
   
   trait GetBucketTaggingRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -1135,17 +1345,35 @@ object S3Ns extends js.Object {
   }
   
   trait GetBucketVersioningRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
   trait GetBucketWebsiteOutput extends js.Object {
+    /**
+      * 
+      */
     var ErrorDocument: js.UndefOr[ErrorDocument] = js.undefined
+    /**
+      * 
+      */
     var IndexDocument: js.UndefOr[IndexDocument] = js.undefined
+    /**
+      * 
+      */
     var RedirectAllRequestsTo: js.UndefOr[RedirectAllRequestsTo] = js.undefined
+    /**
+      * 
+      */
     var RoutingRules: js.UndefOr[RoutingRules] = js.undefined
   }
   
   trait GetBucketWebsiteRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
@@ -1154,12 +1382,21 @@ object S3Ns extends js.Object {
       * A list of grants.
       */
     var Grants: js.UndefOr[Grants] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
     var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
   }
   
   trait GetObjectAclRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var Key: ObjectKey
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
     /**
@@ -1206,6 +1443,9 @@ object S3Ns extends js.Object {
   }
   
   trait GetObjectOutput extends js.Object {
+    /**
+      * 
+      */
     var AcceptRanges: js.UndefOr[AcceptRanges] = js.undefined
     /**
       * Object data.
@@ -1283,6 +1523,9 @@ object S3Ns extends js.Object {
       * The count of parts this object has.
       */
     var PartsCount: js.UndefOr[PartsCount] = js.undefined
+    /**
+      * 
+      */
     var ReplicationStatus: js.UndefOr[ReplicationStatus] = js.undefined
     var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
     /**
@@ -1305,6 +1548,9 @@ object S3Ns extends js.Object {
       * The Server-side encryption algorithm used when storing this object in S3 (e.g., AES256, aws:kms).
       */
     var ServerSideEncryption: js.UndefOr[ServerSideEncryption] = js.undefined
+    /**
+      * 
+      */
     var StorageClass: js.UndefOr[StorageClass] = js.undefined
     /**
       * The number of tags, if any, on the object.
@@ -1321,6 +1567,9 @@ object S3Ns extends js.Object {
   }
   
   trait GetObjectRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * Return the object only if its entity tag (ETag) is the same as the one specified, otherwise return a 412 (precondition failed).
@@ -1338,6 +1587,9 @@ object S3Ns extends js.Object {
       * Return the object only if it has not been modified since the specified time, otherwise return a 412 (precondition failed).
       */
     var IfUnmodifiedSince: js.UndefOr[IfUnmodifiedSince] = js.undefined
+    /**
+      * 
+      */
     var Key: ObjectKey
     /**
       * Part number of the object being read. This is a positive integer between 1 and 10,000. Effectively performs a 'ranged' GET request for the part specified. Useful for downloading just a part of an object.
@@ -1414,23 +1666,47 @@ object S3Ns extends js.Object {
   }
   
   trait GetObjectTaggingOutput extends js.Object {
+    /**
+      * 
+      */
     var TagSet: TagSet
+    /**
+      * 
+      */
     var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   }
   
   trait GetObjectTaggingRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var Key: ObjectKey
+    /**
+      * 
+      */
     var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   }
   
   trait GetObjectTorrentOutput extends js.Object {
+    /**
+      * 
+      */
     var Body: js.UndefOr[Body] = js.undefined
     var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
   }
   
   trait GetObjectTorrentRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var Key: ObjectKey
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
   }
@@ -1457,6 +1733,9 @@ object S3Ns extends js.Object {
   }
   
   trait Grant extends js.Object {
+    /**
+      * 
+      */
     var Grantee: js.UndefOr[Grantee] = js.undefined
     /**
       * Specifies the permission given to the grantee.
@@ -1488,10 +1767,16 @@ object S3Ns extends js.Object {
   }
   
   trait HeadBucketRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
   }
   
   trait HeadObjectOutput extends js.Object {
+    /**
+      * 
+      */
     var AcceptRanges: js.UndefOr[AcceptRanges] = js.undefined
     /**
       * Specifies caching behavior along the request/reply chain.
@@ -1561,6 +1846,9 @@ object S3Ns extends js.Object {
       * The count of parts this object has.
       */
     var PartsCount: js.UndefOr[PartsCount] = js.undefined
+    /**
+      * 
+      */
     var ReplicationStatus: js.UndefOr[ReplicationStatus] = js.undefined
     var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
     /**
@@ -1583,6 +1871,9 @@ object S3Ns extends js.Object {
       * The Server-side encryption algorithm used when storing this object in S3 (e.g., AES256, aws:kms).
       */
     var ServerSideEncryption: js.UndefOr[ServerSideEncryption] = js.undefined
+    /**
+      * 
+      */
     var StorageClass: js.UndefOr[StorageClass] = js.undefined
     /**
       * Version of the object.
@@ -1595,6 +1886,9 @@ object S3Ns extends js.Object {
   }
   
   trait HeadObjectRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * Return the object only if its entity tag (ETag) is the same as the one specified, otherwise return a 412 (precondition failed).
@@ -1612,6 +1906,9 @@ object S3Ns extends js.Object {
       * Return the object only if it has not been modified since the specified time, otherwise return a 412 (precondition failed).
       */
     var IfUnmodifiedSince: js.UndefOr[IfUnmodifiedSince] = js.undefined
+    /**
+      * 
+      */
     var Key: ObjectKey
     /**
       * Part number of the object being read. This is a positive integer between 1 and 10,000. Effectively performs a 'ranged' HEAD request for the part specified. Useful querying about the size of the part and the number of parts in this object.
@@ -1778,6 +2075,9 @@ object S3Ns extends js.Object {
   }
   
   trait LambdaFunctionConfiguration extends js.Object {
+    /**
+      * 
+      */
     var Events: EventList
     var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
@@ -1788,6 +2088,9 @@ object S3Ns extends js.Object {
   }
   
   trait LifecycleConfiguration extends js.Object {
+    /**
+      * 
+      */
     var Rules: Rules
   }
   
@@ -1808,6 +2111,9 @@ object S3Ns extends js.Object {
   
   trait LifecycleRule extends js.Object {
     var AbortIncompleteMultipartUpload: js.UndefOr[AbortIncompleteMultipartUpload] = js.undefined
+    /**
+      * 
+      */
     var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
     var Filter: js.UndefOr[LifecycleRuleFilter] = js.undefined
     /**
@@ -1815,19 +2121,28 @@ object S3Ns extends js.Object {
       */
     var ID: js.UndefOr[ID] = js.undefined
     var NoncurrentVersionExpiration: js.UndefOr[NoncurrentVersionExpiration] = js.undefined
+    /**
+      * 
+      */
     var NoncurrentVersionTransitions: js.UndefOr[NoncurrentVersionTransitionList] = js.undefined
     /**
-      * Prefix identifying one or more objects to which the rule applies. This is deprecated; use Filter instead.
+      * Prefix identifying one or more objects to which the rule applies. This is No longer used; use Filter instead.
       */
     var Prefix: js.UndefOr[Prefix] = js.undefined
     /**
       * If 'Enabled', the rule is currently being applied. If 'Disabled', the rule is not currently being applied.
       */
     var Status: ExpirationStatus
+    /**
+      * 
+      */
     var Transitions: js.UndefOr[TransitionList] = js.undefined
   }
   
   trait LifecycleRuleAndOperator extends js.Object {
+    /**
+      * 
+      */
     var Prefix: js.UndefOr[Prefix] = js.undefined
     /**
       * All of these tags must exist in the object's tag set in order for the rule to apply.
@@ -1938,7 +2253,13 @@ object S3Ns extends js.Object {
   }
   
   trait ListBucketsOutput extends js.Object {
+    /**
+      * 
+      */
     var Buckets: js.UndefOr[Buckets] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
   }
   
@@ -1947,7 +2268,13 @@ object S3Ns extends js.Object {
       * Name of the bucket to which the multipart upload was initiated.
       */
     var Bucket: js.UndefOr[BucketName] = js.undefined
+    /**
+      * 
+      */
     var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.undefined
+    /**
+      * 
+      */
     var Delimiter: js.UndefOr[Delimiter] = js.undefined
     /**
       * Encoding type used by Amazon S3 to encode object keys in the response.
@@ -1981,10 +2308,16 @@ object S3Ns extends js.Object {
       * Upload ID after which listing began.
       */
     var UploadIdMarker: js.UndefOr[UploadIdMarker] = js.undefined
+    /**
+      * 
+      */
     var Uploads: js.UndefOr[MultipartUploadList] = js.undefined
   }
   
   trait ListMultipartUploadsRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * Character you use to group keys.
@@ -2010,8 +2343,17 @@ object S3Ns extends js.Object {
   }
   
   trait ListObjectVersionsOutput extends js.Object {
+    /**
+      * 
+      */
     var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.undefined
+    /**
+      * 
+      */
     var DeleteMarkers: js.UndefOr[DeleteMarkers] = js.undefined
+    /**
+      * 
+      */
     var Delimiter: js.UndefOr[Delimiter] = js.undefined
     /**
       * Encoding type used by Amazon S3 to encode object keys in the response.
@@ -2025,7 +2367,13 @@ object S3Ns extends js.Object {
       * Marks the last Key returned in a truncated response.
       */
     var KeyMarker: js.UndefOr[KeyMarker] = js.undefined
+    /**
+      * 
+      */
     var MaxKeys: js.UndefOr[MaxKeys] = js.undefined
+    /**
+      * 
+      */
     var Name: js.UndefOr[BucketName] = js.undefined
     /**
       * Use this value for the key marker request parameter in a subsequent request.
@@ -2035,12 +2383,24 @@ object S3Ns extends js.Object {
       * Use this value for the next version id marker parameter in a subsequent request.
       */
     var NextVersionIdMarker: js.UndefOr[NextVersionIdMarker] = js.undefined
+    /**
+      * 
+      */
     var Prefix: js.UndefOr[Prefix] = js.undefined
+    /**
+      * 
+      */
     var VersionIdMarker: js.UndefOr[VersionIdMarker] = js.undefined
+    /**
+      * 
+      */
     var Versions: js.UndefOr[ObjectVersionList] = js.undefined
   }
   
   trait ListObjectVersionsRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * A delimiter is a character you use to group keys.
@@ -2066,8 +2426,17 @@ object S3Ns extends js.Object {
   }
   
   trait ListObjectsOutput extends js.Object {
+    /**
+      * 
+      */
     var CommonPrefixes: js.UndefOr[CommonPrefixList] = js.undefined
+    /**
+      * 
+      */
     var Contents: js.UndefOr[ObjectList] = js.undefined
+    /**
+      * 
+      */
     var Delimiter: js.UndefOr[Delimiter] = js.undefined
     /**
       * Encoding type used by Amazon S3 to encode object keys in the response.
@@ -2077,17 +2446,32 @@ object S3Ns extends js.Object {
       * A flag that indicates whether or not Amazon S3 returned all of the results that satisfied the search criteria.
       */
     var IsTruncated: js.UndefOr[IsTruncated] = js.undefined
+    /**
+      * 
+      */
     var Marker: js.UndefOr[Marker] = js.undefined
+    /**
+      * 
+      */
     var MaxKeys: js.UndefOr[MaxKeys] = js.undefined
+    /**
+      * 
+      */
     var Name: js.UndefOr[BucketName] = js.undefined
     /**
       * When response is truncated (the IsTruncated element value in the response is true), you can use the key name in this field as marker in the subsequent request to get next set of objects. Amazon S3 lists objects in alphabetical order Note: This element is returned only if you have delimiter request parameter specified. If response does not include the NextMaker and it is truncated, you can use the value of the last Key in the response as the marker in the subsequent request to get the next set of object keys.
       */
     var NextMarker: js.UndefOr[NextMarker] = js.undefined
+    /**
+      * 
+      */
     var Prefix: js.UndefOr[Prefix] = js.undefined
   }
   
   trait ListObjectsRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * A delimiter is a character you use to group keys.
@@ -2235,11 +2619,17 @@ object S3Ns extends js.Object {
       * When a list is truncated, this element specifies the last part in the list, as well as the value to use for the part-number-marker request parameter in a subsequent request.
       */
     var NextPartNumberMarker: js.UndefOr[NextPartNumberMarker] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
     /**
       * Part number after which listing begins.
       */
     var PartNumberMarker: js.UndefOr[PartNumberMarker] = js.undefined
+    /**
+      * 
+      */
     var Parts: js.UndefOr[Parts] = js.undefined
     var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
     /**
@@ -2253,7 +2643,13 @@ object S3Ns extends js.Object {
   }
   
   trait ListPartsRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var Key: ObjectKey
     /**
       * Sets the maximum number of parts to return.
@@ -2275,6 +2671,9 @@ object S3Ns extends js.Object {
       * Specifies the bucket where you want Amazon S3 to store server access logs. You can have your logs delivered to any bucket that you own, including the same bucket that is being logged. You can also configure multiple buckets to deliver their logs to the same target bucket. In this case you should choose a different TargetPrefix for each source bucket so that the delivered log files can be distinguished by key.
       */
     var TargetBucket: TargetBucket
+    /**
+      * 
+      */
     var TargetGrants: js.UndefOr[TargetGrants] = js.undefined
     /**
       * This element lets you specify a prefix for the keys that the log files will be stored under.
@@ -2327,7 +2726,13 @@ object S3Ns extends js.Object {
     extends /* key */ org.scalablytyped.runtime.StringDictionary[MetadataValue]
   
   trait MetadataEntry extends js.Object {
+    /**
+      * 
+      */
     var Name: js.UndefOr[MetadataKey] = js.undefined
+    /**
+      * 
+      */
     var Value: js.UndefOr[MetadataValue] = js.undefined
   }
   
@@ -2381,6 +2786,9 @@ object S3Ns extends js.Object {
       * Key of the object for which the multipart upload was initiated.
       */
     var Key: js.UndefOr[ObjectKey] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
     /**
       * The class of storage used to store the object.
@@ -2411,14 +2819,32 @@ object S3Ns extends js.Object {
   }
   
   trait NotificationConfiguration extends js.Object {
+    /**
+      * 
+      */
     var LambdaFunctionConfigurations: js.UndefOr[LambdaFunctionConfigurationList] = js.undefined
+    /**
+      * 
+      */
     var QueueConfigurations: js.UndefOr[QueueConfigurationList] = js.undefined
+    /**
+      * 
+      */
     var TopicConfigurations: js.UndefOr[TopicConfigurationList] = js.undefined
   }
   
   trait NotificationConfigurationDeprecated extends js.Object {
+    /**
+      * 
+      */
     var CloudFunctionConfiguration: js.UndefOr[CloudFunctionConfiguration] = js.undefined
+    /**
+      * 
+      */
     var QueueConfiguration: js.UndefOr[QueueConfigurationDeprecated] = js.undefined
+    /**
+      * 
+      */
     var TopicConfiguration: js.UndefOr[TopicConfigurationDeprecated] = js.undefined
   }
   
@@ -2427,10 +2853,25 @@ object S3Ns extends js.Object {
   }
   
   trait Object extends js.Object {
+    /**
+      * 
+      */
     var ETag: js.UndefOr[ETag] = js.undefined
+    /**
+      * 
+      */
     var Key: js.UndefOr[ObjectKey] = js.undefined
+    /**
+      * 
+      */
     var LastModified: js.UndefOr[LastModified] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
+    /**
+      * 
+      */
     var Size: js.UndefOr[Size] = js.undefined
     /**
       * The class of storage used to store the object.
@@ -2486,6 +2927,9 @@ object S3Ns extends js.Object {
   }
   
   trait ObjectVersion extends js.Object {
+    /**
+      * 
+      */
     var ETag: js.UndefOr[ETag] = js.undefined
     /**
       * Specifies whether the object is (true) or is not (false) the latest version of an object.
@@ -2499,6 +2943,9 @@ object S3Ns extends js.Object {
       * Date and time the object was last modified.
       */
     var LastModified: js.UndefOr[LastModified] = js.undefined
+    /**
+      * 
+      */
     var Owner: js.UndefOr[Owner] = js.undefined
     /**
       * Size in bytes of the object.
@@ -2533,7 +2980,13 @@ object S3Ns extends js.Object {
   }
   
   trait Owner extends js.Object {
+    /**
+      * 
+      */
     var DisplayName: js.UndefOr[DisplayName] = js.undefined
+    /**
+      * 
+      */
     var ID: js.UndefOr[ID] = js.undefined
   }
   
@@ -2634,8 +3087,17 @@ object S3Ns extends js.Object {
       * The canned ACL to apply to the bucket.
       */
     var ACL: js.UndefOr[BucketCannedACL] = js.undefined
+    /**
+      * 
+      */
     var AccessControlPolicy: js.UndefOr[AccessControlPolicy] = js.undefined
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     /**
       * Allows grantee the read, write, read ACP, and write ACP permissions on the bucket.
@@ -2675,8 +3137,17 @@ object S3Ns extends js.Object {
   }
   
   trait PutBucketCorsRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var CORSConfiguration: CORSConfiguration
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
   }
   
@@ -2686,7 +3157,7 @@ object S3Ns extends js.Object {
       */
     var Bucket: BucketName
     /**
-      * The base64-encoded 128-bit MD5 digest of the server-side encryption configuration.
+      * The base64-encoded 128-bit MD5 digest of the server-side encryption configuration. This parameter is auto-populated when using the command from the CLI
       */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     var ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration
@@ -2708,19 +3179,43 @@ object S3Ns extends js.Object {
   }
   
   trait PutBucketLifecycleConfigurationRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var LifecycleConfiguration: js.UndefOr[BucketLifecycleConfiguration] = js.undefined
   }
   
   trait PutBucketLifecycleRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+      * 
+      */
     var LifecycleConfiguration: js.UndefOr[LifecycleConfiguration] = js.undefined
   }
   
   trait PutBucketLoggingRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var BucketLoggingStatus: BucketLoggingStatus
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
   }
   
@@ -2740,22 +3235,40 @@ object S3Ns extends js.Object {
   }
   
   trait PutBucketNotificationConfigurationRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     var NotificationConfiguration: NotificationConfiguration
   }
   
   trait PutBucketNotificationRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+      * 
+      */
     var NotificationConfiguration: NotificationConfigurationDeprecated
   }
   
   trait PutBucketPolicyRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * Set this parameter to true to confirm that you want to remove your permissions to change this bucket policy in the future.
       */
     var ConfirmRemoveSelfBucketAccess: js.UndefOr[ConfirmRemoveSelfBucketAccess] = js.undefined
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     /**
       * The bucket policy as a JSON document.
@@ -2764,36 +3277,78 @@ object S3Ns extends js.Object {
   }
   
   trait PutBucketReplicationRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     var ReplicationConfiguration: ReplicationConfiguration
   }
   
   trait PutBucketRequestPaymentRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+      * 
+      */
     var RequestPaymentConfiguration: RequestPaymentConfiguration
   }
   
   trait PutBucketTaggingRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+      * 
+      */
     var Tagging: Tagging
   }
   
   trait PutBucketVersioningRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     /**
       * The concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.
       */
     var MFA: js.UndefOr[MFA] = js.undefined
+    /**
+      * 
+      */
     var VersioningConfiguration: VersioningConfiguration
   }
   
   trait PutBucketWebsiteRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+      * 
+      */
     var WebsiteConfiguration: WebsiteConfiguration
   }
   
@@ -2806,8 +3361,17 @@ object S3Ns extends js.Object {
       * The canned ACL to apply to the object.
       */
     var ACL: js.UndefOr[ObjectCannedACL] = js.undefined
+    /**
+      * 
+      */
     var AccessControlPolicy: js.UndefOr[AccessControlPolicy] = js.undefined
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     /**
       * Allows grantee the read, write, read ACP, and write ACP permissions on the bucket.
@@ -2829,6 +3393,9 @@ object S3Ns extends js.Object {
       * Allows grantee to write the ACL for the applicable bucket.
       */
     var GrantWriteACP: js.UndefOr[GrantWriteACP] = js.undefined
+    /**
+      * 
+      */
     var Key: ObjectKey
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
     /**
@@ -2883,6 +3450,9 @@ object S3Ns extends js.Object {
       */
     var ObjectLockConfiguration: js.UndefOr[ObjectLockConfiguration] = js.undefined
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+    /**
+      * A token to allow Object Lock to be enabled for an existing bucket.
+      */
     var Token: js.UndefOr[ObjectLockToken] = js.undefined
   }
   
@@ -2952,7 +3522,7 @@ object S3Ns extends js.Object {
       */
     var ContentLength: js.UndefOr[ContentLength] = js.undefined
     /**
-      * The base64-encoded 128-bit MD5 digest of the part data.
+      * The base64-encoded 128-bit MD5 digest of the part data. This parameter is auto-populated when using the command from the CLI
       */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     /**
@@ -3067,14 +3637,32 @@ object S3Ns extends js.Object {
   }
   
   trait PutObjectTaggingOutput extends js.Object {
+    /**
+      * 
+      */
     var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   }
   
   trait PutObjectTaggingRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+      * 
+      */
     var Key: ObjectKey
+    /**
+      * 
+      */
     var Tagging: Tagging
+    /**
+      * 
+      */
     var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   }
   
@@ -3094,6 +3682,9 @@ object S3Ns extends js.Object {
   }
   
   trait QueueConfiguration extends js.Object {
+    /**
+      * 
+      */
     var Events: EventList
     var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
@@ -3105,8 +3696,14 @@ object S3Ns extends js.Object {
   
   trait QueueConfigurationDeprecated extends js.Object {
     var Event: js.UndefOr[Event] = js.undefined
+    /**
+      * 
+      */
     var Events: js.UndefOr[EventList] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
+    /**
+      * 
+      */
     var Queue: js.UndefOr[QueueArn] = js.undefined
   }
   
@@ -3192,7 +3789,13 @@ object S3Ns extends js.Object {
   }
   
   trait ReplicationRuleAndOperator extends js.Object {
+    /**
+      * 
+      */
     var Prefix: js.UndefOr[Prefix] = js.undefined
+    /**
+      * 
+      */
     var Tags: js.UndefOr[TagSet] = js.undefined
   }
   
@@ -3234,10 +3837,19 @@ object S3Ns extends js.Object {
   }
   
   trait RestoreObjectRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
+    /**
+      * 
+      */
     var Key: ObjectKey
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
     var RestoreRequest: js.UndefOr[RestoreRequest] = js.undefined
+    /**
+      * 
+      */
     var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   }
   
@@ -3285,6 +3897,9 @@ object S3Ns extends js.Object {
   
   trait Rule extends js.Object {
     var AbortIncompleteMultipartUpload: js.UndefOr[AbortIncompleteMultipartUpload] = js.undefined
+    /**
+      * 
+      */
     var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
     /**
       * Unique identifier for the rule. The value cannot be longer than 255 characters.
@@ -3300,6 +3915,9 @@ object S3Ns extends js.Object {
       * If 'Enabled', the rule is currently being applied. If 'Disabled', the rule is not currently being applied.
       */
     var Status: ExpirationStatus
+    /**
+      * 
+      */
     var Transition: js.UndefOr[Transition] = js.undefined
   }
   
@@ -3349,6 +3967,9 @@ object S3Ns extends js.Object {
   trait SSES3 extends js.Object
   
   trait SelectObjectContentOutput extends js.Object {
+    /**
+      * 
+      */
     var Payload: js.UndefOr[SelectObjectContentEventStream] = js.undefined
   }
   
@@ -3505,10 +4126,16 @@ object S3Ns extends js.Object {
   }
   
   trait Tagging extends js.Object {
+    /**
+      * 
+      */
     var TagSet: TagSet
   }
   
   trait TargetGrant extends js.Object {
+    /**
+      * 
+      */
     var Grantee: js.UndefOr[Grantee] = js.undefined
     /**
       * Logging permissions assigned to the Grantee for the bucket.
@@ -3517,6 +4144,9 @@ object S3Ns extends js.Object {
   }
   
   trait TopicConfiguration extends js.Object {
+    /**
+      * 
+      */
     var Events: EventList
     var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
@@ -3531,6 +4161,9 @@ object S3Ns extends js.Object {
       * Bucket event for which to send notifications.
       */
     var Event: js.UndefOr[Event] = js.undefined
+    /**
+      * 
+      */
     var Events: js.UndefOr[EventList] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
     /**
@@ -4062,7 +4695,7 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetBucketInventoryConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated, see the GetBucketLifecycleConfiguration operation.
+      *  No longer used, see the GetBucketLifecycleConfiguration operation.
       */
     def getBucketLifecycle(): awsDashSdkLib.libRequestMod.Request[GetBucketLifecycleOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getBucketLifecycle(
@@ -4073,7 +4706,7 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetBucketLifecycleOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated, see the GetBucketLifecycleConfiguration operation.
+      *  No longer used, see the GetBucketLifecycleConfiguration operation.
       */
     def getBucketLifecycle(params: GetBucketLifecycleRequest): awsDashSdkLib.libRequestMod.Request[GetBucketLifecycleOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getBucketLifecycle(
@@ -4177,7 +4810,7 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetBucketMetricsConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated, see the GetBucketNotificationConfiguration operation.
+      *  No longer used, see the GetBucketNotificationConfiguration operation.
       */
     def getBucketNotification(): awsDashSdkLib.libRequestMod.Request[NotificationConfigurationDeprecated, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getBucketNotification(
@@ -4188,7 +4821,7 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[NotificationConfigurationDeprecated, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated, see the GetBucketNotificationConfiguration operation.
+      *  No longer used, see the GetBucketNotificationConfiguration operation.
       */
     def getBucketNotification(params: GetBucketNotificationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[NotificationConfigurationDeprecated, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getBucketNotification(
@@ -4875,14 +5508,14 @@ object S3Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated, see the PutBucketLifecycleConfiguration operation.
+      *  No longer used, see the PutBucketLifecycleConfiguration operation.
       */
     def putBucketLifecycle(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putBucketLifecycle(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated, see the PutBucketLifecycleConfiguration operation.
+      *  No longer used, see the PutBucketLifecycleConfiguration operation.
       */
     def putBucketLifecycle(params: PutBucketLifecycleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putBucketLifecycle(
@@ -4935,14 +5568,14 @@ object S3Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated, see the PutBucketNotificationConfiguraiton operation.
+      *  No longer used, see the PutBucketNotificationConfiguration operation.
       */
     def putBucketNotification(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putBucketNotification(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated, see the PutBucketNotificationConfiguraiton operation.
+      *  No longer used, see the PutBucketNotificationConfiguration operation.
       */
     def putBucketNotification(params: PutBucketNotificationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putBucketNotification(
@@ -5406,6 +6039,9 @@ object S3Ns extends js.Object {
   }
   
   trait UploadPartCopyOutput extends js.Object {
+    /**
+      * 
+      */
     var CopyPartResult: js.UndefOr[CopyPartResult] = js.undefined
     /**
       * The version of the source object that was copied, if you have enabled versioning on the source bucket.
@@ -5431,6 +6067,9 @@ object S3Ns extends js.Object {
   }
   
   trait UploadPartCopyRequest extends js.Object {
+    /**
+      * 
+      */
     var Bucket: BucketName
     /**
       * The name of the source bucket and key name of the source object, separated by a slash (/). Must be URL-encoded.
@@ -5453,7 +6092,7 @@ object S3Ns extends js.Object {
       */
     var CopySourceIfUnmodifiedSince: js.UndefOr[CopySourceIfUnmodifiedSince] = js.undefined
     /**
-      * The range of bytes to copy from the source object. The range value must use the form bytes=first-last, where the first and last are the zero-based byte offsets to copy. For example, bytes=0-9 indicates that you want to copy the first ten bytes of the source. You can copy a range only if the source object is greater than 5 GB.
+      * The range of bytes to copy from the source object. The range value must use the form bytes=first-last, where the first and last are the zero-based byte offsets to copy. For example, bytes=0-9 indicates that you want to copy the first ten bytes of the source. You can copy a range only if the source object is greater than 5 MB.
       */
     var CopySourceRange: js.UndefOr[CopySourceRange] = js.undefined
     /**
@@ -5468,6 +6107,9 @@ object S3Ns extends js.Object {
       * Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure the encryption key was transmitted without error.
       */
     var CopySourceSSECustomerKeyMD5: js.UndefOr[CopySourceSSECustomerKeyMD5] = js.undefined
+    /**
+      * 
+      */
     var Key: ObjectKey
     /**
       * Part number of part being copied. This is a positive integer between 1 and 10,000.
@@ -5572,9 +6214,21 @@ object S3Ns extends js.Object {
   }
   
   trait WebsiteConfiguration extends js.Object {
+    /**
+      * 
+      */
     var ErrorDocument: js.UndefOr[ErrorDocument] = js.undefined
+    /**
+      * 
+      */
     var IndexDocument: js.UndefOr[IndexDocument] = js.undefined
+    /**
+      * 
+      */
     var RedirectAllRequestsTo: js.UndefOr[RedirectAllRequestsTo] = js.undefined
+    /**
+      * 
+      */
     var RoutingRules: js.UndefOr[RoutingRules] = js.undefined
   }
   

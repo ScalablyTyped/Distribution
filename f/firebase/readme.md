@@ -15,4 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/**
+ * <code>firebase</code> is a global namespace from which all the Firebase
+ * services are accessed.
+ */
 ```

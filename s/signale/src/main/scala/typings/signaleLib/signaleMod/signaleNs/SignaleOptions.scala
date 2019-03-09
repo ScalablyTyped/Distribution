@@ -19,7 +19,7 @@ trait SignaleOptions[TTypes /* <: java.lang.String */] extends js.Object {
     * [Writable stream](https://nodejs.org/api/stream.html#stream_writable_streams).
     */
   var stream: js.UndefOr[nodeLib.NodeJSNs.WriteStream] = js.undefined
-  var timers: js.UndefOr[stdLib.Map[java.lang.String, stdLib.Date]] = js.undefined
+  var timers: js.UndefOr[nodeLib.Map[java.lang.String, stdLib.Date]] = js.undefined
   /**
     * Holds the configuration of the custom and default loggers.
     */
@@ -34,7 +34,7 @@ object SignaleOptions {
     interactive: js.UndefOr[scala.Boolean] = js.undefined,
     scope: java.lang.String = null,
     stream: nodeLib.NodeJSNs.WriteStream = null,
-    timers: stdLib.Map[java.lang.String, stdLib.Date] = null,
+    timers: nodeLib.Map[java.lang.String, stdLib.Date] = null,
     types: stdLib.Partial[stdLib.Record[TTypes, CommandType]] = null
   ): SignaleOptions[TTypes] = {
     val __obj = js.Dynamic.literal()

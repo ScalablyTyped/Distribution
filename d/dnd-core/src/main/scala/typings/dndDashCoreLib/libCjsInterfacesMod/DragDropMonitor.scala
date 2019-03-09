@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DragDropMonitor extends js.Object {
-  def canDragSource(sourceId: java.lang.String): scala.Boolean = js.native
-  def canDropOnTarget(targetId: java.lang.String): scala.Boolean = js.native
+  def canDragSource(): scala.Boolean = js.native
+  def canDragSource(sourceId: Identifier): scala.Boolean = js.native
+  def canDropOnTarget(): scala.Boolean = js.native
+  def canDropOnTarget(targetId: Identifier): scala.Boolean = js.native
   /**
     * Returns true if some drop target has handled the drop event, false otherwise. Even if a target did not return a drop result,
     * didDrop() returns true. Use it inside endDrag() to test whether any drop target has handled the drop. Returns false if called
@@ -56,16 +58,18 @@ trait DragDropMonitor extends js.Object {
     * when the current drag operation has started, and the movement difference. Returns null if no item is being dragged.
     */
   def getSourceClientOffset(): XYCoord | scala.Null = js.native
-  def getSourceId(): java.lang.String | scala.Null = js.native
-  def getTargetIds(): js.Array[java.lang.String] = js.native
+  def getSourceId(): Identifier | scala.Null = js.native
+  def getTargetIds(): js.Array[Identifier] = js.native
   /**
     * Returns true if a drag operation is in progress, and either the owner initiated the drag, or its isDragging()
     * is defined and returns true.
     */
   def isDragging(): scala.Boolean = js.native
-  def isDraggingSource(sourceId: java.lang.String): scala.Boolean = js.native
-  def isOverTarget(targetId: java.lang.String): scala.Boolean = js.native
-  def isOverTarget(targetId: java.lang.String, options: dndDashCoreLib.Anon_Shallow): scala.Boolean = js.native
+  def isDraggingSource(): scala.Boolean = js.native
+  def isDraggingSource(sourceId: Identifier): scala.Boolean = js.native
+  def isOverTarget(): scala.Boolean = js.native
+  def isOverTarget(targetId: Identifier | js.UndefOr[scala.Nothing], options: dndDashCoreLib.Anon_Shallow): scala.Boolean = js.native
+  def isOverTarget(targetId: Identifier): scala.Boolean = js.native
   def isSourcePublic(): scala.Boolean | scala.Null = js.native
   def subscribeToOffsetChange(listener: Listener): Unsubscribe = js.native
   def subscribeToStateChange(listener: Listener): Unsubscribe = js.native

@@ -16,15 +16,16 @@ trait Timestamp extends js.Object {
     */
   def isEqual(other: Timestamp): scala.Boolean
   /**
-    * Returns a new `Date` corresponding to this timestamp. This may lose
-    * precision.
+    * Convert a Timestamp to a JavaScript `Date` object. This conversion causes
+    * a loss of precision since `Date` objects only support millisecond precision.
     *
     * @return JavaScript `Date` object representing the same point in time as
     *     this `Timestamp`, with millisecond precision.
     */
   def toDate(): coreDashJsLib.Date
   /**
-    * Returns the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
+    * Convert a timestamp to a numeric timestamp (in milliseconds since epoch).
+    * This operation causes a loss of precision.
     *
     * @return The point in time corresponding to this timestamp, represented as
     *     the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "dd-trace"
-version := "0.9.3-d8cf69"
+version := "0.10.0-b82f65"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "int64-buffer" % "0.1.10-69d3c6",
+  "org.scalablytyped" %%% "int64-buffer" % "0.1.10-8af877",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
   "org.scalablytyped" %%% "lodash_dot_kebabcase" % "4.1-dt-20190214Z-c7eb5e",
   "org.scalablytyped" %%% "lodash_dot_memoize" % "4.1-dt-20190214Z-cb77f0",
@@ -15,14 +15,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash_dot_truncate" % "4.4-dt-20190214Z-5494d7",
   "org.scalablytyped" %%% "lodash_dot_uniq" % "4.5-dt-20190214Z-a42a64",
   "org.scalablytyped" %%% "methods" % "1.1-dt-20180214Z-513119",
-  "org.scalablytyped" %%% "msgpack-lite" % "0.1-dt-20180214Z-e7b3ae",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
+  "org.scalablytyped" %%% "msgpack-lite" % "0.1-dt-20180214Z-6e9bac",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-c130fb",
   "org.scalablytyped" %%% "opentracing" % "0.14.3-cfda95",
   "org.scalablytyped" %%% "path-to-regexp" % "3.0.0-c64d8c",
   "org.scalablytyped" %%% "performance-now" % "2.1.0-58e9ce",
   "org.scalablytyped" %%% "read-pkg-up" % "3.0-dt-20180214Z-48035d",
-  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-65f44d",
+  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-0aee39",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-cfbe1c",
   "org.scalablytyped" %%% "shimmer" % "1.x-dt-20180223Z-54a40f",
   "org.scalablytyped" %%% "std" % "3.3-05be79",

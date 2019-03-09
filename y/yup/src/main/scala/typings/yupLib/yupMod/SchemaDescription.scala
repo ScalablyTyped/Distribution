@@ -9,7 +9,7 @@ trait SchemaDescription extends js.Object {
   var fields: js.Object
   var label: java.lang.String
   var meta: js.Object
-  var tests: js.Array[java.lang.String]
+  var tests: js.Array[yupLib.Anon_Name]
   var `type`: java.lang.String
 }
 
@@ -19,7 +19,7 @@ object SchemaDescription {
     fields: js.Object,
     label: java.lang.String,
     meta: js.Object,
-    tests: js.Array[java.lang.String],
+    tests: js.Array[yupLib.Anon_Name],
     `type`: java.lang.String
   ): SchemaDescription = {
     val __obj = js.Dynamic.literal(fields = fields, label = label, meta = meta, tests = tests)

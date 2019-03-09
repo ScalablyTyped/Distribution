@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("pkg-conf", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // Returns a Promise for the config.
-  def apply(namespace: java.lang.String): js.Promise[pkgDashConfLib.pkgDashConfMod.pkgConfNs.JsonMap] = js.native
-  def apply(namespace: java.lang.String, options: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Options): js.Promise[pkgDashConfLib.pkgDashConfMod.pkgConfNs.JsonMap] = js.native
-  // Pass in the config returned from any of the above methods.
-  // Returns the filepath to the package.json file or null when not found.
-  def filepath(config: pkgDashConfLib.pkgDashConfMod.pkgConfNs.JsonMap): java.lang.String | scala.Null = js.native
-  // Returns the config.
-  def sync(namespace: java.lang.String): pkgDashConfLib.pkgDashConfMod.pkgConfNs.JsonMap = js.native
-  def sync(namespace: java.lang.String, options: pkgDashConfLib.pkgDashConfMod.pkgConfNs.Options): pkgDashConfLib.pkgDashConfMod.pkgConfNs.JsonMap = js.native
+  def default[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.Config */](namespace: java.lang.String): js.Promise[ConfigType with pkgDashConfLib.pkgDashConfMod.Config] = js.native
+  def default[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.Config */](namespace: java.lang.String, options: pkgDashConfLib.pkgDashConfMod.Options[ConfigType]): js.Promise[ConfigType with pkgDashConfLib.pkgDashConfMod.Config] = js.native
+  def filepath(config: pkgDashConfLib.pkgDashConfMod.Config): java.lang.String | scala.Null = js.native
+  def sync[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.Config */](namespace: java.lang.String): ConfigType with pkgDashConfLib.pkgDashConfMod.Config = js.native
+  def sync[ConfigType /* <: pkgDashConfLib.pkgDashConfMod.Config */](namespace: java.lang.String, options: pkgDashConfLib.pkgDashConfMod.Options[ConfigType]): ConfigType with pkgDashConfLib.pkgDashConfMod.Config = js.native
 }
 

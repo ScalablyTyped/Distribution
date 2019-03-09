@@ -135,7 +135,7 @@ object VictoryBarProps {
     labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
     name: java.lang.String = null,
-    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
     style: VictoryStyleInterface = null,

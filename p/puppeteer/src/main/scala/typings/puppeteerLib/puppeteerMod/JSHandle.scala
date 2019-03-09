@@ -21,7 +21,7 @@ trait JSHandle extends SerializableOrJSHandle {
   /**
     * Returns a map with property names as keys and JSHandle instances for the property values.
     */
-  def getProperties(): js.Promise[stdLib.Map[java.lang.String, JSHandle]]
+  def getProperties(): js.Promise[nodeLib.Map[java.lang.String, JSHandle]]
   /**
     * Fetches a single property from the objectHandle.
     * @param propertyName The property to get.
@@ -41,7 +41,7 @@ object JSHandle {
     asElement: js.Function0[ElementHandle[stdLib.Element] | scala.Null],
     dispose: js.Function0[js.Promise[scala.Unit]],
     executionContext: js.Function0[ExecutionContext],
-    getProperties: js.Function0[js.Promise[stdLib.Map[java.lang.String, JSHandle]]],
+    getProperties: js.Function0[js.Promise[nodeLib.Map[java.lang.String, JSHandle]]],
     getProperty: js.Function1[java.lang.String, js.Promise[JSHandle]],
     jsonValue: js.Function0[js.Promise[_]]
   ): JSHandle = {

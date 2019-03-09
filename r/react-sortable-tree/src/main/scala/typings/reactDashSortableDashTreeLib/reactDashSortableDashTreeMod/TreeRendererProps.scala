@@ -11,7 +11,7 @@ trait TreeRendererProps extends js.Object {
   var children: js.Array[reactLib.reactMod.Global.JSXNs.Element] = js.native
   // Drop target
   @JSName("connectDropTarget")
-  var connectDropTarget_Original: reactDashDndLib.libCjsInterfacesMod.ConnectDropTarget = js.native
+  var connectDropTarget_Original: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget = js.native
   var draggedNode: js.UndefOr[TreeItem] = js.native
   var isOver: scala.Boolean = js.native
   var listIndex: scala.Double = js.native

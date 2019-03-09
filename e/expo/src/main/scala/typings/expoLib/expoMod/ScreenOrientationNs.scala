@@ -20,6 +20,24 @@ object ScreenOrientationNs extends js.Object {
   }
   
   val Orientation: Orientations = js.native
+  /** Allow a screen orientation. You can call this function multiple times with multiple orientations to allow multiple orientations. */
+  @JSName("allowAsync")
+  def allowAsync_ALL(orientation: expoLib.expoLibStrings.ALL): scala.Unit = js.native
+  @JSName("allowAsync")
+  def allowAsync_ALL_BUT_UPSIDE_DOWN(orientation: expoLib.expoLibStrings.ALL_BUT_UPSIDE_DOWN): scala.Unit = js.native
+  @JSName("allowAsync")
+  def allowAsync_LANDSCAPE(orientation: expoLib.expoLibStrings.LANDSCAPE): scala.Unit = js.native
+  @JSName("allowAsync")
+  def allowAsync_LANDSCAPE_LEFT(orientation: expoLib.expoLibStrings.LANDSCAPE_LEFT): scala.Unit = js.native
+  @JSName("allowAsync")
+  def allowAsync_LANDSCAPE_RIGHT(orientation: expoLib.expoLibStrings.LANDSCAPE_RIGHT): scala.Unit = js.native
+  @JSName("allowAsync")
+  def allowAsync_PORTRAIT(orientation: expoLib.expoLibStrings.PORTRAIT): scala.Unit = js.native
+  @JSName("allowAsync")
+  def allowAsync_PORTRAIT_DOWN(orientation: expoLib.expoLibStrings.PORTRAIT_DOWN): scala.Unit = js.native
+  @JSName("allowAsync")
+  def allowAsync_PORTRAIT_UP(orientation: expoLib.expoLibStrings.PORTRAIT_UP): scala.Unit = js.native
+  /** Deprecated in favour of ScreenOrientation.allowAsync. */
   @JSName("allow")
   def allow_ALL(orientation: expoLib.expoLibStrings.ALL): scala.Unit = js.native
   @JSName("allow")

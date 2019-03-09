@@ -67,8 +67,10 @@ trait graphql extends Integration {
 object graphql {
   @scala.inline
   def apply(
+    analytics: scala.Boolean | ddDashTraceLib.Anon_Enabled = null,
     collapse: js.UndefOr[scala.Boolean] = js.undefined,
     depth: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
     service: java.lang.String = null,
     signature: js.UndefOr[scala.Boolean] = js.undefined,
     variables: js.Function1[
@@ -77,8 +79,10 @@ object graphql {
     ] = null
   ): graphql = {
     val __obj = js.Dynamic.literal()
+    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
     if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (service != null) __obj.updateDynamic("service")(service)
     if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature)
     if (variables != null) __obj.updateDynamic("variables")(variables)

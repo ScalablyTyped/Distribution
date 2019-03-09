@@ -31,6 +31,10 @@ trait Axis
     */
   var format: js.UndefOr[java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
   /**
+    * The format type for axis labels (number or time).
+    */
+  var formatType: js.UndefOr[FormatType | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
+  /**
     * The name of the scale to use for including grid lines. By default grid lines are driven by the same scale as the ticks and labels.
     */
   var gridScale: js.UndefOr[java.lang.String] = js.undefined
@@ -97,6 +101,7 @@ object Axis {
     domainWidth: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     encode: AxisEncode = null,
     format: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    formatType: FormatType | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     grid: js.UndefOr[scala.Boolean] = js.undefined,
     gridColor: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
     gridDash: vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue = null,
@@ -165,6 +170,7 @@ object Axis {
     if (domainWidth != null) __obj.updateDynamic("domainWidth")(domainWidth.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formatType != null) __obj.updateDynamic("formatType")(formatType.asInstanceOf[js.Any])
     if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
     if (gridColor != null) __obj.updateDynamic("gridColor")(gridColor.asInstanceOf[js.Any])
     if (gridDash != null) __obj.updateDynamic("gridDash")(gridDash.asInstanceOf[js.Any])

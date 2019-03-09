@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val HTML5DragTransition: reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.Transition = js.native
+  val MouseTransition: reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.Transition = js.native
   val TouchTransition: reactDashDndDashMultiDashBackendLib.reactDashDndDashMultiDashBackendMod.Transition = js.native
   def createTransition(
     eventType: java.lang.String,

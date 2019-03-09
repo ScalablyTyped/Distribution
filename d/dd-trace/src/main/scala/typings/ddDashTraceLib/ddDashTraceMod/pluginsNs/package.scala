@@ -30,6 +30,11 @@ package object pluginsNs {
   type bunyan = Integration
   /**
     * This plugin automatically instruments the
+    * [cassandra-driver](https://github.com/datastax/nodejs-driver) module.
+    */
+  type cassandra_driver = Integration
+  /**
+    * This plugin automatically instruments the
     * [dns](https://nodejs.org/api/dns.html) module.
     */
   type dns = Integration

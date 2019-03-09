@@ -38,6 +38,12 @@ trait Legend
     * The format specifier pattern for legend labels. For numerical values, must be a legal [d3-format](https://github.com/d3/d3-format#locale_format) specifier. For date-time values, must be a legal [d3-time-format](https://github.com/d3/d3-time-format#locale_format) specifier.
     */
   var format: js.UndefOr[java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
+  /**
+    * The format type for legend labels (number or time).
+    */
+  var formatType: js.UndefOr[
+    vegaDashTypingsLib.typesSpecAxisMod.FormatType | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
+  ] = js.undefined
   var opacity: js.UndefOr[java.lang.String] = js.undefined
   var shape: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
@@ -85,6 +91,7 @@ object Legend {
     fill: java.lang.String = null,
     fillColor: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
     format: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    formatType: vegaDashTypingsLib.typesSpecAxisMod.FormatType | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     gradientLength: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     gradientOpacity: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     gradientStrokeColor: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
@@ -153,6 +160,7 @@ object Legend {
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formatType != null) __obj.updateDynamic("formatType")(formatType.asInstanceOf[js.Any])
     if (gradientLength != null) __obj.updateDynamic("gradientLength")(gradientLength.asInstanceOf[js.Any])
     if (gradientOpacity != null) __obj.updateDynamic("gradientOpacity")(gradientOpacity.asInstanceOf[js.Any])
     if (gradientStrokeColor != null) __obj.updateDynamic("gradientStrokeColor")(gradientStrokeColor.asInstanceOf[js.Any])

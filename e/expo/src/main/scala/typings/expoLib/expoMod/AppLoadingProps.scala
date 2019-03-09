@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AppLoadingProps extends js.Object {
+  /**  Whether to hide the native splash screen as soon as you unmount the AppLoading component. */
+  var autoHideSplash: js.UndefOr[scala.Boolean] = js.undefined
   /** If `startAsync` throws an error, it is caught and passed into the function provided to `onError`. */
   var onError: js.UndefOr[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.undefined
   /** Required if you provide `startAsync`. Called when `startAsync` resolves or rejects. This should be used to set state and unmount the `AppLoading` component. */
@@ -17,11 +19,13 @@ trait AppLoadingProps extends js.Object {
 object AppLoadingProps {
   @scala.inline
   def apply(
+    autoHideSplash: js.UndefOr[scala.Boolean] = js.undefined,
     onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
     onFinish: js.Function0[scala.Unit] = null,
     startAsync: js.Function0[js.Promise[scala.Unit]] = null
   ): AppLoadingProps = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash)
     if (onError != null) __obj.updateDynamic("onError")(onError)
     if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
     if (startAsync != null) __obj.updateDynamic("startAsync")(startAsync)

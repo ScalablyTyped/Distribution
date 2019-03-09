@@ -109,7 +109,7 @@ object VictoryLineProps {
     labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     labels: js.Array[java.lang.String] | js.Array[scala.Double] | js.Function = null,
     name: java.lang.String = null,
-    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    padding: PaddingProps = null,
     samples: scala.Int | scala.Double = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
     sortKey: java.lang.String | js.Array[java.lang.String] | js.Function = null,

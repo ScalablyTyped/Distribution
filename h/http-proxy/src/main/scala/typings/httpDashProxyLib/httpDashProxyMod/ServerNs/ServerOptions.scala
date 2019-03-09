@@ -20,6 +20,12 @@ trait ServerOptions extends js.Object {
   var cookieDomainRewrite: js.UndefOr[
     httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
+  /** rewrites path of set-cookie headers. Default: false */
+  var cookiePathRewrite: js.UndefOr[
+    httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ] = js.undefined
+  /** Specify whether you want to follow redirects. Default: false */
+  var followRedirects: js.UndefOr[scala.Boolean] = js.undefined
   /** URL string to be parsed with the url module. */
   var forward: js.UndefOr[httpDashProxyLib.ProxyTargetUrl] = js.undefined
   /** object with extra headers to be added to target requests. */
@@ -46,6 +52,8 @@ trait ServerOptions extends js.Object {
   var ssl: js.UndefOr[js.Any] = js.undefined
   /** URL string to be parsed with the url module. */
   var target: js.UndefOr[httpDashProxyLib.ProxyTargetUrl] = js.undefined
+  /** Timeout (in milliseconds) for incoming requests */
+  var timeout: js.UndefOr[scala.Double] = js.undefined
   /** Explicitly specify if we are proxying to another proxy. */
   var toProxy: js.UndefOr[scala.Boolean] = js.undefined
   /** If you want to proxy websockets. */
@@ -63,6 +71,8 @@ object ServerOptions {
     buffer: nodeLib.streamMod.Stream = null,
     changeOrigin: js.UndefOr[scala.Boolean] = js.undefined,
     cookieDomainRewrite: httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    cookiePathRewrite: httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    followRedirects: js.UndefOr[scala.Boolean] = js.undefined,
     forward: httpDashProxyLib.ProxyTargetUrl = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     hostRewrite: java.lang.String = null,
@@ -76,6 +86,7 @@ object ServerOptions {
     selfHandleResponse: js.UndefOr[scala.Boolean] = js.undefined,
     ssl: js.Any = null,
     target: httpDashProxyLib.ProxyTargetUrl = null,
+    timeout: scala.Int | scala.Double = null,
     toProxy: js.UndefOr[scala.Boolean] = js.undefined,
     ws: js.UndefOr[scala.Boolean] = js.undefined,
     xfwd: js.UndefOr[scala.Boolean] = js.undefined
@@ -87,6 +98,8 @@ object ServerOptions {
     if (buffer != null) __obj.updateDynamic("buffer")(buffer)
     if (!js.isUndefined(changeOrigin)) __obj.updateDynamic("changeOrigin")(changeOrigin)
     if (cookieDomainRewrite != null) __obj.updateDynamic("cookieDomainRewrite")(cookieDomainRewrite.asInstanceOf[js.Any])
+    if (cookiePathRewrite != null) __obj.updateDynamic("cookiePathRewrite")(cookiePathRewrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects)
     if (forward != null) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (hostRewrite != null) __obj.updateDynamic("hostRewrite")(hostRewrite)
@@ -100,6 +113,7 @@ object ServerOptions {
     if (!js.isUndefined(selfHandleResponse)) __obj.updateDynamic("selfHandleResponse")(selfHandleResponse)
     if (ssl != null) __obj.updateDynamic("ssl")(ssl)
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(toProxy)) __obj.updateDynamic("toProxy")(toProxy)
     if (!js.isUndefined(ws)) __obj.updateDynamic("ws")(ws)
     if (!js.isUndefined(xfwd)) __obj.updateDynamic("xfwd")(xfwd)

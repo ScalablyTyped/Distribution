@@ -53,7 +53,7 @@ trait Query extends js.Object {
     */
   def endBefore(snapshot: DocumentSnapshot): Query = js.native
   /**
-    * Executes the query and returns the results as a QuerySnapshot.
+    * Executes the query and returns the results as a `QuerySnapshot`.
     *
     * Note: By default, get() attempts to provide up-to-date data when possible
     * by waiting for data from the server, but it may return cached data or fail
@@ -73,8 +73,8 @@ trait Query extends js.Object {
     */
   def isEqual(other: Query): scala.Boolean = js.native
   /**
-    * Creates and returns a new Query that's additionally limited to only
-    * return up to the specified number of documents.
+    * Creates and returns a new Query where the results are limited to the
+    * specified number of documents.
     *
     * @param limit The maximum number of items to return.
     * @return The created Query.
@@ -83,21 +83,33 @@ trait Query extends js.Object {
   /**
     * Attaches a listener for QuerySnapshot events. You may either pass
     * individual `onNext` and `onError` callbacks or pass a single observer
-    * object with `next` and `error` callbacks.
+    * object with `next` and `error` callbacks. The listener can be cancelled by
+    * calling the function that is returned when `onSnapshot` is called.
     *
     * NOTE: Although an `onCompletion` callback can be provided, it will
     * never be called because the snapshot stream is never-ending.
     *
-    * @param options Options controlling the listen behavior.
-    * @param onNext A callback to be called every time a new `QuerySnapshot`
-    * is available.
-    * @param onError A callback to be called if the listen fails or is
-    * cancelled. No further callbacks will occur.
     * @param observer A single object containing `next` and `error` callbacks.
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
   def onSnapshot(observer: firebaseLib.Anon_CompleteErrorNext): js.Function0[scala.Unit] = js.native
+  /**
+    * Attaches a listener for QuerySnapshot events. You may either pass
+    * individual `onNext` and `onError` callbacks or pass a single observer
+    * object with `next` and `error` callbacks. The listener can be cancelled by
+    * calling the function that is returned when `onSnapshot` is called.
+    *
+    * NOTE: Although an `onCompletion` callback can be provided, it will
+    * never be called because the snapshot stream is never-ending.
+    *
+    * @param onNext A callback to be called every time a new `QuerySnapshot`
+    * is available.
+    * @param onError A callback to be called if the listen fails or is
+    * cancelled. No further callbacks will occur.
+    * @return An unsubscribe function that can be called to cancel
+    * the snapshot listener.
+    */
   def onSnapshot(onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit],
@@ -108,7 +120,38 @@ trait Query extends js.Object {
     onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
     onCompletion: js.Function0[scala.Unit]
   ): js.Function0[scala.Unit] = js.native
+  /**
+    * Attaches a listener for QuerySnapshot events. You may either pass
+    * individual `onNext` and `onError` callbacks or pass a single observer
+    * object with `next` and `error` callbacks. The listener can be cancelled by
+    * calling the function that is returned when `onSnapshot` is called.
+    *
+    * NOTE: Although an `onCompletion` callback can be provided, it will
+    * never be called because the snapshot stream is never-ending.
+    *
+    * @param options Options controlling the listen behavior.
+    * @param observer A single object containing `next` and `error` callbacks.
+    * @return An unsubscribe function that can be called to cancel
+    * the snapshot listener.
+    */
   def onSnapshot(options: SnapshotListenOptions, observer: firebaseLib.Anon_CompleteErrorNext): js.Function0[scala.Unit] = js.native
+  /**
+    * Attaches a listener for QuerySnapshot events. You may either pass
+    * individual `onNext` and `onError` callbacks or pass a single observer
+    * object with `next` and `error` callbacks. The listener can be cancelled by
+    * calling the function that is returned when `onSnapshot` is called.
+    *
+    * NOTE: Although an `onCompletion` callback can be provided, it will
+    * never be called because the snapshot stream is never-ending.
+    *
+    * @param options Options controlling the listen behavior.
+    * @param onNext A callback to be called every time a new `QuerySnapshot`
+    * is available.
+    * @param onError A callback to be called if the listen fails or is
+    * cancelled. No further callbacks will occur.
+    * @return An unsubscribe function that can be called to cancel
+    * the snapshot listener.
+    */
   def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ QuerySnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,
@@ -128,7 +171,7 @@ trait Query extends js.Object {
     * specified field, optionally in descending order instead of ascending.
     *
     * @param fieldPath The field to sort by.
-    * @param directionStr Optional direction to sort by ('asc' or 'desc'). If
+    * @param directionStr Optional direction to sort by (`asc` or `desc`). If
     * not specified, order will be ascending.
     * @return The created Query.
     */
@@ -167,7 +210,7 @@ trait Query extends js.Object {
   /**
     * Creates and returns a new Query that starts at the provided document
     * (inclusive). The starting position is relative to the order of the query.
-    * The document must contain all of the fields provided in the orderBy of
+    * The document must contain all of the fields provided in the `orderBy` of
     * this query.
     *
     * @param snapshot The snapshot of the document to start at.

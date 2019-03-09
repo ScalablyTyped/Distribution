@@ -20,5 +20,6 @@ object default extends js.Object {
   var Search: antdLib.Anon_DefaultPropsAnonPlaceholder = js.native
   var defaultProps: antdLib.Anon_DataSourceLocale = js.native
   var propTypes: antdLib.Anon_ArgsBody = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libTransferMod.TransferProps): antdLib.Anon_SourceSelectedKeys | scala.Null = js.native
 }
 

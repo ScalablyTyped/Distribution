@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - jsonwebtokenLib.jsonwebtokenMod.VerifyErrors because Already inherited */ @JSImport("jsonwebtoken", "TokenExpiredError")
 @js.native
 class TokenExpiredError protected () extends JsonWebTokenError {
-  def this(message: java.lang.String, expiredAt: scala.Double) = this()
-  var expiredAt: scala.Double = js.native
+  def this(message: java.lang.String, expiredAt: stdLib.Date) = this()
+  var expiredAt: stdLib.Date = js.native
 }
 

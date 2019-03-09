@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("env-paths", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(name: java.lang.String): envDashPathsLib.envDashPathsMod.envPathsNs.Paths = js.native
-  def apply(name: java.lang.String, opts: envDashPathsLib.Anon_Suffix): envDashPathsLib.envDashPathsMod.envPathsNs.Paths = js.native
+  def default(name: java.lang.String): envDashPathsLib.envDashPathsMod.Paths = js.native
+  def default(name: java.lang.String, options: envDashPathsLib.envDashPathsMod.Options): envDashPathsLib.envDashPathsMod.Paths = js.native
 }
 

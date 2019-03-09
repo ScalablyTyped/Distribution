@@ -7,14 +7,21 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Firestore extends js.Object {
+  /**
+    * @hidden
+    */
   var INTERNAL: firebaseLib.Anon_Delete = js.native
   /**
-    * The `FirebaseApp` associated with this `Firestore` instance.
+    * The {@link firebase.app.App app} associated with this `Firestore` service
+    * instance.
     */
   var app: firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
   /**
     * Creates a write batch, used for performing multiple writes as a single
     * atomic operation.
+    *
+    * @return {!firebase.firestore.WriteBatch}
+    *   A `WriteBatch` that can be used to atomically execute multiple writes.
     */
   def batch(): WriteBatch = js.native
   /**
@@ -27,11 +34,13 @@ trait Firestore extends js.Object {
   def collection(collectionPath: java.lang.String): CollectionReference = js.native
   /**
     * Disables network usage for this instance. It can be re-enabled via
-    * enableNetwork(). While the network is disabled, any snapshot listeners or
-    * get() calls will return results from cache, and any write operations will
-    * be queued until the network is restored.
+    * {@link firebase.firestore.Firestore.enableNetwork `enableNetwork()`}. While
+    * the network is disabled, any snapshot listeners or get() calls will return
+    * results from cache, and any write operations will be queued until the network
+    * is restored.
     *
-    * @return A promise that is resolved once the network has been disabled.
+    * @return {!Promise<void>} A promise that is resolved once the network has been
+    *   disabled.
     */
   def disableNetwork(): js.Promise[scala.Unit] = js.native
   /**
@@ -44,9 +53,11 @@ trait Firestore extends js.Object {
   def doc(documentPath: java.lang.String): DocumentReference = js.native
   /**
     * Re-enables use of the network for this Firestore instance after a prior
-    * call to disableNetwork().
+    * call to {@link firebase.firestore.Firestore.disableNetwork
+    * `disableNetwork()`}.
     *
-    * @return A promise that is resolved once the network has been enabled.
+    * @return {!Promise<void>} A promise that is resolved once the network has been
+    *   enabled.
     */
   def enableNetwork(): js.Promise[scala.Unit] = js.native
   /**
@@ -72,18 +83,20 @@ trait Firestore extends js.Object {
   def enablePersistence(): js.Promise[scala.Unit] = js.native
   def enablePersistence(settings: PersistenceSettings): js.Promise[scala.Unit] = js.native
   /**
-    * Executes the given updateFunction and then attempts to commit the
-    * changes applied within the transaction. If any document read within the
-    * transaction has changed, the updateFunction will be retried. If it fails
-    * to commit after 5 attempts, the transaction will fail.
+    * Executes the given `updateFunction` and then attempts to commit the changes
+    * applied within the transaction. If any document read within the transaction
+    * has changed, Cloud Firestore retries the `updateFunction`. If it fails to
+    * commit after 5 attempts, the transaction fails.
     *
-    * @param updateFunction The function to execute within the transaction
-    * context.
-    * @return If the transaction completed successfully or was explicitly
-    * aborted (by the updateFunction returning a failed Promise), the Promise
-    * returned by the updateFunction will be returned here. Else if the
-    * transaction failed, a rejected Promise with the corresponding failure
-    * error will be returned.
+    * @param {function(!firebase.firestore.Transaction)} updateFunction
+    *   The function to execute within the transaction context.
+    *
+    * @return {!Promise}
+    *   If the transaction completed successfully or was explicitly aborted
+    *   (the `updateFunction` returned a failed promise),
+    *   the promise returned by the updateFunction is returned here. Else, if the
+    *   transaction failed, a rejected promise with the corresponding failure
+    *   error will be returned.
     */
   def runTransaction[T](updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]]): js.Promise[T] = js.native
   /**

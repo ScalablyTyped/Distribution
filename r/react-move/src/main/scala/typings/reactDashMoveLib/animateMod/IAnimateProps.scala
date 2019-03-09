@@ -12,14 +12,14 @@ trait IAnimateProps extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var start: js.Any
   var update: js.UndefOr[js.Any] = js.undefined
-  def children(state: kapellmeisterLib.kapellmeisterMod.HashMap): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(state: reactDashMoveLib.reactDashMoveMod.HashMap): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
 object IAnimateProps {
   @scala.inline
   def apply(
     children: js.Function1[
-      kapellmeisterLib.kapellmeisterMod.HashMap, 
+      reactDashMoveLib.reactDashMoveMod.HashMap, 
       reactLib.reactMod.ReactNs.ReactElement[_]
     ],
     start: js.Any,

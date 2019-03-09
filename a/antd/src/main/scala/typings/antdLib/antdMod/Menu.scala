@@ -23,5 +23,6 @@ object Menu extends js.Object {
   var childContextTypes: antdLib.Anon_AntdMenuThemeInlineCollapsed = js.native
   var contextTypes: antdLib.Anon_CollapsedWidth = js.native
   var defaultProps: stdLib.Partial[antdLib.libMenuMod.MenuProps] = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libMenuMod.MenuProps): antdLib.Anon_OpenKeys | scala.Null = js.native
 }
 

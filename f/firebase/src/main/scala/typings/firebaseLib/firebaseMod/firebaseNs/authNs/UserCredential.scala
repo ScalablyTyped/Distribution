@@ -5,6 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A structure containing a User, an AuthCredential, the operationType, and
+  * any additional user information that was returned from the identity provider.
+  * operationType could be 'signIn' for a sign-in operation, 'link' for a linking
+  * operation and 'reauthenticate' for a reauthentication operation.
+  */
 trait UserCredential extends js.Object {
   var additionalUserInfo: js.UndefOr[AdditionalUserInfo | scala.Null] = js.undefined
   var credential: AuthCredential | scala.Null

@@ -21,7 +21,7 @@ trait BadgeProps extends js.Object {
     antdLib.antdLibStrings.success | antdLib.antdLibStrings.processing | antdLib.antdLibStrings.default | antdLib.antdLibStrings.error | antdLib.antdLibStrings.warning
   ] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -38,7 +38,7 @@ object BadgeProps {
     showZero: js.UndefOr[scala.Boolean] = js.undefined,
     status: antdLib.antdLibStrings.success | antdLib.antdLibStrings.processing | antdLib.antdLibStrings.default | antdLib.antdLibStrings.error | antdLib.antdLibStrings.warning = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    text: java.lang.String = null,
+    text: reactLib.reactMod.ReactNs.ReactNode = null,
     title: java.lang.String = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
@@ -52,7 +52,7 @@ object BadgeProps {
     if (!js.isUndefined(showZero)) __obj.updateDynamic("showZero")(showZero)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[BadgeProps]
   }

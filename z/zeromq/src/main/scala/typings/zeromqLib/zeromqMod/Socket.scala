@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("zeromq", "Socket")
 @js.native
-class Socket () extends js.Object {
+class Socket ()
+  extends nodeLib.NodeJSNs.EventEmitter {
   // Socket Options
   var _fd: js.Any = js.native
   var _ioevents: js.Any = js.native
@@ -69,13 +70,13 @@ class Socket () extends js.Object {
     * @param addr The address
     */
   def disconnect(addr: java.lang.String): Socket = js.native
-  def getsocketopt(opt: java.lang.String): js.Any = js.native
+  def getsockopt(opt: java.lang.String): js.Any = js.native
   /**
     * Get socket `opt`.
     *
     * @param opt Option number
     */
-  def getsocketopt(opt: scala.Double): js.Any = js.native
+  def getsockopt(opt: scala.Double): js.Any = js.native
   /**
     * Enable monitoring of a Socket. This enables the following additional events:
     * 'connect', 'connect_delay', 'connect_retry', 'listen', 'bind_error',
@@ -89,10 +90,6 @@ class Socket () extends js.Object {
   def monitor(): Socket = js.native
   def monitor(interval: scala.Double): Socket = js.native
   def monitor(interval: scala.Double, numOfEvents: scala.Double): Socket = js.native
-  /**
-    * Socket event - 'message'
-    */
-  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */ nodeLib.Buffer, scala.Unit]): scala.Unit = js.native
   def pause(): scala.Unit = js.native
   def resume(): scala.Unit = js.native
   /**
@@ -107,14 +104,14 @@ class Socket () extends js.Object {
   def send(msg: js.Array[_], flags: scala.Double): Socket = js.native
   def send(msg: nodeLib.Buffer): Socket = js.native
   def send(msg: nodeLib.Buffer, flags: scala.Double): Socket = js.native
-  def setsocketopt(opt: java.lang.String, `val`: js.Any): Socket = js.native
+  def setsockopt(opt: java.lang.String, `val`: js.Any): Socket = js.native
   /**
     * Set `opt` to `val`.
     *
     * @param opt Option
     * @param val Value
     */
-  def setsocketopt(opt: scala.Double, `val`: js.Any): Socket = js.native
+  def setsockopt(opt: scala.Double, `val`: js.Any): Socket = js.native
   /**
     * Subscribe with the given `filter`.
     *
@@ -137,6 +134,13 @@ class Socket () extends js.Object {
     * @param addr Socket address
     */
   def unbindSync(addr: java.lang.String): Socket = js.native
+  /**
+    * Disable monitoring of a Socket release idle handler
+    * and close the socket
+    *
+    * @return for chaining
+    */
+  def unmonitor(): Socket = js.native
   /**
     * Unsubscribe with the given `filter`.
     *

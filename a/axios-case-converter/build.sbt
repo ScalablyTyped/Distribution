@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "axios-case-converter"
-version := "0.3-dt-20190212Z-2029ab"
+version := "0.3-dt-20190212Z-a0aea3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "axios" % "0.18.0-0ab781",
-  "org.scalablytyped" %%% "is-buffer" % "2.0-dt-20181210Z-f42157",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
+  "org.scalablytyped" %%% "axios" % "0.18.0-8746d6",
+  "org.scalablytyped" %%% "is-buffer" % "2.0-dt-20181210Z-df1bc5",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
   "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

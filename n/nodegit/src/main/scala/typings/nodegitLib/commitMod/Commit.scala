@@ -14,6 +14,14 @@ class Commit () extends js.Object {
     committer: nodegitLib.signatureMod.Signature,
     messageEncoding: java.lang.String,
     message: java.lang.String,
+    tree: nodegitLib.oidMod.Oid
+  ): js.Promise[nodegitLib.oidMod.Oid] = js.native
+  def amend(
+    updateRef: java.lang.String,
+    author: nodegitLib.signatureMod.Signature,
+    committer: nodegitLib.signatureMod.Signature,
+    messageEncoding: java.lang.String,
+    message: java.lang.String,
     tree: nodegitLib.treeMod.Tree
   ): js.Promise[nodegitLib.oidMod.Oid] = js.native
   def author(): nodegitLib.signatureMod.Signature = js.native

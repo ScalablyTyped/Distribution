@@ -23,6 +23,7 @@ object StrategyOptionsWithRequest {
     state: java.lang.String = null,
     tokenURL: java.lang.String = null,
     userAgent: java.lang.String = null,
+    userEmailURL: java.lang.String = null,
     userProfileURL: java.lang.String = null
   ): StrategyOptionsWithRequest = {
     val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
@@ -33,6 +34,7 @@ object StrategyOptionsWithRequest {
     if (state != null) __obj.updateDynamic("state")(state)
     if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL)
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (userEmailURL != null) __obj.updateDynamic("userEmailURL")(userEmailURL)
     if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL)
     __obj.asInstanceOf[StrategyOptionsWithRequest]
   }

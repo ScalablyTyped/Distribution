@@ -19,7 +19,13 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
     but not the list of original options unless handled as such by Typeahead's parent.
     The newly added item will always be returned as an object even if the other options are simply strings,
     so be sure your onChange callback can handle this. */
-  var allowNew: js.UndefOr[scala.Boolean] = js.undefined
+  var allowNew: js.UndefOr[
+    scala.Boolean | (js.Function2[
+      /* results */ js.Array[T], 
+      /* props */ AllTypeaheadOwnAndInjectedProps[T], 
+      scala.Boolean
+    ])
+  ] = js.undefined
   /* Autofocus the input when the component initially mounts. */
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   /* Whether to render the menu inline or attach to document.body. */
@@ -52,6 +58,8 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
   /* Highlights the menu item if there is only one result and allows selecting that item by hitting enter.
     Does not work with allowNew. */
   var highlightOnlyResult: js.UndefOr[scala.Boolean] = js.undefined
+  /* An html id attribute, required for assistive technologies such as screen readers. */
+  var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /* Whether the filter should ignore accents and other diacritical marks. */
   var ignoreDiacritics: js.UndefOr[scala.Boolean] = js.undefined
   /* Props to be applied directly to the input. onBlur, onChange, onFocus, and onKeyDown are ignored. */
@@ -70,7 +78,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
   /* Maximum number of results to display by default. Mostly done for performance reasons
     so as not to render too many DOM nodes in the case of large data sets. */
   var maxResults: js.UndefOr[scala.Double] = js.undefined
-  /* Id applied to the top-level menu element. Required for accessibility. */
+  /* DEPRECATED. Id applied to the top-level menu element. Required for accessibility. */
   var menuId: js.UndefOr[java.lang.String] = js.undefined
   /* Number of input characters that must be entered before showing results. */
   var minLength: js.UndefOr[scala.Double] = js.undefined
@@ -107,6 +115,9 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
   var paginationText: js.UndefOr[java.lang.String] = js.undefined
   /* Placeholder text for the input. */
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
+  /* Whether to use fixed positioning for the menu, which is useful when rendering inside a
+    container with overflow: hidden;. Uses absolute positioning by default. */
+  var positionFixed: js.UndefOr[scala.Boolean] = js.undefined
   /* Callback for custom menu rendering. */
   var renderMenu: js.UndefOr[
     js.Function2[
@@ -146,7 +157,11 @@ object TypeaheadProps {
     a11yNumResults: js.Function0[scala.Unit] = null,
     a11yNumSelected: js.Function0[scala.Unit] = null,
     align: TypeaheadAlign = null,
-    allowNew: js.UndefOr[scala.Boolean] = js.undefined,
+    allowNew: scala.Boolean | (js.Function2[
+      /* results */ js.Array[T], 
+      /* props */ AllTypeaheadOwnAndInjectedProps[T], 
+      scala.Boolean
+    ]) = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     bodyContainer: js.UndefOr[scala.Boolean] = js.undefined,
     bsSize: TypeaheadBsSizes = null,
@@ -161,6 +176,7 @@ object TypeaheadProps {
     filterBy: js.Array[java.lang.String] | (js.Function2[/* option */ T, /* props */ AllTypeaheadOwnAndInjectedProps[T], scala.Boolean]) = null,
     flip: js.UndefOr[scala.Boolean] = js.undefined,
     highlightOnlyResult: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String | scala.Double = null,
     ignoreDiacritics: js.UndefOr[scala.Boolean] = js.undefined,
     inputProps: InputProps = null,
     isInvalid: js.UndefOr[scala.Boolean] = js.undefined,
@@ -186,6 +202,7 @@ object TypeaheadProps {
     paginate: js.UndefOr[scala.Boolean] = js.undefined,
     paginationText: java.lang.String = null,
     placeholder: java.lang.String = null,
+    positionFixed: js.UndefOr[scala.Boolean] = js.undefined,
     renderMenu: js.Function2[
       /* results */ js.Array[TypeaheadResult[T]], 
       /* menuProps */ js.Any, 
@@ -210,7 +227,7 @@ object TypeaheadProps {
     if (a11yNumResults != null) __obj.updateDynamic("a11yNumResults")(a11yNumResults)
     if (a11yNumSelected != null) __obj.updateDynamic("a11yNumSelected")(a11yNumSelected)
     if (align != null) __obj.updateDynamic("align")(align)
-    if (!js.isUndefined(allowNew)) __obj.updateDynamic("allowNew")(allowNew)
+    if (allowNew != null) __obj.updateDynamic("allowNew")(allowNew.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(bodyContainer)) __obj.updateDynamic("bodyContainer")(bodyContainer)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
@@ -225,6 +242,7 @@ object TypeaheadProps {
     if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy.asInstanceOf[js.Any])
     if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
     if (!js.isUndefined(highlightOnlyResult)) __obj.updateDynamic("highlightOnlyResult")(highlightOnlyResult)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreDiacritics)) __obj.updateDynamic("ignoreDiacritics")(ignoreDiacritics)
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
     if (!js.isUndefined(isInvalid)) __obj.updateDynamic("isInvalid")(isInvalid)
@@ -250,6 +268,7 @@ object TypeaheadProps {
     if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate)
     if (paginationText != null) __obj.updateDynamic("paginationText")(paginationText)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)
     if (renderMenu != null) __obj.updateDynamic("renderMenu")(renderMenu)
     if (renderMenuItemChildren != null) __obj.updateDynamic("renderMenuItemChildren")(renderMenuItemChildren)
     if (renderToken != null) __obj.updateDynamic("renderToken")(renderToken)

@@ -5,12 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * User profile information, visible only to the Firebase project's
+  * apps.
+  *
+  */
 trait UserInfo extends js.Object {
   var displayName: java.lang.String | scala.Null
   var email: java.lang.String | scala.Null
   var phoneNumber: java.lang.String | scala.Null
   var photoURL: java.lang.String | scala.Null
   var providerId: java.lang.String
+  /**
+    * The user's unique ID.
+    */
   var uid: java.lang.String
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait TreeProps extends js.Object {
   /** 是否自动展开父节点 */
   var autoExpandParent: js.UndefOr[scala.Boolean] = js.undefined
+  var blockNode: js.UndefOr[scala.Boolean] = js.undefined
   /** checkable状态下节点选择完全受控（父子节点选中状态不再关联）*/
   var checkStrictly: js.UndefOr[scala.Boolean] = js.undefined
   /** 是否支持选中 */
@@ -114,6 +115,7 @@ object TreeProps {
   @scala.inline
   def apply(
     autoExpandParent: js.UndefOr[scala.Boolean] = js.undefined,
+    blockNode: js.UndefOr[scala.Boolean] = js.undefined,
     checkStrictly: js.UndefOr[scala.Boolean] = js.undefined,
     checkable: js.UndefOr[scala.Boolean] = js.undefined,
     checkedKeys: js.Array[java.lang.String] | antdLib.Anon_Checked = null,
@@ -180,6 +182,7 @@ object TreeProps {
   ): TreeProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoExpandParent)) __obj.updateDynamic("autoExpandParent")(autoExpandParent)
+    if (!js.isUndefined(blockNode)) __obj.updateDynamic("blockNode")(blockNode)
     if (!js.isUndefined(checkStrictly)) __obj.updateDynamic("checkStrictly")(checkStrictly)
     if (!js.isUndefined(checkable)) __obj.updateDynamic("checkable")(checkable)
     if (checkedKeys != null) __obj.updateDynamic("checkedKeys")(checkedKeys.asInstanceOf[js.Any])

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ScrollNumber
   extends reactLib.reactMod.Component[ScrollNumberProps, ScrollNumberState, js.Any] {
-  var lastCount: js.Any = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MScrollNumber(nextProps: ScrollNumberProps): scala.Unit = js.native
+  var lastCount: js.UndefOr[java.lang.String | scala.Double | scala.Null] = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MScrollNumber(`_`: js.Any, prevState: ScrollNumberState): scala.Unit = js.native
   def getPositionByNum(num: scala.Double, i: scala.Double): scala.Double = js.native
   def renderCurrentNumber(prefixCls: java.lang.String, num: scala.Double, i: scala.Double): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[antdLib.Anon_ClassName, reactLib.HTMLElement] = js.native
   def renderNumberElement(prefixCls: java.lang.String): js.UndefOr[

@@ -11,6 +11,7 @@ trait Plugins extends js.Object {
   var amqplib: ddDashTraceLib.ddDashTraceMod.pluginsNs.amqplib
   var bluebird: ddDashTraceLib.ddDashTraceMod.pluginsNs.bluebird
   var bunyan: ddDashTraceLib.ddDashTraceMod.pluginsNs.bunyan
+  var `cassandra-driver`: ddDashTraceLib.ddDashTraceMod.pluginsNs.cassandra_driver
   var dns: ddDashTraceLib.ddDashTraceMod.pluginsNs.dns
   var elasticsearch: ddDashTraceLib.ddDashTraceMod.pluginsNs.elasticsearch
   var express: ddDashTraceLib.ddDashTraceMod.pluginsNs.express
@@ -42,6 +43,7 @@ object Plugins {
     amqplib: ddDashTraceLib.ddDashTraceMod.pluginsNs.amqplib,
     bluebird: ddDashTraceLib.ddDashTraceMod.pluginsNs.bluebird,
     bunyan: ddDashTraceLib.ddDashTraceMod.pluginsNs.bunyan,
+    `cassandra-driver`: ddDashTraceLib.ddDashTraceMod.pluginsNs.cassandra_driver,
     dns: ddDashTraceLib.ddDashTraceMod.pluginsNs.dns,
     elasticsearch: ddDashTraceLib.ddDashTraceMod.pluginsNs.elasticsearch,
     express: ddDashTraceLib.ddDashTraceMod.pluginsNs.express,
@@ -66,6 +68,7 @@ object Plugins {
     winston: ddDashTraceLib.ddDashTraceMod.pluginsNs.winston
   ): Plugins = {
     val __obj = js.Dynamic.literal(amqp10 = amqp10, amqplib = amqplib, bluebird = bluebird, bunyan = bunyan, dns = dns, elasticsearch = elasticsearch, express = express, graphql = graphql, hapi = hapi, http = http, ioredis = ioredis, koa = koa, memcached = memcached, mysql = mysql, mysql2 = mysql2, net = net, pg = pg, pino = pino, q = q, redis = redis, restify = restify, router = router, when = when, winston = winston)
+    __obj.updateDynamic("cassandra-driver")(`cassandra-driver`)
     __obj.updateDynamic("generic-pool")(`generic-pool`)
     __obj.updateDynamic("mongodb-core")(`mongodb-core`)
     __obj.asInstanceOf[Plugins]

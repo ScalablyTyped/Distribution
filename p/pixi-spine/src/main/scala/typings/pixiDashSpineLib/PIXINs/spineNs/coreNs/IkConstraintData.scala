@@ -11,9 +11,12 @@ class IkConstraintData protected () extends js.Object {
   def this(name: java.lang.String) = this()
   var bendDirection: scala.Double = js.native
   var bones: js.Array[BoneData] = js.native
+  var compress: scala.Boolean = js.native
   var mix: scala.Double = js.native
   var name: java.lang.String = js.native
   var order: scala.Double = js.native
+  var stretch: scala.Boolean = js.native
   var target: BoneData = js.native
+  var uniform: scala.Boolean = js.native
 }
 

@@ -56,7 +56,7 @@ trait VictoryCommonProps extends js.Object {
     * and right.
     * @default 50
     */
-  var padding: js.UndefOr[scala.Double | victoryLib.Anon_BottomLeft] = js.undefined
+  var padding: js.UndefOr[PaddingProps] = js.undefined
   /**
     * The scale prop determines which scales your chart should use. This prop can be
     * given as a string specifying a supported scale ("linear", "time", "log", "sqrt"),
@@ -97,7 +97,7 @@ object VictoryCommonProps {
     groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
     theme: VictoryThemeDefinition = null,

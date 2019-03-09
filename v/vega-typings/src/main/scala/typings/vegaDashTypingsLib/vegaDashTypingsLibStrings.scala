@@ -950,6 +950,7 @@ object vegaDashTypingsLibStrings {
   @js.native
   sealed trait number
     extends vegaDashTypingsLib.typesSpecDataMod.DataType
+       with vegaDashTypingsLib.typesSpecAxisMod.FormatType
   
   @js.native
   sealed trait `nw-resize` extends js.Object
@@ -1750,6 +1751,7 @@ object vegaDashTypingsLibStrings {
   @js.native
   sealed trait time
     extends vegaDashTypingsLib.typesSpecScaleMod.QuantScaleType
+       with vegaDashTypingsLib.typesSpecAxisMod.FormatType
   
   @js.native
   sealed trait timer

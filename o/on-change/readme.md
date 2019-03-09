@@ -1,7 +1,9 @@
 ```
-// Type definitions for on-change 0.1
-// Project: https://github.com/sindresorhus/on-change#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+/**
+ * Watch an object or array for changes. It works recursively, so it will even detect if you modify a deep property like `obj.a.b[0].c = true`.
+ *
+ * @param object - Object to watch for changes.
+ * @param onChange - Function that gets called anytime the object changes.
+ * @returns A version of `object` that is watched. It's the exact same object, just with some `Proxy` traps.
+ */
 ```

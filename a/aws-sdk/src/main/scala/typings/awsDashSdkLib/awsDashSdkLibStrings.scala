@@ -798,6 +798,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._apiVersion
   
   @js.native
+  sealed trait `2019-01-25`
+    extends awsDashSdkLib.clientsAppmeshMod.AppMeshNs._apiVersion
+  
+  @js.native
   sealed trait `237`
     extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._CacheClusterSize
   
@@ -1012,6 +1016,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._UserStatusType
        with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualNodeStatusCode
        with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualRouterStatusCode
+       with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualServiceStatusCode
   
   @js.native
   sealed trait ACTIVEMQ extends js.Object
@@ -1834,6 +1839,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait APPLICATION_MISSING
     extends awsDashSdkLib.clientsCodedeployMod.CodeDeployNs._ErrorCode
+  
+  @js.native
+  sealed trait APPMESH extends js.Object
   
   @js.native
   sealed trait APPROVED
@@ -4292,7 +4300,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait COMPLETE
-    extends awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs._ImportStatus
+    extends awsDashSdkLib.clientsEcsMod.ECSNs._ContainerCondition
+       with awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs._ImportStatus
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._JobStatus
        with awsDashSdkLib.clientsEcrMod.ECRNs._LifecyclePolicyPreviewStatus
        with awsDashSdkLib.clientsS3Mod.S3Ns._ReplicationStatus
@@ -5747,6 +5756,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs._ThreatIntelSetStatus
        with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualNodeStatusCode
        with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualRouterStatusCode
+       with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualServiceStatusCode
   
   @js.native
   sealed trait DELETE_COMPLETE
@@ -6883,6 +6893,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsS3Mod.S3Ns._MFADeleteStatus
        with awsDashSdkLib.clientsFirehoseMod.FirehoseNs._RedshiftS3BackupMode
        with awsDashSdkLib.clientsS3Mod.S3Ns._ReplicationRuleStatus
+       with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._RootAccess
        with awsDashSdkLib.clientsFirehoseMod.FirehoseNs._S3BackupMode
        with awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs._SelectiveAuth
        with awsDashSdkLib.clientsS3Mod.S3Ns._SseKmsEncryptedObjectsStatus
@@ -7784,6 +7795,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsS3Mod.S3Ns._MFADeleteStatus
        with awsDashSdkLib.clientsFirehoseMod.FirehoseNs._RedshiftS3BackupMode
        with awsDashSdkLib.clientsS3Mod.S3Ns._ReplicationRuleStatus
+       with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._RootAccess
        with awsDashSdkLib.clientsFirehoseMod.FirehoseNs._S3BackupMode
        with awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs._SelectiveAuth
        with awsDashSdkLib.clientsS3Mod.S3Ns._SseKmsEncryptedObjectsStatus
@@ -9517,6 +9529,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsInspectorMod.InspectorNs._AgentHealth
        with awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs._AgentStatus
        with awsDashSdkLib.clientsSmsMod.SMSNs._ConnectorStatus
+       with awsDashSdkLib.clientsEcsMod.ECSNs._ContainerCondition
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._CustomHealthStatus
        with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._HealthState
        with awsDashSdkLib.clientsEcsMod.ECSNs._HealthStatus
@@ -10132,6 +10145,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._UserStatusType
        with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualNodeStatusCode
        with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualRouterStatusCode
+       with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._VirtualServiceStatusCode
   
   @js.native
   sealed trait INBOUND
@@ -18132,7 +18146,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait START
-    extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._FollowPoint
+    extends awsDashSdkLib.clientsEcsMod.ECSNs._ContainerCondition
+       with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._FollowPoint
   
   @js.native
   sealed trait STARTED
@@ -18434,6 +18449,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._AuditReportStatus
+       with awsDashSdkLib.clientsEcsMod.ECSNs._ContainerCondition
        with awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs._DkimStatus
        with awsDashSdkLib.clientsAcmMod.ACMNs._DomainStatus
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._DomainStatus
@@ -26485,6 +26501,14 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRekognitionMod.RekognitionNs._LandmarkType
   
   @js.native
+  sealed trait rk3288
+    extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._TargetDevice
+  
+  @js.native
+  sealed trait rk3399
+    extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._TargetDevice
+  
+  @js.native
   sealed trait ro
     extends awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs._AnalysisSchemeLanguage
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._Permission
@@ -27992,6 +28016,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `2018-11-29`: `2018-11-29` = "2018-11-29".asInstanceOf[`2018-11-29`]
   @scala.inline
+  def `2019-01-25`: `2019-01-25` = "2019-01-25".asInstanceOf[`2019-01-25`]
+  @scala.inline
   def `237`: `237` = "237".asInstanceOf[`237`]
   @scala.inline
   def `28DOT4`: `28DOT4` = "28.4".asInstanceOf[`28DOT4`]
@@ -28399,6 +28425,8 @@ object awsDashSdkLibStrings {
   def APPLICATION_LOAD_BALANCER: APPLICATION_LOAD_BALANCER = "APPLICATION_LOAD_BALANCER".asInstanceOf[APPLICATION_LOAD_BALANCER]
   @scala.inline
   def APPLICATION_MISSING: APPLICATION_MISSING = "APPLICATION_MISSING".asInstanceOf[APPLICATION_MISSING]
+  @scala.inline
+  def APPMESH: APPMESH = "APPMESH".asInstanceOf[APPMESH]
   @scala.inline
   def APPROVED: APPROVED = "APPROVED".asInstanceOf[APPROVED]
   @scala.inline
@@ -38503,6 +38531,10 @@ object awsDashSdkLibStrings {
   def rightEyeUp: rightEyeUp = "rightEyeUp".asInstanceOf[rightEyeUp]
   @scala.inline
   def rightPupil: rightPupil = "rightPupil".asInstanceOf[rightPupil]
+  @scala.inline
+  def rk3288: rk3288 = "rk3288".asInstanceOf[rk3288]
+  @scala.inline
+  def rk3399: rk3399 = "rk3399".asInstanceOf[rk3399]
   @scala.inline
   def ro: ro = "ro".asInstanceOf[ro]
   @scala.inline

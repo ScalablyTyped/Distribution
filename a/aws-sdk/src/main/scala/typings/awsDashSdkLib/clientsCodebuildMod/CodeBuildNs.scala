@@ -88,7 +88,7 @@ object CodeBuildNs extends js.Object {
       */
     var currentPhase: js.UndefOr[String] = js.undefined
     /**
-      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. This is expressed either as the Amazon Resource Name (ARN) of the CMK or, if specified, the CMK's alias (using the format alias/alias-name ).
+      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
       */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -274,7 +274,7 @@ object CodeBuildNs extends js.Object {
       */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
+      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
       */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -434,6 +434,13 @@ object CodeBuildNs extends js.Object {
       * The value of the environment variable.  We strongly discourage the use of environment variables to store sensitive values, especially AWS secret key IDs and secret access keys. Environment variables can be displayed in plain text using the AWS CodeBuild console and the AWS Command Line Interface (AWS CLI). 
       */
     var value: String
+  }
+  
+  trait GitSubmodulesConfig extends js.Object {
+    /**
+      *  Set to true to fetch Git submodules for your AWS CodeBuild build project. 
+      */
+    var fetchSubmodules: WrapperBoolean
   }
   
   trait ImportSourceCredentialsInput extends js.Object {
@@ -649,7 +656,7 @@ object CodeBuildNs extends js.Object {
       */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. This is expressed either as the Amazon Resource Name (ARN) of the CMK or, if specified, the CMK's alias (using the format alias/alias-name ).
+      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
       */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -762,7 +769,7 @@ object CodeBuildNs extends js.Object {
       */
     var location: js.UndefOr[String] = js.undefined
     /**
-      *  If you use a LOCAL cache, the local cache mode. You can use one or more local cache modes at the same time.     LOCAL_SOURCE_CACHE mode caches Git metadata for primary and secondary sources. After the cache is created, subsequent builds pull only the change between commits. This mode is a good choice for projects with a clean working directory and a source that is a large Git repository. If your project does not use a Git repository (GitHub, GitHub Enterprise, or Bitbucket) and you choose this option, then it is ignored.     LOCAL_DOCKER_LAYER_CACHE mode caches existing Docker layers. This mode is a good choice for projects that build or pull large Docker images. It can prevent the performance hit that would be caused by pulling large Docker images down from the network.      You can only use a Docker layer cache in the Linux enviornment.     The privileged flag must be set so that your project has the necessary Docker privileges.     You should consider the security implications before using a Docker layer cache.          LOCAL_CUSTOM_CACHE mode caches directories you specify in the buildspec file. This mode is a good choice if your build scenario does not match one that works well with one of the other three local cache modes. If you use a custom cache:     Only directories can be specified for caching. You cannot specify individual files.     Symlinks are used to reference cached directories.     Cached directories are linked to your build before it downloads its project sources. Cached items are overriden if a source item has the same name. Directories are specified using cache paths in the buildspec file.     
+      *  If you use a LOCAL cache, the local cache mode. You can use one or more local cache modes at the same time.     LOCAL_SOURCE_CACHE mode caches Git metadata for primary and secondary sources. After the cache is created, subsequent builds pull only the change between commits. This mode is a good choice for projects with a clean working directory and a source that is a large Git repository. If you choose this option and your project does not use a Git repository (GitHub, GitHub Enterprise, or Bitbucket), the option is ignored.     LOCAL_DOCKER_LAYER_CACHE mode caches existing Docker layers. This mode is a good choice for projects that build or pull large Docker images. It can prevent the performance issues caused by pulling large Docker images down from the network.      You can use a Docker layer cache in the Linux enviornment only.     The privileged flag must be set so that your project has the required Docker permissions.     You should consider the security implications before you use a Docker layer cache.          LOCAL_CUSTOM_CACHE mode caches directories you specify in the buildspec file. This mode is a good choice if your build scenario is not suited to one of the other three local cache modes. If you use a custom cache:     Only directories can be specified for caching. You cannot specify individual files.     Symlinks are used to reference cached directories.     Cached directories are linked to your build before it downloads its project sources. Cached items are overriden if a source item has the same name. Directories are specified using cache paths in the buildspec file.     
       */
     var modes: js.UndefOr[ProjectCacheModes] = js.undefined
     /**
@@ -816,9 +823,13 @@ object CodeBuildNs extends js.Object {
       */
     var buildspec: js.UndefOr[String] = js.undefined
     /**
-      * Information about the git clone depth for the build project.
+      * Information about the Git clone depth for the build project.
       */
     var gitCloneDepth: js.UndefOr[GitCloneDepth] = js.undefined
+    /**
+      *  Information about the Git submodules configuration for the build project. 
+      */
+    var gitSubmodulesConfig: js.UndefOr[GitSubmodulesConfig] = js.undefined
     /**
       * Enable this flag to ignore SSL warnings while connecting to the project source code.
       */
@@ -864,6 +875,10 @@ object CodeBuildNs extends js.Object {
   }
   
   trait S3LogsConfig extends js.Object {
+    /**
+      *  Set to true if you do not want your S3 build log output encrypted. By default S3 build logs are encrypted. 
+      */
+    var encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined
     /**
       *  The ARN of an S3 bucket and the path prefix for S3 logs. If your Amazon S3 bucket name is my-bucket, and your path prefix is build-log, then acceptable formats are my-bucket/build-log or arn:aws:s3:::my-bucket/build-log. 
       */
@@ -933,6 +948,10 @@ object CodeBuildNs extends js.Object {
       * The user-defined depth of history, with a minimum value of 0, that overrides, for this build only, any previous depth of history defined in the build project.
       */
     var gitCloneDepthOverride: js.UndefOr[GitCloneDepth] = js.undefined
+    /**
+      *  Information about the Git submodules configuration for this build of an AWS CodeBuild build project. 
+      */
+    var gitSubmodulesConfigOverride: js.UndefOr[GitSubmodulesConfig] = js.undefined
     /**
       * A unique, case sensitive identifier you provide to ensure the idempotency of the StartBuild request. The token is included in the StartBuild request and is valid for 12 hours. If you repeat the StartBuild request with the same token, but change a parameter, AWS CodeBuild returns a parameter mismatch error. 
       */
@@ -1497,7 +1516,7 @@ object CodeBuildNs extends js.Object {
       */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-      * The replacement AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. You can specify either the Amazon Resource Name (ARN)of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
+      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
       */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**

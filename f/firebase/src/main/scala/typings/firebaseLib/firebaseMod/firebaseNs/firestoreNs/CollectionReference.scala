@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CollectionReference extends Query {
-  /** The identifier of the collection. */
+  /** The collection's identifier. */
   val id: java.lang.String = js.native
   /**
-    * A reference to the containing Document if this is a subcollection, else
-    * null.
+    * A reference to the containing `DocumentReference` if this is a subcollection.
+    * If this isn't a subcollection, the reference is null.
     */
   val parent: DocumentReference | scala.Null = js.native
   /**

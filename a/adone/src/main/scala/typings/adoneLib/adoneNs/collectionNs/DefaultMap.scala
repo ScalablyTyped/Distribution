@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("adone.collection.DefaultMap")
 @js.native
 class DefaultMap[K, V] ()
-  extends lodashLib.lodashMod.Global.Map[K, V] {
+  extends nodeLib.Map[K, V] {
   def this(factory: js.Function1[/* key */ K, V]) = this()
   def this(factory: org.scalablytyped.runtime.StringDictionary[V]) = this()
   def this(factory: js.Function1[/* key */ K, V], iterable: nodeLib.Iterable[js.Tuple2[K, V]]) = this()

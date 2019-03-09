@@ -26,6 +26,11 @@ package object victoryMod {
     */
   type DomainTuple = (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[stdLib.Date, stdLib.Date])
   type NumberOrCallback = (js.Function2[/* datum */ js.Any, /* active */ scala.Boolean, scala.Double]) | scala.Double
+  /**
+    * @see https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html
+    */
+  type Omit[T, K] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
+  type PaddingProps = scala.Double | BlockProps
   // Many victory components accept string or number or callback which returns string or number
   type StringOrNumberOrCallback = java.lang.String | scala.Double | (js.Function2[/* datum */ js.Any, /* active */ scala.Boolean, java.lang.String | scala.Double])
   type VictoryStyleObject = /* import warning: ImportType.apply c Unsupported type mapping: 

@@ -183,6 +183,10 @@ object ECSNs extends js.Object {
       */
     var cpu: js.UndefOr[Integer] = js.undefined
     /**
+      * The dependencies defined for container startup. A container can contain multiple dependencies.
+      */
+    var dependsOn: js.UndefOr[ContainerDependencies] = js.undefined
+    /**
       * When this parameter is true, networking is disabled within the container. This parameter maps to NetworkDisabled in the Create a container section of the Docker Remote API.  This parameter is not supported for Windows containers. 
       */
     var disableNetworking: js.UndefOr[BoxedBoolean] = js.undefined
@@ -291,6 +295,14 @@ object ECSNs extends js.Object {
       */
     var secrets: js.UndefOr[SecretList] = js.undefined
     /**
+      * Time duration to wait before giving up on starting the container.  The startTimeout value for the container will take precedence over the ECS_CONTAINER_START_TIMEOUT container agent configuration parameter, if used. 
+      */
+    var startTimeout: js.UndefOr[BoxedInteger] = js.undefined
+    /**
+      * Time duration to wait before the container is forcefully killed if it does not exit normally on its own.  The stopTimeout value for the container will take precedence over the ECS_CONTAINER_STOP_TIMEOUT container agent configuration parameter, if used. 
+      */
+    var stopTimeout: js.UndefOr[BoxedInteger] = js.undefined
+    /**
       * A list of namespaced kernel parameters to set in the container. This parameter maps to Sysctls in the Create a container section of the Docker Remote API and the --sysctl option to docker run.  It is not recommended that you specify network-related systemControls parameters for multiple containers in a single task that also uses either the awsvpc or host network modes. For tasks that use the awsvpc network mode, the container that is started last determines which systemControls parameters take effect. For tasks that use the host network mode, it changes the container instance's namespaced kernel parameters as well as the containers. 
       */
     var systemControls: js.UndefOr[SystemControls] = js.undefined
@@ -299,7 +311,7 @@ object ECSNs extends js.Object {
       */
     var ulimits: js.UndefOr[UlimitList] = js.undefined
     /**
-      * The user name to use inside the container. This parameter maps to User in the Create a container section of the Docker Remote API and the --user option to docker run.  This parameter is not supported for Windows containers. 
+      * The username to use inside the container. This parameter maps to User in the Create a container section of the Docker Remote API and the --user option to docker run. This following formats can be used. If specifying a UID or GID, it must be specified as a positive integer.    user     user:group     uid     uid:gid     user:gid     uid:group     This parameter is not supported for Windows containers. 
       */
     var user: js.UndefOr[String] = js.undefined
     /**
@@ -310,6 +322,17 @@ object ECSNs extends js.Object {
       * The working directory in which to run commands inside the container. This parameter maps to WorkingDir in the Create a container section of the Docker Remote API and the --workdir option to docker run.
       */
     var workingDirectory: js.UndefOr[String] = js.undefined
+  }
+  
+  trait ContainerDependency extends js.Object {
+    /**
+      * The dependency condition of the container. The following are the available conditions and their behavior:    START - This condition emulates the behavior of links and volumes today. It validates that a dependent container is started before permitting other containers to start.    COMPLETE - This condition validates that a dependent container runs to completion (exits) before permitting other containers to start. This can be useful for non-essential containers that run a script and then subsequently exit.    SUCCESS - This condition is the same as COMPLETE, but it will also require that the container exits with a zero status.    HEALTHY - This condition validates that the dependent container passes its Docker health check before permitting other containers to start. This requires that the dependent container has health checks configured. This condition will only be confirmed at task startup.  
+      */
+    var condition: ContainerCondition
+    /**
+      * The name of a container.
+      */
+    var containerName: String
   }
   
   trait ContainerInstance extends js.Object {
@@ -473,7 +496,7 @@ object ECSNs extends js.Object {
       */
     var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
     /**
-      * The period of time, in seconds, that the Amazon ECS service scheduler should ignore unhealthy Elastic Load Balancing target health checks after a task has first started. This is only valid if your service is configured to use a load balancer. If your service's tasks take a while to start and respond to Elastic Load Balancing health checks, you can specify a health check grace period of up to 7,200 seconds. During that time, the ECS service scheduler ignores health check status. This grace period can prevent the ECS service scheduler from marking tasks as unhealthy and stopping them before they have time to come up.
+      * The period of time, in seconds, that the Amazon ECS service scheduler should ignore unhealthy Elastic Load Balancing target health checks after a task has first started. This is only valid if your service is configured to use a load balancer. If your service's tasks take a while to start and respond to Elastic Load Balancing health checks, you can specify a health check grace period of up to 2,147,483,647 seconds. During that time, the ECS service scheduler ignores health check status. This grace period can prevent the ECS service scheduler from marking tasks as unhealthy and stopping them before they have time to come up.
       */
     var healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined
     /**
@@ -1423,6 +1446,21 @@ object ECSNs extends js.Object {
     var protocol: js.UndefOr[TransportProtocol] = js.undefined
   }
   
+  trait ProxyConfiguration extends js.Object {
+    /**
+      * The name of the container that will serve as the App Mesh proxy.
+      */
+    var containerName: String
+    /**
+      * The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified as key-value pairs.    IgnoredUID - (Required) The user ID (UID) of the proxy container as defined by the user parameter in a container definition. This is used to ensure the proxy ignores its own traffic. If IgnoredGID is specified, this field can be empty.    IgnoredGID - (Required) The group ID (GID) of the proxy container as defined by the user parameter in a container definition. This is used to ensure the proxy ignores its own traffic. If IgnoredGID is specified, this field can be empty.    AppPorts - (Required) The list of ports that the application uses. Network traffic to these ports will be forwarded to the ProxyIngressPort and ProxyEgressPort.    ProxyIngressPort - (Required) Specifies the port that incoming traffic to the AppPorts is directed to.    ProxyEgressPort - (Required) Specifies the port that outgoing traffic from the AppPorts is directed to.    EgressIgnoredPorts - (Required) The egress traffic going to these specified ports will be ignored and not redirected to the ProxyEgressPort. It can be empty list.    EgressIgnoredIPs - (Required) The egress traffic going to these specified IP addresses will be ignored and not redirected to the ProxyEgressPort. It can be empty list.  
+      */
+    var properties: js.UndefOr[ProxyConfigurationProperties] = js.undefined
+    /**
+      * The proxy type. The only supported value is APPMESH.
+      */
+    var `type`: js.UndefOr[ProxyConfigurationType] = js.undefined
+  }
+  
   trait PutAccountSettingDefaultRequest extends js.Object {
     /**
       * The resource type to enable the new format for. If serviceLongArnFormat is specified, the ARN for your Amazon ECS services is affected. If taskLongArnFormat is specified, the ARN and resource ID for your Amazon ECS tasks are affected. If containerInstanceLongArnFormat is specified, the ARN and resource ID for your Amazon ECS container instances are affected.
@@ -1561,6 +1599,7 @@ object ECSNs extends js.Object {
       * An array of placement constraint objects to use for the task. You can specify a maximum of 10 constraints per task (this limit includes constraints in the task definition and those specified at runtime).
       */
     var placementConstraints: js.UndefOr[TaskDefinitionPlacementConstraints] = js.undefined
+    var proxyConfiguration: js.UndefOr[ProxyConfiguration] = js.undefined
     /**
       * The launch type required by the task. If no value is specified, it defaults to EC2.
       */
@@ -2249,6 +2288,10 @@ object ECSNs extends js.Object {
       * An array of placement constraint objects to use for tasks. This field is not valid if you are using the Fargate launch type for your task.
       */
     var placementConstraints: js.UndefOr[TaskDefinitionPlacementConstraints] = js.undefined
+    /**
+      * 
+      */
+    var proxyConfiguration: js.UndefOr[ProxyConfiguration] = js.undefined
     /**
       * The container instance attributes required by your task. This field is not valid if you are using the Fargate launch type for your task.
       */
@@ -3565,6 +3608,8 @@ object ECSNs extends js.Object {
   
   trait _Connectivity extends js.Object
   
+  trait _ContainerCondition extends js.Object
+  
   trait _ContainerInstanceStatus extends js.Object
   
   trait _DeploymentControllerType extends js.Object
@@ -3630,7 +3675,9 @@ object ECSNs extends js.Object {
   type Compatibility = _Compatibility | java.lang.String
   type CompatibilityList = js.Array[Compatibility]
   type Connectivity = _Connectivity | java.lang.String
+  type ContainerCondition = _ContainerCondition | java.lang.String
   type ContainerDefinitions = js.Array[ContainerDefinition]
+  type ContainerDependencies = js.Array[ContainerDependency]
   type ContainerInstanceField = awsDashSdkLib.awsDashSdkLibStrings.TAGS | java.lang.String
   type ContainerInstanceFieldList = js.Array[ContainerInstanceField]
   type ContainerInstanceStatus = _ContainerInstanceStatus | java.lang.String
@@ -3669,6 +3716,8 @@ object ECSNs extends js.Object {
   type PlatformDevices = js.Array[PlatformDevice]
   type PortMappingList = js.Array[PortMapping]
   type PropagateTags = _PropagateTags | java.lang.String
+  type ProxyConfigurationProperties = js.Array[KeyValuePair]
+  type ProxyConfigurationType = awsDashSdkLib.awsDashSdkLibStrings.APPMESH | java.lang.String
   type RequiresAttributes = js.Array[Attribute]
   type ResourceRequirements = js.Array[ResourceRequirement]
   type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.GPU | java.lang.String

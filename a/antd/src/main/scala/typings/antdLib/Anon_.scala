@@ -17,6 +17,7 @@ trait Anon_ extends js.Object {
   var label: propDashTypesLib.propDashTypesMod.Requireable[
     java.lang.String | scala.Double | scala.Boolean | js.Object | propDashTypesLib.propDashTypesMod.ReactElementLike | propDashTypesLib.propDashTypesMod.ReactNodeArray
   ]
+  var labelAlign: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var labelCol: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var validateStatus: propDashTypesLib.propDashTypesMod.Requireable[
@@ -39,6 +40,7 @@ object Anon_ {
     label: propDashTypesLib.propDashTypesMod.Requireable[
       java.lang.String | scala.Double | scala.Boolean | js.Object | propDashTypesLib.propDashTypesMod.ReactElementLike | propDashTypesLib.propDashTypesMod.ReactNodeArray
     ],
+    labelAlign: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
     labelCol: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
     prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
     validateStatus: propDashTypesLib.propDashTypesMod.Requireable[
@@ -46,7 +48,7 @@ object Anon_ {
     ],
     wrapperCol: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
   ): Anon_ = {
-    val __obj = js.Dynamic.literal(children = children, className = className, colon = colon, hasFeedback = hasFeedback, help = help, id = id, label = label, labelCol = labelCol, prefixCls = prefixCls, validateStatus = validateStatus, wrapperCol = wrapperCol)
+    val __obj = js.Dynamic.literal(children = children, className = className, colon = colon, hasFeedback = hasFeedback, help = help, id = id, label = label, labelAlign = labelAlign, labelCol = labelCol, prefixCls = prefixCls, validateStatus = validateStatus, wrapperCol = wrapperCol)
   
     __obj.asInstanceOf[Anon_]
   }

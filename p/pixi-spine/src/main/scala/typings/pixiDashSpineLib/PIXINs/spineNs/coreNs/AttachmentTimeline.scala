@@ -20,7 +20,7 @@ class AttachmentTimeline protected () extends Timeline {
     time: scala.Double,
     events: js.Array[Event],
     alpha: scala.Double,
-    pose: MixPose,
+    blend: MixBlend,
     direction: MixDirection
   ): scala.Unit = js.native
   def getFrameCount(): scala.Double = js.native

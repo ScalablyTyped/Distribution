@@ -17,7 +17,14 @@ trait RedisStoreOptions extends js.Object {
   var scanCount: js.UndefOr[scala.Double] = js.undefined
   var serializer: js.UndefOr[Serializer | stdLib.JSON] = js.undefined
   var socket: js.UndefOr[java.lang.String] = js.undefined
-  var ttl: js.UndefOr[scala.Double] = js.undefined
+  var ttl: js.UndefOr[
+    scala.Double | java.lang.String | (js.Function3[
+      /* store */ RedisStore, 
+      /* sess */ expressDashSessionLib.expressDashSessionMod.Global.ExpressNs.SessionData, 
+      /* sid */ java.lang.String, 
+      scala.Double
+    ])
+  ] = js.undefined
   var unref: js.UndefOr[scala.Boolean] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -36,7 +43,12 @@ object RedisStoreOptions {
     scanCount: scala.Int | scala.Double = null,
     serializer: Serializer | stdLib.JSON = null,
     socket: java.lang.String = null,
-    ttl: scala.Int | scala.Double = null,
+    ttl: scala.Double | java.lang.String | (js.Function3[
+      /* store */ RedisStore, 
+      /* sess */ expressDashSessionLib.expressDashSessionMod.Global.ExpressNs.SessionData, 
+      /* sid */ java.lang.String, 
+      scala.Double
+    ]) = null,
     unref: js.UndefOr[scala.Boolean] = js.undefined,
     url: java.lang.String = null
   ): RedisStoreOptions = {

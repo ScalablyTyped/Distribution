@@ -147,7 +147,7 @@ object VictoryBoxPlotProps {
     median: StringOrNumberOrCallback = null,
     min: StringOrNumberOrCallback = null,
     name: java.lang.String = null,
-    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    padding: PaddingProps = null,
     q1: StringOrNumberOrCallback = null,
     q3: StringOrNumberOrCallback = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,

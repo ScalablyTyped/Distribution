@@ -22,9 +22,9 @@ trait PackagerOptions extends js.Object {
   val prepackaged: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var projectDir: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var targets: js.UndefOr[
-    stdLib.Map[
+    nodeLib.Map[
       appDashBuilderDashLibLib.outCoreMod.Platform, 
-      stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+      nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
     ]
   ] = js.undefined
   var win: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -44,9 +44,9 @@ object PackagerOptions {
     ] = null,
     prepackaged: java.lang.String = null,
     projectDir: java.lang.String = null,
-    targets: stdLib.Map[
+    targets: nodeLib.Map[
       appDashBuilderDashLibLib.outCoreMod.Platform, 
-      stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+      nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
     ] = null,
     win: js.Array[java.lang.String] = null
   ): PackagerOptions = {

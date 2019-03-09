@@ -62,7 +62,7 @@ object ^ extends js.Object {
     defaultHost: java.lang.String
   ): java.lang.String = js.native
   def newError(message: java.lang.String, code: java.lang.String): nodeLib.Error = js.native
-  def parseDn(seq: java.lang.String): stdLib.Map[java.lang.String, java.lang.String] = js.native
+  def parseDn(seq: java.lang.String): nodeLib.Map[java.lang.String, java.lang.String] = js.native
   def parseJson(result: js.Promise[java.lang.String | scala.Null]): js.Promise[_] = js.native
   def parseXml(data: java.lang.String): builderDashUtilDashRuntimeLib.outXmlMod.XElement = js.native
   def safeGetHeader(response: js.Any, headerKey: java.lang.String): js.Any = js.native

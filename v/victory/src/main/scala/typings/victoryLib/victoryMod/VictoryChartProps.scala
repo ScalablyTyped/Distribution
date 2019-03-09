@@ -91,7 +91,7 @@ object VictoryChartProps {
     groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
     style: stdLib.Pick[VictoryStyleInterface, victoryLib.victoryLibStrings.parent] = null,

@@ -7,18 +7,23 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DocumentSnapshot extends js.Object {
-  /** True if the document exists. */
+  /**
+    * Property of the `DocumentSnapshot` that signals whether or not the data
+    * exists. True if the document exists.
+    */
   val exists: scala.Boolean = js.native
   /**
-    * The ID of the document for which this `DocumentSnapshot` contains data.
+    * Property of the `DocumentSnapshot` that provides the document's ID.
     */
   val id: java.lang.String = js.native
   /**
-    * Metadata about this snapshot, concerning its source and if it has local
-    * modifications.
+    *  Metadata about the `DocumentSnapshot`, including information about its
+    *  source and local modifications.
     */
   val metadata: SnapshotMetadata = js.native
-  /** A `DocumentReference` to the document location. */
+  /**
+    * The `DocumentReference` for the document included in the `DocumentSnapshot`.
+    */
   val ref: DocumentReference = js.native
   /**
     * Retrieves all fields in the document as an Object. Returns 'undefined' if
@@ -39,7 +44,7 @@ trait DocumentSnapshot extends js.Object {
   def get(fieldPath: FieldPath): js.Any = js.native
   def get(fieldPath: FieldPath, options: SnapshotOptions): js.Any = js.native
   /**
-    * Retrieves the field specified by `fieldPath`. Returns 'undefined' if the
+    * Retrieves the field specified by `fieldPath`. Returns `undefined` if the
     * document or field doesn't exist.
     *
     * By default, a `FieldValue.serverTimestamp()` that has not yet been set to

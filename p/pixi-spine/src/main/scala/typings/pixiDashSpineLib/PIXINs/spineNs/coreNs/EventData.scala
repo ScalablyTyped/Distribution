@@ -9,10 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class EventData protected () extends js.Object {
   def this(name: java.lang.String) = this()
-  var audio: java.lang.String = js.native
+  var audioPath: java.lang.String = js.native
+  var balance: scala.Double = js.native
   var floatValue: scala.Double = js.native
   var intValue: scala.Double = js.native
   var name: java.lang.String = js.native
   var stringValue: java.lang.String = js.native
+  var volume: scala.Double = js.native
 }
 

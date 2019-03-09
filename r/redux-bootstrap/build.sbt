@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-bootstrap"
-version := "1.3.0-9a4f17"
+version := "1.3.0-ea4650"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,13 +10,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190226Z-e317ff",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-421c03",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-8a518d",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-d5c6e1",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-580844",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-768022",
   "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190306Z-5b6975",
-  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190212Z-228a6b",
-  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20190212Z-39bd0c",
+  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190228Z-228a6b",
+  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20190212Z-0306e2",
   "org.scalablytyped" %%% "redux" % "4.0.1-03a2e6",
   "org.scalablytyped" %%% "redux-immutable" % "v4.0.0-dt-20190124Z-256d1d",
   "org.scalablytyped" %%% "reselect" % "4.0.0-0f457f",

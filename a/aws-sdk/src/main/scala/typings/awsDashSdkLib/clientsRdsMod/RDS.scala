@@ -11,14 +11,14 @@ trait RDS
   @JSName("config")
   var config_RDS: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsRdsMod.RDSNs.ClientConfiguration = js.native
   /**
-    * Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf in the Amazon Aurora User Guide.
+    * Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf in the Amazon Aurora User Guide.  This action only applies to Aurora DB clusters. 
     */
   def addRoleToDBCluster(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addRoleToDBCluster(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf in the Amazon Aurora User Guide.
+    * Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf in the Amazon Aurora User Guide.  This action only applies to Aurora DB clusters. 
     */
   def addRoleToDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.AddRoleToDBClusterMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addRoleToDBCluster(
@@ -161,7 +161,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide. 
+    * Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def backtrackDBCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterBacktrack, 
@@ -178,7 +178,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide. 
+    * Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def backtrackDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.BacktrackDBClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterBacktrack, 
@@ -196,7 +196,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Copies the specified DB cluster parameter group.
+    * Copies the specified DB cluster parameter group.  This action only applies to Aurora DB clusters. 
     */
   def copyDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CopyDBClusterParameterGroupResult, 
@@ -213,7 +213,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Copies the specified DB cluster parameter group.
+    * Copies the specified DB cluster parameter group.  This action only applies to Aurora DB clusters. 
     */
   def copyDBClusterParameterGroup(params: awsDashSdkLib.clientsRdsMod.RDSNs.CopyDBClusterParameterGroupMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CopyDBClusterParameterGroupResult, 
@@ -231,7 +231,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the CopyDBClusterSnapshot action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:    KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.    PreSignedUrl - A URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the CopyDBClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.    TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the SourceDBClusterSnapshotIdentifier in the pre-signed URL.    To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB cluster snapshot is in "copying" status. For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see  Copying a Snapshot in the Amazon Aurora User Guide.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the CopyDBClusterSnapshot action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:    KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.    PreSignedUrl - A URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the CopyDBClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.    TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the SourceDBClusterSnapshotIdentifier in the pre-signed URL.    To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB cluster snapshot is in "copying" status. For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see  Copying a Snapshot in the Amazon Aurora User Guide.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def copyDBClusterSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CopyDBClusterSnapshotResult, 
@@ -248,7 +248,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the CopyDBClusterSnapshot action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:    KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.    PreSignedUrl - A URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the CopyDBClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.    TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the SourceDBClusterSnapshotIdentifier in the pre-signed URL.    To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB cluster snapshot is in "copying" status. For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see  Copying a Snapshot in the Amazon Aurora User Guide.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the CopyDBClusterSnapshot action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:    KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.    PreSignedUrl - A URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the CopyDBClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.    TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the SourceDBClusterSnapshotIdentifier in the pre-signed URL.    To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB cluster snapshot is in "copying" status. For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see  Copying a Snapshot in the Amazon Aurora User Guide.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def copyDBClusterSnapshot(params: awsDashSdkLib.clientsRdsMod.RDSNs.CopyDBClusterSnapshotMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CopyDBClusterSnapshotResult, 
@@ -371,7 +371,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new Amazon Aurora DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by ReplicationSourceIdentifier is encrypted, you must also specify the PreSignedUrl parameter. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a new Amazon Aurora DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by ReplicationSourceIdentifier is encrypted, you must also specify the PreSignedUrl parameter. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def createDBCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterResult, 
@@ -388,7 +388,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new Amazon Aurora DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by ReplicationSourceIdentifier is encrypted, you must also specify the PreSignedUrl parameter. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a new Amazon Aurora DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by ReplicationSourceIdentifier is encrypted, you must also specify the PreSignedUrl parameter. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def createDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterResult, 
@@ -406,7 +406,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+    * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def createDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
@@ -423,7 +423,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+    * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def createDBClusterEndpoint(params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
@@ -441,7 +441,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new DB cluster parameter group. Parameters in a DB cluster parameter group apply to all of the instances in a DB cluster.  A DB cluster parameter group is initially created with the default parameters for the database engine used by instances in the DB cluster. To provide custom values for any of the parameters, you must modify the group after creating it using ModifyDBClusterParameterGroup. Once you've created a DB cluster parameter group, you need to associate it with your DB cluster using ModifyDBCluster. When you associate a new DB cluster parameter group with a running DB cluster, you need to reboot the DB instances in the DB cluster without failover for the new DB cluster parameter group and associated settings to take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the DB cluster parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a new DB cluster parameter group. Parameters in a DB cluster parameter group apply to all of the instances in a DB cluster.  A DB cluster parameter group is initially created with the default parameters for the database engine used by instances in the DB cluster. To provide custom values for any of the parameters, you must modify the group after creating it using ModifyDBClusterParameterGroup. Once you've created a DB cluster parameter group, you need to associate it with your DB cluster using ModifyDBCluster. When you associate a new DB cluster parameter group with a running DB cluster, you need to reboot the DB instances in the DB cluster without failover for the new DB cluster parameter group and associated settings to take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the DB cluster parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def createDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterParameterGroupResult, 
@@ -458,7 +458,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new DB cluster parameter group. Parameters in a DB cluster parameter group apply to all of the instances in a DB cluster.  A DB cluster parameter group is initially created with the default parameters for the database engine used by instances in the DB cluster. To provide custom values for any of the parameters, you must modify the group after creating it using ModifyDBClusterParameterGroup. Once you've created a DB cluster parameter group, you need to associate it with your DB cluster using ModifyDBCluster. When you associate a new DB cluster parameter group with a running DB cluster, you need to reboot the DB instances in the DB cluster without failover for the new DB cluster parameter group and associated settings to take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the DB cluster parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a new DB cluster parameter group. Parameters in a DB cluster parameter group apply to all of the instances in a DB cluster.  A DB cluster parameter group is initially created with the default parameters for the database engine used by instances in the DB cluster. To provide custom values for any of the parameters, you must modify the group after creating it using ModifyDBClusterParameterGroup. Once you've created a DB cluster parameter group, you need to associate it with your DB cluster using ModifyDBCluster. When you associate a new DB cluster parameter group with a running DB cluster, you need to reboot the DB instances in the DB cluster without failover for the new DB cluster parameter group and associated settings to take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the DB cluster parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def createDBClusterParameterGroup(params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterParameterGroupMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterParameterGroupResult, 
@@ -476,7 +476,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a snapshot of a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a snapshot of a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def createDBClusterSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterSnapshotResult, 
@@ -493,7 +493,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a snapshot of a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a snapshot of a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def createDBClusterSnapshot(params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterSnapshotMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterSnapshotResult, 
@@ -756,7 +756,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+    *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database.   This action only applies to Aurora DB clusters. 
     */
   def createGlobalCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterResult, 
@@ -773,7 +773,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+    *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database.   This action only applies to Aurora DB clusters. 
     */
   def createGlobalCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterResult, 
@@ -826,7 +826,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def deleteDBCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterResult, 
@@ -843,7 +843,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def deleteDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterResult, 
@@ -861,7 +861,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+    * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def deleteDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
@@ -878,7 +878,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+    * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def deleteDBClusterEndpoint(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
@@ -896,14 +896,14 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes a specified DB cluster parameter group. The DB cluster parameter group to be deleted can't be associated with any DB clusters. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Deletes a specified DB cluster parameter group. The DB cluster parameter group to be deleted can't be associated with any DB clusters. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def deleteDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDBClusterParameterGroup(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a specified DB cluster parameter group. The DB cluster parameter group to be deleted can't be associated with any DB clusters. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Deletes a specified DB cluster parameter group. The DB cluster parameter group to be deleted can't be associated with any DB clusters. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def deleteDBClusterParameterGroup(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterParameterGroupMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDBClusterParameterGroup(
@@ -911,7 +911,7 @@ trait RDS
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a DB cluster snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB cluster snapshot must be in the available state to be deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Deletes a DB cluster snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB cluster snapshot must be in the available state to be deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def deleteDBClusterSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterSnapshotResult, 
@@ -928,7 +928,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes a DB cluster snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB cluster snapshot must be in the available state to be deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Deletes a DB cluster snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB cluster snapshot must be in the available state to be deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def deleteDBClusterSnapshot(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterSnapshotMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterSnapshotResult, 
@@ -1131,7 +1131,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+    *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first.   This action only applies to Aurora DB clusters. 
     */
   def deleteGlobalCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterResult, 
@@ -1148,7 +1148,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+    *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first.   This action only applies to Aurora DB clusters. 
     */
   def deleteGlobalCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterResult, 
@@ -1251,7 +1251,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterBacktracks(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterBacktrackMessage, 
@@ -1268,7 +1268,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterBacktracks(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterBacktracksMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterBacktrackMessage, 
@@ -1286,7 +1286,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about endpoints for an Amazon Aurora DB cluster.
+    * Returns information about endpoints for an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterEndpoints(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpointMessage, 
@@ -1303,7 +1303,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about endpoints for an Amazon Aurora DB cluster.
+    * Returns information about endpoints for an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterEndpoints(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterEndpointsMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpointMessage, 
@@ -1321,7 +1321,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Returns a list of DBClusterParameterGroup descriptions. If a DBClusterParameterGroupName parameter is specified, the list will contain only the description of the specified DB cluster parameter group.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    *  Returns a list of DBClusterParameterGroup descriptions. If a DBClusterParameterGroupName parameter is specified, the list will contain only the description of the specified DB cluster parameter group.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterParameterGroups(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterParameterGroupsMessage, 
@@ -1338,7 +1338,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Returns a list of DBClusterParameterGroup descriptions. If a DBClusterParameterGroupName parameter is specified, the list will contain only the description of the specified DB cluster parameter group.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    *  Returns a list of DBClusterParameterGroup descriptions. If a DBClusterParameterGroupName parameter is specified, the list will contain only the description of the specified DB cluster parameter group.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterParameterGroups(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterParameterGroupsMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterParameterGroupsMessage, 
@@ -1356,7 +1356,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns the detailed parameter list for a particular DB cluster parameter group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Returns the detailed parameter list for a particular DB cluster parameter group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterParameters(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterParameterGroupDetails, 
@@ -1373,7 +1373,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns the detailed parameter list for a particular DB cluster parameter group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Returns the detailed parameter list for a particular DB cluster parameter group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterParameters(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterParametersMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterParameterGroupDetails, 
@@ -1391,7 +1391,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot. When sharing snapshots with other AWS accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If all is included in the list of values for the restore attribute, then the manual DB cluster snapshot is public and can be copied or restored by all AWS accounts. To add or remove access for an AWS account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the ModifyDBClusterSnapshotAttribute API action.
+    * Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot. When sharing snapshots with other AWS accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If all is included in the list of values for the restore attribute, then the manual DB cluster snapshot is public and can be copied or restored by all AWS accounts. To add or remove access for an AWS account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the ModifyDBClusterSnapshotAttribute API action.  This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterSnapshotAttributes(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterSnapshotAttributesResult, 
@@ -1408,7 +1408,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot. When sharing snapshots with other AWS accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If all is included in the list of values for the restore attribute, then the manual DB cluster snapshot is public and can be copied or restored by all AWS accounts. To add or remove access for an AWS account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the ModifyDBClusterSnapshotAttribute API action.
+    * Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot. When sharing snapshots with other AWS accounts, DescribeDBClusterSnapshotAttributes returns the restore attribute and a list of IDs for the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If all is included in the list of values for the restore attribute, then the manual DB cluster snapshot is public and can be copied or restored by all AWS accounts. To add or remove access for an AWS account to copy or restore a manual DB cluster snapshot, or to make the manual DB cluster snapshot public or private, use the ModifyDBClusterSnapshotAttribute API action.  This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterSnapshotAttributes(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterSnapshotAttributesMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterSnapshotAttributesResult, 
@@ -1426,7 +1426,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about DB cluster snapshots. This API action supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Returns information about DB cluster snapshots. This API action supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterSnapshots(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterSnapshotMessage, 
@@ -1443,7 +1443,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about DB cluster snapshots. This API action supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Returns information about DB cluster snapshots. This API action supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusterSnapshots(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterSnapshotsMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterSnapshotMessage, 
@@ -1461,7 +1461,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about provisioned Aurora DB clusters. This API supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Returns information about provisioned Aurora DB clusters. This API supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusters(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterMessage, 
@@ -1478,7 +1478,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about provisioned Aurora DB clusters. This API supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Returns information about provisioned Aurora DB clusters. This API supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeDBClusters(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClustersMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterMessage, 
@@ -2021,7 +2021,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeGlobalClusters(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.GlobalClustersMessage, 
@@ -2038,7 +2038,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def describeGlobalClusters(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeGlobalClustersMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.GlobalClustersMessage, 
@@ -2359,7 +2359,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Forces a failover for a DB cluster. A failover for a DB cluster promotes one of the Aurora Replicas (read-only instances) in the DB cluster to be the primary instance (the cluster writer). Amazon Aurora will automatically fail over to an Aurora Replica, if one exists, when the primary instance fails. You can force a failover when you want to simulate a failure of a primary instance for testing. Because each instance in a DB cluster has its own endpoint address, you will need to clean up and re-establish any existing connections that use those endpoint addresses when the failover is complete. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Forces a failover for a DB cluster. A failover for a DB cluster promotes one of the Aurora Replicas (read-only instances) in the DB cluster to be the primary instance (the cluster writer). Amazon Aurora will automatically fail over to an Aurora Replica, if one exists, when the primary instance fails. You can force a failover when you want to simulate a failure of a primary instance for testing. Because each instance in a DB cluster has its own endpoint address, you will need to clean up and re-establish any existing connections that use those endpoint addresses when the failover is complete. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def failoverDBCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.FailoverDBClusterResult, 
@@ -2376,7 +2376,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Forces a failover for a DB cluster. A failover for a DB cluster promotes one of the Aurora Replicas (read-only instances) in the DB cluster to be the primary instance (the cluster writer). Amazon Aurora will automatically fail over to an Aurora Replica, if one exists, when the primary instance fails. You can force a failover when you want to simulate a failure of a primary instance for testing. Because each instance in a DB cluster has its own endpoint address, you will need to clean up and re-establish any existing connections that use those endpoint addresses when the failover is complete. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Forces a failover for a DB cluster. A failover for a DB cluster promotes one of the Aurora Replicas (read-only instances) in the DB cluster to be the primary instance (the cluster writer). Amazon Aurora will automatically fail over to an Aurora Replica, if one exists, when the primary instance fails. You can force a failover when you want to simulate a failure of a primary instance for testing. Because each instance in a DB cluster has its own endpoint address, you will need to clean up and re-establish any existing connections that use those endpoint addresses when the failover is complete. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def failoverDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.FailoverDBClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.FailoverDBClusterResult, 
@@ -2429,7 +2429,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Set the capacity of an Aurora Serverless DB cluster to a specific value. Aurora Serverless scales seamlessly based on the workload on the DB cluster. In some cases, the capacity might not scale fast enough to meet a sudden change in workload, such as a large number of new transactions. Call ModifyCurrentDBClusterCapacity to set the capacity explicitly. After this call sets the DB cluster capacity, Aurora Serverless can automatically scale the DB cluster based on the cooldown period for scaling up and the cooldown period for scaling down. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.  If you call ModifyCurrentDBClusterCapacity with the default TimeoutAction, connections that prevent Aurora Serverless from finding a scaling point might be dropped. For more information about scaling points, see  Autoscaling for Aurora Serverless in the Amazon Aurora User Guide. 
+    * Set the capacity of an Aurora Serverless DB cluster to a specific value. Aurora Serverless scales seamlessly based on the workload on the DB cluster. In some cases, the capacity might not scale fast enough to meet a sudden change in workload, such as a large number of new transactions. Call ModifyCurrentDBClusterCapacity to set the capacity explicitly. After this call sets the DB cluster capacity, Aurora Serverless can automatically scale the DB cluster based on the cooldown period for scaling up and the cooldown period for scaling down. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.  If you call ModifyCurrentDBClusterCapacity with the default TimeoutAction, connections that prevent Aurora Serverless from finding a scaling point might be dropped. For more information about scaling points, see  Autoscaling for Aurora Serverless in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def modifyCurrentDBClusterCapacity(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterCapacityInfo, 
@@ -2446,7 +2446,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Set the capacity of an Aurora Serverless DB cluster to a specific value. Aurora Serverless scales seamlessly based on the workload on the DB cluster. In some cases, the capacity might not scale fast enough to meet a sudden change in workload, such as a large number of new transactions. Call ModifyCurrentDBClusterCapacity to set the capacity explicitly. After this call sets the DB cluster capacity, Aurora Serverless can automatically scale the DB cluster based on the cooldown period for scaling up and the cooldown period for scaling down. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.  If you call ModifyCurrentDBClusterCapacity with the default TimeoutAction, connections that prevent Aurora Serverless from finding a scaling point might be dropped. For more information about scaling points, see  Autoscaling for Aurora Serverless in the Amazon Aurora User Guide. 
+    * Set the capacity of an Aurora Serverless DB cluster to a specific value. Aurora Serverless scales seamlessly based on the workload on the DB cluster. In some cases, the capacity might not scale fast enough to meet a sudden change in workload, such as a large number of new transactions. Call ModifyCurrentDBClusterCapacity to set the capacity explicitly. After this call sets the DB cluster capacity, Aurora Serverless can automatically scale the DB cluster based on the cooldown period for scaling up and the cooldown period for scaling down. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.  If you call ModifyCurrentDBClusterCapacity with the default TimeoutAction, connections that prevent Aurora Serverless from finding a scaling point might be dropped. For more information about scaling points, see  Autoscaling for Aurora Serverless in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def modifyCurrentDBClusterCapacity(params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyCurrentDBClusterCapacityMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterCapacityInfo, 
@@ -2464,7 +2464,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def modifyDBCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterResult, 
@@ -2481,7 +2481,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def modifyDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterResult, 
@@ -2499,7 +2499,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+    * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
@@ -2516,7 +2516,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+    * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterEndpoint(params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
@@ -2534,7 +2534,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified. 
+    *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified.   This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterParameterGroupNameMessage, 
@@ -2551,7 +2551,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified. 
+    *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified.   This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterParameterGroup(params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterParameterGroupMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterParameterGroupNameMessage, 
@@ -2569,7 +2569,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.
+    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.  This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterSnapshotAttribute(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterSnapshotAttributeResult, 
@@ -2586,7 +2586,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.
+    * Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can't use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.  This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterSnapshotAttribute(params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterSnapshotAttributeMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterSnapshotAttributeResult, 
@@ -2814,7 +2814,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def modifyGlobalCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterResult, 
@@ -2831,7 +2831,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def modifyGlobalCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterResult, 
@@ -2919,7 +2919,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Promotes a Read Replica DB cluster to a standalone DB cluster.
+    * Promotes a Read Replica DB cluster to a standalone DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def promoteReadReplicaDBCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.PromoteReadReplicaDBClusterResult, 
@@ -2936,7 +2936,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Promotes a Read Replica DB cluster to a standalone DB cluster.
+    * Promotes a Read Replica DB cluster to a standalone DB cluster.  This action only applies to Aurora DB clusters. 
     */
   def promoteReadReplicaDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.PromoteReadReplicaDBClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.PromoteReadReplicaDBClusterResult, 
@@ -3024,7 +3024,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+    *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region.   This action only applies to Aurora DB clusters. 
     */
   def removeFromGlobalCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterResult, 
@@ -3041,7 +3041,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+    *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region.   This action only applies to Aurora DB clusters. 
     */
   def removeFromGlobalCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterResult, 
@@ -3059,14 +3059,14 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Disassociates an AWS Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.
+    * Disassociates an AWS Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.  This action only applies to Aurora DB clusters. 
     */
   def removeRoleFromDBCluster(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeRoleFromDBCluster(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Disassociates an AWS Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.
+    * Disassociates an AWS Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.  This action only applies to Aurora DB clusters. 
     */
   def removeRoleFromDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.RemoveRoleFromDBClusterMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removeRoleFromDBCluster(
@@ -3139,7 +3139,7 @@ trait RDS
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    *  Modifies the parameters of a DB cluster parameter group to the default value. To reset specific parameters submit a list of the following: ParameterName and ApplyMethod. To reset the entire DB cluster parameter group, specify the DBClusterParameterGroupName and ResetAllParameters parameters.   When resetting the entire group, dynamic parameters are updated immediately and static parameters are set to pending-reboot to take effect on the next DB instance restart or RebootDBInstance request. You must call RebootDBInstance for every DB instance in your DB cluster that you want the updated static parameter to apply to. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    *  Modifies the parameters of a DB cluster parameter group to the default value. To reset specific parameters submit a list of the following: ParameterName and ApplyMethod. To reset the entire DB cluster parameter group, specify the DBClusterParameterGroupName and ResetAllParameters parameters.   When resetting the entire group, dynamic parameters are updated immediately and static parameters are set to pending-reboot to take effect on the next DB instance restart or RebootDBInstance request. You must call RebootDBInstance for every DB instance in your DB cluster that you want the updated static parameter to apply to. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def resetDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterParameterGroupNameMessage, 
@@ -3156,7 +3156,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Modifies the parameters of a DB cluster parameter group to the default value. To reset specific parameters submit a list of the following: ParameterName and ApplyMethod. To reset the entire DB cluster parameter group, specify the DBClusterParameterGroupName and ResetAllParameters parameters.   When resetting the entire group, dynamic parameters are updated immediately and static parameters are set to pending-reboot to take effect on the next DB instance restart or RebootDBInstance request. You must call RebootDBInstance for every DB instance in your DB cluster that you want the updated static parameter to apply to. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    *  Modifies the parameters of a DB cluster parameter group to the default value. To reset specific parameters submit a list of the following: ParameterName and ApplyMethod. To reset the entire DB cluster parameter group, specify the DBClusterParameterGroupName and ResetAllParameters parameters.   When resetting the entire group, dynamic parameters are updated immediately and static parameters are set to pending-reboot to take effect on the next DB instance restart or RebootDBInstance request. You must call RebootDBInstance for every DB instance in your DB cluster that you want the updated static parameter to apply to. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def resetDBClusterParameterGroup(params: awsDashSdkLib.clientsRdsMod.RDSNs.ResetDBClusterParameterGroupMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterParameterGroupNameMessage, 
@@ -3209,7 +3209,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket. Amazon RDS must be authorized to access the Amazon S3 bucket and the data must be created using the Percona XtraBackup utility as described in  Migrating Data to an Amazon Aurora MySQL DB Cluster in the Amazon Aurora User Guide.
+    * Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket. Amazon RDS must be authorized to access the Amazon S3 bucket and the data must be created using the Percona XtraBackup utility as described in  Migrating Data to an Amazon Aurora MySQL DB Cluster in the Amazon Aurora User Guide.  This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterFromS3(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterFromS3Result, 
@@ -3226,7 +3226,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket. Amazon RDS must be authorized to access the Amazon S3 bucket and the data must be created using the Percona XtraBackup utility as described in  Migrating Data to an Amazon Aurora MySQL DB Cluster in the Amazon Aurora User Guide.
+    * Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket. Amazon RDS must be authorized to access the Amazon S3 bucket and the data must be created using the Percona XtraBackup utility as described in  Migrating Data to an Amazon Aurora MySQL DB Cluster in the Amazon Aurora User Guide.  This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterFromS3(params: awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterFromS3Message): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterFromS3Result, 
@@ -3244,7 +3244,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterFromSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterFromSnapshotResult, 
@@ -3261,7 +3261,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterFromSnapshot(params: awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterFromSnapshotMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterFromSnapshotResult, 
@@ -3279,7 +3279,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Restores a DB cluster to an arbitrary point in time. Users can restore to any point in time before LatestRestorableTime for up to BackupRetentionPeriod days. The target DB cluster is created from the source DB cluster with the same configuration as the original DB cluster, except that the new DB cluster is created with the default DB security group.   This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterToPointInTime action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Restores a DB cluster to an arbitrary point in time. Users can restore to any point in time before LatestRestorableTime for up to BackupRetentionPeriod days. The target DB cluster is created from the source DB cluster with the same configuration as the original DB cluster, except that the new DB cluster is created with the default DB security group.   This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterToPointInTime action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterToPointInTime(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterToPointInTimeResult, 
@@ -3296,7 +3296,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Restores a DB cluster to an arbitrary point in time. Users can restore to any point in time before LatestRestorableTime for up to BackupRetentionPeriod days. The target DB cluster is created from the source DB cluster with the same configuration as the original DB cluster, except that the new DB cluster is created with the default DB security group.   This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterToPointInTime action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+    * Restores a DB cluster to an arbitrary point in time. Users can restore to any point in time before LatestRestorableTime for up to BackupRetentionPeriod days. The target DB cluster is created from the source DB cluster with the same configuration as the original DB cluster, except that the new DB cluster is created with the default DB security group.   This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterToPointInTime action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterToPointInTime(params: awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterToPointInTimeMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RestoreDBClusterToPointInTimeResult, 
@@ -3454,7 +3454,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the stop-db-cluster AWS CLI command, or the StopDBCluster action. For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide. 
+    * Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the stop-db-cluster AWS CLI command, or the StopDBCluster action. For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def startDBCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.StartDBClusterResult, 
@@ -3471,7 +3471,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the stop-db-cluster AWS CLI command, or the StopDBCluster action. For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide. 
+    * Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the stop-db-cluster AWS CLI command, or the StopDBCluster action. For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def startDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.StartDBClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.StartDBClusterResult, 
@@ -3524,7 +3524,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Stops an Amazon Aurora DB cluster. When you stop a DB cluster, Aurora retains the DB cluster's metadata, including its endpoints and DB parameter groups. Aurora also retains the transaction logs so you can do a point-in-time restore if necessary.  For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide. 
+    *  Stops an Amazon Aurora DB cluster. When you stop a DB cluster, Aurora retains the DB cluster's metadata, including its endpoints and DB parameter groups. Aurora also retains the transaction logs so you can do a point-in-time restore if necessary.  For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def stopDBCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.StopDBClusterResult, 
@@ -3541,7 +3541,7 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Stops an Amazon Aurora DB cluster. When you stop a DB cluster, Aurora retains the DB cluster's metadata, including its endpoints and DB parameter groups. Aurora also retains the transaction logs so you can do a point-in-time restore if necessary.  For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide. 
+    *  Stops an Amazon Aurora DB cluster. When you stop a DB cluster, Aurora retains the DB cluster's metadata, including its endpoints and DB parameter groups. Aurora also retains the transaction logs so you can do a point-in-time restore if necessary.  For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def stopDBCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.StopDBClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.StopDBClusterResult, 

@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val debug: debugLib.debugMod.debugNs.IDebugger = js.native
   val debug7z: debugLib.debugMod.debugNs.IDebugger = js.native
   val log: builderDashUtilLib.outLogMod.Logger = js.native
-  def addValue[K, T](map: stdLib.Map[K, js.Array[T]], key: K, value: T): scala.Unit = js.native
+  def addValue[K, T](map: nodeLib.Map[K, js.Array[T]], key: K, value: T): scala.Unit = js.native
   def archFromString(name: java.lang.String): builderDashUtilLib.outArchMod.Arch = js.native
   def asArray[T](): js.Array[T] = js.native
   def asArray[T](v: T): js.Array[T] = js.native

@@ -13,7 +13,11 @@ trait ScreenSpaceEventHandler extends js.Object {
   def isDestroyed(): scala.Boolean = js.native
   def removeInputAction(`type`: scala.Double): scala.Unit = js.native
   def removeInputAction(`type`: scala.Double, modifier: scala.Double): scala.Unit = js.native
-  def setInputAction(action: js.Function0[scala.Unit], `type`: scala.Double): scala.Unit = js.native
-  def setInputAction(action: js.Function0[scala.Unit], `type`: scala.Double, modifier: scala.Double): scala.Unit = js.native
+  def setInputAction(action: js.Function1[/* click */ cesiumLib.Anon_Position, scala.Unit], `type`: scala.Double): scala.Unit = js.native
+  def setInputAction(
+    action: js.Function1[/* click */ cesiumLib.Anon_Position, scala.Unit],
+    `type`: scala.Double,
+    modifier: scala.Double
+  ): scala.Unit = js.native
 }
 

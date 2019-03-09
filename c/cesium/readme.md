@@ -1,5 +1,5 @@
 ```
-// Type definitions for cesium 1.47
+// Type definitions for cesium 1.54
 // Project: http://cesiumjs.org
 // Definitions by: Aigars Zeiza <https://github.com/Zuzon>
 //                 Harry Nicholls <https://github.com/hnipps>

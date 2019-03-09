@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 trait Calendar
   extends reactLib.reactMod.Component[CalendarProps, CalendarState, js.Any] {
   var prefixCls: js.UndefOr[java.lang.String] = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MCalendar(nextProps: CalendarProps): scala.Unit = js.native
   def dateCellRender(value: momentLib.momentMod.momentNs.Moment): reactLib.reactMod.Global.JSXNs.Element = js.native
   def getDateRange(validRange: js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment]): js.Function1[/* current */ momentLib.momentMod.momentNs.Moment, scala.Boolean] = js.native
   def getDateRange(

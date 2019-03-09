@@ -1,5 +1,5 @@
 ```
-// Type definitions for ramda 0.25
+// Type definitions for ramda 0.26
 // Project: https://github.com/donnut/typescript-ramda, https://ramdajs.com
 // Definitions by: Erwin Poeze <https://github.com/donnut>
 //                 Tycho Grouwstra <https://github.com/tycho01>
@@ -28,6 +28,7 @@
 //                 John Ottenlips <https://github.com/jottenlips>
 //                 Nitesh Phadatare <https://github.com/minitesh>
 //                 Krantisinh Deshmukh <https://github.com/krantisinh>
+//                 Pierre-Antoine Mills <https://github.com/pirix-gh>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 ```

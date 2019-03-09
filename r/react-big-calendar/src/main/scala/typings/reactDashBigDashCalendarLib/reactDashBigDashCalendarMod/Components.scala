@@ -24,6 +24,9 @@ trait Components extends js.Object {
     */
   var header: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[HeaderProps]] = js.undefined
   var month: js.UndefOr[reactDashBigDashCalendarLib.Anon_DateHeader] = js.undefined
+  var timeGutterHeader: js.UndefOr[
+    reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
+  ] = js.undefined
   var timeGutterWrapper: js.UndefOr[
     reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
   ] = js.undefined
@@ -46,6 +49,7 @@ object Components {
     eventWrapper: reactLib.reactMod.ReactNs.ComponentType[EventWrapperProps[Event]] = null,
     header: reactLib.reactMod.ReactNs.ComponentType[HeaderProps] = null,
     month: reactDashBigDashCalendarLib.Anon_DateHeader = null,
+    timeGutterHeader: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
     timeGutterWrapper: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
     timeSlotWrapper: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
     toolbar: reactLib.reactMod.ReactNs.ComponentType[ToolbarProps] = null,
@@ -61,6 +65,7 @@ object Components {
     if (eventWrapper != null) __obj.updateDynamic("eventWrapper")(eventWrapper.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (month != null) __obj.updateDynamic("month")(month)
+    if (timeGutterHeader != null) __obj.updateDynamic("timeGutterHeader")(timeGutterHeader.asInstanceOf[js.Any])
     if (timeGutterWrapper != null) __obj.updateDynamic("timeGutterWrapper")(timeGutterWrapper.asInstanceOf[js.Any])
     if (timeSlotWrapper != null) __obj.updateDynamic("timeSlotWrapper")(timeSlotWrapper.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])

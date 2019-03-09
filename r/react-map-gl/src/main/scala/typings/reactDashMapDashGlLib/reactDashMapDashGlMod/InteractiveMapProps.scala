@@ -29,6 +29,7 @@ trait InteractiveMapProps extends StaticMapProps {
   var onMouseMove: js.UndefOr[js.Function1[/* event */ PointerEvent, scala.Unit]] = js.undefined
   var onMouseOut: js.UndefOr[js.Function1[/* event */ PointerEvent, scala.Unit]] = js.undefined
   var onMouseUp: js.UndefOr[js.Function1[/* event */ PointerEvent, scala.Unit]] = js.undefined
+  var onNativeClick: js.UndefOr[js.Function1[/* event */ PointerEvent, scala.Unit]] = js.undefined
   var onTouchEnd: js.UndefOr[js.Function1[/* event */ PointerEvent, scala.Unit]] = js.undefined
   var onTouchMove: js.UndefOr[js.Function1[/* event */ PointerEvent, scala.Unit]] = js.undefined
   var onTouchStart: js.UndefOr[js.Function1[/* event */ PointerEvent, scala.Unit]] = js.undefined
@@ -86,6 +87,7 @@ object InteractiveMapProps {
     onMouseMove: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
     onMouseOut: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
     onMouseUp: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
+    onNativeClick: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
     onResize: js.Function1[/* dimensions */ reactDashMapDashGlLib.Anon_Height, scala.Unit] = null,
     onTouchEnd: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
     onTouchMove: js.Function1[/* event */ PointerEvent, scala.Unit] = null,
@@ -152,6 +154,7 @@ object InteractiveMapProps {
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
     if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onNativeClick != null) __obj.updateDynamic("onNativeClick")(onNativeClick)
     if (onResize != null) __obj.updateDynamic("onResize")(onResize)
     if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)

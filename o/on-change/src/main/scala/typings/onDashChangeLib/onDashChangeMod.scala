@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("on-change", JSImport.Namespace)
 @js.native
 object onDashChangeMod extends js.Object {
-  def apply[T /* <: js.Object */](`object`: T, onChange: js.Function0[scala.Unit]): T = js.native
+  def default[ObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](`object`: ObjectType, onChange: js.Function0[scala.Unit]): ObjectType = js.native
 }
 

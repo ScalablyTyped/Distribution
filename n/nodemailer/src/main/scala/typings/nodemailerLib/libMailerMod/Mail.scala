@@ -13,7 +13,7 @@ trait Mail
   var MailMessage: nodemailerLib.libMailerMailDashMessageMod.namespaced = js.native
   var dkim: nodemailerLib.libDkimMod.namespaced = js.native
   var logger: nodemailerLib.libSharedMod.Logger = js.native
-  var meta: stdLib.Map[java.lang.String, _] = js.native
+  var meta: nodeLib.Map[java.lang.String, _] = js.native
   var options: nodemailerLib.libMailerMod.MailNs.Options = js.native
   var transporter: nodemailerLib.nodemailerMod.Transport = js.native
   @JSName("addListener")
@@ -187,7 +187,7 @@ trait Mail
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def set(key: java.lang.String, value: js.Any): stdLib.Map[java.lang.String, _] = js.native
+  def set(key: java.lang.String, value: js.Any): nodeLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_oauth2_provision_cb(
     key: nodemailerLib.nodemailerLibStrings.oauth2_provision_cb,
@@ -202,7 +202,7 @@ trait Mail
       ], 
       scala.Unit
     ]
-  ): stdLib.Map[java.lang.String, _] = js.native
+  ): nodeLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_http(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_http,
@@ -216,7 +216,7 @@ trait Mail
       ], 
       scala.Unit
     ]
-  ): stdLib.Map[java.lang.String, _] = js.native
+  ): nodeLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_https(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_https,
@@ -230,7 +230,7 @@ trait Mail
       ], 
       scala.Unit
     ]
-  ): stdLib.Map[java.lang.String, _] = js.native
+  ): nodeLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_socks(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks,
@@ -244,7 +244,7 @@ trait Mail
       ], 
       scala.Unit
     ]
-  ): stdLib.Map[java.lang.String, _] = js.native
+  ): nodeLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_socks4(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4,
@@ -258,7 +258,7 @@ trait Mail
       ], 
       scala.Unit
     ]
-  ): stdLib.Map[java.lang.String, _] = js.native
+  ): nodeLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_socks4a(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4a,
@@ -272,7 +272,7 @@ trait Mail
       ], 
       scala.Unit
     ]
-  ): stdLib.Map[java.lang.String, _] = js.native
+  ): nodeLib.Map[java.lang.String, _] = js.native
   @JSName("set")
   def set_proxy_handler_socks5(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks5,
@@ -286,7 +286,7 @@ trait Mail
       ], 
       scala.Unit
     ]
-  ): stdLib.Map[java.lang.String, _] = js.native
+  ): nodeLib.Map[java.lang.String, _] = js.native
   /** Sets up proxy handler for a Nodemailer object */
   def setupProxy(proxyUrl: java.lang.String): scala.Unit = js.native
   def use(step: java.lang.String, plugin: nodemailerLib.libMailerMod.MailNs.PluginFunction): this.type = js.native

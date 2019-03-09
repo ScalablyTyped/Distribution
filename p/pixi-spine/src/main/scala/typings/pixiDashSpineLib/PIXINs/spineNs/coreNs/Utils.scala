@@ -30,6 +30,6 @@ object Utils extends js.Object {
   def setArraySize[T](array: js.Array[T], size: scala.Double, value: js.Any): js.Array[T] = js.native
   def toFloatArray(array: js.Array[scala.Double]): js.Array[scala.Double] | stdLib.Float32Array = js.native
   def toSinglePrecision(value: scala.Double): scala.Double = js.native
-  def webkit602BugfixHelper(alpha: scala.Double, pose: pixiDashSpineLib.PIXINs.spineNs.coreNs.MixPose): scala.Unit = js.native
+  def webkit602BugfixHelper(alpha: scala.Double, blend: pixiDashSpineLib.PIXINs.spineNs.coreNs.MixBlend): scala.Unit = js.native
 }
 

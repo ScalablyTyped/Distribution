@@ -36,7 +36,7 @@ object SageMakerNs extends js.Object {
       */
     var MetricDefinitions: js.UndefOr[MetricDefinitionList] = js.undefined
     /**
-      * The registry path of the Docker image that contains the training algorithm. For information about docker registry paths for built-in algorithms, see Algorithms Provided by Amazon SageMaker: Common Parameters.
+      * The registry path of the Docker image that contains the training algorithm. For information about docker registry paths for built-in algorithms, see Algorithms Provided by Amazon SageMaker: Common Parameters. Amazon SageMaker supports both registry/repository[:tag] and registry/repository[@digest] image path formats. For more information, see Using Your Own Algorithms with Amazon SageMaker.
       */
     var TrainingImage: js.UndefOr[AlgorithmImage] = js.undefined
     /**
@@ -285,7 +285,7 @@ object SageMakerNs extends js.Object {
   
   trait ContainerDefinition extends js.Object {
     /**
-      * The DNS host name for the container after Amazon SageMaker deploys it.
+      * This parameter is ignored.
       */
     var ContainerHostname: js.UndefOr[ContainerHostname] = js.undefined
     /**
@@ -652,6 +652,10 @@ object SageMakerNs extends js.Object {
       */
     var RoleArn: RoleArn
     /**
+      * Whether root access is enabled or disabled for users of the notebook instance. The default value is Enabled.  Lifecycle configurations need root access to be able to set up a notebook instance. Because of this, lifecycle configurations associated with a notebook instance always run with root access even if you disable root access for users. 
+      */
+    var RootAccess: js.UndefOr[RootAccess] = js.undefined
+    /**
       * The VPC security group IDs, in the form sg-xxxxxxxx. The security groups must be for the same VPC as specified in the subnet. 
       */
     var SecurityGroupIds: js.UndefOr[SecurityGroupIds] = js.undefined
@@ -722,7 +726,7 @@ object SageMakerNs extends js.Object {
       */
     var AlgorithmSpecification: AlgorithmSpecification
     /**
-      * To encrypt all communications between ML compute instances in distributed training, choose True,. Encryption provides greater security for distributed training, but training can take longer because of additional communications between ML compute instances.
+      * To encrypt all communications between ML compute instances in distributed training, choose True. Encryption provides greater security for distributed training, but training might take longer. How long it takes depends on the amount of communication between compute instances, especially if you use a deep learning algorithm in distributed training. For more information, see Protect Communications Between ML Compute Instances in a Distributed Training Job.
       */
     var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
     /**
@@ -776,7 +780,7 @@ object SageMakerNs extends js.Object {
   
   trait CreateTransformJobRequest extends js.Object {
     /**
-      * Determines the number of records to include in a mini-batch. If you want to include only one record in a mini-batch, specify SingleRecord.. If you want mini-batches to contain a maximum of the number of records specified in the MaxPayloadInMB parameter, specify MultiRecord.  If you set SplitType to Line and BatchStrategy to MultiRecord, a batch transform automatically splits your input data into the specified payload size. There's no need to split the dataset into smaller files or to use larger payload sizes unless the records in your dataset are very large.
+      * Specifies the number of records to include in a mini-batch for an HTTP inference request. A record  is a single unit of input data that inference can be made on. For example, a single line in a CSV file is a record.  To enable the batch strategy, you must set SplitType to Line, RecordIO, or TFRecord. To use only one record when making an HTTP invocation request to a container, set BatchStrategy to SingleRecord and SplitType to Line. To fit as many records in a mini-batch as can fit within the MaxPayloadInMB limit, set BatchStrategy to MultiRecord and SplitType to Line.
       */
     var BatchStrategy: js.UndefOr[BatchStrategy] = js.undefined
     /**
@@ -784,11 +788,11 @@ object SageMakerNs extends js.Object {
       */
     var Environment: js.UndefOr[TransformEnvironmentMap] = js.undefined
     /**
-      * The maximum number of parallel requests that can be sent to an algorithm container on an instance. This is good for algorithms that implement multiple workers on larger instances . The default value is 1. To allow Amazon SageMaker to determine the appropriate number for MaxConcurrentTransforms, do not set the value in the API.
+      * The maximum number of parallel requests that can be sent to each instance in a transform job. The default value is 1. To allow Amazon SageMaker to determine the appropriate number for MaxConcurrentTransforms, set the value to 0.
       */
     var MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined
     /**
-      * The maximum payload size allowed, in MB. A payload is the data portion of a record (without metadata). The value in MaxPayloadInMB must be greater or equal to the size of a single record. You can approximate the size of a record by dividing the size of your dataset by the number of records. Then multiply this value by the number of records you want in a mini-batch. We recommend to enter a slightly larger value than this to ensure the records fit within the maximum payload size. The default value is 6 MB.  For cases where the payload might be arbitrarily large and is transmitted using HTTP chunked encoding, set the value to 0. This feature only works in supported algorithms. Currently, Amazon SageMaker built-in algorithms do not support this feature.
+      * The maximum allowed size of the payload, in MB. A payload is the data portion of a record (without metadata). The value in MaxPayloadInMB must be greater than, or equal to, the size of a single record. To estimate the size of a record in MB, divide the size of your dataset by the number of records. To ensure that the records fit within the maximum payload size, we recommend using a slightly larger value. The default value is 6 MB.  For cases where the payload might be arbitrarily large and is transmitted using HTTP chunked encoding, set the value to 0. This feature works only in supported algorithms. Currently, Amazon SageMaker built-in algorithms do not support HTTP chunked encoding.
       */
     var MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined
     /**
@@ -1472,7 +1476,7 @@ object SageMakerNs extends js.Object {
       */
     var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
     /**
-      * Describes whether Amazon SageMaker provides internet access to the notebook instance. If this value is set to Disabled, he notebook instance does not have internet access, and cannot connect to Amazon SageMaker training and endpoint services. For more information, see Notebook Instances Are Internet-Enabled by Default.
+      * Describes whether Amazon SageMaker provides internet access to the notebook instance. If this value is set to Disabled, the notebook instance does not have internet access, and cannot connect to Amazon SageMaker training and endpoint services. For more information, see Notebook Instances Are Internet-Enabled by Default.
       */
     var DirectInternetAccess: js.UndefOr[DirectInternetAccess] = js.undefined
     /**
@@ -1515,6 +1519,10 @@ object SageMakerNs extends js.Object {
       * The Amazon Resource Name (ARN) of the IAM role associated with the instance. 
       */
     var RoleArn: js.UndefOr[RoleArn] = js.undefined
+    /**
+      * Whether root access is enabled or disabled for users of the notebook instance.  Lifecycle configurations need root access to be able to set up a notebook instance. Because of this, lifecycle configurations associated with a notebook instance always run with root access even if you disable root access for users. 
+      */
+    var RootAccess: js.UndefOr[RootAccess] = js.undefined
     /**
       * The IDs of the VPC security groups.
       */
@@ -1564,7 +1572,7 @@ object SageMakerNs extends js.Object {
       */
     var CreationTime: Timestamp
     /**
-      * To encrypt all communications between ML compute instances in distributed training, specify True. Encryption provides greater security for distributed training, but training take longer because of the additional communications between ML compute instances.
+      * To encrypt all communications between ML compute instances in distributed training, choose True. Encryption provides greater security for distributed training, but training might take longer. How long it takes depends on the amount of communication between compute instances, especially if you use a deep learning algorithm in distributed training.
       */
     var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
     /**
@@ -1662,7 +1670,7 @@ object SageMakerNs extends js.Object {
   
   trait DescribeTransformJobResponse extends js.Object {
     /**
-      *  If you want to include only one record in a batch, specify SingleRecord.. If you want batches to contain a maximum of the number of records specified in the MaxPayloadInMB parameter, specify MultiRecord.S
+      * Specifies the number of records to include in a mini-batch for an HTTP inference request. A record  is a single unit of input data that inference can be made on. For example, a single line in a CSV file is a record.  To enable the batch strategy, you must set SplitType to Line, RecordIO, or TFRecord.
       */
     var BatchStrategy: js.UndefOr[BatchStrategy] = js.undefined
     /**
@@ -1670,11 +1678,11 @@ object SageMakerNs extends js.Object {
       */
     var CreationTime: Timestamp
     /**
-      * 
+      * The environment variables to set in the Docker container. We support up to 16 key and values entries in the map.
       */
     var Environment: js.UndefOr[TransformEnvironmentMap] = js.undefined
     /**
-      * If the transform job failed, the reason that it failed.
+      * If the transform job failed, FailureReason describes why it failed. A transform job creates a log file, which includes error messages, and stores it as an Amazon S3 object. For more information, see Log Amazon SageMaker Events with Amazon CloudWatch.
       */
     var FailureReason: js.UndefOr[FailureReason] = js.undefined
     /**
@@ -1785,7 +1793,7 @@ object SageMakerNs extends js.Object {
       */
     var EndpointName: EndpointName
     /**
-      * The status of the endpoint.    OutOfService: Endpoint is not available to take incoming requests.    Creating: CreateEndpoint is executing.    Updating: UpdateEndpoint or UpdateEndpointWeightsAndCapacities is executing.    SystemUpdating: Endpoint is undergoing maintenance and cannot be updated or deleted or re-scaled until it has completed. This mainenance operation does not change any customer-specified values such as VPC config, KMS encryption, model, instance type, or instance count.    RollingBack: Endpoint fails to scale up or down or change its variant weight and is in the process of rolling back to its previous configuration. Once the rollback completes, endpoint returns to an InService status. This transitional status only applies to an endpoint that has autoscaling enabled and is undergoing variant weight or capacity changes as part of an UpdateEndpointWeightsAndCapacities call or when the UpdateEndpointWeightsAndCapacities operation is called explicitly.    InService: Endpoint is available to process incoming requests.    Deleting: DeleteEndpoint is executing.    Failed: Endpoint could not be created, updated, or re-scaled. Use DescribeEndpointOutput$FailureReason for information about the failure. DeleteEndpoint is the only operation that can be performed on a failed endpoint.   To get a list of endpoints with a specified status, use the ListEndpointsInput$StatusEquals filter.
+      * The status of the endpoint.    OutOfService: Endpoint is not available to take incoming requests.    Creating: CreateEndpoint is executing.    Updating: UpdateEndpoint or UpdateEndpointWeightsAndCapacities is executing.    SystemUpdating: Endpoint is undergoing maintenance and cannot be updated or deleted or re-scaled until it has completed. This maintenance operation does not change any customer-specified values such as VPC config, KMS encryption, model, instance type, or instance count.    RollingBack: Endpoint fails to scale up or down or change its variant weight and is in the process of rolling back to its previous configuration. Once the rollback completes, endpoint returns to an InService status. This transitional status only applies to an endpoint that has autoscaling enabled and is undergoing variant weight or capacity changes as part of an UpdateEndpointWeightsAndCapacities call or when the UpdateEndpointWeightsAndCapacities operation is called explicitly.    InService: Endpoint is available to process incoming requests.    Deleting: DeleteEndpoint is executing.    Failed: Endpoint could not be created, updated, or re-scaled. Use DescribeEndpointOutput$FailureReason for information about the failure. DeleteEndpoint is the only operation that can be performed on a failed endpoint.   To get a list of endpoints with a specified status, use the ListEndpointsInput$StatusEquals filter.
       */
     var EndpointStatus: EndpointStatus
     /**
@@ -1928,7 +1936,7 @@ object SageMakerNs extends js.Object {
       */
     var MetricDefinitions: js.UndefOr[MetricDefinitionList] = js.undefined
     /**
-      *  The registry path of the Docker image that contains the training algorithm. For information about Docker registry paths for built-in algorithms, see Algorithms Provided by Amazon SageMaker: Common Parameters.
+      *  The registry path of the Docker image that contains the training algorithm. For information about Docker registry paths for built-in algorithms, see Algorithms Provided by Amazon SageMaker: Common Parameters. Amazon SageMaker supports both registry/repository[:tag] and registry/repository[@digest] image path formats. For more information, see Using Your Own Algorithms with Amazon SageMaker.
       */
     var TrainingImage: js.UndefOr[AlgorithmImage] = js.undefined
     /**
@@ -1974,7 +1982,7 @@ object SageMakerNs extends js.Object {
       */
     var AlgorithmSpecification: HyperParameterAlgorithmSpecification
     /**
-      * To encrypt all communications between ML compute instances in distributed training, specify True. Encryption provides greater security for distributed training, but training take longer because of the additional communications between ML compute instances.
+      * To encrypt all communications between ML compute instances in distributed training, choose True. Encryption provides greater security for distributed training, but training might take longer. How long it takes depends on the amount of communication between compute instances, especially if you use a deep learning algorithm in distributed training.
       */
     var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
     /**
@@ -2584,7 +2592,7 @@ object SageMakerNs extends js.Object {
       */
     var SortBy: js.UndefOr[EndpointConfigSortKey] = js.undefined
     /**
-      * The sort order for results. The default is Ascending.
+      * The sort order for results. The default is Descending.
       */
     var SortOrder: js.UndefOr[OrderKey] = js.undefined
   }
@@ -2634,7 +2642,7 @@ object SageMakerNs extends js.Object {
       */
     var SortBy: js.UndefOr[EndpointSortKey] = js.undefined
     /**
-      * The sort order for results. The default is Ascending.
+      * The sort order for results. The default is Descending.
       */
     var SortOrder: js.UndefOr[OrderKey] = js.undefined
     /**
@@ -2876,7 +2884,7 @@ object SageMakerNs extends js.Object {
       */
     var SortBy: js.UndefOr[ModelSortKey] = js.undefined
     /**
-      * The sort order for results. The default is Ascending.
+      * The sort order for results. The default is Descending.
       */
     var SortOrder: js.UndefOr[OrderKey] = js.undefined
   }
@@ -3926,6 +3934,10 @@ object SageMakerNs extends js.Object {
       */
     var CreationTime: js.UndefOr[Timestamp] = js.undefined
     /**
+      * To encrypt all communications between ML compute instances in distributed training, choose True. Encryption provides greater security for distributed training, but training might take longer. How long it takes depends on the amount of communication between compute instances, especially if you use a deep learning algorithm in distributed training.
+      */
+    var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
+    /**
       * If the TrainingJob was created with network isolation, the value is set to true. If network isolation is enabled, nodes can't communicate beyond the VPC they run in.
       */
     var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
@@ -4151,7 +4163,7 @@ object SageMakerNs extends js.Object {
       */
     var DataSource: TransformDataSource
     /**
-      * The method to use to split the transform job's data into smaller batches. If you don't want to split the data, specify None. If you want to split records on a newline character boundary, specify Line. To split records according to the RecordIO format, specify RecordIO. The default value is None.  Amazon SageMaker sends the maximum number of records per batch in each request up to the MaxPayloadInMB limit. For more information, see RecordIO data format.  For information about the RecordIO format, see Data Format. 
+      * The method to use to split the transform job's data files into smaller batches. Splitting is necessary when the total size of each object is too large to fit in a single request. You can also use data splitting to improve performance by processing multiple concurrent mini-batches. The default value for SplitType is None, which indicates that input data files are not split, and request payloads contain the entire contents of an input object. Set the value of this parameter to Line to split records on a newline character boundary. SplitType also supports a number of record-oriented binary data formats. When splitting is enabled, the size of a mini-batch depends on the values of the BatchStrategy and MaxPayloadInMB parameters. When the value of BatchStrategy is MultiRecord, Amazon SageMaker sends the maximum number of records in each request, up to the MaxPayloadInMB limit. If the value of BatchStrategy is SingleRecord, Amazon SageMaker sends individual records in each request.  Some data formats represent a record as a binary payload wrapped with extra padding bytes. When splitting is applied to a binary data format, padding is removed if the value of BatchStrategy is set to SingleRecord. Padding is not removed if the value of BatchStrategy is set to MultiRecord. For more information about the RecordIO, see Data Format in the MXNet documentation. For more information about the TFRecord, see Consuming TFRecord data in the TensorFlow documentation. 
       */
     var SplitType: js.UndefOr[SplitType] = js.undefined
   }
@@ -4232,7 +4244,7 @@ object SageMakerNs extends js.Object {
       */
     var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
     /**
-      * The Amazon S3 path where you want Amazon SageMaker to store the results of the transform job. For example, s3://bucket-name/key-name-prefix. For every S3 object used as input for the transform job, the transformed data is stored in a corresponding subfolder in the location under the output prefix. For example, for the input data s3://bucket-name/input-name-prefix/dataset01/data.csv the transformed data is stored at s3://bucket-name/key-name-prefix/dataset01/. This is based on the original name, as a series of .part files (.part0001, part0002, etc.).
+      * The Amazon S3 path where you want Amazon SageMaker to store the results of the transform job. For example, s3://bucket-name/key-name-prefix. For every S3 object used as input for the transform job, batch transform stores the transformed data with an .out suffix in a corresponding subfolder in the location in the output prefix. For example, for the input data stored at s3://bucket-name/input-name-prefix/dataset01/data.csv, batch transform stores the transformed data at s3://bucket-name/output-name-prefix/input-name-prefix/data.csv.out. Batch transform doesn't upload partially processed objects. For an input S3 object that contains multiple records, it creates an .out file only if the transform job succeeds on the entire file. When the input contains multiple S3 objects, the batch transform job processes the listed S3 objects and uploads only the output for successfully processed objects. If any object fails in the transform job batch transform marks the job as failed to prompt investigation.
       */
     var S3OutputPath: S3Uri
   }
@@ -4560,7 +4572,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreatePresignedNotebookInstanceUrlOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Starts a model training job. After training completes, Amazon SageMaker saves the resulting model artifacts to an Amazon S3 location that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts in a deep learning service other than Amazon SageMaker, provided that you know how to use them for inferences.  In the request body, you provide the following:     AlgorithmSpecification - Identifies the training algorithm to use.     HyperParameters - Specify these algorithm-specific parameters to influence the quality of the final model. For a list of hyperparameters for each training algorithm provided by Amazon SageMaker, see Algorithms.     InputDataConfig - Describes the training dataset and the Amazon S3 location where it is stored.    OutputDataConfig - Identifies the Amazon S3 location where you want Amazon SageMaker to save the results of model training.      ResourceConfig - Identifies the resources, ML compute instances, and ML storage volumes to deploy for model training. In distributed training, you specify more than one instance.     RoleARN - The Amazon Resource Number (ARN) that Amazon SageMaker assumes to perform tasks on your behalf during model training. You must grant this role the necessary permissions so that Amazon SageMaker can successfully complete model training.     StoppingCondition - Sets a duration for training. Use this parameter to cap model training costs.     For more information about Amazon SageMaker, see How It Works. 
+      * Starts a model training job. After training completes, Amazon SageMaker saves the resulting model artifacts to an Amazon S3 location that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts in a machine learning service other than Amazon SageMaker, provided that you know how to use them for inferences.  In the request body, you provide the following:     AlgorithmSpecification - Identifies the training algorithm to use.     HyperParameters - Specify these algorithm-specific parameters to influence the quality of the final model. For a list of hyperparameters for each training algorithm provided by Amazon SageMaker, see Algorithms.     InputDataConfig - Describes the training dataset and the Amazon S3 location where it is stored.    OutputDataConfig - Identifies the Amazon S3 location where you want Amazon SageMaker to save the results of model training.      ResourceConfig - Identifies the resources, ML compute instances, and ML storage volumes to deploy for model training. In distributed training, you specify more than one instance.     RoleARN - The Amazon Resource Number (ARN) that Amazon SageMaker assumes to perform tasks on your behalf during model training. You must grant this role the necessary permissions so that Amazon SageMaker can successfully complete model training.     StoppingCondition - Sets a duration for training. Use this parameter to cap model training costs.     For more information about Amazon SageMaker, see How It Works. 
       */
     def createTrainingJob(): awsDashSdkLib.libRequestMod.Request[CreateTrainingJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createTrainingJob(
@@ -4571,7 +4583,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateTrainingJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Starts a model training job. After training completes, Amazon SageMaker saves the resulting model artifacts to an Amazon S3 location that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts in a deep learning service other than Amazon SageMaker, provided that you know how to use them for inferences.  In the request body, you provide the following:     AlgorithmSpecification - Identifies the training algorithm to use.     HyperParameters - Specify these algorithm-specific parameters to influence the quality of the final model. For a list of hyperparameters for each training algorithm provided by Amazon SageMaker, see Algorithms.     InputDataConfig - Describes the training dataset and the Amazon S3 location where it is stored.    OutputDataConfig - Identifies the Amazon S3 location where you want Amazon SageMaker to save the results of model training.      ResourceConfig - Identifies the resources, ML compute instances, and ML storage volumes to deploy for model training. In distributed training, you specify more than one instance.     RoleARN - The Amazon Resource Number (ARN) that Amazon SageMaker assumes to perform tasks on your behalf during model training. You must grant this role the necessary permissions so that Amazon SageMaker can successfully complete model training.     StoppingCondition - Sets a duration for training. Use this parameter to cap model training costs.     For more information about Amazon SageMaker, see How It Works. 
+      * Starts a model training job. After training completes, Amazon SageMaker saves the resulting model artifacts to an Amazon S3 location that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts in a machine learning service other than Amazon SageMaker, provided that you know how to use them for inferences.  In the request body, you provide the following:     AlgorithmSpecification - Identifies the training algorithm to use.     HyperParameters - Specify these algorithm-specific parameters to influence the quality of the final model. For a list of hyperparameters for each training algorithm provided by Amazon SageMaker, see Algorithms.     InputDataConfig - Describes the training dataset and the Amazon S3 location where it is stored.    OutputDataConfig - Identifies the Amazon S3 location where you want Amazon SageMaker to save the results of model training.      ResourceConfig - Identifies the resources, ML compute instances, and ML storage volumes to deploy for model training. In distributed training, you specify more than one instance.     RoleARN - The Amazon Resource Number (ARN) that Amazon SageMaker assumes to perform tasks on your behalf during model training. You must grant this role the necessary permissions so that Amazon SageMaker can successfully complete model training.     StoppingCondition - Sets a duration for training. Use this parameter to cap model training costs.     For more information about Amazon SageMaker, see How It Works. 
       */
     def createTrainingJob(params: CreateTrainingJobRequest): awsDashSdkLib.libRequestMod.Request[CreateTrainingJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createTrainingJob(
@@ -5694,14 +5706,14 @@ object SageMakerNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Stops a training job. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal, which delays job termination for 120 seconds. Algorithms might use this 120-second window to save the model artifacts, so the results of the training is not lost.  Training algorithms provided by Amazon SageMaker save the intermediate results of a model training job. This intermediate data is a valid model artifact. You can use the model artifacts that are saved when Amazon SageMaker stops a training job to create a model.  When it receives a StopTrainingJob request, Amazon SageMaker changes the status of the job to Stopping. After Amazon SageMaker stops the job, it sets the status to Stopped.
+      * Stops a training job. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal, which delays job termination for 120 seconds. Algorithms might use this 120-second window to save the model artifacts, so the results of the training is not lost.  When it receives a StopTrainingJob request, Amazon SageMaker changes the status of the job to Stopping. After Amazon SageMaker stops the job, it sets the status to Stopped.
       */
     def stopTrainingJob(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def stopTrainingJob(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Stops a training job. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal, which delays job termination for 120 seconds. Algorithms might use this 120-second window to save the model artifacts, so the results of the training is not lost.  Training algorithms provided by Amazon SageMaker save the intermediate results of a model training job. This intermediate data is a valid model artifact. You can use the model artifacts that are saved when Amazon SageMaker stops a training job to create a model.  When it receives a StopTrainingJob request, Amazon SageMaker changes the status of the job to Stopping. After Amazon SageMaker stops the job, it sets the status to Stopped.
+      * Stops a training job. To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal, which delays job termination for 120 seconds. Algorithms might use this 120-second window to save the model artifacts, so the results of the training is not lost.  When it receives a StopTrainingJob request, Amazon SageMaker changes the status of the job to Stopping. After Amazon SageMaker stops the job, it sets the status to Stopped.
       */
     def stopTrainingJob(params: StopTrainingJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def stopTrainingJob(
@@ -6176,7 +6188,7 @@ object SageMakerNs extends js.Object {
       */
     var AcceleratorTypes: js.UndefOr[NotebookInstanceAcceleratorTypes] = js.undefined
     /**
-      * An array of up to three Git repositories to associate with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository.. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * An array of up to three Git repositories to associate with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.undefined
     /**
@@ -6215,6 +6227,10 @@ object SageMakerNs extends js.Object {
       * The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker can assume to access the notebook instance. For more information, see Amazon SageMaker Roles.   To be able to pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. 
       */
     var RoleArn: js.UndefOr[RoleArn] = js.undefined
+    /**
+      * Whether root access is enabled or disabled for users of the notebook instance. The default value is Enabled.  If you set this to Disabled, users don't have root access on the notebook instance, but lifecycle configuration scripts still run with root permissions. 
+      */
+    var RootAccess: js.UndefOr[RootAccess] = js.undefined
     /**
       * The size, in GB, of the ML storage volume to attach to the notebook instance. The default value is 5 GB.
       */
@@ -6389,6 +6405,8 @@ object SageMakerNs extends js.Object {
   trait _ProductionVariantInstanceType extends js.Object
   
   trait _RecordWrapper extends js.Object
+  
+  trait _RootAccess extends js.Object
   
   trait _S3DataDistribution extends js.Object
   
@@ -6615,6 +6633,7 @@ object SageMakerNs extends js.Object {
   type ResponseMIMEType = java.lang.String
   type ResponseMIMETypes = js.Array[ResponseMIMEType]
   type RoleArn = java.lang.String
+  type RootAccess = _RootAccess | java.lang.String
   type S3DataDistribution = _S3DataDistribution | java.lang.String
   type S3DataType = _S3DataType | java.lang.String
   type S3Uri = java.lang.String

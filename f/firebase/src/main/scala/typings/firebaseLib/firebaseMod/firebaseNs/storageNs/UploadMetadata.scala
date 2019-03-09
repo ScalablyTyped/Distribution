@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Object metadata that can be set at upload.
+  */
 trait UploadMetadata extends SettableMetadata {
+  /**
+    * A Base64-encoded MD5 hash of the object being uploaded.
+    */
   var md5Hash: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 

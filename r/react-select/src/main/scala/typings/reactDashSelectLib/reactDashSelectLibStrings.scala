@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashSelectLibStrings {
   @js.native
+  sealed trait SelectComponentsProps extends js.Object
+  
+  @js.native
   sealed trait absolute
     extends reactDashSelectLib.libTypesMod.MenuPosition
   
@@ -131,6 +134,8 @@ object reactDashSelectLibStrings {
   sealed trait value
     extends reactDashSelectLib.libSelectMod.FormatOptionLabelContext
   
+  @scala.inline
+  def SelectComponentsProps: SelectComponentsProps = "SelectComponentsProps".asInstanceOf[SelectComponentsProps]
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chai-http"
-version := "3.0-dt-20181016Z-4e5132"
+version := "3.0-dt-20181016Z-8f3062"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "chai" % "4.1-dt-20181019Z-ad776a",
   "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20190116Z-7de85d",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
-  "org.scalablytyped" %%% "superagent" % "4.1-dt-20190226Z-a17ae4")
+  "org.scalablytyped" %%% "superagent" % "4.1-dt-20190226Z-cdad09")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GeoPoint extends js.Object {
+  /**
+    * The latitude of this GeoPoint instance.
+    */
   val latitude: scala.Double
+  /**
+    * The longitude of this GeoPoint instance.
+    */
   val longitude: scala.Double
   /**
     * Returns true if this `GeoPoint` is equal to the provided one.

@@ -7,11 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait Configuration extends js.Object {
   /** Provides the ability to execute custom middleware after all other middleware internally within the server. */
-  var after: js.UndefOr[js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit]] = js.undefined
+  var after: js.UndefOr[
+    js.Function2[
+      /* app */ expressLib.expressMod.eNs.Application, 
+      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
+      scala.Unit
+    ]
+  ] = js.undefined
   /** This option allows you to whitelist services that are allowed to access the dev server. */
   var allowedHosts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Provides the ability to execute custom middleware prior to all other middleware internally within the server. */
-  var before: js.UndefOr[js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit]] = js.undefined
+  var before: js.UndefOr[
+    js.Function2[
+      /* app */ expressLib.expressMod.eNs.Application, 
+      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
+      scala.Unit
+    ]
+  ] = js.undefined
   /** This option broadcasts the server via ZeroConf networking on start. */
   var bonjour: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -102,7 +114,13 @@ trait Configuration extends js.Object {
     */
   var quiet: js.UndefOr[scala.Boolean] = js.undefined
   /** @deprecated Here you can access the Express app object and add your own custom middleware to it. */
-  var setup: js.UndefOr[js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit]] = js.undefined
+  var setup: js.UndefOr[
+    js.Function2[
+      /* app */ expressLib.expressMod.eNs.Application, 
+      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
+      scala.Unit
+    ]
+  ] = js.undefined
   /** The Unix socket to listen to (instead of a host). */
   var socket: js.UndefOr[java.lang.String] = js.undefined
   /** It is possible to configure advanced options for serving static files from contentBase. */
@@ -125,9 +143,17 @@ trait Configuration extends js.Object {
 object Configuration {
   @scala.inline
   def apply(
-    after: js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit] = null,
+    after: js.Function2[
+      /* app */ expressLib.expressMod.eNs.Application, 
+      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
+      scala.Unit
+    ] = null,
     allowedHosts: js.Array[java.lang.String] = null,
-    before: js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit] = null,
+    before: js.Function2[
+      /* app */ expressLib.expressMod.eNs.Application, 
+      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
+      scala.Unit
+    ] = null,
     bonjour: js.UndefOr[scala.Boolean] = js.undefined,
     clientLogLevel: webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.none | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.error | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.warning | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.info = null,
     compress: js.UndefOr[scala.Boolean] = js.undefined,
@@ -154,7 +180,11 @@ object Configuration {
     public: java.lang.String = null,
     publicPath: java.lang.String = null,
     quiet: js.UndefOr[scala.Boolean] = js.undefined,
-    setup: js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit] = null,
+    setup: js.Function2[
+      /* app */ expressLib.expressMod.eNs.Application, 
+      /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer, 
+      scala.Unit
+    ] = null,
     socket: java.lang.String = null,
     staticOptions: serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions = null,
     stats: webpackLib.webpackMod.webpackNs.OptionsNs.Stats = null,

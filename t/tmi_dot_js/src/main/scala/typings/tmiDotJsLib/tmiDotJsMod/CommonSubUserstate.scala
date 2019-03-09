@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommonSubUserstate extends UserNoticeState {
-  var `msg-param-sub-plan`: js.UndefOr[ResubMethod] = js.undefined
+  var `msg-param-sub-plan`: js.UndefOr[SubMethod] = js.undefined
   var `msg-param-sub-plan-name`: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object CommonSubUserstate {
     login: java.lang.String = null,
     message: java.lang.String = null,
     mod: js.UndefOr[scala.Boolean] = js.undefined,
-    `msg-param-sub-plan`: ResubMethod = null,
+    `msg-param-sub-plan`: SubMethod = null,
     `msg-param-sub-plan-name`: java.lang.String = null,
     `room-id`: java.lang.String = null,
     subscriber: js.UndefOr[scala.Boolean] = js.undefined,

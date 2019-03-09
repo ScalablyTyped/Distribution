@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Interface that represents an auth provider.
+  */
 trait AuthProvider extends js.Object {
   var providerId: java.lang.String
 }

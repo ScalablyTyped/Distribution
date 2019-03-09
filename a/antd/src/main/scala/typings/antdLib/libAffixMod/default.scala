@@ -13,6 +13,6 @@ class default () extends Affix
 @JSImport("antd/lib/affix", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var propTypes: antdLib.Anon_Args = js.native
+  var defaultProps: antdLib.Anon_Target = js.native
 }
 

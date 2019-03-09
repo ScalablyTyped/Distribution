@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @hidden
+  */
 @js.native
 trait Observer[T, E] extends js.Object {
   @JSName("complete")

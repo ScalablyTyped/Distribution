@@ -41,10 +41,12 @@ trait Static extends js.Object {
   /* Special case for forEach */
   def addIndex[T](
     fn: js.Function2[/* f */ js.Function1[/* item */ T, scala.Unit], /* list */ js.Array[T], js.Array[T]]
-  ): CurriedFunction2[
-    js.Function3[/* item */ T, /* idx */ scala.Double, /* list */ js.UndefOr[js.Array[T]], scala.Unit], 
-    js.Array[T], 
-    js.Array[T]
+  ): ramdaLib.CurryNs.Curry[
+    js.Function2[
+      /* a */ js.Function3[/* item */ T, /* idx */ scala.Double, /* list */ js.UndefOr[js.Array[T]], scala.Unit], 
+      /* b */ js.Array[T], 
+      js.Array[T]
+    ]
   ] = js.native
   /* Special case for reduce */
   def addIndex[T, U](
@@ -54,21 +56,25 @@ trait Static extends js.Object {
       /* list */ js.Array[T], 
       U
     ]
-  ): CurriedFunction3[
-    js.Function4[/* acc */ U, /* item */ T, /* idx */ scala.Double, /* list */ js.UndefOr[js.Array[T]], U], 
-    U, 
-    js.Array[T], 
-    U
+  ): ramdaLib.CurryNs.Curry[
+    js.Function3[
+      /* a */ js.Function4[/* acc */ U, /* item */ T, /* idx */ scala.Double, /* list */ js.UndefOr[js.Array[T]], U], 
+      /* b */ U, 
+      /* c */ js.Array[T], 
+      U
+    ]
   ] = js.native
   /**
     * Creates a new list iteration function from an existing one by adding two new parameters to its callback
     * function: the current index, and the entire list.
     */
   @JSName("addIndex")
-  def addIndex_TU[T, U](fn: js.Function2[/* f */ js.Function1[/* item */ T, U], /* list */ js.Array[T], js.Array[U]]): CurriedFunction2[
-    js.Function3[/* item */ T, /* idx */ scala.Double, /* list */ js.UndefOr[js.Array[T]], U], 
-    js.Array[T], 
-    js.Array[U]
+  def addIndex_TU[T, U](fn: js.Function2[/* f */ js.Function1[/* item */ T, U], /* list */ js.Array[T], js.Array[U]]): ramdaLib.CurryNs.Curry[
+    js.Function2[
+      /* a */ js.Function3[/* item */ T, /* idx */ scala.Double, /* list */ js.UndefOr[js.Array[T]], U], 
+      /* b */ js.Array[T], 
+      js.Array[U]
+    ]
   ] = js.native
   def adjust[T](index: scala.Double, fn: js.Function1[/* a */ T, T]): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
   /**
@@ -168,7 +174,7 @@ trait Static extends js.Object {
     * placing the specific value at the tail end of that path.
     */
   def assocPath[T, U](__ : Placeholder, `val`: T, obj: U): js.Function1[/* path */ Path, U] = js.native
-  def assocPath[T, U](path: Path): CurriedFunction2[T, U, U] = js.native
+  def assocPath[T, U](path: Path): ramdaLib.CurryNs.Curry[js.Function2[/* a */ T, /* b */ U, U]] = js.native
   def assocPath[T, U](path: Path, __ : Placeholder, obj: U): js.Function1[/* val */ T, U] = js.native
   def assocPath[T, U](path: Path, `val`: T): js.Function1[/* obj */ U, U] = js.native
   def assocPath[T, U](path: Path, `val`: T, obj: U): U = js.native
@@ -467,43 +473,16 @@ trait Static extends js.Object {
     * JavaScript objects work.
     */
   def countBy[T](fn: js.Function1[/* a */ T, java.lang.String | scala.Double], list: js.Array[T]): org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
-  def curry(fn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
-  def curry[T1, T2, TResult](fn: js.Function2[/* a */ T1, /* b */ T2, TResult]): CurriedFunction2[T1, T2, TResult] = js.native
-  def curry[T1, T2, T3, TResult /* <: T3 */](fn: js.Function3[/* a */ T1, /* b */ T2, /* c */ T3, /* is TResult */ scala.Boolean]): CurriedTypeGuard3[T1, T2, T3, TResult] = js.native
-  def curry[T1, T2, T3, T4, TResult /* <: T4 */](fn: js.Function4[/* a */ T1, /* b */ T2, /* c */ T3, /* d */ T4, /* is TResult */ scala.Boolean]): CurriedTypeGuard4[T1, T2, T3, T4, TResult] = js.native
-  def curry[T1, T2, T3, T4, T5, TResult](fn: js.Function5[/* a */ T1, /* b */ T2, /* c */ T3, /* d */ T4, /* e */ T5, TResult]): CurriedFunction5[T1, T2, T3, T4, T5, TResult] = js.native
-  def curry[T1, T2, T3, T4, T5, T6, TResult](fn: js.Function6[/* a */ T1, /* b */ T2, /* c */ T3, /* d */ T4, /* e */ T5, /* f */ T6, TResult]): CurriedFunction6[T1, T2, T3, T4, T5, T6, TResult] = js.native
+  /**
+    * Returns a curried equivalent of the provided function. The curried function has two unusual capabilities.
+    * First, its arguments needn't be provided one at a time.
+    */
+  def curry[F /* <: js.Function1[/* args */ js.Any, _] */](f: F): ramdaLib.CurryNs.Curry[F] = js.native
   /**
     * Returns a curried equivalent of the provided function, with the specified arity. The curried function has
     * two unusual capabilities. First, its arguments needn't be provided one at a time.
     */
   def curryN(length: scala.Double, fn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSName("curry")
-  def curry_T1T2T3T4T5T6TResultT6CurriedTypeGuard6[T1, T2, T3, T4, T5, T6, TResult /* <: T6 */](
-    fn: js.Function6[
-      /* a */ T1, 
-      /* b */ T2, 
-      /* c */ T3, 
-      /* d */ T4, 
-      /* e */ T5, 
-      /* f */ T6, 
-      /* is TResult */ scala.Boolean
-    ]
-  ): CurriedTypeGuard6[T1, T2, T3, T4, T5, T6, TResult] = js.native
-  @JSName("curry")
-  def curry_T1T2T3T4T5TResultT5CurriedTypeGuard5[T1, T2, T3, T4, T5, TResult /* <: T5 */](
-    fn: js.Function5[/* a */ T1, /* b */ T2, /* c */ T3, /* d */ T4, /* e */ T5, /* is TResult */ scala.Boolean]
-  ): CurriedTypeGuard5[T1, T2, T3, T4, T5, TResult] = js.native
-  @JSName("curry")
-  def curry_T1T2T3T4TResultCurriedFunction4[T1, T2, T3, T4, TResult](fn: js.Function4[/* a */ T1, /* b */ T2, /* c */ T3, /* d */ T4, TResult]): CurriedFunction4[T1, T2, T3, T4, TResult] = js.native
-  @JSName("curry")
-  def curry_T1T2T3TResultCurriedFunction3[T1, T2, T3, TResult](fn: js.Function3[/* a */ T1, /* b */ T2, /* c */ T3, TResult]): CurriedFunction3[T1, T2, T3, TResult] = js.native
-  /**
-    * Returns a curried equivalent of the provided function. The curried function has two unusual capabilities.
-    * First, its arguments needn't be provided one at a time.
-    */
-  @JSName("curry")
-  def curry_T1T2TResultT2CurriedTypeGuard2[T1, T2, TResult /* <: T2 */](fn: js.Function2[/* a */ T1, /* b */ T2, /* is TResult */ scala.Boolean]): CurriedTypeGuard2[T1, T2, TResult] = js.native
   /**
     * Decrements its argument.
     */
@@ -602,7 +581,7 @@ trait Static extends js.Object {
   def endsWith[T](a: T, list: js.Array[T]): scala.Boolean = js.native
   def endsWith[T](a: js.Array[T]): js.Function1[/* list */ js.Array[T], scala.Boolean] = js.native
   def endsWith[T](a: js.Array[T], list: js.Array[T]): scala.Boolean = js.native
-  def eqBy[T, U](fn: js.Function1[/* a */ T, U]): CurriedFunction2[T, T, scala.Boolean] = js.native
+  def eqBy[T, U](fn: js.Function1[/* a */ T, U]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ T, /* b */ T, scala.Boolean]] = js.native
   def eqBy[T, U](fn: js.Function1[/* a */ T, U], a: T): js.Function1[/* b */ T, scala.Boolean] = js.native
   /**
     * Takes a function and two values in its domain and returns true if the values map to the same value in the
@@ -1051,7 +1030,7 @@ trait Static extends js.Object {
     * Returns the larger of its two arguments.
     */
   def max[T /* <: Ord */](a: T, b: T): T = js.native
-  def maxBy[T](keyFn: js.Function1[/* a */ T, Ord]): CurriedFunction2[T, T, T] = js.native
+  def maxBy[T](keyFn: js.Function1[/* a */ T, Ord]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ T, /* b */ T, T]] = js.native
   def maxBy[T](keyFn: js.Function1[/* a */ T, Ord], a: T): js.Function1[/* b */ T, T] = js.native
   /**
     * Takes a function and two values, and returns whichever value produces
@@ -1151,7 +1130,7 @@ trait Static extends js.Object {
     * Returns the smaller of its two arguments.
     */
   def min[T /* <: Ord */](a: T, b: T): T = js.native
-  def minBy[T](keyFn: js.Function1[/* a */ T, Ord]): CurriedFunction2[T, T, T] = js.native
+  def minBy[T](keyFn: js.Function1[/* a */ T, Ord]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ T, /* b */ T, T]] = js.native
   def minBy[T](keyFn: js.Function1[/* a */ T, Ord], a: T): js.Function1[/* b */ T, T] = js.native
   /**
     * Takes a function and two values, and returns whichever value produces
@@ -1302,21 +1281,21 @@ trait Static extends js.Object {
     * Retrieve the value at a given path.
     */
   def path[T](path: Path, obj: js.Any): js.UndefOr[T] = js.native
-  def pathEq(path: Path): CurriedFunction2[_, _, scala.Boolean] = js.native
+  def pathEq(path: Path): ramdaLib.CurryNs.Curry[js.Function2[/* a */ _, /* b */ _, scala.Boolean]] = js.native
   def pathEq(path: Path, `val`: js.Any): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
   /**
     * Determines whether a nested path on an object has a specific value,
     * in `R.equals` terms. Most likely used to filter a list.
     */
   def pathEq(path: Path, `val`: js.Any, obj: js.Any): scala.Boolean = js.native
-  def pathOr[T](defaultValue: T): CurriedFunction2[Path, _, _] = js.native
+  def pathOr[T](defaultValue: T): ramdaLib.CurryNs.Curry[js.Function2[/* a */ Path, /* b */ _, _]] = js.native
   def pathOr[T](defaultValue: T, path: Path): js.Function1[/* obj */ js.Any, _] = js.native
   /**
     * If the given, non-null object has a value at the given path, returns the value at that path.
     * Otherwise returns the provided default value.
     */
   def pathOr[T](defaultValue: T, path: Path, obj: js.Any): js.Any = js.native
-  def pathSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean]): CurriedFunction2[Path, U, scala.Boolean] = js.native
+  def pathSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ Path, /* b */ U, scala.Boolean]] = js.native
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean], path: Path): js.Function1[/* obj */ U, scala.Boolean] = js.native
   /**
     * Returns true if the specified object property at given path satisfies the given predicate; false otherwise.
@@ -1827,7 +1806,7 @@ trait Static extends js.Object {
     * Otherwise returns the provided default value.
     */
   def propOr[T, U, V](`val`: T, p: java.lang.String, obj: U): V = js.native
-  def propSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean]): CurriedFunction2[java.lang.String, U, scala.Boolean] = js.native
+  def propSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ java.lang.String, /* b */ U, scala.Boolean]] = js.native
   def propSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean], name: java.lang.String): js.Function1[/* obj */ U, scala.Boolean] = js.native
   /**
     * Returns true if the specified object property satisfies the given predicate; false otherwise.
@@ -1863,16 +1842,20 @@ trait Static extends js.Object {
     acc: TResult,
     list: js.Array[T]
   ): TResult = js.native
-  def reduceBy[T, TResult](valueFn: js.Function2[/* acc */ TResult, /* elem */ T, TResult]): CurriedFunction3[
-    TResult, 
-    js.Function1[/* elem */ T, java.lang.String], 
-    js.Array[T], 
-    org.scalablytyped.runtime.StringDictionary[TResult]
+  def reduceBy[T, TResult](valueFn: js.Function2[/* acc */ TResult, /* elem */ T, TResult]): ramdaLib.CurryNs.Curry[
+    js.Function3[
+      /* a */ TResult, 
+      /* b */ js.Function1[/* elem */ T, java.lang.String], 
+      /* c */ js.Array[T], 
+      org.scalablytyped.runtime.StringDictionary[TResult]
+    ]
   ] = js.native
-  def reduceBy[T, TResult](valueFn: js.Function2[/* acc */ TResult, /* elem */ T, TResult], acc: TResult): CurriedFunction2[
-    js.Function1[/* elem */ T, java.lang.String], 
-    js.Array[T], 
-    org.scalablytyped.runtime.StringDictionary[TResult]
+  def reduceBy[T, TResult](valueFn: js.Function2[/* acc */ TResult, /* elem */ T, TResult], acc: TResult): ramdaLib.CurryNs.Curry[
+    js.Function2[
+      /* a */ js.Function1[/* elem */ T, java.lang.String], 
+      /* b */ js.Array[T], 
+      org.scalablytyped.runtime.StringDictionary[TResult]
+    ]
   ] = js.native
   def reduceBy[T, TResult](
     valueFn: js.Function2[/* acc */ TResult, /* elem */ T, TResult],
@@ -1897,11 +1880,18 @@ trait Static extends js.Object {
     * then passing the result to the next call.
     */
   def reduceRight[T, TResult](fn: js.Function2[/* elem */ T, /* acc */ TResult, TResult], acc: TResult, list: js.Array[T]): TResult = js.native
-  def reduceWhile[T, TResult](predicate: js.Function2[/* acc */ TResult, /* elem */ T, scala.Boolean]): CurriedFunction3[js.Function2[/* acc */ TResult, /* elem */ T, TResult], TResult, js.Array[T], TResult] = js.native
+  def reduceWhile[T, TResult](predicate: js.Function2[/* acc */ TResult, /* elem */ T, scala.Boolean]): ramdaLib.CurryNs.Curry[
+    js.Function3[
+      /* a */ js.Function2[/* acc */ TResult, /* elem */ T, TResult], 
+      /* b */ TResult, 
+      /* c */ js.Array[T], 
+      TResult
+    ]
+  ] = js.native
   def reduceWhile[T, TResult](
     predicate: js.Function2[/* acc */ TResult, /* elem */ T, scala.Boolean],
     fn: js.Function2[/* acc */ TResult, /* elem */ T, TResult]
-  ): CurriedFunction2[TResult, js.Array[T], TResult] = js.native
+  ): ramdaLib.CurryNs.Curry[js.Function2[/* a */ TResult, /* b */ js.Array[T], TResult]] = js.native
   def reduceWhile[T, TResult](
     predicate: js.Function2[/* acc */ TResult, /* elem */ T, scala.Boolean],
     fn: js.Function2[/* acc */ TResult, /* elem */ T, TResult],
@@ -2094,7 +2084,7 @@ trait Static extends js.Object {
     */
   def symmetricDifference[T](list1: js.Array[T], list2: js.Array[T]): js.Array[T] = js.native
   def symmetricDifference[T](list: js.Array[T]): js.Function1[/* list */ js.Array[_], js.Array[_]] = js.native
-  def symmetricDifferenceWith[T](pred: js.Function2[/* a */ T, /* b */ T, scala.Boolean]): CurriedFunction2[js.Array[T], js.Array[T], js.Array[T]] = js.native
+  def symmetricDifferenceWith[T](pred: js.Function2[/* a */ T, /* b */ T, scala.Boolean]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ js.Array[T], /* b */ js.Array[T], js.Array[T]]] = js.native
   /**
     * Finds the set (i.e. no duplicates) of all elements contained in the first or second list, but not both.
     * Duplication is determined according to the value returned by applying the supplied predicate to two list elements.
@@ -2274,7 +2264,7 @@ trait Static extends js.Object {
     * elements of each list.
     */
   def union[T](as: js.Array[T], bs: js.Array[T]): js.Array[T] = js.native
-  def unionWith[T](pred: js.Function2[/* a */ T, /* b */ T, scala.Boolean]): CurriedFunction2[js.Array[T], js.Array[T], js.Array[T]] = js.native
+  def unionWith[T](pred: js.Function2[/* a */ T, /* b */ T, scala.Boolean]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ js.Array[T], /* b */ js.Array[T], js.Array[T]]] = js.native
   /**
     * Combines two lists into a set (i.e. no duplicates) composed of the elements of each list.  Duplication is
     * determined according to the value returned by applying the supplied predicate to two list elements.

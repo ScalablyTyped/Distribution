@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "restling"
-version := "0.9-dt-20180712Z-438d8c"
+version := "0.9-dt-20180712Z-53671d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-865309",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190302Z-6be09d",
-  "org.scalablytyped" %%% "restler" % "3.1.0-dt-20180214Z-fcab53",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
+  "org.scalablytyped" %%% "restler" % "3.1.0-dt-20180214Z-3ab913",
   "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

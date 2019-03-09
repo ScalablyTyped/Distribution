@@ -46,7 +46,7 @@ class Resumable protected () extends js.Object {
   /**
     * Look up a ResumableFile object by its unique identifier.
     **/
-  def getFromUniqueIdentifier(uniqueIdentifier: java.lang.String): scala.Unit = js.native
+  def getFromUniqueIdentifier(uniqueIdentifier: java.lang.String): ResumableFile = js.native
   def getOpt(o: java.lang.String): js.Any = js.native
   /**
     * Returns the total size of the upload in bytes.

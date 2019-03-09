@@ -20,6 +20,10 @@ object awsDashLambdaLibStrings {
     extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
   
   @js.native
+  sealed trait Binary
+    extends awsDashLambdaLib.awsDashLambdaMod._SQSMessageAttributeDataType
+  
+  @js.native
   sealed trait Build
     extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
   
@@ -165,6 +169,10 @@ object awsDashLambdaLibStrings {
   sealed trait None extends js.Object
   
   @js.native
+  sealed trait Number
+    extends awsDashLambdaLib.awsDashLambdaMod._SQSMessageAttributeDataType
+  
+  @js.native
   sealed trait OLD_IMAGE extends js.Object
   
   @js.native
@@ -247,6 +255,10 @@ object awsDashLambdaLibStrings {
   @js.native
   sealed trait Source
     extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
+  
+  @js.native
+  sealed trait String
+    extends awsDashLambdaLib.awsDashLambdaMod._SQSMessageAttributeDataType
   
   @js.native
   sealed trait Test
@@ -332,6 +344,8 @@ object awsDashLambdaLibStrings {
   def AWS: AWS = "AWS".asInstanceOf[AWS]
   @scala.inline
   def Approval: Approval = "Approval".asInstanceOf[Approval]
+  @scala.inline
+  def Binary: Binary = "Binary".asInstanceOf[Binary]
   @scala.inline
   def Build: Build = "Build".asInstanceOf[Build]
   @scala.inline
@@ -423,6 +437,8 @@ object awsDashLambdaLibStrings {
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
+  def Number: Number = "Number".asInstanceOf[Number]
+  @scala.inline
   def OLD_IMAGE: OLD_IMAGE = "OLD_IMAGE".asInstanceOf[OLD_IMAGE]
   @scala.inline
   def Ok: Ok = "Ok".asInstanceOf[Ok]
@@ -470,6 +486,8 @@ object awsDashLambdaLibStrings {
   def SUPPRESS: SUPPRESS = "SUPPRESS".asInstanceOf[SUPPRESS]
   @scala.inline
   def Source: Source = "Source".asInstanceOf[Source]
+  @scala.inline
+  def String: String = "String".asInstanceOf[String]
   @scala.inline
   def Test: Test = "Test".asInstanceOf[Test]
   @scala.inline

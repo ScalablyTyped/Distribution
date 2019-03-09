@@ -42,10 +42,12 @@ trait PDFPageProxy extends js.Object {
   /**
     * @param scale The desired scale of the viewport.
     * @param rotate Degrees to rotate the viewport.  If omitted this defaults to the page rotation.
+    * @param dontFlip
     * @return
     **/
   def getViewport(scale: scala.Double): PDFPageViewport = js.native
   def getViewport(scale: scala.Double, rotate: scala.Double): PDFPageViewport = js.native
+  def getViewport(scale: scala.Double, rotate: scala.Double, dontFlip: scala.Boolean): PDFPageViewport = js.native
   /**
     * Begins the process of rendering a page to the desired context.
     * @param params Rendering options.

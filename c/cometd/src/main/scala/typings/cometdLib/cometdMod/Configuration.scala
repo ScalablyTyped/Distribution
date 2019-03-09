@@ -68,6 +68,15 @@ trait Configuration extends js.Object {
     * The URL of the Bayeux server this client will connect to.
     */
   var url: java.lang.String
+  /**
+    * Uses the scheduler service available in Web Workers via Worker.setTimeout(fn, delay) rather
+    * than using that available via Window.setTimeout(fn, delay). Browsers are now throttling the
+    * Window scheduler in background tabs to save battery in mobile devices, so the Window scheduler
+    * events are delayed by possibly several seconds, causing CometD sessions to timeout on the
+    * server. The Worker scheduler is not throttled and guarantees that scheduler events happen
+    * on time.
+    */
+  var useWorkerScheduler: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Configuration {
@@ -84,7 +93,8 @@ object Configuration {
     maxNetworkDelay: scala.Int | scala.Double = null,
     maxURILength: scala.Int | scala.Double = null,
     requestHeaders: js.Object = null,
-    stickyReconnect: js.UndefOr[scala.Boolean] = js.undefined
+    stickyReconnect: js.UndefOr[scala.Boolean] = js.undefined,
+    useWorkerScheduler: js.UndefOr[scala.Boolean] = js.undefined
   ): Configuration = {
     val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(appendMessageTypeToURL)) __obj.updateDynamic("appendMessageTypeToURL")(appendMessageTypeToURL)
@@ -98,6 +108,7 @@ object Configuration {
     if (maxURILength != null) __obj.updateDynamic("maxURILength")(maxURILength.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
     if (!js.isUndefined(stickyReconnect)) __obj.updateDynamic("stickyReconnect")(stickyReconnect)
+    if (!js.isUndefined(useWorkerScheduler)) __obj.updateDynamic("useWorkerScheduler")(useWorkerScheduler)
     __obj.asInstanceOf[Configuration]
   }
 }

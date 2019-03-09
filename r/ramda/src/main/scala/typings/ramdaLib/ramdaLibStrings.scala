@@ -13,6 +13,9 @@ object ramdaLibStrings {
   sealed trait Boolean extends js.Object
   
   @js.native
+  sealed trait CleanedGaps extends js.Object
+  
+  @js.native
   sealed trait Evolvable extends js.Object
   
   @js.native
@@ -29,6 +32,9 @@ object ramdaLibStrings {
   
   @js.native
   sealed trait Object extends js.Object
+  
+  @js.native
+  sealed trait PartialGaps extends js.Object
   
   @js.native
   sealed trait RegExp extends js.Object
@@ -50,6 +56,8 @@ object ramdaLibStrings {
   @scala.inline
   def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
   @scala.inline
+  def CleanedGaps: CleanedGaps = "CleanedGaps".asInstanceOf[CleanedGaps]
+  @scala.inline
   def Evolvable: Evolvable = "Evolvable".asInstanceOf[Evolvable]
   @scala.inline
   def Evolve: Evolve = "Evolve".asInstanceOf[Evolve]
@@ -61,6 +69,8 @@ object ramdaLibStrings {
   def Number: Number = "Number".asInstanceOf[Number]
   @scala.inline
   def Object: Object = "Object".asInstanceOf[Object]
+  @scala.inline
+  def PartialGaps: PartialGaps = "PartialGaps".asInstanceOf[PartialGaps]
   @scala.inline
   def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
   @scala.inline

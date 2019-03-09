@@ -70,6 +70,9 @@ object sketchappLibStrings {
   sealed trait layoutGrid extends js.Object
   
   @js.native
+  sealed trait oval extends js.Object
+  
+  @js.native
   sealed trait page extends js.Object
   
   @js.native
@@ -82,10 +85,16 @@ object sketchappLibStrings {
   sealed trait rect extends js.Object
   
   @js.native
+  sealed trait rectangle extends js.Object
+  
+  @js.native
   sealed trait rulerData extends js.Object
   
   @js.native
   sealed trait shadow extends js.Object
+  
+  @js.native
+  sealed trait shapePath extends js.Object
   
   @js.native
   sealed trait sharedStyle extends js.Object
@@ -138,6 +147,9 @@ object sketchappLibStrings {
   @js.native
   sealed trait textStyle extends js.Object
   
+  @js.native
+  sealed trait triangle extends js.Object
+  
   @scala.inline
   def MSInnerShadow: MSInnerShadow = "MSInnerShadow".asInstanceOf[MSInnerShadow]
   @scala.inline
@@ -181,6 +193,8 @@ object sketchappLibStrings {
   @scala.inline
   def layoutGrid: layoutGrid = "layoutGrid".asInstanceOf[layoutGrid]
   @scala.inline
+  def oval: oval = "oval".asInstanceOf[oval]
+  @scala.inline
   def page: page = "page".asInstanceOf[page]
   @scala.inline
   def paragraphStyle: paragraphStyle = "paragraphStyle".asInstanceOf[paragraphStyle]
@@ -189,9 +203,13 @@ object sketchappLibStrings {
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
+  def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
+  @scala.inline
   def rulerData: rulerData = "rulerData".asInstanceOf[rulerData]
   @scala.inline
   def shadow: shadow = "shadow".asInstanceOf[shadow]
+  @scala.inline
+  def shapePath: shapePath = "shapePath".asInstanceOf[shapePath]
   @scala.inline
   def sharedStyle: sharedStyle = "sharedStyle".asInstanceOf[sharedStyle]
   @scala.inline
@@ -226,5 +244,7 @@ object sketchappLibStrings {
   def symbolMaster: symbolMaster = "symbolMaster".asInstanceOf[symbolMaster]
   @scala.inline
   def textStyle: textStyle = "textStyle".asInstanceOf[textStyle]
+  @scala.inline
+  def triangle: triangle = "triangle".asInstanceOf[triangle]
 }
 

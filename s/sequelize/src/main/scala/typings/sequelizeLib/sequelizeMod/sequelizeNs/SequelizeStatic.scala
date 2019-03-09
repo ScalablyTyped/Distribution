@@ -76,9 +76,17 @@ org.scalablytyped.runtime.Instantiable3[
       Sequelize
     ] {
   /**
+    * Export sequelize static on the instance for `import Sequelize from 'sequelize';` kind of imports
+    */
+  var Sequelize: SequelizeStatic = js.native
+  /**
     * Provide access to continuation-local-storage (http://docs.sequelizejs.com/en/latest/api/sequelize/#transactionoptions-promise)
     */
   var cls: js.Any = js.native
+  /**
+    * Default export for `import Sequelize from 'sequelize';` kind of imports
+    */
+  var default: SequelizeStatic = js.native
   def useCLS(namespace: continuationDashLocalDashStorageLib.continuationDashLocalDashStorageMod.Namespace): Sequelize = js.native
 }
 

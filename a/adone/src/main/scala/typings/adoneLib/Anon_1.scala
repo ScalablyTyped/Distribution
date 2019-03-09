@@ -93,7 +93,7 @@ trait Anon_1 extends js.Object {
   def logger(obj: js.Any): scala.Boolean = js.native
   def long(obj: js.Any): /* is adone.adone.math.Long */ scala.Boolean = js.native
   def lowercase(str: java.lang.String): scala.Boolean = js.native
-  def map(obj: js.Any): /* is lodash.lodash.Global.Map<any, any> */ scala.Boolean = js.native
+  def map(obj: js.Any): /* is node.Map<any, any> */ scala.Boolean = js.native
   def multiAddress(obj: js.Any): scala.Boolean = js.native
   def namespace(obj: js.Any): scala.Boolean = js.native
   def nan(obj: js.Any): scala.Boolean = js.native

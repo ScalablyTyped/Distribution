@@ -12,7 +12,7 @@ object winstonNs extends js.Object {
   trait Container
     extends org.scalablytyped.runtime.Instantiable0[Container]
        with org.scalablytyped.runtime.Instantiable1[/* options */ LoggerOptions, Container] {
-    var loggers: stdLib.Map[java.lang.String, Logger] = js.native
+    var loggers: nodeLib.Map[java.lang.String, Logger] = js.native
     var options: LoggerOptions = js.native
     def add(id: java.lang.String): Logger = js.native
     def add(id: java.lang.String, options: LoggerOptions): Logger = js.native
@@ -27,7 +27,7 @@ object winstonNs extends js.Object {
   trait ExceptionHandler
     extends org.scalablytyped.runtime.Instantiable1[/* logger */ Logger, ExceptionHandler] {
     var catcher: js.Function | scala.Boolean = js.native
-    var handlers: stdLib.Map[_, _] = js.native
+    var handlers: nodeLib.Map[_, _] = js.native
     var logger: Logger = js.native
     def getAllInfo(err: java.lang.String): js.Object = js.native
     def getAllInfo(err: nodeLib.Error): js.Object = js.native

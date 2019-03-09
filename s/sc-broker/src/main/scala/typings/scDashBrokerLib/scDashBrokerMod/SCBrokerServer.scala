@@ -31,7 +31,7 @@ trait SCBrokerServer
   def on_exit(
     event: scDashBrokerLib.scDashBrokerLibStrings.exit,
     listener: js.Function1[
-      /* data */ socketclusterLib.socketclusterMod.SocketClusterNs.WorkerExitInfo, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WorkerExitInfo */ /* data */ js.Any, 
       scala.Unit
     ]
   ): this.type = js.native

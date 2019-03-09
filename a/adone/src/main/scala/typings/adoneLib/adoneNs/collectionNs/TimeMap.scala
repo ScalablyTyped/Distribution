@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   * @param callback callback that is called with each key when the timeout is passed
   */
 class TimeMap[K, V] ()
-  extends lodashLib.lodashMod.Global.Map[K, V] {
+  extends nodeLib.Map[K, V] {
   def this(timeout: scala.Double) = this()
   def this(timeout: scala.Double, callback: js.Function1[/* key */ K, scala.Unit]) = this()
   /**

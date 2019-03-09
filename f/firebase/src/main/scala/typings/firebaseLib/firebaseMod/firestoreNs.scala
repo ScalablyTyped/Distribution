@@ -18,11 +18,17 @@ object firestoreNs extends js.Object {
       */
     def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob): scala.Boolean = js.native
     /**
-      * Returns the bytes of this Blob as a Base64-encoded string.
+      * Returns the bytes of a Blob as a Base64-encoded string.
+      *
+      * @return {string}
+      *   The Base64-encoded string created from the Blob object.
       */
     def toBase64(): java.lang.String = js.native
     /**
-      * Returns the bytes of this Blob in a new Uint8Array.
+      * Returns the bytes of a Blob in a new Uint8Array.
+      *
+      * @return {!Uint8Array}
+      *   The Uint8Array created from the Blob object.
       */
     def toUint8Array(): stdLib.Uint8Array = js.native
   }
@@ -30,11 +36,11 @@ object firestoreNs extends js.Object {
   @js.native
   class CollectionReference protected ()
     extends firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query {
-    /** The identifier of the collection. */
+    /** The collection's identifier. */
     val id: java.lang.String = js.native
     /**
-      * A reference to the containing Document if this is a subcollection, else
-      * null.
+      * A reference to the containing `DocumentReference` if this is a subcollection.
+      * If this isn't a subcollection, the reference is null.
       */
     val parent: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference | scala.Null = js.native
     /**
@@ -75,14 +81,14 @@ object firestoreNs extends js.Object {
     val doc: firebaseLib.firebaseMod.firebaseNs.firestoreNs.QueryDocumentSnapshot
     /**
       * The index of the changed document in the result set immediately after
-      * this DocumentChange (i.e. supposing that all prior DocumentChange
-      * objects and the current DocumentChange object have been applied).
+      * this `DocumentChange` (i.e. supposing that all prior `DocumentChange`
+      * objects and the current `DocumentChange` object have been applied).
       * Is -1 for 'removed' events.
       */
     val newIndex: scala.Double
     /**
       * The index of the changed document in the result set immediately prior to
-      * this DocumentChange (i.e. supposing that all prior DocumentChange objects
+      * this `DocumentChange` (i.e. supposing that all prior `DocumentChange` objects
       * have been applied). Is -1 for 'added' events.
       */
     val oldIndex: scala.Double
@@ -98,14 +104,16 @@ object firestoreNs extends js.Object {
   @js.native
   class DocumentReference protected () extends js.Object {
     /**
-      * The `Firestore` for the Firestore database (useful for performing
-      * transactions, etc.).
+      * The {@link firebase.firestore.Firestore} the document is in.
+      * This is useful for performing transactions, for example.
       */
     val firestore: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
-    /** The identifier of the document within its collection. */
+    /**
+      * The document's identifier within its collection.
+      */
     val id: java.lang.String = js.native
     /**
-      * A reference to the Collection to which this DocumentReference belongs.
+      * The Collection this `DocumentReference` belongs to.
       */
     val parent: firebaseLib.firebaseMod.firebaseNs.firestoreNs.CollectionReference = js.native
     /**
@@ -158,16 +166,26 @@ object firestoreNs extends js.Object {
       * NOTE: Although an `onCompletion` callback can be provided, it will
       * never be called because the snapshot stream is never-ending.
       *
-      * @param options Options controlling the listen behavior.
-      * @param onNext A callback to be called every time a new `DocumentSnapshot`
-      * is available.
-      * @param onError A callback to be called if the listen fails or is
-      * cancelled. No further callbacks will occur.
       * @param observer A single object containing `next` and `error` callbacks.
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
     def onSnapshot(observer: firebaseLib.Anon_Complete): js.Function0[scala.Unit] = js.native
+    /**
+      * Attaches a listener for DocumentSnapshot events. You may either pass
+      * individual `onNext` and `onError` callbacks or pass a single observer
+      * object with `next` and `error` callbacks.
+      *
+      * NOTE: Although an `onCompletion` callback can be provided, it will
+      * never be called because the snapshot stream is never-ending.
+      *
+      * @param onNext A callback to be called every time a new `DocumentSnapshot`
+      * is available.
+      * @param onError A callback to be called if the listen fails or is
+      * cancelled. No further callbacks will occur.
+      * @return An unsubscribe function that can be called to cancel
+      * the snapshot listener.
+      */
     def onSnapshot(
       onNext: js.Function1[
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot, 
@@ -189,10 +207,39 @@ object firestoreNs extends js.Object {
       onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
+    /**
+      * Attaches a listener for DocumentSnapshot events. You may either pass
+      * individual `onNext` and `onError` callbacks or pass a single observer
+      * object with `next` and `error` callbacks.
+      *
+      * NOTE: Although an `onCompletion` callback can be provided, it will
+      * never be called because the snapshot stream is never-ending.
+      *
+      * @param options Options controlling the listen behavior.
+      * @param observer A single object containing `next` and `error` callbacks.
+      * @return An unsubscribe function that can be called to cancel
+      * the snapshot listener.
+      */
     def onSnapshot(
       options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
       observer: firebaseLib.Anon_CompleteError
     ): js.Function0[scala.Unit] = js.native
+    /**
+      * Attaches a listener for DocumentSnapshot events. You may either pass
+      * individual `onNext` and `onError` callbacks or pass a single observer
+      * object with `next` and `error` callbacks.
+      *
+      * NOTE: Although an `onCompletion` callback can be provided, it will
+      * never be called because the snapshot stream is never-ending.
+      *
+      * @param options Options controlling the listen behavior.
+      * @param onNext A callback to be called every time a new `DocumentSnapshot`
+      * is available.
+      * @param onError A callback to be called if the listen fails or is
+      * cancelled. No further callbacks will occur.
+      * @return An unsubscribe function that can be called to cancel
+      * the snapshot listener.
+      */
     def onSnapshot(
       options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
       onNext: js.Function1[
@@ -266,18 +313,23 @@ object firestoreNs extends js.Object {
   
   @js.native
   class DocumentSnapshot protected () extends js.Object {
-    /** True if the document exists. */
+    /**
+      * Property of the `DocumentSnapshot` that signals whether or not the data
+      * exists. True if the document exists.
+      */
     val exists: scala.Boolean = js.native
     /**
-      * The ID of the document for which this `DocumentSnapshot` contains data.
+      * Property of the `DocumentSnapshot` that provides the document's ID.
       */
     val id: java.lang.String = js.native
     /**
-      * Metadata about this snapshot, concerning its source and if it has local
-      * modifications.
+      *  Metadata about the `DocumentSnapshot`, including information about its
+      *  source and local modifications.
       */
     val metadata: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotMetadata = js.native
-    /** A `DocumentReference` to the document location. */
+    /**
+      * The `DocumentReference` for the document included in the `DocumentSnapshot`.
+      */
     val ref: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference = js.native
     /**
       * Retrieves all fields in the document as an Object. Returns 'undefined' if
@@ -301,7 +353,7 @@ object firestoreNs extends js.Object {
       options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotOptions
     ): js.Any = js.native
     /**
-      * Retrieves the field specified by `fieldPath`. Returns 'undefined' if the
+      * Retrieves the field specified by `fieldPath`. Returns `undefined` if the
       * document or field doesn't exist.
       *
       * By default, a `FieldValue.serverTimestamp()` that has not yet been set to
@@ -360,14 +412,21 @@ object firestoreNs extends js.Object {
   
   @js.native
   class Firestore protected () extends js.Object {
+    /**
+      * @hidden
+      */
     var INTERNAL: firebaseLib.Anon_Delete = js.native
     /**
-      * The `FirebaseApp` associated with this `Firestore` instance.
+      * The {@link firebase.app.App app} associated with this `Firestore` service
+      * instance.
       */
     var app: firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
     /**
       * Creates a write batch, used for performing multiple writes as a single
       * atomic operation.
+      *
+      * @return {!firebase.firestore.WriteBatch}
+      *   A `WriteBatch` that can be used to atomically execute multiple writes.
       */
     def batch(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
     /**
@@ -380,11 +439,13 @@ object firestoreNs extends js.Object {
     def collection(collectionPath: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.CollectionReference = js.native
     /**
       * Disables network usage for this instance. It can be re-enabled via
-      * enableNetwork(). While the network is disabled, any snapshot listeners or
-      * get() calls will return results from cache, and any write operations will
-      * be queued until the network is restored.
+      * {@link firebase.firestore.Firestore.enableNetwork `enableNetwork()`}. While
+      * the network is disabled, any snapshot listeners or get() calls will return
+      * results from cache, and any write operations will be queued until the network
+      * is restored.
       *
-      * @return A promise that is resolved once the network has been disabled.
+      * @return {!Promise<void>} A promise that is resolved once the network has been
+      *   disabled.
       */
     def disableNetwork(): js.Promise[scala.Unit] = js.native
     /**
@@ -397,9 +458,11 @@ object firestoreNs extends js.Object {
     def doc(documentPath: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference = js.native
     /**
       * Re-enables use of the network for this Firestore instance after a prior
-      * call to disableNetwork().
+      * call to {@link firebase.firestore.Firestore.disableNetwork
+      * `disableNetwork()`}.
       *
-      * @return A promise that is resolved once the network has been enabled.
+      * @return {!Promise<void>} A promise that is resolved once the network has been
+      *   enabled.
       */
     def enableNetwork(): js.Promise[scala.Unit] = js.native
     /**
@@ -425,18 +488,20 @@ object firestoreNs extends js.Object {
     def enablePersistence(): js.Promise[scala.Unit] = js.native
     def enablePersistence(settings: firebaseLib.firebaseMod.firebaseNs.firestoreNs.PersistenceSettings): js.Promise[scala.Unit] = js.native
     /**
-      * Executes the given updateFunction and then attempts to commit the
-      * changes applied within the transaction. If any document read within the
-      * transaction has changed, the updateFunction will be retried. If it fails
-      * to commit after 5 attempts, the transaction will fail.
+      * Executes the given `updateFunction` and then attempts to commit the changes
+      * applied within the transaction. If any document read within the transaction
+      * has changed, Cloud Firestore retries the `updateFunction`. If it fails to
+      * commit after 5 attempts, the transaction fails.
       *
-      * @param updateFunction The function to execute within the transaction
-      * context.
-      * @return If the transaction completed successfully or was explicitly
-      * aborted (by the updateFunction returning a failed Promise), the Promise
-      * returned by the updateFunction will be returned here. Else if the
-      * transaction failed, a rejected Promise with the corresponding failure
-      * error will be returned.
+      * @param {function(!firebase.firestore.Transaction)} updateFunction
+      *   The function to execute within the transaction context.
+      *
+      * @return {!Promise}
+      *   If the transaction completed successfully or was explicitly aborted
+      *   (the `updateFunction` returned a failed promise),
+      *   the promise returned by the updateFunction is returned here. Else, if the
+      *   transaction failed, a rejected promise with the corresponding failure
+      *   error will be returned.
       */
     def runTransaction[T](
       updateFunction: js.Function1[
@@ -471,7 +536,13 @@ object firestoreNs extends js.Object {
       * @param longitude The longitude as number between -180 and 180.
       */
     def this(latitude: scala.Double, longitude: scala.Double) = this()
+    /**
+      * The latitude of this GeoPoint instance.
+      */
     val latitude: scala.Double = js.native
+    /**
+      * The longitude of this GeoPoint instance.
+      */
     val longitude: scala.Double = js.native
     /**
       * Returns true if this `GeoPoint` is equal to the provided one.
@@ -486,17 +557,17 @@ object firestoreNs extends js.Object {
     /**
       * Describes whether we should get from server or cache.
       *
-      * Setting to 'default' (or not setting at all), causes Firestore to try to
+      * Setting to `default` (or not setting at all), causes Firestore to try to
       * retrieve an up-to-date (server-retrieved) snapshot, but fall back to
       * returning cached data if the server can't be reached.
       *
-      * Setting to 'server' causes Firestore to avoid the cache, generating an
+      * Setting to `server` causes Firestore to avoid the cache, generating an
       * error if the server cannot be reached. Note that the cache will still be
       * updated if the server request succeeds. Also note that latency-compensation
       * still takes effect, so any pending write operations will be visible in the
       * returned data (merged into the server-provided data).
       *
-      * Setting to 'cache' causes Firestore to immediately return a value from the
+      * Setting to `cache` causes Firestore to immediately return a value from the
       * cache, ignoring the server completely (implying that the returned value
       * may be stale with respect to the value on the server.) If there is no data
       * in the cache to satisfy the `get()` call, `DocumentReference.get()` will
@@ -576,7 +647,7 @@ object firestoreNs extends js.Object {
       */
     def endBefore(snapshot: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
     /**
-      * Executes the query and returns the results as a QuerySnapshot.
+      * Executes the query and returns the results as a `QuerySnapshot`.
       *
       * Note: By default, get() attempts to provide up-to-date data when possible
       * by waiting for data from the server, but it may return cached data or fail
@@ -596,8 +667,8 @@ object firestoreNs extends js.Object {
       */
     def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query): scala.Boolean = js.native
     /**
-      * Creates and returns a new Query that's additionally limited to only
-      * return up to the specified number of documents.
+      * Creates and returns a new Query where the results are limited to the
+      * specified number of documents.
       *
       * @param limit The maximum number of items to return.
       * @return The created Query.
@@ -606,21 +677,33 @@ object firestoreNs extends js.Object {
     /**
       * Attaches a listener for QuerySnapshot events. You may either pass
       * individual `onNext` and `onError` callbacks or pass a single observer
-      * object with `next` and `error` callbacks.
+      * object with `next` and `error` callbacks. The listener can be cancelled by
+      * calling the function that is returned when `onSnapshot` is called.
       *
       * NOTE: Although an `onCompletion` callback can be provided, it will
       * never be called because the snapshot stream is never-ending.
       *
-      * @param options Options controlling the listen behavior.
-      * @param onNext A callback to be called every time a new `QuerySnapshot`
-      * is available.
-      * @param onError A callback to be called if the listen fails or is
-      * cancelled. No further callbacks will occur.
       * @param observer A single object containing `next` and `error` callbacks.
       * @return An unsubscribe function that can be called to cancel
       * the snapshot listener.
       */
     def onSnapshot(observer: firebaseLib.Anon_CompleteErrorNext): js.Function0[scala.Unit] = js.native
+    /**
+      * Attaches a listener for QuerySnapshot events. You may either pass
+      * individual `onNext` and `onError` callbacks or pass a single observer
+      * object with `next` and `error` callbacks. The listener can be cancelled by
+      * calling the function that is returned when `onSnapshot` is called.
+      *
+      * NOTE: Although an `onCompletion` callback can be provided, it will
+      * never be called because the snapshot stream is never-ending.
+      *
+      * @param onNext A callback to be called every time a new `QuerySnapshot`
+      * is available.
+      * @param onError A callback to be called if the listen fails or is
+      * cancelled. No further callbacks will occur.
+      * @return An unsubscribe function that can be called to cancel
+      * the snapshot listener.
+      */
     def onSnapshot(
       onNext: js.Function1[
           /* snapshot */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot, 
@@ -642,10 +725,41 @@ object firestoreNs extends js.Object {
       onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
       onCompletion: js.Function0[scala.Unit]
     ): js.Function0[scala.Unit] = js.native
+    /**
+      * Attaches a listener for QuerySnapshot events. You may either pass
+      * individual `onNext` and `onError` callbacks or pass a single observer
+      * object with `next` and `error` callbacks. The listener can be cancelled by
+      * calling the function that is returned when `onSnapshot` is called.
+      *
+      * NOTE: Although an `onCompletion` callback can be provided, it will
+      * never be called because the snapshot stream is never-ending.
+      *
+      * @param options Options controlling the listen behavior.
+      * @param observer A single object containing `next` and `error` callbacks.
+      * @return An unsubscribe function that can be called to cancel
+      * the snapshot listener.
+      */
     def onSnapshot(
       options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
       observer: firebaseLib.Anon_CompleteErrorNext
     ): js.Function0[scala.Unit] = js.native
+    /**
+      * Attaches a listener for QuerySnapshot events. You may either pass
+      * individual `onNext` and `onError` callbacks or pass a single observer
+      * object with `next` and `error` callbacks. The listener can be cancelled by
+      * calling the function that is returned when `onSnapshot` is called.
+      *
+      * NOTE: Although an `onCompletion` callback can be provided, it will
+      * never be called because the snapshot stream is never-ending.
+      *
+      * @param options Options controlling the listen behavior.
+      * @param onNext A callback to be called every time a new `QuerySnapshot`
+      * is available.
+      * @param onError A callback to be called if the listen fails or is
+      * cancelled. No further callbacks will occur.
+      * @return An unsubscribe function that can be called to cancel
+      * the snapshot listener.
+      */
     def onSnapshot(
       options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions,
       onNext: js.Function1[
@@ -680,7 +794,7 @@ object firestoreNs extends js.Object {
       * specified field, optionally in descending order instead of ascending.
       *
       * @param fieldPath The field to sort by.
-      * @param directionStr Optional direction to sort by ('asc' or 'desc'). If
+      * @param directionStr Optional direction to sort by (`asc` or `desc`). If
       * not specified, order will be ascending.
       * @return The created Query.
       */
@@ -722,7 +836,7 @@ object firestoreNs extends js.Object {
     /**
       * Creates and returns a new Query that starts at the provided document
       * (inclusive). The starting position is relative to the order of the query.
-      * The document must contain all of the fields provided in the orderBy of
+      * The document must contain all of the fields provided in the `orderBy` of
       * this query.
       *
       * @param snapshot The snapshot of the document to start at.
@@ -757,9 +871,9 @@ object firestoreNs extends js.Object {
   
   @js.native
   class QuerySnapshot protected () extends js.Object {
-    /** An array of all the documents in the QuerySnapshot. */
+    /** An array of all the documents in the `QuerySnapshot`. */
     val docs: coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QueryDocumentSnapshot] = js.native
-    /** True if there are no documents in the QuerySnapshot. */
+    /** True if there are no documents in the `QuerySnapshot`. */
     val empty: scala.Boolean = js.native
     /**
       * Metadata about this snapshot, concerning its source and if it has local
@@ -771,7 +885,7 @@ object firestoreNs extends js.Object {
       * `QuerySnapshot`.
       */
     val query: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Query = js.native
-    /** The number of documents in the QuerySnapshot. */
+    /** The number of documents in the `QuerySnapshot`. */
     val size: scala.Double = js.native
     /**
       * Returns an array of the documents changes since the last snapshot. If this
@@ -784,7 +898,7 @@ object firestoreNs extends js.Object {
     def docChanges(): coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChange] = js.native
     def docChanges(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SnapshotListenOptions): coreDashJsLib.Array[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChange] = js.native
     /**
-      * Enumerates all of the documents in the QuerySnapshot.
+      * Enumerates all of the documents in the `QuerySnapshot`.
       *
       * @param callback A callback to be called with a `QueryDocumentSnapshot` for
       * each document in the snapshot.
@@ -877,9 +991,10 @@ object firestoreNs extends js.Object {
   
   trait SnapshotMetadata extends js.Object {
     /**
-      * True if the snapshot was created from cached data rather than
-      * guaranteed up-to-date server data. If your listener has opted into
-      * metadata updates (via `DocumentListenOptions` or `QueryListenOptions`)
+      * True if the snapshot includes local writes (`set()` or
+      * `update()` calls) that haven't been committed to the backend yet.
+      * If your listener has opted into
+      * metadata updates (via `SnapshotListenOptions`)
       * you will receive another snapshot with `fromCache` equal to false once
       * the client has received up-to-date data from the backend.
       */
@@ -888,7 +1003,7 @@ object firestoreNs extends js.Object {
       * True if the snapshot contains the result of local writes (e.g. set() or
       * update() calls) that have not yet been committed to the backend.
       * If your listener has opted into metadata updates (via
-      * `DocumentListenOptions` or `QueryListenOptions`) you will receive another
+      * `SnapshotListenOptions`) you will receive another
       * snapshot with `hasPendingWrites` equal to false once the writes have been
       * committed to the backend.
       */
@@ -946,15 +1061,16 @@ object firestoreNs extends js.Object {
       */
     def isEqual(other: firebaseLib.firebaseMod.firebaseNs.firestoreNs.Timestamp): scala.Boolean = js.native
     /**
-      * Returns a new `Date` corresponding to this timestamp. This may lose
-      * precision.
+      * Convert a Timestamp to a JavaScript `Date` object. This conversion causes
+      * a loss of precision since `Date` objects only support millisecond precision.
       *
       * @return JavaScript `Date` object representing the same point in time as
       *     this `Timestamp`, with millisecond precision.
       */
     def toDate(): coreDashJsLib.Date = js.native
     /**
-      * Returns the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
+      * Convert a timestamp to a numeric timestamp (in milliseconds since epoch).
+      * This operation causes a loss of precision.
       *
       * @return The point in time corresponding to this timestamp, represented as
       *     the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
@@ -1133,10 +1249,16 @@ object firestoreNs extends js.Object {
     /**
       * Creates a new Blob from the given Base64 string, converting it to
       * bytes.
+      *
+      * @param {string} base64
+      *   The Base64 string used to create the Blob object.
       */
     def fromBase64String(base64: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob = js.native
     /**
       * Creates a new Blob from the given Uint8Array.
+      *
+      * @param {!Uint8Array} array
+      *   The Uint8Array used to create the Blob object.
       */
     def fromUint8Array(array: stdLib.Uint8Array): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob = js.native
   }
@@ -1145,7 +1267,7 @@ object firestoreNs extends js.Object {
   @js.native
   object FieldPath extends js.Object {
     /**
-      * Returns a special sentinel FieldPath to refer to the ID of a document.
+      * Returns a special sentinel `FieldPath` to refer to the ID of a document.
       * It can be used in queries to sort or filter by the document ID.
       */
     def documentId(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath = js.native
@@ -1155,18 +1277,18 @@ object firestoreNs extends js.Object {
   @js.native
   object FieldValue extends js.Object {
     /**
-      * Returns a special value that can be used with set() or update() that tells
+      * Returns a special value that can be used with `set()` or `update()` that tells
       * the server to remove the given elements from any array value that already
       * exists on the server. All instances of each element specified will be
       * removed from the array. If the field being modified is not already an
       * array it will be overwritten with an empty array.
       *
       * @param elements The elements to remove from the array.
-      * @return The FieldValue sentinel for use in a call to set() or update().
+      * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
       */
     def arrayRemove(elements: js.Any*): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
     /**
-      * Returns a special value that can be used with set() or update() that tells
+      * Returns a special value that can be used with `set()` or `update()` that tells
       * the server to union the given elements with any array value that already
       * exists on the server. Each specified element that doesn't already exist in
       * the array will be added to the end. If the field being modified is not
@@ -1174,15 +1296,15 @@ object firestoreNs extends js.Object {
       * the specified elements.
       *
       * @param elements The elements to union into the array.
-      * @return The FieldValue sentinel for use in a call to set() or update().
+      * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
       */
     def arrayUnion(elements: js.Any*): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
     /**
-      * Returns a sentinel for use with update() to mark a field for deletion.
+      * Returns a sentinel for use with `update()` to mark a field for deletion.
       */
     def delete(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
     /**
-      * Returns a sentinel used with set() or update() to include a
+      * Returns a sentinel used with `set()` or `update()` to include a
       * server-generated timestamp in the written data.
       */
     def serverTimestamp(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native

@@ -225,7 +225,7 @@ object VictoryAxisProps {
     offsetX: scala.Int | scala.Double = null,
     offsetY: scala.Int | scala.Double = null,
     orientation: victoryLib.victoryLibStrings.top | victoryLib.victoryLibStrings.bottom | victoryLib.victoryLibStrings.left | victoryLib.victoryLibStrings.right = null,
-    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
     style: victoryLib.Anon_AxisAxisLabel = null,

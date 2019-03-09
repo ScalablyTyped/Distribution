@@ -18,6 +18,8 @@ class Skeleton protected () extends js.Object {
   var flipY: scala.Boolean = js.native
   var ikConstraints: js.Array[IkConstraint] = js.native
   var pathConstraints: js.Array[PathConstraint] = js.native
+  var scaleX: scala.Double = js.native
+  var scaleY: scala.Double = js.native
   var skin: Skin = js.native
   var slots: js.Array[Slot] = js.native
   var time: scala.Double = js.native
@@ -53,5 +55,12 @@ class Skeleton protected () extends js.Object {
   def update(delta: scala.Double): scala.Unit = js.native
   def updateCache(): scala.Unit = js.native
   def updateWorldTransform(): scala.Unit = js.native
+}
+
+/* static members */
+@JSGlobal("PIXI.spine.core.Skeleton")
+@js.native
+object Skeleton extends js.Object {
+  var deprecatedWarning1: js.Any = js.native
 }
 

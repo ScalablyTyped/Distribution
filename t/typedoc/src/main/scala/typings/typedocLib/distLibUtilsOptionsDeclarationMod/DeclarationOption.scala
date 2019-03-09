@@ -12,7 +12,7 @@ trait DeclarationOption extends js.Object {
   var help: java.lang.String
   var hint: js.UndefOr[ParameterHint] = js.undefined
   var map: js.UndefOr[
-    typedocLib.typedocLibStrings.`object` | (lodashLib.lodashMod.Global.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any]
+    typedocLib.typedocLibStrings.`object` | (nodeLib.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
   var mapError: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String
@@ -30,7 +30,7 @@ object DeclarationOption {
     convert: js.Function2[/* param */ OptionDeclaration, /* value */ js.UndefOr[js.Any], _] = null,
     defaultValue: js.Any = null,
     hint: ParameterHint = null,
-    map: typedocLib.typedocLibStrings.`object` | (lodashLib.lodashMod.Global.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    map: typedocLib.typedocLibStrings.`object` | (nodeLib.Map[java.lang.String | scala.Double, _]) | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     mapError: java.lang.String = null,
     scope: ParameterScope = null,
     short: java.lang.String = null,

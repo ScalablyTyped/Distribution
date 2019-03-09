@@ -13,7 +13,7 @@ trait Options extends js.Object {
   /**
     * Pass in a previously generated cache object to save some fs calls
     */
-  var cache: js.UndefOr[lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String]] = js.undefined
+  var cache: js.UndefOr[nodeLib.Map[java.lang.String, java.lang.String]] = js.undefined
   /**
     * The current working directory in which to search. Defaults to process.cwd()
     */
@@ -88,7 +88,7 @@ trait Options extends js.Object {
   /**
     * A cache of results of filesystem information, to prevent unnecessary realpath calls
     */
-  var realpathCache: js.UndefOr[lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String]] = js.undefined
+  var realpathCache: js.UndefOr[nodeLib.Map[java.lang.String, java.lang.String]] = js.undefined
   /**
     * The place where patterns starting with / will be mounted onto
     */
@@ -105,9 +105,7 @@ trait Options extends js.Object {
   /**
     * A cache of results of filesystem information, to prevent unnecessary stat calls
     */
-  var statCache: js.UndefOr[
-    lodashLib.lodashMod.Global.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats]
-  ] = js.undefined
+  var statCache: js.UndefOr[nodeLib.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats]] = js.undefined
   /**
     * When an unusual error is encountered when attempting to read a directory,
     * the process will just continue on in search of other matches.
@@ -124,7 +122,7 @@ object Options {
   @scala.inline
   def apply(
     absolute: js.UndefOr[scala.Boolean] = js.undefined,
-    cache: lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String] = null,
+    cache: nodeLib.Map[java.lang.String, java.lang.String] = null,
     cwd: java.lang.String = null,
     dot: js.UndefOr[scala.Boolean] = js.undefined,
     follow: js.UndefOr[scala.Boolean] = js.undefined,
@@ -141,11 +139,11 @@ object Options {
     nosort: js.UndefOr[scala.Boolean] = js.undefined,
     nounique: js.UndefOr[scala.Boolean] = js.undefined,
     realpath: js.UndefOr[scala.Boolean] = js.undefined,
-    realpathCache: lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String] = null,
+    realpathCache: nodeLib.Map[java.lang.String, java.lang.String] = null,
     root: java.lang.String = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     stat: js.UndefOr[scala.Boolean] = js.undefined,
-    statCache: lodashLib.lodashMod.Global.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats] = null,
+    statCache: nodeLib.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     symlinks: js.Object = null
   ): Options = {

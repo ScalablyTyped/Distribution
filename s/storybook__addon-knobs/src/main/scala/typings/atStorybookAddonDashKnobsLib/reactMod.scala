@@ -65,6 +65,8 @@ object reactMod extends js.Object {
     value: java.lang.String,
     groupId: java.lang.String
   ): java.lang.String = js.native
+  def select[T /* <: java.lang.String */](name: java.lang.String, options: js.Array[T], value: T): T = js.native
+  def select[T /* <: java.lang.String */](name: java.lang.String, options: js.Array[T], value: T, groupId: java.lang.String): T = js.native
   def select[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T], value: T): T = js.native
   def select[T](
     name: java.lang.String,

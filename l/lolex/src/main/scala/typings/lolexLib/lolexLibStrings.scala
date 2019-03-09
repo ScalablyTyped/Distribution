@@ -10,6 +10,12 @@ object lolexLibStrings {
   sealed trait Date extends FakeMethod
   
   @js.native
+  sealed trait cancelAnimationFrame extends FakeMethod
+  
+  @js.native
+  sealed trait cancelIdleCallback extends FakeMethod
+  
+  @js.native
   sealed trait clearImmediate extends FakeMethod
   
   @js.native
@@ -25,6 +31,12 @@ object lolexLibStrings {
   sealed trait nextTick extends FakeMethod
   
   @js.native
+  sealed trait requestAnimationFrame extends FakeMethod
+  
+  @js.native
+  sealed trait requestIdleCallback extends FakeMethod
+  
+  @js.native
   sealed trait setImmediate extends FakeMethod
   
   @js.native
@@ -36,6 +48,10 @@ object lolexLibStrings {
   @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]
   @scala.inline
+  def cancelAnimationFrame: cancelAnimationFrame = "cancelAnimationFrame".asInstanceOf[cancelAnimationFrame]
+  @scala.inline
+  def cancelIdleCallback: cancelIdleCallback = "cancelIdleCallback".asInstanceOf[cancelIdleCallback]
+  @scala.inline
   def clearImmediate: clearImmediate = "clearImmediate".asInstanceOf[clearImmediate]
   @scala.inline
   def clearInterval: clearInterval = "clearInterval".asInstanceOf[clearInterval]
@@ -45,6 +61,10 @@ object lolexLibStrings {
   def hrtime: hrtime = "hrtime".asInstanceOf[hrtime]
   @scala.inline
   def nextTick: nextTick = "nextTick".asInstanceOf[nextTick]
+  @scala.inline
+  def requestAnimationFrame: requestAnimationFrame = "requestAnimationFrame".asInstanceOf[requestAnimationFrame]
+  @scala.inline
+  def requestIdleCallback: requestIdleCallback = "requestIdleCallback".asInstanceOf[requestIdleCallback]
   @scala.inline
   def setImmediate: setImmediate = "setImmediate".asInstanceOf[setImmediate]
   @scala.inline

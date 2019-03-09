@@ -53,6 +53,7 @@ package object awsDashLambdaMod {
   type S3Handler = Handler[S3Event, scala.Unit]
   type SNSHandler = Handler[SNSEvent, scala.Unit]
   type SQSHandler = Handler[SQSEvent, scala.Unit]
+  type SQSMessageAttributeDataType = _SQSMessageAttributeDataType | java.lang.String
   type ScheduledHandler = Handler[ScheduledEvent, scala.Unit]
   type Statement = BaseStatement with StatementAction with (StatementResource | StatementPrincipal)
   type StatementPrincipal = MaybeStatementResource with (awsDashLambdaLib.Anon_Principal | awsDashLambdaLib.Anon_NotPrincipal)

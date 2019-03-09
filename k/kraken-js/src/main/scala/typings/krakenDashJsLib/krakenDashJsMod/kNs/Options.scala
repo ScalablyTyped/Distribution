@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var mountpath: js.UndefOr[java.lang.String] = js.undefined
   var onconfig: js.UndefOr[
     js.Function2[
-      /* config */ stdLib.Map[java.lang.String, _], 
+      /* config */ nodeLib.Map[java.lang.String, _], 
       /* next */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* config */ js.UndefOr[js.Object], _], 
       _
     ]
@@ -30,7 +30,7 @@ object Options {
     inheritViews: js.UndefOr[scala.Boolean] = js.undefined,
     mountpath: java.lang.String = null,
     onconfig: js.Function2[
-      /* config */ stdLib.Map[java.lang.String, _], 
+      /* config */ nodeLib.Map[java.lang.String, _], 
       /* next */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* config */ js.UndefOr[js.Object], _], 
       _
     ] = null,

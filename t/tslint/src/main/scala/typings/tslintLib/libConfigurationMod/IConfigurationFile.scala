@@ -21,7 +21,7 @@ trait IConfigurationFile extends js.Object {
   /**
     * Rules that are used to lint to JavaScript files.
     */
-  var jsRules: stdLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]]
+  var jsRules: nodeLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]]
   /**
     * A subset of the CLI options.
     */
@@ -29,7 +29,7 @@ trait IConfigurationFile extends js.Object {
   /**
     * Rules that are used to lint TypeScript files.
     */
-  var rules: stdLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]]
+  var rules: nodeLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]]
   /**
     * Directories containing custom rules. Resolved using node module semantics.
     */
@@ -40,8 +40,8 @@ object IConfigurationFile {
   @scala.inline
   def apply(
     `extends`: js.Array[java.lang.String],
-    jsRules: stdLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]],
-    rules: stdLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]],
+    jsRules: nodeLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]],
+    rules: nodeLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]],
     rulesDirectory: js.Array[java.lang.String],
     defaultSeverity: tslintLib.libLanguageRuleRuleMod.RuleSeverity = null,
     linterOptions: stdLib.Partial[tslintLib.Anon_Exclude] = null

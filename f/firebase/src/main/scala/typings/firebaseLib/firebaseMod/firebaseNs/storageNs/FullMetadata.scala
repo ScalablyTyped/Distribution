@@ -5,7 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The full set of object metadata, including read-only properties.
+  */
 trait FullMetadata extends UploadMetadata {
+  /**
+    * The bucket this object is contained in.
+    */
   var bucket: java.lang.String
   /**
     * @deprecated
@@ -13,12 +19,36 @@ trait FullMetadata extends UploadMetadata {
     * future release.
     */
   var downloadURLs: coreDashJsLib.Array[java.lang.String]
+  /**
+    * The full path of this object.
+    */
   var fullPath: java.lang.String
+  /**
+    * The object's generation.
+    * @see {@link https://cloud.google.com/storage/docs/generations-preconditions}
+    */
   var generation: java.lang.String
+  /**
+    * The object's metageneration.
+    * @see {@link https://cloud.google.com/storage/docs/generations-preconditions}
+    */
   var metageneration: java.lang.String
+  /**
+    * The short name of this object, which is the last component of the full path.
+    * For example, if fullPath is 'full/path/image.png', name is 'image.png'.
+    */
   var name: java.lang.String
+  /**
+    * The size of this object, in bytes.
+    */
   var size: scala.Double
+  /**
+    * A date string representing when this object was created.
+    */
   var timeCreated: java.lang.String
+  /**
+    * A date string representing when this object was last updated.
+    */
   var updated: java.lang.String
 }
 

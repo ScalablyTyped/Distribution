@@ -160,7 +160,7 @@ object jestNs extends js.Object {
     def apply(name: js.Function, fn: EmptyFunction): scala.Unit = js.native
     // tslint:disable-next-line ban-types
     def apply(name: scala.Double, fn: EmptyFunction): scala.Unit = js.native
-    def each(cases: js.Array[_]): js.Function3[
+    def each(cases: js.Array[js.Array[_]]): js.Function3[
         /* name */ java.lang.String, 
         /* fn */ js.Function1[/* repeated */ js.Any, _], 
         /* timeout */ js.UndefOr[scala.Double], 
@@ -169,6 +169,22 @@ object jestNs extends js.Object {
     def each(strings: stdLib.TemplateStringsArray, placeholders: js.Any*): js.Function3[
         /* name */ java.lang.String, 
         /* fn */ js.Function1[/* arg */ js.Any, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
+        scala.Unit
+      ] = js.native
+    // Not arrays.
+    @JSName("each")
+    def each_T[T](cases: js.Array[T]): js.Function3[
+        /* name */ java.lang.String, 
+        /* fn */ js.Function1[/* repeated */ T, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
+        scala.Unit
+      ] = js.native
+    // Exclusively arrays.
+    @JSName("each")
+    def each_TArray[T /* <: js.Array[_] */](cases: js.Array[T]): js.Function3[
+        /* name */ java.lang.String, 
+        /* fn */ js.Function1[/* args */ T, _], 
         /* timeout */ js.UndefOr[scala.Double], 
         scala.Unit
       ] = js.native
@@ -196,7 +212,7 @@ object jestNs extends js.Object {
   
   @js.native
   trait Each extends js.Object {
-    def apply(cases: js.Array[_]): js.Function3[
+    def apply(cases: js.Array[js.Array[_]]): js.Function3[
         /* name */ java.lang.String, 
         /* fn */ js.Function1[/* repeated */ js.Any, _], 
         /* timeout */ js.UndefOr[scala.Double], 
@@ -630,7 +646,7 @@ object jestNs extends js.Object {
       * });
       *
       */
-    def each(cases: js.Array[_]): js.Function3[
+    def each(cases: js.Array[js.Array[_]]): js.Function3[
         /* name */ java.lang.String, 
         /* fn */ js.Function1[/* repeated */ js.Any, _], 
         /* timeout */ js.UndefOr[scala.Double], 
@@ -679,6 +695,102 @@ object jestNs extends js.Object {
     def each(strings: stdLib.TemplateStringsArray, placeholders: js.Any*): js.Function3[
         /* name */ java.lang.String, 
         /* fn */ js.Function1[/* arg */ js.Any, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
+        scala.Unit
+      ] = js.native
+    // Not arrays.
+    /**
+      * Use if you keep duplicating the same test with different data. `.each` allows you to write the
+      * test once and pass data in.
+      *
+      * `.each` is available with two APIs:
+      *
+      * #### 1  `test.each(table)(name, fn)`
+      *
+      * - `table`: Array of Arrays with the arguments that are passed into the test fn for each row.
+      * - `name`: String the title of the test block.
+      * - `fn`: Function the test to be ran, this is the function that will receive the parameters in each row as function arguments.
+      *
+      *
+      * #### 2  `test.each table(name, fn)`
+      *
+      * - `table`: Tagged Template Literal
+      * - `name`: String the title of the test, use `$variable` to inject test data into the test title from the tagged template expressions.
+      * - `fn`: Function the test to be ran, this is the function that will receive the test data object..
+      *
+      * @example
+      *
+      * // API 1
+      * test.each([[1, 1, 2], [1, 2, 3], [2, 1, 3]])(
+      *   '.add(%i, %i)',
+      *   (a, b, expected) => {
+      *     expect(a + b).toBe(expected);
+      *   },
+      * );
+      *
+      * // API 2
+      * test.each`
+      * a    | b    | expected
+      * ${1} | ${1} | ${2}
+      * ${1} | ${2} | ${3}
+      * ${2} | ${1} | ${3}
+      * `('returns $expected when $a is added $b', ({a, b, expected}) => {
+      *    expect(a + b).toBe(expected);
+      * });
+      *
+      */
+    @JSName("each")
+    def each_T[T](cases: js.Array[T]): js.Function3[
+        /* name */ java.lang.String, 
+        /* fn */ js.Function1[/* repeated */ T, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
+        scala.Unit
+      ] = js.native
+    // Exclusively arrays.
+    /**
+      * Use if you keep duplicating the same test with different data. `.each` allows you to write the
+      * test once and pass data in.
+      *
+      * `.each` is available with two APIs:
+      *
+      * #### 1  `test.each(table)(name, fn)`
+      *
+      * - `table`: Array of Arrays with the arguments that are passed into the test fn for each row.
+      * - `name`: String the title of the test block.
+      * - `fn`: Function the test to be ran, this is the function that will receive the parameters in each row as function arguments.
+      *
+      *
+      * #### 2  `test.each table(name, fn)`
+      *
+      * - `table`: Tagged Template Literal
+      * - `name`: String the title of the test, use `$variable` to inject test data into the test title from the tagged template expressions.
+      * - `fn`: Function the test to be ran, this is the function that will receive the test data object..
+      *
+      * @example
+      *
+      * // API 1
+      * test.each([[1, 1, 2], [1, 2, 3], [2, 1, 3]])(
+      *   '.add(%i, %i)',
+      *   (a, b, expected) => {
+      *     expect(a + b).toBe(expected);
+      *   },
+      * );
+      *
+      * // API 2
+      * test.each`
+      * a    | b    | expected
+      * ${1} | ${1} | ${2}
+      * ${1} | ${2} | ${3}
+      * ${2} | ${1} | ${3}
+      * `('returns $expected when $a is added $b', ({a, b, expected}) => {
+      *    expect(a + b).toBe(expected);
+      * });
+      *
+      */
+    @JSName("each")
+    def each_TArray[T /* <: js.Array[_] */](cases: js.Array[T]): js.Function3[
+        /* name */ java.lang.String, 
+        /* fn */ js.Function1[/* args */ T, _], 
         /* timeout */ js.UndefOr[scala.Double], 
         scala.Unit
       ] = js.native
@@ -1517,6 +1629,11 @@ object jestNs extends js.Object {
     * Returns whether the given function is a mock function.
     */
   def isMockFunction(fn: js.Any): /* is jest.jest.jest.Mock<any, any> */ scala.Boolean = js.native
+  /**
+    * Creates a sandbox registry for the modules that are loaded inside the callback function..
+    * This is useful to isolate specific modules for every test so that local module state doesn't conflict between tests.
+    */
+  def isolateModules(fn: js.Function0[scala.Unit]): jestLib.Anon_AccessType = js.native
   /**
     * Mocks a module with an auto-mocked version when it is being required.
     */

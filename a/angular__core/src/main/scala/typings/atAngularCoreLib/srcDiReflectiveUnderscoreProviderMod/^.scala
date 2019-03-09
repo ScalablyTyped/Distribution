@@ -12,11 +12,11 @@ object ^ extends js.Object {
   def constructDependencies(typeOrFunc: js.Any, dependencies: js.Array[_]): js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ReflectiveDependency] = js.native
   def mergeResolvedReflectiveProviders(
     providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider],
-    normalizedProvidersMap: stdLib.Map[
+    normalizedProvidersMap: nodeLib.Map[
       scala.Double, 
       atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider
     ]
-  ): stdLib.Map[
+  ): nodeLib.Map[
     scala.Double, 
     atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider
   ] = js.native

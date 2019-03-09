@@ -37,10 +37,12 @@ object ramdaLibNumbers {
   sealed trait `9` extends js.Object
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends ramdaLib.ToolsNs.HasTail[js.Any]
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `true`
+    extends ramdaLib.ToolsNs.HasTail[js.Any]
   
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]

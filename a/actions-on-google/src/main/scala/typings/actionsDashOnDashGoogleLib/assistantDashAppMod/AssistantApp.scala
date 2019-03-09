@@ -1333,7 +1333,7 @@ class AssistantApp () extends js.Object {
     * @dialogflow
     */
   def handleRequest(handler: js.Function1[/* app */ this.type, _]): scala.Unit = js.native
-  def handleRequest(handler: stdLib.Map[java.lang.String, js.Function1[/* app */ this.type, _]]): scala.Unit = js.native
+  def handleRequest(handler: nodeLib.Map[java.lang.String, js.Function1[/* app */ this.type, _]]): scala.Unit = js.native
   /**
     * Asynchronously handles the incoming Assistant request using a handler or Map of handlers.
     * Each handler can be a function callback or Promise.
@@ -1414,7 +1414,7 @@ class AssistantApp () extends js.Object {
     * @dialogflow
     */
   def handleRequestAsync(handler: js.Function1[/* app */ this.type, _]): js.Promise[_] = js.native
-  def handleRequestAsync(handler: stdLib.Map[java.lang.String, js.Function1[/* app */ this.type, _]]): js.Promise[_] = js.native
+  def handleRequestAsync(handler: nodeLib.Map[java.lang.String, js.Function1[/* app */ this.type, _]]): js.Promise[_] = js.native
   /**
     * Returns true if user has an available surface which includes all given
     * capabilities. Available surfaces capabilities may exist on surfaces other

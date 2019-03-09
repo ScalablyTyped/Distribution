@@ -31,7 +31,7 @@ object ^ extends js.Object {
   def serializeResourceProperties(label: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs): js.Promise[
     js.Tuple2[
       stdLib.Record[java.lang.String, _], 
-      lodashLib.lodashMod.Global.Map[java.lang.String, nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]]
+      nodeLib.Map[java.lang.String, nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]]
     ]
   ] = js.native
   def transferProperties(

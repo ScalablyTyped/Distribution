@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CommonUserstate extends js.Object {
+trait CommonUserstate
+  extends /* paramater */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var badges: js.UndefOr[Badges] = js.undefined
   var `badges-raw`: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
@@ -28,6 +29,7 @@ trait CommonUserstate extends js.Object {
 object CommonUserstate {
   @scala.inline
   def apply(
+    StringDictionary: /* paramater */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     badges: Badges = null,
     `badges-raw`: java.lang.String = null,
     color: java.lang.String = null,
@@ -45,6 +47,7 @@ object CommonUserstate {
     `user-type`: tmiDotJsLib.tmiDotJsLibStrings.Empty | tmiDotJsLib.tmiDotJsLibStrings.mod | tmiDotJsLib.tmiDotJsLibStrings.global_mod | tmiDotJsLib.tmiDotJsLibStrings.admin | tmiDotJsLib.tmiDotJsLibStrings.staff = null
   ): CommonUserstate = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (badges != null) __obj.updateDynamic("badges")(badges)
     if (`badges-raw` != null) __obj.updateDynamic("badges-raw")(`badges-raw`)
     if (color != null) __obj.updateDynamic("color")(color)

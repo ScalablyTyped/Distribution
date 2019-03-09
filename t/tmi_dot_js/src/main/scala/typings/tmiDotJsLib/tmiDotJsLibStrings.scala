@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 object tmiDotJsLibStrings {
   @js.native
   sealed trait `1000`
-    extends tmiDotJsLib.tmiDotJsMod.ResubMethod
+    extends tmiDotJsLib.tmiDotJsMod.SubMethod
   
   @js.native
   sealed trait `2000`
-    extends tmiDotJsLib.tmiDotJsMod.ResubMethod
+    extends tmiDotJsLib.tmiDotJsMod.SubMethod
   
   @js.native
   sealed trait `3000`
-    extends tmiDotJsLib.tmiDotJsMod.ResubMethod
+    extends tmiDotJsLib.tmiDotJsMod.SubMethod
   
   @js.native
   sealed trait CLOSED extends js.Object
@@ -35,7 +35,7 @@ object tmiDotJsLibStrings {
   
   @js.native
   sealed trait Prime
-    extends tmiDotJsLib.tmiDotJsMod.ResubMethod
+    extends tmiDotJsLib.tmiDotJsMod.SubMethod
   
   @js.native
   sealed trait action extends js.Object
@@ -68,6 +68,9 @@ object tmiDotJsLibStrings {
   @js.native
   sealed trait already_subs_on
     extends tmiDotJsLib.tmiDotJsMod.MsgID
+  
+  @js.native
+  sealed trait anongiftpaidupgrade extends js.Object
   
   @js.native
   sealed trait anonsubgift extends js.Object
@@ -167,6 +170,9 @@ object tmiDotJsLibStrings {
     extends tmiDotJsLib.tmiDotJsMod.MsgID
   
   @js.native
+  sealed trait giftpaidupgrade extends js.Object
+  
+  @js.native
   sealed trait global_mod extends js.Object
   
   @js.native
@@ -264,6 +270,9 @@ object tmiDotJsLibStrings {
   
   @js.native
   sealed trait subgift extends js.Object
+  
+  @js.native
+  sealed trait submysterygift extends js.Object
   
   @js.native
   sealed trait timeout_success
@@ -425,6 +434,8 @@ object tmiDotJsLibStrings {
   @scala.inline
   def already_subs_on: already_subs_on = "already_subs_on".asInstanceOf[already_subs_on]
   @scala.inline
+  def anongiftpaidupgrade: anongiftpaidupgrade = "anongiftpaidupgrade".asInstanceOf[anongiftpaidupgrade]
+  @scala.inline
   def anonsubgift: anonsubgift = "anonsubgift".asInstanceOf[anonsubgift]
   @scala.inline
   def bad_ban_admin: bad_ban_admin = "bad_ban_admin".asInstanceOf[bad_ban_admin]
@@ -474,6 +485,8 @@ object tmiDotJsLibStrings {
   def emote_only_off: emote_only_off = "emote_only_off".asInstanceOf[emote_only_off]
   @scala.inline
   def emote_only_on: emote_only_on = "emote_only_on".asInstanceOf[emote_only_on]
+  @scala.inline
+  def giftpaidupgrade: giftpaidupgrade = "giftpaidupgrade".asInstanceOf[giftpaidupgrade]
   @scala.inline
   def global_mod: global_mod = "global_mod".asInstanceOf[global_mod]
   @scala.inline
@@ -530,6 +543,8 @@ object tmiDotJsLibStrings {
   def sub: sub = "sub".asInstanceOf[sub]
   @scala.inline
   def subgift: subgift = "subgift".asInstanceOf[subgift]
+  @scala.inline
+  def submysterygift: submysterygift = "submysterygift".asInstanceOf[submysterygift]
   @scala.inline
   def timeout_success: timeout_success = "timeout_success".asInstanceOf[timeout_success]
   @scala.inline

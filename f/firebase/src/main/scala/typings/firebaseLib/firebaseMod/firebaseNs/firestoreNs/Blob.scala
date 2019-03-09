@@ -14,11 +14,17 @@ trait Blob extends js.Object {
     */
   def isEqual(other: Blob): scala.Boolean
   /**
-    * Returns the bytes of this Blob as a Base64-encoded string.
+    * Returns the bytes of a Blob as a Base64-encoded string.
+    *
+    * @return {string}
+    *   The Base64-encoded string created from the Blob object.
     */
   def toBase64(): java.lang.String
   /**
-    * Returns the bytes of this Blob in a new Uint8Array.
+    * Returns the bytes of a Blob in a new Uint8Array.
+    *
+    * @return {!Uint8Array}
+    *   The Uint8Array created from the Blob object.
     */
   def toUint8Array(): stdLib.Uint8Array
 }

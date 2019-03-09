@@ -20,15 +20,15 @@ object Diff extends js.Object {
     *
     */
   def blobToBuffer(
-    oldBlob: nodegitLib.blobMod.Blob,
-    oldAsPath: java.lang.String,
-    buffer: java.lang.String,
-    bufferAsPath: java.lang.String,
-    opts: nodegitLib.diffDashOptionsMod.DiffOptions,
-    fileCb: js.Function,
-    binaryCb: js.Function,
-    hunkCb: js.Function,
-    lineCb: js.Function
+    oldBlob: js.UndefOr[nodegitLib.blobMod.Blob],
+    oldAsPath: js.UndefOr[java.lang.String],
+    buffer: js.UndefOr[java.lang.String],
+    bufferAsPath: js.UndefOr[java.lang.String],
+    opts: js.UndefOr[nodegitLib.diffDashOptionsMod.DiffOptions],
+    fileCb: js.UndefOr[js.Function],
+    binaryCb: js.UndefOr[js.Function],
+    hunkCb: js.UndefOr[js.Function],
+    lineCb: js.UndefOr[js.Function]
   ): js.Promise[_] = js.native
   def fromBuffer(content: java.lang.String, contentLen: scala.Double): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def indexToIndex(
@@ -42,12 +42,15 @@ object Diff extends js.Object {
     newIndex: nodegitLib.indexUnderscoreMod.Index,
     opts: nodegitLib.diffDashOptionsMod.DiffOptions
   ): js.Promise[nodegitLib.diffMod.Diff] = js.native
+  def indexToWorkdir(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def indexToWorkdir(repo: nodegitLib.repositoryMod.Repository, index: nodegitLib.indexUnderscoreMod.Index): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def indexToWorkdir(
     repo: nodegitLib.repositoryMod.Repository,
     index: nodegitLib.indexUnderscoreMod.Index,
     opts: nodegitLib.diffDashOptionsMod.DiffOptions
   ): js.Promise[nodegitLib.diffMod.Diff] = js.native
+  def treeToIndex(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.diffMod.Diff] = js.native
+  def treeToIndex(repo: nodegitLib.repositoryMod.Repository, oldTree: nodegitLib.treeMod.Tree): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def treeToIndex(
     repo: nodegitLib.repositoryMod.Repository,
     oldTree: nodegitLib.treeMod.Tree,
@@ -59,6 +62,8 @@ object Diff extends js.Object {
     index: nodegitLib.indexUnderscoreMod.Index,
     opts: nodegitLib.diffDashOptionsMod.DiffOptions
   ): js.Promise[nodegitLib.diffMod.Diff] = js.native
+  def treeToTree(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.diffMod.Diff] = js.native
+  def treeToTree(repo: nodegitLib.repositoryMod.Repository, oldTree: nodegitLib.treeMod.Tree): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def treeToTree(
     repo: nodegitLib.repositoryMod.Repository,
     oldTree: nodegitLib.treeMod.Tree,
@@ -70,12 +75,14 @@ object Diff extends js.Object {
     new_tree: nodegitLib.treeMod.Tree,
     opts: nodegitLib.diffDashOptionsMod.DiffOptions
   ): js.Promise[nodegitLib.diffMod.Diff] = js.native
+  def treeToWorkdir(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def treeToWorkdir(repo: nodegitLib.repositoryMod.Repository, oldTree: nodegitLib.treeMod.Tree): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def treeToWorkdir(
     repo: nodegitLib.repositoryMod.Repository,
     oldTree: nodegitLib.treeMod.Tree,
     opts: nodegitLib.diffDashOptionsMod.DiffOptions
   ): js.Promise[nodegitLib.diffMod.Diff] = js.native
+  def treeToWorkdirWithIndex(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def treeToWorkdirWithIndex(repo: nodegitLib.repositoryMod.Repository, oldTree: nodegitLib.treeMod.Tree): js.Promise[nodegitLib.diffMod.Diff] = js.native
   def treeToWorkdirWithIndex(
     repo: nodegitLib.repositoryMod.Repository,

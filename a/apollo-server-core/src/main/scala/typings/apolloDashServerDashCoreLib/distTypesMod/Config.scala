@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in 'formatError' | 'debug' | 'rootValue' | 'validationRules' | 'formatResponse' | 'fieldResolver' | 'tracing' | 'dataSources' | 'cache' ]: apollo-server-core.apollo-server-core/dist/graphqlOptions.GraphQLServerOptions<apollo-server-core.apollo-server-core/dist/types.Context<object>, any>[P]} */ trait Config extends js.Object {
   var cacheControl: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any) | scala.Boolean
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean
   ] = js.undefined
   var context: js.UndefOr[Context[js.Object] | (ContextFunction[_, js.Object])] = js.undefined
   var engine: js.UndefOr[
@@ -50,7 +50,7 @@ import scala.scalajs.js.annotation._
 object Config {
   @scala.inline
   def apply(
-    cacheControl: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any) | scala.Boolean = null,
+    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean = null,
     context: Context[js.Object] | (ContextFunction[_, js.Object]) = null,
     engine: scala.Boolean | apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[Context[js.Object]] = null,
     extensions: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[

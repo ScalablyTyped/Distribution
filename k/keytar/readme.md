@@ -1,7 +1,10 @@
 ```
-// Type definitions for keytar 4.0.2
+// Type definitions for keytar 4.4.1
 // Project: http://atom.github.io/node-keytar/
-// Definitions by: Milan Burda <https://github.com/miniak>, Brendan Forster <https://github.com/shiftkey>, Hari Juturu <https://github.com/juturu>
+// Definitions by: Milan Burda <https://github.com/miniak>
+//                 Brendan Forster <https://github.com/shiftkey>
+//                 Hari Juturu <https://github.com/juturu>
+//                 Queenie Ma <https://github.com/queeniema>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /**
  * Get the stored password for the service and account.

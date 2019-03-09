@@ -9,9 +9,9 @@ trait MuiThemeProviderProps extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactNode
   var disableStylesGeneration: js.UndefOr[scala.Boolean] = js.undefined
   var sheetsManager: js.UndefOr[
-    stdLib.Map[
+    nodeLib.Map[
       atMaterialDashUiCoreLib.stylesWithStylesMod.StylesCreator, 
-      stdLib.Map[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme, SheetManagerTheme]
+      nodeLib.Map[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme, SheetManagerTheme]
     ]
   ] = js.undefined
   var theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme | (js.Function1[
@@ -29,9 +29,9 @@ object MuiThemeProviderProps {
       atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme
     ]),
     disableStylesGeneration: js.UndefOr[scala.Boolean] = js.undefined,
-    sheetsManager: stdLib.Map[
+    sheetsManager: nodeLib.Map[
       atMaterialDashUiCoreLib.stylesWithStylesMod.StylesCreator, 
-      stdLib.Map[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme, SheetManagerTheme]
+      nodeLib.Map[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme, SheetManagerTheme]
     ] = null
   ): MuiThemeProviderProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])

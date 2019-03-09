@@ -13,8 +13,9 @@ trait AppMesh
   /**
     * Creates a new service mesh. A service mesh is a logical boundary for network traffic
     between the services that reside within it.
-    After you create your service mesh, you can create virtual nodes, virtual routers, and
-    routes to distribute traffic between the applications in your mesh.
+    After you create your service mesh, you can create virtual services, virtual nodes,
+    virtual routers, and routes to distribute traffic between the applications in your
+    mesh.
     */
   def createMesh(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateMeshOutput, 
@@ -33,8 +34,9 @@ trait AppMesh
   /**
     * Creates a new service mesh. A service mesh is a logical boundary for network traffic
     between the services that reside within it.
-    After you create your service mesh, you can create virtual nodes, virtual routers, and
-    routes to distribute traffic between the applications in your mesh.
+    After you create your service mesh, you can create virtual services, virtual nodes,
+    virtual routers, and routes to distribute traffic between the applications in your
+    mesh.
     */
   def createMesh(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateMeshInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateMeshOutput, 
@@ -104,7 +106,7 @@ trait AppMesh
     * Creates a new virtual node within a service mesh.
     A virtual node acts as logical pointer to a particular task group, such as an Amazon ECS
     service or a Kubernetes deployment. When you create a virtual node, you must specify the
-    DNS service discovery name for your task group.
+    DNS service discovery hostname for your task group.
     Any inbound traffic that your virtual node expects should be specified as a
     listener. Any outbound traffic that your virtual node expects to reach
     should be specified as a backend.
@@ -139,7 +141,7 @@ trait AppMesh
     * Creates a new virtual node within a service mesh.
     A virtual node acts as logical pointer to a particular task group, such as an Amazon ECS
     service or a Kubernetes deployment. When you create a virtual node, you must specify the
-    DNS service discovery name for your task group.
+    DNS service discovery hostname for your task group.
     Any inbound traffic that your virtual node expects should be specified as a
     listener. Any outbound traffic that your virtual node expects to reach
     should be specified as a backend.
@@ -173,6 +175,8 @@ trait AppMesh
   ] = js.native
   /**
     * Creates a new virtual router within a service mesh.
+    Any inbound traffic that your virtual router expects should be specified as a
+    listener. 
     Virtual routers handle traffic for one or more service names within your mesh. After you
     create your virtual router, create and associate routes for your virtual router that direct
     incoming requests to different virtual nodes.
@@ -193,6 +197,8 @@ trait AppMesh
   ] = js.native
   /**
     * Creates a new virtual router within a service mesh.
+    Any inbound traffic that your virtual router expects should be specified as a
+    listener. 
     Virtual routers handle traffic for one or more service names within your mesh. After you
     create your virtual router, create and associate routes for your virtual router that direct
     incoming requests to different virtual nodes.
@@ -213,9 +219,54 @@ trait AppMesh
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Creates a virtual service within a service mesh.
+    A virtual service is an abstraction of a real service that is either provided by a
+    virtual node directly, or indirectly by means of a virtual router. Dependent services call
+    your virtual service by its virtualServiceName, and those requests are routed
+    to the virtual node or virtual router that is specified as the provider for the virtual
+    service.
+    */
+  def createVirtualService(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def createVirtualService(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateVirtualServiceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Creates a virtual service within a service mesh.
+    A virtual service is an abstraction of a real service that is either provided by a
+    virtual node directly, or indirectly by means of a virtual router. Dependent services call
+    your virtual service by its virtualServiceName, and those requests are routed
+    to the virtual node or virtual router that is specified as the provider for the virtual
+    service.
+    */
+  def createVirtualService(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateVirtualServiceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def createVirtualService(
+    params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateVirtualServiceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateVirtualServiceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.CreateVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Deletes an existing service mesh.
-    You must delete all resources (routes, virtual routers, virtual nodes) in the service
-    mesh before you can delete the mesh itself.
+    You must delete all resources (virtual services, routes, virtual routers, virtual nodes)
+    in the service mesh before you can delete the mesh itself.
     */
   def deleteMesh(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteMeshOutput, 
@@ -233,8 +284,8 @@ trait AppMesh
   ] = js.native
   /**
     * Deletes an existing service mesh.
-    You must delete all resources (routes, virtual routers, virtual nodes) in the service
-    mesh before you can delete the mesh itself.
+    You must delete all resources (virtual services, routes, virtual routers, virtual nodes)
+    in the service mesh before you can delete the mesh itself.
     */
   def deleteMesh(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteMeshInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteMeshOutput, 
@@ -288,6 +339,8 @@ trait AppMesh
   ] = js.native
   /**
     * Deletes an existing virtual node.
+    You must delete any virtual services that list a virtual node as a service provider
+    before you can delete the virtual node itself.
     */
   def deleteVirtualNode(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualNodeOutput, 
@@ -305,6 +358,8 @@ trait AppMesh
   ] = js.native
   /**
     * Deletes an existing virtual node.
+    You must delete any virtual services that list a virtual node as a service provider
+    before you can delete the virtual node itself.
     */
   def deleteVirtualNode(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualNodeInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualNodeOutput, 
@@ -358,6 +413,41 @@ trait AppMesh
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualRouterOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deletes an existing virtual service.
+    */
+  def deleteVirtualService(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def deleteVirtualService(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualServiceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deletes an existing virtual service.
+    */
+  def deleteVirtualService(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualServiceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def deleteVirtualService(
+    params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualServiceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualServiceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DeleteVirtualServiceOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -501,6 +591,41 @@ trait AppMesh
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Describes an existing virtual service.
+    */
+  def describeVirtualService(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def describeVirtualService(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeVirtualServiceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Describes an existing virtual service.
+    */
+  def describeVirtualService(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeVirtualServiceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def describeVirtualService(
+    params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeVirtualServiceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeVirtualServiceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Returns a list of existing service meshes.
     */
   def listMeshes(): awsDashSdkLib.libRequestMod.Request[
@@ -641,6 +766,41 @@ trait AppMesh
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Returns a list of existing virtual services in a service mesh.
+    */
+  def listVirtualServices(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ListVirtualServicesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listVirtualServices(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ListVirtualServicesOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ListVirtualServicesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of existing virtual services in a service mesh.
+    */
+  def listVirtualServices(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ListVirtualServicesInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ListVirtualServicesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listVirtualServices(
+    params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ListVirtualServicesInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ListVirtualServicesOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ListVirtualServicesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Updates an existing route for a specified service mesh and virtual router.
     */
   def updateRoute(): awsDashSdkLib.libRequestMod.Request[
@@ -743,6 +903,41 @@ trait AppMesh
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualRouterOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Updates an existing virtual service in a specified service mesh.
+    */
+  def updateVirtualService(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def updateVirtualService(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualServiceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Updates an existing virtual service in a specified service mesh.
+    */
+  def updateVirtualService(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualServiceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualServiceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def updateVirtualService(
+    params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualServiceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualServiceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAppmeshMod.AppMeshNs.UpdateVirtualServiceOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
 }

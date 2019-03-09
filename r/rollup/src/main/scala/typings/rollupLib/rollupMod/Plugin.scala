@@ -60,6 +60,13 @@ trait Plugin extends js.Object {
       InputOptions | scala.Unit | scala.Null
     ]
   ] = js.undefined
+  var outputOptions: js.UndefOr[
+    js.ThisFunction1[
+      /* this */ PluginContext, 
+      /* options */ OutputOptions, 
+      OutputOptions | scala.Unit | scala.Null
+    ]
+  ] = js.undefined
   var outro: js.UndefOr[AddonHook] = js.undefined
   var renderChunk: js.UndefOr[RenderChunkHook] = js.undefined
   var renderError: js.UndefOr[
@@ -130,6 +137,11 @@ object Plugin {
       /* options */ InputOptions, 
       InputOptions | scala.Unit | scala.Null
     ] = null,
+    outputOptions: js.ThisFunction1[
+      /* this */ PluginContext, 
+      /* options */ OutputOptions, 
+      OutputOptions | scala.Unit | scala.Null
+    ] = null,
     outro: AddonHook = null,
     renderChunk: RenderChunkHook = null,
     renderError: js.ThisFunction1[
@@ -162,6 +174,7 @@ object Plugin {
     if (ongenerate != null) __obj.updateDynamic("ongenerate")(ongenerate)
     if (onwrite != null) __obj.updateDynamic("onwrite")(onwrite)
     if (options != null) __obj.updateDynamic("options")(options)
+    if (outputOptions != null) __obj.updateDynamic("outputOptions")(outputOptions)
     if (outro != null) __obj.updateDynamic("outro")(outro.asInstanceOf[js.Any])
     if (renderChunk != null) __obj.updateDynamic("renderChunk")(renderChunk)
     if (renderError != null) __obj.updateDynamic("renderError")(renderError)

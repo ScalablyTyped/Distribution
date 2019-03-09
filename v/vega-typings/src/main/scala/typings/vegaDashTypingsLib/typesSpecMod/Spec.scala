@@ -16,6 +16,7 @@ trait Spec
   var description: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var padding: js.UndefOr[vegaDashTypingsLib.typesSpecPaddingMod.Padding] = js.undefined
+  var style: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -38,6 +39,7 @@ object Spec {
     projections: js.Array[vegaDashTypingsLib.typesSpecProjectionMod.Projection] = null,
     scales: js.Array[vegaDashTypingsLib.typesSpecScaleMod.Scale] = null,
     signals: js.Array[vegaDashTypingsLib.typesSpecSignalMod.Signal] = null,
+    style: java.lang.String | js.Array[java.lang.String] = null,
     title: java.lang.String | vegaDashTypingsLib.typesSpecTitleMod.Title = null,
     width: scala.Int | scala.Double = null
   ): Spec = {
@@ -58,6 +60,7 @@ object Spec {
     if (projections != null) __obj.updateDynamic("projections")(projections)
     if (scales != null) __obj.updateDynamic("scales")(scales)
     if (signals != null) __obj.updateDynamic("signals")(signals)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spec]

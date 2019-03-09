@@ -18,7 +18,7 @@ class Form protected ()
 object Form extends js.Object {
   var Item: antdLib.Anon_DefaultPropsPropTypes = js.native
   var createFormField: js.Any = js.native
-  var defaultProps: antdLib.Anon_E = js.native
+  var defaultProps: antdLib.Anon_Colon = js.native
   var propTypes: antdLib.Anon_ArgsChildren = js.native
   def create[TOwnProps](): antdLib.libFormFormMod.ComponentDecorator = js.native
   def create[TOwnProps](options: antdLib.libFormFormMod.FormCreateOption[TOwnProps]): antdLib.libFormFormMod.ComponentDecorator = js.native

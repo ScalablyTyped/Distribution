@@ -38,9 +38,9 @@ object CliOptions {
     prepackaged: java.lang.String = null,
     projectDir: java.lang.String = null,
     publish: electronDashPublishLib.electronDashPublishMod.PublishPolicy = null,
-    targets: stdLib.Map[
+    targets: nodeLib.Map[
       appDashBuilderDashLibLib.outCoreMod.Platform, 
-      stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+      nodeLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
     ] = null,
     win: js.Array[java.lang.String] = null,
     x64: js.UndefOr[scala.Boolean] = js.undefined

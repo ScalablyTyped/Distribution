@@ -6,6 +6,7 @@
 //                 Paito Anderson <https://github.com/PaitoAnderson>
 //                 Andreas Richter <https://github.com/arichter83>
 //                 Dale Fenton <https://github.com/dalevfenton>
+//                 Håkon Holhjem <https://github.com/KngHawkon>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.9
 ```

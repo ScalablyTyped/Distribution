@@ -13,6 +13,7 @@ trait FormItemProps extends js.Object {
   var help: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var labelAlign: js.UndefOr[antdLib.antdLibStrings.left | antdLib.antdLibStrings.right] = js.undefined
   var labelCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
@@ -33,6 +34,7 @@ object FormItemProps {
     help: reactLib.reactMod.ReactNs.ReactNode = null,
     id: java.lang.String = null,
     label: reactLib.reactMod.ReactNs.ReactNode = null,
+    labelAlign: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     labelCol: antdLib.libGridColMod.ColProps = null,
     prefixCls: java.lang.String = null,
     required: js.UndefOr[scala.Boolean] = js.undefined,
@@ -48,6 +50,7 @@ object FormItemProps {
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
     if (labelCol != null) __obj.updateDynamic("labelCol")(labelCol)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)

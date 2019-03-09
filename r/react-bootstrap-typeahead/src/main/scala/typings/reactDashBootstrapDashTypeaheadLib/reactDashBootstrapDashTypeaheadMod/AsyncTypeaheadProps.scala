@@ -30,7 +30,11 @@ object AsyncTypeaheadProps {
     a11yNumResults: js.Function0[scala.Unit] = null,
     a11yNumSelected: js.Function0[scala.Unit] = null,
     align: TypeaheadAlign = null,
-    allowNew: js.UndefOr[scala.Boolean] = js.undefined,
+    allowNew: scala.Boolean | (js.Function2[
+      /* results */ js.Array[T], 
+      /* props */ AllTypeaheadOwnAndInjectedProps[T], 
+      scala.Boolean
+    ]) = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     bodyContainer: js.UndefOr[scala.Boolean] = js.undefined,
     bsSize: TypeaheadBsSizes = null,
@@ -46,6 +50,7 @@ object AsyncTypeaheadProps {
     filterBy: js.Array[java.lang.String] | (js.Function2[T, /* props */ AllTypeaheadOwnAndInjectedProps[T], scala.Boolean]) = null,
     flip: js.UndefOr[scala.Boolean] = js.undefined,
     highlightOnlyResult: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String | scala.Double = null,
     ignoreDiacritics: js.UndefOr[scala.Boolean] = js.undefined,
     inputProps: InputProps = null,
     isInvalid: js.UndefOr[scala.Boolean] = js.undefined,
@@ -70,6 +75,7 @@ object AsyncTypeaheadProps {
     paginate: js.UndefOr[scala.Boolean] = js.undefined,
     paginationText: java.lang.String = null,
     placeholder: java.lang.String = null,
+    positionFixed: js.UndefOr[scala.Boolean] = js.undefined,
     promptText: reactLib.reactMod.ReactNs.ReactNode = null,
     renderMenu: js.Function2[
       /* results */ js.Array[TypeaheadResult[T]], 
@@ -97,7 +103,7 @@ object AsyncTypeaheadProps {
     if (a11yNumResults != null) __obj.updateDynamic("a11yNumResults")(a11yNumResults)
     if (a11yNumSelected != null) __obj.updateDynamic("a11yNumSelected")(a11yNumSelected)
     if (align != null) __obj.updateDynamic("align")(align)
-    if (!js.isUndefined(allowNew)) __obj.updateDynamic("allowNew")(allowNew)
+    if (allowNew != null) __obj.updateDynamic("allowNew")(allowNew.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(bodyContainer)) __obj.updateDynamic("bodyContainer")(bodyContainer)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
@@ -113,6 +119,7 @@ object AsyncTypeaheadProps {
     if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy.asInstanceOf[js.Any])
     if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
     if (!js.isUndefined(highlightOnlyResult)) __obj.updateDynamic("highlightOnlyResult")(highlightOnlyResult)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreDiacritics)) __obj.updateDynamic("ignoreDiacritics")(ignoreDiacritics)
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
     if (!js.isUndefined(isInvalid)) __obj.updateDynamic("isInvalid")(isInvalid)
@@ -137,6 +144,7 @@ object AsyncTypeaheadProps {
     if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate)
     if (paginationText != null) __obj.updateDynamic("paginationText")(paginationText)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed)
     if (promptText != null) __obj.updateDynamic("promptText")(promptText.asInstanceOf[js.Any])
     if (renderMenu != null) __obj.updateDynamic("renderMenu")(renderMenu)
     if (renderMenuItemChildren != null) __obj.updateDynamic("renderMenuItemChildren")(renderMenuItemChildren)

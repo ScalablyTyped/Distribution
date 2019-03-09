@@ -14,6 +14,7 @@ trait Actions extends js.Object {
   def color(color: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def commercial(channel: java.lang.String, seconds: scala.Double): js.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
   def connect(): js.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
+  def deletemessage(channel: java.lang.String, messageUUID: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def disconnect(): js.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
   def emoteonly(channel: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def emoteonlyoff(channel: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
@@ -46,6 +47,9 @@ trait Actions extends js.Object {
   def unban(channel: java.lang.String, username: java.lang.String): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def unhost(channel: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def unmod(channel: java.lang.String, username: java.lang.String): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  def unvip(channel: java.lang.String, username: java.lang.String): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  def vip(channel: java.lang.String, username: java.lang.String): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  def vips(channel: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def whisper(username: java.lang.String, message: java.lang.String): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
 }
 

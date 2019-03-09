@@ -53,7 +53,7 @@ trait Http extends Integration {
   * options.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- ddDashTraceLib.ddDashTraceMod.pluginsNs.HttpServer because var conflicts: blacklist, headers, service, validateStatus, whitelist. Inlined hooks */ trait http extends HttpClient {
+- ddDashTraceLib.ddDashTraceMod.pluginsNs.HttpServer because var conflicts: analytics, blacklist, enabled, headers, service, validateStatus, whitelist. Inlined hooks */ trait http extends HttpClient {
   /**
     * Configuration for HTTP clients.
     */
@@ -71,9 +71,11 @@ trait Http extends Integration {
 object Http {
   @scala.inline
   def apply(
+    analytics: scala.Boolean | ddDashTraceLib.Anon_Enabled = null,
     blacklist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
       java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
     ]) = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Array[java.lang.String] = null,
     service: java.lang.String = null,
     validateStatus: js.Function1[/* code */ scala.Double, scala.Boolean] = null,
@@ -82,7 +84,9 @@ object Http {
     ]) = null
   ): Http = {
     val __obj = js.Dynamic.literal()
+    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (service != null) __obj.updateDynamic("service")(service)
     if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus)
@@ -94,10 +98,12 @@ object Http {
 object http {
   @scala.inline
   def apply(
+    analytics: scala.Boolean | ddDashTraceLib.Anon_Enabled = null,
     blacklist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
       java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
     ]) = null,
     client: HttpClient = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Array[java.lang.String] = null,
     hooks: ddDashTraceLib.Anon_Req = null,
     server: HttpServer = null,
@@ -109,8 +115,10 @@ object http {
     ]) = null
   ): http = {
     val __obj = js.Dynamic.literal()
+    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
     if (client != null) __obj.updateDynamic("client")(client)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (hooks != null) __obj.updateDynamic("hooks")(hooks)
     if (server != null) __obj.updateDynamic("server")(server)

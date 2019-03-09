@@ -14,9 +14,12 @@ trait TestBackendImpl
   def connectDragSource(): js.Any = js.native
   def connectDropTarget(): js.Any = js.native
   def simulateBeginDrag(
-    sourceIds: js.Array[java.lang.String],
+    sourceIds: js.Array[dndDashCoreLib.libCjsInterfacesMod.Identifier],
     options: dndDashCoreLib.libCjsInterfacesMod.BeginDragOptions
   ): scala.Unit = js.native
-  def simulateHover(targetIds: js.Array[java.lang.String], options: dndDashCoreLib.libCjsInterfacesMod.HoverOptions): scala.Unit = js.native
+  def simulateHover(
+    targetIds: js.Array[dndDashCoreLib.libCjsInterfacesMod.Identifier],
+    options: dndDashCoreLib.libCjsInterfacesMod.HoverOptions
+  ): scala.Unit = js.native
 }
 

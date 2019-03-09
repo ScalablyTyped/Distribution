@@ -11,8 +11,8 @@ trait Compiler
      with ICompiler {
   @JSName("_pluginCompat")
   var _pluginCompat_Compiler: tapableLib.tapableMod.SyncBailHook[webpackLib.webpackMod.webpackNs.compilationNs.Compilation, _, _, _] = js.native
-  var contextTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
-  var fileTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
+  var contextTimestamps: nodeLib.Map[java.lang.String, scala.Double] = js.native
+  var fileTimestamps: nodeLib.Map[java.lang.String, scala.Double] = js.native
   var hooks: webpackLib.webpackMod.webpackNs.compilationNs.CompilerHooks = js.native
   var inputFileSystem: InputFileSystem = js.native
   var name: java.lang.String = js.native

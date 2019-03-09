@@ -681,7 +681,7 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deprecated, see the GetBucketLifecycleConfiguration operation.
+    *  No longer used, see the GetBucketLifecycleConfiguration operation.
     */
   def getBucketLifecycle(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketLifecycleOutput, 
@@ -698,7 +698,7 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deprecated, see the GetBucketLifecycleConfiguration operation.
+    *  No longer used, see the GetBucketLifecycleConfiguration operation.
     */
   def getBucketLifecycle(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketLifecycleRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketLifecycleOutput, 
@@ -856,7 +856,7 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deprecated, see the GetBucketNotificationConfiguration operation.
+    *  No longer used, see the GetBucketNotificationConfiguration operation.
     */
   def getBucketNotification(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.NotificationConfigurationDeprecated, 
@@ -873,7 +873,7 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deprecated, see the GetBucketNotificationConfiguration operation.
+    *  No longer used, see the GetBucketNotificationConfiguration operation.
     */
   def getBucketNotification(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketNotificationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.NotificationConfigurationDeprecated, 
@@ -1888,14 +1888,14 @@ trait S3
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deprecated, see the PutBucketLifecycleConfiguration operation.
+    *  No longer used, see the PutBucketLifecycleConfiguration operation.
     */
   def putBucketLifecycle(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putBucketLifecycle(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deprecated, see the PutBucketLifecycleConfiguration operation.
+    *  No longer used, see the PutBucketLifecycleConfiguration operation.
     */
   def putBucketLifecycle(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutBucketLifecycleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putBucketLifecycle(
@@ -1948,14 +1948,14 @@ trait S3
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deprecated, see the PutBucketNotificationConfiguraiton operation.
+    *  No longer used, see the PutBucketNotificationConfiguration operation.
     */
   def putBucketNotification(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putBucketNotification(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deprecated, see the PutBucketNotificationConfiguraiton operation.
+    *  No longer used, see the PutBucketNotificationConfiguration operation.
     */
   def putBucketNotification(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutBucketNotificationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putBucketNotification(

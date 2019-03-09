@@ -12,10 +12,10 @@ class LogUpdateOutputStrategy protected ()
      with RedrawLine {
   def this(hasLogUpdateStreamColors: LogUpdateOutputStrategyOptions) = this()
   val colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
+  val logUpdate: atIonicCliDashFrameworkLib.Anon_Default = js.native
   /* CompleteClass */
   override val stream: nodeLib.NodeJSNs.WritableStream = js.native
   /* CompleteClass */
   override def createTaskChain(): atIonicCliDashFrameworkLib.libTasksMod.TaskChain = js.native
-  /* protected */ def logUpdate(text: java.lang.String*): scala.Unit = js.native
 }
 

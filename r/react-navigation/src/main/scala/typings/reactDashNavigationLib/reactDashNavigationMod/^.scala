@@ -27,30 +27,10 @@ object ^ extends js.Object {
   val StackViewTransitionConfigs: reactDashNavigationLib.reactDashNavigationMod.StackViewTransitionConfigsType = js.native
   val TabBarBottom: reactLib.reactMod.ReactNs.ComponentType[reactDashNavigationLib.reactDashNavigationMod.TabBarBottomProps] = js.native
   val TabBarTop: reactLib.reactMod.ReactNs.ComponentType[reactDashNavigationLib.reactDashNavigationMod.TabBarTopProps] = js.native
-  def DrawerNavigator(routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
-  def DrawerNavigator(
-    routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
-    drawerConfig: reactDashNavigationLib.reactDashNavigationMod.DrawerNavigatorConfig
-  ): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
-  def StackNavigator(routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
-  def StackNavigator(
-    routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
-    stackConfig: reactDashNavigationLib.reactDashNavigationMod.StackNavigatorConfig
-  ): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
   def StackRouter(
     routeConfigs: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
     config: reactDashNavigationLib.reactDashNavigationMod.NavigationTabRouterConfig
   ): reactDashNavigationLib.reactDashNavigationMod.NavigationRouter[_, _] = js.native
-  def SwitchNavigator(routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
-  def SwitchNavigator(
-    routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
-    switchConfig: reactDashNavigationLib.reactDashNavigationMod.SwitchNavigatorConfig
-  ): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
-  def TabNavigator(routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
-  def TabNavigator(
-    routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
-    drawConfig: reactDashNavigationLib.reactDashNavigationMod.TabNavigatorConfig
-  ): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
   def TabRouter(
     routeConfigs: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
     config: reactDashNavigationLib.reactDashNavigationMod.NavigationTabRouterConfig
@@ -102,11 +82,6 @@ object ^ extends js.Object {
   def createSwitchNavigator(
     routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
     switchConfig: reactDashNavigationLib.reactDashNavigationMod.SwitchNavigatorConfig
-  ): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
-  def createTabNavigator(routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
-  def createTabNavigator(
-    routeConfigMap: reactDashNavigationLib.reactDashNavigationMod.NavigationRouteConfigMap,
-    drawConfig: reactDashNavigationLib.reactDashNavigationMod.TabNavigatorConfig
   ): reactDashNavigationLib.reactDashNavigationMod.NavigationContainer = js.native
   def withNavigation[P /* <: reactDashNavigationLib.reactDashNavigationMod.NavigationInjectedProps[reactDashNavigationLib.reactDashNavigationMod.NavigationParams] */](Component: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentType[
     reactDashNavigationLib.reactDashNavigationMod.Omit[P, reactDashNavigationLib.reactDashNavigationLibStrings.navigation]

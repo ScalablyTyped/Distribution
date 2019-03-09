@@ -16,7 +16,7 @@ object StreamOptions {
   @scala.inline
   def apply(
     absolute: js.UndefOr[scala.Boolean] = js.undefined,
-    cache: lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String] = null,
+    cache: nodeLib.Map[java.lang.String, java.lang.String] = null,
     cwd: java.lang.String = null,
     dot: js.UndefOr[scala.Boolean] = js.undefined,
     follow: js.UndefOr[scala.Boolean] = js.undefined,
@@ -34,11 +34,11 @@ object StreamOptions {
     nounique: js.UndefOr[scala.Boolean] = js.undefined,
     patternIndex: js.UndefOr[scala.Boolean] = js.undefined,
     realpath: js.UndefOr[scala.Boolean] = js.undefined,
-    realpathCache: lodashLib.lodashMod.Global.Map[java.lang.String, java.lang.String] = null,
+    realpathCache: nodeLib.Map[java.lang.String, java.lang.String] = null,
     root: java.lang.String = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     stat: js.UndefOr[scala.Boolean] = js.undefined,
-    statCache: lodashLib.lodashMod.Global.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats] = null,
+    statCache: nodeLib.Map[java.lang.String, adoneLib.adoneNs.fsNs.INs.Stats] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     symlinks: js.Object = null
   ): StreamOptions = {

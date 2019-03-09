@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait SnapshotMetadata extends js.Object {
   /**
-    * True if the snapshot was created from cached data rather than
-    * guaranteed up-to-date server data. If your listener has opted into
-    * metadata updates (via `DocumentListenOptions` or `QueryListenOptions`)
+    * True if the snapshot includes local writes (`set()` or
+    * `update()` calls) that haven't been committed to the backend yet.
+    * If your listener has opted into
+    * metadata updates (via `SnapshotListenOptions`)
     * you will receive another snapshot with `fromCache` equal to false once
     * the client has received up-to-date data from the backend.
     */
@@ -18,7 +19,7 @@ trait SnapshotMetadata extends js.Object {
     * True if the snapshot contains the result of local writes (e.g. set() or
     * update() calls) that have not yet been committed to the backend.
     * If your listener has opted into metadata updates (via
-    * `DocumentListenOptions` or `QueryListenOptions`) you will receive another
+    * `SnapshotListenOptions`) you will receive another
     * snapshot with `hasPendingWrites` equal to false once the writes have been
     * committed to the backend.
     */

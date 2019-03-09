@@ -16,9 +16,11 @@ trait HttpServer extends Http {
 object HttpServer {
   @scala.inline
   def apply(
+    analytics: scala.Boolean | ddDashTraceLib.Anon_Enabled = null,
     blacklist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
       java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
     ]) = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Array[java.lang.String] = null,
     hooks: ddDashTraceLib.Anon_Req = null,
     service: java.lang.String = null,
@@ -28,7 +30,9 @@ object HttpServer {
     ]) = null
   ): HttpServer = {
     val __obj = js.Dynamic.literal()
+    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (hooks != null) __obj.updateDynamic("hooks")(hooks)
     if (service != null) __obj.updateDynamic("service")(service)

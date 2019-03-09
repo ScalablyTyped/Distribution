@@ -17,5 +17,6 @@ class default protected () extends Calendar {
 object default extends js.Object {
   var defaultProps: antdLib.Anon_Fullscreen = js.native
   var propTypes: antdLib.Anon_ArgsClassName = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libCalendarMod.CalendarProps): antdLib.libCalendarMod.CalendarState | scala.Null = js.native
 }
 

@@ -182,7 +182,7 @@ object VictoryPieProps {
     labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
     name: java.lang.String = null,
     padAngle: scala.Int | scala.Double = null,
-    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    padding: PaddingProps = null,
     radius: scala.Int | scala.Double = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined,

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("query-string", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def extract(str: java.lang.String): java.lang.String = js.native
-  def parse(str: java.lang.String): queryDashStringLib.queryDashStringMod.OutputParams = js.native
-  def parse(str: java.lang.String, options: queryDashStringLib.queryDashStringMod.ParseOptions): queryDashStringLib.queryDashStringMod.OutputParams = js.native
-  def parseUrl(str: java.lang.String): queryDashStringLib.Anon_Query = js.native
-  def parseUrl(str: java.lang.String, options: queryDashStringLib.queryDashStringMod.ParseOptions): queryDashStringLib.Anon_Query = js.native
-  def stringify(obj: queryDashStringLib.queryDashStringMod.InputParams): java.lang.String = js.native
+  def extract(url: java.lang.String): java.lang.String = js.native
+  def parse(query: java.lang.String): queryDashStringLib.queryDashStringMod.ParsedQuery = js.native
+  def parse(query: java.lang.String, options: queryDashStringLib.queryDashStringMod.ParseOptions): queryDashStringLib.queryDashStringMod.ParsedQuery = js.native
+  def parseUrl(url: java.lang.String): queryDashStringLib.queryDashStringMod.ParsedUrl = js.native
+  def parseUrl(url: java.lang.String, options: queryDashStringLib.queryDashStringMod.ParseOptions): queryDashStringLib.queryDashStringMod.ParsedUrl = js.native
+  def stringify(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   def stringify(
-    obj: queryDashStringLib.queryDashStringMod.InputParams,
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     options: queryDashStringLib.queryDashStringMod.StringifyOptions
   ): java.lang.String = js.native
 }

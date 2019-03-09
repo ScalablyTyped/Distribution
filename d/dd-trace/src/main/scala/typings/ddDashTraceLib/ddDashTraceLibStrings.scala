@@ -19,6 +19,9 @@ object ddDashTraceLibStrings {
   sealed trait bunyan extends js.Object
   
   @js.native
+  sealed trait `cassandra-driver` extends js.Object
+  
+  @js.native
   sealed trait dns extends js.Object
   
   @js.native
@@ -92,6 +95,8 @@ object ddDashTraceLibStrings {
   def bluebird: bluebird = "bluebird".asInstanceOf[bluebird]
   @scala.inline
   def bunyan: bunyan = "bunyan".asInstanceOf[bunyan]
+  @scala.inline
+  def `cassandra-driver`: `cassandra-driver` = "cassandra-driver".asInstanceOf[`cassandra-driver`]
   @scala.inline
   def dns: dns = "dns".asInstanceOf[dns]
   @scala.inline

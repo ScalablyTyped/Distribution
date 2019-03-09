@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class RemoteParticipant () extends Participant {
   @JSName("audioTracks")
-  var audioTracks_RemoteParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, RemoteAudioTrackPublication] = js.native
+  var audioTracks_RemoteParticipant: nodeLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, RemoteAudioTrackPublication] = js.native
   @JSName("dataTracks")
-  var dataTracks_RemoteParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, RemoteDataTrackPublication] = js.native
+  var dataTracks_RemoteParticipant: nodeLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, RemoteDataTrackPublication] = js.native
   @JSName("tracks")
-  var tracks_RemoteParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, RemoteTrackPublication] = js.native
+  var tracks_RemoteParticipant: nodeLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, RemoteTrackPublication] = js.native
   @JSName("videoTracks")
-  var videoTracks_RemoteParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, RemoteVideoTrackPublication] = js.native
+  var videoTracks_RemoteParticipant: nodeLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, RemoteVideoTrackPublication] = js.native
 }
 

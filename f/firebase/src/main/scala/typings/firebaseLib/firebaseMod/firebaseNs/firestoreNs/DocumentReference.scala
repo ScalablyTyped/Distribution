@@ -8,14 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DocumentReference extends js.Object {
   /**
-    * The `Firestore` for the Firestore database (useful for performing
-    * transactions, etc.).
+    * The {@link firebase.firestore.Firestore} the document is in.
+    * This is useful for performing transactions, for example.
     */
   val firestore: Firestore = js.native
-  /** The identifier of the document within its collection. */
+  /**
+    * The document's identifier within its collection.
+    */
   val id: java.lang.String = js.native
   /**
-    * A reference to the Collection to which this DocumentReference belongs.
+    * The Collection this `DocumentReference` belongs to.
     */
   val parent: CollectionReference = js.native
   /**
@@ -68,16 +70,26 @@ trait DocumentReference extends js.Object {
     * NOTE: Although an `onCompletion` callback can be provided, it will
     * never be called because the snapshot stream is never-ending.
     *
-    * @param options Options controlling the listen behavior.
-    * @param onNext A callback to be called every time a new `DocumentSnapshot`
-    * is available.
-    * @param onError A callback to be called if the listen fails or is
-    * cancelled. No further callbacks will occur.
     * @param observer A single object containing `next` and `error` callbacks.
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
   def onSnapshot(observer: firebaseLib.Anon_Complete): js.Function0[scala.Unit] = js.native
+  /**
+    * Attaches a listener for DocumentSnapshot events. You may either pass
+    * individual `onNext` and `onError` callbacks or pass a single observer
+    * object with `next` and `error` callbacks.
+    *
+    * NOTE: Although an `onCompletion` callback can be provided, it will
+    * never be called because the snapshot stream is never-ending.
+    *
+    * @param onNext A callback to be called every time a new `DocumentSnapshot`
+    * is available.
+    * @param onError A callback to be called if the listen fails or is
+    * cancelled. No further callbacks will occur.
+    * @return An unsubscribe function that can be called to cancel
+    * the snapshot listener.
+    */
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
@@ -88,7 +100,36 @@ trait DocumentReference extends js.Object {
     onError: js.Function1[/* error */ nodeLib.Error, scala.Unit],
     onCompletion: js.Function0[scala.Unit]
   ): js.Function0[scala.Unit] = js.native
+  /**
+    * Attaches a listener for DocumentSnapshot events. You may either pass
+    * individual `onNext` and `onError` callbacks or pass a single observer
+    * object with `next` and `error` callbacks.
+    *
+    * NOTE: Although an `onCompletion` callback can be provided, it will
+    * never be called because the snapshot stream is never-ending.
+    *
+    * @param options Options controlling the listen behavior.
+    * @param observer A single object containing `next` and `error` callbacks.
+    * @return An unsubscribe function that can be called to cancel
+    * the snapshot listener.
+    */
   def onSnapshot(options: SnapshotListenOptions, observer: firebaseLib.Anon_CompleteError): js.Function0[scala.Unit] = js.native
+  /**
+    * Attaches a listener for DocumentSnapshot events. You may either pass
+    * individual `onNext` and `onError` callbacks or pass a single observer
+    * object with `next` and `error` callbacks.
+    *
+    * NOTE: Although an `onCompletion` callback can be provided, it will
+    * never be called because the snapshot stream is never-ending.
+    *
+    * @param options Options controlling the listen behavior.
+    * @param onNext A callback to be called every time a new `DocumentSnapshot`
+    * is available.
+    * @param onError A callback to be called if the listen fails or is
+    * cancelled. No further callbacks will occur.
+    * @return An unsubscribe function that can be called to cancel
+    * the snapshot listener.
+    */
   def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,

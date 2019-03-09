@@ -30,7 +30,17 @@ trait Input
   def setValue(value: java.lang.String, e: reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
   def setValue(
     value: java.lang.String,
+    e: reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement],
+    callback: js.Function0[scala.Unit]
+  ): scala.Unit = js.native
+  def setValue(
+    value: java.lang.String,
     e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]
+  ): scala.Unit = js.native
+  def setValue(
+    value: java.lang.String,
+    e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent],
+    callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
 }
 

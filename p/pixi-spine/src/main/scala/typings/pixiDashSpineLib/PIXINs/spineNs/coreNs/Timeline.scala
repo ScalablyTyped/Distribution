@@ -13,7 +13,7 @@ trait Timeline extends js.Object {
     time: scala.Double,
     events: js.Array[Event],
     alpha: scala.Double,
-    pose: MixPose,
+    blend: MixBlend,
     direction: MixDirection
   ): scala.Unit
   def getPropertyId(): scala.Double
@@ -28,7 +28,7 @@ object Timeline {
       scala.Double, 
       js.Array[Event], 
       scala.Double, 
-      MixPose, 
+      MixBlend, 
       MixDirection, 
       scala.Unit
     ],

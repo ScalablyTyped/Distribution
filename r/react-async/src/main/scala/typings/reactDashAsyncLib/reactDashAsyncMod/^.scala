@@ -22,14 +22,14 @@ object ^ extends js.Object {
   def useFetch[T](
     input: java.lang.String,
     init: reactDashAsyncLib.reactDashAsyncMod.FetchInit,
-    options: reactDashAsyncLib.reactDashAsyncMod.AsyncOptions[T]
+    options: reactDashAsyncLib.reactDashAsyncMod.FetchOptions[T]
   ): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
   def useFetch[T](input: stdLib.Request): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
   def useFetch[T](input: stdLib.Request, init: reactDashAsyncLib.reactDashAsyncMod.FetchInit): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
   def useFetch[T](
     input: stdLib.Request,
     init: reactDashAsyncLib.reactDashAsyncMod.FetchInit,
-    options: reactDashAsyncLib.reactDashAsyncMod.AsyncOptions[T]
+    options: reactDashAsyncLib.reactDashAsyncMod.FetchOptions[T]
   ): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
 }
 

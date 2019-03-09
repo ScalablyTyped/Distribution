@@ -17,7 +17,7 @@ abstract class DomAdapter () extends js.Object {
   def addClass(element: js.Any, className: java.lang.String): js.Any = js.native
   def adoptNode(node: stdLib.Node): stdLib.Node = js.native
   def appendChild(el: js.Any, node: js.Any): js.Any = js.native
-  def attributeMap(element: js.Any): stdLib.Map[java.lang.String, java.lang.String] = js.native
+  def attributeMap(element: js.Any): nodeLib.Map[java.lang.String, java.lang.String] = js.native
   def childNodes(el: js.Any): js.Array[stdLib.Node] = js.native
   def childNodesAsList(el: js.Any): js.Array[stdLib.Node] = js.native
   def classList(element: js.Any): js.Array[_] = js.native

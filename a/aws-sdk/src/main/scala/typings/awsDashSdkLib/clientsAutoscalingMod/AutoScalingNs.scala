@@ -14,7 +14,7 @@ object AutoScalingNs extends js.Object {
       */
     var Activities: Activities
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
   }
@@ -190,11 +190,11 @@ object AutoScalingNs extends js.Object {
       */
     var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
     /**
-      * Indicates whether newly launched instances are protected from termination by Auto Scaling when scaling in. For more information, see Instance Protection in the Amazon EC2 Auto Scaling User Guide.
+      * Indicates whether newly launched instances are protected from termination by Amazon EC2 Auto Scaling when scaling in.
       */
     var NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined
     /**
-      * The name of the placement group into which to launch your instances, if any. For more information, see Placement Groups in the Amazon EC2 User Guide for Linux Instances.
+      * The name of the placement group into which to launch your instances, if any.
       */
     var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
@@ -222,7 +222,7 @@ object AutoScalingNs extends js.Object {
       */
     var TerminationPolicies: js.UndefOr[TerminationPolicies] = js.undefined
     /**
-      * One or more subnet IDs, if applicable, separated by commas. If you specify VPCZoneIdentifier and AvailabilityZones, ensure that the Availability Zones of the subnets match the values for AvailabilityZones.
+      * One or more subnet IDs, if applicable, separated by commas.
       */
     var VPCZoneIdentifier: js.UndefOr[XmlStringMaxLen2047] = js.undefined
   }
@@ -248,7 +248,7 @@ object AutoScalingNs extends js.Object {
       */
     var AutoScalingGroups: AutoScalingGroups
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
   }
@@ -279,11 +279,11 @@ object AutoScalingNs extends js.Object {
       */
     var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
     /**
-      * The lifecycle state for the instance. For more information, see Auto Scaling Lifecycle in the Amazon EC2 Auto Scaling User Guide.
+      * The lifecycle state for the instance.
       */
     var LifecycleState: XmlStringMaxLen32
     /**
-      * Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in. For more information, see Instance Protection in the Amazon EC2 Auto Scaling User Guide.
+      * Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in.
       */
     var ProtectedFromScaleIn: InstanceProtected
   }
@@ -294,7 +294,7 @@ object AutoScalingNs extends js.Object {
       */
     var AutoScalingInstances: js.UndefOr[AutoScalingInstances] = js.undefined
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
   }
@@ -337,7 +337,7 @@ object AutoScalingNs extends js.Object {
   
   trait BlockDeviceMapping extends js.Object {
     /**
-      * The device name exposed to the EC2 instance (for example, /dev/sdh or xvdh).
+      * The device name exposed to the EC2 instance (for example, /dev/sdh or xvdh). For more information, see Device Naming on Linux Instances in the Amazon EC2 User Guide for Linux Instances.
       */
     var DeviceName: XmlStringMaxLen255
     /**
@@ -392,11 +392,11 @@ object AutoScalingNs extends js.Object {
       */
     var AutoScalingGroupName: XmlStringMaxLen255
     /**
-      * One or more Availability Zones for the group. This parameter is optional if you specify one or more subnets.
+      * One or more Availability Zones for the group. This parameter is optional if you specify one or more subnets for VPCZoneIdentifier. Conditional: If your account supports EC2-Classic and VPC, this parameter is required to launch instances into EC2-Classic.
       */
     var AvailabilityZones: js.UndefOr[AvailabilityZones] = js.undefined
     /**
-      * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start. The default is 300. For more information, see Scaling Cooldowns in the Amazon EC2 Auto Scaling User Guide.
+      * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start. The default value is 300. For more information, see Scaling Cooldowns in the Amazon EC2 Auto Scaling User Guide.
       */
     var DefaultCooldown: js.UndefOr[Cooldown] = js.undefined
     /**
@@ -404,11 +404,11 @@ object AutoScalingNs extends js.Object {
       */
     var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
     /**
-      * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service. During this time, any health check failures for the instance are ignored. The default is 0. This parameter is required if you are adding an ELB health check. For more information, see Health Checks in the Amazon EC2 Auto Scaling User Guide.
+      * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service. During this time, any health check failures for the instance are ignored. The default value is 0. For more information, see Health Checks for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide. Conditional: This parameter is required if you are adding an ELB health check.
       */
     var HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined
     /**
-      * The service to use for the health checks. The valid values are EC2 and ELB. By default, health checks use Amazon EC2 instance status checks to determine the health of an instance. For more information, see Health Checks in the Amazon EC2 Auto Scaling User Guide.
+      * The service to use for the health checks. The valid values are EC2 and ELB. The default value is EC2. For more information, see Health Checks for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide.
       */
     var HealthCheckType: js.UndefOr[XmlStringMaxLen32] = js.undefined
     /**
@@ -416,11 +416,11 @@ object AutoScalingNs extends js.Object {
       */
     var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
     /**
-      * The name of the launch configuration. This parameter, a launch template, a mixed instances policy, or an EC2 instance must be specified.
+      * The name of the launch configuration. This parameter, a launch template, a mixed instances policy, or an EC2 instance must be specified. For more information, see Creating an Auto Scaling Group Using a Launch Configuration in the Amazon EC2 Auto Scaling User Guide.
       */
     var LaunchConfigurationName: js.UndefOr[ResourceName] = js.undefined
     /**
-      * The launch template to use to launch instances. This parameter, a launch configuration, a mixed instances policy, or an EC2 instance must be specified.
+      * The launch template to use to launch instances. This parameter, a launch configuration, a mixed instances policy, or an EC2 instance must be specified. For more information, see Creating an Auto Scaling Group Using a Launch Template in the Amazon EC2 Auto Scaling User Guide.
       */
     var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
     /**
@@ -440,19 +440,19 @@ object AutoScalingNs extends js.Object {
       */
     var MinSize: AutoScalingGroupMinSize
     /**
-      * The mixed instances policy to use to launch instances. This parameter, a launch template, a launch configuration, or an EC2 instance must be specified.
+      * The mixed instances policy to use to launch instances. This parameter, a launch template, a launch configuration, or an EC2 instance must be specified. For more information, see Using Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
       */
     var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
     /**
-      * Indicates whether newly launched instances are protected from termination by Auto Scaling when scaling in. For more information about preventing instances from terminating on scale in, see Instance Protection in the Amazon EC2 Auto Scaling User Guide.
+      * Indicates whether newly launched instances are protected from termination by Amazon EC2 Auto Scaling when scaling in. For more information about preventing instances from terminating on scale in, see Instance Protection in the Amazon EC2 Auto Scaling User Guide.
       */
     var NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined
     /**
-      * The name of the placement group into which to launch your instances, if any. For more information, see Placement Groups in the Amazon EC2 User Guide for Linux Instances.
+      * The name of the placement group into which to launch your instances, if any. A placement group is a logical grouping of instances within a single Availability Zone. You cannot specify multiple Availability Zones and a placement group. For more information, see Placement Groups in the Amazon EC2 User Guide for Linux Instances.
       */
     var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-      * The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other AWS services on your behalf. By default, Amazon EC2 Auto Scaling uses a service-linked role named AWSServiceRoleForAutoScaling, which it creates if it does not exist.
+      * The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other AWS services on your behalf. By default, Amazon EC2 Auto Scaling uses a service-linked role named AWSServiceRoleForAutoScaling, which it creates if it does not exist. For more information, see Service-Linked Roles in the Amazon EC2 Auto Scaling User Guide.
       */
     var ServiceLinkedRoleARN: js.UndefOr[ResourceName] = js.undefined
     /**
@@ -468,7 +468,7 @@ object AutoScalingNs extends js.Object {
       */
     var TerminationPolicies: js.UndefOr[TerminationPolicies] = js.undefined
     /**
-      * A comma-separated list of subnet identifiers for your virtual private cloud (VPC). If you specify subnets and Availability Zones with this call, ensure that the subnets' Availability Zones match the Availability Zones specified. For more information, see Launching Auto Scaling Instances in a VPC in the Amazon EC2 Auto Scaling User Guide.
+      * A comma-separated list of subnet IDs for your virtual private cloud (VPC). If you specify VPCZoneIdentifier with AvailabilityZones, the subnets that you specify for this parameter must reside in those Availability Zones. Conditional: If your account supports EC2-Classic and VPC, this parameter is required to launch instances into a VPC.
       */
     var VPCZoneIdentifier: js.UndefOr[XmlStringMaxLen2047] = js.undefined
   }
@@ -487,7 +487,7 @@ object AutoScalingNs extends js.Object {
       */
     var ClassicLinkVPCId: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-      * The IDs of one or more security groups for the specified ClassicLink-enabled VPC. This parameter is required if you specify a ClassicLink-enabled VPC, and is not supported otherwise. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic Instances to a VPC in the Amazon EC2 Auto Scaling User Guide.
+      * The IDs of one or more security groups for the specified ClassicLink-enabled VPC. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic Instances to a VPC in the Amazon EC2 Auto Scaling User Guide. Conditional: This parameter is required if you specify a ClassicLink-enabled VPC, and is not supported otherwise.
       */
     var ClassicLinkVPCSecurityGroups: js.UndefOr[ClassicLinkVPCSecurityGroups] = js.undefined
     /**
@@ -507,7 +507,7 @@ object AutoScalingNs extends js.Object {
       */
     var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
     /**
-      * Enables detailed monitoring (true) or basic monitoring (false) for the Auto Scaling instances. The default is true.
+      * Enables detailed monitoring (true) or basic monitoring (false) for the Auto Scaling instances. The default value is true.
       */
     var InstanceMonitoring: js.UndefOr[InstanceMonitoring] = js.undefined
     /**
@@ -557,7 +557,7 @@ object AutoScalingNs extends js.Object {
   
   trait CustomizedMetricSpecification extends js.Object {
     /**
-      * The dimensions of the metric.
+      * The dimensions of the metric. Conditional: If you published your metric with dimensions, you must specify the same dimensions in your scaling policy.
       */
     var Dimensions: js.UndefOr[MetricDimensions] = js.undefined
     /**
@@ -736,7 +736,7 @@ object AutoScalingNs extends js.Object {
       */
     var LoadBalancerTargetGroups: js.UndefOr[LoadBalancerTargetGroupStates] = js.undefined
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
   }
@@ -762,7 +762,7 @@ object AutoScalingNs extends js.Object {
       */
     var LoadBalancers: js.UndefOr[LoadBalancerStates] = js.undefined
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
   }
@@ -780,7 +780,7 @@ object AutoScalingNs extends js.Object {
   
   trait DescribeNotificationConfigurationsAnswer extends js.Object {
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
     /**
@@ -822,7 +822,7 @@ object AutoScalingNs extends js.Object {
       */
     var PolicyNames: js.UndefOr[PolicyNames] = js.undefined
     /**
-      * One or more policy types. Valid values are SimpleScaling and StepScaling.
+      * One or more policy types. The valid values are SimpleScaling, StepScaling, and TargetTrackingScaling.
       */
     var PolicyTypes: js.UndefOr[PolicyTypes] = js.undefined
   }
@@ -956,27 +956,27 @@ object AutoScalingNs extends js.Object {
   
   trait Ebs extends js.Object {
     /**
-      * Indicates whether the volume is deleted on instance termination. The default is true.
+      * Indicates whether the volume is deleted on instance termination. The default value is true.
       */
     var DeleteOnTermination: js.UndefOr[BlockDeviceEbsDeleteOnTermination] = js.undefined
     /**
-      * Indicates whether the volume should be encrypted. Encrypted EBS volumes must be attached to instances that support Amazon EBS encryption. Volumes that are created from encrypted snapshots are automatically encrypted. There is no way to create an encrypted volume from an unencrypted snapshot or an unencrypted volume from an encrypted snapshot. For more information, see Amazon EBS Encryption in the Amazon EC2 User Guide for Linux Instances.
+      * Specifies whether the volume should be encrypted. Encrypted EBS volumes must be attached to instances that support Amazon EBS encryption. Volumes that are created from encrypted snapshots are automatically encrypted. There is no way to create an encrypted volume from an unencrypted snapshot or an unencrypted volume from an encrypted snapshot. If your AMI uses encrypted volumes, you can only launch it on supported instance types. For more information, see Amazon EBS Encryption in the Amazon EC2 User Guide for Linux Instances.
       */
     var Encrypted: js.UndefOr[BlockDeviceEbsEncrypted] = js.undefined
     /**
-      * The number of I/O operations per second (IOPS) to provision for the volume. Constraint: Required when the volume type is io1.
+      * The number of I/O operations per second (IOPS) to provision for the volume. For more information, see Amazon EBS Volume Types in the Amazon EC2 User Guide for Linux Instances. Conditional: This parameter is required when the volume type is io1. (Not used with standard, gp2, st1, or sc1 volumes.) 
       */
     var Iops: js.UndefOr[BlockDeviceEbsIops] = js.undefined
     /**
-      * The ID of the snapshot.
+      * The ID of the snapshot. This parameter is optional if you specify a volume size. 
       */
     var SnapshotId: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-      * The volume size, in GiB. For standard volumes, specify a value from 1 to 1,024. For io1 volumes, specify a value from 4 to 16,384. For gp2 volumes, specify a value from 1 to 16,384. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you create a volume from a snapshot and you don't specify a volume size, the default is the snapshot size.
+      * The volume size, in GiB.  Constraints: 1-1,024 for standard, 4-16,384 for io1, 1-16,384 for gp2, and 500-16,384 for st1 and sc1. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you create a volume from a snapshot and you don't specify a volume size, the default is the snapshot size.  At least one of VolumeSize or SnapshotId is required. 
       */
     var VolumeSize: js.UndefOr[BlockDeviceEbsVolumeSize] = js.undefined
     /**
-      * The volume type. For more information, see Amazon EBS Volume Types in the Amazon EC2 User Guide for Linux Instances. Valid values: standard | io1 | gp2 
+      * The volume type, which can be standard for Magnetic, io1 for Provisioned IOPS SSD, gp2 for General Purpose SSD, st1 for Throughput Optimized HDD, or sc1 for Cold HDD. For more information, see Amazon EBS Volume Types in the Amazon EC2 User Guide for Linux Instances. Valid values: standard | io1 | gp2 | st1 | sc1 
       */
     var VolumeType: js.UndefOr[BlockDeviceEbsVolumeType] = js.undefined
   }
@@ -1035,7 +1035,7 @@ object AutoScalingNs extends js.Object {
       */
     var AutoScalingGroupName: js.UndefOr[ResourceName] = js.undefined
     /**
-      * The breach threshold for the alarm. This parameter is required if the policy type is StepScaling and not supported otherwise.
+      * The breach threshold for the alarm. Conditional: This parameter is required if the policy type is StepScaling and not supported otherwise.
       */
     var BreachThreshold: js.UndefOr[MetricScale] = js.undefined
     /**
@@ -1043,7 +1043,7 @@ object AutoScalingNs extends js.Object {
       */
     var HonorCooldown: js.UndefOr[HonorCooldown] = js.undefined
     /**
-      * The metric value to compare to BreachThreshold. This enables you to execute a policy of type StepScaling and determine which step adjustment to use. For example, if the breach threshold is 50 and you want to use a step adjustment with a lower bound of 0 and an upper bound of 10, you can set the metric value to 59. If you specify a metric value that doesn't correspond to a step adjustment for the policy, the call returns an error. This parameter is required if the policy type is StepScaling and not supported otherwise.
+      * The metric value to compare to BreachThreshold. This enables you to execute a policy of type StepScaling and determine which step adjustment to use. For example, if the breach threshold is 50 and you want to use a step adjustment with a lower bound of 0 and an upper bound of 10, you can set the metric value to 59. If you specify a metric value that doesn't correspond to a step adjustment for the policy, the call returns an error. Conditional: This parameter is required if the policy type is StepScaling and not supported otherwise.
       */
     var MetricValue: js.UndefOr[MetricScale] = js.undefined
     /**
@@ -1122,7 +1122,7 @@ object AutoScalingNs extends js.Object {
       */
     var LifecycleState: LifecycleState
     /**
-      * Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in. For more information, see Instance Protection in the Amazon EC2 Auto Scaling User Guide.
+      * Indicates whether the instance is protected from termination by Amazon EC2 Auto Scaling when scaling in.
       */
     var ProtectedFromScaleIn: InstanceProtected
   }
@@ -1136,7 +1136,7 @@ object AutoScalingNs extends js.Object {
   
   trait InstancesDistribution extends js.Object {
     /**
-      * Indicates how to allocate instance types to fulfill On-Demand capacity.  The only valid value is prioritized, which is also the default value. This strategy uses the order of instance types in the Overrides array of LaunchTemplate to define the launch priority of each instance type. The first instance type in the array is prioritized higher than the last. If all your On-Demand capacity cannot be fulfilled using your highest priority instance, then the Auto Scaling groups launches the remaining capacity using the second priority instance type, and so on. 
+      * Indicates how to allocate instance types to fulfill On-Demand capacity.  The only valid value is prioritized, which is also the default value. This strategy uses the order of instance type overrides for the LaunchTemplate to define the launch priority of each instance type. The first instance type in the array is prioritized higher than the last. If all your On-Demand capacity cannot be fulfilled using your highest priority instance, then the Auto Scaling groups launches the remaining capacity using the second priority instance type, and so on. 
       */
     var OnDemandAllocationStrategy: js.UndefOr[XmlString] = js.undefined
     /**
@@ -1144,7 +1144,7 @@ object AutoScalingNs extends js.Object {
       */
     var OnDemandBaseCapacity: js.UndefOr[OnDemandBaseCapacity] = js.undefined
     /**
-      * Controls the percentages of On-Demand Instances and Spot Instances for your additional capacity beyond OnDemandBaseCapacity.  The range is 0–100. The default value is 100. If you leave this parameter set to 100, the percentages are 100% for On-Demand Instances and 0% for Spot Instances. 
+      * Controls the percentages of On-Demand Instances and Spot Instances for your additional capacity beyond OnDemandBaseCapacity. The range is 0–100. The default value is 100. If you leave this parameter set to 100, the percentages are 100% for On-Demand Instances and 0% for Spot Instances. 
       */
     var OnDemandPercentageAboveBaseCapacity: js.UndefOr[OnDemandPercentageAboveBaseCapacity] = js.undefined
     /**
@@ -1175,7 +1175,7 @@ object AutoScalingNs extends js.Object {
       */
     var ClassicLinkVPCId: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-      * The IDs of one or more security groups for the VPC specified in ClassicLinkVPCId. This parameter is required if you specify a ClassicLink-enabled VPC, and cannot be used otherwise. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic Instances to a VPC in the Amazon EC2 Auto Scaling User Guide.
+      * The IDs of one or more security groups for the VPC specified in ClassicLinkVPCId. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic Instances to a VPC in the Amazon EC2 Auto Scaling User Guide. Conditional: This parameter is required if you specify a ClassicLink-enabled VPC, and cannot be used otherwise.
       */
     var ClassicLinkVPCSecurityGroups: js.UndefOr[ClassicLinkVPCSecurityGroups] = js.undefined
     /**
@@ -1268,7 +1268,7 @@ object AutoScalingNs extends js.Object {
       */
     var LaunchConfigurations: LaunchConfigurations
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
   }
@@ -1312,7 +1312,7 @@ object AutoScalingNs extends js.Object {
       */
     var AutoScalingGroupName: js.UndefOr[ResourceName] = js.undefined
     /**
-      * Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses or if an unexpected failure occurs. The valid values are CONTINUE and ABANDON. The default value is CONTINUE.
+      * Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses or if an unexpected failure occurs. The possible values are CONTINUE and ABANDON.
       */
     var DefaultResult: js.UndefOr[LifecycleActionResult] = js.undefined
     /**
@@ -1320,7 +1320,7 @@ object AutoScalingNs extends js.Object {
       */
     var GlobalTimeout: js.UndefOr[GlobalTimeout] = js.undefined
     /**
-      * The maximum time, in seconds, that can elapse before the lifecycle hook times out. If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the default action. You can prevent the lifecycle hook from timing out by calling RecordLifecycleActionHeartbeat.
+      * The maximum time, in seconds, that can elapse before the lifecycle hook times out. If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the action that you specified in the DefaultResult parameter.
       */
     var HeartbeatTimeout: js.UndefOr[HeartbeatTimeout] = js.undefined
     /**
@@ -1332,7 +1332,7 @@ object AutoScalingNs extends js.Object {
       */
     var LifecycleTransition: js.UndefOr[LifecycleTransition] = js.undefined
     /**
-      * Additional information that you want to include any time Amazon EC2 Auto Scaling sends a message to the notification target.
+      * Additional information that is included any time Amazon EC2 Auto Scaling sends a message to the notification target.
       */
     var NotificationMetadata: js.UndefOr[XmlStringMaxLen1023] = js.undefined
     /**
@@ -1347,11 +1347,11 @@ object AutoScalingNs extends js.Object {
   
   trait LifecycleHookSpecification extends js.Object {
     /**
-      * Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses or if an unexpected failure occurs. The valid values are CONTINUE and ABANDON.
+      * Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses or if an unexpected failure occurs. The valid values are CONTINUE and ABANDON. The default value is ABANDON.
       */
     var DefaultResult: js.UndefOr[LifecycleActionResult] = js.undefined
     /**
-      * The maximum time, in seconds, that can elapse before the lifecycle hook times out. If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the default action. You can prevent the lifecycle hook from timing out by calling RecordLifecycleActionHeartbeat.
+      * The maximum time, in seconds, that can elapse before the lifecycle hook times out. If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the action that you specified in the DefaultResult parameter. You can prevent the lifecycle hook from timing out by calling RecordLifecycleActionHeartbeat.
       */
     var HeartbeatTimeout: js.UndefOr[HeartbeatTimeout] = js.undefined
     /**
@@ -1359,7 +1359,7 @@ object AutoScalingNs extends js.Object {
       */
     var LifecycleHookName: AsciiStringMaxLen255
     /**
-      * The state of the EC2 instance to which you want to attach the lifecycle hook. The possible values are:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING  
+      * The state of the EC2 instance to which you want to attach the lifecycle hook. The valid values are:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING  
       */
     var LifecycleTransition: LifecycleTransition
     /**
@@ -1371,7 +1371,7 @@ object AutoScalingNs extends js.Object {
       */
     var NotificationTargetARN: js.UndefOr[NotificationTargetResourceName] = js.undefined
     /**
-      * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target.
+      * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target, for example, an Amazon SNS topic or an Amazon SQS queue.
       */
     var RoleARN: js.UndefOr[ResourceName] = js.undefined
   }
@@ -1451,7 +1451,7 @@ object AutoScalingNs extends js.Object {
   
   trait PoliciesType extends js.Object {
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
     /**
@@ -1462,7 +1462,7 @@ object AutoScalingNs extends js.Object {
   
   trait PolicyARNType extends js.Object {
     /**
-      * The CloudWatch alarms created for the target tracking policy.
+      * The CloudWatch alarms created for the target tracking scaling policy.
       */
     var Alarms: js.UndefOr[Alarms] = js.undefined
     /**
@@ -1508,7 +1508,7 @@ object AutoScalingNs extends js.Object {
       */
     var DefaultResult: js.UndefOr[LifecycleActionResult] = js.undefined
     /**
-      * The maximum time, in seconds, that can elapse before the lifecycle hook times out. The range is from 30 to 7200 seconds. The default is 3600 seconds (1 hour). If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the default action. You can prevent the lifecycle hook from timing out by calling RecordLifecycleActionHeartbeat.
+      * The maximum time, in seconds, that can elapse before the lifecycle hook times out. The range is from 30 to 7200 seconds. The default value is 3600 seconds (1 hour). If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the action that you specified in the DefaultResult parameter. You can prevent the lifecycle hook from timing out by calling RecordLifecycleActionHeartbeat.
       */
     var HeartbeatTimeout: js.UndefOr[HeartbeatTimeout] = js.undefined
     /**
@@ -1516,11 +1516,11 @@ object AutoScalingNs extends js.Object {
       */
     var LifecycleHookName: AsciiStringMaxLen255
     /**
-      * The instance state to which you want to attach the lifecycle hook. The possible values are:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING   This parameter is required for new lifecycle hooks, but optional when updating existing hooks.
+      * The instance state to which you want to attach the lifecycle hook. The valid values are:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING   Conditional: This parameter is required for new lifecycle hooks, but optional when updating existing hooks.
       */
     var LifecycleTransition: js.UndefOr[LifecycleTransition] = js.undefined
     /**
-      * Contains additional information that you want to include any time Amazon EC2 Auto Scaling sends a message to the notification target.
+      * Additional information that you want to include any time Amazon EC2 Auto Scaling sends a message to the notification target.
       */
     var NotificationMetadata: js.UndefOr[XmlStringMaxLen1023] = js.undefined
     /**
@@ -1528,7 +1528,7 @@ object AutoScalingNs extends js.Object {
       */
     var NotificationTargetARN: js.UndefOr[NotificationTargetResourceName] = js.undefined
     /**
-      * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target. This parameter is required for new lifecycle hooks, but optional when updating existing hooks.
+      * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target, for example, an Amazon SNS topic or an Amazon SQS queue. Conditional: This parameter is required for new lifecycle hooks, but optional when updating existing hooks.
       */
     var RoleARN: js.UndefOr[ResourceName] = js.undefined
   }
@@ -1586,15 +1586,15 @@ object AutoScalingNs extends js.Object {
       */
     var PolicyType: js.UndefOr[XmlStringMaxLen64] = js.undefined
     /**
-      * The amount by which to scale, based on the specified adjustment type. A positive value adds to the current capacity while a negative number removes from the current capacity. This parameter is required if the policy type is SimpleScaling and not supported otherwise.
+      * The amount by which to scale, based on the specified adjustment type. A positive value adds to the current capacity while a negative number removes from the current capacity. Conditional: This parameter is required if the policy type is SimpleScaling and not supported otherwise.
       */
     var ScalingAdjustment: js.UndefOr[PolicyIncrement] = js.undefined
     /**
-      * A set of adjustments that enable you to scale based on the size of the alarm breach. This parameter is required if the policy type is StepScaling and not supported otherwise.
+      * A set of adjustments that enable you to scale based on the size of the alarm breach. Conditional: This parameter is required if the policy type is StepScaling and not supported otherwise.
       */
     var StepAdjustments: js.UndefOr[StepAdjustments] = js.undefined
     /**
-      * A target tracking policy. This parameter is required if the policy type is TargetTrackingScaling and not supported otherwise.
+      * A target tracking scaling policy. Includes support for predefined or customized metrics. Conditional: This parameter is required if the policy type is TargetTrackingScaling and not supported otherwise.
       */
     var TargetTrackingConfiguration: js.UndefOr[TargetTrackingConfiguration] = js.undefined
   }
@@ -1621,7 +1621,7 @@ object AutoScalingNs extends js.Object {
       */
     var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
     /**
-      * The recurring schedule for this action, in Unix cron syntax format. This format consists of five fields separated by white spaces: [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week]. For more information about this format, see Crontab.
+      * The recurring schedule for this action, in Unix cron syntax format. This format consists of five fields separated by white spaces: [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week]. The value must be in quotes (for example, "30 0 1 1,6,12 *"). For more information about this format, see Crontab.
       */
     var Recurrence: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
@@ -1629,7 +1629,7 @@ object AutoScalingNs extends js.Object {
       */
     var ScheduledActionName: XmlStringMaxLen255
     /**
-      * The time for this action to start, in "YYYY-MM-DDThh:mm:ssZ" format in UTC/GMT only (for example, 2014-06-01T00:00:00Z). If you specify Recurrence and StartTime, Amazon EC2 Auto Scaling performs the action at this time, and then performs the action based on the specified recurrence. If you try to schedule your action in the past, Amazon EC2 Auto Scaling returns an error message.
+      * The time for this action to start, in YYYY-MM-DDThh:mm:ssZ format in UTC/GMT only and in quotes (for example, "2019-06-01T00:00:00Z"). If you specify Recurrence and StartTime, Amazon EC2 Auto Scaling performs the action at this time, and then performs the action based on the specified recurrence. If you try to schedule your action in the past, Amazon EC2 Auto Scaling returns an error message.
       */
     var StartTime: js.UndefOr[TimestampType] = js.undefined
     /**
@@ -1661,7 +1661,7 @@ object AutoScalingNs extends js.Object {
   
   trait ScalingPolicy extends js.Object {
     /**
-      * The adjustment type, which specifies how ScalingAdjustment is interpreted. Valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity.
+      * The adjustment type, which specifies how ScalingAdjustment is interpreted. The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity.
       */
     var AdjustmentType: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
@@ -1681,7 +1681,7 @@ object AutoScalingNs extends js.Object {
       */
     var EstimatedInstanceWarmup: js.UndefOr[EstimatedInstanceWarmup] = js.undefined
     /**
-      * The aggregation type for the CloudWatch metrics. Valid values are Minimum, Maximum, and Average.
+      * The aggregation type for the CloudWatch metrics. The valid values are Minimum, Maximum, and Average.
       */
     var MetricAggregationType: js.UndefOr[XmlStringMaxLen32] = js.undefined
     /**
@@ -1701,7 +1701,7 @@ object AutoScalingNs extends js.Object {
       */
     var PolicyName: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-      * The policy type. Valid values are SimpleScaling and StepScaling.
+      * The policy type. The valid values are SimpleScaling and StepScaling.
       */
     var PolicyType: js.UndefOr[XmlStringMaxLen64] = js.undefined
     /**
@@ -1713,7 +1713,7 @@ object AutoScalingNs extends js.Object {
       */
     var StepAdjustments: js.UndefOr[StepAdjustments] = js.undefined
     /**
-      * A target tracking policy.
+      * A target tracking scaling policy.
       */
     var TargetTrackingConfiguration: js.UndefOr[TargetTrackingConfiguration] = js.undefined
   }
@@ -1731,7 +1731,7 @@ object AutoScalingNs extends js.Object {
   
   trait ScheduledActionsType extends js.Object {
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
     /**
@@ -1750,7 +1750,7 @@ object AutoScalingNs extends js.Object {
       */
     var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
     /**
-      * The date and time that the action is scheduled to end. This date and time can be up to one month in the future.
+      * The date and time that the action is scheduled to end. 
       */
     var EndTime: js.UndefOr[TimestampType] = js.undefined
     /**
@@ -1774,7 +1774,7 @@ object AutoScalingNs extends js.Object {
       */
     var ScheduledActionName: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-      * The date and time that the action is scheduled to begin. This date and time can be up to one month in the future. When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops.
+      * The date and time that the action is scheduled to begin.  When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops.
       */
     var StartTime: js.UndefOr[TimestampType] = js.undefined
     /**
@@ -1801,7 +1801,7 @@ object AutoScalingNs extends js.Object {
       */
     var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
     /**
-      * The recurring schedule for the action, in Unix cron syntax format. This format consists of five fields separated by white spaces: [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week]. For more information about this format, see Crontab.
+      * The recurring schedule for the action, in Unix cron syntax format. This format consists of five fields separated by white spaces: [Minute] [Hour] [Day_of_Month] [Month_of_Year] [Day_of_Week]. The value must be in quotes (for example, "30 0 1 1,6,12 *"). For more information about this format, see Crontab.
       */
     var Recurrence: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
@@ -1809,7 +1809,7 @@ object AutoScalingNs extends js.Object {
       */
     var ScheduledActionName: XmlStringMaxLen255
     /**
-      * The time for the action to start, in "YYYY-MM-DDThh:mm:ssZ" format in UTC/GMT only (for example, 2014-06-01T00:00:00Z). If you specify Recurrence and StartTime, Amazon EC2 Auto Scaling performs the action at this time, and then performs the action based on the specified recurrence. If you try to schedule the action in the past, Amazon EC2 Auto Scaling returns an error message.
+      * The time for the action to start, in YYYY-MM-DDThh:mm:ssZ format in UTC/GMT only and in quotes (for example, "2019-06-01T00:00:00Z"). If you specify Recurrence and StartTime, Amazon EC2 Auto Scaling performs the action at this time, and then performs the action based on the specified recurrence. If you try to schedule the action in the past, Amazon EC2 Auto Scaling returns an error message.
       */
     var StartTime: js.UndefOr[TimestampType] = js.undefined
   }
@@ -1935,7 +1935,7 @@ object AutoScalingNs extends js.Object {
   
   trait TagsType extends js.Object {
     /**
-      * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+      * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
       */
     var NextToken: js.UndefOr[XmlString] = js.undefined
     /**
@@ -1946,11 +1946,11 @@ object AutoScalingNs extends js.Object {
   
   trait TargetTrackingConfiguration extends js.Object {
     /**
-      * A customized metric.
+      * A customized metric. You can specify either a predefined metric or a customized metric.
       */
     var CustomizedMetricSpecification: js.UndefOr[CustomizedMetricSpecification] = js.undefined
     /**
-      * Indicates whether scaling in by the target tracking policy is disabled. If scaling in is disabled, the target tracking policy doesn't remove instances from the Auto Scaling group. Otherwise, the target tracking policy can remove instances from the Auto Scaling group. The default is disabled.
+      * Indicates whether scaling in by the target tracking scaling policy is disabled. If scaling in is disabled, the target tracking scaling policy doesn't remove instances from the Auto Scaling group. Otherwise, the target tracking scaling policy can remove instances from the Auto Scaling group. The default is disabled.
       */
     var DisableScaleIn: js.UndefOr[DisableScaleIn] = js.undefined
     /**
@@ -2087,7 +2087,7 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchPutScheduledUpdateGroupActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Completes the lifecycle action for the specified token or instance with the specified result. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.   Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.   If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.    If you finish before the timeout period ends, complete the lifecycle action.    For more information, see Auto Scaling Lifecycle in the Amazon EC2 Auto Scaling User Guide.
+      * Completes the lifecycle action for the specified token or instance with the specified result. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.   Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.   If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.    If you finish before the timeout period ends, complete the lifecycle action.    For more information, see Amazon EC2 Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide.
       */
     def completeLifecycleAction(): awsDashSdkLib.libRequestMod.Request[CompleteLifecycleActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def completeLifecycleAction(
@@ -2098,7 +2098,7 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CompleteLifecycleActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Completes the lifecycle action for the specified token or instance with the specified result. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.   Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.   If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.    If you finish before the timeout period ends, complete the lifecycle action.    For more information, see Auto Scaling Lifecycle in the Amazon EC2 Auto Scaling User Guide.
+      * Completes the lifecycle action for the specified token or instance with the specified result. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.   Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.   If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.    If you finish before the timeout period ends, complete the lifecycle action.    For more information, see Amazon EC2 Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide.
       */
     def completeLifecycleAction(params: CompleteLifecycleActionType): awsDashSdkLib.libRequestMod.Request[CompleteLifecycleActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def completeLifecycleAction(
@@ -2110,14 +2110,14 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CompleteLifecycleActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an Auto Scaling group with the specified name and attributes. If you exceed your maximum limit of Auto Scaling groups, the call fails. For information about viewing this limit, see DescribeAccountLimits. For information about updating this limit, see Amazon EC2 Auto Scaling Limits in the Amazon EC2 Auto Scaling User Guide. For more information, see Auto Scaling Groups in the Amazon EC2 Auto Scaling User Guide.
+      * Creates an Auto Scaling group with the specified name and attributes. If you exceed your maximum limit of Auto Scaling groups, the call fails. For information about viewing this limit, see DescribeAccountLimits. For information about updating this limit, see Amazon EC2 Auto Scaling Limits in the Amazon EC2 Auto Scaling User Guide.
       */
     def createAutoScalingGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createAutoScalingGroup(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an Auto Scaling group with the specified name and attributes. If you exceed your maximum limit of Auto Scaling groups, the call fails. For information about viewing this limit, see DescribeAccountLimits. For information about updating this limit, see Amazon EC2 Auto Scaling Limits in the Amazon EC2 Auto Scaling User Guide. For more information, see Auto Scaling Groups in the Amazon EC2 Auto Scaling User Guide.
+      * Creates an Auto Scaling group with the specified name and attributes. If you exceed your maximum limit of Auto Scaling groups, the call fails. For information about viewing this limit, see DescribeAccountLimits. For information about updating this limit, see Amazon EC2 Auto Scaling Limits in the Amazon EC2 Auto Scaling User Guide.
       */
     def createAutoScalingGroup(params: CreateAutoScalingGroupType): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createAutoScalingGroup(
@@ -2223,14 +2223,14 @@ object AutoScalingNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes the specified Auto Scaling policy. Deleting a policy deletes the underlying alarm action, but does not delete the alarm, even if it no longer has an associated action.
+      * Deletes the specified scaling policy. Deleting a policy deletes the underlying alarm action, but does not delete the alarm, even if it no longer has an associated action.
       */
     def deletePolicy(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deletePolicy(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes the specified Auto Scaling policy. Deleting a policy deletes the underlying alarm action, but does not delete the alarm, even if it no longer has an associated action.
+      * Deletes the specified scaling policy. Deleting a policy deletes the underlying alarm action, but does not delete the alarm, even if it no longer has an associated action.
       */
     def deletePolicy(params: DeletePolicyType): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deletePolicy(
@@ -2268,7 +2268,7 @@ object AutoScalingNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes the current Auto Scaling resource limits for your AWS account. For information about requesting an increase in these limits, see Amazon EC2 Auto Scaling Limits in the Amazon EC2 Auto Scaling User Guide.
+      * Describes the current Amazon EC2 Auto Scaling resource limits for your AWS account. For information about requesting an increase in these limits, see Amazon EC2 Auto Scaling Limits in the Amazon EC2 Auto Scaling User Guide.
       */
     def describeAccountLimits(): awsDashSdkLib.libRequestMod.Request[DescribeAccountLimitsAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeAccountLimits(
@@ -2730,7 +2730,7 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ExitStandbyAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates or updates a lifecycle hook for the specified Auto Scaling group. A lifecycle hook tells Amazon EC2 Auto Scaling to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Amazon EC2 Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails.
+      * Creates or updates a lifecycle hook for the specified Auto Scaling group. A lifecycle hook tells Amazon EC2 Auto Scaling to perform an action on an instance when the instance launches (before it is put into service) or as the instance terminates (before it is fully terminated). This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state using using RecordLifecycleActionHeartbeat.   If you finish before the timeout period ends, complete the lifecycle action using CompleteLifecycleAction.   For more information, see Amazon EC2 Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. You can view the lifecycle hooks for an Auto Scaling group using DescribeLifecycleHooks. If you are no longer using a lifecycle hook, you can delete it using DeleteLifecycleHook.
       */
     def putLifecycleHook(): awsDashSdkLib.libRequestMod.Request[PutLifecycleHookAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putLifecycleHook(
@@ -2741,7 +2741,7 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutLifecycleHookAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates or updates a lifecycle hook for the specified Auto Scaling group. A lifecycle hook tells Amazon EC2 Auto Scaling to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Amazon EC2 Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails.
+      * Creates or updates a lifecycle hook for the specified Auto Scaling group. A lifecycle hook tells Amazon EC2 Auto Scaling to perform an action on an instance when the instance launches (before it is put into service) or as the instance terminates (before it is fully terminated). This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state using using RecordLifecycleActionHeartbeat.   If you finish before the timeout period ends, complete the lifecycle action using CompleteLifecycleAction.   For more information, see Amazon EC2 Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. You can view the lifecycle hooks for an Auto Scaling group using DescribeLifecycleHooks. If you are no longer using a lifecycle hook, you can delete it using DeleteLifecycleHook.
       */
     def putLifecycleHook(params: PutLifecycleHookType): awsDashSdkLib.libRequestMod.Request[PutLifecycleHookAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putLifecycleHook(
@@ -2851,14 +2851,14 @@ object AutoScalingNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Sets the health status of the specified instance. For more information, see Health Checks in the Amazon EC2 Auto Scaling User Guide.
+      * Sets the health status of the specified instance. For more information, see Health Checks for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide.
       */
     def setInstanceHealth(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def setInstanceHealth(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Sets the health status of the specified instance. For more information, see Health Checks in the Amazon EC2 Auto Scaling User Guide.
+      * Sets the health status of the specified instance. For more information, see Health Checks for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide.
       */
     def setInstanceHealth(params: SetInstanceHealthQuery): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def setInstanceHealth(
@@ -2945,7 +2945,7 @@ object AutoScalingNs extends js.Object {
       */
     var AvailabilityZones: js.UndefOr[AvailabilityZones] = js.undefined
     /**
-      * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start. The default is 300. For more information, see Scaling Cooldowns in the Amazon EC2 Auto Scaling User Guide.
+      * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start. The default value is 300. For more information, see Scaling Cooldowns in the Amazon EC2 Auto Scaling User Guide.
       */
     var DefaultCooldown: js.UndefOr[Cooldown] = js.undefined
     /**
@@ -2953,7 +2953,7 @@ object AutoScalingNs extends js.Object {
       */
     var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
     /**
-      * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service. The default is 0. For more information, see Health Checks in the Amazon EC2 Auto Scaling User Guide.
+      * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service. The default value is 0. For more information, see Health Checks for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide. Conditional: This parameter is required if you are adding an ELB health check.
       */
     var HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined
     /**
@@ -2977,19 +2977,19 @@ object AutoScalingNs extends js.Object {
       */
     var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
     /**
-      * The mixed instances policy to use to specify the updates. If you specify this parameter, you can't specify a launch configuration or a launch template. 
+      * The mixed instances policy to use to specify the updates. If you specify this parameter, you can't specify a launch configuration or a launch template.  For more information, see Using Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
       */
     var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
     /**
-      * Indicates whether newly launched instances are protected from termination by Auto Scaling when scaling in. For more information about preventing instances from terminating on scale in, see Instance Protection in the Amazon EC2 Auto Scaling User Guide.
+      * Indicates whether newly launched instances are protected from termination by Amazon EC2 Auto Scaling when scaling in. For more information about preventing instances from terminating on scale in, see Instance Protection in the Amazon EC2 Auto Scaling User Guide.
       */
     var NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined
     /**
-      * The name of the placement group into which to launch your instances, if any. For more information, see Placement Groups in the Amazon EC2 User Guide for Linux Instances.
+      * The name of the placement group into which to launch your instances, if any. A placement group is a logical grouping of instances within a single Availability Zone. You cannot specify multiple Availability Zones and a placement group. For more information, see Placement Groups in the Amazon EC2 User Guide for Linux Instances.
       */
     var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-      * The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other AWS services on your behalf.
+      * The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other AWS services on your behalf. For more information, see Service-Linked Roles in the Amazon EC2 Auto Scaling User Guide.
       */
     var ServiceLinkedRoleARN: js.UndefOr[ResourceName] = js.undefined
     /**
@@ -2997,7 +2997,7 @@ object AutoScalingNs extends js.Object {
       */
     var TerminationPolicies: js.UndefOr[TerminationPolicies] = js.undefined
     /**
-      * The ID of the subnet, if you are launching into a VPC. You can specify several subnets in a comma-separated list. When you specify VPCZoneIdentifier with AvailabilityZones, ensure that the subnets' Availability Zones match the values you specify for AvailabilityZones. For more information, see Launching Auto Scaling Instances in a VPC in the Amazon EC2 Auto Scaling User Guide.
+      * A comma-separated list of subnet IDs, if you are launching into a VPC. If you specify VPCZoneIdentifier with AvailabilityZones, the subnets that you specify for this parameter must reside in those Availability Zones.
       */
     var VPCZoneIdentifier: js.UndefOr[XmlStringMaxLen2047] = js.undefined
   }
