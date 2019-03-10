@@ -12,13 +12,11 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var context: js.UndefOr[Context[js.Object] | (ContextFunction[_, js.Object])] = js.undefined
   var engine: js.UndefOr[
-    scala.Boolean | apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[Context[js.Object]]
+    scala.Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EngineReportingOptions<Context> */ js.Any)
   ] = js.undefined
   var extensions: js.UndefOr[
     apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ]
   ] = js.undefined
   var introspection: js.UndefOr[scala.Boolean] = js.undefined
@@ -52,11 +50,9 @@ object Config {
   def apply(
     cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean = null,
     context: Context[js.Object] | (ContextFunction[_, js.Object]) = null,
-    engine: scala.Boolean | apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[Context[js.Object]] = null,
+    engine: scala.Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EngineReportingOptions<Context> */ js.Any) = null,
     extensions: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ] = null,
     introspection: js.UndefOr[scala.Boolean] = js.undefined,
     mockEntireSchema: js.UndefOr[scala.Boolean] = js.undefined,
