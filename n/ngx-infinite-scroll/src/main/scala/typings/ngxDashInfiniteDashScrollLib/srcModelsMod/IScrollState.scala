@@ -9,7 +9,7 @@ trait IScrollState extends js.Object {
   var lastScrollPosition: scala.Double
   var lastTotalToScroll: scala.Double
   var totalToScroll: scala.Double
-  var triggered: ngxDashInfiniteDashScrollLib.Anon_Down
+  var triggered: IScrollerDistance
 }
 
 object IScrollState {
@@ -18,7 +18,7 @@ object IScrollState {
     lastScrollPosition: scala.Double,
     lastTotalToScroll: scala.Double,
     totalToScroll: scala.Double,
-    triggered: ngxDashInfiniteDashScrollLib.Anon_Down
+    triggered: IScrollerDistance
   ): IScrollState = {
     val __obj = js.Dynamic.literal(lastScrollPosition = lastScrollPosition, lastTotalToScroll = lastTotalToScroll, totalToScroll = totalToScroll, triggered = triggered)
   

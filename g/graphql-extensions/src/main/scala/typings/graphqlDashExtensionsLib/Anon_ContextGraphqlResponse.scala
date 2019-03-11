@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ContextGraphqlResponse[TContext] extends js.Object {
   var context: TContext
-  var graphqlResponse: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLResponse */ js.Any
+  var graphqlResponse: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse
 }
 
 object Anon_ContextGraphqlResponse {
   @scala.inline
   def apply[TContext](
     context: TContext,
-    graphqlResponse: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLResponse */ js.Any
+    graphqlResponse: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse
   ): Anon_ContextGraphqlResponse[TContext] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], graphqlResponse = graphqlResponse)
   

@@ -12,7 +12,7 @@ object reactDashDndMod extends js.Object {
     reactLib.reactMod.ReactNs.ConsumerProps[reactDashDndLib.libCjsDragDropContextMod.DragDropContext[js.Any]]
   ] = js.native
   val DragDropContextProvider: reactLib.reactMod.ReactNs.FC[reactDashDndLib.libCjsDragDropContextMod.DragDropContextProviderProps[js.Any]] = js.native
-  val __EXPERIMENTAL_DND_HOOKS_THAT_MAY_CHANGE_AND_BREAK_MY_BUILD__ : reactDashDndLib.Anon_CollectMonitor = js.native
+  val __EXPERIMENTAL_DND_HOOKS_THAT_MAY_CHANGE_AND_BREAK_MY_BUILD__ : reactDashDndLib.Anon_CollectDragPreview = js.native
   def DragDropContext(backendFactory: dndDashCoreLib.libCjsInterfacesMod.BackendFactory): js.Function1[
     /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
     reactLib.reactMod.ReactNs.ComponentType[_] with reactDashDndLib.libCjsInterfacesClassApiMod.ContextComponent[_]

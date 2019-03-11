@@ -55,6 +55,8 @@ object Title {
     angle: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     baseline: vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue = null,
     color: vegaDashTypingsLib.typesSpecValuesMod.ColorValue = null,
+    dx: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    dy: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     encode: vegaDashTypingsLib.typesSpecEncodeMod.Encode[vegaDashTypingsLib.typesSpecEncodeMod.TextEncodeEntry] = null,
     font: vegaDashTypingsLib.typesSpecValuesMod.StringValue = null,
     fontSize: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
@@ -75,6 +77,8 @@ object Title {
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
+    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(encode)
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

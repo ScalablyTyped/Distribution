@@ -21,7 +21,6 @@ package object typesSpecEncodeMod {
   type OrientValueRef = ScaledValueRef[Orient]
   type ProductionRule[T] = T | (js.Array[vegaDashTypingsLib.Anon_Test with T])
   type RuleEncodeEntry = EncodeEntry
-  type ScaledValueRef[T] = _ScaledValueRef[T] | (BaseValueRef[T] with vegaDashTypingsLib.Anon_Scale)
   type StringValueRef = ScaledValueRef[java.lang.String]
   type SymbolShape = _SymbolShape | java.lang.String
   type SymbolShapeValueRef = ScaledValueRef[SymbolShape]

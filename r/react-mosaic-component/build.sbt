@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-mosaic-component"
-version := "2.1.0-0227af"
+version := "2.1.0-1b8dfd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.11-dt-20190307Z-7720a8",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-d5c6e1",
-  "org.scalablytyped" %%% "react-dnd" % "7.3.0-78242f",
+  "org.scalablytyped" %%% "react-dnd" % "7.3.1-d79620",
   "org.scalablytyped" %%% "react-dnd-html5-backend" % "7.2.0-75c9e0",
   "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-768022",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190225Z-87982b",

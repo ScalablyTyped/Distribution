@@ -13,7 +13,7 @@ trait Anon_Context[TContext] extends js.Object {
   var persistedQueryRegister: js.UndefOr[scala.Boolean] = js.undefined
   var queryString: js.UndefOr[java.lang.String] = js.undefined
   var request: apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request
-  var requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext]
+  var requestContext: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ js.Any
   var variables: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
@@ -22,7 +22,7 @@ object Anon_Context {
   def apply[TContext](
     context: TContext,
     request: apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request,
-    requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext],
+    requestContext: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ js.Any,
     extensions: stdLib.Record[java.lang.String, _] = null,
     parsedQuery: graphqlLib.languageAstMod.DocumentNode = null,
     persistedQueryHit: js.UndefOr[scala.Boolean] = js.undefined,

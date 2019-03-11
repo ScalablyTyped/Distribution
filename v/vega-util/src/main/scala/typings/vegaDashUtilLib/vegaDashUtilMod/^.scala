@@ -81,6 +81,7 @@ object ^ extends js.Object {
   def log(args: js.Any*): scala.Unit = js.native
   def logger(): vegaDashUtilLib.vegaDashUtilMod.LoggerInterface = js.native
   def logger(`_`: scala.Double): vegaDashUtilLib.vegaDashUtilMod.LoggerInterface = js.native
+  def logger(`_`: scala.Double, method: java.lang.String): vegaDashUtilLib.vegaDashUtilMod.LoggerInterface = js.native
   def merge(
     compare: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double],
     array1: js.Array[_],

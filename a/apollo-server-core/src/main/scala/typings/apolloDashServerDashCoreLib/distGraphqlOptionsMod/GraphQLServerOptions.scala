@@ -9,8 +9,8 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var cache: js.UndefOr[
     apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String]
   ] = js.undefined
-  var cacheControl: js.UndefOr[
-    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
+  var cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
   ] = js.undefined
   var context: js.UndefOr[TContext | js.Function0[scala.Nothing]] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
@@ -20,7 +20,9 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   ] = js.undefined
   var extensions: js.UndefOr[
     apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
+      js.Function0[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
+      ]
     ]
   ] = js.undefined
   var fieldResolver: js.UndefOr[
@@ -55,13 +57,15 @@ object GraphQLServerOptions {
   def apply[TContext, TRootValue](
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String] = null,
-    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions = null,
+    cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any = null,
     context: TContext | js.Function0[scala.Nothing] = null,
     dataSources: js.Function0[DataSources[TContext]] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     documentStore: apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode] = null,
     extensions: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
+      js.Function0[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
+      ]
     ] = null,
     fieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]] = null,
     formatError: js.Function1[

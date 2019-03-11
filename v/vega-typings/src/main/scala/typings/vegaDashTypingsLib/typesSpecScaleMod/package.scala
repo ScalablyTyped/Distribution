@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 package object typesSpecScaleMod {
   type RangeBand = _RangeBand | RangeRaw
   type RangeRaw = js.Array[
-    scala.Null | scala.Boolean | java.lang.String | scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
+    scala.Null | scala.Boolean | java.lang.String | scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RangeRawArray
   ]
+  type RangeRawArray = js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]
   type RangeScheme = _RangeScheme | RangeRaw
   type ScaleBins = _ScaleBins | (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef])
   type ScaleData = (DataRef with vegaDashTypingsLib.Anon_Sort) | (MultiDataRef with vegaDashTypingsLib.Anon_SortUnionSortField)

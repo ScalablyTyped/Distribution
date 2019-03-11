@@ -17,7 +17,7 @@ trait Anon_ContextExtensions[TContext] extends js.Object {
     apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
     graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.url | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.method | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.headers
   ]
-  var requestContext: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ js.Any
+  var requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext]
   var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
@@ -29,7 +29,7 @@ object Anon_ContextExtensions {
       apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
       graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.url | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.method | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.headers
     ],
-    requestContext: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ js.Any,
+    requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext],
     extensions: stdLib.Record[java.lang.String, _] = null,
     operationName: java.lang.String = null,
     parsedQuery: graphqlLib.languageAstMod.DocumentNode = null,

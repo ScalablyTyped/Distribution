@@ -5,5 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseValueRef[T] extends _ScaledValueRef[T]
+trait BaseValueRef[T] extends ScaledValueRef[T]
 

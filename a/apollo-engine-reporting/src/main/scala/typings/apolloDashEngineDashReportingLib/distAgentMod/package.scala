@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object distAgentMod {
   type GenerateClientInfo[TContext] = js.Function1[
-    /* requestContext */ apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext], 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ /* requestContext */ js.Any, 
     ClientInfo
   ]
 }

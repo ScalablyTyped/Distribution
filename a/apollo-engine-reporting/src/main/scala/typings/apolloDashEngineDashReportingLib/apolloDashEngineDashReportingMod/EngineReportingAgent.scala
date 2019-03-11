@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EngineReportingAgent[TContext] protected ()
   extends apolloDashEngineDashReportingLib.distAgentMod.EngineReportingAgent[TContext] {
-  def this(options: apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[TContext], hasSchemaHash: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLServiceContext) = this()
-  def this(options: js.UndefOr[scala.Nothing], hasSchemaHash: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLServiceContext) = this()
+  def this(options: apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[TContext], hasSchemaHash: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLServiceContext */ js.Any) = this()
+  def this(options: js.UndefOr[scala.Nothing], hasSchemaHash: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLServiceContext */ js.Any) = this()
 }
 

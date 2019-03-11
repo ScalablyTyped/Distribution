@@ -24,6 +24,14 @@ trait BaseTitle[N, S, C, FW, FS, A, TB, F, AN, O] extends js.Object {
     */
   var color: js.UndefOr[C] = js.undefined
   /**
+    * Delta offset for title text x-coordinate.
+    */
+  var dx: js.UndefOr[N] = js.undefined
+  /**
+    * Delta offset for title text y-coordinate.
+    */
+  var dy: js.UndefOr[N] = js.undefined
+  /**
     * Font name for title text.
     */
   var font: js.UndefOr[S] = js.undefined
@@ -72,6 +80,8 @@ object BaseTitle {
     angle: N = null,
     baseline: TB = null,
     color: C = null,
+    dx: N = null,
+    dy: N = null,
     font: S = null,
     fontSize: N = null,
     fontStyle: FS = null,
@@ -87,6 +97,8 @@ object BaseTitle {
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
+    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
